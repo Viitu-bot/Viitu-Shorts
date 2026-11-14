@@ -1,5 +1,25 @@
 # vd002: Pupilas dos animais (postagem: domingo 2026-11-15)
 
+## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs)
+Repara no olho dessa cabra. Não é redondo.
+A maioria acha que é só um defeito esquisito. Mas o formato da pupila entrega quem caça e quem é caçado.
+Pupila em pé, como a do gato e a do crocodilo, é de caçador de tocaia: ajuda a calcular a distância exata do bote.
+Pupila deitada é de presa: enxerga quase tudo em volta pra fugir a tempo.
+Mas tem um porém: a cabra passa o dia de cabeça baixa, comendo. Com a cabeça inclinada, essa pupila ficaria torta. Só que o olho dela gira dentro da cabeça e mantém a pupila deitada, paralela ao chão.
+Ela come e vigia o horizonte ao mesmo tempo.
+E a nossa pupila? É redonda. Então me responde nos comentários: o ser humano é caçador... ou presa?
+E da próxima vez que encontrar uma...
+
+## ✅ PUBLICAÇÃO
+- **Título PT:** Por que o olho da cabra é retangular? 🐐
+- **Título EN (tradução no Studio):** Why are goat pupils rectangular? 🐐
+- **Título ES (tradução no Studio):** ¿Por qué la pupila de la cabra es rectangular? 🐐
+- **Descrição:** O formato da pupila revela quem caça e quem é caçado na natureza, e o olho da cabra ainda gira dentro da cabeça. 👁️ Fonte: Banks et al., Science Advances (2015).
+  #curiosidades #animais #ciencia
+- **Comentário fixado:** Caçador ou presa? 👇 Responde aqui, quero ver quem acerta o que a ciência diz sobre o olho humano 👁️
+
+---
+
 Família: Natureza com mecanismo oculto
 Prova de demanda: 7,1M views em canal de 41k inscritos (476x a mediana); em PT-BR, máx. 3k views.
 Fonte principal: Banks et al. (2015), "Why do animal eyes have pupils of different shapes?", Science Advances 1(7): e1500391.
@@ -41,7 +61,7 @@ Ela come e vigia o horizonte ao mesmo tempo.
 **Evidências:**
 - Rotação do olho (cicloversão) mantém a pupila paralela ao chão quando a cabeça abaixa, até ~50° [CONFIRMADO, Banks 2015]
 
-## Ato 4: Clímax + loop (rascunho)
+## Ato 4: Clímax + loop ✅ aprovado
 **Texto:**
 E a nossa pupila? É redonda. Então me responde nos comentários: o ser humano é caçador... ou presa?
 E da próxima vez que encontrar uma...
