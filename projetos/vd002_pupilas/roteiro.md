@@ -10,6 +10,16 @@ Ela come e vigia o horizonte ao mesmo tempo.
 E a nossa pupila? É redonda. Então me responde nos comentários: o ser humano é caçador... ou presa?
 E da próxima vez que encontrar uma...
 
+## 🎙️ TEXTO COM DIREÇÃO DE VOZ (eleven_v3)
+[curious] Repara no olho dessa cabra... Não é redondo.
+A maioria acha que é só um defeito esquisito. [mischievously] Mas o formato da pupila entrega quem caça... e quem é caçado.
+Pupila em pé, como a do gato e a do crocodilo, é de caçador de tocaia: ajuda a calcular a distância exata do bote.
+Pupila deitada é de presa: enxerga quase tudo em volta, pra fugir a tempo.
+[short pause] Mas tem um porém. A cabra passa o dia de cabeça baixa, comendo. Com a cabeça inclinada, essa pupila ficaria torta. [excited] Só que o olho dela GIRA dentro da cabeça... e mantém a pupila deitada, paralela ao chão!
+Ela come e vigia o horizonte, ao mesmo tempo.
+[curious] E a nossa pupila? É redonda. Então me responde nos comentários: o ser humano é caçador... ou presa?
+E da próxima vez que encontrar uma...
+
 ## ✅ PUBLICAÇÃO
 - **Título PT:** Por que o olho da cabra é retangular? 🐐
 - **Título EN (tradução no Studio):** Why are goat pupils rectangular? 🐐
