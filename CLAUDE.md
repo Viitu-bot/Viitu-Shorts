@@ -35,7 +35,8 @@ Clipes do usuário chegam por **link do Google Drive** (YouTube e Reddit bloquei
 - **Ato 4, loop:** termina em frase suspensa (`...`, nunca ponto final) que emenda gramaticalmente
   na primeira palavra do gancho.
 - **Evidências:** todo fato marcado [CONFIRMADO] (com fonte) ou [INCERTO]. Nada [INCERTO] no texto final.
-- **Edição:** corte a cada 1,5–3 s, sempre na borda de uma palavra; palavra-gatilho = cena na tela.
+- **Edição:** um estímulo visual a cada 2–3 s (zoom no detalhe, círculo/seta, corte), sempre na borda
+  de uma palavra; palavra-gatilho = o detalhe em destaque na tela. Cortar só quando muda a ideia.
 
 ## Seleção de tema (nota 0–12, 0 a 2 por critério; produzir só com ≥ 9)
 Objeto do dia a dia | pergunta concreta (Por que / Como / O que acontece se) |
