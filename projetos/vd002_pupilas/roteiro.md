@@ -8,7 +8,7 @@ Fonte principal: Banks et al. (2015), "Why do animal eyes have pupils of differe
 **Texto:** Repara no olho dessa cabra. Não é redondo.
 **Tela:** frame 0 = close da pupila retangular da cabra, zoom rápido no olho. Texto: "REPARA NO OLHO"
 
-## Ato 2: Desmistificação + causa (rascunho)
+## Ato 2: Desmistificação + causa ✅ aprovado
 **Texto:**
 A maioria acha que é só um defeito esquisito. Mas o formato da pupila entrega quem caça e quem é caçado.
 Pupila em pé, como a do gato e a do crocodilo, é de caçador de tocaia: ajuda a calcular a distância exata do bote.
@@ -24,9 +24,22 @@ Pupila deitada é de presa: enxerga quase tudo em volta pra fugir a tempo.
 - Fenda vertical = predador de emboscada, ajuda a estimar distância [CONFIRMADO, Banks 2015]
 - Pupila horizontal = presa que pasta, visão panorâmica para detectar predadores [CONFIRMADO, Banks 2015]
 
-## Ato 3: Virada (pendente)
-Ideia: quando a cabra abaixa a cabeça para comer, o olho gira dentro da cabeça para a pupila continuar
-paralela ao chão. [CONFIRMADO, Banks 2015: rotação ocular de até ~50°]
+## Ato 3: Virada (rascunho)
+**Texto:**
+Mas tem um porém: a cabra passa o dia de cabeça baixa, comendo. Com a cabeça inclinada, essa pupila
+ficaria torta. Só que o olho dela gira dentro da cabeça e mantém a pupila deitada, paralela ao chão.
+Ela come e vigia o horizonte ao mesmo tempo.
+
+**Gatilhos → tela:**
+- "Mas tem um porém" → corte seco + zoom no olho da cabra (som de impacto)
+- "cabeça baixa, comendo" → cabra pastando
+- "ficaria torta" → mesmo close com a imagem girada ~45° (efeito)
+- "o olho dela gira" → close do olho com rotação de volta ao nível (efeito)
+- "paralela ao chão" → linha do horizonte / campo aberto
+- "vigia o horizonte" → cabra levantando a cabeça, olhando ao longe
+
+**Evidências:**
+- Rotação do olho (cicloversão) mantém a pupila paralela ao chão quando a cabeça abaixa, até ~50° [CONFIRMADO, Banks 2015]
 
 ## Ato 4: Clímax + loop (pendente)
 Termina em: "...então, da próxima vez que encontrar uma," → emenda em "Repara no olho dessa cabra."
