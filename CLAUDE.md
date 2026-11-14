@@ -27,7 +27,12 @@ Clipes do usuário chegam por **link do Google Drive** (YouTube e Reddit bloquei
 - Stock (Pixabay) só como complemento. Clipe horizontal cortado para 9:16 fica ruim.
 
 ## Protocolo HISA (roteiro)
-- **Duração:** 15–30 s (40–75 palavras, ~2,5 palavras/s), acompanhando a duração do clipe-âncora.
+- **Duração (estratégia, nov/2026):** padrão **45–60 s** (110–150 palavras) quando houver material real
+  suficiente (1 clipe-âncora + 2–4 clipes de apoio). **20–30 s** só quando houver um único clipe forte.
+  Base: @avidamaravilha (300 Shorts, mar–nov/2026) tem mediana de views crescente com a duração
+  (21–30 s: 100k · 31–45 s: 599k · 46–60 s: 747k · 61–90 s: 809k); os 30 últimos têm mediana de 69,5 s.
+  Teste no Viitu por 3 semanas: 2 longos para 1 curto; comparar no Studio (visualizado vs. deslizado,
+  % assistido, views em 48 h, inscritos ganhos).
 - **Ato 1, gancho (0–3 s):** objeto nomeado em ≤ 8 palavras, pergunta/lacuna de curiosidade.
   Voz começa em 0,0 s. Frame 0 = cena mais impressionante. Pergunta escrita na tela.
 - **Ato 2, desmistificação:** "A maioria acha X, mas o motivo real é Y."
@@ -54,6 +59,14 @@ sem CAIXA ALTA gritando. Sempre com tradução EN/ES no YouTube Studio.
 - Calendário da semana (dias e família de tema de cada dia)
 - Estilo de legenda/SFX (referência: palavra única, fonte grossa, contorno; flash 0,2 s nos cortes;
   woosh nos cortes, ding/pak na palavra-gatilho)
+
+## Acabamento (Remotion) e identidade
+- Pipeline: `python3 -m viitu.editar <proj> --remotion` → `cd remotion && npm run render`.
+- Identidade: flash branco→amarelo nos primeiros 0,2 s + "ding" no frame 0. Círculo vermelho perfeito
+  que se desenha e segue o objeto, com "pop". Woosh variado nos cortes. Riser + impacto + flash +
+  tremida em "impacto_em". Botão INSCREVA-SE no fim. Trilha de fundo a 16% sob a voz.
+- Sons em `assets/sfx/` (normalizados a −1 dB de pico) e trilhas em `assets/musica/`, gerados no
+  ElevenLabs (sound-generation e music), livres de direitos.
 
 ## Estrutura do repositório
 - `radar/radar.py`: mede outliers de canais via yt-dlp (só funciona fora da nuvem)

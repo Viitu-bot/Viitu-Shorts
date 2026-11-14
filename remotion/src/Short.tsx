@@ -11,53 +11,75 @@ loadFont({family: fontFamily, url: staticFile('Anton-Regular.ttf')});
 
 export type Palavra = {texto: string; f0: number; f1: number; destaque: boolean};
 export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, number, number][]};
-export type Plano = {fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[]; cortes: number[]};
-
-// ---------- círculo desenhado à mão (traço de caneta com mola) ----------
-const caminhoCirculo = (r: number, voltas: number) => {
-  const pts: string[] = [];
-  const inicio = -Math.PI * 0.6;
-  const passos = Math.max(2, Math.round(90 * voltas));
-  let comprimento = 0;
-  let ant: [number, number] | null = null;
-  for (let k = 0; k <= passos; k++) {
-    const a = inicio + 2 * Math.PI * voltas * (k / passos);
-    const rr = r * (1 + 0.06 * Math.sin(3 * a) + 0.03 * Math.sin(7 * a));
-    const p: [number, number] = [rr * 1.08 * Math.cos(a), rr * 0.92 * Math.sin(a)];
-    if (ant) comprimento += Math.hypot(p[0] - ant[0], p[1] - ant[1]);
-    ant = p;
-    pts.push(`${k === 0 ? 'M' : 'L'}${p[0].toFixed(1)},${p[1].toFixed(1)}`);
-  }
-  return {d: pts.join(' '), comprimento};
+export type Plano = {
+  fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
+  cortes: number[]; impactos: number[]; cta: boolean;
 };
 
+const AMARELO = '#FFD400';
+
+// ---------- identidade: flash branco → amarelo nos primeiros 0,2 s ----------
+const FlashIdentidade: React.FC = () => {
+  const frame = useCurrentFrame();
+  if (frame > 7) return null;
+  const branco = interpolate(frame, [0, 2, 4], [1, 0.85, 0], {extrapolateRight: 'clamp'});
+  const amarelo = interpolate(frame, [1, 3, 7], [0, 0.75, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <>
+      <AbsoluteFill style={{backgroundColor: AMARELO, opacity: amarelo, mixBlendMode: 'screen'}} />
+      <AbsoluteFill style={{backgroundColor: 'white', opacity: branco}} />
+    </>
+  );
+};
+
+// ---------- círculo perfeito que se desenha e acompanha o objeto ----------
 const CirculoMarca: React.FC<{marca: Marca}> = ({marca}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const i = Math.min(Math.max(frame - marca.cena_f0, 0), marca.pos.length - 1);
-  const [x, y, r] = marca.pos[i];
   const local = frame - marca.f0;
   if (local < 0 || frame >= marca.f1) return null;
-  // traço: desenha em ~12 frames com desaceleração (mola sem quicar)
-  const traco = spring({frame: local, fps, config: {damping: 200}, durationInFrames: 12});
-  // "pop": escala com leve quique no fim
-  const pop = spring({frame: local, fps, config: {damping: 9, stiffness: 180, mass: 0.6}});
-  const escala = interpolate(pop, [0, 1], [0.7, 1]);
-  const pulso = 1 + 0.025 * Math.sin((local / fps) * Math.PI * 3);
-  const {d, comprimento} = caminhoCirculo(r, 1.12);
+  const i = Math.min(Math.max(frame - marca.cena_f0, 0), marca.pos.length - 1);
+  const [x, y, r] = marca.pos[i];
+  const traco = spring({frame: local, fps, config: {damping: 200}, durationInFrames: 11});
+  const pop = spring({frame: local, fps, config: {damping: 10, stiffness: 200, mass: 0.6}});
+  const escala = interpolate(pop, [0, 1], [0.6, 1]);
+  const saida = interpolate(frame, [marca.f1 - 5, marca.f1], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const circ = 2 * Math.PI * r;
+  const anel = (cor: string, largura: number, dx = 0, dy = 0) => (
+    <circle cx={dx} cy={dy} r={r} fill="none" stroke={cor} strokeWidth={largura} strokeLinecap="round"
+      strokeDasharray={circ} strokeDashoffset={circ * (1 - traco)} transform="rotate(-90)" />
+  );
   return (
-    <svg width={1080} height={1920} style={{position: 'absolute', inset: 0, overflow: 'visible'}}>
-      <g transform={`translate(${x},${y}) scale(${escala * (local > 14 ? pulso : 1)})`}>
-        <path d={d} fill="none" stroke="rgba(0,0,0,0.45)" strokeWidth={20} strokeLinecap="round"
-          strokeDasharray={comprimento} strokeDashoffset={comprimento * (1 - traco)} transform="translate(3,4)" />
-        <path d={d} fill="none" stroke="#FF2222" strokeWidth={12} strokeLinecap="round"
-          strokeDasharray={comprimento} strokeDashoffset={comprimento * (1 - traco)} />
+    <svg width={1080} height={1920} style={{position: 'absolute', inset: 0, overflow: 'visible', opacity: saida}}>
+      <g transform={`translate(${x},${y}) scale(${escala})`}>
+        {anel('rgba(0,0,0,0.5)', 22, 3, 5)}
+        {anel('#FF2020', 13)}
+        {anel('rgba(255,255,255,0.35)', 3)}
       </g>
     </svg>
   );
 };
 
-// ---------- legenda: uma palavra por vez, com "pop" de mola ----------
+// ---------- impacto: flash curto + tremida de câmera ----------
+const useTremida = (impactos: number[]) => {
+  const frame = useCurrentFrame();
+  for (const f of impactos) {
+    const k = frame - f;
+    if (k >= 0 && k < 9) {
+      const a = (1 - k / 9) * 14;
+      return {x: Math.sin(k * 2.7) * a, y: Math.cos(k * 3.3) * a};
+    }
+  }
+  return {x: 0, y: 0};
+};
+
+const FlashImpacto: React.FC<{f: number}> = ({f}) => {
+  const frame = useCurrentFrame();
+  const o = interpolate(frame - f, [0, 1, 4], [0, 0.6, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return <AbsoluteFill style={{backgroundColor: 'white', opacity: o}} />;
+};
+
+// ---------- legenda: uma palavra por vez, com mola ----------
 const PalavraNaTela: React.FC<{p: Palavra}> = ({p}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
@@ -68,11 +90,29 @@ const PalavraNaTela: React.FC<{p: Palavra}> = ({p}) => {
     <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center', paddingTop: 560}}>
       <div style={{
         fontFamily, fontSize: p.destaque ? 138 : 124, letterSpacing: 2,
-        color: p.destaque ? '#FFD400' : '#FFFFFF',
+        color: p.destaque ? AMARELO : '#FFFFFF',
         WebkitTextStroke: '12px black', paintOrder: 'stroke fill',
         textShadow: '0 8px 18px rgba(0,0,0,0.55)',
         transform: `translateY(${subida}px) scale(${escala}) rotate(${p.destaque ? -2 : 0}deg)`,
       }}>{p.texto}</div>
+    </AbsoluteFill>
+  );
+};
+
+// ---------- chamada para se inscrever (final) ----------
+const BotaoInscrever: React.FC = () => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const entra = spring({frame, fps, config: {damping: 11, stiffness: 180}});
+  const clique = frame >= 14 && frame < 20 ? 0.92 : 1;
+  const inscrito = frame >= 17;
+  return (
+    <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center', paddingTop: 1330}}>
+      <div style={{
+        transform: `scale(${interpolate(entra, [0, 1], [0.3, 1]) * clique})`, opacity: entra,
+        backgroundColor: inscrito ? '#3d3d3d' : '#FF0000', color: 'white', fontFamily, fontSize: 64,
+        letterSpacing: 2, padding: '18px 44px', borderRadius: 999, boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
+      }}>{inscrito ? '✓ INSCRITO' : '🔔 INSCREVA-SE'}</div>
     </AbsoluteFill>
   );
 };
@@ -90,24 +130,60 @@ const usePunch = (palavras: Palavra[]) => {
   return z;
 };
 
+const WOOSHES = ['woosh.mp3', 'woosh2.mp3', 'woosh3.mp3'];
+
 export const Short: React.FC<{plano: Plano}> = ({plano}) => {
+  const {durationInFrames} = useVideoConfig();
   const z = usePunch(plano.palavras);
+  const t = useTremida(plano.impactos);
+  const ultimoCorte = plano.cortes[plano.cortes.length - 1] ?? 0;
   return (
     <AbsoluteFill style={{backgroundColor: 'black'}}>
-      <AbsoluteFill style={{transform: `scale(${z})`}}>
+      <AbsoluteFill style={{transform: `translate(${t.x}px, ${t.y}px) scale(${z * (t.x ? 1.03 : 1)})`}}>
         <OffthreadVideo src={staticFile('fundo.mp4')} muted />
       </AbsoluteFill>
+
       {plano.marcas.map((m, k) => (
         <React.Fragment key={k}>
           <CirculoMarca marca={m} />
-          <Sequence from={m.f0} durationInFrames={20}><Audio src={staticFile('tick.mp3')} volume={0.9} /></Sequence>
+          <Sequence from={m.f0} durationInFrames={20}><Audio src={staticFile('pop.mp3')} volume={0.55} /></Sequence>
         </React.Fragment>
       ))}
+
       {plano.palavras.filter((p) => p.texto).map((p, k) => (
         <Sequence key={k} from={p.f0} durationInFrames={Math.max(p.f1 - p.f0, 1)}>
           <PalavraNaTela p={p} />
         </Sequence>
       ))}
+
+      {plano.impactos.map((f, k) => (
+        <React.Fragment key={k}>
+          <FlashImpacto f={f} />
+          <Sequence from={Math.max(f - 34, 0)} durationInFrames={36}><Audio src={staticFile('riser.mp3')} volume={0.28} /></Sequence>
+          <Sequence from={f} durationInFrames={40}><Audio src={staticFile('impacto.mp3')} volume={0.75} /></Sequence>
+        </React.Fragment>
+      ))}
+
+      {plano.cta && (
+        <Sequence from={ultimoCorte + 6}>
+          <BotaoInscrever />
+          <Sequence from={14} durationInFrames={20}><Audio src={staticFile('clique.mp3')} volume={0.6} /></Sequence>
+        </Sequence>
+      )}
+
+      {/* efeitos sonoros: woosh variado em cada corte (começa um pouco antes) */}
+      {plano.cortes.filter((c) => !plano.impactos.includes(c)).map((c, k) => (
+        <Sequence key={k} from={Math.max(c - 4, 0)} durationInFrames={24}>
+          <Audio src={staticFile(WOOSHES[k % WOOSHES.length])} volume={0.32} />
+        </Sequence>
+      ))}
+
+      <FlashIdentidade />
+      <Sequence from={0} durationInFrames={30}><Audio src={staticFile('ding.mp3')} volume={0.85} /></Sequence>
+
+      {/* trilha de fundo: baixa sob a voz, some suave no final */}
+      <Audio src={staticFile('musica.mp3')} loop
+        volume={(f) => 0.16 * interpolate(f, [durationInFrames - 10, durationInFrames], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})} />
       <Audio src={staticFile('audio.m4a')} />
     </AbsoluteFill>
   );

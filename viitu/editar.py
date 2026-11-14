@@ -130,7 +130,7 @@ def _filtro_cena(s: dict, entrada: str, eh_foto: bool, n_frames: int, primeira: 
         f = (f"[{entrada}]{_lento(s)}{crop},scale={W * 2}:{H * 2}:flags=lanczos,"
              f"zoompan=z='{zexpr}':x='max(0\\,min(iw-iw/zoom\\,iw*{sx}-iw/zoom/2))'"
              f":y='max(0\\,min(ih-ih/zoom\\,ih*{sy}-ih/zoom/2))':d=1:s={W}x{H}:fps={FPS}")
-    f += ",vignette=PI/5,setsar=1,format=yuv420p"     # bordas escuras guiam o olhar
+    f += ",eq=contrast=1.06:saturation=1.12,unsharp=5:5:0.5,vignette=PI/5,setsar=1,format=yuv420p"     # bordas escuras guiam o olhar
     if not primeira:
         f += ",fade=t=in:st=0:d=0.12:color=white"   # flash nos cortes
     return f + "[v]"
@@ -397,8 +397,10 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
     shutil.copy(video, pub / "fundo.mp4")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(audio), "-c:a", "aac", "-b:a", "192k",
                     str(pub / "audio.m4a")], check=True)
-    for som in ("tick", "woosh", "impacto"):
-        shutil.copy(SFX / f"{som}.mp3", pub / f"{som}.mp3")
+    for som in SFX.glob("*.mp3"):
+        shutil.copy(som, pub / som.name)
+    musica = cfg.get("musica", "curioso_documentario.mp3")
+    shutil.copy(RAIZ / "assets" / "musica" / musica, pub / "musica.mp3")
     destaques = {_norm(x) for x in cfg.get("destaques", [])}
     plano = {
         "fps": FPS, "duracao_frames": segs[-1]["f1"],
@@ -410,6 +412,9 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
         "marcas": [{"f0": s["f0"] + int(s["marca_auto"].get("atraso", 0.15) * FPS), "cena_f0": s["f0"], "f1": s["f1"],
                     "pos": s["_marca_pos"]} for s in segs if s.get("_marca_pos")],
         "cortes": [s["f0"] for s in segs[1:]],
+        "impactos": [round(palavras[achar_palavra(palavras, t, 0)]["inicio"] * FPS)
+                     for t in cfg.get("impacto_em", [])],
+        "cta": cfg.get("cta", True),
     }
     (pub / "plano.json").write_text(json.dumps(plano, ensure_ascii=False), encoding="utf-8")
     print(f"Plano Remotion exportado: {pub.relative_to(RAIZ)}/plano.json")
@@ -438,7 +443,12 @@ def editar(projeto: str) -> None:
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lista),
                     "-c", "copy", str(video)], check=True)
 
-    audio = mixar_audio(pasta, segs, palavras, cfg, dur)
+    if MODO_REMOTION:
+        audio = pasta / "saida" / "voz_limpa.wav"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(pasta / "voz.mp3"), "-af",
+                        f"atrim=0:{dur:.3f},loudnorm=I=-14:TP=-1.5:LRA=11", "-ar", "48000", str(audio)], check=True)
+    else:
+        audio = mixar_audio(pasta, segs, palavras, cfg, dur)
     destaques = {_norm(x) for x in cfg.get("destaques", [])}
     ass, srt = gerar_legendas(palavras, destaques, pasta, dur, segs)
 
