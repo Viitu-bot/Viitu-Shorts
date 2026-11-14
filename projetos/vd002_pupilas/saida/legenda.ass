@@ -10,6 +10,7 @@ Style: Viitu,Anton,128,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:02.22,0:00:03.13,Viitu,,0,0,0,,{\an5\pos(550,940)\1a&HFF&\3c&H0000FF&\bord12\shad0\fscx40\fscy40\t(0,180,\fscx105\fscy105)\t(180,260,\fscx100\fscy100)\p1}m 250 0 b 388 0 500 112 500 250 b 500 388 388 500 250 500 b 112 500 0 388 0 250 b 0 112 112 0 250 0{\p0}
 Dialogue: 0,0:00:00.00,0:00:00.56,Viitu,,0,0,0,,{\pos(540,680)\fscx75\fscy75\t(0,90,\fscx100\fscy100)}REPARA
 Dialogue: 0,0:00:00.56,0:00:00.80,Viitu,,0,0,0,,{\pos(540,680)\fscx75\fscy75\t(0,90,\fscx100\fscy100)}NO
 Dialogue: 0,0:00:00.80,0:00:01.04,Viitu,,0,0,0,,{\pos(540,680)\fscx75\fscy75\t(0,90,\fscx100\fscy100)}OLHO

@@ -6,3 +6,6 @@ radar/saida/
 projetos/**/*.mp4
 projetos/**/*.mp3
 projetos/**/*.wav
+
+# mídia baixada
+projetos/**/clipes/

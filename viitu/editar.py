@@ -90,6 +90,7 @@ def montar_linha_do_tempo(palavras: list[dict], cfg: dict, fim_audio: float) -> 
 
 def _filtro_cena(s: dict, entrada: str, eh_foto: bool, n_frames: int, primeira: bool) -> str:
     fx, fy = s.get("foco", [0.5, 0.5])
+    sx, sy = s.get("alvo", [0.5, 0.5])        # ponto do sujeito dentro do recorte (para o zoom)
     z0, z1 = s.get("zoom", [1.0, 1.12])
     efeito = s.get("efeito")
     if efeito in ("girar", "desgirar"):
@@ -108,17 +109,59 @@ def _filtro_cena(s: dict, entrada: str, eh_foto: bool, n_frames: int, primeira: 
                 f"'(iw-min(iw\\,ih*{W}/{H}))*{fx}':'(ih-min(ih\\,iw*{H}/{W}))*{fy}'")
         zexpr = f"{z0}+({z1}-{z0})*on/{max(n_frames - 1, 1)}"
         f = (f"[{entrada}]{crop},scale={W * 2}:{H * 2}:flags=lanczos,"
-             f"zoompan=z='{zexpr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS}")
-    f += ",setsar=1,format=yuv420p"
+             f"zoompan=z='{zexpr}':x='max(0\\,min(iw-iw/zoom\\,iw*{sx}-iw/zoom/2))'"
+             f":y='max(0\\,min(ih-ih/zoom\\,ih*{sy}-ih/zoom/2))':d=1:s={W}x{H}:fps={FPS}")
+    f += ",vignette=PI/5,setsar=1,format=yuv420p"     # bordas escuras guiam o olhar
     if not primeira:
         f += ",fade=t=in:st=0:d=0.12:color=white"   # flash nos cortes
     return f + "[v]"
+
+
+def auto_enquadrar(s: dict, clipe: Path, n_frames: int) -> None:
+    """Acha o sujeito (animal/pessoa) no trecho usado e centraliza o recorte 9:16 nele."""
+    import cv2
+    from viitu.visao import detectar
+    cap = cv2.VideoCapture(str(clipe))
+    fps = cap.get(cv2.CAP_PROP_FPS) or 30
+    iw, ih = cap.get(cv2.CAP_PROP_FRAME_WIDTH), cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    total = cap.get(cv2.CAP_PROP_FRAME_COUNT)
+    dur = n_frames / FPS
+    caixas = []
+    for frac in (0.15, 0.5, 0.85):
+        t = s.get("inicio", 0) + dur * frac
+        cap.set(cv2.CAP_PROP_POS_FRAMES, int(t * fps) % max(int(total), 1))
+        ok, img = cap.read()
+        if ok:
+            d = detectar(img)
+            if d:
+                caixas.append(d[0]["caixa"])
+    cap.release()
+    if not caixas or not iw:
+        return
+    x, y, w, h = (sum(c[i] for c in caixas) / len(caixas) for i in range(4))
+    cx = x + w / 2                      # centro do sujeito (0–1 na largura original)
+    cy = y + h * s.get("cabeca", 0.3)   # um pouco acima do centro: onde costuma estar a cabeça
+    cw = min(iw, ih * W / H) / iw       # largura do recorte 9:16 (fração da largura original)
+    if cw < 1:
+        fx = min(max((cx - cw / 2) / (1 - cw), 0), 1)
+        x0 = fx * (1 - cw)
+        s.setdefault("foco", [round(fx, 3), 0.5])
+        s.setdefault("alvo", [round(min(max((cx - x0) / cw, 0.2), 0.8), 3), round(min(max(cy, 0.2), 0.8), 3)])
+    else:
+        s.setdefault("alvo", [round(cx, 3), round(min(max(cy, 0.2), 0.8), 3)])
+    # sujeito pequeno no quadro → aproxima mais (sem passar de 1,6x)
+    if "zoom" not in s:
+        alvo_h = 0.55
+        z = min(max(alvo_h / max(h, 0.05), 1.0), 1.6)
+        s["zoom"] = [round(z, 2), round(min(z + 0.12, 1.75), 2)]
 
 
 def renderizar_cena(s: dict, pasta: Path, idx: int) -> Path:
     clipe = pasta / "clipes" / s["clipe"]
     eh_foto = clipe.suffix.lower() in (".jpg", ".jpeg", ".png", ".webp")
     n = s["f1"] - s["f0"]
+    if not eh_foto and not s.get("efeito") and "foco" not in s:
+        auto_enquadrar(s, clipe, n)
     saida = pasta / "saida" / "cenas" / f"{idx:03d}.mp4"
     entrada = (["-loop", "1", "-framerate", str(FPS), "-i", str(clipe)] if eh_foto else
                ["-stream_loop", "-1", "-ss", f"{s.get('inicio', 0):.3f}", "-i", str(clipe)])
@@ -136,7 +179,32 @@ def _ass_tempo(t: float) -> str:
     return f"{int(h)}:{int(m):02d}:{s:05.2f}"
 
 
-def gerar_legendas(palavras: list[dict], destaques: set[str], pasta: Path, fim: float) -> tuple[Path, Path]:
+def _circulo(r: int) -> str:
+    """Círculo desenhado de 0 a 2r (o libass centraliza a caixa no \\pos com \\an5)."""
+    k = int(r * 0.5523)
+    c = r
+    return (f"m {c} 0 b {c + k} 0 {2 * r} {c - k} {2 * r} {c} b {2 * r} {c + k} {c + k} {2 * r} {c} {2 * r} "
+            f"b {c - k} {2 * r} 0 {c + k} 0 {c} b 0 {c - k} {c - k} 0 {c} 0")
+
+
+def marcas_ass(segs: list[dict]) -> list[str]:
+    """Círculo vermelho que 'pula' em cima do detalhe, para guiar o olho do espectador."""
+    linhas = []
+    for s in segs:
+        m = s.get("marca")
+        if not m or s.get("dividida"):
+            continue
+        t0, t1 = s["f0"] / FPS + m.get("atraso", 0.15), s["f1"] / FPS
+        r = int(m.get("r", 200))
+        desenho = (rf"{{\an5\pos({m['x']},{m['y']})\1a&HFF&\3c&H0000FF&\bord12\shad0"
+                   rf"\fscx40\fscy40\t(0,180,\fscx105\fscy105)\t(180,260,\fscx100\fscy100)\p1}}"
+                   f"{_circulo(r)}{{\\p0}}")
+        linhas.append(f"Dialogue: 1,{_ass_tempo(t0)},{_ass_tempo(t1)},Viitu,,0,0,0,,{desenho}")
+    return linhas
+
+
+def gerar_legendas(palavras: list[dict], destaques: set[str], pasta: Path, fim: float,
+                   segs: list[dict] | None = None) -> tuple[Path, Path]:
     cab = (
         "[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 2\n\n"
         "[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, "
@@ -158,6 +226,7 @@ def gerar_legendas(palavras: list[dict], destaques: set[str], pasta: Path, fim: 
         linhas.append(f"Dialogue: 0,{_ass_tempo(ini)},{_ass_tempo(fim_p)},Viitu,,0,0,0,,{pop}{cor}{txt}")
         srt.append((ini, fim_p, txt))
     ass = pasta / "saida" / "legenda.ass"
+    linhas = marcas_ass(segs or []) + linhas
     ass.write_text(cab + "\n".join(linhas) + "\n", encoding="utf-8")
     def ts(t):
         ms = int(round(t * 1000)); h, ms = divmod(ms, 3600000); m, ms = divmod(ms, 60000); s, ms = divmod(ms, 1000)
@@ -217,7 +286,7 @@ def editar(projeto: str) -> None:
 
     audio = mixar_audio(pasta, segs, palavras, cfg, dur)
     destaques = {_norm(x) for x in cfg.get("destaques", [])}
-    ass, srt = gerar_legendas(palavras, destaques, pasta, dur)
+    ass, srt = gerar_legendas(palavras, destaques, pasta, dur, segs)
 
     base = pasta / "saida" / "short_base.mp4"
     final = pasta / "saida" / "short_final.mp4"

@@ -1,41 +1,62 @@
 ---
 name: clipes
-description: Encontra e baixa vídeos/fotos para representar o tema escolhido do Viitu Shorts (Pixabay, Wikimedia Commons, clipes do usuário via Google Drive). Use quando o usuário digitar /clipes ou pedir vídeos/cenas para o tema.
+description: Escolhe e baixa os VÍDEOS que representam cada frase do roteiro do Viitu Shorts, por função psicológica, analisando os clipes de verdade (nitidez, movimento, onde está o sujeito). Use quando o usuário digitar /clipes ou pedir cenas para o tema/roteiro.
 ---
 
-# /clipes
+# /clipes: escolher cenas como um editor
 
-Objetivo: montar a **paleta visual** do vídeo: uma cena forte para cada ideia/palavra-gatilho do roteiro.
+Regra de ouro: **vídeo, não foto.** Foto só para uma prova visual impossível em vídeo (ex.: macro
+de pupila) ou para uma demonstração com efeito, no máximo 2 vezes por vídeo.
+**Clipe-âncora primeiro:** se existir um vídeo real do fenômeno (Reddit/TikTok/Douyin, enviado
+pelo usuário via link do Drive ou TikTok), ele é a espinha do vídeo e o stock só completa.
 
-## Passos
+## 1. Plano de cenas por GATILHO PSICOLÓGICO
+Para cada frase do roteiro, defina a função da cena antes do objeto citado:
 
-1. **Lista de cenas:** a partir do tema (e do roteiro, se já existir), liste de 8 a 15 cenas.
-   Cada cena = o que a tela precisa mostrar (ex.: "close da pupila horizontal da cabra").
-   A cena do **frame 0** (gancho) é a mais importante: tem que ser a imagem mais impressionante.
+| Função | Quando usar | Cena típica |
+|---|---|---|
+| **Contato visual** | gancho, chamada para comentar | animal ou pessoa olhando para a câmera |
+| **Ameaça se aproximando** | predador, perigo, "quem caça" | animal vindo em direção à câmera |
+| **Arco de ação** (início-meio-fim) | explicação de comportamento | algo para, reage e age (ex.: cervo alerta → foge) |
+| **Payoff** | a palavra que fecha a ideia ("bote", "explode") | o momento exato da ação |
+| **Prova** | "não é redondo", "olha isso" | close/macro do detalhe + círculo vermelho |
+| **Quebra de padrão** | "Mas tem um porém" | punch-in brusco + som de impacto |
+| **Espelho** | "e você?", "a nossa..." | olho/rosto humano: o espectador se vê |
+| **Loop** | última frase | o mesmo quadro do frame 0 |
 
-2. **Buscar no Pixabay** (fonte principal, vídeo livre e sem crédito obrigatório):
-   ```
-   python3 -m viitu.clipes buscar "<termo curto em inglês>" -n 4 --miniaturas <scratchpad>/mini/<cena>
-   ```
-   - Use **termos curtos** (2 palavras: "goat eye", "gecko eye"). Termos longos trazem lixo.
-   - Monte uma prancha das miniaturas com ffmpeg (`tile=4xN`) e **olhe** (Read) para escolher.
-   - Evite vídeos marcados "ai generated" quando houver opção real.
+Anote a função no `cenas.json` (campo `_funcao`).
 
-3. **Reserva: Wikimedia Commons** (fotos de alta qualidade, licença livre; instável na nuvem, erro 429):
-   `--fontes commons`. Foto entra no vídeo com zoom lento.
+## 2. Buscar e ANALISAR candidatos (nunca escolher por miniatura)
+```
+python3 -m viitu.visao candidatos "goat eating" "cat stalking" ... -n 6 --saida <scratchpad>/cand
+```
+- Termos curtos em inglês (2 palavras). Vários termos por função.
+- A ferramenta baixa a versão leve, mede **nitidez**, **movimento** e **sujeito** (YOLO) em 8
+  quadros ao longo do clipe e gera `prancha_<id>.jpg`.
+- Empilhe as pranchas dos melhores (`ffmpeg -filter_complex vstack`) e **olhe** (Read).
+- Prefira: rosto/olho visível, ação acontecendo, sujeito grande. Descarte: costas, corpo sem
+  cabeça, desfocado, parado.
+- Anote o **segundo exato** (`inicio`) do trecho bom de cada clipe.
 
-4. **Clipes do usuário** (Reddit/TikTok/Douyin): o usuário baixa no celular, sobe no Google Drive
-   e manda o link compartilhado. YouTube e Reddit bloqueiam downloads a partir da nuvem.
+## 3. Baixar em HD os escolhidos
+```
+python3 -m viitu.clipes baixar <projeto> pixabay <id>
+python3 -m viitu.clipes baixar <projeto> pixabay-foto <id>
+```
 
-5. **Baixar os escolhidos:**
-   ```
-   python3 -m viitu.clipes baixar <projeto> pixabay <id>
-   ```
-   Projeto = `vdNNN_<slug>` (ex.: `vd002_pupilas`). Os créditos vão para `projetos/<projeto>/creditos.txt`.
+## 4. cenas.json
+- `"em"`: trecho da narração onde a cena começa · `"clipe"` · `"inicio"` (segundo no clipe)
+- Sem `"foco"`: o editor **enquadra sozinho no sujeito** (YOLO). Se o detector pegar o corpo
+  em vez da cabeça, defina `"foco": [x, 0.5]` (posição do recorte 9:16) e `"alvo": [x, y]`
+  (para onde o zoom vai, dentro do recorte).
+- `"marca": {"x":..,"y":..,"r":..}`: círculo vermelho sobre o detalhe (coordenadas 1080x1920).
+- `"efeito": "girar" | "desgirar"` para demonstrações.
 
-6. **Responder curto:** cenas encontradas (✅), cenas faltando (❌) e o que o usuário precisa
-   mandar pelo Drive, se for o caso. Mídia não vai para o git (`.gitignore`).
+## 5. Revisão obrigatória
+Depois do render, extraia ~25 quadros (um por cena) numa prancha e olhe. Corrija
+enquadramento e cenas ruins **antes** de mandar ao usuário.
 
-## Fontes descartadas
-- Pexels: a chave salva no cofre recebe prefixo "Bearer" e o Pexels recusa (401).
-- YouTube Creative Commons: resultados irrelevantes.
+## Fontes
+- Pixabay (principal, livre), Wikimedia Commons (reserva, instável na nuvem).
+- Clipes do usuário: TikTok por link direto (tentar baixar), Reddit/YouTube via link do Drive.
+- Nunca remover marca d'água de vídeo de terceiros; dar crédito na descrição.
