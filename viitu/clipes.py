@@ -1,12 +1,14 @@
 """Busca e download de imagens/vídeos para representar o tema.
 
 Fontes:
+  pixabay  Pixabay: vídeos grátis em HD/4K, uso comercial, sem crédito obrigatório (PIXABAY_API_KEY no .env)
   commons  Wikimedia Commons: fotos e vídeos com licença livre, download direto (sem chave)
   pexels   Pexels: vídeos de stock grátis, uso comercial (precisa de PEXELS_API_KEY no .env)
   youtube  YouTube com licença Creative Commons: só links (a nuvem não baixa do YouTube)
 
 Uso:
-  python -m viitu.clipes buscar "goat eye close up" [--fontes commons,pexels,youtube]
+  python -m viitu.clipes buscar "goat eye close up" [--fontes pixabay,commons] [--miniaturas pasta]
+  python -m viitu.clipes baixar <projeto> pixabay 203476
   python -m viitu.clipes baixar <projeto> commons "File:Closeup of goat eye.jpg"
   python -m viitu.clipes baixar <projeto> pexels 1234567
 
@@ -108,6 +110,42 @@ def commons_baixar(titulo: str, destino: Path) -> tuple[Path, str]:
     return arq, credito
 
 
+# ---------- Pixabay (fonte principal) ----------
+
+def pixabay_buscar(termo: str, n: int = 8) -> list[dict]:
+    chave = _env("PIXABAY_API_KEY")
+    if not chave:
+        return [{"fonte": "pixabay", "id": "-", "tipo": "-", "tamanho": "-", "licenca": "-",
+                 "autor": "", "link": "SEM CHAVE: adicione PIXABAY_API_KEY ao .env"}]
+    r = requests.get("https://pixabay.com/api/videos/", timeout=30,
+                     params={"key": chave, "q": termo, "per_page": max(n, 3), "safesearch": "true"}).json()
+    saida = []
+    for h in r.get("hits", [])[:n]:
+        g = h["videos"].get("large") or h["videos"]["medium"]
+        saida.append({
+            "fonte": "pixabay", "id": str(h["id"]), "tipo": f"video {h['duration']}s",
+            "tamanho": f"{g['width']}x{g['height']}", "licenca": "Pixabay (livre)",
+            "autor": h.get("user", ""), "link": h.get("pageURL", ""),
+            "miniatura": h["videos"]["medium"].get("thumbnail", ""),
+            "tags": h.get("tags", ""),
+        })
+    return saida
+
+
+def pixabay_baixar(vid: str, destino: Path) -> tuple[Path, str]:
+    chave = _env("PIXABAY_API_KEY")
+    r = requests.get("https://pixabay.com/api/videos/", timeout=30, params={"key": chave, "id": vid}).json()
+    h = r["hits"][0]
+    v = h["videos"]
+    # prefere ~1080p (leve); 4K só se não houver outra opção
+    opcoes = [v[k] for k in ("medium", "large", "small") if v.get(k, {}).get("url")]
+    boas = [o for o in opcoes if min(o["width"], o["height"]) >= 1080]
+    escolha = min(boas, key=lambda o: o["width"] * o["height"]) if boas else max(opcoes, key=lambda o: o["width"])
+    arq = destino / f"pixabay_{vid}.mp4"
+    arq.write_bytes(requests.get(escolha["url"], timeout=300).content)
+    return arq, f"Vídeo {vid} — {h.get('user', '')} — Pixabay ({h.get('pageURL')})"
+
+
 # ---------- Pexels ----------
 
 def pexels_buscar(termo: str, n: int = 8) -> list[dict]:
@@ -163,7 +201,9 @@ def youtube_cc_buscar(termo: str, n: int = 8) -> list[dict]:
     return saida
 
 
-FONTES = {"commons": commons_buscar, "pexels": pexels_buscar, "youtube": youtube_cc_buscar}
+FONTES = {"pixabay": pixabay_buscar, "commons": commons_buscar,
+          "pexels": pexels_buscar, "youtube": youtube_cc_buscar}
+BAIXAR = {"pixabay": pixabay_baixar, "commons": commons_baixar, "pexels": pexels_baixar}
 
 
 def main() -> None:
@@ -171,11 +211,12 @@ def main() -> None:
     sub = p.add_subparsers(dest="modo", required=True)
     b = sub.add_parser("buscar")
     b.add_argument("termo")
-    b.add_argument("--fontes", default="commons,pexels")
+    b.add_argument("--fontes", default="pixabay")
+    b.add_argument("--miniaturas", help="pasta onde salvar as miniaturas (para escolher a cena olhando)")
     b.add_argument("-n", type=int, default=8)
     d = sub.add_parser("baixar")
     d.add_argument("projeto")
-    d.add_argument("fonte", choices=["commons", "pexels"])
+    d.add_argument("fonte", choices=list(BAIXAR))
     d.add_argument("id")
     a = p.parse_args()
 
@@ -183,12 +224,18 @@ def main() -> None:
         for fonte in a.fontes.split(","):
             print(f"== {fonte}: {a.termo}")
             for r in FONTES[fonte.strip()](a.termo, a.n):
-                print(f"  [{r['tipo']}] {r['tamanho']} | {r['licenca']} | {r['autor']} | {r['id']} | {r['link']}")
+                print(f"  [{r['tipo']}] {r['tamanho']} | {r['licenca']} | {r['autor']} | {r['id']} | "
+                      f"{r.get('tags', '')[:60]} | {r['link']}")
+                if a.miniaturas and r.get("miniatura"):
+                    pasta_m = Path(a.miniaturas)
+                    pasta_m.mkdir(parents=True, exist_ok=True)
+                    (pasta_m / f"{r['fonte']}_{r['id']}.jpg").write_bytes(
+                        requests.get(r["miniatura"], timeout=30).content)
     else:
         pasta = RAIZ / "projetos" / a.projeto
         destino = pasta / "clipes"
         destino.mkdir(parents=True, exist_ok=True)
-        arq, credito = (commons_baixar if a.fonte == "commons" else pexels_baixar)(a.id, destino)
+        arq, credito = BAIXAR[a.fonte](a.id, destino)
         with (pasta / "creditos.txt").open("a", encoding="utf-8") as f:
             f.write(credito + "\n")
         print(f"Baixado: {arq.relative_to(RAIZ)} ({arq.stat().st_size // 1024} KB)\nCrédito: {credito}")
