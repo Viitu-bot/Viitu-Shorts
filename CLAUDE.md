@@ -26,6 +26,14 @@ Clipes do usuário chegam por **link do Google Drive** (YouTube e Reddit bloquei
 - Legenda: 1 palavra por vez, branca/amarela. Adesivos de COMENTA/LIKE/INSCRITO no fim.
 - Stock (Pixabay) só como complemento. Clipe horizontal cortado para 9:16 fica ruim.
 
+## O que faz um Short dar certo (ordem de peso, definida com o dono)
+1. **Tema validado** (maior peso): já fez milhões em outro idioma e não tem versão forte em PT-BR.
+2. **Gancho nos 2 primeiros segundos:** a frase manda olhar ("Repara no olho dessa cabra") e o
+   frame 0 mostra exatamente isso, em tela cheia, de preferência com contato visual. Abrir uma
+   lacuna ("...e ele faz uma coisa que o seu não faz"), nunca entregar a resposta no gancho.
+3. **Clipes e edição:** seguram quem ficou. Clipe de terceiros (ex.: NatGeo) entra como PROVA no
+   meio, não no gancho; o gancho usa imagem livre sempre que possível.
+
 ## Protocolo HISA (roteiro)
 - **REGRA DE DURAÇÃO (definitiva, nov/2026). Só existem 2 formatos:**
   - **LONGO = 45 a 60 s** (110–150 palavras). **É o padrão.** Exige 1 clipe-âncora + 2 a 4 clipes reais
