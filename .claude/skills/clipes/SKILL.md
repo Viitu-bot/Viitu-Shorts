@@ -26,6 +26,18 @@ Para cada frase do roteiro, defina a função da cena antes do objeto citado:
 
 Anote a função no `cenas.json` (campo `_funcao`).
 
+**Emoção acima de representação.** A cena não basta ilustrar a frase: ela precisa fazer quem
+assiste SENTIR a ideia. Defina `_emocao` para cada frase e busque a cena que provoca isso:
+- "presa / perigo" → predador vindo NA DIREÇÃO da câmera (o espectador vira a presa)
+- "fugir / escapar" → o momento do disparo (pico de movimento cai na palavra)
+- "vigiar / alerta" → animal sentinela virando a cabeça
+Use termos de ação na busca ("cheetah chase", "rabbit running", "meerkat") e ordene por
+movimento. Evite clipes com tag "ai generated" (exigem aviso de conteúdo sintético no YouTube).
+
+**Câmera virtual (padrão para vídeo):** sem `foco` manual, o editor rastreia o ponto de atenção
+(sujeito; ou centro entre dois sujeitos em cena de ação; ou a parte descrita em `sujeito`) ~5x/s
+e faz um pan suave com keyframes a cada 0,25 s. `"seguir": false` desliga.
+
 ## 2. Buscar e ANALISAR candidatos (nunca escolher por miniatura)
 ```
 python3 -m viitu.visao candidatos "goat eating" "cat stalking" ... -n 6 --saida <scratchpad>/cand

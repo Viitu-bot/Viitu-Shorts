@@ -111,6 +111,11 @@ def _filtro_cena(s: dict, entrada: str, eh_foto: bool, n_frames: int, primeira: 
              f"eq=brightness=-0.15[bgb];"
              f"[fg]scale={int(W * 1.15)}:-2,format=rgba,rotate='{expr}':c=black@0:ow=hypot(iw\\,ih):oh=ow[fgr];"
              f"[bgb][fgr]overlay=(W-w)/2:(H-h)/2:shortest=1,fps={FPS}")
+    elif s.get("_cam"):
+        c = s["_cam"]
+        f = (f"[{entrada}]{_lento(s)}setpts=PTS-STARTPTS,"
+             f"crop={c['w']}:{c['h']}:'{_expr_keyframes(c['t'], c['x'])}':'{_expr_keyframes(c['t'], c['y'])}',"
+             f"scale={W}:{H}:flags=lanczos,fps={FPS}")
     elif s.get("layout") == "inteiro":
         # clipe inteiro (sem cortar nada, logo/crédito visível) sobre ele mesmo desfocado
         fh = s["_fh"]
@@ -228,6 +233,81 @@ def enquadrar_por_texto(s: dict, clipe: Path, n_frames: int) -> bool:
     return True
 
 
+def camera_virtual(s: dict, clipe: Path, n_frames: int) -> bool:
+    """Câmera que acompanha o ponto de atenção ao longo da cena (keyframes suavizados).
+    Atenção = sujeito principal; em cena de ação com 2 sujeitos grandes, o centro entre eles.
+    Com "sujeito" (texto), usa o OWLv2 nessa parte do animal."""
+    import cv2
+    from viitu.visao import detectar
+    vel = float(s.get("velocidade", 1.0))
+    t0 = s.get("inicio", 0)
+    dur = n_frames / FPS
+    cap = cv2.VideoCapture(str(clipe))
+    fps = cap.get(cv2.CAP_PROP_FPS) or 30
+    iw, ih = cap.get(cv2.CAP_PROP_FRAME_WIDTH), cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    total = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    amostras = max(4, min(int(dur * 5), 16))          # ~5 leituras por segundo
+    tempos = [dur * k / (amostras - 1) for k in range(amostras)]   # tempo na cena (saída)
+    pontos = []
+    if s.get("sujeito"):
+        from viitu.inteligencia import localizar
+        cap.release()
+        achados = localizar(clipe, s["sujeito"], t0, t0 + dur * vel, passos=min(amostras, 8))
+        for a in achados:
+            mult = 8 if "eye" in s["sujeito"] else 1.3   # olho → cabeça inteira com folga
+            pontos.append(((a["t"] - t0) / vel, a["x"] + a["w"] / 2, a["y"] + a["h"] / 2, a["h"] * mult))
+    else:
+        for tc in tempos:
+            cap.set(cv2.CAP_PROP_POS_FRAMES, min(int((t0 + tc * vel) * fps), max(total - 1, 0)))
+            ok, img = cap.read()
+            if not ok:
+                continue
+            d = detectar(img)
+            if not d:
+                continue
+            x, y, w, h = d[0]["caixa"]
+            if len(d) > 1 and d[1]["caixa"][2] * d[1]["caixa"][3] > 0.3 * w * h:   # ação entre dois
+                x2, y2, w2, h2 = d[1]["caixa"]
+                xa, ya = min(x, x2), min(y, y2)
+                w, h = max(x + w, x2 + w2) - xa, max(y + h, y2 + h2) - ya
+                x, y = xa, ya
+            pontos.append((tc, x + w / 2, y + h * s.get("cabeca", 0.35), h))
+        cap.release()
+    if len(pontos) < 2:
+        return False
+    # suavização: média ponderada no tempo (sem tremer) e limite de velocidade de pan
+    ts = np.array([p[0] for p in pontos])
+    cx = np.array([p[1] for p in pontos])
+    cy = np.array([p[2] for p in pontos])
+    hs = np.array([p[3] for p in pontos])
+    kt = np.linspace(0, dur, max(int(dur * 4) + 1, 2))           # keyframe a cada 0,25 s
+    kx = np.interp(kt, ts, cx)
+    ky = np.interp(kt, ts, cy)
+    for _ in range(2):                                            # duas passadas de suavização
+        kx = np.convolve(np.pad(kx, 2, mode="edge"), np.ones(5) / 5, mode="valid")
+        ky = np.convolve(np.pad(ky, 2, mode="edge"), np.ones(5) / 5, mode="valid")
+    # tamanho do recorte: sujeito ocupando ~55% da altura (ou o zoom pedido), sempre 9:16
+    z = s["zoom"][0] if "zoom" in s else float(min(max(0.55 / max(np.median(hs), 0.05), 1.0), 1.8))
+    ch = ih / z
+    cw = ch * W / H
+    if cw > iw:
+        cw, ch = iw, iw * H / W
+    xs = np.clip(kx * iw - cw / 2, 0, iw - cw)
+    ys = np.clip(ky * ih - ch / 2, 0, ih - ch)
+    s["_cam"] = {"t": kt.round(3).tolist(), "x": xs.round(1).tolist(), "y": ys.round(1).tolist(),
+                 "w": round(cw / 2) * 2, "h": round(ch / 2) * 2}
+    return True
+
+
+def _expr_keyframes(ts: list, vs: list) -> str:
+    """Expressão FFmpeg piecewise-linear (interpolação entre keyframes) em função de t."""
+    e = f"{vs[-1]}"
+    for i in range(len(ts) - 2, -1, -1):
+        t0, t1, v0, v1 = ts[i], ts[i + 1], vs[i], vs[i + 1]
+        e = f"if(lt(t\\,{t1})\\,{v0}+({v1 - v0:.1f})*(t-{t0})/{max(t1 - t0, 0.001):.3f}\\,{e})"
+    return e
+
+
 def auto_enquadrar(s: dict, clipe: Path, n_frames: int) -> None:
     """Acha o sujeito (animal/pessoa) no trecho usado e centraliza o recorte 9:16 nele."""
     import cv2
@@ -280,7 +360,8 @@ def renderizar_cena(s: dict, pasta: Path, idx: int) -> Path:
         cap.release()
         s["_fh"] = int(round(W * ih / iw / 2) * 2)
     elif not eh_foto and not s.get("efeito") and "foco" not in s:
-        auto_enquadrar(s, clipe, n)
+        if not (s.get("seguir", True) and camera_virtual(s, clipe, n)):
+            auto_enquadrar(s, clipe, n)
     saida = pasta / "saida" / "cenas" / f"{idx:03d}.mp4"
     entrada = (["-loop", "1", "-framerate", str(FPS), "-i", str(clipe)] if eh_foto else
                ["-stream_loop", "-1", "-ss", f"{s.get('inicio', 0):.3f}", "-i", str(clipe)])

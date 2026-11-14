@@ -59,27 +59,27 @@
   {
    "em": "ela vigia",
    "clipe": "pixabay_9945.mp4",
-   "inicio": 9.8,
+   "inicio": 10.6,
    "_funcao": "cabra levanta a cabeça",
    "sujeito": "the eye of a goat"
   },
   {
    "em": "Pupila deitada",
-   "clipe": "pixabay_13023.mp4",
-   "inicio": 1.7,
-   "_funcao": "CLIP: deer standing alert"
+   "clipe": "pixabay_264353.mp4",
+   "inicio": 3.0,
+   "_emocao": "perigo: o leão vem na direção de quem assiste (você é a presa)"
   },
   {
    "em": "enxerga quase tudo",
-   "clipe": "pixabay_13023.mp4",
-   "inicio": 8.0,
-   "_funcao": "cervo olhando em volta"
+   "clipe": "pixabay_243148.mp4",
+   "inicio": 0.9,
+   "_emocao": "vigília: suricato sentinela vira a cabeça na palavra 'quase'"
   },
   {
    "em": "pra fugir",
-   "clipe": "pixabay_13023.mp4",
-   "inicio": 15.76,
-   "_funcao": "pico de ação (fuga, 15,88 s) cai na palavra 'fugir'"
+   "clipe": "pixabay_117293.mp4",
+   "inicio": 11.9,
+   "_emocao": "fuga: a lebre dispara (pico 12,5 s) na palavra 'fugir'"
   },
   {
    "em": "E da próxima vez",
@@ -110,5 +110,6 @@
   "horizonte",
   "presa",
   "fugir"
- ]
+ ],
+ "_criterio": "cada cena tem _funcao/_emocao: representar a frase E provocar a emoção dela"
 }
