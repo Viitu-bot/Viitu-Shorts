@@ -32,6 +32,8 @@ import subprocess
 import unicodedata
 from pathlib import Path
 
+import numpy as np
+
 RAIZ = Path(__file__).resolve().parent.parent
 W, H, FPS = 1080, 1920, 30
 MAX_CENA = 3.2      # cena maior que isso é dividida (regra dos 2–3 s)
@@ -69,7 +71,7 @@ def montar_linha_do_tempo(palavras: list[dict], cfg: dict, fim_audio: float) -> 
         pendentes = [s]
         while pendentes:
             x = pendentes.pop(0)
-            if x["t1"] - x["t0"] <= MAX_CENA or x.get("efeito"):
+            if x["t1"] - x["t0"] <= MAX_CENA or x.get("efeito") or x.get("manter"):
                 final.append(x)
                 continue
             meio = (x["t0"] + x["t1"]) / 2
@@ -88,6 +90,11 @@ def montar_linha_do_tempo(palavras: list[dict], cfg: dict, fim_audio: float) -> 
     return [s for s in final if s["f1"] > s["f0"]]
 
 
+def _lento(s: dict) -> str:
+    v = float(s.get("velocidade", 1.0))
+    return "" if v == 1.0 else f"setpts=PTS/{v},framerate=fps={FPS}:interp_start=0:interp_end=255,"
+
+
 def _filtro_cena(s: dict, entrada: str, eh_foto: bool, n_frames: int, primeira: bool) -> str:
     fx, fy = s.get("foco", [0.5, 0.5])
     sx, sy = s.get("alvo", [0.5, 0.5])        # ponto do sujeito dentro do recorte (para o zoom)
@@ -103,12 +110,23 @@ def _filtro_cena(s: dict, entrada: str, eh_foto: bool, n_frames: int, primeira: 
              f"eq=brightness=-0.15[bgb];"
              f"[fg]scale={int(W * 1.15)}:-2,format=rgba,rotate='{expr}':c=black@0:ow=hypot(iw\\,ih):oh=ow[fgr];"
              f"[bgb][fgr]overlay=(W-w)/2:(H-h)/2:shortest=1,fps={FPS}")
+    elif s.get("layout") == "inteiro":
+        # clipe inteiro (sem cortar nada, logo/crédito visível) sobre ele mesmo desfocado
+        fh = s["_fh"]
+        zexpr = f"{z0}+({z1}-{z0})*on/{max(n_frames - 1, 1)}"
+        f = (f"[{entrada}]{_lento(s)}split=2[bg][fg];"
+             f"[bg]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=28:3,"
+             f"eq=brightness=0.04:saturation=1.15[bgb];"
+             f"[fg]scale={W * 2}:{fh * 2}:flags=lanczos,"
+             f"zoompan=z='{zexpr}':x='max(0\\,min(iw-iw/zoom\\,iw*{sx}-iw/zoom/2))'"
+             f":y='max(0\\,min(ih-ih/zoom\\,ih*{sy}-ih/zoom/2))':d=1:s={W}x{fh}:fps={FPS}[fgz];"
+             f"[bgb][fgz]overlay=0:{(H - fh) // 2}:shortest=1,fps={FPS}")
     else:
         # recorte 9:16 no ponto de foco, depois zoom suave (Ken Burns) com zoompan
         crop = (f"crop='min(iw\\,ih*{W}/{H})':'min(ih\\,iw*{H}/{W})':"
                 f"'(iw-min(iw\\,ih*{W}/{H}))*{fx}':'(ih-min(ih\\,iw*{H}/{W}))*{fy}'")
         zexpr = f"{z0}+({z1}-{z0})*on/{max(n_frames - 1, 1)}"
-        f = (f"[{entrada}]{crop},scale={W * 2}:{H * 2}:flags=lanczos,"
+        f = (f"[{entrada}]{_lento(s)}{crop},scale={W * 2}:{H * 2}:flags=lanczos,"
              f"zoompan=z='{zexpr}':x='max(0\\,min(iw-iw/zoom\\,iw*{sx}-iw/zoom/2))'"
              f":y='max(0\\,min(ih-ih/zoom\\,ih*{sy}-ih/zoom/2))':d=1:s={W}x{H}:fps={FPS}")
     f += ",vignette=PI/5,setsar=1,format=yuv420p"     # bordas escuras guiam o olhar
@@ -117,10 +135,101 @@ def _filtro_cena(s: dict, entrada: str, eh_foto: bool, n_frames: int, primeira: 
     return f + "[v]"
 
 
+def _para_tela(s: dict, ex: float, ey: float, z: float, iw: float, ih: float) -> tuple[float, float, float]:
+    """Converte ponto (0–1 no clipe original) para pixels na tela 1080x1920. Retorna (x, y, escala)."""
+    sx, sy = s.get("alvo", [0.5, 0.5])
+    j = 1 / z
+    if s.get("layout") == "inteiro":
+        fh = s["_fh"]
+        x0 = min(max(sx - j / 2, 0), 1 - j)
+        y0 = min(max(sy - j / 2, 0), 1 - j)
+        return (ex - x0) / j * W, (H - fh) / 2 + (ey - y0) / j * fh, W / j
+    fx, fy = s.get("foco", [0.5, 0.5])
+    cw = min(1.0, ih * W / H / iw)
+    ch = min(1.0, iw * H / W / ih)
+    cx0, cy0 = (1 - cw) * fx, (1 - ch) * fy
+    px, py = (ex - cx0) / cw, (ey - cy0) / ch
+    x0 = min(max(sx - j / 2, 0), 1 - j)
+    y0 = min(max(sy - j / 2, 0), 1 - j)
+    return (px - x0) / j * W, (py - y0) / j * H, W / cw / j
+
+
+def marca_que_segue(s: dict, clipe: Path, n: int, pasta: Path, idx: int) -> Path | None:
+    """Localiza o objeto descrito (OWLv2), rastreia e desenha o círculo animado em cima dele."""
+    import cv2
+    from viitu.animacao import circulo_animado
+    from viitu.inteligencia import localizar
+    m = s["marca_auto"]
+    vel = float(s.get("velocidade", 1.0))
+    t0 = s.get("inicio", 0)
+    t1 = t0 + n / FPS * vel
+    pontos = localizar(clipe, m["texto"], t0, t1, passos=max(4, min(10, int((t1 - t0) * 3) + 2)))
+    if not pontos:
+        print(f"    aviso: não achei '{m['texto']}' em {clipe.name}")
+        return None
+    cap = cv2.VideoCapture(str(clipe))
+    iw, ih = cap.get(cv2.CAP_PROP_FRAME_WIDTH), cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    cap.release()
+    ts = [p["t"] for p in pontos]
+    z0, z1 = s.get("zoom", [1.0, 1.12])
+    pos = []
+    for i in range(n):
+        t = t0 + i / FPS * vel
+        cx = float(np.interp(t, ts, [p["x"] + p["w"] / 2 for p in pontos]))
+        cy = float(np.interp(t, ts, [p["y"] + p["h"] / 2 for p in pontos]))
+        tam = float(np.interp(t, ts, [max(p["w"], p["h"] * ih / iw) for p in pontos]))
+        z = z0 + (z1 - z0) * i / max(n - 1, 1)
+        x, y, esc = _para_tela(s, cx, cy, z, iw, ih)
+        pos.append((x, y, min(max(tam * esc * 0.62, 70), 320)))
+    # suaviza o tremido da detecção (média móvel)
+    k = 7
+    xs = np.convolve([p[0] for p in pos], np.ones(k) / k, mode="same")
+    ys = np.convolve([p[1] for p in pos], np.ones(k) / k, mode="same")
+    for i in range(min(k // 2, n)):
+        xs[i], ys[i] = pos[i][0], pos[i][1]
+        xs[-1 - i], ys[-1 - i] = pos[-1 - i][0], pos[-1 - i][1]
+    pos = [(float(a), float(b), p[2]) for a, b, p in zip(xs, ys, pos)]
+    saida = pasta / "saida" / "cenas" / f"{idx:03d}_marca.mov"
+    return circulo_animado(pos, saida, atraso_frames=int(m.get("atraso", 0.15) * FPS))
+
+
+def enquadrar_por_texto(s: dict, clipe: Path, n_frames: int) -> bool:
+    """Enquadra no objeto descrito (ex.: 'the head of a goat') com OWLv2. Mais preciso que o YOLO
+    quando o importante é uma parte do animal (cabeça, olho) e não o corpo inteiro."""
+    import cv2
+    from viitu.inteligencia import localizar
+    t0 = s.get("inicio", 0)
+    t1 = t0 + n_frames / FPS * float(s.get("velocidade", 1.0))
+    pts = localizar(clipe, s["sujeito"], t0, t1, passos=3)
+    if not pts:
+        print(f"    aviso: não achei '{s['sujeito']}' em {clipe.name}; usando YOLO")
+        return False
+    cap = cv2.VideoCapture(str(clipe))
+    iw, ih = cap.get(cv2.CAP_PROP_FRAME_WIDTH), cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    cap.release()
+    cx = sum(p["x"] + p["w"] / 2 for p in pts) / len(pts)
+    cy = sum(p["y"] + p["h"] / 2 for p in pts) / len(pts)
+    h = sum(p["h"] for p in pts) / len(pts)
+    if "eye" in s["sujeito"]:
+        h = h * 4          # a cabeça tem ~4x a altura do olho
+    cw = min(iw, ih * W / H) / iw
+    fx = min(max((cx - cw / 2) / (1 - cw), 0), 1) if cw < 1 else 0.5
+    x0 = fx * (1 - cw)
+    s.setdefault("foco", [round(fx, 3), 0.5])
+    # cabeça um pouco acima do centro (regra dos terços: olhos na linha de cima)
+    s.setdefault("alvo", [round(min(max((cx - x0) / cw, 0.2), 0.8), 3), round(min(max(cy + 0.04, 0.25), 0.75), 3)])
+    if "zoom" not in s:
+        z = min(max(0.38 / max(h, 0.05), 1.0), 1.7)      # cabeça ocupando ~38% da altura
+        s["zoom"] = [round(z, 2), round(min(z + 0.1, 1.8), 2)]
+    return True
+
+
 def auto_enquadrar(s: dict, clipe: Path, n_frames: int) -> None:
     """Acha o sujeito (animal/pessoa) no trecho usado e centraliza o recorte 9:16 nele."""
     import cv2
     from viitu.visao import detectar
+    if s.get("sujeito") and enquadrar_por_texto(s, clipe, n_frames):
+        return
     cap = cv2.VideoCapture(str(clipe))
     fps = cap.get(cv2.CAP_PROP_FPS) or 30
     iw, ih = cap.get(cv2.CAP_PROP_FRAME_WIDTH), cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
@@ -160,7 +269,13 @@ def renderizar_cena(s: dict, pasta: Path, idx: int) -> Path:
     clipe = pasta / "clipes" / s["clipe"]
     eh_foto = clipe.suffix.lower() in (".jpg", ".jpeg", ".png", ".webp")
     n = s["f1"] - s["f0"]
-    if not eh_foto and not s.get("efeito") and "foco" not in s:
+    if s.get("layout") == "inteiro":
+        import cv2
+        cap = cv2.VideoCapture(str(clipe))
+        iw, ih = cap.get(cv2.CAP_PROP_FRAME_WIDTH), cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
+        cap.release()
+        s["_fh"] = int(round(W * ih / iw / 2) * 2)
+    elif not eh_foto and not s.get("efeito") and "foco" not in s:
         auto_enquadrar(s, clipe, n)
     saida = pasta / "saida" / "cenas" / f"{idx:03d}.mp4"
     entrada = (["-loop", "1", "-framerate", str(FPS), "-i", str(clipe)] if eh_foto else
@@ -170,6 +285,15 @@ def renderizar_cena(s: dict, pasta: Path, idx: int) -> Path:
            "-frames:v", str(n), "-r", str(FPS), "-an", "-c:v", "libx264", "-preset", "veryfast",
            "-crf", "18", str(saida)]
     subprocess.run(cmd, check=True)
+    if s.get("marca_auto") and not s.get("dividida"):
+        mov = marca_que_segue(s, clipe, n, pasta, idx)
+        if mov:
+            tmp = saida.with_name(saida.stem + "_m.mp4")
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(saida), "-i", str(mov),
+                            "-filter_complex", "[0:v][1:v]overlay=0:0:shortest=1,format=yuv420p[v]",
+                            "-map", "[v]", "-frames:v", str(n), "-c:v", "libx264", "-preset", "veryfast",
+                            "-crf", "18", str(tmp)], check=True)
+            tmp.replace(saida)
     return saida
 
 

@@ -1,13 +1,12 @@
 # vd002: Pupilas dos animais (postagem: domingo 2026-11-15)
 
+> Versão curta (~25 s) montada em volta do clipe-âncora (NatGeo, enviado pelo usuário). Crédito na descrição: "Imagens da cabra: National Geographic".
+
 ## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs)
-Repara no olho dessa cabra. Não é redondo.
-A maioria acha que é só um defeito esquisito. Mas o formato da pupila entrega quem caça e quem é caçado.
-Pupila em pé, como a do gato e a do crocodilo, é de caçador de tocaia: ajuda a calcular a distância exata do bote.
-Pupila deitada é de presa: enxerga quase tudo em volta pra fugir a tempo.
-Mas tem um porém: a cabra passa o dia de cabeça baixa, comendo. Com a cabeça inclinada, essa pupila ficaria torta. Só que o olho dela gira dentro da cabeça e mantém a pupila deitada, paralela ao chão.
-Ela come e vigia o horizonte ao mesmo tempo.
-E a nossa pupila? É redonda. Então me responde nos comentários: o ser humano é caçador... ou presa?
+Repara no olho dessa cabra. Ela mexe a cabeça... e a pupila continua deitada.
+A maioria acha que é defeito. Mas o olho dela gira dentro da cabeça pra manter a pupila paralela ao chão.
+Assim, mesmo comendo de cabeça baixa, ela vigia o horizonte inteiro.
+Pupila deitada é de presa: enxerga quase tudo em volta... pra fugir a tempo.
 E da próxima vez que encontrar uma...
 
 ## 🎙️ TEXTO COM DIREÇÃO DE VOZ (eleven_v3)

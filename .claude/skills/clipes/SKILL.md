@@ -38,6 +38,19 @@ python3 -m viitu.visao candidatos "goat eating" "cat stalking" ... -n 6 --saida 
   cabeça, desfocado, parado.
 - Anote o **segundo exato** (`inicio`) do trecho bom de cada clipe.
 
+## 2b. Inteligência visual (viitu/inteligencia.py)
+- `semantica(clipes, {"chave": "descrição em inglês"})`: CLIP dá nota a cada 0,5 s de cada clipe
+  para cada frase. Use como primeira triagem; confirme olhando a prancha.
+- `pico_acao(clipe, t0, t1)`: segundo de maior movimento. Calcule `inicio` para o pico cair
+  na palavra-gatilho ("bote", "fugir", "explode").
+- `localizar(clipe, "the eye of a goat", t0, t1)`: OWLv2 acha a parte descrita. No cenas.json:
+  `"sujeito": "the eye of a goat"` enquadra pela cabeça; `"marca_auto": {"texto": ...}` desenha o
+  círculo animado que segue o objeto. Prefira partes pequenas (olho, nariz): "head" às vezes
+  devolve o animal inteiro.
+- Clipe horizontal importante (clipe-âncora): `"layout": "inteiro"` (clipe inteiro sobre fundo
+  desfocado, nada cortado, créditos visíveis). `"velocidade": 0.5` = câmera lenta.
+  `"manter": true` = não dividir a cena longa.
+
 ## 3. Baixar em HD os escolhidos
 ```
 python3 -m viitu.clipes baixar <projeto> pixabay <id>
