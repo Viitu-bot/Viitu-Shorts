@@ -19,8 +19,15 @@ nesta sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 
 Clipes do usuário chegam por **link do Google Drive** (YouTube e Reddit bloqueiam a nuvem).
 
+## Formato que funciona NO CANAL (análise de 12 vídeos do dono com ~20k views, nov/2026)
+- **Clipe-âncora:** UM clipe real, já **vertical**, com início-meio-fim (Reddit/TikTok/Douyin).
+  A edição serve ao clipe (zoom no detalhe, círculo/seta animados), não o substitui.
+- **10–20 s** na maioria; 3–4 cortes. Muitos cortes só em vídeo de "processo" (etapas).
+- Legenda: 1 palavra por vez, branca/amarela. Adesivos de COMENTA/LIKE/INSCRITO no fim.
+- Stock (Pixabay) só como complemento. Clipe horizontal cortado para 9:16 fica ruim.
+
 ## Protocolo HISA (roteiro)
-- **Duração:** 30–45 s (80–110 palavras, ~2,5 palavras/s). 60 s só com imagem suficiente.
+- **Duração:** 15–30 s (40–75 palavras, ~2,5 palavras/s), acompanhando a duração do clipe-âncora.
 - **Ato 1, gancho (0–3 s):** objeto nomeado em ≤ 8 palavras, pergunta/lacuna de curiosidade.
   Voz começa em 0,0 s. Frame 0 = cena mais impressionante. Pergunta escrita na tela.
 - **Ato 2, desmistificação:** "A maioria acha X, mas o motivo real é Y."
