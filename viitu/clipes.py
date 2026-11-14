@@ -146,6 +146,14 @@ def pixabay_baixar(vid: str, destino: Path) -> tuple[Path, str]:
     return arq, f"Vídeo {vid} — {h.get('user', '')} — Pixabay ({h.get('pageURL')})"
 
 
+def pixabay_foto_baixar(fid: str, destino: Path) -> tuple[Path, str]:
+    chave = _env("PIXABAY_API_KEY")
+    h = requests.get("https://pixabay.com/api/", timeout=30, params={"key": chave, "id": fid}).json()["hits"][0]
+    arq = destino / f"pixabay_foto_{fid}.jpg"
+    arq.write_bytes(requests.get(h["largeImageURL"], timeout=120).content)
+    return arq, f"Foto {fid} — {h.get('user', '')} — Pixabay ({h.get('pageURL')})"
+
+
 # ---------- Pexels ----------
 
 def pexels_buscar(termo: str, n: int = 8) -> list[dict]:
@@ -203,7 +211,8 @@ def youtube_cc_buscar(termo: str, n: int = 8) -> list[dict]:
 
 FONTES = {"pixabay": pixabay_buscar, "commons": commons_buscar,
           "pexels": pexels_buscar, "youtube": youtube_cc_buscar}
-BAIXAR = {"pixabay": pixabay_baixar, "commons": commons_baixar, "pexels": pexels_baixar}
+BAIXAR = {"pixabay": pixabay_baixar, "pixabay-foto": pixabay_foto_baixar,
+          "commons": commons_baixar, "pexels": pexels_baixar}
 
 
 def main() -> None:
