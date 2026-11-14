@@ -1,0 +1,16 @@
+{
+  "name": "viitu-remotion",
+  "private": true,
+  "scripts": {
+    "render": "remotion render src/index.ts Short out/short_remotion.mp4 --concurrency=4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.543",
+    "@remotion/fonts": "^4.0.543",
+    "@remotion/google-fonts": "^4.0.543",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.543",
+    "typescript": "^7.0.2"
+  }
+}

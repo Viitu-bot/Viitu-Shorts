@@ -36,7 +36,8 @@ import numpy as np
 
 RAIZ = Path(__file__).resolve().parent.parent
 W, H, FPS = 1080, 1920, 30
-MAX_CENA = 3.2      # cena maior que isso é dividida (regra dos 2–3 s)
+MAX_CENA = 3.2
+MODO_REMOTION = False   # True: não queima legenda/marcas; exporta plano para o Remotion      # cena maior que isso é dividida (regra dos 2–3 s)
 FONTES = RAIZ / "assets" / "fontes"
 SFX = RAIZ / "assets" / "sfx"
 
@@ -189,6 +190,9 @@ def marca_que_segue(s: dict, clipe: Path, n: int, pasta: Path, idx: int) -> Path
         xs[i], ys[i] = pos[i][0], pos[i][1]
         xs[-1 - i], ys[-1 - i] = pos[-1 - i][0], pos[-1 - i][1]
     pos = [(float(a), float(b), p[2]) for a, b, p in zip(xs, ys, pos)]
+    s["_marca_pos"] = [[round(a, 1), round(b, 1), round(c, 1)] for a, b, c in pos]
+    if MODO_REMOTION:
+        return None
     saida = pasta / "saida" / "cenas" / f"{idx:03d}_marca.mov"
     return circulo_animado(pos, saida, atraso_frames=int(m.get("atraso", 0.15) * FPS))
 
@@ -385,6 +389,32 @@ def mixar_audio(pasta: Path, segs: list[dict], palavras: list[dict], cfg: dict, 
     return saida
 
 
+def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: dict,
+                      video: Path, audio: Path, dur: float) -> None:
+    import shutil
+    pub = RAIZ / "remotion" / "public"
+    pub.mkdir(parents=True, exist_ok=True)
+    shutil.copy(video, pub / "fundo.mp4")
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(audio), "-c:a", "aac", "-b:a", "192k",
+                    str(pub / "audio.m4a")], check=True)
+    for som in ("tick", "woosh", "impacto"):
+        shutil.copy(SFX / f"{som}.mp3", pub / f"{som}.mp3")
+    destaques = {_norm(x) for x in cfg.get("destaques", [])}
+    plano = {
+        "fps": FPS, "duracao_frames": segs[-1]["f1"],
+        "palavras": [{"texto": re.sub(r"[.,:;!…]+$", "", p["palavra"]).replace("...", "").upper(),
+                      "f0": round(p["inicio"] * FPS),
+                      "f1": round((palavras[i + 1]["inicio"] if i + 1 < len(palavras) else dur) * FPS),
+                      "destaque": _norm(p["palavra"]) in destaques}
+                     for i, p in enumerate(palavras)],
+        "marcas": [{"f0": s["f0"] + int(s["marca_auto"].get("atraso", 0.15) * FPS), "cena_f0": s["f0"], "f1": s["f1"],
+                    "pos": s["_marca_pos"]} for s in segs if s.get("_marca_pos")],
+        "cortes": [s["f0"] for s in segs[1:]],
+    }
+    (pub / "plano.json").write_text(json.dumps(plano, ensure_ascii=False), encoding="utf-8")
+    print(f"Plano Remotion exportado: {pub.relative_to(RAIZ)}/plano.json")
+
+
 def editar(projeto: str) -> None:
     pasta = RAIZ / "projetos" / projeto
     palavras = json.loads((pasta / "palavras.json").read_text(encoding="utf-8"))
@@ -412,6 +442,9 @@ def editar(projeto: str) -> None:
     destaques = {_norm(x) for x in cfg.get("destaques", [])}
     ass, srt = gerar_legendas(palavras, destaques, pasta, dur, segs)
 
+    if MODO_REMOTION:
+        exportar_remotion(pasta, segs, palavras, cfg, video, audio, dur)
+        return
     base = pasta / "saida" / "short_base.mp4"
     final = pasta / "saida" / "short_final.mp4"
     comum = ["-map", "0:v", "-map", "1:a", "-c:a", "aac", "-b:a", "192k", "-shortest",
@@ -427,7 +460,11 @@ def editar(projeto: str) -> None:
 def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("projeto")
-    editar(p.parse_args().projeto)
+    p.add_argument("--remotion", action="store_true", help="exporta vídeo limpo + plano para o Remotion")
+    a = p.parse_args()
+    global MODO_REMOTION
+    MODO_REMOTION = a.remotion
+    editar(a.projeto)
 
 
 if __name__ == "__main__":

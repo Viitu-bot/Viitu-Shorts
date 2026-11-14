@@ -1,0 +1,7 @@
+node_modules/
+out/
+public/fundo.mp4
+public/audio.m4a
+public/*.mp3
+public/plano.json
+public/*.ttf
