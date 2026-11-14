@@ -511,7 +511,9 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
         "cortes": [s["f0"] for s in segs[1:]],
         "impactos": [round(palavras[achar_palavra(palavras, t, 0)]["inicio"] * FPS)
                      for t in cfg.get("impacto_em", [])],
-        "cta": cfg.get("cta", True),
+        "cta": (lambda c: {"f0": round(palavras[achar_palavra(palavras, c["em"], 0)]["inicio"] * FPS),
+                           "texto": c.get("texto", "💬 COMENTA")} if isinstance(c, dict)
+                else ({"f0": segs[-1]["f0"] + 6, "texto": "INSCREVA-SE"} if c else None))(cfg.get("cta", True)),
     }
     (pub / "plano.json").write_text(json.dumps(plano, ensure_ascii=False), encoding="utf-8")
     print(f"Plano Remotion exportado: {pub.relative_to(RAIZ)}/plano.json")

@@ -1,11 +1,39 @@
 {
- "_versao": "curta (~25 s) com clipe-âncora; cenas escolhidas por CLIP + revisão; pico de ação alinhado à palavra",
+ "_versao": "v8 CURTA (~31 s): gancho com contato visual + lacuna; NatGeo só como prova; CTA de comentário",
  "cenas": [
   {
    "em": "Repara",
+   "clipe": "pixabay_9945.mp4",
+   "inicio": 11.0,
+   "sujeito": "the eye of a goat",
+   "_funcao": "gancho: a cabra encara quem assiste, tela cheia"
+  },
+  {
+   "em": "Não é redondo",
    "clipe": "ancora_reddit.mp4",
    "layout": "inteiro",
    "manter": true,
+   "inicio": 0.0,
+   "alvo": [
+    0.42,
+    0.55
+   ],
+   "zoom": [
+    1.55,
+    1.8
+   ],
+   "marca_auto": {
+    "texto": "the eye of a goat",
+    "atraso": 0.15
+   },
+   "_funcao": "prova imediata: a pupila retangular + círculo"
+  },
+  {
+   "em": "e ele faz",
+   "clipe": "ancora_reddit.mp4",
+   "layout": "inteiro",
+   "manter": true,
+   "inicio": 0.2,
    "velocidade": 0.85,
    "alvo": [
     0.42,
@@ -13,19 +41,35 @@
    ],
    "zoom": [
     1.0,
-    1.25
+    1.15
+   ],
+   "_funcao": "lacuna: o que esse olho faz?"
+  },
+  {
+   "em": "Quando ela mexe",
+   "clipe": "ancora_reddit.mp4",
+   "layout": "inteiro",
+   "manter": true,
+   "inicio": 2.4,
+   "velocidade": 0.75,
+   "alvo": [
+    0.42,
+    0.5
+   ],
+   "zoom": [
+    1.15,
+    1.35
    ],
    "marca_auto": {
     "texto": "the eye of a goat",
-    "atraso": 0.5
+    "atraso": 0.2
    },
-   "_funcao": "o fenômeno logo no frame 0: cabeça mexe, pupila fica reta + círculo que se desenha no olho"
+   "_funcao": "o fenômeno: cabeça mexe, pupila reta"
   },
   {
    "em": "A maioria",
    "clipe": "pixabay_9945.mp4",
    "inicio": 4.7,
-   "_funcao": "cabra encarando (CLIP: goat face looking at camera)",
    "sujeito": "the eye of a goat"
   },
   {
@@ -47,55 +91,62 @@
     "texto": "the eye of a goat",
     "atraso": 0.4
    },
-   "_funcao": "câmera lenta + zoom no olho: o espectador VÊ a pupila ficando reta"
-  },
-  {
-   "em": "Assim, mesmo comendo",
-   "clipe": "pixabay_9945.mp4",
-   "inicio": 7.2,
-   "_funcao": "CLIP: goat eating grass head down",
-   "sujeito": "the eye of a goat"
-  },
-  {
-   "em": "ela vigia",
-   "clipe": "pixabay_9945.mp4",
-   "inicio": 10.6,
-   "_funcao": "cabra levanta a cabeça",
-   "sujeito": "the eye of a goat"
+   "_funcao": "virada em câmera lenta"
   },
   {
    "em": "Pupila deitada",
    "clipe": "pixabay_264353.mp4",
    "inicio": 3.0,
-   "_emocao": "perigo: o leão vem na direção de quem assiste (você é a presa)"
+   "_emocao": "perigo: o leão vem na direção de quem assiste"
   },
   {
-   "em": "enxerga quase tudo",
+   "em": "enxerga quase",
    "clipe": "pixabay_243148.mp4",
-   "inicio": 0.9,
-   "_emocao": "vigília: suricato sentinela vira a cabeça na palavra 'quase'"
+   "inicio": 0.83,
+   "_emocao": "vigília: o suricato vira a cabeça no 'quase'"
   },
   {
    "em": "pra fugir",
    "clipe": "pixabay_117293.mp4",
-   "inicio": 11.9,
-   "_emocao": "fuga: a lebre dispara (pico 12,5 s) na palavra 'fugir'"
+   "inicio": 11.95,
+   "_emocao": "fuga: a lebre dispara no 'fugir'"
   },
   {
-   "em": "E da próxima vez",
-   "clipe": "ancora_reddit.mp4",
-   "layout": "inteiro",
-   "manter": true,
-   "inicio": 2.9,
-   "alvo": [
-    0.42,
+   "em": "E a sua pupila",
+   "clipe": "pixabay_34848.mp4",
+   "foco": [
+    0.5,
     0.5
    ],
    "zoom": [
-    1.25,
-    1.0
+    1.0,
+    1.2
    ],
-   "_funcao": "loop: volta ao clipe-âncora sem zoom, como no início"
+   "_emocao": "espelho: a pessoa pensa no próprio olho"
+  },
+  {
+   "em": "caçador",
+   "clipe": "pixabay_264353.mp4",
+   "inicio": 5.0
+  },
+  {
+   "em": "ou presa",
+   "clipe": "pixabay_117293.mp4",
+   "inicio": 3.0,
+   "_emocao": "a presa escondida, imóvel"
+  },
+  {
+   "em": "Comenta aí",
+   "clipe": "pixabay_62553.mp4",
+   "inicio": 20,
+   "_emocao": "chamado direto: olhando para quem assiste"
+  },
+  {
+   "em": "Mas antes de responder",
+   "clipe": "pixabay_9945.mp4",
+   "inicio": 10.4,
+   "sujeito": "the eye of a goat",
+   "_funcao": "loop: termina no quadro do início"
   }
  ],
  "impacto_em": [
@@ -103,13 +154,18 @@
  ],
  "destaques": [
   "cabra",
-  "deitada",
+  "redondo",
   "defeito",
   "gira",
   "paralela",
-  "horizonte",
   "presa",
-  "fugir"
+  "fugir",
+  "redonda",
+  "caçador",
+  "acertar"
  ],
- "_criterio": "cada cena tem _funcao/_emocao: representar a frase E provocar a emoção dela"
+ "cta": {
+  "em": "Comenta aí",
+  "texto": "💬 COMENTA"
+ }
 }

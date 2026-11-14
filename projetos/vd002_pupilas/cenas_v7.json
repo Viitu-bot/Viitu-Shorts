@@ -1,0 +1,115 @@
+{
+ "_versao": "curta (~25 s) com clipe-âncora; cenas escolhidas por CLIP + revisão; pico de ação alinhado à palavra",
+ "cenas": [
+  {
+   "em": "Repara",
+   "clipe": "ancora_reddit.mp4",
+   "layout": "inteiro",
+   "manter": true,
+   "velocidade": 0.85,
+   "alvo": [
+    0.42,
+    0.5
+   ],
+   "zoom": [
+    1.0,
+    1.25
+   ],
+   "marca_auto": {
+    "texto": "the eye of a goat",
+    "atraso": 0.5
+   },
+   "_funcao": "o fenômeno logo no frame 0: cabeça mexe, pupila fica reta + círculo que se desenha no olho"
+  },
+  {
+   "em": "A maioria",
+   "clipe": "pixabay_9945.mp4",
+   "inicio": 4.7,
+   "_funcao": "cabra encarando (CLIP: goat face looking at camera)",
+   "sujeito": "the eye of a goat"
+  },
+  {
+   "em": "Mas o olho dela gira",
+   "clipe": "ancora_reddit.mp4",
+   "layout": "inteiro",
+   "manter": true,
+   "inicio": 1.0,
+   "velocidade": 0.5,
+   "alvo": [
+    0.42,
+    0.5
+   ],
+   "zoom": [
+    1.45,
+    1.8
+   ],
+   "marca_auto": {
+    "texto": "the eye of a goat",
+    "atraso": 0.4
+   },
+   "_funcao": "câmera lenta + zoom no olho: o espectador VÊ a pupila ficando reta"
+  },
+  {
+   "em": "Assim, mesmo comendo",
+   "clipe": "pixabay_9945.mp4",
+   "inicio": 7.2,
+   "_funcao": "CLIP: goat eating grass head down",
+   "sujeito": "the eye of a goat"
+  },
+  {
+   "em": "ela vigia",
+   "clipe": "pixabay_9945.mp4",
+   "inicio": 10.6,
+   "_funcao": "cabra levanta a cabeça",
+   "sujeito": "the eye of a goat"
+  },
+  {
+   "em": "Pupila deitada",
+   "clipe": "pixabay_264353.mp4",
+   "inicio": 3.0,
+   "_emocao": "perigo: o leão vem na direção de quem assiste (você é a presa)"
+  },
+  {
+   "em": "enxerga quase tudo",
+   "clipe": "pixabay_243148.mp4",
+   "inicio": 0.9,
+   "_emocao": "vigília: suricato sentinela vira a cabeça na palavra 'quase'"
+  },
+  {
+   "em": "pra fugir",
+   "clipe": "pixabay_117293.mp4",
+   "inicio": 11.9,
+   "_emocao": "fuga: a lebre dispara (pico 12,5 s) na palavra 'fugir'"
+  },
+  {
+   "em": "E da próxima vez",
+   "clipe": "ancora_reddit.mp4",
+   "layout": "inteiro",
+   "manter": true,
+   "inicio": 2.9,
+   "alvo": [
+    0.42,
+    0.5
+   ],
+   "zoom": [
+    1.25,
+    1.0
+   ],
+   "_funcao": "loop: volta ao clipe-âncora sem zoom, como no início"
+  }
+ ],
+ "impacto_em": [
+  "Mas o olho dela gira"
+ ],
+ "destaques": [
+  "cabra",
+  "deitada",
+  "defeito",
+  "gira",
+  "paralela",
+  "horizonte",
+  "presa",
+  "fugir"
+ ],
+ "_criterio": "cada cena tem _funcao/_emocao: representar a frase E provocar a emoção dela"
+}

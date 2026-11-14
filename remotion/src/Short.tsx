@@ -16,7 +16,7 @@ export type Palavra = {texto: string; f0: number; f1: number; destaque: boolean;
 export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, number, number][]};
 export type Plano = {
   fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
-  cortes: number[]; impactos: number[]; cta: boolean;
+  cortes: number[]; impactos: number[]; cta: {f0: number; texto: string} | null;
 };
 
 const AMARELO = '#FFD400';
@@ -103,7 +103,7 @@ const PalavraNaTela: React.FC<{p: Palavra}> = ({p}) => {
 };
 
 // ---------- chamada para se inscrever (final) ----------
-const BotaoInscrever: React.FC = () => {
+const BotaoInscrever: React.FC<{texto: string}> = ({texto}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const entra = spring({frame, fps, config: {damping: 11, stiffness: 180}});
@@ -113,9 +113,9 @@ const BotaoInscrever: React.FC = () => {
     <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center', paddingTop: 1330}}>
       <div style={{
         transform: `scale(${interpolate(entra, [0, 1], [0.3, 1]) * clique})`, opacity: entra,
-        backgroundColor: inscrito ? '#3d3d3d' : '#FF0000', color: 'white', fontFamily, fontSize: 64,
+        backgroundColor: texto === 'INSCREVA-SE' && inscrito ? '#3d3d3d' : '#FF0000', color: 'white', fontFamily, fontSize: 64,
         letterSpacing: 2, padding: '18px 44px', borderRadius: 999, boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
-      }}>{inscrito ? '✓ INSCRITO' : '🔔 INSCREVA-SE'}</div>
+      }}>{texto === 'INSCREVA-SE' ? (inscrito ? '✓ INSCRITO' : '🔔 INSCREVA-SE') : texto}</div>
     </AbsoluteFill>
   );
 };
@@ -163,7 +163,6 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
   const {durationInFrames} = useVideoConfig();
   const z = usePunch(plano.palavras);
   const t = useTremida(plano.impactos);
-  const ultimoCorte = plano.cortes[plano.cortes.length - 1] ?? 0;
   return (
     <AbsoluteFill style={{backgroundColor: 'black'}}>
       <AbsoluteFill style={{transform: `translate(${t.x}px, ${t.y}px) scale(${z * (t.x ? 1.03 : 1)})`}}>
@@ -192,8 +191,8 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       ))}
 
       {plano.cta && (
-        <Sequence from={ultimoCorte + 6}>
-          <BotaoInscrever />
+        <Sequence from={plano.cta.f0} durationInFrames={75}>
+          <BotaoInscrever texto={plano.cta.texto} />
           <Sequence from={14} durationInFrames={20}><Audio src={staticFile('clique.mp3')} volume={0.6} /></Sequence>
         </Sequence>
       )}

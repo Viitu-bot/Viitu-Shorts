@@ -1,13 +1,15 @@
 # vd002: Pupilas dos animais (postagem: domingo 2026-11-15)
 
-> Versão curta (~25 s) montada em volta do clipe-âncora (NatGeo, enviado pelo usuário). Crédito na descrição: "Imagens da cabra: National Geographic".
+> Versão CURTA v8 (~33 s, gancho com contato visual + CTA de comentário). Antes: versão curta (~25 s) montada em volta do clipe-âncora (NatGeo, enviado pelo usuário). Crédito na descrição: "Imagens da cabra: National Geographic".
 
 ## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs)
-Repara no olho dessa cabra. Ela mexe a cabeça... e a pupila continua deitada.
+Repara no olho dessa cabra. Não é redondo... e ele faz uma coisa que o seu olho mal consegue fazer.
+Quando ela mexe a cabeça, a pupila continua deitada.
 A maioria acha que é defeito. Mas o olho dela gira dentro da cabeça pra manter a pupila paralela ao chão.
-Assim, mesmo comendo de cabeça baixa, ela vigia o horizonte inteiro.
 Pupila deitada é de presa: enxerga quase tudo em volta... pra fugir a tempo.
-E da próxima vez que encontrar uma...
+E a sua pupila? É redonda: nem deitada, nem em pé.
+Então você é caçador... ou presa? Comenta aí que eu fixo quem acertar.
+Mas antes de responder...
 
 ## 🎙️ TEXTO COM DIREÇÃO DE VOZ (eleven_v3)
 [curious] Repara no olho dessa cabra... Não é redondo.
@@ -25,7 +27,7 @@ E da próxima vez que encontrar uma...
 - **Título ES (tradução no Studio):** ¿Por qué la pupila de la cabra es rectangular? 🐐
 - **Descrição:** O formato da pupila revela quem caça e quem é caçado na natureza, e o olho da cabra ainda gira dentro da cabeça. 👁️ Fonte: Banks et al., Science Advances (2015).
   #curiosidades #animais #ciencia
-- **Comentário fixado:** Caçador ou presa? 👇 Responde aqui, quero ver quem acerta o que a ciência diz sobre o olho humano 👁️
+- **Comentário fixado (domingo, depois de publicar):** Pupila redonda é típica de quem caça correndo atrás da presa, como leões, lobos... e nós. Quem acertou? 👀 (Banks et al., 2015)
 
 ---
 
