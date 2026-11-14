@@ -1,0 +1,4 @@
+# Um canal por linha: @handle ou link do canal. Linhas com # são ignoradas.
+# Cole aqui os canais que o Gemini encontrar (Prompt 1 e 3 do protocolo).
+@avidamaravilha
+@viitushorts

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+radar/saida/
+projetos/**/*.mp4
+projetos/**/*.mp3
+projetos/**/*.wav
