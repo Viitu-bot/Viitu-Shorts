@@ -24,7 +24,7 @@ Pupila deitada é de presa: enxerga quase tudo em volta pra fugir a tempo.
 - Fenda vertical = predador de emboscada, ajuda a estimar distância [CONFIRMADO, Banks 2015]
 - Pupila horizontal = presa que pasta, visão panorâmica para detectar predadores [CONFIRMADO, Banks 2015]
 
-## Ato 3: Virada (rascunho)
+## Ato 3: Virada ✅ aprovado
 **Texto:**
 Mas tem um porém: a cabra passa o dia de cabeça baixa, comendo. Com a cabeça inclinada, essa pupila
 ficaria torta. Só que o olho dela gira dentro da cabeça e mantém a pupila deitada, paralela ao chão.
@@ -41,5 +41,18 @@ Ela come e vigia o horizonte ao mesmo tempo.
 **Evidências:**
 - Rotação do olho (cicloversão) mantém a pupila paralela ao chão quando a cabeça abaixa, até ~50° [CONFIRMADO, Banks 2015]
 
-## Ato 4: Clímax + loop (pendente)
-Termina em: "...então, da próxima vez que encontrar uma," → emenda em "Repara no olho dessa cabra."
+## Ato 4: Clímax + loop (rascunho)
+**Texto:**
+E a nossa pupila? É redonda. Então me responde nos comentários: o ser humano é caçador... ou presa?
+E da próxima vez que encontrar uma...
+(loop → "Repara no olho dessa cabra.")
+
+**Gatilhos → tela:**
+- "a nossa pupila" → close de olho humano (pupila redonda)
+- "caçador" → leão / crocodilo · "ou presa?" → cabras
+- "da próxima vez que encontrar uma..." → volta ao close da cabra, igual ao frame 0 (loop visual)
+
+**Evidências:**
+- Pupila humana é redonda [CONFIRMADO]. A pergunta é aberta (debate), não afirma nada.
+
+**Áudio:** sem silêncio no final; a última palavra emenda direto no "Repara".
