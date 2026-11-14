@@ -65,6 +65,20 @@ sem CAIXA ALTA gritando. Sempre com tradução EN/ES no YouTube Studio.
 - Identidade: flash branco→amarelo nos primeiros 0,2 s + "ding" no frame 0. Círculo vermelho perfeito
   que se desenha e segue o objeto, com "pop". Woosh variado nos cortes. Riser + impacto + flash +
   tremida em "impacto_em". Botão INSCREVA-SE no fim. Trilha de fundo a 16% sob a voz.
+- **Quando usar cada efeito (biblioteca validada):**
+  | Momento | Visual | Som |
+  |---|---|---|
+  | Frame 0 (identidade) | flash branco→amarelo 0,2 s | ding |
+  | Corte comum | glitch RGB de 3 quadros (sem flash branco) | woosh / whip / woosh2 / woosh3 alternados |
+  | Frase de impacto ("Mas...", revelação) — `impacto_em` | zoom blur + separação RGB + flash + tremida | drone de tensão antes + boom |
+  | Palavra-chave (destaques) | punch de câmera 4,5% + legenda amarela maior | — |
+  | Detalhe a observar | círculo vermelho perfeito que se desenha e segue o objeto | pop |
+  | Final | botão INSCREVA-SE → ✓ INSCRITO | clique |
+  Não usar sons "meme" de direitos incertos (vine boom etc.); usar as versões próprias (boom, scratch).
+- **Legenda:** 1 palavra, altura automática longe do ponto de atenção (sujeito em cima → legenda em
+  y=1180; senão y=400). Nunca abaixo de ~1400 (interface do YouTube).
+- Remotion: `remotion.config.ts` usa WebGL por software (swangle) para os efeitos; skills oficiais em
+  `.agents/skills` (remotion-markup, remotion-captions...).
 - Sons em `assets/sfx/` (normalizados a −1 dB de pico) e trilhas em `assets/musica/`, gerados no
   ElevenLabs (sound-generation e music), livres de direitos.
 

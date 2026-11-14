@@ -136,8 +136,8 @@ def _filtro_cena(s: dict, entrada: str, eh_foto: bool, n_frames: int, primeira: 
              f"zoompan=z='{zexpr}':x='max(0\\,min(iw-iw/zoom\\,iw*{sx}-iw/zoom/2))'"
              f":y='max(0\\,min(ih-ih/zoom\\,ih*{sy}-ih/zoom/2))':d=1:s={W}x{H}:fps={FPS}")
     f += ",eq=contrast=1.06:saturation=1.12,unsharp=5:5:0.5,vignette=PI/5,setsar=1,format=yuv420p"     # bordas escuras guiam o olhar
-    if not primeira:
-        f += ",fade=t=in:st=0:d=0.12:color=white"   # flash nos cortes
+    if not primeira and not MODO_REMOTION:
+        f += ",fade=t=in:st=0:d=0.12:color=white"   # flash nos cortes (no Remotion: glitch RGB)
     return f + "[v]"
 
 
@@ -294,6 +294,9 @@ def camera_virtual(s: dict, clipe: Path, n_frames: int) -> bool:
         cw, ch = iw, iw * H / W
     xs = np.clip(kx * iw - cw / 2, 0, iw - cw)
     ys = np.clip(ky * ih - ch / 2, 0, ih - ch)
+    s["_alvo_y_out"] = float(np.mean((ky * ih - ys) / ch * H))
+    if "eye" in s.get("sujeito", ""):
+        s["_alvo_y_out"] += 0.18 * H      # o rosto fica abaixo do olho
     s["_cam"] = {"t": kt.round(3).tolist(), "x": xs.round(1).tolist(), "y": ys.round(1).tolist(),
                  "w": round(cw / 2) * 2, "h": round(ch / 2) * 2}
     return True
@@ -483,12 +486,25 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
     musica = cfg.get("musica", "curioso_documentario.mp3")
     shutil.copy(RAIZ / "assets" / "musica" / musica, pub / "musica.mp3")
     destaques = {_norm(x) for x in cfg.get("destaques", [])}
+
+    def y_legenda(f: int) -> int:
+        """Legenda longe do ponto de atenção: sujeito na metade de cima → legenda embaixo."""
+        seg = next((g for g in segs if g["f0"] <= f < g["f1"]), segs[-1])
+        if seg.get("layout") == "inteiro":
+            alvo = H / 2
+        elif "_alvo_y_out" in seg:
+            alvo = seg["_alvo_y_out"]
+        else:
+            alvo = seg.get("alvo", [0.5, 0.5])[1] * H
+        return 1180 if alvo < 880 else 400      # 1180: acima da interface do YouTube (título/canal)
+
     plano = {
         "fps": FPS, "duracao_frames": segs[-1]["f1"],
         "palavras": [{"texto": re.sub(r"[.,:;!…]+$", "", p["palavra"]).replace("...", "").upper(),
                       "f0": round(p["inicio"] * FPS),
                       "f1": round((palavras[i + 1]["inicio"] if i + 1 < len(palavras) else dur) * FPS),
-                      "destaque": _norm(p["palavra"]) in destaques}
+                      "destaque": _norm(p["palavra"]) in destaques,
+                      "y": y_legenda(round(p["inicio"] * FPS))}
                      for i, p in enumerate(palavras)],
         "marcas": [{"f0": s["f0"] + int(s["marca_auto"].get("atraso", 0.15) * FPS), "cena_f0": s["f0"], "f1": s["f1"],
                     "pos": s["_marca_pos"]} for s in segs if s.get("_marca_pos")],

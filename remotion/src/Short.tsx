@@ -1,15 +1,18 @@
 import React from 'react';
 import {
-  AbsoluteFill, Audio, OffthreadVideo, Sequence, interpolate, spring, staticFile,
+  AbsoluteFill, Audio, Sequence, interpolate, spring, staticFile,
   useCurrentFrame, useVideoConfig,
 } from 'remotion';
 import {loadFont} from '@remotion/fonts';
+import {Video} from '@remotion/media';
+import {zoomBlur} from '@remotion/effects/zoom-blur';
+import {chromaticAberration} from '@remotion/effects/chromatic-aberration';
 
 // fonte local (o navegador do render não baixa do Google Fonts atrás do proxy)
 const fontFamily = 'Anton';
 loadFont({family: fontFamily, url: staticFile('Anton-Regular.ttf')});
 
-export type Palavra = {texto: string; f0: number; f1: number; destaque: boolean};
+export type Palavra = {texto: string; f0: number; f1: number; destaque: boolean; y: number};
 export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, number, number][]};
 export type Plano = {
   fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
@@ -87,7 +90,7 @@ const PalavraNaTela: React.FC<{p: Palavra}> = ({p}) => {
   const escala = interpolate(s, [0, 1], [0.55, 1]);
   const subida = interpolate(s, [0, 1], [24, 0]);
   return (
-    <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center', paddingTop: 560}}>
+    <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center', paddingTop: p.y - 80}}>
       <div style={{
         fontFamily, fontSize: p.destaque ? 138 : 124, letterSpacing: 2,
         color: p.destaque ? AMARELO : '#FFFFFF',
@@ -130,7 +133,31 @@ const usePunch = (palavras: Palavra[]) => {
   return z;
 };
 
-const WOOSHES = ['woosh.mp3', 'woosh2.mp3', 'woosh3.mp3'];
+const WOOSHES = ['woosh.mp3', 'whip.mp3', 'woosh2.mp3', 'woosh3.mp3'];
+
+const FundoComEfeitos: React.FC<{plano: Plano}> = ({plano}) => {
+  const frame = useCurrentFrame();
+  let zb = 0;
+  let ca = 0;
+  for (const f of plano.impactos) {
+    const k = frame - f;
+    if (k >= 0 && k < 10) {
+      zb = Math.max(zb, interpolate(k, [0, 1, 10], [0, 70, 0]));
+      ca = Math.max(ca, interpolate(k, [0, 1, 10], [0, 22, 0]));
+    }
+  }
+  for (const c of plano.cortes) {
+    const k = frame - c;
+    if (k >= 0 && k < 4) ca = Math.max(ca, interpolate(k, [0, 1, 4], [0, 9, 0]));
+  }
+  return (
+    <Video src={staticFile('fundo.mp4')} muted
+      effects={[
+        zoomBlur({amount: zb, disabled: zb < 0.5}),
+        chromaticAberration({amount: ca, angle: 0, disabled: ca < 0.5}),
+      ]} />
+  );
+};
 
 export const Short: React.FC<{plano: Plano}> = ({plano}) => {
   const {durationInFrames} = useVideoConfig();
@@ -140,7 +167,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
   return (
     <AbsoluteFill style={{backgroundColor: 'black'}}>
       <AbsoluteFill style={{transform: `translate(${t.x}px, ${t.y}px) scale(${z * (t.x ? 1.03 : 1)})`}}>
-        <OffthreadVideo src={staticFile('fundo.mp4')} muted />
+        <FundoComEfeitos plano={plano} />
       </AbsoluteFill>
 
       {plano.marcas.map((m, k) => (
@@ -159,8 +186,8 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       {plano.impactos.map((f, k) => (
         <React.Fragment key={k}>
           <FlashImpacto f={f} />
-          <Sequence from={Math.max(f - 34, 0)} durationInFrames={36}><Audio src={staticFile('riser.mp3')} volume={0.28} /></Sequence>
-          <Sequence from={f} durationInFrames={40}><Audio src={staticFile('impacto.mp3')} volume={0.75} /></Sequence>
+          <Sequence from={Math.max(f - 50, 0)} durationInFrames={52}><Audio src={staticFile('tensao.mp3')} volume={0.32} /></Sequence>
+          <Sequence from={f} durationInFrames={45}><Audio src={staticFile('boom.mp3')} volume={0.8} /></Sequence>
         </React.Fragment>
       ))}
 
