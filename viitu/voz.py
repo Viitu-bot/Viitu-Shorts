@@ -21,13 +21,13 @@ import requests
 
 RAIZ = Path(__file__).resolve().parent.parent
 VOZ_OTTO = "ycxdm1PRMs962FxyyuJ0"
-MODELO = "eleven_v3"  # aceita direção de emoção: [curious], [excited], [short pause]...
+MODELO = "eleven_v4"  # o mais emotivo; o v3 aceita tags de emoção ([curious]...) se precisar
 
 
-def texto_do_roteiro(projeto: str) -> str:
+def texto_do_roteiro(projeto: str, com_tags: bool = False) -> str:
     md = (RAIZ / "projetos" / projeto / "roteiro.md").read_text(encoding="utf-8")
-    # prefere o texto com direção de voz (v3); senão, o texto final simples
-    m = re.search(r"## 🎙️ TEXTO COM DIREÇÃO DE VOZ.*?\n(.*?)\n## ", md, re.S)
+    # texto com direção de voz só para o v3; nos outros modelos, o texto final limpo
+    m = re.search(r"## 🎙️ TEXTO COM DIREÇÃO DE VOZ.*?\n(.*?)\n## ", md, re.S) if com_tags else None
     if m:
         return "\n".join(l.strip() for l in m.group(1).strip().splitlines() if l.strip())
     m = re.search(r"## ✅ TEXTO FINAL PARA A VOZ.*?\n(.*?)\n## ", md, re.S)
@@ -64,7 +64,7 @@ def caracteres_para_palavras(al: dict) -> list[dict]:
 
 
 def gerar(projeto: str, voz: str, estabilidade: float, velocidade: float, modelo: str = MODELO) -> None:
-    texto = texto_do_roteiro(projeto)
+    texto = texto_do_roteiro(projeto, com_tags=(modelo == "eleven_v3"))
     r = requests.post(
         f"https://api.elevenlabs.io/v1/text-to-speech/{voz}/with-timestamps",
         headers={"xi-api-key": "proxy-injected", "Content-Type": "application/json"},
