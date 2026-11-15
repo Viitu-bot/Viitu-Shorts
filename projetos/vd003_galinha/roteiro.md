@@ -15,9 +15,15 @@ Você sabia que o ovo do mercado nunca ia virar pintinho? Comenta: sabia ou não
 E da próxima vez que quebrar um, lembra...
 
 ## ✅ PUBLICAÇÃO (terça 17/11, 06:00)
-- **Título:** Esse ovo nunca teve pai 🥚
+- **Título:** Por que esse ovo nunca teve pai? 🥚  (dados: títulos com '?' renderam 1,3–2,7x e 'Por que' 1,5x nos canais de referência)
 - **Descrição:** A galinha bota ovo com ou sem galo: sem galo, ele nunca vira pintinho, e é esse que você come. A gema leva cerca de 25 horas para virar ovo, e a casca pode sair até dos ossos dela. 🐔 / #curiosidades #ovo #galinha #ciencia #natureza #shorts
 - **Comentário fixado:** Quase todo ovo de supermercado vem de granjas sem galo, por isso nunca viraria pintinho. Você sabia? 🥚
+
+## Padrões dos virais aplicados (Hall da Fama)
+- Frame 0: imagem satisfatória/estranha + **seta vermelha** apontando o ovo
+- Gancho contraintuitivo ("nunca teve pai") e gatilho forte (**mito desmentido**)
+- Ritmo 1,7–2,9 s por cena; legenda 1 palavra no centro-inferior
+- Fim com cena satisfatória (ovo quebrando na frigideira) + CTA simples ("sabia ou não sabia?") + loop
 
 ## Evidências
 - Galinha ovula ~a cada 24–26 h independentemente de galo; ovo não fertilizado não desenvolve embrião [CONFIRMADO, fisiologia reprodutiva das aves]
