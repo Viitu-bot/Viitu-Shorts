@@ -1,0 +1,141 @@
+{
+ "meta": {
+  "id": "-qFObICKecA",
+  "link": "https://youtube.com/shorts/-qFObICKecA",
+  "titulo": "A engenharia milenar para conservar carne sem geladeira! 🥩🇹🇷",
+  "canal": "Polaco sem Polônia",
+  "handle": null,
+  "inscritos_canal": null,
+  "publicado": "2026-11-11T22:00",
+  "duracao_s": 32,
+  "views": 783337,
+  "likes": 26687,
+  "comentarios": 464,
+  "origem": "enviado pelo dono"
+ },
+ "raiox": {
+  "duracao_s": 32,
+  "gancho": {
+   "frase_falada": "Conservar carne crua por meses sem refrigeração",
+   "o_que_aparece_no_frame_0": "Pedaços gigantes de carne curada pendurados com uma seta vermelha apontando para um deles",
+   "texto_na_tela": "CONSERVAR",
+   "por_que_prende": "Usa um gancho de curiosidade extrema e quebra de padrão: a ideia de deixar carne crua fora da geladeira por meses sem estragar chama a atenção imediata."
+  },
+  "estrutura": [
+   {
+    "inicio": "00:00",
+    "fim": "00:05",
+    "funcao": "gancho",
+    "narracao": "Conservar carne crua por meses sem refrigeração exige um domínio absoluto da desidratação.",
+    "imagem": "Peças penduradas e cortes rápidos demonstrando a carne curada sendo fatiada."
+   },
+   {
+    "inicio": "00:05",
+    "fim": "00:08",
+    "funcao": "desmistificacao",
+    "narracao": "Esse é o pastirma turco, uma iguaria tradicional...",
+    "imagem": "Açougueiro selecionando a peça e posicionando na bancada."
+   },
+   {
+    "inicio": "00:08",
+    "fim": "00:23",
+    "funcao": "explicacao",
+    "narracao": "...onde a peça bovina é primeiro submersa em sal puro para extrair toda a umidade. Para isolar o alimento do ataque de bactérias externas, aplica-se uma crosta vermelha e espessa de especiarias chamada çemen, com cominho, feno-grego, alho e pimenta, que atuam como um selante químico natural.",
+    "imagem": "Processo de salga intensa, imersão na pasta vermelha de especiarias (çemen), preparo do pó de temperos e pendura para secagem."
+   },
+   {
+    "inicio": "00:23",
+    "fim": "00:32",
+    "funcao": "virada",
+    "narracao": "Após semanas curando pendurada ao ar livre, a carne atinge um estado de conservação perfeito e hiperconcentração de sabor, sendo servida em fatias quase transparentes.",
+    "imagem": "Fatiamento ultra fino da carne com cutelo, mostrando a textura e aparência final apetitosa."
+   }
+  ],
+  "cortes": [
+   {
+    "tempo": "00:01",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:03",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:05",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:08",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:11",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:17",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:20",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:22",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:25",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:27",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:28",
+    "tipo": "seco"
+   }
+  ],
+  "efeitos_visuais": [
+   {
+    "tempo": "00:00",
+    "efeito": "seta",
+    "em_qual_palavra": "Conservar",
+    "para_que": "Direcionar a atenção para a peça de pastirma pendurada no gancho inicial."
+   },
+   {
+    "tempo": "00:03",
+    "efeito": "zoom",
+    "em_qual_palavra": "desidratação",
+    "para_que": "Dar ênfase ao corte da carne pelo açougueiro."
+   },
+   {
+    "tempo": "00:28",
+    "efeito": "zoom rápido",
+    "em_qual_palavra": "quase",
+    "para_que": "Destacar a lâmina passando e a precisão da fatia fina."
+   }
+  ],
+  "efeitos_sonoros": [],
+  "musica": "Trilha rítmica e moderna em segundo plano, mantida em volume moderado abaixo da locução gerada por IA.",
+  "legenda": {
+   "estilo": "Letras garrafais em caixa alta, fonte bold condensada com borda/sombra preta e destaque em cores dinâmicas.",
+   "posicao": "Centro-inferior",
+   "palavras_por_vez": 2,
+   "cores": "Branco com palavras-chave destacadas em amarelo/ciano"
+  },
+  "ritmo": {
+   "segundos_medios_por_cena": 2.9,
+   "observacao": "Cortes dinâmicos a cada 2 a 3 segundos acompanhando o fluxo passo a passo do processo artesanal culinário."
+  },
+  "cta": "Nenhum CTA explícito na narração ou texto.",
+  "loop": "Não possui loop perfeito direto, mas o final com o fatiamento satisfatório conecta tematicamente de volta ao impacto do primeiro segundo com a carne pronta.",
+  "origem_das_imagens": "Compilado de vídeos virais da internet (TikTok/Instagram) de charcutaria artesanal turca e culinária, com marcas d'água originais de criadores repostadas com a identificação do canal centralizada na tela (@POLACO SEM POLÔNIA).",
+  "licoes_para_copiar": [
+   "Iniciar com um gancho contraintuitivo (carne crua sem geladeira por meses).",
+   "Explicar a ciência por trás de forma simples e visual (sal para umidade + pasta de especiarias como selante antibacteriano).",
+   "Finalizar com cenas altamente satisfatórias de fatiamento para reter o espectador até os últimos segundos."
+  ]
+ }
+}

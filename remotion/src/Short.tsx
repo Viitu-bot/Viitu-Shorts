@@ -13,7 +13,7 @@ const fontFamily = 'Anton';
 loadFont({family: fontFamily, url: staticFile('Anton-Regular.ttf')});
 
 export type Palavra = {texto: string; f0: number; f1: number; destaque: boolean; y: number};
-export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, number, number][]};
+export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, number, number][]; tipo?: 'circulo' | 'seta'};
 export type Plano = {
   fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
   cortes: number[]; impactos: number[]; cta: {f0: number; texto: string} | null;
@@ -58,6 +58,35 @@ const CirculoMarca: React.FC<{marca: Marca}> = ({marca}) => {
         {anel('rgba(0,0,0,0.5)', 22, 3, 5)}
         {anel('#FF2020', 13)}
         {anel('rgba(255,255,255,0.35)', 3)}
+      </g>
+    </svg>
+  );
+};
+
+// ---------- seta vermelha que entra deslizando e "cutuca" o alvo (padrão dos canais grandes) ----------
+const SetaMarca: React.FC<{marca: Marca}> = ({marca}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const local = frame - marca.f0;
+  if (local < 0 || frame >= marca.f1) return null;
+  const i = Math.min(Math.max(frame - marca.cena_f0, 0), marca.pos.length - 1);
+  const [x, y, r] = marca.pos[i];
+  // a seta vem da diagonal de cima/esquerda (ou direita, se o alvo estiver à esquerda)
+  const lado = x < 420 ? 1 : -1;
+  const ang = lado === -1 ? 225 : 315;                   // graus: aponta para baixo, na direção do alvo
+  const entra = spring({frame: local, fps, config: {damping: 13, stiffness: 160}});
+  const cutuca = local > 10 ? Math.sin(((local - 10) / fps) * Math.PI * 4) * 12 : 0;
+  const dist = r + 40 + interpolate(entra, [0, 1], [260, 0]) + cutuca;
+  const rad = (ang * Math.PI) / 180;
+  const px = x - Math.cos(rad) * dist;
+  const py = y + Math.sin(rad) * dist;
+  const saida = interpolate(frame, [marca.f1 - 5, marca.f1], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const forma = 'M0,-20 L130,-20 L130,-52 L210,0 L130,52 L130,20 L0,20 Z';   // seta apontando para +x
+  return (
+    <svg width={1080} height={1920} style={{position: 'absolute', inset: 0, overflow: 'visible', opacity: saida * entra}}>
+      <g transform={`translate(${px},${py}) rotate(${-ang}) translate(-210,0)`}>
+        <path d={forma} fill="rgba(0,0,0,0.45)" transform="translate(4,6)" />
+        <path d={forma} fill="#FF1E1E" stroke="white" strokeWidth={8} strokeLinejoin="round" />
       </g>
     </svg>
   );
@@ -171,7 +200,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
 
       {plano.marcas.map((m, k) => (
         <React.Fragment key={k}>
-          <CirculoMarca marca={m} />
+          {m.tipo === 'seta' ? <SetaMarca marca={m} /> : <CirculoMarca marca={m} />}
           <Sequence from={m.f0} durationInFrames={20}><Audio src={staticFile('pop.mp3')} volume={0.55} /></Sequence>
         </React.Fragment>
       ))}

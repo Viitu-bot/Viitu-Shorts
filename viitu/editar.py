@@ -141,8 +141,14 @@ def _filtro_cena(s: dict, entrada: str, eh_foto: bool, n_frames: int, primeira: 
     return f + "[v]"
 
 
-def _para_tela(s: dict, ex: float, ey: float, z: float, iw: float, ih: float) -> tuple[float, float, float]:
+def _para_tela(s: dict, ex: float, ey: float, z: float, iw: float, ih: float,
+               t_cena: float = 0.0) -> tuple[float, float, float]:
     """Converte ponto (0–1 no clipe original) para pixels na tela 1080x1920. Retorna (x, y, escala)."""
+    if s.get("_cam"):
+        c = s["_cam"]
+        x0 = float(np.interp(t_cena, c["t"], c["x"]))
+        y0 = float(np.interp(t_cena, c["t"], c["y"]))
+        return (ex * iw - x0) / c["w"] * W, (ey * ih - y0) / c["h"] * H, iw / c["w"] * W
     sx, sy = s.get("alvo", [0.5, 0.5])
     j = 1 / z
     if s.get("layout") == "inteiro":
@@ -185,7 +191,7 @@ def marca_que_segue(s: dict, clipe: Path, n: int, pasta: Path, idx: int) -> Path
         cy = float(np.interp(t, ts, [p["y"] + p["h"] / 2 for p in pontos]))
         tam = float(np.interp(t, ts, [max(p["w"], p["h"] * ih / iw) for p in pontos]))
         z = z0 + (z1 - z0) * i / max(n - 1, 1)
-        x, y, esc = _para_tela(s, cx, cy, z, iw, ih)
+        x, y, esc = _para_tela(s, cx, cy, z, iw, ih, i / FPS)
         pos.append((x, y, min(max(tam * esc * 0.62, 70), 320)))
     # suaviza o tremido da detecção (média móvel)
     k = 7
@@ -373,6 +379,15 @@ def renderizar_cena(s: dict, pasta: Path, idx: int) -> Path:
            "-frames:v", str(n), "-r", str(FPS), "-an", "-c:v", "libx264", "-preset", "veryfast",
            "-crf", "18", str(saida)]
     subprocess.run(cmd, check=True)
+    if s.get("seta_auto") and not s.get("dividida"):
+        s2 = dict(s, marca_auto=s["seta_auto"])
+        global MODO_REMOTION
+        _m = MODO_REMOTION
+        MODO_REMOTION = True                 # só calcula as posições (a seta é desenhada no Remotion)
+        marca_que_segue(s2, clipe, n, pasta, idx)
+        MODO_REMOTION = _m
+        if s2.get("_marca_pos"):
+            s["_seta_pos"] = s2["_marca_pos"]
     if s.get("marca_auto") and not s.get("dividida"):
         mov = marca_que_segue(s, clipe, n, pasta, idx)
         if mov:
@@ -507,7 +522,9 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
                       "y": y_legenda(round(p["inicio"] * FPS))}
                      for i, p in enumerate(palavras)],
         "marcas": [{"f0": s["f0"] + int(s["marca_auto"].get("atraso", 0.15) * FPS), "cena_f0": s["f0"], "f1": s["f1"],
-                    "pos": s["_marca_pos"]} for s in segs if s.get("_marca_pos")],
+                    "pos": s["_marca_pos"], "tipo": "circulo"} for s in segs if s.get("_marca_pos")]
+                  + [{"f0": s["f0"] + int(s["seta_auto"].get("atraso", 0.0) * FPS), "cena_f0": s["f0"], "f1": s["f1"],
+                      "pos": s["_seta_pos"], "tipo": "seta"} for s in segs if s.get("_seta_pos")],
         "cortes": [s["f0"] for s in segs[1:]],
         "impactos": [round(palavras[achar_palavra(palavras, t, 0)]["inicio"] * FPS)
                      for t in cfg.get("impacto_em", [])],

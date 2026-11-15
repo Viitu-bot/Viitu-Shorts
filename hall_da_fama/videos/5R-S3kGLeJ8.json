@@ -1,0 +1,197 @@
+{
+ "meta": {
+  "id": "5R-S3kGLeJ8",
+  "link": "https://youtube.com/shorts/5R-S3kGLeJ8",
+  "titulo": "A massa que está VIVA há anos 😱",
+  "canal": "GeneralTV",
+  "handle": "@ivangeneraltv",
+  "inscritos_canal": 174000,
+  "publicado": "2026-11-14T21:00",
+  "duracao_s": 44,
+  "views": 68168,
+  "likes": 2620,
+  "comentarios": 32,
+  "origem": "enviado pelo dono"
+ },
+ "raiox": {
+  "duracao_s": 44,
+  "gancho": {
+   "frase_falada": "Essa massa cheia de bolhas parece estar viva, e muitas famílias cuidam dela como um bicho de estimação por décadas.",
+   "o_que_aparece_no_frame_0": "Uma massa extremamente elástica, fermentada e aerada sendo despejada de um recipiente plástico transparente com uma seta vermelha apontando.",
+   "texto_na_tela": "MASSA",
+   "por_que_prende": "Usa forte apelo visual (textura hipnótica e aerada da massa de fermentação natural) combinado com uma afirmação curiosa e estranha ('parece estar viva', 'cuidam como bicho de estimação')."
+  },
+  "estrutura": [
+   {
+    "inicio": "00:00",
+    "fim": "00:06",
+    "funcao": "gancho",
+    "narracao": "Essa massa cheia de bolhas parece estar viva, e muitas famílias cuidam dela como um bicho de estimação por décadas.",
+    "imagem": "Cenas em close-up de massas hiperfermentadas, cheias de alvéolos e bolhas se expandindo."
+   },
+   {
+    "inicio": "00:06",
+    "fim": "00:12",
+    "funcao": "explicacao",
+    "narracao": "Isso é um fermento natural, e o nascimento dele é muito simples: basta misturar farinha de trigo comum e água limpa.",
+    "imagem": "Mão esticando a teia de glúten do fermento e, em seguida, demonstração de farinha e água sendo adicionadas a um pote de vidro."
+   },
+   {
+    "inicio": "00:12",
+    "fim": "00:24",
+    "funcao": "explicacao",
+    "narracao": "Com o passar dos dias, bactérias do bem e leveduras invisíveis do ar entram no pote e começam a comer a farinha. As bactérias deixam o cheiro azedinho, e as leveduras soltam gases que fazem a massa crescer cheia de bolhas.",
+    "imagem": "Massa transbordando do balde, colher mexendo no fermento esponjoso, closes de bolhas estourando e massa crescendo."
+   },
+   {
+    "inicio": "00:24",
+    "fim": "00:28",
+    "funcao": "explicacao",
+    "narracao": "Se você continuar alimentando esse pote com água e farinha, ele nunca morre.",
+    "imagem": "Mulher manuseando massa elástica que transborda de um pote grande."
+   },
+   {
+    "inicio": "00:28",
+    "fim": "00:44",
+    "funcao": "virada",
+    "narracao": "Uma padaria tradicional em Paris mantém o mesmo fermento vivo desde 1932. Como eles sempre guardam um pedaço da mistura velha para fazer a nova, os pães que saem do forno hoje são descendentes diretos de uma massa criada quase um século atrás.",
+    "imagem": "Fachada da padaria Poilâne em Paris, padeiro sovando massa centenária em masseira de madeira, modelagem, forno a lenha e pão sendo aberto ao meio mostrando o miolo perfeito."
+   }
+  ],
+  "cortes": [
+   {
+    "tempo": "00:00",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:02",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:04",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:06",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:07",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:09",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:12",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:14",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:18",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:20",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:23",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:25",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:28",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:30",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:32",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:34",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:36",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:38",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:40",
+    "tipo": "seco"
+   }
+  ],
+  "efeitos_visuais": [
+   {
+    "tempo": "00:00",
+    "efeito": "seta animada vermelha",
+    "em_qual_palavra": "massa",
+    "para_que": "Direcionar a atenção imediata para a estrutura alveolada e pegajosa da massa saindo do recipiente."
+   },
+   {
+    "tempo": "00:01",
+    "efeito": "seta animada vermelha",
+    "em_qual_palavra": "bolhas",
+    "para_que": "Reforçar visualmente a textura da fermentação ativa."
+   },
+   {
+    "tempo": "00:03",
+    "efeito": "câmera lenta/close-up macro",
+    "em_qual_palavra": "famílias",
+    "para_que": "Destacar a textura orgânica e esponjosa que lembra um organismo vivo."
+   },
+   {
+    "tempo": "00:00",
+    "efeito": "legenda cinética com pop-in",
+    "em_qual_palavra": "todas",
+    "para_que": "Manter o ritmo de retenção dinâmico acompanhando a narração palavra por palavra."
+   }
+  ],
+  "efeitos_sonoros": [
+   {
+    "tempo": "00:00",
+    "som": "woosh suave",
+    "momento": "Entrada dos elementos visuais e início da fala."
+   },
+   {
+    "tempo": "00:28",
+    "som": "transição sutil / impacto leve",
+    "momento": "Corte para a fachada da padaria tradicional Poilâne em Paris, marcando a virada da história."
+   }
+  ],
+  "musica": "Trilha ambiente curiosa e envolvente, com sintetizadores e batida leve em volume médio-baixo, mantendo a voz em primeiro plano absoluto.",
+  "legenda": {
+   "estilo": "Caixa alta, tipografia sem serifa bem encorpada, efeito de pulso/pop na entrada de cada palavra",
+   "posicao": "Centro da tela / centro inferior",
+   "palavras_por_vez": 1,
+   "cores": "Texto em amarelo vibrante (#FFE500) com contorno/sombra suave para alto contraste"
+  },
+  "ritmo": {
+   "segundos_medios_por_cena": 2.3,
+   "observacao": "Cortes ágeis a cada 1 a 3 segundos intercalando takes 'satisfatórios' (ASMR visual de massas fermentando) com a narrativa factual."
+  },
+  "cta": "Nenhum CTA explícito falado ou escrito; focado 100% em retenção, compartilhamento orgânico e tempo de tela.",
+  "loop": "Não há loop contínuo perfeito de frase, mas o tema fecha com o pão assado de quase um século, estimulando o espectador a rever como aquela massa centenária começou no frame 0.",
+  "origem_das_imagens": "Compilação curada de vídeos virais de panificação artesanal (TikTok / Instagram Reels) e trechos de mini-documentário da clássica padaria francesa Poilâne.",
+  "licoes_para_copiar": [
+   "Usar texturas altamente sensoriais ('satisfying videos') no início para reter o olhar antes mesmo do espectador processar o áudio.",
+   "Contar uma história de curiosidade concreta (ex: o pão feito com a mesma massa desde 1932) em vez de apenas explicar o conceito biológico abstrato.",
+   "Legendas de 1 palavra por vez no centro da tela sincronizadas à fala mantêm os olhos do usuário fixados no ponto focal do vídeo."
+  ]
+ }
+}
