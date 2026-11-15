@@ -11,14 +11,17 @@
     "texto": "an egg",
     "atraso": 0.0
    },
-   "revisao": "manual"
+   "revisao": "manual",
+   "texto_na_imagem": false
   },
   {
    "em": "sem galo nenhum",
    "clipe": "bruto_soson.mp4",
    "inicio": 77.3,
    "sujeito": "an egg",
-   "esperado": "an egg"
+   "esperado": "an egg",
+   "texto_na_imagem": false,
+   "espelhar": true
   },
   {
    "em": "A maioria acha",
@@ -41,9 +44,10 @@
   },
   {
    "em": "Não precisa",
-   "clipe": "pixabay_66634.mp4",
-   "inicio": 4.0,
-   "esperado": "a hen"
+   "clipe": "pixabay_66635.mp4",
+   "inicio": 20.0,
+   "esperado": "a hen",
+   "_contraste": "muitas galinhas depois de um galo só"
   },
   {
    "em": "com ou sem galo",
@@ -96,7 +100,8 @@
    "marca_auto": {
     "texto": "an egg",
     "atraso": 4.0
-   }
+   },
+   "texto_na_imagem": false
   },
   {
    "em": "Mas tem um porém",
@@ -138,7 +143,8 @@
    "em": "ela tira dos próprios",
    "clipe": "pixabay_69729.mp4",
    "inicio": 3.0,
-   "esperado": "a bird"
+   "esperado": "a bird",
+   "espelhar": true
   },
   {
    "em": "Cada casca leva",
@@ -162,8 +168,8 @@
   },
   {
    "em": "Você sabia que",
-   "clipe": "pixabay_66635.mp4",
-   "inicio": 20.0,
+   "clipe": "pixabay_66634.mp4",
+   "inicio": 4.0,
    "esperado": "a hen"
   },
   {
@@ -177,7 +183,8 @@
    "clipe": "bruto_soson.mp4",
    "inicio": 65.0,
    "sujeito": "an egg",
-   "esperado": "a chicken"
+   "esperado": "a chicken",
+   "texto_na_imagem": false
   }
  ],
  "impacto_em": [

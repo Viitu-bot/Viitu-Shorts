@@ -108,8 +108,18 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
 - Estilo de legenda/SFX (referência: palavra única, fonte grossa, contorno; flash 0,2 s nos cortes;
   woosh nos cortes, ding/pak na palavra-gatilho)
 
+## Escolha de cena (definido com o dono): decidir NA ESCOLHA, não consertar depois
+1. **Toda cena é escolhida com o cuidado do gancho:** representa exatamente a frase falada E tem
+   apelo visual (o melhor trecho do clipe, assunto em destaque, enquadrado). Sem "cena de enchimento".
+2. **Contraste com a cena anterior** (o cérebro não se acostuma): mudar pelo menos 1 eixo —
+   escala (close ↔ aberto), quantidade (uma galinha ↔ um monte), direção (olhando/indo para a
+   esquerda ↔ direita; inverter com `"espelhar": true`), energia (parado ↔ ação).
+3. Cena de explicação não precisa de início-meio-fim; precisa de variedade e de força visual.
+4. Ferramenta: `python3 -m viitu.contraste <proj>` (relatório) / `--aplicar` (espelha onde a direção
+   repete). Nunca espelhar imagem com texto/logo/marca d'água (`"texto_na_imagem": true`).
+
 ## Revisão técnica OBRIGATÓRIA antes de entregar
-- `python3 -m viitu.revisar <proj>`: confere início/meio/fim de cada cena (assunto `esperado` na tela,
+- `python3 -m viitu.revisar <proj>`: confere o meio de cada cena (`--rigoroso`: início/meio/fim) (assunto `esperado` na tela,
   centralizado, não cortado) e repetição de clipes (âncora ≤ 4 cenas, demais 1). Abrir
   `saida/revisao.jpg` e olhar. Só mandar ao dono com APROVADO ou com cada alerta conferido a olho
   (marcar `"revisao": "manual"` na cena quando o detector não serve, ex.: close extremo).

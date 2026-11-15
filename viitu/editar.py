@@ -135,6 +135,8 @@ def _filtro_cena(s: dict, entrada: str, eh_foto: bool, n_frames: int, primeira: 
         f = (f"[{entrada}]{_lento(s)}{crop},scale={W * 2}:{H * 2}:flags=lanczos,"
              f"zoompan=z='{zexpr}':x='max(0\\,min(iw-iw/zoom\\,iw*{sx}-iw/zoom/2))'"
              f":y='max(0\\,min(ih-ih/zoom\\,ih*{sy}-ih/zoom/2))':d=1:s={W}x{H}:fps={FPS}")
+    if s.get("espelhar"):
+        f += ",hflip"                       # inverte o lado (o cérebro não se acostuma)
     f += ",eq=contrast=1.06:saturation=1.12,unsharp=5:5:0.5,vignette=PI/5,setsar=1,format=yuv420p"     # bordas escuras guiam o olhar
     if not primeira and not MODO_REMOTION:
         f += ",fade=t=in:st=0:d=0.12:color=white"   # flash nos cortes (no Remotion: glitch RGB)
@@ -201,6 +203,8 @@ def marca_que_segue(s: dict, clipe: Path, n: int, pasta: Path, idx: int) -> Path
         xs[i], ys[i] = pos[i][0], pos[i][1]
         xs[-1 - i], ys[-1 - i] = pos[-1 - i][0], pos[-1 - i][1]
     pos = [(float(a), float(b), p[2]) for a, b, p in zip(xs, ys, pos)]
+    if s.get("espelhar"):
+        pos = [(W - a, b, c) for a, b, c in pos]
     s["_marca_pos"] = [[round(a, 1), round(b, 1), round(c, 1)] for a, b, c in pos]
     if MODO_REMOTION:
         return None

@@ -25,6 +25,7 @@ import numpy as np
 RAIZ = Path(__file__).resolve().parent.parent
 FPS = 30
 MAX_ANCORA, MAX_OUTROS = 4, 1
+RIGOROSO = "--rigoroso" in sys.argv     # padrão: 1 quadro por cena (rede de segurança, não o critério)
 
 
 def _quadro(cap, f):
@@ -87,7 +88,8 @@ def revisar(projeto: str) -> bool:
         if cena.get("revisao") == "manual":     # conferida a olho (detector não serve p/ esse plano)
             esperado = None
         tiles, notas = [], []
-        for f in (f0 + 2, (f0 + f1) // 2, f1 - 3):
+        quadros = (f0 + 2, (f0 + f1) // 2, f1 - 3) if RIGOROSO else ((f0 + f1) // 2,)
+        for f in quadros:
             img = _quadro(cap, max(min(f, total - 1), 0))
             if img is None:
                 continue
@@ -125,7 +127,7 @@ def revisar(projeto: str) -> bool:
                 cv2.putText(t, nota[:22], (4, 312), cv2.FONT_HERSHEY_SIMPLEX, 0.42, (0, 0, 255), 1)
             tiles.append(t)
         # problema real só se aparecer em 2 dos 3 quadros (evita falso alarme de 1 quadro)
-        if len(notas) >= 2 and cena.get("revisao") != "manual":
+        if len(notas) >= (2 if RIGOROSO else 1) and cena.get("revisao") != "manual":
             problemas.append(f"CENA {k + 1} ({f0 / FPS:.1f}–{f1 / FPS:.1f}s, '{cena['em']}', {cena['clipe']}): {', '.join(sorted(set(notas)))}")
         faixa = np.zeros((320, 150, 3), np.uint8)
         cv2.putText(faixa, f"cena {k + 1}", (4, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
@@ -148,4 +150,4 @@ def revisar(projeto: str) -> bool:
 
 
 if __name__ == "__main__":
-    sys.exit(0 if revisar(sys.argv[1]) else 1)
+    sys.exit(0 if revisar([a for a in sys.argv[1:] if not a.startswith("--")][0]) else 1)

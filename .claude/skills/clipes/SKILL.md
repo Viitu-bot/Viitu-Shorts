@@ -47,6 +47,11 @@ python3 -m viitu.tema brutos "<tema em inglês, ex.: vampire bat documentary>"
 A nuvem não baixa do YouTube: o usuário baixa/grava a tela das cenas e envia no chat ou por Drive.
 Material de terceiros entra com narração transformadora + crédito na descrição.
 
+## 1c. Contraste entre cenas vizinhas (planejar ANTES de baixar)
+Para cada cena, anote também o contraste com a anterior: escala, quantidade (1 ↔ muitos), direção
+(← ↔ →) e energia (parado ↔ ação). Ex.: galo em close → um monte de galinhas → um galo inteiro.
+Depois de montar o cenas.json: `python3 -m viitu.contraste <proj> --aplicar`.
+
 ## 2. Buscar e ANALISAR candidatos (nunca escolher por miniatura)
 ```
 python3 -m viitu.visao candidatos "goat eating" "cat stalking" ... -n 6 --saida <scratchpad>/cand
