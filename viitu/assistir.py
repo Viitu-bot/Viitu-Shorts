@@ -61,9 +61,11 @@ def perguntar(link: str, prompt: str, modelo: str = MODELO, json_saida: bool = T
     }
     import time
     for tentativa in range(5):
-        r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
-                          params={"key": _chave()}, json=corpo, timeout=600)
-        d = r.json()
+        try:
+            d = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
+                              params={"key": _chave()}, json=corpo, timeout=600).json()
+        except requests.RequestException as e:      # queda de rede/proxy: espera e tenta de novo
+            d = {"error": {"message": str(e)[:120], "code": 503}}
         msg = d.get("error", {}).get("message", "")
         if "high demand" in msg or d.get("error", {}).get("code") in (429, 500, 503):
             time.sleep(20 * (tentativa + 1))     # servidor ocupado: espera e tenta de novo

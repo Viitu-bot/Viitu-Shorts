@@ -1,0 +1,174 @@
+{
+ "meta": {
+  "id": "ATmqYITooB8",
+  "link": "https://youtube.com/shorts/ATmqYITooB8",
+  "titulo": "Espiar essa van pode dar muito errado! 😳 #curiosidades #japão #lugares",
+  "canal": "KSO Descobre",
+  "handle": "@ksodescobre",
+  "inscritos_canal": 25200,
+  "publicado": "2026-02-24T14:00",
+  "duracao_s": 42,
+  "views": 3665288,
+  "likes": 109655,
+  "comentarios": 334,
+  "origem": "top do canal @ksodescobre"
+ },
+ "raiox": {
+  "duracao_s": 41,
+  "gancho": {
+   "frase_falada": "Se você algum dia visitar o Japão e se deparar com essa van balançando, não cometa o erro de se aproximar para espiar pela janela.",
+   "o_que_aparece_no_frame_0": "Uma van/caminhonete com estampa de bolinhas e uma grande janela de vidro espelhado estacionada em uma rua do Japão.",
+   "texto_na_tela": "Legenda dinâmica palavra por palavra em destaque no centro inferior.",
+   "por_que_prende": "Gera curiosidade imediata e sensação de perigo/tabu ao dizer 'não cometa o erro de se aproximar', associado ao mistério visual de uma van balançando no meio da rua."
+  },
+  "estrutura": [
+   {
+    "inicio": "00:00",
+    "fim": "00:07",
+    "funcao": "gancho",
+    "narracao": "Se você algum dia visitar o Japão e se deparar com essa van balançando, não cometa o erro de se aproximar para espiar pela janela. Isso é absolutamente proibido, e quem fez se arrependeu seriamente.",
+    "imagem": "Cortes rápidos de pessoas se aproximando da van com vidro espelhado e tentando espiar para dentro."
+   },
+   {
+    "inicio": "00:07",
+    "fim": "00:16",
+    "funcao": "desmistificacao",
+    "narracao": "A princípio pode parecer que está tremendo por causa de um terremoto. Afinal, essas coisas acontecem com muita frequência no Japão. Porém, na maioria dos vídeos desse carro não há nenhum terremoto...",
+    "imagem": "Cenas reais de terremotos no Japão (lustre balançando em sala e garrafas caindo em um bar) contrapostas com o rapaz espiando a van."
+   },
+   {
+    "inicio": "00:16",
+    "fim": "00:26",
+    "funcao": "explicacao",
+    "narracao": "...e a movimentação vem de dentro do veículo. Então, o que realmente está acontecendo ali? Esses carros são chamados de carros de espelho mágico, porque no lugar da porta lateral possuem uma janela gigante com uma técnica especial.",
+    "imagem": "Porta da van abrindo e revelando pessoas saindo de macacão amarelo, seguido por planos externos do caminhão com espelho mágico (Magic Mirror)."
+   },
+   {
+    "inicio": "00:26",
+    "fim": "00:41",
+    "funcao": "virada",
+    "narracao": "Enquanto quem está passando por ali só vê o próprio reflexo, quem está no interior enxerga tudo o que acontece fora. A mídia local e influenciadores costumam gravar dentro deles e, às vezes, até convidam curiosos para entrevistas. Embora algumas pessoas também tenham feito vídeos mais reveladores atrás daquele vidro.",
+    "imagem": "Visão interna do veículo mostrando que o vidro é transparente por dentro e espelho por fora, com influenciadores e pessoas do lado de fora encostando o rosto sem saber que estão sendo observadas."
+   }
+  ],
+  "cortes": [
+   {
+    "tempo": "00:01",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:03",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:06",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:08",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:11",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:14",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:16",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:20",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:22",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:24",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:26",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:30",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:33",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:36",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:37",
+    "tipo": "seco"
+   }
+  ],
+  "efeitos_visuais": [
+   {
+    "tempo": "00:02",
+    "efeito": "seta",
+    "em_qual_palavra": "VAN",
+    "para_que": "Apontar diretamente para a van misteriosa estacionada na rua movimentada de Shibuya."
+   },
+   {
+    "tempo": "00:19",
+    "efeito": "círculo",
+    "em_qual_palavra": "ESTÁ",
+    "para_que": "Destacar o rosto da garota fantasiada que está saindo da traseira do caminhão."
+   },
+   {
+    "tempo": "00:00",
+    "efeito": "texto animado",
+    "em_qual_palavra": "todas",
+    "para_que": "Manter a retenção visual exibindo palavras sincronizadas no centro inferior."
+   }
+  ],
+  "efeitos_sonoros": [
+   {
+    "tempo": "00:02",
+    "som": "pop",
+    "momento": "Aparição da seta vermelha indicando o veículo."
+   },
+   {
+    "tempo": "00:08",
+    "som": "rumble / tremor grave",
+    "momento": "Cena ilustrativa do terremoto balançando o apartamento."
+   },
+   {
+    "tempo": "00:19",
+    "som": "ding / swoosh",
+    "momento": "Aparição do círculo vermelho demarcando a pessoa saindo da van."
+   }
+  ],
+  "musica": "Trilha sonora eletrônica de suspense/curiosidade em ritmo constante, em volume moderado logo abaixo da narração, mantendo a tensão da revelação.",
+  "legenda": {
+   "estilo": "Palavra por palavra sincronizada com a fala, fonte sans-serif grossa e arredondada com contorno escuro e sombra suave.",
+   "posicao": "Centro inferior da tela.",
+   "palavras_por_vez": 1,
+   "cores": "Branco com palavras-chave alternando em amarelo/laranja."
+  },
+  "ritmo": {
+   "segundos_medios_por_cena": 2.5,
+   "observacao": "Cortes muito ágeis alternando entre a visão externa da van, exemplos de contexto (terremotos) e a revelação do mecanismo interno (espelho unidirecional)."
+  },
+  "cta": "Não há CTA explícito verbal ou em texto, priorizando retenção e mistério até o último segundo.",
+  "loop": "O vídeo termina com pessoas olhando de perto para a janela e o áudio/contexto convida o espectador a rever o início para notar os detalhes da van balançando.",
+  "origem_das_imagens": "Compilado de vídeos virais de redes sociais (TikTok/Twitter/YouTube) gravados nas ruas do Japão (especialmente Shibuya), gravações internas de programas e vlogs com o famoso 'Magic Mirror Truck'.",
+  "licoes_para_copiar": [
+   "Uso de alerta de proibição ('não cometa o erro de...') nos primeiros 3 segundos para despertar curiosidade imediata.",
+   "Contrapor uma hipótese lógica comum (ex: achar que é terremoto no Japão) antes de entregar a resposta real.",
+   "Uso de marcações pontuais como seta e círculo vermelho para direcionar o olhar em momentos-chave sem poluir o vídeo inteiro.",
+   "Revelação visual surpreendente mostrando o contraste de dentro vs. fora (o espelho falso visto pelos dois lados)."
+  ]
+ }
+}

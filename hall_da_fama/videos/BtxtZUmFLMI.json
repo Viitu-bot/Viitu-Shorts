@@ -1,0 +1,177 @@
+{
+ "meta": {
+  "id": "BtxtZUmFLMI",
+  "link": "https://youtube.com/shorts/BtxtZUmFLMI",
+  "titulo": "Ser militar na Índia só é possível se passar nesse teste 😳 #curiosidades #india #lugares",
+  "canal": "KSO Descobre",
+  "handle": "@ksodescobre",
+  "inscritos_canal": 25200,
+  "publicado": "2026-03-19T14:00",
+  "duracao_s": 31,
+  "views": 3832533,
+  "likes": 69107,
+  "comentarios": 170,
+  "origem": "top do canal @ksodescobre"
+ },
+ "raiox": {
+  "duracao_s": 30,
+  "gancho": {
+   "frase_falada": "Por que pisar em tinta vermelha é obrigatório no exército indiano?",
+   "o_que_aparece_no_frame_0": "Pessoas em círculo observando um recruta pisando com o pé descalço dentro de uma bacia com líquido vermelho, apontado por uma seta vermelha.",
+   "texto_na_tela": "PISAR",
+   "por_que_prende": "Gera curiosidade imediata ao mostrar um ritual bizarro e misterioso de alistamento militar com líquido vermelho semelhante a sangue."
+  },
+  "estrutura": [
+   {
+    "inicio": "00:00",
+    "fim": "00:03",
+    "funcao": "gancho",
+    "narracao": "Por que pisar em tinta vermelha é obrigatório no exército indiano?",
+    "imagem": "Recruta pisando na bacia de tinta vermelha e em seguida no papel branco sob supervisão militar."
+   },
+   {
+    "inicio": "00:03",
+    "fim": "00:10",
+    "funcao": "desmistificacao",
+    "narracao": "Na verdade, é uma técnica rápida para identificar pés planos antes dos treinos. Uma pegada normal mostra um espaço no meio, enquanto os pés planos deixam uma marca completa.",
+    "imagem": "Instrutor examinando pegadas vermelhas no chão com círculo vermelho, seguido de comparação com pegadas em água e diagramas anatômicos."
+   },
+   {
+    "inicio": "00:10",
+    "fim": "00:14",
+    "funcao": "explicacao",
+    "narracao": "Você pode até testar isso em casa: é só molhar os pés, pisar no papel e conferir se há ou não uma curva.",
+    "imagem": "Pessoa caminhando descalça e ilustração comparativa dos tipos de arco plantar (Low, Mid, High)."
+   },
+   {
+    "inicio": "00:14",
+    "fim": "00:25",
+    "funcao": "virada",
+    "narracao": "Mas por que os militares da Índia se importam com isso? Bem, o arco do pé funciona como um amortecedor natural do corpo. Sem ele, cada passo é mais forte, exige mais energia e torna o treinamento militar muito mais intenso.",
+    "imagem": "Oficiais inspecionando recrutas enfileirados, soldados saltando em poço de água/lama, exame médico do arco do pé e treinos pesados de corrida e força."
+   },
+   {
+    "inicio": "00:25",
+    "fim": "00:30",
+    "funcao": "loop",
+    "narracao": "Por conta disso, se o teste indicar pé plano, o candidato pode ser desqualificado na hora.",
+    "imagem": "Recruta realizando o teste de pegada na tábua e sendo avaliado pelos oficiais."
+   }
+  ],
+  "cortes": [
+   {
+    "tempo": "00:01",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:03",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:06",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:07",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:09",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:10",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:12",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:14",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:16",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:18",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:20",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:21",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:23",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:25",
+    "tipo": "seco"
+   }
+  ],
+  "efeitos_visuais": [
+   {
+    "tempo": "00:00",
+    "efeito": "seta animada vermelha",
+    "em_qual_palavra": "tinta",
+    "para_que": "Direcionar a atenção imediatamente para a bacia com tinta no chão."
+   },
+   {
+    "tempo": "00:04",
+    "efeito": "círculo vermelho pulsante",
+    "em_qual_palavra": "planos",
+    "para_que": "Evidenciar o resultado do teste nas pegadas estampadas no piso."
+   },
+   {
+    "tempo": "00:12",
+    "efeito": "diagrama anatômico gráfico",
+    "em_qual_palavra": "papel",
+    "para_que": "Explicar visualmente e de forma didática os níveis de arco plantar (baixo, médio e alto)."
+   }
+  ],
+  "efeitos_sonoros": [
+   {
+    "tempo": "00:00",
+    "som": "whoosh",
+    "momento": "Entrada rápida da seta vermelha de destaque."
+   },
+   {
+    "tempo": "00:04",
+    "som": "pop",
+    "momento": "Surgimento do círculo vermelho destacando as pegadas."
+   },
+   {
+    "tempo": "00:14",
+    "som": "whoosh",
+    "momento": "Transição para o bloco de pergunta reflexiva sobre os militares."
+   }
+  ],
+  "musica": "Trilha instrumental de suspense e curiosidade em andamento médio, mixada em volume secundário abaixo da narração clara de locução.",
+  "legenda": {
+   "estilo": "Letras garrafais em fonte grossa sans-serif, branca com forte traço/sombra preta.",
+   "posicao": "Centro-inferior da tela",
+   "palavras_por_vez": 1,
+   "cores": "Texto branco com borda preta destacada."
+  },
+  "ritmo": {
+   "segundos_medios_por_cena": 2.1,
+   "observacao": "Edição muito dinâmica com trocas de cena frequentes para reter a atenção e ilustrar com exatidão cada frase falada."
+  },
+  "cta": "Não há CTA explícito verbal, apostando na retenção e entrega rápida da curiosidade.",
+  "loop": "O desfecho dramático ('desqualificado na hora') se conecta perfeitamente de volta à pergunta inicial intrigante sobre a obrigatoriedade da tinta vermelha.",
+  "origem_das_imagens": "Compilação de vídeos virais de testes de recrutamento militar na Índia (Indian Army Recruitment Rally) intercalados com filmagens explicativas de ortopedia/podologia da internet.",
+  "licoes_para_copiar": [
+   "Começar com uma pergunta instigante baseada em uma imagem incomum ou chocante.",
+   "Usar elementos gráficos simples (setas, círculos vermelhos) nos primeiros segundos para guiar a atenção do espectador.",
+   "Conectar uma curiosidade exótica militar a um teste prático que o espectador pode fazer em casa.",
+   "Manter cortes rápidos (em torno de 2 segundos) para sustentar retenção em temas explicativos."
+  ]
+ }
+}

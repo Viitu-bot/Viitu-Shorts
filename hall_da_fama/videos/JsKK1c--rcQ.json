@@ -1,0 +1,138 @@
+{
+ "meta": {
+  "id": "JsKK1c--rcQ",
+  "link": "https://youtube.com/shorts/JsKK1c--rcQ",
+  "titulo": "Essas portas não são pequenas à toa! 😳 #curiosidades #africa #lugares",
+  "canal": "KSO Descobre",
+  "handle": "@ksodescobre",
+  "inscritos_canal": 25200,
+  "publicado": "2026-01-06T14:00",
+  "duracao_s": 25,
+  "views": 8304772,
+  "likes": 117452,
+  "comentarios": 517,
+  "origem": "top do canal @ksodescobre"
+ },
+ "raiox": {
+  "duracao_s": 25,
+  "gancho": {
+   "frase_falada": "Você já parou para pensar por que as portas das casas nas aldeias africanas são tão miúdas?",
+   "o_que_aparece_no_frame_0": "Um turista se contorcendo de costas para conseguir entrar em uma porta minúscula de cabana de barro e palha.",
+   "texto_na_tela": "PAROU",
+   "por_que_prende": "Mostra uma situação inusitada e desconfortável de um adulto se espremendo em uma micro-porta, ativando imediatamente a curiosidade sobre a razão daquela arquitetura."
+  },
+  "estrutura": [
+   {
+    "inicio": "00:00",
+    "fim": "00:05",
+    "funcao": "gancho",
+    "narracao": "Você já parou para pensar por que as portas das casas nas aldeias africanas são tão miúdas?",
+    "imagem": "Pessoas rastejando para entrar e sair de cabanas com aberturas extremamente baixas."
+   },
+   {
+    "inicio": "00:05",
+    "fim": "00:12",
+    "funcao": "explicacao",
+    "narracao": "Isso não é só tradição. A porta pequena ajuda a controlar a temperatura da casa, reduzindo a entrada do ar quente durante o dia e evitando a perda de calor à noite.",
+    "imagem": "Close na entrada da cabana com seta indicativa, seguido de pessoas entrando e saindo de cabanas em dias ensolarados."
+   },
+   {
+    "inicio": "00:12",
+    "fim": "00:23",
+    "funcao": "virada",
+    "narracao": "Mas não é só sobre conforto. Essas portas também têm uma função de proteção. Elas dificultam a entrada de animais selvagens e criam uma vantagem defensiva contra possíveis inimigos, já que quem está dentro consegue controlar melhor a entrada.",
+    "imagem": "Ponto de vista (POV) rastejando para o interior escuro, revelando o interior amplo e iluminado, e a vista de quem está dentro vigiando o exterior."
+   },
+   {
+    "inicio": "00:23",
+    "fim": "00:25",
+    "funcao": "loop",
+    "narracao": "",
+    "imagem": "Câmera saindo da abertura da cabana para a vila externa, conectando visualmente com o exterior do início do vídeo."
+   }
+  ],
+  "cortes": [
+   {
+    "tempo": "00:02",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:05",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:07",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:09",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:12",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:14",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:16",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:19",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:22",
+    "tipo": "seco"
+   }
+  ],
+  "efeitos_visuais": [
+   {
+    "tempo": "00:05",
+    "efeito": "seta",
+    "em_qual_palavra": "tradição",
+    "para_que": "Apontar diretamente para o túnel de entrada escuro e focar a atenção do espectador na abertura."
+   },
+   {
+    "tempo": "00:00",
+    "efeito": "texto animado",
+    "em_qual_palavra": "todas",
+    "para_que": "Manter a dinâmica visual através de legendas que piscam palavra por palavra em ritmo acelerado."
+   }
+  ],
+  "efeitos_sonoros": [
+   {
+    "tempo": "00:05",
+    "som": "woosh",
+    "momento": "Transição para o take de detalhe com a seta vermelha apontando a porta."
+   },
+   {
+    "tempo": "00:13",
+    "som": "impacto grave / riser sutil",
+    "momento": "Momento em que introduz o segundo motivo ('função de proteção')."
+   }
+  ],
+  "musica": "Trilha rítmica com percussão tribal/étnica moderna e batida envolvente em volume médio-baixo, servindo de cama para a locução gerada por IA.",
+  "legenda": {
+   "estilo": "Palavra por palavra em caixa alta, fonte bold condensada com traçado/borda preta marcante",
+   "posicao": "Centro-inferior",
+   "palavras_por_vez": 1,
+   "cores": "Texto branco com borda preta espessa"
+  },
+  "ritmo": {
+   "segundos_medios_por_cena": 2.7,
+   "observacao": "Ritmo dinâmico com trocas rápidas de clipes virais mostrando diferentes ângulos e pessoas vivenciando o mesmo fenômeno (portas minúsculas)."
+  },
+  "cta": "Inexistente; prioriza retenção contínua e tempo médio de visualização.",
+  "loop": "O vídeo termina com a câmera posicionada no chão olhando de dentro para fora da aldeia, o que se conecta fluidamente com a cena inicial de alguém no solo do lado de fora tentando entrar.",
+  "origem_das_imagens": "Compilação de vídeos virais de redes sociais (TikTok/Instagram Reels de viajantes e criadores em aldeias tradicionais africanas como os Maasai ou tribos do Vale do Omo).",
+  "licoes_para_copiar": [
+   "Iniciar com uma ação física estranha ou desconfortável para criar interrupção de padrão imediata.",
+   "Dividir a explicação em duas camadas lógicas (fator climático + fator de segurança/defesa) para sustentar a narrativa até o fim.",
+   "Mostrar a revelação do 'lado de dentro' no terço final para matar a curiosidade visual criada no início."
+  ]
+ }
+}
