@@ -23,6 +23,7 @@ E da próxima vez que vir fogo na floresta, lembra: talvez esses bombeiros...
 ## Publicação
 - Título: Por que esses bombeiros colocam fogo na floresta? 🔥
 
-## Brutos
-- 60 Minutes Australia — "The science behind backburning..." (15 min): https://youtu.be/cj0voLRdzIU
-- jrockyhill — "Grass fire back burn..." (6 min): https://youtu.be/2yiCZBhiVys
+## Brutos (verificados com Gemini)
+- ❌ 60 Minutes Australia (cj0voLRdzIU): reportagem de 2009, quase só entrevista; só 0:41–0:49 e 1:55–2:00 servem. Descartado como fonte principal.
+- ⚠️ jrockyhill (2yiCZBhiVys): só 3:39–3:47 (tocha acendendo o contrafogo). Reserva.
+- Buscar melhores quando a cota da YouTube API renovar.

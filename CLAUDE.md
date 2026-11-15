@@ -118,6 +118,12 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
 4. Ferramenta: `python3 -m viitu.contraste <proj>` (relatório) / `--aplicar` (espelha onde a direção
    repete). Nunca espelhar imagem com texto/logo/marca d'água (`"texto_na_imagem": true`).
 
+## Pedir bruto ao dono: SÓ DEPOIS DE VERIFICAR
+- Nunca pedir para baixar um vídeo escolhido só pelo título. Antes, rodar
+  `python3 -m viitu.assistir achar <link> "<cenas necessárias>"` e só pedir se tiver trechos bons
+  (nítidos, recentes, com a ação, não entrevista) somando material suficiente.
+- Passar ao dono o link + os minutos exatos de cada trecho a gravar/baixar.
+
 ## Revisão técnica OBRIGATÓRIA antes de entregar
 - `python3 -m viitu.revisar <proj>`: confere o meio de cada cena (`--rigoroso`: início/meio/fim) (assunto `esperado` na tela,
   centralizado, não cortado) e repetição de clipes (âncora ≤ 4 cenas, demais 1). Abrir
