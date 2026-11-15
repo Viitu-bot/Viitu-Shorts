@@ -5,6 +5,12 @@ description: Puxa os vídeos brutos que o usuário subiu na pasta "brutos" do Go
 
 # /brutos
 
+Pasta no Drive do dono: **Viitu Shorts / 03_Producao / brutos / <projeto>** (ex.: `vd003_galinha`).
+Com o conector Google Drive ativo, crie a subpasta do projeto (create_file com mimeType de pasta,
+parentId da pasta brutos `1QitkOAQMh6Cb1Ws5g5MDn0e2vhfpmaht`) antes de pedir os brutos ao dono.
+A pasta brutos está compartilhada por link (leitor) para o download funcionar sem passar arquivos
+pelo chat. O vídeo final segue sendo entregue no chat (arquivos grandes não passam pelo conector).
+
 1. Descubra o projeto atual (o vídeo em produção: último em `dados/temas_feitos.md` sem link publicado,
    ou o que estamos editando na conversa, ex.: `vd003_galinha`).
 2. Baixe só os arquivos novos:

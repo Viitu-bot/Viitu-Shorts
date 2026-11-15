@@ -2,7 +2,7 @@
 
 Uso:
   python -m viitu.brutos configurar <link da pasta do Drive>
-  python -m viitu.brutos baixar <projeto>      baixa só os arquivos NOVOS para projetos/<projeto>/clipes/
+  python -m viitu.brutos baixar <projeto>      baixa só os arquivos NOVOS de brutos/<projeto>/ para projetos/<projeto>/clipes/
   python -m viitu.brutos listar                mostra o que tem na pasta e o que já foi baixado
 """
 
@@ -60,9 +60,10 @@ def baixar(projeto: str) -> None:
     destino = RAIZ / "projetos" / projeto / "clipes"
     destino.mkdir(parents=True, exist_ok=True)
     CACHE.mkdir(parents=True, exist_ok=True)
-    novos = [it for it in _arquivos() if it.id not in reg]
+    # cada vídeo tem a sua subpasta: brutos/<projeto>/ (arquivos soltos na raiz são ignorados)
+    novos = [it for it in _arquivos() if it.id not in reg and projeto in Path(it.path).parts]
     if not novos:
-        print("Nenhum arquivo novo na pasta.")
+        print(f"Nenhum arquivo novo em brutos/{projeto}/.")
         return
     for it in novos:
         nome = Path(it.path).name.replace(" ", "_")
