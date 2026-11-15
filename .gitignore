@@ -9,3 +9,4 @@ projetos/**/*.wav
 
 # mídia baixada
 projetos/**/clipes/
+dados/brutos_cache/
