@@ -70,7 +70,7 @@ forte em PT-BR.
   seu não faz", não "Por que o olho da cabra gira?"). Fórmulas validadas (canais BR de referência):
   "A/O [coisa] que [faz algo incrível]" e "Esse [coisa] [faz algo absurdo]!?".
 - 4–8 palavras, pergunta ou afirmação surpreendente sobre um objeto, 1 emoji no fim,
-sem CAIXA ALTA gritando. Sempre com tradução EN/ES no YouTube Studio.
+sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática** do YouTube ativa (não fazer títulos EN/ES).
 
 ## A definir com o usuário
 - Subnicho principal e secundário
