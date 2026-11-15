@@ -17,7 +17,11 @@
    "data": "2026-11-12",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "regra ramen Japão",
+   "busca_en": "unique japanese ramen shop rules"
   },
   {
    "id": "J4vGmENv1to",
@@ -29,7 +33,11 @@
    "data": "2026-11-06",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "telhado grama Noruega",
+   "busca_en": "norwegian grass roof houses"
   },
   {
    "id": "ql5R7wXjlw0",
@@ -41,7 +49,11 @@
    "data": "2026-10-30",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "hack gengibre chinês",
+   "busca_en": "chinese ginger farming hack"
   },
   {
    "id": "qd42nEmhMAg",
@@ -53,7 +65,11 @@
    "data": "2026-10-28",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "comida tipo slime",
+   "busca_en": "strange asian street food"
   },
   {
    "id": "b3HHXYHiM0A",
@@ -65,7 +81,11 @@
    "data": "2026-10-27",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "utilidade (truque)",
+   "objeto": "telhado térmico Índia",
+   "busca_en": "indian eco friendly cooling roof"
   },
   {
    "id": "RVHhE8hEimo",
@@ -77,7 +97,11 @@
    "data": "2026-10-24",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "arco mongol",
+   "busca_en": "how mongolian bows are made"
   },
   {
    "id": "3jXAkoLVOtQ",
@@ -89,7 +113,11 @@
    "data": "2026-10-22",
    "hora": 17,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "cogumelo orelha",
+   "busca_en": "ear shaped mushroom china"
   },
   {
    "id": "4XxYrB-tJsE",
@@ -101,7 +129,11 @@
    "data": "2026-10-21",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "tijolo piso luxo",
+   "busca_en": "repurposing bricks into flooring"
   },
   {
    "id": "jXnDj9nAfU8",
@@ -113,7 +145,21 @@
    "data": "2026-10-20",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "rasgo papel china",
+   "busca_en": "chinese paper tearing tradition",
+   "previo": {
+    "views": 31823620,
+    "titulo": "Ancient Chinese Paper Making Tradition #shortsvideo",
+    "canal": "shocking facts ",
+    "data": "2024-11-24",
+    "idioma": "hi",
+    "atraso_dias": 695,
+    "link": "https://youtube.com/shorts/bV_RnHlCxc0"
+   },
+   "grupo": "top"
   },
   {
    "id": "uLXV3H8-Y_0",
@@ -125,7 +171,11 @@
    "data": "2026-10-16",
    "hora": 16,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "raiz tipo carne",
+   "busca_en": "meat like vegetable china"
   },
   {
    "id": "5qo2ROroOf0",
@@ -137,7 +187,21 @@
    "data": "2026-10-15",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "privacidade tela celular",
+   "busca_en": "privacy screen hack china",
+   "previo": {
+    "views": 37943569,
+    "titulo": "Easy Privacy Screen For Front Door",
+    "canal": "Kristyn Cole",
+    "data": "2023-03-18",
+    "idioma": "en",
+    "atraso_dias": 1307,
+    "link": "https://youtube.com/shorts/9diZkMaZbls"
+   },
+   "grupo": "top"
   },
   {
    "id": "ndZG_vWv52k",
@@ -149,7 +213,11 @@
    "data": "2026-10-14",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "casa móvel patos",
+   "busca_en": "chinese duck farming mobile house"
   },
   {
    "id": "kND27hrwJmc",
@@ -161,7 +229,11 @@
    "data": "2026-10-13",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "bikes compartilhadas perigo",
+   "busca_en": "shared bike safety warning"
   },
   {
    "id": "t8TXiZ_BjaY",
@@ -173,7 +245,11 @@
    "data": "2026-10-10",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "abrir hidrante",
+   "busca_en": "how to open fire hydrant"
   },
   {
    "id": "SAXJrBsUPts",
@@ -185,7 +261,11 @@
    "data": "2026-10-08",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "caminhão dobrável",
+   "busca_en": "folding dump truck china"
   },
   {
    "id": "YZo_XU_mUTE",
@@ -197,7 +277,21 @@
    "data": "2026-10-07",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "nojo/estranheza",
+   "objeto": "pés 12 anos",
+   "busca_en": "effects of standing for years",
+   "previo": {
+    "views": 5839671,
+    "titulo": "Why Standing Still Hurts More Than Walking 🤔",
+    "canal": "Zack D. Films",
+    "data": "2026-03-24",
+    "idioma": "en",
+    "atraso_dias": 197,
+    "link": "https://youtube.com/shorts/qKfw2m4dtwA"
+   },
+   "grupo": "top"
   },
   {
    "id": "30lJh-8P5Io",
@@ -209,7 +303,11 @@
    "data": "2026-10-06",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "hack cerveja Japão",
+   "busca_en": "japanese beer pouring hack"
   },
   {
    "id": "YntQNguk-mU",
@@ -221,7 +319,11 @@
    "data": "2026-10-02",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "arte cimento areia",
+   "busca_en": "cement sand art technique"
   },
   {
    "id": "pIU6Y9jU-qE",
@@ -233,7 +335,11 @@
    "data": "2026-10-01",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "destruição abóboras",
+   "busca_en": "why farmers destroy pumpkins"
   },
   {
    "id": "vz2ibddGIVQ",
@@ -245,7 +351,11 @@
    "data": "2026-09-30",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "máquina colheita nepal",
+   "busca_en": "nepal agricultural machine"
   },
   {
    "id": "Qzl4-ApGQlk",
@@ -257,7 +367,11 @@
    "data": "2026-09-29",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "levantar parede indonésia",
+   "busca_en": "indonesian wall building hack"
   },
   {
    "id": "KzH9Mdf6uGI",
@@ -269,7 +383,11 @@
    "data": "2026-09-27",
    "hora": 11,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "vagões trem Japão",
+   "busca_en": "automatic train coupling japan"
   },
   {
    "id": "mSotS-KgNxc",
@@ -281,7 +399,11 @@
    "data": "2026-09-25",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "utilidade (truque)",
+   "objeto": "porta anti leão",
+   "busca_en": "lion proof door africa"
   },
   {
    "id": "kUta4pxwD2I",
@@ -293,7 +415,11 @@
    "data": "2026-09-04",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "resgate igreja suécia",
+   "busca_en": "moving a church sweden"
   },
   {
    "id": "tktS_0pYSHY",
@@ -305,7 +431,11 @@
    "data": "2026-09-03",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "tradição espanhola",
+   "busca_en": "strange spanish traditions"
   },
   {
    "id": "WAYIxTDwDVw",
@@ -317,7 +447,11 @@
    "data": "2026-09-02",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "silenciar obras china",
+   "busca_en": "chinese construction noise reduction"
   },
   {
    "id": "hgbXxsSBlck",
@@ -329,7 +463,11 @@
    "data": "2026-09-01",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "demolição sem dinamite",
+   "busca_en": "building demolition technique japan"
   },
   {
    "id": "k4hKHdF27xU",
@@ -341,7 +479,11 @@
    "data": "2026-08-29",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "hack cafeteria Japão",
+   "busca_en": "japanese coffee shop hack"
   },
   {
    "id": "FDxd0O95IP8",
@@ -353,7 +495,11 @@
    "data": "2026-08-26",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "dinheiro/escala",
+   "objeto": "árvore gigante",
+   "busca_en": "tallest trees in california"
   },
   {
    "id": "uMkMnViA7VU",
@@ -365,7 +511,11 @@
    "data": "2026-08-25",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "chocolate suíço",
+   "busca_en": "swiss chocolate culture"
   },
   {
    "id": "4LR8Q5fz_Ns",
@@ -377,7 +527,11 @@
    "data": "2026-08-22",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "hack calor china",
+   "busca_en": "chinese cooling hacks"
   },
   {
    "id": "wRjsFi-UqdU",
@@ -389,7 +543,11 @@
    "data": "2026-08-20",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "prova filipinas",
+   "busca_en": "philippines school exam traditions"
   },
   {
    "id": "qTIEkMDI1eE",
@@ -401,7 +559,11 @@
    "data": "2026-08-14",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "petróleo quintal",
+   "busca_en": "oil in backyard danger"
   },
   {
    "id": "p4H5YK35iT8",
@@ -413,7 +575,11 @@
    "data": "2026-08-13",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "escola chinesa",
+   "busca_en": "chinese school system facts"
   },
   {
    "id": "feRMQkqMCSw",
@@ -425,7 +591,11 @@
    "data": "2026-07-15",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "artefato japonês",
+   "busca_en": "legendary japanese stone artifact"
   },
   {
    "id": "qsafcKJWNCE",
@@ -437,7 +607,11 @@
    "data": "2026-07-14",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "carros chineses",
+   "busca_en": "small chinese electric cars"
   },
   {
    "id": "IwCMwxqNRUg",
@@ -449,7 +623,11 @@
    "data": "2026-07-10",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "carne mongólia",
+   "busca_en": "mongolian meat diet"
   },
   {
    "id": "TpfM4_n4o9s",
@@ -461,7 +639,11 @@
    "data": "2026-07-09",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "nojo/estranheza",
+   "objeto": "ração americana russa",
+   "busca_en": "us vs russian food rations"
   },
   {
    "id": "FnC4yDNfVvQ",
@@ -473,7 +655,11 @@
    "data": "2026-07-03",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "sapato alemão",
+   "busca_en": "strange german shoes"
   },
   {
    "id": "HbEGBohhBRs",
@@ -485,7 +671,11 @@
    "data": "2026-06-30",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "itens inúteis Japão",
+   "busca_en": "useless japanese inventions"
   },
   {
    "id": "aem-_yuFdwY",
@@ -497,7 +687,11 @@
    "data": "2026-06-26",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "embrulho coreano",
+   "busca_en": "korean wrapping tradition"
   },
   {
    "id": "qU5IpawDvsM",
@@ -509,7 +703,11 @@
    "data": "2026-06-24",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "mito desmentido",
+   "objeto": "produtos falsos Japão",
+   "busca_en": "japanese products origin"
   },
   {
    "id": "RrvMg33Gecg",
@@ -521,7 +719,11 @@
    "data": "2026-06-02",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "flor iluminada",
+   "busca_en": "glowing flower china"
   },
   {
    "id": "DtjOLrbLFek",
@@ -533,7 +735,11 @@
    "data": "2026-05-29",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "rio verde chicago",
+   "busca_en": "chicago river green dye"
   },
   {
    "id": "F2yau4lWfPM",
@@ -545,7 +751,11 @@
    "data": "2026-05-26",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "toco árvore gigante",
+   "busca_en": "giant tree stump usa"
   },
   {
    "id": "Q5o5iVsFyew",
@@ -557,7 +767,11 @@
    "data": "2026-05-08",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "tanques americanos",
+   "busca_en": "where old tanks go"
   },
   {
    "id": "onB6neD6kvE",
@@ -569,7 +783,21 @@
    "data": "2026-05-07",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "construção Japão",
+   "busca_en": "japanese building construction process",
+   "previo": {
+    "views": 120538405,
+    "titulo": "Japan’s Buildings That Float During Earthquakes! 🏠🌊",
+    "canal": "Gulbahar Technical",
+    "data": "2025-05-07",
+    "idioma": "en",
+    "atraso_dias": 365,
+    "link": "https://youtube.com/shorts/Wr5Ll7gcBEE"
+   },
+   "grupo": "top"
   },
   {
    "id": "KVEkHrXymic",
@@ -581,7 +809,11 @@
    "data": "2026-05-01",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "sting falso paquistão",
+   "busca_en": "fake drink manufacturing pakistan"
   },
   {
    "id": "iMWxRGAcd50",
@@ -593,7 +825,11 @@
    "data": "2026-04-30",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "areia gramado eua",
+   "busca_en": "why put sand on lawn"
   },
   {
    "id": "AWMtO21XlV4",
@@ -605,7 +841,11 @@
    "data": "2026-04-29",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "banco rosa coreia",
+   "busca_en": "pink bench korea meaning"
   },
   {
    "id": "FLroFri0so8",
@@ -617,7 +857,11 @@
    "data": "2026-04-28",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "sol artificial china",
+   "busca_en": "china artificial sun project"
   },
   {
    "id": "qq-nMuu8szY",
@@ -629,7 +873,11 @@
    "data": "2026-04-25",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "hospital chinês",
+   "busca_en": "advanced chinese hospital technology"
   },
   {
    "id": "G__6uN6fQe0",
@@ -641,7 +889,11 @@
    "data": "2026-04-24",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "casamento africa",
+   "busca_en": "unique african wedding traditions"
   },
   {
    "id": "STAlFwyxXDQ",
@@ -653,7 +905,11 @@
    "data": "2026-04-23",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "criatura disney",
+   "busca_en": "disney mechanical creature"
   },
   {
    "id": "hSBpS-PYDoQ",
@@ -665,7 +921,11 @@
    "data": "2026-04-18",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "hollywood nome",
+   "busca_en": "history of hollywood sign"
   },
   {
    "id": "dQcXIQgWPJw",
@@ -677,7 +937,11 @@
    "data": "2026-04-16",
    "hora": 18,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "teatro chinês",
+   "busca_en": "chinese theater secrets"
   },
   {
    "id": "QuQJp3q2F4Y",
@@ -689,7 +953,11 @@
    "data": "2026-04-15",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "perigo/medo",
+   "objeto": "vista tailândia",
+   "busca_en": "dangerous tourist spots thailand"
   },
   {
    "id": "m-0uO__qzxw",
@@ -701,7 +969,11 @@
    "data": "2026-04-14",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "pedra humanoide",
+   "busca_en": "humanoid rock indonesia"
   },
   {
    "id": "_KxMKXZBmUY",
@@ -713,7 +985,11 @@
    "data": "2026-04-11",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "mar morto",
+   "busca_en": "why you float in dead sea"
   },
   {
    "id": "vnQSs1zwZx4",
@@ -725,7 +1001,11 @@
    "data": "2026-04-09",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "perigo/medo",
+   "objeto": "corrida inglaterra",
+   "busca_en": "dangerous cheese rolling race"
   },
   {
    "id": "ouROxRLPdOE",
@@ -737,7 +1017,21 @@
    "data": "2026-04-08",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "dinheiro/escala",
+   "objeto": "desafio ouro dubai",
+   "busca_en": "dubai gold challenge",
+   "previo": {
+    "views": 247672356,
+    "titulo": "Gold Grab Challenge Absolut Food Fest x Coca Cola Malaysia Memasak 2023.",
+    "canal": "ABSOLUT EVENTS",
+    "data": "2023-09-13",
+    "idioma": null,
+    "atraso_dias": 938,
+    "link": "https://youtube.com/shorts/IUSGwLJY9Yg"
+   },
+   "grupo": "top"
   },
   {
    "id": "4me-igtSKwA",
@@ -749,7 +1043,11 @@
    "data": "2026-04-07",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "lousa salva vidas",
+   "busca_en": "life saving school board"
   },
   {
    "id": "qk5vI2rEcbQ",
@@ -761,7 +1059,11 @@
    "data": "2026-04-04",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "crime ambiental",
+   "busca_en": "environmental restoration projects"
   },
   {
    "id": "7TX47oJDPq4",
@@ -773,7 +1075,11 @@
    "data": "2026-03-29",
    "hora": 11,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "quebra-molas",
+   "busca_en": "origin of speed bumps"
   },
   {
    "id": "Nv23hs-7HLo",
@@ -785,7 +1091,11 @@
    "data": "2026-03-27",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "perigo/medo",
+   "objeto": "doce japonês",
+   "busca_en": "dangerous japanese candy"
   },
   {
    "id": "zau4SSbZB64",
@@ -797,7 +1107,11 @@
    "data": "2026-03-25",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "recorde/escala/mais caro do mundo",
+   "gatilho": "dinheiro/escala",
+   "objeto": "caldeirão china",
+   "busca_en": "largest cauldron in china"
   },
   {
    "id": "qlSV0JDup7s",
@@ -809,7 +1123,11 @@
    "data": "2026-03-24",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "perigo/medo",
+   "objeto": "mineração ouro africa",
+   "busca_en": "manual gold mining africa"
   },
   {
    "id": "6TCH2f9tYAA",
@@ -821,7 +1139,11 @@
    "data": "2026-03-20",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "perigo/medo",
+   "objeto": "botão hospital",
+   "busca_en": "hospital emergency button"
   },
   {
    "id": "BtxtZUmFLMI",
@@ -833,7 +1155,21 @@
    "data": "2026-03-19",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "perigo/medo",
+   "objeto": "militar índia",
+   "busca_en": "indian military test",
+   "previo": {
+    "views": 286777722,
+    "titulo": "मेडिकल 😱| #army #navy #airforce #ssc #delhipolice #bsf #cisf #crpf #police #motivation #viral #art",
+    "canal": "Bloom Defence Academy",
+    "data": "2025-10-19",
+    "idioma": "hi",
+    "atraso_dias": 151,
+    "link": "https://youtube.com/shorts/voRsBttPlEY"
+   },
+   "grupo": "top"
   },
   {
    "id": "jGDFCbUBPwU",
@@ -845,7 +1181,11 @@
    "data": "2026-03-17",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "nojo/estranheza",
+   "objeto": "pés china antiga",
+   "busca_en": "foot binding china history"
   },
   {
    "id": "028V6cbcPAM",
@@ -857,7 +1197,11 @@
    "data": "2026-03-14",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "perigo/medo",
+   "objeto": "paraquedista frança",
+   "busca_en": "base jumping france"
   },
   {
    "id": "L7AVkETGjMw",
@@ -869,7 +1213,11 @@
    "data": "2026-03-04",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "bilionário somália",
+   "busca_en": "richest man in somalia"
   },
   {
    "id": "ATmqYITooB8",
@@ -881,7 +1229,21 @@
    "data": "2026-02-24",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "van Japão",
+   "busca_en": "japanese van safety",
+   "previo": {
+    "views": 7033,
+    "titulo": "Biến thái ở Nhật nén vào phòng lúc đang ngủ- Tran Van Hai Japan #shorts #cuocsongonhat",
+    "canal": "Tran Van Hai JP Official",
+    "data": "2022-10-12",
+    "idioma": null,
+    "atraso_dias": 1231,
+    "link": "https://youtube.com/shorts/JHjK5ukmua8"
+   },
+   "grupo": "top"
   },
   {
    "id": "y8G3pzTD-a4",
@@ -893,7 +1255,11 @@
    "data": "2026-02-14",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "raiz árvore índia",
+   "busca_en": "banyan tree roots india"
   },
   {
    "id": "5G_1bvnKd7o",
@@ -905,7 +1271,11 @@
    "data": "2026-02-07",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "água china",
+   "busca_en": "water safety china"
   },
   {
    "id": "BpGRasmlkcY",
@@ -917,7 +1287,11 @@
    "data": "2026-01-31",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "utilidade (truque)",
+   "objeto": "clarear dentes africa",
+   "busca_en": "traditional teeth whitening africa"
   },
   {
    "id": "zMLbU26obEo",
@@ -929,7 +1303,11 @@
    "data": "2026-01-30",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "pedra índia",
+   "busca_en": "mysterious indian stone"
   },
   {
    "id": "iX5T025DQ4g",
@@ -941,7 +1319,11 @@
    "data": "2026-01-27",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "alavanca rússia",
+   "busca_en": "dangerous russian machinery"
   },
   {
    "id": "N-s2uKgyBo4",
@@ -953,7 +1335,11 @@
    "data": "2026-01-26",
    "hora": 11,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "fofura/emoção",
+   "objeto": "estátua holanda",
+   "busca_en": "emotional statue netherlands"
   },
   {
    "id": "0X3ls2WrFq0",
@@ -965,7 +1351,11 @@
    "data": "2026-01-22",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "nojo/estranheza",
+   "objeto": "espírito africa",
+   "busca_en": "african spirit dance"
   },
   {
    "id": "FTzhgTiZ23g",
@@ -977,7 +1367,21 @@
    "data": "2026-01-20",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "fofura/emoção",
+   "objeto": "amor impossível",
+   "busca_en": "emotional travel stories georgia",
+   "previo": {
+    "views": 13,
+    "titulo": "𝐄𝐦𝐨𝐭𝐢𝐨𝐧𝐬 𝐚𝐫𝐞 𝐆𝐞𝐨𝐫𝐠𝐢𝐚: 𝐀𝐥𝐢 & 𝐍𝐢𝐧𝐨 - Batumi",
+    "canal": "LetsGoTrvl",
+    "data": "2026-01-19",
+    "idioma": null,
+    "atraso_dias": 1,
+    "link": "https://youtube.com/shorts/-AYIGthd9MY"
+   },
+   "grupo": "top"
   },
   {
    "id": "RHJIFOxHPIM",
@@ -989,7 +1393,11 @@
    "data": "2026-01-19",
    "hora": 11,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "crateras vulcânicas",
+   "busca_en": "volcanic craters lanzarote facts"
   },
   {
    "id": "q1hSSSw-liU",
@@ -1001,7 +1409,11 @@
    "data": "2026-01-17",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "espada disneyland",
+   "busca_en": "sword in the stone disneyland"
   },
   {
    "id": "d0Yaz76UWZI",
@@ -1013,7 +1425,11 @@
    "data": "2026-01-15",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "perigo/medo",
+   "objeto": "câmara extrema",
+   "busca_en": "extreme places hard to stay"
   },
   {
    "id": "-UM0Eti7rKI",
@@ -1025,7 +1441,21 @@
    "data": "2026-01-14",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "bancos de paris",
+   "busca_en": "hidden design paris benches",
+   "previo": {
+    "views": 322368,
+    "titulo": "French Artists’ Bold Protest: Sleeping on Hostile Benches to Expose Hidden Architecture! #shorts",
+    "canal": "Facts World",
+    "data": "2025-08-17",
+    "idioma": "te",
+    "atraso_dias": 150,
+    "link": "https://youtube.com/shorts/8VdUmQfkfRI"
+   },
+   "grupo": "top"
   },
   {
    "id": "D1zwoWUCap4",
@@ -1037,7 +1467,11 @@
    "data": "2026-01-13",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "perigo/medo",
+   "objeto": "assar pão armênia",
+   "busca_en": "lavash bread baking dangerous"
   },
   {
    "id": "MW2jrpaVD-U",
@@ -1049,7 +1483,11 @@
    "data": "2026-01-12",
    "hora": 11,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "moedas presas",
+   "busca_en": "coins stuck in trees scotland"
   },
   {
    "id": "mnOK8o61crw",
@@ -1061,7 +1499,11 @@
    "data": "2026-01-08",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "deserto em floresta",
+   "busca_en": "china desert to forest transformation"
   },
   {
    "id": "ByQfzkSEcyY",
@@ -1073,7 +1515,11 @@
    "data": "2026-01-07",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "transporte de água",
+   "busca_en": "how water reaches remote places"
   },
   {
    "id": "JsKK1c--rcQ",
@@ -1085,7 +1531,21 @@
    "data": "2026-01-06",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "portas pequenas",
+   "busca_en": "why are some doors small",
+   "previo": {
+    "views": 1806990,
+    "titulo": "FIX LIGHT GAPS AROUND DOORS! (Easy Trick For Gaps Bottom Of Door / Corner Seal Pads / Weatherstrip)",
+    "canal": "The Honest Carpenter",
+    "data": "2020-01-18",
+    "idioma": null,
+    "atraso_dias": 2180,
+    "link": "https://youtube.com/shorts/Ngsf0UKr3-k"
+   },
+   "grupo": "top"
   },
   {
    "id": "dxrIIO1YQrE",
@@ -1097,7 +1557,11 @@
    "data": "2026-01-05",
    "hora": 11,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "chocolate istanbul",
+   "busca_en": "amazing chocolate shop istanbul"
   },
   {
    "id": "JIFIsoZP8PI",
@@ -1109,7 +1573,11 @@
    "data": "2026-01-02",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "sal infinito",
+   "busca_en": "salt flat phenomena china"
   },
   {
    "id": "Wi6dN1D0hH8",
@@ -1121,7 +1589,11 @@
    "data": "2025-12-26",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "perigo/medo",
+   "objeto": "lugar perigoso",
+   "busca_en": "dangerous beautiful tourist spots"
   },
   {
    "id": "7HFpX1Zvc3M",
@@ -1133,7 +1605,11 @@
    "data": "2025-12-25",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "perigo/medo",
+   "objeto": "cânion utah",
+   "busca_en": "dangerous canyon hike utah"
   },
   {
    "id": "4bhKUfMp8Eo",
@@ -1145,7 +1621,11 @@
    "data": "2025-12-23",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "colheita de gelo",
+   "busca_en": "ice harvesting china process"
   },
   {
    "id": "ogjNj5cXWVM",
@@ -1157,7 +1637,11 @@
    "data": "2025-12-22",
    "hora": 14,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "turistas japão",
+   "busca_en": "funny tourist moments japan"
   },
   {
    "id": "rb_CrwvPtGU",
@@ -1169,7 +1653,11 @@
    "data": "2025-12-21",
    "hora": 11,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "dubai vergonha",
+   "busca_en": "funny dubai travel fails"
   },
   {
    "id": "RXTFx6H3PuE",
@@ -1181,7 +1669,11 @@
    "data": "2025-12-20",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "dinheiro/escala",
+   "objeto": "custo nigéria",
+   "busca_en": "cost of living nigeria"
   },
   {
    "id": "GP86325ge5c",
@@ -1193,7 +1685,11 @@
    "data": "2025-12-19",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "perigo/medo",
+   "objeto": "pernas de pau",
+   "busca_en": "stilt walking ethiopia survival"
   },
   {
    "id": "yBXfRGnfSt4",
@@ -1205,7 +1701,11 @@
    "data": "2025-12-18",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "estátuas china",
+   "busca_en": "ancient statues china history"
   },
   {
    "id": "ACv2m4SJ6Eo",
@@ -1217,7 +1717,11 @@
    "data": "2025-12-17",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "olho gigante lasvegas",
+   "busca_en": "las vegas sphere eye"
   },
   {
    "id": "wdlCRs4z0g0",
@@ -1229,7 +1733,11 @@
    "data": "2025-12-16",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "estádios americanos",
+   "busca_en": "hidden features american stadiums"
   },
   {
    "id": "uv6BJeo8GFc",
@@ -1241,7 +1749,11 @@
    "data": "2025-12-15",
    "hora": 11,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "perigo/medo",
+   "objeto": "tronco china",
+   "busca_en": "dangerous river crossing china"
   },
   {
    "id": "-JC3MIN8gZY",
@@ -1253,7 +1765,11 @@
    "data": "2025-12-10",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "água levitando",
+   "busca_en": "hoover dam water physics"
   },
   {
    "id": "ZvPuBZ7wfq4",
@@ -1265,7 +1781,11 @@
    "data": "2025-12-09",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "perigo/medo",
+   "objeto": "vietnã perigo",
+   "busca_en": "dangerous path vietnam"
   },
   {
    "id": "Ovmm4IsLmI0",
@@ -1277,7 +1797,11 @@
    "data": "2025-12-06",
    "hora": 11,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "perigo/medo",
+   "objeto": "rússia sem sol",
+   "busca_en": "life in polar night russia"
   },
   {
    "id": "P75eVlMGMEI",
@@ -1289,7 +1813,11 @@
    "data": "2025-12-05",
    "hora": 11,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "perigo/medo",
+   "objeto": "vara gigante",
+   "busca_en": "canary islands shepherd jump"
   },
   {
    "id": "7dYbevaKN14",
@@ -1301,7 +1829,11 @@
    "data": "2025-12-04",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "tesla sobrenatural",
+   "busca_en": "tesla car camera ghost"
   },
   {
    "id": "9_HTnhXntCs",
@@ -1313,7 +1845,11 @@
    "data": "2025-12-03",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "perigo/medo",
+   "objeto": "penhasco índia",
+   "busca_en": "dangerous cliff selfie india"
   },
   {
    "id": "J3g9_IkSvcA",
@@ -1325,7 +1861,11 @@
    "data": "2025-12-02",
    "hora": 11,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "elevador de bikes",
+   "busca_en": "bicycle lift norway"
   },
   {
    "id": "d9gupumwFgI",
@@ -1337,7 +1877,11 @@
    "data": "2025-12-01",
    "hora": 11,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "perigo/medo",
+   "objeto": "banco china",
+   "busca_en": "scary bench china"
   },
   {
    "id": "hb8iA7F82cQ",
@@ -1349,7 +1893,11 @@
    "data": "2025-11-28",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "puxador automático",
+   "busca_en": "automatic bike lift austria"
   },
   {
    "id": "TjS4mXaN9IQ",
@@ -1361,7 +1909,11 @@
    "data": "2025-11-27",
    "hora": 18,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "fofura/emoção",
+   "objeto": "crianças vietnã",
+   "busca_en": "vietnamese children hair braiding"
   },
   {
    "id": "4SjSXPQ-I7I",
@@ -1373,7 +1925,11 @@
    "data": "2025-11-26",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "perigo/medo",
+   "objeto": "touro salvo",
+   "busca_en": "emergency bull rescue"
   },
   {
    "id": "4iADz99Pafw",
@@ -1385,7 +1941,11 @@
    "data": "2025-11-25",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "aperto de mão",
+   "busca_en": "weirdest handshake ever"
   },
   {
    "id": "SH8cGDHd09s",
@@ -1397,7 +1957,11 @@
    "data": "2025-11-24",
    "hora": 18,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "outro",
+   "gatilho": "dinheiro/escala",
+   "objeto": "dinheiro escócia",
+   "busca_en": "money tree scotland legend"
   },
   {
    "id": "14Uw9IDLuCk",
@@ -1409,7 +1973,11 @@
    "data": "2025-11-21",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "slime armadura",
+   "busca_en": "non-newtonian fluid armor"
   },
   {
    "id": "mRHNSd9feZY",
@@ -1421,7 +1989,21 @@
    "data": "2025-11-20",
    "hora": 19,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "madeira metal",
+   "busca_en": "metal wood material technology",
+   "previo": {
+    "views": 1718262,
+    "titulo": "The BEST Stud Finder - Walabot DIY 2",
+    "canal": "Mad Electrician",
+    "data": "2023-11-18",
+    "idioma": "en",
+    "atraso_dias": 733,
+    "link": "https://youtube.com/shorts/Hd3hBk1TLAA"
+   },
+   "grupo": "pior"
   },
   {
    "id": "9zkCts_cnRI",
@@ -1433,7 +2015,11 @@
    "data": "2025-11-19",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "bmx troll",
+   "busca_en": "funny bmx spectator fail"
   },
   {
    "id": "0wqyshC11j8",
@@ -1445,7 +2031,21 @@
    "data": "2025-11-18",
    "hora": 19,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "peixe npc",
+   "busca_en": "funny deep sea fish",
+   "previo": {
+    "views": 491012479,
+    "titulo": "Activity For Kids At The Beach. DIY Colorful Fish On The Beach🐟🐠🎏",
+    "canal": "BippyBop",
+    "data": "2025-06-30",
+    "idioma": null,
+    "atraso_dias": 141,
+    "link": "https://youtube.com/shorts/7M4TrMNmFmo"
+   },
+   "grupo": "pior"
   },
   {
    "id": "IxDYpQg7xY8",
@@ -1457,7 +2057,21 @@
    "data": "2025-11-17",
    "hora": 19,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "arte com ossos",
+   "busca_en": "bone carving art process",
+   "previo": {
+    "views": 30735008,
+    "titulo": "How Buffalo Bones Are Turned Into Works Of Art",
+    "canal": "Business Insider",
+    "data": "2021-09-15",
+    "idioma": "en-US",
+    "atraso_dias": 1524,
+    "link": "https://youtube.com/shorts/sTEks5cibS8"
+   },
+   "grupo": "pior"
   },
   {
    "id": "mDc-O3vDgp4",
@@ -1469,7 +2083,21 @@
    "data": "2025-11-14",
    "hora": 19,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "casa impressora 3d",
+   "busca_en": "3d printed house construction",
+   "previo": {
+    "views": 100525526,
+    "titulo": "BIG HERO 6 MEGABOT *3D PRINTED* #cool3dprints #satisfying #3dprinting #3dprint #bighero6 #asmr #cool",
+    "canal": "Davidlikestoprint ",
+    "data": "2024-04-08",
+    "idioma": null,
+    "atraso_dias": 585,
+    "link": "https://youtube.com/shorts/Bl60DUFF59I"
+   },
+   "grupo": "pior"
   },
   {
    "id": "5N6w3TVL4qE",
@@ -1481,7 +2109,21 @@
    "data": "2025-11-13",
    "hora": 11,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "mito desmentido",
+   "objeto": "gelo óleo",
+   "busca_en": "does ice remove oil myth",
+   "previo": {
+    "views": 63527553,
+    "titulo": "Common Burn Treatment Myths 😏",
+    "canal": "Zack D. Films",
+    "data": "2024-11-19",
+    "idioma": null,
+    "atraso_dias": 359,
+    "link": "https://youtube.com/shorts/IAUPvEpJMvY"
+   },
+   "grupo": "pior"
   },
   {
    "id": "IuDLDPkAvfM",
@@ -1493,7 +2135,11 @@
    "data": "2025-11-12",
    "hora": 11,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "corrimão filipinas",
+   "busca_en": "funny slide railing philippines"
   },
   {
    "id": "BQ3Z7DOQwI4",
@@ -1505,7 +2151,11 @@
    "data": "2025-11-11",
    "hora": 19,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "bunkers engenharia",
+   "busca_en": "how bunkers are built"
   }
  ]
 }

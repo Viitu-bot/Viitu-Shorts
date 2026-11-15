@@ -37,6 +37,32 @@ def _fmt(n: int) -> str:
     return str(n)
 
 
+PESO_CATEGORIA = {   # mediana de views relativa (A vida é uma maravilha + GeneralTV + KSO), nov/2026
+    "motivo oculto de objeto/design": 1.5, "recorde/escala/mais caro do mundo": 1.4, "perigo/erro/segurança": 1.3,
+    "invenção/tecnologia": 1.0, "como é feito (processo/fábrica)": 1.0, "natureza/fenômeno": 0.9,
+    "pessoa/feito extraordinário": 0.8, "truque/hack do dia a dia": 0.7, "lugar/cultura de outro país": 0.7,
+    "comida/culinária curiosa": 0.6, "corpo humano/saúde": 0.6, "animal com comportamento estranho": 0.5, "outro": 0.4}
+PESO_GATILHO = {"dinheiro/escala": 1.4, "mito desmentido": 1.4, "motivo oculto (por que é assim)": 1.3,
+                "perigo/medo": 1.3, "processo revelado (como fazem)": 1.1, "nojo/estranheza": 0.9,
+                "utilidade (truque)": 0.7, "surpresa visual (olha isso)": 0.7, "fofura/emoção": 0.5}
+
+
+def classificar_titulos(titulos: list[str]) -> list[dict]:
+    """Categoria + gatilho de cada título (Gemini, texto, grátis)."""
+    from viitu.logica_temas import CATEGORIAS, GATILHOS, _gemini_texto
+    lista = "\n".join(f"{k}. {t}" for k, t in enumerate(titulos))
+    prompt = (f"Classifique cada título de Short de curiosidade. Categorias: {CATEGORIAS}. Gatilhos: {GATILHOS}. "
+              "Devolva só JSON {\"itens\": [{\"i\": n, \"categoria\": ..., \"gatilho\": ..., \"tema_pt\": "
+              "\"o tema em português em até 8 palavras\"}]}.\n\n" + lista)
+    itens = json.loads(_gemini_texto(prompt))["itens"]
+    out = [{} for _ in titulos]
+    for it in itens:
+        k = int(it.get("i", -1))
+        if 0 <= k < len(out):
+            out[k] = it
+    return out
+
+
 def candidatos(dia: str, dias: int, extras: list[str], min_views: int) -> None:
     cal = json.loads((RAIZ / "calendario.json").read_text(encoding="utf-8"))
     d = _dia(dia)
@@ -68,6 +94,15 @@ def candidatos(dia: str, dias: int, extras: list[str], min_views: int) -> None:
         v["pontuacao"] = round(math.log10(max(v["views"], 1)) * math.sqrt(mult), 2)
         lista.append(v)
 
+    # peso da categoria/gatilho (o que historicamente rende mais nos canais BR de referência)
+    try:
+        cls = classificar_titulos([v["titulo"] for v in lista])
+        for v, c in zip(lista, cls):
+            v["categoria"], v["gatilho"], v["tema_pt"] = c.get("categoria"), c.get("gatilho"), c.get("tema_pt")
+            peso = PESO_CATEGORIA.get(v["categoria"], 0.8) * PESO_GATILHO.get(v["gatilho"], 0.8)
+            v["pontuacao"] = round(v["pontuacao"] * peso, 2)
+    except SystemExit as e:
+        print(f"(classificação indisponível: {e}; seguindo sem pesos)")
     lista.sort(key=lambda x: x["pontuacao"], reverse=True)
     PASTA.mkdir(parents=True, exist_ok=True)
     arq = PASTA / f"{dt.date.today().isoformat()}_{d}_candidatos.json"
@@ -75,12 +110,11 @@ def candidatos(dia: str, dias: int, extras: list[str], min_views: int) -> None:
 
     print(f"{len(lista)} Shorts com >= {_fmt(min_views)} views nos últimos {dias} dias "
           f"(cota usada: {yt.cota_usada})\n")
-    print("pont | views | x canal | idioma | data | canal (inscritos) | título | link")
+    print("pont | views | x canal | categoria / gatilho | tema | link")
     for v in lista[:30]:
         mult = f"{v['multiplicador']}x" if v["multiplicador"] else "?"
-        print(f"{v['pontuacao']:>4} | {_fmt(v['views']):>6} | {mult:>6} | {v['idioma']:>5} | "
-              f"{v['publicado']} | {v['canal'][:22]} ({_fmt(v['inscritos_canal'])}) | "
-              f"{v['titulo'][:70]} | {v['link']}")
+        print(f"{v['pontuacao']:>5} | {_fmt(v['views']):>6} | {mult:>6} | {str(v.get('categoria'))[:28]} / "
+              f"{str(v.get('gatilho'))[:22]} | {str(v.get('tema_pt') or v['titulo'])[:60]} | {v['link']}")
     print(f"\nJSON completo: {arq.relative_to(RAIZ)}")
 
 
@@ -136,9 +170,9 @@ def main() -> None:
     sub = p.add_subparsers(dest="modo", required=True)
     c = sub.add_parser("candidatos")
     c.add_argument("dia")
-    c.add_argument("--dias", type=int, default=60)
+    c.add_argument("--dias", type=int, default=730)   # temas evergreen: os sucessos reciclam virais de ~2 anos
     c.add_argument("--extra", action="append", default=[])
-    c.add_argument("--min-views", type=int, default=300_000)
+    c.add_argument("--min-views", type=int, default=2_000_000)
     lac = sub.add_parser("lacuna")
     lac.add_argument("termo")
     lac.add_argument("--dias", type=int, default=730)

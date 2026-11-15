@@ -17,7 +17,11 @@
    "data": "2026-11-14",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "nojo/estranheza",
+   "objeto": "massa viva",
+   "busca_en": "sourdough starter timelapse"
   },
   {
    "id": "N9d1Reb0FKk",
@@ -29,7 +33,11 @@
    "data": "2026-11-13",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "comida durável",
+   "busca_en": "shelf stable food preservation"
   },
   {
    "id": "2DLjO84h1rI",
@@ -41,7 +49,11 @@
    "data": "2026-11-12",
    "hora": 18,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "dinheiro/escala",
+   "objeto": "casais nômades",
+   "busca_en": "digital nomad couple income"
   },
   {
    "id": "iia2OJi-Gio",
@@ -53,7 +65,11 @@
    "data": "2026-11-11",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "perigo/medo",
+   "objeto": "carnes comestíveis",
+   "busca_en": "edible vs inedible meat"
   },
   {
    "id": "8vJx4PpLq64",
@@ -65,7 +81,21 @@
    "data": "2026-11-10",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "limpador de ouvido",
+   "busca_en": "smart ear wax cleaner",
+   "previo": {
+    "views": 156818430,
+    "titulo": "How to clean baby ears safely at home. ✅ Product Link in Bio ( # 2661 )",
+    "canal": "MaviGadget",
+    "data": "2025-10-04",
+    "idioma": "en",
+    "atraso_dias": 402,
+    "link": "https://youtube.com/shorts/D4HrKA337pI"
+   },
+   "grupo": "top"
   },
   {
    "id": "35WrgwPEhqI",
@@ -77,7 +107,11 @@
    "data": "2026-11-09",
    "hora": 17,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "tubos para peixes",
+   "busca_en": "fish passage tube system"
   },
   {
    "id": "Pf5gTNWokUU",
@@ -89,7 +123,11 @@
    "data": "2026-11-08",
    "hora": 19,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "fofura/emoção",
+   "objeto": "tubarão carinhoso",
+   "busca_en": "friendly shark interaction"
   },
   {
    "id": "wvI9X7cCO9A",
@@ -101,7 +139,11 @@
    "data": "2026-11-07",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "nojo/estranheza",
+   "objeto": "lula gigante",
+   "busca_en": "giant squid preparation"
   },
   {
    "id": "ZwXK-laKMBU",
@@ -113,7 +155,11 @@
    "data": "2026-11-06",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "fofura/emoção",
+   "objeto": "filhote pequeno",
+   "busca_en": "tiny baby animal"
   },
   {
    "id": "wy1RTknDNpo",
@@ -125,7 +171,11 @@
    "data": "2026-11-05",
    "hora": 17,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "portas bizarras",
+   "busca_en": "weirdest doors in the world"
   },
   {
    "id": "1qOPTMXuYLA",
@@ -137,7 +187,11 @@
    "data": "2026-11-04",
    "hora": 19,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "controle videogame",
+   "busca_en": "weirdest game controllers"
   },
   {
    "id": "QQpn3WLHLj8",
@@ -149,7 +203,11 @@
    "data": "2026-11-03",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "orelha lutador",
+   "busca_en": "cauliflower ear explained"
   },
   {
    "id": "9GOXCGe1Uk8",
@@ -161,7 +219,11 @@
    "data": "2026-11-02",
    "hora": 15,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "carta piloto",
+   "busca_en": "pilot flight deck secrets"
   },
   {
    "id": "UaKa09hXSB4",
@@ -173,7 +235,11 @@
    "data": "2026-11-01",
    "hora": 15,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "perigo/medo",
+   "objeto": "airbag motogp",
+   "busca_en": "motogp rider airbag system"
   },
   {
    "id": "89UdnXtgLqQ",
@@ -185,7 +251,11 @@
    "data": "2026-10-31",
    "hora": 14,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "dinheiro/escala",
+   "objeto": "corrida pombos",
+   "busca_en": "expensive pigeon racing china"
   },
   {
    "id": "1sLbaFapyHs",
@@ -197,7 +267,11 @@
    "data": "2026-10-30",
    "hora": 17,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "nojo/estranheza",
+   "objeto": "lã de coelho",
+   "busca_en": "angora rabbit wool harvesting"
   },
   {
    "id": "U_XwlmOIYrU",
@@ -209,7 +283,11 @@
    "data": "2026-10-29",
    "hora": 16,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "perigo/medo",
+   "objeto": "teste parafina",
+   "busca_en": "paraffin wax burn test"
   },
   {
    "id": "AF_HGIXcHAE",
@@ -221,7 +299,11 @@
    "data": "2026-10-28",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "certidão cobre",
+   "busca_en": "copper wedding certificate"
   },
   {
    "id": "AOMQFCIYBJo",
@@ -233,7 +315,11 @@
    "data": "2026-10-27",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "aranha",
+   "busca_en": "spider safety tips"
   },
   {
    "id": "G1PfwXN7Fs4",
@@ -245,7 +331,11 @@
    "data": "2026-10-26",
    "hora": 18,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "chão tijolo",
+   "busca_en": "brick floor design"
   },
   {
    "id": "q4BI1UM6uXY",
@@ -257,7 +347,11 @@
    "data": "2026-10-25",
    "hora": 18,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "óculos vidro",
+   "busca_en": "glass glasses safety hazard"
   },
   {
    "id": "NIxB8y_1nyM",
@@ -269,7 +363,11 @@
    "data": "2026-10-24",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "colecionadores",
+   "busca_en": "collectors secret tips"
   },
   {
    "id": "yIHYM7D3JiY",
@@ -281,7 +379,11 @@
    "data": "2026-10-23",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "perigo/medo",
+   "objeto": "concreto chuva",
+   "busca_en": "rain damage fresh concrete"
   },
   {
    "id": "H2SRBjB3930",
@@ -293,7 +395,11 @@
    "data": "2026-10-22",
    "hora": 16,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "bife 3d",
+   "busca_en": "3d printed meat"
   },
   {
    "id": "StDmP3Lxce0",
@@ -305,7 +411,11 @@
    "data": "2026-10-21",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "audição papagaio",
+   "busca_en": "how parrots hear"
   },
   {
    "id": "EIOd9EIkOCw",
@@ -317,7 +427,11 @@
    "data": "2026-10-20",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "formigas açúcar",
+   "busca_en": "ants eating sugar experiment"
   },
   {
    "id": "qS3OFBzqzpI",
@@ -329,7 +443,11 @@
    "data": "2026-10-19",
    "hora": 18,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "uniforme emirates",
+   "busca_en": "emirates cabin crew uniform secrets"
   },
   {
    "id": "ZfywywfIRyc",
@@ -341,7 +459,11 @@
    "data": "2026-10-18",
    "hora": 18,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "porta avião",
+   "busca_en": "airplane door mechanism explained"
   },
   {
    "id": "H-9Yupv5Moo",
@@ -353,7 +475,11 @@
    "data": "2026-10-17",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "bicicletas china",
+   "busca_en": "bike safety issues china"
   },
   {
    "id": "u4jehV-svrc",
@@ -365,7 +491,11 @@
    "data": "2026-10-16",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "dinheiro/escala",
+   "objeto": "ouro lixo",
+   "busca_en": "gold from electronic waste"
   },
   {
    "id": "csRKq3kMsZg",
@@ -377,7 +507,11 @@
    "data": "2026-10-15",
    "hora": 18,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "dinheiro/escala",
+   "objeto": "casa barata",
+   "busca_en": "cheap house secrets"
   },
   {
    "id": "1THDicAHDU8",
@@ -389,7 +523,11 @@
    "data": "2026-10-14",
    "hora": 20,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "objeto casa",
+   "busca_en": "how it is made everyday objects"
   },
   {
    "id": "RfIfZSsDEVU",
@@ -401,7 +539,11 @@
    "data": "2026-10-14",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "prótese silicone",
+   "busca_en": "breast implant surgery process"
   },
   {
    "id": "9T_8c22EYRA",
@@ -413,7 +555,11 @@
    "data": "2026-10-13",
    "hora": 19,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "asfalto",
+   "busca_en": "how asphalt is made"
   },
   {
    "id": "Jsuom2wEAHE",
@@ -425,7 +571,11 @@
    "data": "2026-10-12",
    "hora": 18,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "caças bombas",
+   "busca_en": "fighter jet bomb release"
   },
   {
    "id": "jQfLJx5Suc8",
@@ -437,7 +587,11 @@
    "data": "2026-10-11",
    "hora": 12,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "doce duro",
+   "busca_en": "hardest candy in the world"
   },
   {
    "id": "X1NNTVjooh8",
@@ -449,7 +603,11 @@
    "data": "2026-10-10",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "carro tempestade",
+   "busca_en": "car weather technology"
   },
   {
    "id": "-zG1UobBxdQ",
@@ -461,7 +619,11 @@
    "data": "2026-10-09",
    "hora": 17,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "fofura/emoção",
+   "objeto": "tradição exército",
+   "busca_en": "us army traditions"
   },
   {
    "id": "HGSjUI4l84c",
@@ -473,7 +635,11 @@
    "data": "2026-10-08",
    "hora": 18,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "músico bolo",
+   "busca_en": "steve aoki cake throw"
   },
   {
    "id": "gdC0U_MkOXE",
@@ -485,7 +651,11 @@
    "data": "2026-10-07",
    "hora": 17,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "fofura/emoção",
+   "objeto": "pássaro penas",
+   "busca_en": "bird feather plucking behavior"
   },
   {
    "id": "kiIi8JWyCq0",
@@ -497,7 +667,11 @@
    "data": "2026-10-06",
    "hora": 16,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "fofura/emoção",
+   "objeto": "menor urso",
+   "busca_en": "smallest bear in the world"
   },
   {
    "id": "HSNXRB5e8QQ",
@@ -509,7 +683,11 @@
    "data": "2026-10-05",
    "hora": 18,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "cabelo dançarino",
+   "busca_en": "why dancers hair is stiff"
   },
   {
    "id": "o4avJc0eF7Y",
@@ -521,7 +699,11 @@
    "data": "2026-10-04",
    "hora": 12,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "dardos",
+   "busca_en": "luckiest dart throw ever"
   },
   {
    "id": "3fuShUvTqwE",
@@ -533,7 +715,11 @@
    "data": "2026-10-03",
    "hora": 14,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "equilíbrio",
+   "busca_en": "extreme balance sport"
   },
   {
    "id": "bIEpXZUu_jo",
@@ -545,7 +731,11 @@
    "data": "2026-10-02",
    "hora": 17,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "fofura/emoção",
+   "objeto": "marcas rosto",
+   "busca_en": "tribal facial markings meaning"
   },
   {
    "id": "wI-xbhZ1nL4",
@@ -557,7 +747,11 @@
    "data": "2026-10-01",
    "hora": 17,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "massagem palmeira",
+   "busca_en": "palm tree massage technique"
   },
   {
    "id": "D6KUlaGiINs",
@@ -569,7 +763,11 @@
    "data": "2026-09-30",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "casa lego",
+   "busca_en": "lego house construction"
   },
   {
    "id": "dMIUS1gxDRs",
@@ -581,7 +779,11 @@
    "data": "2026-09-29",
    "hora": 17,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "turbina avião",
+   "busca_en": "why jet engine nose cone rubber"
   },
   {
    "id": "BCIhQoxKYwI",
@@ -593,7 +795,11 @@
    "data": "2026-09-28",
    "hora": 16,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "mito desmentido",
+   "objeto": "gatos vs cães",
+   "busca_en": "are cats smarter than dogs"
   },
   {
    "id": "16ABO0BK2uY",
@@ -605,7 +811,11 @@
    "data": "2026-09-27",
    "hora": 18,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "porta ancestral",
+   "busca_en": "ancient door lion protection"
   },
   {
    "id": "8avlq-TR8uY",
@@ -617,7 +827,11 @@
    "data": "2026-09-26",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "rodeio",
+   "busca_en": "rodeo training speed"
   },
   {
    "id": "7SDRf6f_5AY",
@@ -629,7 +843,11 @@
    "data": "2026-09-25",
    "hora": 17,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "fofura/emoção",
+   "objeto": "cavalo",
+   "busca_en": "cute horse moment"
   },
   {
    "id": "3QHaCg-a0nA",
@@ -641,7 +859,11 @@
    "data": "2026-09-24",
    "hora": 17,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "prédio terremoto",
+   "busca_en": "how skyscrapers survive earthquakes"
   },
   {
    "id": "a1oJO7Ep4IQ",
@@ -653,7 +875,11 @@
    "data": "2026-09-23",
    "hora": 17,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "lanterna gato",
+   "busca_en": "laser pointer cat eyes danger"
   },
   {
    "id": "glT2mT9tcA4",
@@ -665,7 +891,11 @@
    "data": "2026-09-22",
    "hora": 17,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "pisar uva",
+   "busca_en": "why stomp grapes for wine"
   },
   {
    "id": "faqtG_AavWs",
@@ -677,7 +907,11 @@
    "data": "2026-09-21",
    "hora": 17,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "utilidade (truque)",
+   "objeto": "batata frita",
+   "busca_en": "perfect french fry time"
   },
   {
    "id": "JzDe8aKhR6w",
@@ -689,7 +923,11 @@
    "data": "2026-09-20",
    "hora": 12,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "planta carnívora",
+   "busca_en": "venus flytrap hunting"
   },
   {
    "id": "rhnQTq6JjS8",
@@ -701,7 +939,11 @@
    "data": "2026-09-19",
    "hora": 14,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "fofura/emoção",
+   "objeto": "peixe metal",
+   "busca_en": "lucky iron fish benefits"
   },
   {
    "id": "bfwrCKfF42I",
@@ -713,7 +955,11 @@
    "data": "2026-09-18",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "maquinista trem",
+   "busca_en": "why train driver kick train"
   },
   {
    "id": "L-LgqiyHoP8",
@@ -725,7 +971,11 @@
    "data": "2026-09-17",
    "hora": 21,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "cobra dramática",
+   "busca_en": "hognose snake playing dead"
   },
   {
    "id": "KwvYJGzp0WQ",
@@ -737,7 +987,21 @@
    "data": "2026-09-16",
    "hora": 17,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "máquina academia",
+   "busca_en": "weirdest gym machines",
+   "previo": {
+    "views": 180732731,
+    "titulo": "am I the fastest in the world? 😎 #prank #gym  #fitness  #funny  #short",
+    "canal": "TheLyonBlack",
+    "data": "2025-04-30",
+    "idioma": null,
+    "atraso_dias": 504,
+    "link": "https://youtube.com/shorts/x5yFa9rEBKk"
+   },
+   "grupo": "pior"
   },
   {
    "id": "k_sdsJlq-vw",
@@ -749,7 +1013,11 @@
    "data": "2026-09-15",
    "hora": 17,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "lâminas tráfego",
+   "busca_en": "how traffic control blades work"
   },
   {
    "id": "C-JoxizOWzM",
@@ -761,7 +1029,11 @@
    "data": "2026-09-14",
    "hora": 17,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "corvos",
+   "busca_en": "crow intelligence secrets"
   },
   {
    "id": "_tp_Ghtzlts",
@@ -773,7 +1045,11 @@
    "data": "2026-09-13",
    "hora": 18,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "videogames",
+   "busca_en": "video game development secrets"
   },
   {
    "id": "-CatiDLKrag",
@@ -785,7 +1061,11 @@
    "data": "2026-09-13",
    "hora": 13,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "sorvete",
+   "busca_en": "ice cream that doesnt melt"
   },
   {
    "id": "E4wEkHN2fGo",
@@ -797,7 +1077,11 @@
    "data": "2026-09-12",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "mergulhador",
+   "busca_en": "scuba diving tricks"
   },
   {
    "id": "OBTyh_57-yw",
@@ -809,7 +1093,11 @@
    "data": "2026-09-10",
    "hora": 17,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "física trem",
+   "busca_en": "physics of jumping on train"
   },
   {
    "id": "IHriNx1_AJQ",
@@ -821,7 +1109,21 @@
    "data": "2026-09-09",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "motos corrente",
+   "busca_en": "why motorcycles use belt drive",
+   "previo": {
+    "views": 9573360,
+    "titulo": "Chain vs Belt vs Shaft Drive — Which One's Actually Better?",
+    "canal": "Two Wheel Clutch",
+    "data": "2025-06-15",
+    "idioma": null,
+    "atraso_dias": 451,
+    "link": "https://youtube.com/shorts/TLlLmKPq5c0"
+   },
+   "grupo": "top"
   },
   {
    "id": "VDGd_q9naYM",
@@ -833,7 +1135,11 @@
    "data": "2026-09-08",
    "hora": 17,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "urso salmão",
+   "busca_en": "why bears waste salmon"
   },
   {
    "id": "h0LKFwwdss8",
@@ -845,7 +1151,11 @@
    "data": "2026-09-07",
    "hora": 17,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "fofura/emoção",
+   "objeto": "beluga",
+   "busca_en": "beluga whale playing"
   },
   {
    "id": "1jJ06yPTkD0",
@@ -857,7 +1167,11 @@
    "data": "2026-09-07",
    "hora": 11,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "tinta neon",
+   "busca_en": "fluorescein dye river tracing"
   },
   {
    "id": "Swqn_a6DH1o",
@@ -869,7 +1183,11 @@
    "data": "2026-09-06",
    "hora": 12,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "dinheiro/escala",
+   "objeto": "negócio simples",
+   "busca_en": "simple profitable business ideas"
   },
   {
    "id": "7ZhGQrYmgTI",
@@ -881,7 +1199,21 @@
    "data": "2026-09-05",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "lagarto",
+   "busca_en": "lizard camouflage behavior",
+   "previo": {
+    "views": 4099767,
+    "titulo": "Unusual Octopus Camouflage and Mimicking Behaviour",
+    "canal": "Ben Sojo",
+    "data": "2024-01-16",
+    "idioma": "en-US",
+    "atraso_dias": 963,
+    "link": "https://youtube.com/shorts/LYHa0gKUR_g"
+   },
+   "grupo": "pior"
   },
   {
    "id": "lJ6t1VjPZlg",
@@ -893,7 +1225,11 @@
    "data": "2026-09-04",
    "hora": 19,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "fofura/emoção",
+   "objeto": "tartaruga",
+   "busca_en": "saving baby sea turtles"
   },
   {
    "id": "i7UCJjkTUQ4",
@@ -905,7 +1241,21 @@
    "data": "2026-09-03",
    "hora": 12,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "passarinho",
+   "busca_en": "common mistakes saving birds",
+   "previo": {
+    "views": 6006179,
+    "titulo": "Stop placing your plant cuttings in water #plants #gardeningtips #propagation #waterpropagation",
+    "canal": "Secateur Me Baby",
+    "data": "2024-03-07",
+    "idioma": "en",
+    "atraso_dias": 910,
+    "link": "https://youtube.com/shorts/kMzsVd75INk"
+   },
+   "grupo": "top"
   },
   {
    "id": "6LYaCuMa7IU",
@@ -917,7 +1267,11 @@
    "data": "2026-09-02",
    "hora": 12,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "hashis",
+   "busca_en": "history of chopsticks"
   },
   {
    "id": "tx4bvzenwF8",
@@ -929,7 +1283,11 @@
    "data": "2026-09-01",
    "hora": 17,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "ouriço",
+   "busca_en": "dangers of fat hedgehog"
   },
   {
    "id": "hlp3N0x56Jk",
@@ -941,7 +1299,11 @@
    "data": "2026-08-31",
    "hora": 17,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "perigo/medo",
+   "objeto": "janelas",
+   "busca_en": "common window opening mistakes"
   },
   {
    "id": "yWMDTXfRfUE",
@@ -953,7 +1315,11 @@
    "data": "2026-08-30",
    "hora": 12,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "gato pata",
+   "busca_en": "cat phantom paw behavior"
   },
   {
    "id": "hogGhaeh-lc",
@@ -965,7 +1331,11 @@
    "data": "2026-08-29",
    "hora": 12,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "arco e flecha",
+   "busca_en": "archery safety arm guard"
   },
   {
    "id": "L6Pa8_pEeGA",
@@ -977,7 +1347,11 @@
    "data": "2026-08-28",
    "hora": 17,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "outro",
+   "gatilho": "nojo/estranheza",
+   "objeto": "pilotos motogp",
+   "busca_en": "motogp riders secrets disgusting"
   },
   {
    "id": "24966IpQeng",
@@ -989,7 +1363,11 @@
    "data": "2026-08-27",
    "hora": 17,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "utilidade (truque)",
+   "objeto": "touca enxaqueca",
+   "busca_en": "migraine relief cap review"
   },
   {
    "id": "RAf3FzWYe_o",
@@ -1001,7 +1379,11 @@
    "data": "2026-08-26",
    "hora": 17,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "óleo de motor",
+   "busca_en": "dangers of drinking motor oil"
   },
   {
    "id": "ey7Jnqv87Sw",
@@ -1013,7 +1395,11 @@
    "data": "2026-08-25",
    "hora": 19,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "bananeira",
+   "busca_en": "hidden secrets inside banana plant"
   },
   {
    "id": "ZYNpYX7SUEY",
@@ -1025,7 +1411,11 @@
    "data": "2026-08-24",
    "hora": 16,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "dinheiro/escala",
+   "objeto": "árvore medicinal",
+   "busca_en": "valuable medicinal trees healing"
   },
   {
    "id": "drsOIbpfBT0",
@@ -1037,7 +1427,11 @@
    "data": "2026-08-23",
    "hora": 18,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "estratégia vendas",
+   "busca_en": "retail store psychological tricks"
   },
   {
    "id": "Gs25_fsPg-w",
@@ -1049,7 +1443,11 @@
    "data": "2026-08-22",
    "hora": 17,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "navio teste",
+   "busca_en": "ship stability test 90 degrees"
   },
   {
    "id": "AUMLTv16Rdg",
@@ -1061,7 +1459,11 @@
    "data": "2026-08-21",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "utilidade (truque)",
+   "objeto": "caneta adrenalina",
+   "busca_en": "how to use epipen correctly"
   },
   {
    "id": "LOzWQYyBc7Q",
@@ -1073,7 +1475,11 @@
    "data": "2026-08-20",
    "hora": 18,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "nojo/estranheza",
+   "objeto": "mães passarinhos",
+   "busca_en": "bizarre bird parenting behavior"
   },
   {
    "id": "86rm-X6Ix2k",
@@ -1085,7 +1491,11 @@
    "data": "2026-08-19",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "carro lama",
+   "busca_en": "mud car sculpture art"
   },
   {
    "id": "0SOeNr5hpvw",
@@ -1097,7 +1507,11 @@
    "data": "2026-08-18",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "moedas trilho",
+   "busca_en": "dangers of putting coins on tracks"
   },
   {
    "id": "yzFmCo7wZdY",
@@ -1109,7 +1523,11 @@
    "data": "2026-08-17",
    "hora": 18,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "casco tartaruga",
+   "busca_en": "facts about turtle shell"
   },
   {
    "id": "xfhPtu2swQg",
@@ -1121,7 +1539,11 @@
    "data": "2026-08-16",
    "hora": 18,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "osso rosa",
+   "busca_en": "dangerous animal bones to avoid"
   },
   {
    "id": "c7SKn105byM",
@@ -1133,7 +1555,11 @@
    "data": "2026-08-15",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "bolhas água",
+   "busca_en": "underwater bubble ring physics"
   },
   {
    "id": "vI7BDnKi0gU",
@@ -1145,7 +1571,11 @@
    "data": "2026-08-14",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "sobremesa voz",
+   "busca_en": "dessert that changes voice"
   },
   {
    "id": "TNr0l3k-pUw",
@@ -1157,7 +1587,11 @@
    "data": "2026-08-13",
    "hora": 18,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "pescadores austrália",
+   "busca_en": "secret fishing industry conflicts"
   },
   {
    "id": "YfjxzOEPguU",
@@ -1169,7 +1603,11 @@
    "data": "2026-08-12",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "recorde/escala/mais caro do mundo",
+   "gatilho": "dinheiro/escala",
+   "objeto": "madeira cara",
+   "busca_en": "most expensive wood in vietnam"
   },
   {
    "id": "_Poi0JuBHHE",
@@ -1181,7 +1619,11 @@
    "data": "2026-08-11",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "perigo/medo",
+   "objeto": "aranha camelo",
+   "busca_en": "why do camel spiders chase you"
   },
   {
    "id": "K0bGcoggRTg",
@@ -1193,7 +1635,11 @@
    "data": "2026-08-10",
    "hora": 18,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "canudo bumerangue",
+   "busca_en": "boomerang straw trick"
   },
   {
    "id": "oe1Oe9DWjBI",
@@ -1205,7 +1651,11 @@
    "data": "2026-08-09",
    "hora": 18,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "raquete tênis",
+   "busca_en": "why tennis players break rackets"
   },
   {
    "id": "G16MwJXP56s",
@@ -1217,7 +1667,11 @@
    "data": "2026-08-08",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "bola tênis",
+   "busca_en": "why tennis players hit ball out"
   },
   {
    "id": "zz4PkZ6pg5w",
@@ -1229,7 +1683,11 @@
    "data": "2026-08-07",
    "hora": 12,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "focas piscina",
+   "busca_en": "why seals cover pool drains"
   },
   {
    "id": "asa8xMkwnWY",
@@ -1241,7 +1699,11 @@
    "data": "2026-08-06",
    "hora": 18,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "incenso índia",
+   "busca_en": "how incense is made india"
   },
   {
    "id": "nXnBUDjHEIs",
@@ -1253,7 +1715,13 @@
    "data": "2026-08-05",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "dinheiro/escala",
+   "objeto": "truque congelante",
+   "busca_en": "valuable freezing trick",
+   "previo": null,
+   "grupo": "pior"
   },
   {
    "id": "miEaK92t_gs",
@@ -1265,7 +1733,11 @@
    "data": "2026-08-04",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "avião hélice",
+   "busca_en": "how planes shoot through propeller"
   },
   {
    "id": "wlxbzju9GT4",
@@ -1277,7 +1749,11 @@
    "data": "2026-08-03",
    "hora": 17,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "bucha química",
+   "busca_en": "chemical anchor strength test"
   },
   {
    "id": "ZUu0lrLrWUo",
@@ -1289,7 +1765,11 @@
    "data": "2026-08-02",
    "hora": 18,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "cavalo água",
+   "busca_en": "apple trick for horse drinking"
   },
   {
    "id": "Ue67YmT3Zww",
@@ -1301,7 +1781,11 @@
    "data": "2026-08-01",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "verme perigoso",
+   "busca_en": "dangerous worms do not cut"
   },
   {
    "id": "q8vlif-LlD4",
@@ -1313,7 +1797,11 @@
    "data": "2026-07-31",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "pneus f1",
+   "busca_en": "formula 1 tire rubber trick"
   },
   {
    "id": "_rLjwcMx5VA",
@@ -1325,7 +1813,21 @@
    "data": "2026-07-30",
    "hora": 18,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "animal indomável",
+   "busca_en": "why this animal cannot be tamed",
+   "previo": {
+    "views": 217899603,
+    "titulo": "Miley Cyrus - Can't Be Tamed",
+    "canal": "MileyCyrusVEVO",
+    "data": "2010-05-05",
+    "idioma": "en-US",
+    "atraso_dias": 5930,
+    "link": "https://youtube.com/shorts/sjSG6z_13-Q"
+   },
+   "grupo": "top"
   },
   {
    "id": "anhWOyxqzxQ",
@@ -1337,7 +1839,11 @@
    "data": "2026-07-29",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "frango crocante",
+   "busca_en": "crispy chicken oil waterfall"
   },
   {
    "id": "XVoNc_PK6TI",
@@ -1349,7 +1855,11 @@
    "data": "2026-07-28",
    "hora": 17,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "plantar sementes",
+   "busca_en": "seed tape planting hack"
   },
   {
    "id": "IVOeLwGFiMc",
@@ -1361,7 +1871,11 @@
    "data": "2026-07-26",
    "hora": 12,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "prédios terremoto",
+   "busca_en": "how buildings survive earthquakes"
   },
   {
    "id": "sfgLx0HuyR8",
@@ -1373,7 +1887,11 @@
    "data": "2026-07-25",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "ângulo animais",
+   "busca_en": "camera angle animal illusion"
   },
   {
    "id": "AmeQ7HkWRE8",
@@ -1385,7 +1903,11 @@
    "data": "2026-07-24",
    "hora": 19,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "horta peixes",
+   "busca_en": "aquaponics home garden setup"
   },
   {
    "id": "Cy5ooBQPfN8",
@@ -1397,7 +1919,11 @@
    "data": "2026-07-23",
    "hora": 17,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "ferramenta roça",
+   "busca_en": "satisfying farm tools"
   },
   {
    "id": "fm3SlqGTPB4",
@@ -1409,7 +1935,11 @@
    "data": "2026-07-22",
    "hora": 17,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "bola basquete",
+   "busca_en": "airless basketball failure"
   },
   {
    "id": "yPialGoHeoI",
@@ -1421,7 +1951,11 @@
    "data": "2026-07-21",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "cordeiro rabo",
+   "busca_en": "why do they dock lamb tails"
   },
   {
    "id": "76dkIjbtDQk",
@@ -1433,7 +1967,11 @@
    "data": "2026-07-19",
    "hora": 18,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "outro",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "açúcar arma",
+   "busca_en": "sugar cone dangerous weapon"
   },
   {
    "id": "KdcPHwWYvbc",
@@ -1445,7 +1983,11 @@
    "data": "2026-07-18",
    "hora": 17,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "cobra rara",
+   "busca_en": "rarest snake drinking water"
   },
   {
    "id": "8-5mCsooBD8",
@@ -1457,7 +1999,11 @@
    "data": "2026-07-17",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "bailarinas espaguete",
+   "busca_en": "why ballerinas use spaghetti"
   },
   {
    "id": "pAYQmOhMiHU",
@@ -1469,7 +2015,11 @@
    "data": "2026-07-16",
    "hora": 18,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "visão ruim",
+   "busca_en": "man with worst eyesight"
   },
   {
    "id": "jE5ZuQN5BVA",
@@ -1481,7 +2031,11 @@
    "data": "2026-07-15",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "utilidade (truque)",
+   "objeto": "patinho dormir",
+   "busca_en": "how to make duck sleep"
   },
   {
    "id": "RNshd30KrPs",
@@ -1493,7 +2047,11 @@
    "data": "2026-07-14",
    "hora": 19,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "comerciais volvo",
+   "busca_en": "insane volvo commercials"
   },
   {
    "id": "pMYPwOHaxu0",
@@ -1505,7 +2063,11 @@
    "data": "2026-07-13",
    "hora": 16,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "regras sagradas",
+   "busca_en": "bizarre religious rules"
   },
   {
    "id": "0PPiKTR_FzU",
@@ -1517,7 +2079,11 @@
    "data": "2026-07-13",
    "hora": 12,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "chuteiras destruídas",
+   "busca_en": "why players destroy boots"
   },
   {
    "id": "IHlrNyQWG74",
@@ -1529,7 +2095,11 @@
    "data": "2026-07-11",
    "hora": 12,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "samurai ritual",
+   "busca_en": "samurai maintenance ritual"
   },
   {
    "id": "YY3XOOJMvow",
@@ -1541,7 +2111,11 @@
    "data": "2026-07-09",
    "hora": 17,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "flor rara",
+   "busca_en": "why cut rare flower"
   },
   {
    "id": "S_-MW8iInTg",
@@ -1553,7 +2127,11 @@
    "data": "2026-07-08",
    "hora": 17,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "utilidade (truque)",
+   "objeto": "inalador games",
+   "busca_en": "inhaler for gaming performance"
   },
   {
    "id": "ru-Yb2SLphM",
@@ -1565,7 +2143,11 @@
    "data": "2026-07-07",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "lama carro",
+   "busca_en": "mud car rescue trick"
   },
   {
    "id": "QqKMU17SZSE",
@@ -1577,7 +2159,11 @@
    "data": "2026-07-06",
    "hora": 20,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "médicos mãos",
+   "busca_en": "why surgeons hold hands up"
   },
   {
    "id": "dal5R9_UMUs",
@@ -1589,7 +2175,11 @@
    "data": "2026-07-05",
    "hora": 11,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "noiva academia",
+   "busca_en": "bride lifting weights"
   },
   {
    "id": "TAG7CaDIaJA",
@@ -1601,7 +2191,11 @@
    "data": "2026-07-04",
    "hora": 16,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "utilidade (truque)",
+   "objeto": "pulmões gigantes",
+   "busca_en": "how to increase lung capacity"
   },
   {
    "id": "rJzSKqTdX_U",
@@ -1613,7 +2207,11 @@
    "data": "2026-07-03",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "travar dedo",
+   "busca_en": "finger lock trick"
   },
   {
    "id": "737re1eDcmY",
@@ -1625,7 +2223,11 @@
    "data": "2026-07-02",
    "hora": 17,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "perucas luxo",
+   "busca_en": "how luxury wigs are made"
   },
   {
    "id": "gaya6Vdz6XM",
@@ -1637,7 +2239,11 @@
    "data": "2026-07-01",
    "hora": 17,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "fofura/emoção",
+   "objeto": "resgate animal",
+   "busca_en": "heartwarming animal rescue"
   },
   {
    "id": "VWHSKfkcNBs",
@@ -1649,7 +2255,11 @@
    "data": "2026-06-30",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "melancia hamster",
+   "busca_en": "watermelon hamster trick"
   },
   {
    "id": "Nm3g1NmVUIA",
@@ -1661,7 +2271,11 @@
    "data": "2026-06-29",
    "hora": 20,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "limpar pincel",
+   "busca_en": "how to clean hard brush"
   },
   {
    "id": "I9xcjPdLI8s",
@@ -1673,7 +2287,11 @@
    "data": "2026-06-28",
    "hora": 12,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "perigo/medo",
+   "objeto": "acampamento perigoso",
+   "busca_en": "most dangerous camping spot"
   },
   {
    "id": "rEZfb6VIzsI",
@@ -1685,7 +2303,11 @@
    "data": "2026-06-27",
    "hora": 12,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "erro médico",
+   "busca_en": "medical mistake saves lives"
   },
   {
    "id": "ENxM3_VAohc",
@@ -1697,7 +2319,11 @@
    "data": "2026-06-26",
    "hora": 12,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "armadilha comida",
+   "busca_en": "infinite food trap chicken"
   },
   {
    "id": "m768jiLOL58",
@@ -1709,7 +2335,11 @@
    "data": "2026-06-25",
    "hora": 16,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "outro",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "levis fifa",
+   "busca_en": "levis fifa connection"
   },
   {
    "id": "10GvFBLE2ac",
@@ -1721,7 +2351,11 @@
    "data": "2026-06-24",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "outro",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "mona lisa",
+   "busca_en": "mona lisa secret revealed"
   },
   {
    "id": "S4Zt8LloVAc",
@@ -1733,7 +2367,11 @@
    "data": "2026-06-23",
    "hora": 17,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "nojo/estranheza",
+   "objeto": "igreja cheiro",
+   "busca_en": "church with worst smell"
   },
   {
    "id": "cf0RAtUywkk",
@@ -1745,7 +2383,11 @@
    "data": "2026-06-22",
    "hora": 18,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "recorde/escala/mais caro do mundo",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "tênis olimpíadas",
+   "busca_en": "banned olympic shoes"
   },
   {
    "id": "Jxwd9oKAKbI",
@@ -1757,7 +2399,11 @@
    "data": "2026-06-21",
    "hora": 21,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "parar exatamente",
+   "busca_en": "precision stop challenge"
   },
   {
    "id": "Z6MZyP9qc2E",
@@ -1769,7 +2415,11 @@
    "data": "2026-06-20",
    "hora": 19,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "queda perfeita",
+   "busca_en": "how to fall perfectly"
   },
   {
    "id": "L3KHQgRr_TE",
@@ -1781,7 +2431,11 @@
    "data": "2026-06-19",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "chuteira nova",
+   "busca_en": "how to break in new boots"
   },
   {
    "id": "sQicyL6LJq8",
@@ -1793,7 +2447,11 @@
    "data": "2026-06-18",
    "hora": 17,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "atletismo disparo",
+   "busca_en": "why track starting gun changed"
   },
   {
    "id": "VvtLor6iNGE",
@@ -1805,7 +2463,11 @@
    "data": "2026-06-17",
    "hora": 17,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "bungee jumping",
+   "busca_en": "deadly bungee jumping stories"
   },
   {
    "id": "OaptnTFbfNg",
@@ -1817,7 +2479,11 @@
    "data": "2026-06-16",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "bola tomada",
+   "busca_en": "dangerous electrical socket prank"
   },
   {
    "id": "WNXj01IFuQE",
@@ -1829,7 +2495,11 @@
    "data": "2026-06-15",
    "hora": 17,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "noiva chorona",
+   "busca_en": "makeup trick for crying brides"
   },
   {
    "id": "3vSmnizumO4",
@@ -1841,7 +2511,11 @@
    "data": "2026-06-14",
    "hora": 14,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "champanhe água",
+   "busca_en": "why open champagne in water"
   },
   {
    "id": "IVafAjJi6eM",
@@ -1853,7 +2527,11 @@
    "data": "2026-06-13",
    "hora": 17,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "porta avião",
+   "busca_en": "why airplane door takes time"
   },
   {
    "id": "3ox2VvKfQx8",
@@ -1865,7 +2543,11 @@
    "data": "2026-06-12",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "canhão atum",
+   "busca_en": "tuna fish cannon feeding"
   },
   {
    "id": "KafaopXUP7U",
@@ -1877,7 +2559,11 @@
    "data": "2026-06-11",
    "hora": 17,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "banco ônibus",
+   "busca_en": "bus seat design secrets"
   },
   {
    "id": "pGCZ1j2ymJw",
@@ -1889,7 +2575,11 @@
    "data": "2026-06-10",
    "hora": 17,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "abelhas homem",
+   "busca_en": "why bees dont attack him"
   },
   {
    "id": "NRnuewJ1M2U",
@@ -1901,7 +2591,11 @@
    "data": "2026-06-09",
    "hora": 17,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "verme estranho",
+   "busca_en": "weirdest worm ever seen"
   },
   {
    "id": "liptjBq8H7c",
@@ -1913,7 +2607,11 @@
    "data": "2026-06-08",
    "hora": 18,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "lápis planta",
+   "busca_en": "plantable pencil invention"
   },
   {
    "id": "XvR5bxpIp9A",
@@ -1925,7 +2623,11 @@
    "data": "2026-06-07",
    "hora": 18,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "nojo/estranheza",
+   "objeto": "monstro olhos",
+   "busca_en": "creature with 200 eyes"
   },
   {
    "id": "nAiS42huCJQ",
@@ -1937,7 +2639,11 @@
    "data": "2026-06-06",
    "hora": 17,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "bueiros",
+   "busca_en": "hidden dangers of manholes"
   },
   {
    "id": "_LsslxdtUIY",
@@ -1949,7 +2655,11 @@
    "data": "2026-06-05",
    "hora": 17,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "bengala irlandesa",
+   "busca_en": "irish shillelagh history facts"
   },
   {
    "id": "8pnV6P2LqB4",
@@ -1961,7 +2671,11 @@
    "data": "2026-06-04",
    "hora": 19,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "chuteira neymar",
+   "busca_en": "neymar banned football boots"
   },
   {
    "id": "Urv6RvXOuOg",
@@ -1973,7 +2687,11 @@
    "data": "2026-06-02",
    "hora": 17,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "perigo/medo",
+   "objeto": "mofo",
+   "busca_en": "hidden dangers of mold"
   },
   {
    "id": "j6g-z3BWoGk",
@@ -1985,7 +2703,11 @@
    "data": "2026-06-01",
    "hora": 17,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "peru de natal",
+   "busca_en": "why crush christmas turkey"
   },
   {
    "id": "g87pSCd5H94",
@@ -1997,7 +2719,11 @@
    "data": "2026-05-31",
    "hora": 19,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "espelho retrovisor",
+   "busca_en": "mirror blind spot hack"
   },
   {
    "id": "7wMECDXdFsk",
@@ -2009,7 +2735,11 @@
    "data": "2026-05-30",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "cupons de papel",
+   "busca_en": "dangers of thermal paper receipts"
   },
   {
    "id": "JZNd9JbUwfc",
@@ -2021,7 +2751,21 @@
    "data": "2026-05-29",
    "hora": 17,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "lazy dog militar",
+   "busca_en": "lazy dog weapon history",
+   "previo": {
+    "views": 62822161,
+    "titulo": "Why were soldiers so afraid of this tiny thing?",
+    "canal": "ArmorXpress",
+    "data": "2026-03-27",
+    "idioma": null,
+    "atraso_dias": 63,
+    "link": "https://youtube.com/shorts/LoL6ZIoogyE"
+   },
+   "grupo": "top"
   },
   {
    "id": "Efu62hLh9xQ",
@@ -2033,7 +2777,11 @@
    "data": "2026-05-28",
    "hora": 17,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "moto",
+   "busca_en": "motorcycle riding dangers"
   },
   {
    "id": "YFZYLc-r_54",
@@ -2045,7 +2793,21 @@
    "data": "2026-05-27",
    "hora": 16,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "recorde/escala/mais caro do mundo",
+   "gatilho": "dinheiro/escala",
+   "objeto": "tênis",
+   "busca_en": "most expensive sneakers history",
+   "previo": {
+    "views": 23333283,
+    "titulo": "Balenciaga ke Rs.80,000 ke unique shoes 🛍️#balenciaga #balenciagashoes #sneaker #trending #dubai",
+    "canal": "YPM Vlogs",
+    "data": "2023-06-21",
+    "idioma": null,
+    "atraso_dias": 1071,
+    "link": "https://youtube.com/shorts/NddusvmKz24"
+   },
+   "grupo": "top"
   },
   {
    "id": "vE9Qy0BT1Js",
@@ -2057,7 +2819,11 @@
    "data": "2026-05-26",
    "hora": 19,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "ziper mit",
+   "busca_en": "mit secret zipper technology"
   },
   {
    "id": "HSXrKuqYVeo",
@@ -2069,7 +2835,11 @@
    "data": "2026-05-25",
    "hora": 17,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "peixe betta",
+   "busca_en": "do betta fish sleep"
   },
   {
    "id": "S6ntYrC4_uE",
@@ -2081,7 +2851,21 @@
    "data": "2026-05-24",
    "hora": 16,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "xarope de bordo",
+   "busca_en": "how maple syrup is made",
+   "previo": {
+    "views": 151554687,
+    "titulo": "Instead of Frozen Honey, I tried Frozen Maple Syrup | MyHealthyDish",
+    "canal": "MyHealthyDish",
+    "data": "2021-09-24",
+    "idioma": null,
+    "atraso_dias": 1703,
+    "link": "https://youtube.com/shorts/Hc1Pm3kJu4M"
+   },
+   "grupo": "pior"
   },
   {
    "id": "9gne_jyWdT4",
@@ -2093,7 +2877,11 @@
    "data": "2026-05-23",
    "hora": 13,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "muçum asiático",
+   "busca_en": "how to train eel"
   },
   {
    "id": "JYuvl4iUQ5I",
@@ -2105,7 +2893,11 @@
    "data": "2026-05-22",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "filas índia",
+   "busca_en": "queue management india innovation"
   },
   {
    "id": "3g45thiX7HY",
@@ -2117,7 +2909,11 @@
    "data": "2026-05-21",
    "hora": 19,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "bolinhas de gel",
+   "busca_en": "water beads for plants"
   },
   {
    "id": "q1wJiCz8Rzs",
@@ -2129,7 +2925,11 @@
    "data": "2026-05-20",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "tinta de lula",
+   "busca_en": "dangers of squid ink"
   },
   {
    "id": "vw77k2cVplk",
@@ -2141,7 +2941,11 @@
    "data": "2026-05-19",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "nojo/estranheza",
+   "objeto": "língua de gato",
+   "busca_en": "why cat tongues are rough"
   },
   {
    "id": "ZkDuJbtYl7w",
@@ -2153,7 +2957,21 @@
    "data": "2026-05-18",
    "hora": 18,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "perigo/medo",
+   "objeto": "favo de mel",
+   "busca_en": "how to eat honeycomb correctly",
+   "previo": {
+    "views": 2676113,
+    "titulo": "Why You Shouldn't Eat Raw Honeycomb! 😳",
+    "canal": "27 Crew",
+    "data": "2025-05-18",
+    "idioma": "en",
+    "atraso_dias": 365,
+    "link": "https://youtube.com/shorts/8AhZWdtwzBU"
+   },
+   "grupo": "top"
   },
   {
    "id": "lNiN2x3ocjU",
@@ -2165,7 +2983,11 @@
    "data": "2026-05-17",
    "hora": 18,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "gelo",
+   "busca_en": "how climbers check ice safety"
   },
   {
    "id": "L-27A181oKE",
@@ -2177,7 +2999,11 @@
    "data": "2026-05-16",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "barriga pássaros",
+   "busca_en": "bird anatomy secrets"
   },
   {
    "id": "-ok43Wkx_ag",
@@ -2189,7 +3015,11 @@
    "data": "2026-05-15",
    "hora": 17,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "utilidade (truque)",
+   "objeto": "resina de árvore",
+   "busca_en": "tree resin medical uses"
   },
   {
    "id": "vdocSPmigcc",
@@ -2201,7 +3031,11 @@
    "data": "2026-05-14",
    "hora": 17,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "tomografia animal",
+   "busca_en": "how animals get ct scans"
   },
   {
    "id": "6VSIjv0TsPg",
@@ -2213,7 +3047,11 @@
    "data": "2026-05-13",
    "hora": 19,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "câmera térmica",
+   "busca_en": "how to hide from thermal cameras"
   },
   {
    "id": "s-6bfjJCw8I",
@@ -2225,7 +3063,11 @@
    "data": "2026-05-12",
    "hora": 19,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "barro tijolos",
+   "busca_en": "how bricks are made kiln"
   },
   {
    "id": "JQOeT1WCOlY",
@@ -2237,7 +3079,21 @@
    "data": "2026-05-11",
    "hora": 19,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "perigo/medo",
+   "objeto": "pastor turco",
+   "busca_en": "turkish shepherd life challenges",
+   "previo": {
+    "views": 157703,
+    "titulo": "A Shepherd's Best Friend | Wild Turkey",
+    "canal": "Nat Geo Animals",
+    "data": "2016-05-05",
+    "idioma": "en-US",
+    "atraso_dias": 3658,
+    "link": "https://youtube.com/shorts/SDJKGiJp6w0"
+   },
+   "grupo": "top"
   },
   {
    "id": "lqUB-HJVGFk",
@@ -2249,7 +3105,11 @@
    "data": "2026-05-10",
    "hora": 19,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "dinheiro/escala",
+   "objeto": "prótese silicone",
+   "busca_en": "silicone implant pressure test"
   },
   {
    "id": "FpmvmXr8zN8",
@@ -2261,7 +3121,11 @@
    "data": "2026-05-09",
    "hora": 19,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "serra",
+   "busca_en": "table saw safety tips"
   },
   {
    "id": "MN0Pi2hxb1M",
@@ -2273,7 +3137,11 @@
    "data": "2026-05-08",
    "hora": 19,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "moto yamaha",
+   "busca_en": "why yamaha 3 wheel motorcycle"
   },
   {
    "id": "H6w90sOU7BU",
@@ -2285,7 +3153,11 @@
    "data": "2026-05-07",
    "hora": 19,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "utilidade (truque)",
+   "objeto": "engasgo",
+   "busca_en": "heimlich maneuver life saving"
   },
   {
    "id": "Ym_Ezk_ZRJA",
@@ -2297,7 +3169,11 @@
    "data": "2026-05-06",
    "hora": 19,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "unir metais",
+   "busca_en": "metal welding techniques"
   },
   {
    "id": "-TyuCbzb_Eg",
@@ -2309,7 +3185,11 @@
    "data": "2026-05-05",
    "hora": 19,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "cesta basquete",
+   "busca_en": "why basketball hoop hated"
   },
   {
    "id": "uOuL08VwpKc",
@@ -2321,7 +3201,11 @@
    "data": "2026-05-04",
    "hora": 19,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "parede pista",
+   "busca_en": "why wall at end of track"
   },
   {
    "id": "9qpiyZ4mVx4",
@@ -2333,7 +3217,11 @@
    "data": "2026-05-03",
    "hora": 19,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "escavadeira aranha",
+   "busca_en": "spider excavator working"
   },
   {
    "id": "tksAN_YZvL0",
@@ -2345,7 +3233,11 @@
    "data": "2026-05-02",
    "hora": 19,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "perigo/medo",
+   "objeto": "rugbi",
+   "busca_en": "rugby player injuries"
   },
   {
    "id": "IGZpr3PMR8g",
@@ -2357,7 +3249,11 @@
    "data": "2026-05-01",
    "hora": 19,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "perigo/medo",
+   "objeto": "gatos agressivos",
+   "busca_en": "why cats become aggressive"
   },
   {
    "id": "7mt4Jvoao_k",
@@ -2369,7 +3265,11 @@
    "data": "2026-04-30",
    "hora": 19,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "caruncho farinha",
+   "busca_en": "how to prevent weevils in flour"
   },
   {
    "id": "ii3Exj_15cg",
@@ -2381,7 +3281,11 @@
    "data": "2026-04-29",
    "hora": 19,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "máquina soprinho",
+   "busca_en": "eye irritation machine"
   },
   {
    "id": "GHceM-urpag",
@@ -2393,7 +3297,11 @@
    "data": "2026-04-28",
    "hora": 19,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "dinheiro/escala",
+   "objeto": "fazenda bangladesh",
+   "busca_en": "bangladesh farming profit"
   },
   {
    "id": "-zzfGeFKZiw",
@@ -2405,7 +3313,11 @@
    "data": "2026-04-27",
    "hora": 19,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "objeto afiado",
+   "busca_en": "sharpest natural object"
   },
   {
    "id": "qMRNFMmcXBo",
@@ -2417,7 +3329,11 @@
    "data": "2026-04-26",
    "hora": 19,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "felino",
+   "busca_en": "cat reaction to plants"
   },
   {
    "id": "Qgclqb9it9M",
@@ -2429,7 +3345,11 @@
    "data": "2026-04-25",
    "hora": 19,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "mito desmentido",
+   "objeto": "lagosta",
+   "busca_en": "lobster facts debunked"
   },
   {
    "id": "sEsfQNNQLkY",
@@ -2441,7 +3361,11 @@
    "data": "2026-04-24",
    "hora": 19,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "cabelo",
+   "busca_en": "how long can hair grow"
   },
   {
    "id": "sPCPeD0mo8w",
@@ -2453,7 +3377,11 @@
    "data": "2026-04-23",
    "hora": 19,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "sapos",
+   "busca_en": "why frogs used in biology"
   },
   {
    "id": "JP2kDzXVA10",
@@ -2465,7 +3393,11 @@
    "data": "2026-04-22",
    "hora": 19,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "pelúcias nasa",
+   "busca_en": "nasa plush toys secret"
   },
   {
    "id": "UprKHFbaqc0",
@@ -2477,7 +3409,11 @@
    "data": "2026-04-21",
    "hora": 19,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "vidro falso",
+   "busca_en": "how to identify fake glass"
   },
   {
    "id": "h1h7xIc31Ig",
@@ -2489,7 +3425,11 @@
    "data": "2026-04-19",
    "hora": 19,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "jeans",
+   "busca_en": "shrink jeans in shower hack"
   },
   {
    "id": "xG3u44qgOHk",
@@ -2501,7 +3441,11 @@
    "data": "2026-04-18",
    "hora": 19,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "perigo/medo",
+   "objeto": "colheita coco",
+   "busca_en": "most dangerous harvest"
   },
   {
    "id": "Xr2JflhjETc",
@@ -2513,7 +3457,11 @@
    "data": "2026-04-17",
    "hora": 19,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "mito desmentido",
+   "objeto": "terra gira",
+   "busca_en": "proof earth rotates"
   },
   {
    "id": "BGE8laZisfI",
@@ -2525,7 +3473,11 @@
    "data": "2026-04-16",
    "hora": 19,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "tatuagem",
+   "busca_en": "how tattoo removal works"
   },
   {
    "id": "Gf4AVauqP24",
@@ -2537,7 +3489,21 @@
    "data": "2026-04-15",
    "hora": 19,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "esqueletos",
+   "busca_en": "how museums clean skeletons",
+   "previo": {
+    "views": 47105429,
+    "titulo": "This woman has a dead snake skeleton on display! 😮🐍  -  🎥 @ExoticPetVet",
+    "canal": "UNILAD",
+    "data": "2024-03-30",
+    "idioma": "en-US",
+    "atraso_dias": 746,
+    "link": "https://youtube.com/shorts/W43wjfMyI_8"
+   },
+   "grupo": "top"
   },
   {
    "id": "0tK7s9asgjE",
@@ -2549,7 +3515,11 @@
    "data": "2026-04-14",
    "hora": 20,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "comida avião",
+   "busca_en": "why airplane food tastes weird"
   },
   {
    "id": "MuUNAerpYrU",
@@ -2561,7 +3531,11 @@
    "data": "2026-04-13",
    "hora": 20,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "garagem",
+   "busca_en": "garage safety hack"
   },
   {
    "id": "-UJPl5tr7d4",
@@ -2573,7 +3547,11 @@
    "data": "2026-04-12",
    "hora": 20,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "cabra montanha",
+   "busca_en": "mountain goat survival"
   },
   {
    "id": "dfxIcEpPhIg",
@@ -2585,7 +3563,11 @@
    "data": "2026-04-11",
    "hora": 20,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "fofura/emoção",
+   "objeto": "cabra australiana",
+   "busca_en": "australian animal scratching"
   },
   {
    "id": "OYHMc98HlZ4",
@@ -2597,7 +3579,11 @@
    "data": "2026-04-10",
    "hora": 20,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "livros",
+   "busca_en": "history of ancient books"
   },
   {
    "id": "4Hu9EXT-zqg",
@@ -2609,7 +3595,11 @@
    "data": "2026-04-09",
    "hora": 20,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "sal marinho",
+   "busca_en": "dangers of homemade sea salt"
   },
   {
    "id": "NIt870SEiAE",
@@ -2621,7 +3611,11 @@
    "data": "2026-04-08",
    "hora": 20,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "para-brisas",
+   "busca_en": "windshield repair hack"
   },
   {
    "id": "hOzTbkuzWeE",
@@ -2633,7 +3627,11 @@
    "data": "2026-04-07",
    "hora": 20,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "tapetes turcos",
+   "busca_en": "turkish carpet cleaning secret"
   },
   {
    "id": "kK9qfVy3wT8",
@@ -2645,7 +3643,11 @@
    "data": "2026-04-06",
    "hora": 20,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "cachorros metrô",
+   "busca_en": "dogs on subway secret"
   },
   {
    "id": "HbZk2axbrl0",
@@ -2657,7 +3659,11 @@
    "data": "2026-04-04",
    "hora": 20,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "galinha",
+   "busca_en": "chicken head stabilizer"
   },
   {
    "id": "sRcXlo_0dEQ",
@@ -2669,7 +3675,21 @@
    "data": "2026-04-03",
    "hora": 20,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "castores",
+   "busca_en": "why beavers chew wood",
+   "previo": {
+    "views": 58687973,
+    "titulo": "How beavers keep safe from falling trees. #facts #animals #beavers #fyp",
+    "canal": "AstroTrey ",
+    "data": "2024-10-11",
+    "idioma": null,
+    "atraso_dias": 539,
+    "link": "https://youtube.com/shorts/ODT509bpYgA"
+   },
+   "grupo": "pior"
   },
   {
    "id": "50NidEq5aoA",
@@ -2681,7 +3701,11 @@
    "data": "2026-04-02",
    "hora": 20,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "assobiar",
+   "busca_en": "how to whistle with fingers"
   },
   {
    "id": "1zGmMG9DBCs",
@@ -2693,7 +3717,11 @@
    "data": "2026-04-01",
    "hora": 20,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "tambor crocodilo",
+   "busca_en": "crocodile drum making"
   },
   {
    "id": "pjbfxZlKi1I",
@@ -2705,7 +3733,11 @@
    "data": "2026-03-31",
    "hora": 20,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "sobremesa papel",
+   "busca_en": "indian paper dessert"
   },
   {
    "id": "xbcHmqaDWKc",
@@ -2717,7 +3749,11 @@
    "data": "2026-03-30",
    "hora": 20,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "outro",
+   "gatilho": "nojo/estranheza",
+   "objeto": "pior trabalho",
+   "busca_en": "worst jobs in the world"
   },
   {
    "id": "kSn56FlWM7w",
@@ -2729,7 +3765,11 @@
    "data": "2026-03-29",
    "hora": 20,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "perigo/medo",
+   "objeto": "bala",
+   "busca_en": "candy destroys teeth"
   },
   {
    "id": "4mPO3HTdK3E",
@@ -2741,7 +3781,11 @@
    "data": "2026-03-28",
    "hora": 20,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "bicicleta água",
+   "busca_en": "water powered bicycle"
   },
   {
    "id": "WrpYIFu1s4g",
@@ -2753,7 +3797,11 @@
    "data": "2026-03-27",
    "hora": 20,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "bomba insulina",
+   "busca_en": "how insulin pump works"
   },
   {
    "id": "4BM0d3mjhgo",
@@ -2765,7 +3813,11 @@
    "data": "2026-03-26",
    "hora": 20,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "maquiagem china",
+   "busca_en": "ancient chinese makeup secrets"
   },
   {
    "id": "E9tyIbU6-YY",
@@ -2777,7 +3829,11 @@
    "data": "2026-03-25",
    "hora": 20,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "tênis",
+   "busca_en": "why sneakers rot in box"
   },
   {
    "id": "tB7CJ51I-kI",
@@ -2789,7 +3845,11 @@
    "data": "2026-03-24",
    "hora": 20,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "nojo/estranheza",
+   "objeto": "vinho vespa",
+   "busca_en": "wasp wine making"
   },
   {
    "id": "AluSwRGZFPU",
@@ -2801,7 +3861,11 @@
    "data": "2026-03-23",
    "hora": 20,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "yakult",
+   "busca_en": "why yakult bottle size"
   },
   {
    "id": "bLeBVZLfKdY",
@@ -2813,7 +3877,11 @@
    "data": "2026-03-22",
    "hora": 20,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "planta carnívora",
+   "busca_en": "carnivorous plant fails"
   },
   {
    "id": "lHp9BXPj5u4",
@@ -2825,7 +3893,11 @@
    "data": "2026-03-21",
    "hora": 20,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "nojo/estranheza",
+   "objeto": "batom insetos",
+   "busca_en": "lipstick made of bugs"
   },
   {
    "id": "xxPCs9LPfsY",
@@ -2837,7 +3909,11 @@
    "data": "2026-03-20",
    "hora": 20,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "pinguim",
+   "busca_en": "why not touch penguins"
   },
   {
    "id": "NypZDy3nQNY",
@@ -2849,7 +3925,11 @@
    "data": "2026-03-19",
    "hora": 20,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "metrô coreia",
+   "busca_en": "korea subway hidden meaning"
   },
   {
    "id": "xESDrfnBkCk",
@@ -2861,7 +3941,11 @@
    "data": "2026-03-18",
    "hora": 20,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "roupa mergulho",
+   "busca_en": "why wetsuits are tight"
   },
   {
    "id": "kKG40dtchas",
@@ -2873,7 +3957,11 @@
    "data": "2026-03-17",
    "hora": 20,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "canecas inverno",
+   "busca_en": "european winter mug secrets"
   },
   {
    "id": "i9eftEDspt4",
@@ -2885,7 +3973,11 @@
    "data": "2026-03-16",
    "hora": 20,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "ouvido piloto",
+   "busca_en": "motogp ear plugs secret"
   },
   {
    "id": "yRk5UzbgjBg",
@@ -2897,7 +3989,21 @@
    "data": "2026-03-15",
    "hora": 20,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "monóculo",
+   "busca_en": "history and purpose of monocle",
+   "previo": {
+    "views": 66299,
+    "titulo": "How to wear a Monocle",
+    "canal": "Peter Christian",
+    "data": "2024-10-28",
+    "idioma": "en",
+    "atraso_dias": 503,
+    "link": "https://youtube.com/shorts/4O1aodw5NZ0"
+   },
+   "grupo": "top"
   },
   {
    "id": "jhH4uHTAiOs",
@@ -2909,7 +4015,11 @@
    "data": "2026-03-14",
    "hora": 20,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "nojo/estranheza",
+   "objeto": "criatura na areia",
+   "busca_en": "strange sand dwelling creature"
   },
   {
    "id": "f1dw7-oIN2I",
@@ -2921,7 +4031,11 @@
    "data": "2026-03-13",
    "hora": 20,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "bike elétrica",
+   "busca_en": "diy electric bike conversion kit"
   },
   {
    "id": "t_LLsPR2zRU",
@@ -2933,7 +4047,11 @@
    "data": "2026-03-12",
    "hora": 20,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "recorde/escala/mais caro do mundo",
+   "gatilho": "dinheiro/escala",
+   "objeto": "stent cardíaco",
+   "busca_en": "why are heart stents expensive"
   },
   {
    "id": "IjSacdvxrxM",
@@ -2945,7 +4063,11 @@
    "data": "2026-03-11",
    "hora": 20,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "energético",
+   "busca_en": "how energy drinks are made"
   },
   {
    "id": "1HW47sapzw8",
@@ -2957,7 +4079,11 @@
    "data": "2026-03-10",
    "hora": 20,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "espada de areia",
+   "busca_en": "making sword from river sand"
   },
   {
    "id": "M5z7TkkitPE",
@@ -2969,7 +4095,11 @@
    "data": "2026-03-09",
    "hora": 20,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "bordas de ouro",
+   "busca_en": "why books have gold edges"
   },
   {
    "id": "UUA2Z53C564",
@@ -2981,7 +4111,11 @@
    "data": "2026-03-08",
    "hora": 20,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "nojo/estranheza",
+   "objeto": "donuts",
+   "busca_en": "how donuts are mass produced"
   },
   {
    "id": "Awy06QPlYM8",
@@ -2993,7 +4127,11 @@
    "data": "2026-03-07",
    "hora": 20,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "casca de coco",
+   "busca_en": "hidden uses of coconut shell"
   },
   {
    "id": "eOGY0HXnDKc",
@@ -3005,7 +4143,11 @@
    "data": "2026-03-06",
    "hora": 20,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "água com gás",
+   "busca_en": "what happens freezing sparkling water"
   }
  ]
 }

@@ -41,14 +41,16 @@ def _gemini_texto(prompt: str) -> str:
     import time
     corpo = {"contents": [{"parts": [{"text": prompt}]}],
              "generationConfig": {"temperature": 0.1, "responseMimeType": "application/json"}}
-    for tentativa in range(6):
+    modelos = ["gemini-3.1-flash-lite", "gemini-3-flash-preview", MODELO, "gemini-flash-lite-latest"]
+    for tentativa in range(8):
+        modelo = modelos[tentativa % len(modelos)]      # alterna entre modelos quando um está lotado
         try:
-            r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{MODELO}:generateContent",
+            r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
                               params={"key": _chave()}, json=corpo, timeout=300).json()
         except requests.RequestException as e:      # queda de rede/proxy: espera e tenta de novo
             r = {"error": {"message": str(e)[:120]}}
         if "error" in r:
-            time.sleep(15 * (tentativa + 1))
+            time.sleep(8 * (tentativa + 1))
             continue
         return "".join(p.get("text", "") for p in r["candidates"][0]["content"]["parts"])
     raise SystemExit(f"Gemini indisponível: {r.get('error', {}).get('message')}")

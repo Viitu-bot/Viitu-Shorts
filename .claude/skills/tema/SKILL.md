@@ -23,6 +23,10 @@ O usuário escolhe um e seguimos para `/clipes` e `/roteiro`.
    ```
    Se quiser, acrescente buscas com `--extra "termo"` (em inglês/espanhol) para variar.
 
+3b. **Pesos de categoria/gatilho já estão na pontuação** (ver "LÓGICA DE ESCOLHA DE TEMA" no CLAUDE.md).
+   Priorize: motivo oculto de objeto, recorde/"mais caro", perigo/erro, mito desmentido.
+   Evite como tema principal: animal estranho sem "porquê", comida, corpo/saúde, truque, "olha isso".
+
 4. **Agrupe por TEMA**, não por vídeo: o mesmo tema em vários canais = demanda comprovada (bom sinal).
    Descarte:
    - temas em `dados/temas_feitos.md`;

@@ -64,6 +64,21 @@ Clipes do usuário chegam por **link do Google Drive** (YouTube e Reddit bloquei
 - **Edição:** um estímulo visual a cada 2–3 s (zoom no detalhe, círculo/seta, corte), sempre na borda
   de uma palavra; palavra-gatilho = o detalhe em destaque na tela. Cortar só quando muda a ideia.
 
+## LÓGICA DE ESCOLHA DE TEMA (medida em 625 vídeos de 3 canais BR — `hall_da_fama/logica_temas.md`)
+1. **Fonte = temas evergreen já virais:** quase todo sucesso deles (e também os fracassos) repete um
+   tema que já tinha viralizado lá fora, em média **1,5 a 2 anos antes** (não é notícia nem tendência).
+   Ou seja, pré-validação é OBRIGATÓRIA, mas não basta: ela não separa sucesso de fracasso.
+2. **O que separa sucesso de fracasso é a CATEGORIA + o GATILHO** (mediana de views):
+   - 🥇 motivo oculto de objeto/design (A vida 2,5M · GeneralTV 930k · KSO 2,7M)
+   - 🥈 recorde/escala/"mais caro do mundo" (2,0M · 1,9M) · 🥉 perigo/erro/segurança (1,4M · 979k)
+   - gatilhos fortes: dinheiro/escala, **mito desmentido**, motivo oculto, perigo/medo, processo revelado
+   - fracos: animal com comportamento estranho (255k · 171k), comida, corpo/saúde, truque, lugar/cultura,
+     e "surpresa visual / olha isso" sem explicação (379k · 213k)
+   - título com pergunta direta ao espectador ("Você conseguiria...?", "Você aguenta...?") e assunto vago
+     ("O hobby dele é...") aparecem entre os piores.
+3. `/tema` aplica esses pesos automaticamente (PESO_CATEGORIA e PESO_GATILHO em `viitu/tema.py`),
+   busca temas de até 2 anos com ≥2M views e checa a lacuna em PT-BR.
+
 ## Seleção de tema (nota 0–12, 0 a 2 por critério; produzir só com ≥ 9)
 Objeto do dia a dia | pergunta concreta (Por que / Como / O que acontece se) |
 resposta não aparece na imagem | resposta surpreendente | afeta a vida de quem assiste |
@@ -73,6 +88,9 @@ forte em PT-BR.
 
 ## Publicação
 - **Horário padrão: 06:00** (histórico do dono: funciona). Agendar no app do YouTube.
+- Dados dos canais de referência: A vida é uma maravilha posta 1,3/dia às **12h e 18h**; GeneralTV ~1/dia
+  entre 17h e 20h (**19h** com a maior mediana: 1,0M); KSO às 11h. Nenhum posta às 6h.
+  Teste: alternar 06:00 e 18:00 por 2 semanas e comparar views em 48 h.
 
 ## Títulos
 - O título repete a LACUNA do gancho e não pressupõe conhecimento ("O olho da cabra faz algo que o

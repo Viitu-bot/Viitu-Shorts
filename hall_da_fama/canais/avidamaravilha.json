@@ -38,7 +38,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "livro ilegível",
+   "busca_en": "mysterious unreadable book voynich manuscript"
   },
   {
    "id": "CwDXKFedDNU",
@@ -71,7 +75,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "óleo combustível navios",
+   "busca_en": "how ship fuel is made"
   },
   {
    "id": "W8b7Tb9ChFE",
@@ -104,7 +112,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "fazer gelo caseiro",
+   "busca_en": "diy ice cube hack"
   },
   {
    "id": "GAjMyGzlMKQ",
@@ -137,7 +149,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "recorde/escala/mais caro do mundo",
+   "gatilho": "dinheiro/escala",
+   "objeto": "cor cara",
+   "busca_en": "most expensive color in history"
   },
   {
    "id": "avQyPVW5qZs",
@@ -170,7 +186,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "broca cirúrgica",
+   "busca_en": "surgical bone drill safety"
   },
   {
    "id": "apnsU05mwlQ",
@@ -203,7 +223,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "inflar aço",
+   "busca_en": "how steel is inflated"
   },
   {
    "id": "4kuIVJ_gXvY",
@@ -236,7 +260,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "mito desmentido",
+   "objeto": "bala de gelo",
+   "busca_en": "can ice bullet work"
   },
   {
    "id": "mysJETFpyoQ",
@@ -269,7 +297,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "fogo sob cama",
+   "busca_en": "why is there fire under bed"
   },
   {
    "id": "355BJM65F6k",
@@ -302,7 +334,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "martelo cabo mole",
+   "busca_en": "why dead blow hammer soft"
   },
   {
    "id": "lO1qGINj3cE",
@@ -335,7 +371,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "concreto em sacos",
+   "busca_en": "how to use concrete bags"
   },
   {
    "id": "nId-5o2Qwho",
@@ -368,7 +408,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "física wingsuit",
+   "busca_en": "physics of wingsuit flying"
   },
   {
    "id": "bOHK4FCnPPo",
@@ -401,7 +445,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "perigo/medo",
+   "objeto": "cerejeira Japão",
+   "busca_en": "japan cherry blossom etiquette"
   },
   {
    "id": "OHN0XGmA_Gs",
@@ -434,7 +482,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "caderno de pedra",
+   "busca_en": "stone paper notebook review"
   },
   {
    "id": "457d9XaqRSQ",
@@ -467,7 +519,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo\""
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "degelo aviões",
+   "busca_en": "how planes de-ice in flight"
   },
   {
    "id": "kW94XBldFTc",
@@ -500,7 +556,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "segurança caminhões",
+   "busca_en": "truck blind spot danger"
   },
   {
    "id": "mrUy4cY3z-8",
@@ -533,7 +593,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "perigo/medo",
+   "objeto": "limpeza vidros altura",
+   "busca_en": "skyscraper window cleaning extreme"
   },
   {
    "id": "7zk6FPyG-VA",
@@ -566,7 +630,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "árvore que anda",
+   "busca_en": "walking palm tree facts"
   },
   {
    "id": "ZtJoMi2tq28",
@@ -600,7 +668,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "bola gigante queda",
+   "busca_en": "giant inflatable ball fall safety"
   },
   {
    "id": "v_AhZTSXyog",
@@ -633,7 +705,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "microfone abafador",
+   "busca_en": "gaming scream muffler microphone"
   },
   {
    "id": "N-ECWmGwCRw",
@@ -667,7 +743,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "astronauta preso",
+   "busca_en": "what if astronaut gets stranded"
   },
   {
    "id": "-cKEv0Dqi0o",
@@ -700,7 +780,21 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "salto sem paraquedas",
+   "busca_en": "skydiver jumps without parachute",
+   "previo": {
+    "views": 242716109,
+    "titulo": "The Fastest Way Down 😅",
+    "canal": "Red Bull",
+    "data": "2025-02-27",
+    "idioma": "en",
+    "atraso_dias": 616,
+    "link": "https://youtube.com/shorts/svmmHtAy-Dg"
+   },
+   "grupo": "top"
   },
   {
    "id": "Gmsze-dT_pA",
@@ -734,7 +828,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "dinheiro/escala",
+   "objeto": "painéis solares China",
+   "busca_en": "china solar panels on mountains"
   },
   {
    "id": "OwP8GbznUEs",
@@ -768,7 +866,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "nojo/estranheza",
+   "objeto": "abelhas em casa",
+   "busca_en": "keeping bees inside house"
   },
   {
    "id": "VYXtWfrLhrw",
@@ -801,7 +903,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "guaxinim lavando comida",
+   "busca_en": "why do raccoons wash food"
   },
   {
    "id": "40IgkgZZz7E",
@@ -834,7 +940,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "bife impressora 3D",
+   "busca_en": "3d printed meat process"
   },
   {
    "id": "_i7OYijbRuc",
@@ -867,7 +977,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "doce fino",
+   "busca_en": "paper thin candy making"
   },
   {
    "id": "Ik5Jf95oWpU",
@@ -900,7 +1014,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "floco de neve",
+   "busca_en": "filming single snowflake macro"
   },
   {
    "id": "b9cF4DZPdF0",
@@ -934,7 +1052,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "dinheiro/escala",
+   "objeto": "Boeing vs Airbus",
+   "busca_en": "difference between boeing and airbus"
   },
   {
    "id": "BeZU9vm1uq0",
@@ -967,7 +1089,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "cartão piloto",
+   "busca_en": "secret pilot card meaning"
   },
   {
    "id": "i9wwXRcfBTw",
@@ -999,7 +1125,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "Apple Japão",
+   "busca_en": "why apple relies on japan"
   },
   {
    "id": "7aFiuUBPlwY",
@@ -1032,7 +1162,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "física moto",
+   "busca_en": "why motorcycles lean to turn"
   },
   {
    "id": "4uHvOQmlGHo",
@@ -1064,7 +1198,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "caranguejos areia",
+   "busca_en": "crabs looking like sand"
   },
   {
    "id": "ulDhVJT18VM",
@@ -1099,7 +1237,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "ar em gasolina",
+   "busca_en": "turning air into gasoline"
   },
   {
    "id": "YIU6xkJeZBA",
@@ -1134,7 +1276,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "pesar no espaço",
+   "busca_en": "how astronauts weigh themselves"
   },
   {
    "id": "S3pkLKHfoHc",
@@ -1146,7 +1292,21 @@
    "data": "2026-10-29",
    "hora": 12,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "recorde/escala/mais caro do mundo",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "ponte com cachoeira",
+   "busca_en": "tallest bridge with waterfall",
+   "previo": {
+    "views": 41384922,
+    "titulo": "A bridge with a waterfall#amazing #didyouknow #knowledge #fyp #youtube",
+    "canal": "Burnett Tony",
+    "data": "2026-05-31",
+    "idioma": null,
+    "atraso_dias": 151,
+    "link": "https://youtube.com/shorts/nXwZJnFdX68"
+   },
+   "grupo": "top"
   },
   {
    "id": "ncXIYqwezWw",
@@ -1179,7 +1339,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "mito desmentido",
+   "objeto": "aprender dormindo",
+   "busca_en": "can you learn while sleeping"
   },
   {
    "id": "lmDUxeOc-Kg",
@@ -1213,7 +1377,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "dinheiro/escala",
+   "objeto": "formigueiro gigante",
+   "busca_en": "giant ant colony excavation"
   },
   {
    "id": "ttUbdRUq0kA",
@@ -1246,7 +1414,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "perigo/medo",
+   "objeto": "Tesla frio",
+   "busca_en": "tesla door handle frozen"
   },
   {
    "id": "yUg36XAfH6Y",
@@ -1279,7 +1451,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "mito desmentido",
+   "objeto": "frio e doença",
+   "busca_en": "does cold weather make you sick"
   },
   {
    "id": "jyDczHAIcuA",
@@ -1312,7 +1488,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "remover manchas",
+   "busca_en": "how to remove tough stains"
   },
   {
    "id": "o-wV57omjNQ",
@@ -1346,7 +1526,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "pilares subaquáticos",
+   "busca_en": "how bridge pillars are built underwater"
   },
   {
    "id": "ro6cMuitgbE",
@@ -1379,7 +1563,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "dinheiro/escala",
+   "objeto": "gancho de carga",
+   "busca_en": "how heavy duty hooks work"
   },
   {
    "id": "yVxaG3clwjE",
@@ -1412,7 +1600,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "cola vidro",
+   "busca_en": "instant glass glue test"
   },
   {
    "id": "73OqaZt1lKU",
@@ -1446,7 +1638,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "agulha fabricação",
+   "busca_en": "how needles are manufactured"
   },
   {
    "id": "BXaHK41Dxjc",
@@ -1480,7 +1676,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "caneta sem tinta",
+   "busca_en": "inkless metal pen review"
   },
   {
    "id": "I55dDjlcT6A",
@@ -1512,7 +1712,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "peça militar",
+   "busca_en": "military equipment mystery part"
   },
   {
    "id": "vNX6zuKX4TY",
@@ -1547,7 +1751,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "casca árvore",
+   "busca_en": "why farmers cut tree bark"
   },
   {
    "id": "jwyd6jNraZM",
@@ -1580,7 +1788,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "motor avião",
+   "busca_en": "why no screen on jet engine"
   },
   {
    "id": "6Mk1OjZ3rIU",
@@ -1613,7 +1825,11 @@
     "fatos interessantes",
     "shorts curiosidades",
     "aprender algo novo"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "dinheiro/escala",
+   "objeto": "peixe duro",
+   "busca_en": "hardest food in the world"
   },
   {
    "id": "Ym9dQ582PeA",
@@ -1651,7 +1867,11 @@
     "equipamento de mergulho",
     "densidade da agua",
     "fisica aquatica"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "peso piscina",
+   "busca_en": "underwater weight danger"
   },
   {
    "id": "sxhMCU_uamg",
@@ -1688,7 +1908,11 @@
     "composicao corporal",
     "naufragio",
     "biologia humana"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "mito desmentido",
+   "objeto": "flutuação corpo",
+   "busca_en": "does body fat help float"
   },
   {
    "id": "iEaEpT9esto",
@@ -1726,7 +1950,11 @@
     "mergulhadores",
     "biologia humana",
     "pressao atmosferica"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "mergulho tampão",
+   "busca_en": "why divers dont use earplugs"
   },
   {
    "id": "iAOv6bF_-54",
@@ -1764,7 +1992,11 @@
     "singapura",
     "dubai",
     "melbourne"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "esqui lixo",
+   "busca_en": "skiing on waste plant copenhagen"
   },
   {
    "id": "kMZCSchdV6I",
@@ -1802,7 +2034,11 @@
     "tecnologia construtiva",
     "asfalto autoreparador",
     "construção civil"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "estradas Japão",
+   "busca_en": "why japanese roads last long"
   },
   {
    "id": "cDZkfcbLb18",
@@ -1840,7 +2076,11 @@
     "nordeste brasileiro",
     "india",
     "tailandia"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "cera maçã",
+   "busca_en": "why apples have wax"
   },
   {
    "id": "LxTpYoaDvm0",
@@ -1878,7 +2118,11 @@
     "charutos vintage",
     "folhas de tabaco",
     "tradicao artesanal"
-   ]
+   ],
+   "categoria": "recorde/escala/mais caro do mundo",
+   "gatilho": "dinheiro/escala",
+   "objeto": "charuto caro",
+   "busca_en": "most expensive cigar price"
   },
   {
    "id": "_-MJ41WCbH0",
@@ -1916,7 +2160,11 @@
     "enchentes",
     "seguranca de barragens",
     "engenharia estrutural"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "buraco barragem",
+   "busca_en": "dam spillway hole explained"
   },
   {
    "id": "Vs6xoYqQcNI",
@@ -1953,7 +2201,21 @@
     "treinamento de professores",
     "prevencao escolar",
     "inovacao educacional"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "utilidade (truque)",
+   "objeto": "segurança professores",
+   "busca_en": "teacher safety hack",
+   "previo": {
+    "views": 85099104,
+    "titulo": "Samjhe Steam Power ? #scienceandfun #ashusir #physics #experiment #hack",
+    "canal": "Science and fun",
+    "data": "2025-10-13",
+    "idioma": "hi",
+    "atraso_dias": 363,
+    "link": "https://youtube.com/shorts/JY2gVdZs8wQ"
+   },
+   "grupo": "top"
   },
   {
    "id": "fvBAKZmaLHs",
@@ -1990,7 +2252,11 @@
     "industria farmaceutica",
     "protecao ao consumidor",
     "selo de seguranca"
-   ]
+   ],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "tampa garrafa",
+   "busca_en": "why bottle cap ring exists"
   },
   {
    "id": "NZNp6vk9_CY",
@@ -2002,7 +2268,11 @@
    "data": "2026-10-10",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "máquina contínua",
+   "busca_en": "machines that never stop"
   },
   {
    "id": "yE5Yu9S46zw",
@@ -2040,7 +2310,11 @@
     "oceanos",
     "biologia marinha",
     "industria pesqueira"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "rede pesca",
+   "busca_en": "fishermen cutting nets purpose"
   },
   {
    "id": "H4xrZIa0_O4",
@@ -2078,7 +2352,11 @@
     "catedrais famosas",
     "construcao medieval",
     "arte milenar"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "pedreiro catedral",
+   "busca_en": "restoring ancient cathedral"
   },
   {
    "id": "01EAb6uiFu8",
@@ -2116,7 +2394,11 @@
     "reacoes quimicas",
     "culinaria molecular",
     "ciencia popular"
-   ]
+   ],
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "substâncias colher",
+   "busca_en": "testing substances with hot spoon"
   },
   {
    "id": "7FDhoJPMiv8",
@@ -2128,7 +2410,11 @@
    "data": "2026-10-08",
    "hora": 18,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "escada flutuante",
+   "busca_en": "floating staircase physics"
   },
   {
    "id": "QBt1za2Ew-g",
@@ -2166,7 +2452,11 @@
     "geometria aplicada",
     "biomimetica",
     "matematica recreativa"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "bola que volta",
+   "busca_en": "self returning ball toy"
   },
   {
    "id": "Igb25rqOkj4",
@@ -2204,7 +2494,11 @@
     "agua reciclada",
     "exploracao espacial",
     "lavar cabelo no espaco"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "lavar cabelo espaço",
+   "busca_en": "how astronauts wash hair"
   },
   {
    "id": "b4hXw_rzm1E",
@@ -2242,7 +2536,11 @@
     "esporas mexicanas",
     "montaria",
     "equitacao americana"
-   ]
+   ],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "mito desmentido",
+   "objeto": "esporas cowboy",
+   "busca_en": "truth about cowboy spurs"
   },
   {
    "id": "Qe0n8JtneW0",
@@ -2280,7 +2578,11 @@
     "natacao segura",
     "meio ambiente",
     "OMS"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "nadar perigo",
+   "busca_en": "dangerous swimming spots"
   },
   {
    "id": "J27no5mLo9E",
@@ -2318,7 +2620,11 @@
     "cuidados com tartaruga",
     "animais sensiveis",
     "natureza"
-   ]
+   ],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "fofura/emoção",
+   "objeto": "tartaruga coceira",
+   "busca_en": "do turtles like being scratched"
   },
   {
    "id": "nC_rrpjwMqY",
@@ -2356,7 +2662,11 @@
     "treinamento de motoristas",
     "cargas pesadas",
     "estados unidos"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "dinheiro/escala",
+   "objeto": "salário caminhoneiro",
+   "busca_en": "why truck drivers earn well"
   },
   {
    "id": "DYFhh9xDxo0",
@@ -2394,7 +2704,11 @@
     "pesca de inverno",
     "truques de pesca",
     "tecnicas de pesca"
-   ]
+   ],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "soprador pesca",
+   "busca_en": "leaf blower fishing hack"
   },
   {
    "id": "sMND1nt8oRg",
@@ -2406,7 +2720,11 @@
    "data": "2026-10-04",
    "hora": 12,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "ursos salmão",
+   "busca_en": "why bears waste salmon"
   },
   {
    "id": "mVD-wRVRLqc",
@@ -2444,7 +2762,11 @@
     "contaminacao agua",
     "metais pesados",
     "residuos perigosos"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "bateria lixo",
+   "busca_en": "why not throw batteries away"
   },
   {
    "id": "BFPnJsf3fA0",
@@ -2482,7 +2804,11 @@
     "operarios industriais",
     "seculo 19",
     "trabalho noturno"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "acordar despertador",
+   "busca_en": "how people woke up before alarms"
   },
   {
    "id": "3yMWAO-Nhao",
@@ -2520,7 +2846,11 @@
     "protecao de gado",
     "oxford",
     "defesa contra predadores"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "utilidade (truque)",
+   "objeto": "afastar leões",
+   "busca_en": "how african villages scare lions"
   },
   {
    "id": "fg6bkevJRJY",
@@ -2558,7 +2888,11 @@
     "invencoes japonesas",
     "loft toquio",
     "qualidade de vida"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "gadgets japoneses",
+   "busca_en": "useful japanese gadgets"
   },
   {
    "id": "jd1EDaY2M0U",
@@ -2596,7 +2930,11 @@
     "emmy award",
     "educacao cientifica",
     "desafios tv"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "mito desmentido",
+   "objeto": "dedo no cano",
+   "busca_en": "finger in gun barrel myth"
   },
   {
    "id": "iQIcQi91ilI",
@@ -2634,7 +2972,11 @@
     "mobilidade urbana",
     "energia limpa",
     "estacoes de metro"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "passos energia",
+   "busca_en": "energy from footsteps japan"
   },
   {
    "id": "GEzUTNLW7rQ",
@@ -2672,7 +3014,11 @@
     "universidade toquio",
     "variety show",
     "milhao de ienes"
-   ]
+   ],
+   "categoria": "outro",
+   "gatilho": "dinheiro/escala",
+   "objeto": "esconderijo dinheiro",
+   "busca_en": "where to hide for money"
   },
   {
    "id": "lKHpXcvwr5U",
@@ -2710,7 +3056,11 @@
     "cozinha japonesa",
     "marketing criativo",
     "inovacao"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "invenções japonesas",
+   "busca_en": "3 japanese inventions that change everything"
   },
   {
    "id": "bgnVKU0E9YY",
@@ -2748,7 +3098,11 @@
     "culinaria criativa",
     "sobremesas",
     "arte moderna"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "chocolate real",
+   "busca_en": "real or chocolate challenge"
   },
   {
    "id": "u26wiEyCHDg",
@@ -2786,7 +3140,21 @@
     "natureza selvagem",
     "biologia",
     "fauna oceanica"
-   ]
+   ],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "nojo/estranheza",
+   "objeto": "boca tartaruga",
+   "busca_en": "inside sea turtle mouth",
+   "previo": {
+    "views": 60173630,
+    "titulo": "#animals #animallife #wildanimals #shark #turtle #help",
+    "canal": "animalworld",
+    "data": "2025-06-27",
+    "idioma": null,
+    "atraso_dias": 459,
+    "link": "https://youtube.com/shorts/c4oFI58lNbg"
+   },
+   "grupo": "top"
   },
   {
    "id": "MmtkZ9v5lzo",
@@ -2824,7 +3192,11 @@
     "gravidez",
     "cancer",
     "diabetes"
-   ]
+   ],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "recibos térmicos",
+   "busca_en": "why avoid touching receipts"
   },
   {
    "id": "LXC9SniSuCI",
@@ -2862,7 +3234,11 @@
     "comedy japao",
     "variety show",
     "milhao de ienes"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "dinheiro/escala",
+   "objeto": "esconde-esconde",
+   "busca_en": "extreme hide and seek challenge"
   },
   {
    "id": "PZysQNWRmm8",
@@ -2900,7 +3276,11 @@
     "natureza selvagem",
     "animais perigosos",
     "pesca esportiva"
-   ]
+   ],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "perigo/medo",
+   "objeto": "mordida piranha",
+   "busca_en": "piranha bite force vs alligator"
   },
   {
    "id": "kMu8jDoCsfY",
@@ -2938,7 +3318,11 @@
     "cidades costeiras",
     "defesa maritima",
     "oceanografia"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "perigo/medo",
+   "objeto": "tsunami",
+   "busca_en": "can you stop a tsunami"
   },
   {
    "id": "Gp9jy5kJ8Vo",
@@ -2976,7 +3360,21 @@
     "protecao social",
     "governo federal",
     "apostas esportivas"
-   ]
+   ],
+   "categoria": "outro",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "bets proibidas",
+   "busca_en": "why gambling apps banned",
+   "previo": {
+    "views": 1851422,
+    "titulo": "The TRUTH About Online Gambling 😯",
+    "canal": "Bradley Martyn's Raw Talk",
+    "data": "2024-03-08",
+    "idioma": "en",
+    "atraso_dias": 932,
+    "link": "https://youtube.com/shorts/4V-kcfeebPk"
+   },
+   "grupo": "pior"
   },
   {
    "id": "BoQesvxyT6E",
@@ -3014,7 +3412,11 @@
     "comportamento animal",
     "mamiferos marinhos",
     "oceanos"
-   ]
+   ],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "orcas humanos",
+   "busca_en": "why orcas dont attack humans"
   },
   {
    "id": "tAvYNQLrtos",
@@ -3052,7 +3454,11 @@
     "materiais especiais",
     "arte britanica",
     "inovacoes artisticas"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "tinta ultra preta",
+   "busca_en": "vantablack vs bright light"
   },
   {
    "id": "3akd-M7mxs8",
@@ -3090,7 +3496,11 @@
     "humanitarismo",
     "design social",
     "saude sudeste asiatico"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "fofura/emoção",
+   "objeto": "peixe metal",
+   "busca_en": "lucky iron fish benefits"
   },
   {
    "id": "TFdUQ7wKPOU",
@@ -3128,7 +3538,11 @@
     "turismo europeu",
     "italia sul",
     "marina grande"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "piscina romana",
+   "busca_en": "ancient roman secret pool"
   },
   {
    "id": "s53fki-dOjQ",
@@ -3166,7 +3580,11 @@
     "plastico no mar",
     "ativismo ambiental",
     "tecnologia sustentavel"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "limpeza oceano",
+   "busca_en": "ocean plastic cleaning machine"
   },
   {
    "id": "ElLNVzUQs6E",
@@ -3203,7 +3621,11 @@
     "cabos eletricos",
     "engenharia civil",
     "ciencia da energia"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "dinheiro/escala",
+   "objeto": "amortecedor energia",
+   "busca_en": "shock absorber energy harvesting"
   },
   {
    "id": "kxjwELleijo",
@@ -3241,7 +3663,11 @@
     "pesquisadores",
     "exploracao polar",
     "protecao ambiental"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "perigo/medo",
+   "objeto": "xixi antártida",
+   "busca_en": "why no pee in antarctica"
   },
   {
    "id": "U9_iJbwc-cU",
@@ -3279,7 +3705,11 @@
     "banheiros modernos",
     "construcao residencial",
     "precisao tecnica"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "teste piso",
+   "busca_en": "japanese floor quality test"
   },
   {
    "id": "X0fcWSItkco",
@@ -3317,7 +3747,11 @@
     "civilizacoes antigas",
     "historia do egito",
     "matematica basica"
-   ]
+   ],
+   "categoria": "outro",
+   "gatilho": "mito desmentido",
+   "objeto": "egípcios pitágoras",
+   "busca_en": "did egyptians know pythagoras"
   },
   {
    "id": "zgqZHeunwQI",
@@ -3355,7 +3789,11 @@
     "industria do entretenimento",
     "atrações removidas",
     "disney flórida"
-   ]
+   ],
+   "categoria": "outro",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "cena disney",
+   "busca_en": "why disney removed scene"
   },
   {
    "id": "SKQNUbESQj4",
@@ -3393,7 +3831,11 @@
     "catolicismo espanhol",
     "festival religioso",
     "catedrais famosas"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "incensário catedral",
+   "busca_en": "giant cathedral incense burner"
   },
   {
    "id": "FTb6CYibuWA",
@@ -3431,7 +3873,11 @@
     "tradicoes europeias",
     "festivais europeus",
     "folclore"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "ritual sueco",
+   "busca_en": "swedish midsummer ritual"
   },
   {
    "id": "ItOpl4_y8nk",
@@ -3469,7 +3915,11 @@
     "sprints",
     "esportes de velocidade",
     "especializacao esportiva"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "coxas ciclistas",
+   "busca_en": "why cyclists have big legs"
   },
   {
    "id": "3iQL0BhRCHs",
@@ -3507,7 +3957,11 @@
     "tatuagem removida",
     "laser Q switched",
     "tecnologia dermatologica"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "utilidade (truque)",
+   "objeto": "remover tatuagem",
+   "busca_en": "how tattoo removal works"
   },
   {
    "id": "RZ2chRJyzvs",
@@ -3545,7 +3999,11 @@
     "planetas",
     "gravidade zero",
     "educacao cientifica"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "simulador gravidade",
+   "busca_en": "gravity simulator experiment"
   },
   {
    "id": "pXlnIK1t6eA",
@@ -3583,7 +4041,21 @@
     "fisiologia humana",
     "curiosidades cientificas",
     "viral"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "perigo/medo",
+   "objeto": "martelo força",
+   "busca_en": "strongman hammer test",
+   "previo": {
+    "views": 232965680,
+    "titulo": "World‘s Strongest Man VS Apple",
+    "canal": "Browney",
+    "data": "2024-09-13",
+    "idioma": "en",
+    "atraso_dias": 731,
+    "link": "https://youtube.com/shorts/_FTyY7UE2_E"
+   },
+   "grupo": "pior"
   },
   {
    "id": "28l6sRT0dzY",
@@ -3620,7 +4092,11 @@
     "protecao ao consumidor",
     "veiculos",
     "ferramenta essencial"
-   ]
+   ],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "carro batido",
+   "busca_en": "how to spot crashed car"
   },
   {
    "id": "mig5TPPH5Ik",
@@ -3658,7 +4134,11 @@
     "testes industriais",
     "controle industrial",
     "engenharia industrial"
-   ]
+   ],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "tintas falsas",
+   "busca_en": "how to identify fake paint"
   },
   {
    "id": "FFd8mvekIqA",
@@ -3670,7 +4150,11 @@
    "data": "2026-09-12",
    "hora": 21,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "fotos confusas",
+   "busca_en": "confusing perspective photos"
   },
   {
    "id": "p4ZYPaoH_F4",
@@ -3703,7 +4187,11 @@
     "animais incriveis",
     "lava rapido marinho",
     "mutualismo"
-   ]
+   ],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "fofura/emoção",
+   "objeto": "camarão limpador",
+   "busca_en": "cleaner shrimp cleaning fish"
   },
   {
    "id": "0H0vFxQZdUM",
@@ -3741,7 +4229,11 @@
     "viagens",
     "europa",
     "turismo educacional"
-   ]
+   ],
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "mapa alfinetes",
+   "busca_en": "pin map art"
   },
   {
    "id": "xiMxyR-owu4",
@@ -3779,7 +4271,11 @@
     "reflorestamento",
     "plantas raras",
     "biotecnologia"
-   ]
+   ],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "clonar árvore",
+   "busca_en": "how to clone trees"
   },
   {
    "id": "p-xJQnmBsKA",
@@ -3817,7 +4313,11 @@
     "brasil",
     "SUS",
     "hospitais premium"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "novo gesso",
+   "busca_en": "innovative medical cast"
   },
   {
    "id": "zWSd4qkIhWc",
@@ -3855,7 +4355,11 @@
     "cozinha oriental",
     "receitas ancestrais",
     "food waste"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "folha abóbora",
+   "busca_en": "eating pumpkin leaves"
   },
   {
    "id": "O633LaO1K6E",
@@ -3893,7 +4397,11 @@
     "surfe profissional",
     "camacari",
     "bahia"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "dinheiro/escala",
+   "objeto": "máquina ondas",
+   "busca_en": "giant wave machine"
   },
   {
    "id": "yviTFeVMEf4",
@@ -3931,7 +4439,11 @@
     "zhejiang",
     "monumentos historicos",
     "patriotismo"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "estátuas china",
+   "busca_en": "most hated statues china"
   },
   {
    "id": "bpjzGa7vAdU",
@@ -3969,7 +4481,11 @@
     "extensoes",
     "autoestima",
     "beleza saudavel"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "tranças coçam",
+   "busca_en": "why braids itch"
   },
   {
    "id": "SoW9B59OnPE",
@@ -4007,7 +4523,11 @@
     "turismo cultural",
     "obras de arte",
     "arte europeia"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "monalisa fotos",
+   "busca_en": "why no photos mona lisa"
   },
   {
    "id": "9fAEQj_cUqk",
@@ -4045,7 +4565,11 @@
     "silverdome",
     "engenharia estrutural",
     "meio ambiente urbano"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "balão china",
+   "busca_en": "why china balloon city"
   },
   {
    "id": "WJoiB8dWWqo",
@@ -4083,7 +4607,11 @@
     "engenharia estrutural",
     "tecnologia civil",
     "construcao verde"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "prédio encolhendo",
+   "busca_en": "optical illusion building"
   },
   {
    "id": "tAf3jtrTmqA",
@@ -4121,7 +4649,11 @@
     "impacto social",
     "empreendedorismo social",
     "brasil no mundo"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "lâmpada pet",
+   "busca_en": "bottle light invention"
   },
   {
    "id": "bza9MMFU5mQ",
@@ -4133,7 +4665,21 @@
    "data": "2026-09-04",
    "hora": 12,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "espuma branca",
+   "busca_en": "dangerous white foam",
+   "previo": {
+    "views": 37038558,
+    "titulo": "Cucumber Hack 🥒",
+    "canal": "Jenny Hoyos",
+    "data": "2025-09-09",
+    "idioma": "en",
+    "atraso_dias": 360,
+    "link": "https://youtube.com/shorts/dFummOq5GfI"
+   },
+   "grupo": "pior"
   },
   {
    "id": "_g1frcSuDOE",
@@ -4171,7 +4717,11 @@
     "frutas medicinais",
     "alimentacao consciente",
     "sabores naturais"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "fruta exótica",
+   "busca_en": "weird looking delicious fruit"
   },
   {
    "id": "bGX3cFVcFgc",
@@ -4209,7 +4759,11 @@
     "povos originarios",
     "africa oriental",
     "patrimonio cultural"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "tribo etiópia",
+   "busca_en": "tribe stilt walking ethiopia"
   },
   {
    "id": "57a_G1zF3dA",
@@ -4247,7 +4801,11 @@
     "plantas do havai",
     "gengibre havaiano",
     "cosmetica natural"
-   ]
+   ],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "shampoo planta",
+   "busca_en": "natural shampoo plant"
   },
   {
    "id": "gqtSGzHsq4o",
@@ -4285,7 +4843,11 @@
     "tradicoes antigas",
     "superstições",
     "cultura celta"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "árvores dinheiro",
+   "busca_en": "money tree scotland"
   },
   {
    "id": "bQfNQZEA7zw",
@@ -4323,7 +4885,11 @@
     "alta gastronomia",
     "culinaria oriental",
     "tradicao milenar"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "dinheiro/escala",
+   "objeto": "atum mofo",
+   "busca_en": "expensive aged tuna"
   },
   {
    "id": "e8BQOOnpxDE",
@@ -4360,7 +4926,11 @@
     "cozinha natural",
     "tradicao escandinava",
     "fermentacao caseira"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "utilidade (truque)",
+   "objeto": "sprite pinheiro",
+   "busca_en": "pine needle soda recipe"
   },
   {
    "id": "eSZ6R8eoRKs",
@@ -4372,7 +4942,11 @@
    "data": "2026-08-31",
    "hora": 18,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "bombeiros inundam",
+   "busca_en": "why firefighters flood streets"
   },
   {
    "id": "Xy6iBcrA7LM",
@@ -4410,7 +4984,11 @@
     "pediatria quiropratica",
     "dor lombar",
     "quiropraxia brasileira"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "treino quiroprata",
+   "busca_en": "chiropractor egg training"
   },
   {
    "id": "0DDJIwu_QWQ",
@@ -4448,7 +5026,11 @@
     "escalada extrema",
     "natureza selvagem",
     "esportes de risco"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "utilidade (truque)",
+   "objeto": "gelo seguro",
+   "busca_en": "how to check ice safety"
   },
   {
    "id": "Ea7eh6P4btU",
@@ -4486,7 +5068,11 @@
     "mineralogia",
     "fosseis brasileiros",
     "tesouros geologicos"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "pedra dinossauro",
+   "busca_en": "dinosaur fossil inside rock"
   },
   {
    "id": "fgNrwzrnYEc",
@@ -4524,7 +5110,11 @@
     "plantas comestiveis",
     "alimentacao alternativa",
     "plantas medicinais"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "dinheiro/escala",
+   "objeto": "cactos caros",
+   "busca_en": "expensive rare cactus"
   },
   {
    "id": "v6BqfPM-58w",
@@ -4562,7 +5152,11 @@
     "pao caseiro",
     "padaria artesanal",
     "cultura alimentar"
-   ]
+   ],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "perigo/medo",
+   "objeto": "animal morre",
+   "busca_en": "animal care warning"
   },
   {
    "id": "ie98x6SE1vQ",
@@ -4600,7 +5194,11 @@
     "gigante de metal",
     "oswestry",
     "estatua impressionante"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "estátua facas",
+   "busca_en": "knife crime statue"
   },
   {
    "id": "atBjeW6o3b4",
@@ -4638,7 +5236,11 @@
     "familia",
     "tradicao milenar",
     "memorias"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "fofura/emoção",
+   "objeto": "vela amor",
+   "busca_en": "candle burning for years"
   },
   {
    "id": "nrgVWs1AJ1Y",
@@ -4676,7 +5278,11 @@
     "cultura acessivel",
     "historia",
     "superacao humana"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "escrita braille",
+   "busca_en": "how blind people write"
   },
   {
    "id": "5HhCobQZbKY",
@@ -4714,7 +5320,11 @@
     "aprender a cozinhar",
     "dicas de cozinha",
     "culinaria moderna"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "utilidade (truque)",
+   "objeto": "cozinhar papel",
+   "busca_en": "cooking with paper hack"
   },
   {
    "id": "nCVhTHiuLbU",
@@ -4752,7 +5362,11 @@
     "historia do paraquedas",
     "esportes radicais",
     "quedas seguras"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "paraquedas destruídos",
+   "busca_en": "why parachutes are destroyed"
   },
   {
    "id": "Bpl_wNvc8A4",
@@ -4790,7 +5404,11 @@
     "europa",
     "cortes de cabelo",
     "higiene profissional"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "treino barbeiro",
+   "busca_en": "barber training technique"
   },
   {
    "id": "M2dPaO3ZxWQ",
@@ -4828,7 +5446,11 @@
     "submarino",
     "torpedo supercavitante",
     "mergulhadores"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "hadouken água",
+   "busca_en": "underwater air ring trick"
   },
   {
    "id": "q-scyzvjHgI",
@@ -4866,7 +5488,11 @@
     "produtos sustentaveis",
     "lapis ecologico",
     "dicas verdes"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "lápis planta",
+   "busca_en": "plantable pencil"
   },
   {
    "id": "aKpC7zyeV7s",
@@ -4904,7 +5530,11 @@
     "mecanica de precisao",
     "competicoes internacionais",
     "esportes de velocidade"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "dinheiro/escala",
+   "objeto": "carrinho rápido",
+   "busca_en": "fastest rc car"
   },
   {
    "id": "N6hzS5McCwY",
@@ -4941,7 +5571,11 @@
     "campeonato suico",
     "esportes de origem rural",
     "esporte defensivo"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "esporte suíço",
+   "busca_en": "fast swiss sport"
   },
   {
    "id": "mmEzqymtejc",
@@ -4979,7 +5613,11 @@
     "filipinas",
     "artesanato",
     "forjaria"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "resfriar aço",
+   "busca_en": "why not water for steel"
   },
   {
    "id": "6sEOnoTNonE",
@@ -5017,7 +5655,11 @@
     "casas modernas",
     "luxo",
     "arquitetura residencial"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "piscina retrátil",
+   "busca_en": "retractable pool invention"
   },
   {
    "id": "Af2xiUQ8JNY",
@@ -5055,7 +5697,11 @@
     "industria aerea",
     "comissarios de bordo",
     "pilotos"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "lixo avião",
+   "busca_en": "where airplane waste goes"
   },
   {
    "id": "jAxmdP6YAD0",
@@ -5093,7 +5739,11 @@
     "casas do mundo",
     "engenharia mecanica",
     "arquitetura genial"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "casa giratória",
+   "busca_en": "rotating house canada"
   },
   {
    "id": "h4FrsP-tpq8",
@@ -5131,7 +5781,11 @@
     "ciencia medieval",
     "historia mundial",
     "descobertas"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "gelo antigo",
+   "busca_en": "how ice was made ancient"
   },
   {
    "id": "nsM2OG6nXps",
@@ -5169,7 +5823,11 @@
     "tecnologia moderna",
     "engenharia esportiva",
     "produtos revolucionarios"
-   ]
+   ],
+   "categoria": "recorde/escala/mais caro do mundo",
+   "gatilho": "dinheiro/escala",
+   "objeto": "bola cara",
+   "busca_en": "most expensive basketball"
   },
   {
    "id": "0Z2Ap24ow-4",
@@ -5207,7 +5865,11 @@
     "farmacia natural",
     "agricultura zero desperdicio",
     "biotecnologia"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "armadilha mosca",
+   "busca_en": "zero waste fly trap"
   },
   {
    "id": "RhfX4V3ASg8",
@@ -5245,7 +5907,11 @@
     "cultura britanica",
     "esportes fora do comum",
     "esportes exoticos"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "arremesso tronco",
+   "busca_en": "caber tossing sport"
   },
   {
    "id": "A9qo_k3wFoQ",
@@ -5283,7 +5949,11 @@
     "alimentacao consciente",
     "mercado global",
     "doce premium"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "utilidade (truque)",
+   "objeto": "pirulito saudável",
+   "busca_en": "healthy lollipop invention"
   },
   {
    "id": "aezk23FCMRs",
@@ -5321,7 +5991,11 @@
     "descarte correto",
     "brasil sustentavel",
     "uniao europeia"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "lata tinta",
+   "busca_en": "paint can disposal warning"
   },
   {
    "id": "SkT_Qxv7AAE",
@@ -5359,7 +6033,11 @@
     "floresta amazonica",
     "natureza selvagem",
     "curiosidades animais"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "formigas redemoinho",
+   "busca_en": "ant mill phenomenon"
   },
   {
    "id": "AIeesxq18T0",
@@ -5397,7 +6075,11 @@
     "medicina natural",
     "apicultor",
     "produtos naturais"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "perigo/medo",
+   "objeto": "favo mel",
+   "busca_en": "eating honeycomb warning"
   },
   {
    "id": "VmcjS204JWI",
@@ -5435,7 +6117,11 @@
     "tatuagem em cicatrizacao",
     "cuidados pos tatuagem",
     "tatuagem profissional"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "tinta tattoo",
+   "busca_en": "tattoo ink bag warning"
   },
   {
    "id": "rgOpymlfnS4",
@@ -5473,7 +6159,11 @@
     "historia do cinema",
     "protese",
     "arte cinematografica"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "molde rosto",
+   "busca_en": "actor face casting process"
   },
   {
    "id": "-XgjnBWeFPg",
@@ -5511,7 +6201,11 @@
     "esportes aquaticos",
     "engenharia sanitaria",
     "cuidados com piscina"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "pastilha cloro",
+   "busca_en": "chlorine tablet danger"
   },
   {
    "id": "IZCLCAY1y7M",
@@ -5549,7 +6243,11 @@
     "gastronomia japonesa",
     "curiosidades animais",
     "natureza mortal"
-   ]
+   ],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "peixe sacana",
+   "busca_en": "funny fish behavior"
   },
   {
    "id": "3YqBRCuU0Qs",
@@ -5587,7 +6285,11 @@
     "mergulho estilo",
     "esportes da nova zelandia",
     "cultura oriental"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "mergulho bomba",
+   "busca_en": "cannonball dive record"
   },
   {
    "id": "lNvzjfZmwVQ",
@@ -5626,7 +6328,11 @@
     "peixe territorial",
     "a vida maravilha",
     "a vida é uma maravilha"
-   ]
+   ],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "peixe valentão",
+   "busca_en": "aggressive fish behavior"
   },
   {
    "id": "2NqR_CaQnHM",
@@ -5663,7 +6369,11 @@
     "historia da tecnologia",
     "invencoes",
     "transporte ferroviario"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "descarrilhador trem",
+   "busca_en": "train derailer device"
   },
   {
    "id": "dDzbFQUTdzE",
@@ -5701,7 +6411,21 @@
     "escandinavia",
     "artico",
     "produtos artesanais"
-   ]
+   ],
+   "categoria": "recorde/escala/mais caro do mundo",
+   "gatilho": "dinheiro/escala",
+   "objeto": "cobertor caro",
+   "busca_en": "most expensive blanket in world",
+   "previo": {
+    "views": 590369338,
+    "titulo": "World’s Most Expensive Bed",
+    "canal": "MrBeast",
+    "data": "2023-10-31",
+    "idioma": "en",
+    "atraso_dias": 1007,
+    "link": "https://youtube.com/shorts/n7x4Jj9pdH8"
+   },
+   "grupo": "top"
   },
   {
    "id": "oOxwLT6Gnes",
@@ -5739,7 +6463,11 @@
     "seguranca alimentar",
     "aditivos alimentares",
     "paternidade"
-   ]
+   ],
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "lavar doces",
+   "busca_en": "washing candy before eating"
   },
   {
    "id": "IYP6ekdHglQ",
@@ -5777,7 +6505,11 @@
     "esportes de raquete",
     "curiosidades esportivas",
     "esporte profissional"
-   ]
+   ],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "cordas raquete tênis",
+   "busca_en": "why cut tennis racket strings"
   },
   {
    "id": "F6f0qqitQxo",
@@ -5815,7 +6547,11 @@
     "curiosidades da natureza",
     "cultura chinesa",
     "protecao solar"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "máscaras estranhas",
+   "busca_en": "weird traditional masks"
   },
   {
    "id": "bE4NlVKe_iM",
@@ -5853,7 +6589,11 @@
     "sementes de girassol",
     "plantas nativas",
     "alimentacao natural"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "comer girassol",
+   "busca_en": "can you eat sunflower"
   },
   {
    "id": "kOUSeNB36Wc",
@@ -5891,7 +6631,11 @@
     "maquiagem profissional",
     "cicatriz de mentira",
     "cinema classico"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "perigo/medo",
+   "objeto": "cicatrizes reais",
+   "busca_en": "skin scarification process"
   },
   {
    "id": "7_AjXxwPE1k",
@@ -5929,7 +6673,11 @@
     "respeito animal",
     "turismo consciente",
     "vida marinha"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "perigo/medo",
+   "objeto": "estrela do mar",
+   "busca_en": "why not touch starfish"
   },
   {
    "id": "sb8qYxQkbnA",
@@ -5967,7 +6715,11 @@
     "prédios altos",
     "japao",
     "resistencia sismica"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "perigo/medo",
+   "objeto": "velocidade terremoto",
+   "busca_en": "earthquake speed science"
   },
   {
    "id": "8XbR3jQTEkU",
@@ -6005,7 +6757,11 @@
     "esportes extremos",
     "mergulho profundo",
     "curiosidades esportivas"
-   ]
+   ],
+   "categoria": "recorde/escala/mais caro do mundo",
+   "gatilho": "dinheiro/escala",
+   "objeto": "piscina funda",
+   "busca_en": "deepest swimming pool in world"
   },
   {
    "id": "7NdYt2bfq3c",
@@ -6043,7 +6799,11 @@
     "papel antigo",
     "chirograph",
     "historia do direito"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "criptografia chinesa",
+   "busca_en": "ancient chinese secret writing"
   },
   {
    "id": "gEdgUEi6MPQ",
@@ -6080,7 +6840,11 @@
     "esportes de elite",
     "agronomia esportiva",
     "curiosidades esportivas"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "manutenção golfe",
+   "busca_en": "golf course maintenance process"
   },
   {
    "id": "_9Ez1k2vG0g",
@@ -6118,7 +6882,11 @@
     "materiais",
     "industria siderurgica",
     "fabricas"
-   ]
+   ],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "bobinas aço quentes",
+   "busca_en": "why steel coils are hot"
   },
   {
    "id": "kk5ap8yb5fQ",
@@ -6156,7 +6924,11 @@
     "biotecnologia",
     "oceanografia",
     "animais raros"
-   ]
+   ],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "cracas baleias",
+   "busca_en": "why remove barnacles from whales"
   },
   {
    "id": "lygzxfftsPs",
@@ -6194,7 +6966,11 @@
     "UC Davis",
     "fraudes alimentares",
     "azeite premium"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "produção azeite",
+   "busca_en": "how olive oil is made"
   },
   {
    "id": "cfBtPVGXEDg",
@@ -6232,7 +7008,11 @@
     "tecnica ancestral",
     "brasil rural",
     "sul do brasil"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "churrasco gaúcho",
+   "busca_en": "traditional gaucho barbecue"
   },
   {
    "id": "wuYzo_fe0x8",
@@ -6270,7 +7050,21 @@
     "entomologia",
     "saude publica",
     "curiosidades animais"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "capturar mosquitos",
+   "busca_en": "man catching mosquitoes hobby",
+   "previo": {
+    "views": 68039,
+    "titulo": "Low Cost Fishing Trap with mosquito net. Materials found at home #fish",
+    "canal": "Bianca Farm",
+    "data": "2022-12-23",
+    "idioma": null,
+    "atraso_dias": 1305,
+    "link": "https://youtube.com/shorts/h1OeqyP2L9E"
+   },
+   "grupo": "pior"
   },
   {
    "id": "t0_d5cKdBVc",
@@ -6307,7 +7101,11 @@
     "chelonia",
     "seguranca com animais",
     "biologia marinha"
-   ]
+   ],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "segurar tartaruga",
+   "busca_en": "how to hold snapping turtle"
   },
   {
    "id": "ejrwX3JVy6k",
@@ -6345,7 +7143,11 @@
     "luxo",
     "dega",
     "adega"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "nojo/estranheza",
+   "objeto": "espuma estranha",
+   "busca_en": "weird foam mystery"
   },
   {
    "id": "Zo0Ko0bGNy4",
@@ -6383,7 +7185,11 @@
     "mitos historicos",
     "armas medievais",
     "cavalaria"
-   ]
+   ],
+   "categoria": "recorde/escala/mais caro do mundo",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "armadura cavaleiro",
+   "busca_en": "medieval knight armor strength"
   },
   {
    "id": "Eq_9SOjqRv0",
@@ -6421,7 +7227,21 @@
     "romie strydom",
     "michelle fagan",
     "mohair"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "bebês reborn",
+   "busca_en": "realistic reborn baby dolls",
+   "previo": {
+    "views": 217363659,
+    "titulo": "Miniature Silicone Reborn Baby Hayley",
+    "canal": "Maria Lynn Dolls",
+    "data": "2017-12-23",
+    "idioma": "en-US",
+    "atraso_dias": 3127,
+    "link": "https://youtube.com/shorts/nr3oJYLXWqM"
+   },
+   "grupo": "top"
   },
   {
    "id": "Z99a-IuydBM",
@@ -6459,7 +7279,11 @@
     "neurociencia",
     "produtos para canhotos",
     "esportes canhoto"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "ser canhoto",
+   "busca_en": "problems being left handed"
   },
   {
    "id": "o5IdX9AHgCY",
@@ -6497,7 +7321,11 @@
     "atracoes turisticas",
     "viagem america",
     "national lakeshore"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "dinheiro/escala",
+   "objeto": "resgate praia",
+   "busca_en": "beach rescue cost"
   },
   {
    "id": "seP9pvbI9Mc",
@@ -6535,7 +7363,21 @@
     "dupla reducao",
     "china",
     "asia"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "estudantes chineses",
+   "busca_en": "chinese student daily routine",
+   "previo": {
+    "views": 268521121,
+    "titulo": "Kids Learning Good Habits 👍 | Floreto World School Sikar",
+    "canal": "PRINCE EDUHUB",
+    "data": "2025-12-28",
+    "idioma": "en",
+    "atraso_dias": 197,
+    "link": "https://youtube.com/shorts/DOfXaYJ66q8"
+   },
+   "grupo": "pior"
   },
   {
    "id": "pmcRnDAkTUk",
@@ -6547,7 +7389,11 @@
    "data": "2026-07-12",
    "hora": 18,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "perigo/medo",
+   "objeto": "terremotos perigosos",
+   "busca_en": "small earthquake danger"
   },
   {
    "id": "bhymrzA1wQk",
@@ -6585,7 +7431,11 @@
     "preparo de carne",
     "BBQ",
     "costela perfeita"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "utilidade (truque)",
+   "objeto": "costela saborosa",
+   "busca_en": "how to cook ribs better"
   },
   {
    "id": "Qv28sNYqG2A",
@@ -6623,7 +7473,11 @@
     "marinha",
     "profissoes em extincao",
     "sobrevivencia"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "dinheiro/escala",
+   "objeto": "trabalho perigoso",
+   "busca_en": "dangerous jobs for money"
   },
   {
    "id": "xbbd7IDK1o8",
@@ -6635,7 +7489,11 @@
    "data": "2026-07-09",
    "hora": 18,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "cultivar alho",
+   "busca_en": "how to grow garlic fast"
   },
   {
    "id": "IxmVXalyonc",
@@ -6673,7 +7531,11 @@
     "agricultura asiatica",
     "ecossistema",
     "agricultura integrada"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "sistema agricultura",
+   "busca_en": "perfect farming system"
   },
   {
    "id": "99P0w19mYn8",
@@ -6711,7 +7573,11 @@
     "esculturas de chocolate",
     "doces gigantes",
     "doces raros"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "nojo/estranheza",
+   "objeto": "cachoeira chocolate",
+   "busca_en": "is chocolate fountain dirty"
   },
   {
    "id": "h40CbzNVV3Y",
@@ -6723,7 +7589,11 @@
    "data": "2026-07-06",
    "hora": 18,
    "dia": "seg",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "regar plantas",
+   "busca_en": "plant watering hack"
   },
   {
    "id": "5Z2xu0JHVXg",
@@ -6761,7 +7631,11 @@
     "artesanato japones",
     "mestre artesao",
     "tradicao oriental"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "carvão metálico",
+   "busca_en": "weird looking coal"
   },
   {
    "id": "A_IAfXhvOG8",
@@ -6799,7 +7673,11 @@
     "ditados antigos",
     "espiritualidade",
     "autoajuda"
-   ]
+   ],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "ferro na pedra",
+   "busca_en": "why rub iron on stone"
   },
   {
    "id": "tk8aUlLC8Gc",
@@ -6837,7 +7715,11 @@
     "esportes orientais",
     "curiosidades animais",
     "hobby exotico"
-   ]
+   ],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "sumô besouros",
+   "busca_en": "beetle sumo wrestling"
   },
   {
    "id": "sRfgdUD1HzM",
@@ -6875,7 +7757,11 @@
     "agronegocio",
     "exportacao de frutas",
     "frutas raras"
-   ]
+   ],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "cortar pera",
+   "busca_en": "why cut bottom of pear"
   },
   {
    "id": "0guW9emsQXw",
@@ -6913,7 +7799,11 @@
     "costumes religiosos",
     "peregrinacao",
     "misticismo"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "ficar em pé",
+   "busca_en": "standing for long time"
   },
   {
    "id": "O3JNkFhtA1U",
@@ -6952,7 +7842,11 @@
     "triterpenos",
     "farmacologia",
     "plantas medicinais"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "tronco enterrado",
+   "busca_en": "why chinese bury logs"
   },
   {
    "id": "0UuKZVrEk4k",
@@ -6990,7 +7884,11 @@
     "escada de peixe",
     "hidreletrica",
     "recuperacao ambiental"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "criação salmão",
+   "busca_en": "how salmon is farmed"
   },
   {
    "id": "e8Rv19Hvsck",
@@ -7028,7 +7926,11 @@
     "ictiologia",
     "conservacao animal",
     "arte de papel"
-   ]
+   ],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "fotos japonesas",
+   "busca_en": "japanese photography technique"
   },
   {
    "id": "cQprqayA5kg",
@@ -7066,7 +7968,11 @@
     "decomposicao",
     "historia natural",
     "conservacao animal"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "conservar esqueletos",
+   "busca_en": "how museums preserve skeletons"
   },
   {
    "id": "bG51H4yoy-g",
@@ -7105,7 +8011,11 @@
     "david austin",
     "valentines day",
     "flores"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "dinheiro/escala",
+   "objeto": "cultivar rosas",
+   "busca_en": "making money growing roses"
   },
   {
    "id": "75JvmDk-n2o",
@@ -7144,7 +8054,11 @@
     "chef japones",
     "tecnica culinaria",
     "peixaria"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "parte atum",
+   "busca_en": "what is black part of tuna"
   },
   {
    "id": "kSCPjgLqmiQ",
@@ -7182,7 +8096,11 @@
     "splatter",
     "gravacao analogica",
     "hi fi"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "disco vinil",
+   "busca_en": "how vinyl records are made"
   },
   {
    "id": "5ppIRQlkleI",
@@ -7220,7 +8138,11 @@
     "tecnologia esportiva",
     "esporte profissional",
     "futebol mundial"
-   ]
+   ],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "luva copa",
+   "busca_en": "why goalkeepers wear gloves"
   },
   {
    "id": "LMuJcevRYP0",
@@ -7258,7 +8180,11 @@
     "profissoes invisiveis",
     "engenharia civil",
     "obras"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "trabalho perigoso",
+   "busca_en": "most dangerous jobs in world"
   },
   {
    "id": "1055Jja7WR0",
@@ -7296,7 +8222,11 @@
     "pele humana",
     "anatomia",
     "biologia"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "perigo/medo",
+   "objeto": "tatuagem nitrogênio",
+   "busca_en": "liquid nitrogen tattoo"
   },
   {
    "id": "-BdJOVqSQCQ",
@@ -7334,7 +8264,21 @@
     "esporte profissional",
     "trimona",
     "esportes raros"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "limpar handebol",
+   "busca_en": "how handball balls are cleaned",
+   "previo": {
+    "views": 177829878,
+    "titulo": "Handball ASMR. 🤤 | 📹: (TT) mariahmls",
+    "canal": "Olympic Games",
+    "data": "2023-12-06",
+    "idioma": "en",
+    "atraso_dias": 926,
+    "link": "https://youtube.com/shorts/rZscmF0eENE"
+   },
+   "grupo": "top"
   },
   {
    "id": "siICBk5NgLo",
@@ -7373,7 +8317,11 @@
     "comidas fedidas",
     "taiwan",
     "hunan"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "nojo/estranheza",
+   "objeto": "tofu estranho",
+   "busca_en": "stinky tofu food"
   },
   {
    "id": "xZdXsL11JFs",
@@ -7411,7 +8359,11 @@
     "mariposa peluda",
     "animais surreais",
     "transformacao animal"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "lagarta pokemon",
+   "busca_en": "caterpillar looks like pokemon"
   },
   {
    "id": "F49Qktciu_4",
@@ -7449,7 +8401,11 @@
     "energia",
     "craqueamento",
     "refino"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "petróleo bruto",
+   "busca_en": "crude oil refining process"
   },
   {
    "id": "B5MgtVFWqMA",
@@ -7487,7 +8443,11 @@
     "biomassa",
     "fibra de bananeira",
     "agricultura sustentavel"
-   ]
+   ],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "dinheiro/escala",
+   "objeto": "desperdício banana",
+   "busca_en": "banana peel uses"
   },
   {
    "id": "ZLiHaP_XNJY",
@@ -7526,7 +8486,11 @@
     "conservacao de alimentos",
     "mel brasileiro",
     "mel cristalizado"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "dinheiro/escala",
+   "objeto": "mel antigo",
+   "busca_en": "old honey value"
   },
   {
    "id": "g6pB-nWzRQA",
@@ -7563,7 +8527,11 @@
     "robos industriais",
     "profissao de risco",
     "engenharia metalurgica"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "trabalho infernal",
+   "busca_en": "dangerous work conditions"
   },
   {
    "id": "ms-xvmuDi2s",
@@ -7601,7 +8569,11 @@
     "refinaria",
     "prevencao de acidentes",
     "gadget industrial"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "super imã",
+   "busca_en": "super magnet leak repair"
   },
   {
    "id": "caj098Gccv4",
@@ -7638,7 +8610,11 @@
     "agricultura urbana",
     "dica de plantio",
     "ecologia"
-   ]
+   ],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "compostagem pet",
+   "busca_en": "plastic bottle composting hack"
   },
   {
    "id": "KgaZwpJmjL4",
@@ -7676,7 +8652,11 @@
     "dentes de roedor",
     "animais de fazenda",
     "comida andina"
-   ]
+   ],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "alimentar porquinho",
+   "busca_en": "guinea pig feeding tips"
   },
   {
    "id": "KXtVqGJhb74",
@@ -7688,7 +8668,11 @@
    "data": "2026-06-09",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "irrigar raízes",
+   "busca_en": "root irrigation hack"
   },
   {
    "id": "YOOy-jzPlVM",
@@ -7725,7 +8709,21 @@
     "biodiversidade",
     "agroecologia",
     "proteina alternativa"
-   ]
+   ],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "alimentar patos",
+   "busca_en": "feeding ducks larvae",
+   "previo": {
+    "views": 154193389,
+    "titulo": "Reason Of Feeding Ducks With Crayfish: This Year Crayfish Very Cheap Here, Even Cheaper Than Feed !",
+    "canal": "Wisdom Pouchannel",
+    "data": "2024-06-04",
+    "idioma": null,
+    "atraso_dias": 734,
+    "link": "https://youtube.com/shorts/R6G_3m110Y8"
+   },
+   "grupo": "top"
   },
   {
    "id": "5eLSmyU5uu4",
@@ -7763,7 +8761,11 @@
     "projetos malucos",
     "fail",
     "falsa promessa"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "dinheiro/escala",
+   "objeto": "fraude ônibus",
+   "busca_en": "floating bus scam"
   },
   {
    "id": "NFCDj_N_AyQ",
@@ -7801,7 +8803,11 @@
     "inquisicao",
     "historia europeia",
     "antiguidade"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "cartas cera",
+   "busca_en": "wax seal letters"
   },
   {
    "id": "2Bi6e8s1JEE",
@@ -7838,7 +8844,11 @@
     "fazenda no sertao",
     "racao animal",
     "sustentabilidade"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "vacas seca",
+   "busca_en": "cows surviving drought"
   },
   {
    "id": "EFOgk1SiNS0",
@@ -7875,7 +8885,11 @@
     "seguranca alimentar",
     "restaurante asiatico",
     "economia"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "gelo restaurante",
+   "busca_en": "ice on floor china restaurant"
   },
   {
    "id": "5PMwZRbWj68",
@@ -7914,7 +8928,11 @@
     "mexico",
     "brasil rural",
     "agropecuaria"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "queimar cactos",
+   "busca_en": "why burn cactus for cattle"
   },
   {
    "id": "Dl6C7glGaNA",
@@ -7952,7 +8970,11 @@
     "peixes agressivos",
     "asia",
     "pet"
-   ]
+   ],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "fazenda betta",
+   "busca_en": "betta fish farming"
   },
   {
    "id": "kIIePu2Y0Ns",
@@ -7989,7 +9011,11 @@
     "fisica do fogo",
     "forcas especiais",
     "manual militar"
-   ]
+   ],
+   "categoria": "truque/hack do dia a dia",
+   "gatilho": "utilidade (truque)",
+   "objeto": "fogueira frio",
+   "busca_en": "fire starting in cold"
   },
   {
    "id": "inBxloAdNr0",
@@ -8027,7 +9053,21 @@
     "arte milenar",
     "papel preparado",
     "gesso"
-   ]
+   ],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "caneta da vinci",
+   "busca_en": "leonardo da vinci secret pen",
+   "previo": {
+    "views": 46169417,
+    "titulo": "There is a Secret Second Mona Lisa😨",
+    "canal": "Danny's Dose",
+    "data": "2024-12-22",
+    "idioma": null,
+    "atraso_dias": 525,
+    "link": "https://youtube.com/shorts/8F9dXw3uAMc"
+   },
+   "grupo": "top"
   },
   {
    "id": "62CBZzT99D0",
@@ -8063,7 +9103,11 @@
     "insetos comestiveis",
     "biotecnologia",
     "leite vencido"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "dinheiro/escala",
+   "objeto": "leite larvas",
+   "busca_en": "making money with larvae"
   },
   {
    "id": "TybuKTJ7wY4",
@@ -8101,7 +9145,11 @@
     "arvore antiga",
     "bonsai centenario",
     "cultura asiatica"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "bonsai japonês",
+   "busca_en": "japanese bonsai art"
   },
   {
    "id": "LVPrJ2baCoE",
@@ -8136,7 +9184,11 @@
     "plantas incriveis",
     "agua potavel",
     "falsa palmeira"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "planta água",
+   "busca_en": "plant that stores water"
   },
   {
    "id": "ji6xf22oxHg",
@@ -8171,7 +9223,11 @@
     "fatos interessantes",
     "aprender algo novo",
     "gelo transparente"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "nojo/estranheza",
+   "objeto": "gelo sujo",
+   "busca_en": "dirty ice block"
   },
   {
    "id": "o7p1Mu0FfXM",
@@ -8189,7 +9245,11 @@
     "curiosidades",
     "curiosidades de animais",
     "golfinho"
-   ]
+   ],
+   "categoria": "animal com comportamento estranho",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "tapa olho golfinho",
+   "busca_en": "do dolphins wear eye patches"
   },
   {
    "id": "6Um1gTzJdcY",
@@ -8208,7 +9268,11 @@
     "fruta nipa",
     "pameira nipa",
     "frutas exoticas"
-   ]
+   ],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "bater árvore",
+   "busca_en": "why hit tree branches"
   },
   {
    "id": "fq0VUjpYXJM",
@@ -8224,7 +9288,11 @@
     "engenharia",
     "metalurgica",
     "curiosidades"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "dilatação térmica",
+   "busca_en": "thermal expansion physics"
   },
   {
    "id": "-12SvLSZf4U",
@@ -8240,7 +9308,11 @@
     "odisseia",
     "mitologia grega",
     "mythbusters"
-   ]
+   ],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "flecha buracos",
+   "busca_en": "12 hole arrow trick"
   },
   {
    "id": "5Vf3Zz8T1PQ",
@@ -8252,7 +9324,11 @@
    "data": "2026-05-22",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "dinheiro/escala",
+   "objeto": "lixo plástico",
+   "busca_en": "turning plastic into money"
   },
   {
    "id": "ljQ8QXzQCas",
@@ -8267,7 +9343,11 @@
    "tags": [
     "pé chato",
     "teste do pe chato"
-   ]
+   ],
+   "categoria": "corpo humano/saúde",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "pé chato",
+   "busca_en": "flat foot army test"
   },
   {
    "id": "tPsn5mGaLgE",
@@ -8279,7 +9359,11 @@
    "data": "2026-05-20",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "invenção/tecnologia",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "cerâmica quebra",
+   "busca_en": "fragile ceramic art"
   },
   {
    "id": "GbUlXQuq0ak",
@@ -8291,7 +9375,11 @@
    "data": "2026-05-19",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "dinheiro/escala",
+   "objeto": "planta estresse",
+   "busca_en": "valuable stressed plants"
   },
   {
    "id": "cvdZOeCE61A",
@@ -8305,7 +9393,11 @@
    "dia": "seg",
    "tags": [
     "bambu"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "bambu chão",
+   "busca_en": "bamboo growing through floor"
   },
   {
    "id": "Hp0cQ1We6PM",
@@ -8317,7 +9409,11 @@
    "data": "2026-05-17",
    "hora": 18,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "nojo/estranheza",
+   "objeto": "moscas esgoto",
+   "busca_en": "sewer flies infestation"
   },
   {
    "id": "uRbLT8Y3eUM",
@@ -8334,7 +9430,11 @@
     "agua viva",
     "agua-viva",
     "água-viva"
-   ]
+   ],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "descascar água viva",
+   "busca_en": "how to peel jellyfish"
   },
   {
    "id": "2KOctGEWeYk",
@@ -8346,7 +9446,11 @@
    "data": "2026-05-15",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "alimentação de atum",
+   "busca_en": "how tuna fish are fed"
   },
   {
    "id": "pCsCt7HYkWE",
@@ -8364,7 +9468,11 @@
     "shillelagh fighting",
     "blackthorn wood stick",
     "traditional irish weapons"
-   ]
+   ],
+   "categoria": "lugar/cultura de outro país",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "bastão irlandês shillelagh",
+   "busca_en": "traditional irish shillelagh fighting stick"
   },
   {
    "id": "R4Gz7W12Y98",
@@ -8380,7 +9488,11 @@
     "camelo",
     "camelos",
     "deserto"
-   ]
+   ],
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "objeto": "água no deserto",
+   "busca_en": "dangers of drinking desert water"
   },
   {
    "id": "-2dx6Ke15Uo",
@@ -8392,7 +9504,11 @@
    "data": "2026-05-12",
    "hora": 18,
    "dia": "ter",
-   "tags": []
+   "tags": [],
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "objeto": "conserto de asfalto",
+   "busca_en": "asphalt crack repair process"
   },
   {
    "id": "7fuYlhXkmoY",
@@ -8407,7 +9523,21 @@
    "tags": [
     "craca",
     "cracas"
-   ]
+   ],
+   "categoria": "natureza/fenômeno",
+   "gatilho": "perigo/medo",
+   "objeto": "inimigo dos navios",
+   "busca_en": "rogue waves destroying ships",
+   "previo": {
+    "views": 78130382,
+    "titulo": "Huge surge wave nearly takes boats and people with it!",
+    "canal": "Nathan Florence",
+    "data": "2023-02-04",
+    "idioma": "en",
+    "atraso_dias": 1192,
+    "link": "https://youtube.com/shorts/aNc42SiiFrs"
+   },
+   "grupo": "top"
   },
   {
    "id": "TSQTDp5izaw",
@@ -8419,7 +9549,11 @@
    "data": "2026-05-10",
    "hora": 18,
    "dia": "dom",
-   "tags": []
+   "tags": [],
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "objeto": "corte da banana",
+   "busca_en": "why bananas are cut that way"
   },
   {
    "id": "WYPry_BJ154",
@@ -8431,7 +9565,11 @@
    "data": "2026-05-09",
    "hora": 18,
    "dia": "sáb",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "nojo/estranheza",
+   "objeto": "vinho de vespa",
+   "busca_en": "wasp nest wine making"
   },
   {
    "id": "qBqojpia1As",
@@ -8443,7 +9581,11 @@
    "data": "2026-05-08",
    "hora": 18,
    "dia": "sex",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "mito desmentido",
+   "objeto": "cochonilhas na comida",
+   "busca_en": "cochineal insects in food products"
   },
   {
    "id": "4DlUH9Y6NgA",
@@ -8455,7 +9597,11 @@
    "data": "2026-05-07",
    "hora": 18,
    "dia": "qui",
-   "tags": []
+   "tags": [],
+   "categoria": "pessoa/feito extraordinário",
+   "gatilho": "perigo/medo",
+   "objeto": "sobrevivência no gelo",
+   "busca_en": "man sleeping on ice circle"
   },
   {
    "id": "Zeu19oIom4s",
@@ -8467,7 +9613,11 @@
    "data": "2026-05-06",
    "hora": 18,
    "dia": "qua",
-   "tags": []
+   "tags": [],
+   "categoria": "comida/culinária curiosa",
+   "gatilho": "surpresa visual (olha isso)",
+   "objeto": "comida tipo algodão",
+   "busca_en": "strange cotton candy food"
   }
  ]
 }
