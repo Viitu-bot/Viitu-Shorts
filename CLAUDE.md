@@ -42,6 +42,9 @@ Clipes do usuário chegam por **link do Google Drive** (YouTube e Reddit bloquei
 - Final com cena satisfatória; CTA simples ("Você experimentaria?") ou lúdico que puxa like
   ("toque duas vezes na tela que aparece um peixinho").
 - Imagens: compilação de TikTok/Douyin/Instagram ou documentário de fábrica (um bruto).
+- **Base consolidada (9 virais, `hall_da_fama/README.md`):** seta no frame 0 em 77% · 2,5 s por cena ·
+  legenda 1 palavra no centro-inferior em 8/9 · sons: pop, woosh, ding · **som original do clipe
+  audível sob a narração** (editor: faixa `ambiente` a 35%; `"som_original": false` desliga por cena).
 
 ## Protocolo HISA (roteiro)
 - **REGRA DE DURAÇÃO (definitiva, nov/2026). Só existem 2 formatos:**
