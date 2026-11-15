@@ -239,6 +239,8 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       {/* trilha de fundo: baixa sob a voz, some suave no final */}
       <Audio src={staticFile('musica.mp3')} loop
         volume={(f) => 0.16 * interpolate(f, [durationInFrames - 10, durationInFrames], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})} />
+      {/* som original dos clipes por baixo da voz (padrão dos virais: chiado, raspagem, bicho) */}
+      <Audio src={staticFile('ambiente.m4a')} volume={0.35} />
       <Audio src={staticFile('audio.m4a')} />
     </AbsoluteFill>
   );

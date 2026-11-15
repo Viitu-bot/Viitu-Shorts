@@ -488,6 +488,36 @@ def mixar_audio(pasta: Path, segs: list[dict], palavras: list[dict], cfg: dict, 
     return saida
 
 
+def som_ambiente(pasta: Path, segs: list[dict], dur: float) -> Path:
+    """Som original de cada clipe (chiado, raspagem, bicho...) cortado igual às cenas.
+    Padrão dos virais do Hall: o som real fica audível por baixo da narração."""
+    partes = []
+    for i, s in enumerate(segs):
+        n = s["f1"] - s["f0"]
+        d = n / FPS
+        out = pasta / "saida" / "cenas" / f"{i:03d}_amb.wav"
+        clipe = pasta / "clipes" / s["clipe"]
+        vel = float(s.get("velocidade", 1.0))
+        tem_audio = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=index",
+                                    "-of", "csv=p=0", str(clipe)], capture_output=True, text=True).stdout.strip()
+        if tem_audio and clipe.suffix.lower() not in (".jpg", ".png") and s.get("som_original", True):
+            filtro = f"atempo={max(vel, 0.5)}," if vel != 1.0 else ""
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-stream_loop", "-1", "-ss", f"{s.get('inicio', 0):.3f}",
+                            "-i", str(clipe), "-t", f"{d * vel:.3f}", "-af",
+                            f"{filtro}apad,atrim=0:{d:.3f},afade=t=in:d=0.04,afade=t=out:st={max(d - 0.06, 0):.3f}:d=0.06",
+                            "-ar", "48000", "-ac", "2", str(out)], check=True)
+        else:
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo",
+                            "-t", f"{d:.3f}", str(out)], check=True)
+        partes.append(out)
+    lista = pasta / "saida" / "cenas" / "amb.txt"
+    lista.write_text("".join(f"file '{p.name}'\n" for p in partes), encoding="utf-8")
+    saida = pasta / "saida" / "ambiente.wav"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lista),
+                    "-af", f"atrim=0:{dur:.3f},loudnorm=I=-20:TP=-3", str(saida)], check=True)
+    return saida
+
+
 def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: dict,
                       video: Path, audio: Path, dur: float) -> None:
     import shutil
@@ -498,6 +528,9 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
                     str(pub / "audio.m4a")], check=True)
     for som in SFX.glob("*.mp3"):
         shutil.copy(som, pub / som.name)
+    amb = som_ambiente(pasta, segs, dur)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(amb), "-c:a", "aac", "-b:a", "160k",
+                    str(pub / "ambiente.m4a")], check=True)
     musica = cfg.get("musica", "curioso_documentario.mp3")
     shutil.copy(RAIZ / "assets" / "musica" / musica, pub / "musica.mp3")
     destaques = {_norm(x) for x in cfg.get("destaques", [])}
