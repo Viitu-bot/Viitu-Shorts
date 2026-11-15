@@ -62,8 +62,14 @@ imagem forte para o frame 0.
 Validação: Short em outro idioma com views ≥ 3× a mediana do próprio canal, e sem versão
 forte em PT-BR.
 
+## Publicação
+- **Horário padrão: 06:00** (histórico do dono: funciona). Agendar no app do YouTube.
+
 ## Títulos
-4–8 palavras, pergunta ou afirmação surpreendente sobre um objeto, 1 emoji no fim,
+- O título repete a LACUNA do gancho e não pressupõe conhecimento ("O olho da cabra faz algo que o
+  seu não faz", não "Por que o olho da cabra gira?"). Fórmulas validadas (canais BR de referência):
+  "A/O [coisa] que [faz algo incrível]" e "Esse [coisa] [faz algo absurdo]!?".
+- 4–8 palavras, pergunta ou afirmação surpreendente sobre um objeto, 1 emoji no fim,
 sem CAIXA ALTA gritando. Sempre com tradução EN/ES no YouTube Studio.
 
 ## A definir com o usuário
