@@ -1,130 +1,183 @@
 {
- "_versao": "v1: âncora Soson Farm (crédito na descrição) + Pixabay; padrões dos virais do Hall",
+ "_versao": "v2: âncora Soson em 4 cenas (gancho, ovo na palha, formação, loop); demais clipes 1x; 'esperado' em todas",
  "cenas": [
   {
    "em": "Esse ovo",
    "clipe": "bruto_soson.mp4",
    "inicio": 66.0,
    "sujeito": "an egg",
+   "esperado": "a chicken",
    "seta_auto": {
     "texto": "an egg",
     "atraso": 0.0
    },
-   "_funcao": "gancho: o ovo saindo + seta vermelha no frame 0 (padrão de 77% dos virais)"
-  },
-  {
-   "em": "A galinha botou",
-   "clipe": "bruto_soson.mp4",
-   "inicio": 72.5,
-   "velocidade": 0.7,
-   "_funcao": "o ovo sendo botado"
+   "revisao": "manual"
   },
   {
    "em": "sem galo nenhum",
    "clipe": "bruto_soson.mp4",
    "inicio": 77.3,
    "sujeito": "an egg",
-   "_funcao": "o ovo sozinho na palha"
+   "esperado": "an egg"
   },
   {
    "em": "A maioria acha",
-   "clipe": "pixabay_137607.mp4",
-   "inicio": 7.0,
-   "_funcao": "o galo (o 'mito')"
+   "clipe": "pixabay_45789.mp4",
+   "inicio": 0.3,
+   "esperado": "a rooster",
+   "_funcao": "o galo do mito, em close",
+   "foco": [
+    0.21,
+    0.5
+   ],
+   "alvo": [
+    0.5,
+    0.42
+   ],
+   "zoom": [
+    1.0,
+    1.1
+   ]
   },
   {
    "em": "Não precisa",
-   "clipe": "bruto_soson.mp4",
-   "inicio": 40.0,
-   "_funcao": "granja cheia de galinhas"
+   "clipe": "pixabay_66634.mp4",
+   "inicio": 4.0,
+   "esperado": "a hen"
   },
   {
    "em": "com ou sem galo",
-   "clipe": "pixabay_66634.mp4",
-   "inicio": 4.0
+   "clipe": "pixabay_147982.mp4",
+   "inicio": 8.0,
+   "esperado": "a rooster",
+   "foco": [
+    0.57,
+    0.5
+   ],
+   "alvo": [
+    0.5,
+    0.45
+   ],
+   "zoom": [
+    1.05,
+    1.15
+   ]
   },
   {
    "em": "Sem galo, o ovo",
    "clipe": "pixabay_113228.mp4",
    "inicio": 5.0,
-   "_funcao": "pintinhos ao lado da casca"
+   "layout": "inteiro",
+   "manter": true,
+   "esperado": "a chick"
   },
   {
    "em": "e é esse que você come",
-   "clipe": "pixabay_1770.mp4",
-   "inicio": 0.0,
-   "velocidade": 0.85,
-   "_funcao": "ovo quebrando (satisfatório)"
+   "clipe": "pixabay_220476.mp4",
+   "inicio": 2.5,
+   "foco": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "esperado": "a fried egg"
   },
   {
    "em": "Essa gema desce",
    "clipe": "bruto_soson.mp4",
-   "inicio": 131.0,
+   "inicio": 134.0,
    "velocidade": 0.75,
-   "_funcao": "o ovo se formando/saindo devagar"
-  },
-  {
-   "em": "e passa quase vinte",
-   "clipe": "bruto_soson.mp4",
-   "inicio": 143.0,
+   "manter": true,
    "sujeito": "an egg",
+   "esperado": "a chicken",
    "marca_auto": {
     "texto": "an egg",
-    "atraso": 0.3
+    "atraso": 4.0
    }
   },
   {
    "em": "Mas tem um porém",
-   "clipe": "bruto_soson.mp4",
-   "inicio": 150.0,
-   "sujeito": "an egg",
+   "clipe": "pixabay_322655.mp4",
+   "inicio": 0.3,
    "zoom": [
-    1.3,
-    1.5
+    1.0,
+    1.12
    ],
-   "_funcao": "virada + impacto no ovo"
+   "esperado": "an egg",
+   "_funcao": "a casca rachando",
+   "layout": "inteiro",
+   "manter": true,
+   "alvo": [
+    0.5,
+    0.5
+   ],
+   "revisao": "manual"
   },
   {
    "em": "Se faltar na comida",
-   "clipe": "pixabay_66635.mp4",
-   "inicio": 10.0,
-   "_funcao": "galinhas ciscando/comendo"
+   "clipe": "pixabay_213146.mp4",
+   "inicio": 5.0,
+   "esperado": "a hen",
+   "foco": [
+    0.75,
+    0.5
+   ],
+   "alvo": [
+    0.5,
+    0.45
+   ],
+   "zoom": [
+    1.0,
+    1.1
+   ]
   },
   {
    "em": "ela tira dos próprios",
-   "clipe": "pixabay_137608.mp4",
-   "inicio": 3.0
+   "clipe": "pixabay_69729.mp4",
+   "inicio": 3.0,
+   "esperado": "a bird"
   },
   {
    "em": "Cada casca leva",
-   "clipe": "pixabay_112428.mp4",
-   "inicio": 2.0
+   "clipe": "pixabay_137608.mp4",
+   "inicio": 3.0,
+   "esperado": "a hen"
   },
   {
    "em": "Por isso ela bota",
-   "clipe": "bruto_soson.mp4",
-   "inicio": 254.0,
-   "sujeito": "an egg",
-   "_funcao": "um ovo só, ao lado da galinha"
+   "clipe": "pixabay_246644.mp4",
+   "inicio": 1.0,
+   "foco": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "esperado": "a fried egg"
   },
   {
    "em": "Você sabia que",
    "clipe": "pixabay_66635.mp4",
    "inicio": 20.0,
-   "_funcao": "granja/produção"
+   "esperado": "a hen"
   },
   {
    "em": "Comenta",
-   "clipe": "bruto_soson.mp4",
-   "inicio": 78.0,
-   "sujeito": "an egg"
+   "clipe": "pixabay_139969.mp4",
+   "inicio": 4.0,
+   "esperado": "a chick"
   },
   {
    "em": "E da próxima vez",
    "clipe": "bruto_soson.mp4",
    "inicio": 65.0,
    "sujeito": "an egg",
-   "_funcao": "loop: termina no ovo saindo, igual ao frame 0"
+   "esperado": "a chicken"
   }
  ],
  "impacto_em": [

@@ -1,0 +1,150 @@
+{
+ "_versao": "v1: âncora Soson Farm (crédito na descrição) + Pixabay; padrões dos virais do Hall",
+ "cenas": [
+  {
+   "em": "Esse ovo",
+   "clipe": "bruto_soson.mp4",
+   "inicio": 66.0,
+   "sujeito": "an egg",
+   "seta_auto": {
+    "texto": "an egg",
+    "atraso": 0.0
+   },
+   "_funcao": "gancho: o ovo saindo + seta vermelha no frame 0 (padrão de 77% dos virais)"
+  },
+  {
+   "em": "A galinha botou",
+   "clipe": "bruto_soson.mp4",
+   "inicio": 72.5,
+   "velocidade": 0.7,
+   "_funcao": "o ovo sendo botado"
+  },
+  {
+   "em": "sem galo nenhum",
+   "clipe": "bruto_soson.mp4",
+   "inicio": 77.3,
+   "sujeito": "an egg",
+   "_funcao": "o ovo sozinho na palha"
+  },
+  {
+   "em": "A maioria acha",
+   "clipe": "pixabay_137607.mp4",
+   "inicio": 7.0,
+   "_funcao": "o galo (o 'mito')"
+  },
+  {
+   "em": "Não precisa",
+   "clipe": "bruto_soson.mp4",
+   "inicio": 40.0,
+   "_funcao": "granja cheia de galinhas"
+  },
+  {
+   "em": "com ou sem galo",
+   "clipe": "pixabay_66634.mp4",
+   "inicio": 4.0
+  },
+  {
+   "em": "Sem galo, o ovo",
+   "clipe": "pixabay_113228.mp4",
+   "inicio": 5.0,
+   "_funcao": "pintinhos ao lado da casca"
+  },
+  {
+   "em": "e é esse que você come",
+   "clipe": "pixabay_1770.mp4",
+   "inicio": 0.0,
+   "velocidade": 0.85,
+   "_funcao": "ovo quebrando (satisfatório)"
+  },
+  {
+   "em": "Essa gema desce",
+   "clipe": "bruto_soson.mp4",
+   "inicio": 131.0,
+   "velocidade": 0.75,
+   "_funcao": "o ovo se formando/saindo devagar"
+  },
+  {
+   "em": "e passa quase vinte",
+   "clipe": "bruto_soson.mp4",
+   "inicio": 143.0,
+   "sujeito": "an egg",
+   "marca_auto": {
+    "texto": "an egg",
+    "atraso": 0.3
+   }
+  },
+  {
+   "em": "Mas tem um porém",
+   "clipe": "bruto_soson.mp4",
+   "inicio": 150.0,
+   "sujeito": "an egg",
+   "zoom": [
+    1.3,
+    1.5
+   ],
+   "_funcao": "virada + impacto no ovo"
+  },
+  {
+   "em": "Se faltar na comida",
+   "clipe": "pixabay_66635.mp4",
+   "inicio": 10.0,
+   "_funcao": "galinhas ciscando/comendo"
+  },
+  {
+   "em": "ela tira dos próprios",
+   "clipe": "pixabay_137608.mp4",
+   "inicio": 3.0
+  },
+  {
+   "em": "Cada casca leva",
+   "clipe": "pixabay_112428.mp4",
+   "inicio": 2.0
+  },
+  {
+   "em": "Por isso ela bota",
+   "clipe": "bruto_soson.mp4",
+   "inicio": 254.0,
+   "sujeito": "an egg",
+   "_funcao": "um ovo só, ao lado da galinha"
+  },
+  {
+   "em": "Você sabia que",
+   "clipe": "pixabay_66635.mp4",
+   "inicio": 20.0,
+   "_funcao": "granja/produção"
+  },
+  {
+   "em": "Comenta",
+   "clipe": "bruto_soson.mp4",
+   "inicio": 78.0,
+   "sujeito": "an egg"
+  },
+  {
+   "em": "E da próxima vez",
+   "clipe": "bruto_soson.mp4",
+   "inicio": 65.0,
+   "sujeito": "an egg",
+   "_funcao": "loop: termina no ovo saindo, igual ao frame 0"
+  }
+ ],
+ "impacto_em": [
+  "Mas tem um porém"
+ ],
+ "destaques": [
+  "pai",
+  "sozinha",
+  "galo",
+  "gema",
+  "pintinho",
+  "come",
+  "casca",
+  "cálcio",
+  "ossos",
+  "dia",
+  "sabia"
+ ],
+ "cta": {
+  "em": "Comenta",
+  "texto": "💬 COMENTA"
+ }
+}

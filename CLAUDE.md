@@ -108,6 +108,12 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
 - Estilo de legenda/SFX (referência: palavra única, fonte grossa, contorno; flash 0,2 s nos cortes;
   woosh nos cortes, ding/pak na palavra-gatilho)
 
+## Revisão técnica OBRIGATÓRIA antes de entregar
+- `python3 -m viitu.revisar <proj>`: confere início/meio/fim de cada cena (assunto `esperado` na tela,
+  centralizado, não cortado) e repetição de clipes (âncora ≤ 4 cenas, demais 1). Abrir
+  `saida/revisao.jpg` e olhar. Só mandar ao dono com APROVADO ou com cada alerta conferido a olho
+  (marcar `"revisao": "manual"` na cena quando o detector não serve, ex.: close extremo).
+
 ## Acabamento (Remotion) e identidade
 - Pipeline: `python3 -m viitu.editar <proj> --remotion` → `cd remotion && npm run render`.
 - Identidade: flash branco→amarelo nos primeiros 0,2 s + "ding" no frame 0. Círculo vermelho perfeito
