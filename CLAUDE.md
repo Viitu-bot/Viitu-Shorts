@@ -17,7 +17,7 @@ nesta sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 4. `/editar` → voz ElevenLabs + cortes sincronizados + flash + SFX + legenda → mp4
 5. Usuário agenda no app YouTube Studio (upload via API trava em privado sem auditoria)
 
-Clipes do usuário chegam por **link do Google Drive** (YouTube e Reddit bloqueiam a nuvem).
+Clipes do usuário chegam **anexados no chat** (funciona) ou, se forem grandes, por **link do Google Drive** público (gdown). YouTube e Reddit bloqueiam downloads da nuvem.
 
 ## Formato que funciona NO CANAL (análise de 12 vídeos do dono com ~20k views, nov/2026)
 - **Clipe-âncora:** UM clipe real, já **vertical**, com início-meio-fim (Reddit/TikTok/Douyin).
