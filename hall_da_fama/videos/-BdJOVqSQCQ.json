@@ -1,0 +1,139 @@
+{
+ "meta": {
+  "id": "-BdJOVqSQCQ",
+  "link": "https://youtube.com/shorts/-BdJOVqSQCQ",
+  "titulo": "Como limpam as bolas de handebol 🤾‍♂️🟢",
+  "canal": "A vida é uma maravilha",
+  "handle": "@avidamaravilha",
+  "inscritos_canal": 432000,
+  "publicado": "2026-06-19T21:00",
+  "duracao_s": 36,
+  "views": 13567387,
+  "likes": 218178,
+  "comentarios": 788,
+  "origem": "top viral do canal"
+ },
+ "raiox": {
+  "duracao_s": 36,
+  "gancho": {
+   "frase_falada": "É assim que jogadores de handebol limpam as bolas no final da temporada.",
+   "o_que_aparece_no_frame_0": "Mão pressionando uma bola coberta de resina preta contra a trave do gol, com uma seta vermelha apontando para a bola.",
+   "texto_na_tela": "assim",
+   "por_que_prende": "Apresenta uma cena bizarra e curiosa: uma bola completamente preta e gosmenta sendo espremida contra o poste da trave, gerando curiosidade imediata sobre o que é aquilo."
+  },
+  "estrutura": [
+   {
+    "inicio": "00:00",
+    "fim": "00:05",
+    "funcao": "gancho",
+    "narracao": "É assim que jogadores de handebol limpam as bolas no final da temporada.",
+    "imagem": "Bola preta sendo esfregada e descascada contra a trave azul e branca da quadra."
+   },
+   {
+    "inicio": "00:05",
+    "fim": "00:10",
+    "funcao": "explicacao",
+    "narracao": "Aquela camada preta é resina, aplicada de propósito para deixar a bola grudenta o suficiente para segurar durante o jogo.",
+    "imagem": "Jogador aplicando resina amarelada e viscosa com as mãos em uma bola limpa."
+   },
+   {
+    "inicio": "00:10",
+    "fim": "00:14",
+    "funcao": "desmistificacao",
+    "narracao": "Mas com o tempo a resina acumula e fica suja.",
+    "imagem": "Pilha de várias bolas de handebol encardidas e escuras no chão da quadra."
+   },
+   {
+    "inicio": "00:14",
+    "fim": "00:23",
+    "funcao": "explicacao",
+    "narracao": "Para limpar, eles aplicam mais resina fresca por cima e espalham com as mãos. Depois, enrolam uma bandagem no polegar e usam para começar a puxar a resina suja,",
+    "imagem": "Pessoa pegando resina nova no pote, passando na bola suja e usando o dedo enfaixado para puxar a primeira crosta."
+   },
+   {
+    "inicio": "00:23",
+    "fim": "00:30",
+    "funcao": "virada",
+    "narracao": "formando uma bola, conforme gruda na bandagem. Essa bola de resina é usada para puxar ainda mais, rolando por toda a superfície,",
+    "imagem": "Usando uma bola maciça de resina retirada para absorver e descascar o resto da sujeira da bola de handebol."
+   },
+   {
+    "inicio": "00:30",
+    "fim": "00:36",
+    "funcao": "loop",
+    "narracao": "até a bola ficar limpa o suficiente para aplicar uma camada nova para a próxima temporada.",
+    "imagem": "Movimentos rápidos finalizando a limpeza da bola até ela voltar à cor azul e branca original."
+   }
+  ],
+  "cortes": [
+   {
+    "tempo": "00:05",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:10",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:13",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:16",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:18",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:23",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:29",
+    "tipo": "seco"
+   }
+  ],
+  "efeitos_visuais": [
+   {
+    "tempo": "00:00",
+    "efeito": "seta animada",
+    "em_qual_palavra": "assim",
+    "para_que": "Apontar diretamente para a bola preta no frame inicial para direcionar o foco do espectador."
+   },
+   {
+    "tempo": "00:00",
+    "efeito": "texto animado",
+    "em_qual_palavra": "todas",
+    "para_que": "Manter o dinamismo e retenção com exibição palavra por palavra em ritmo acelerado."
+   }
+  ],
+  "efeitos_sonoros": [
+   {
+    "tempo": "00:00",
+    "som": "som diegético/ASMR pegajoso",
+    "momento": "Ruído da cola estalando e grudando nas superfícies ao longo de todo o vídeo."
+   }
+  ],
+  "musica": "Trilha rítmica instrumental eletrônica sutil ao fundo, com volume baixo dando prioridade à narração e aos ruídos táteis de ASMR.",
+  "legenda": {
+   "estilo": "Uma palavra por vez centralizada no terço inferior, caixa alta, fonte bold com contorno preto.",
+   "posicao": "Centro inferior",
+   "palavras_por_vez": 1,
+   "cores": "Texto branco com destaque de palavras-chave em verde neon."
+  },
+  "ritmo": {
+   "segundos_medios_por_cena": 4.5,
+   "observacao": "Ritmo contínuo com cortes a cada etapa do processo artesanal, aproveitando a natureza 'oddly satisfying' da limpeza."
+  },
+  "cta": "Nenhum CTA explícito.",
+  "loop": "A narração termina com 'para a próxima temporada' e reconecta tematicamente ao início que diz 'é assim que [...] limpam as bolas no final da temporada'.",
+  "origem_das_imagens": "Compilação de vídeos verticais gravados por atletas/técnicos de handebol em quadras, formato característico do TikTok/Reels mostrando a rotina de remoção de resina (klister).",
+  "licoes_para_copiar": [
+   "Explorar conteúdos satisfatórios (ASMR visual/limpeza) de nichos esportivos pouco conhecidos do grande público.",
+   "Usar o gancho que contrapõe uma cena curiosa (bola preta na trave) com a explicação do que é no primeiro segundo.",
+   "Manter os ruídos táteis reais do vídeo original bem audíveis sob a narração para aumentar a sensação de satisfação."
+  ]
+ }
+}

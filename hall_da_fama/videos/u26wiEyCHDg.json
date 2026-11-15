@@ -1,0 +1,204 @@
+{
+ "meta": {
+  "id": "u26wiEyCHDg",
+  "link": "https://youtube.com/shorts/u26wiEyCHDg",
+  "titulo": "O que se esconde na boca da tartaruga 🐢",
+  "canal": "A vida é uma maravilha",
+  "handle": "@avidamaravilha",
+  "inscritos_canal": 432000,
+  "publicado": "2026-09-29T15:00",
+  "duracao_s": 67,
+  "views": 9456053,
+  "likes": 165831,
+  "comentarios": 657,
+  "origem": "top viral do canal"
+ },
+ "raiox": {
+  "duracao_s": 66,
+  "gancho": {
+   "frase_falada": "É por isso que você nunca deve colocar a mão na boca de uma tartaruga marinha.",
+   "o_que_aparece_no_frame_0": "Pessoa inserindo a mão dentro de uma escultura de boca de tartaruga num museu interativo, com uma seta vermelha apontando.",
+   "texto_na_tela": "isso / nunca",
+   "por_que_prende": "Gera curiosidade imediata e gatilho de perigo/alerta ao mostrar alguém colocando a mão em algo aparentemente inofensivo enquanto a narração avisa para nunca fazer isso."
+  },
+  "estrutura": [
+   {
+    "inicio": "00:00",
+    "fim": "00:03",
+    "funcao": "gancho",
+    "narracao": "É por isso que você nunca deve colocar a mão na boca de uma tartaruga marinha.",
+    "imagem": "Pessoa testando a boca interativa de tartaruga em museu com close nos dentes."
+   },
+   {
+    "inicio": "00:03",
+    "fim": "00:09",
+    "funcao": "desmistificacao",
+    "narracao": "Quando essa garotinha visitou um museu do oceano, ela chegou perto de uma tartaruga achando que era só uma carinha inocente.",
+    "imagem": "Criança pequena brincando com o display interativo no museu."
+   },
+   {
+    "inicio": "00:09",
+    "fim": "00:20",
+    "funcao": "virada",
+    "narracao": "Mas o que ela não sabia é que a tartaruga marinha tem a boca mais traiçoeira do oceano inteiro. Olha só o que se esconde lá dentro: centenas de espinhos afiados apontados pra dentro.",
+    "imagem": "Tartaruga real abrindo a boca e revelando centenas de papilas pontiagudas assustadoras."
+   },
+   {
+    "inicio": "00:20",
+    "fim": "00:33",
+    "funcao": "explicacao",
+    "narracao": "Esses espinhos se chamam papilas esofágicas e vão da boca até a garganta inteira, parecendo um túnel de espinhos saídos de filme de terror. E não são nem dentes de verdade: são estruturas feitas de queratina, o mesmo material das suas unhas.",
+    "imagem": "Visão interna profunda da garganta cheia de espinhos e macro de uma papila com indicação em texto."
+   },
+   {
+    "inicio": "00:33",
+    "fim": "01:02",
+    "funcao": "explicacao",
+    "narracao": "Mas por que a tartaruga precisa de uma boca tão assustadora? Porque ela se alimenta quase só de água-viva, que é extremamente escorregadia. Toda vez que a tartaruga abre a boca debaixo d'água, litros de água entram e saem levando tudo junto. Os espinhos funcionam como uma válvula de mão única. Quando ela contrai os músculos da garganta pra expelir a água, os espinhos prendem a água-viva no lugar, impedindo que ela escape. E o tecido grosso que reveste a boca ainda protege a tartaruga das queimaduras dos tentáculos.",
+    "imagem": "Tartarugas marinhas predando águas-vivas debaixo d'água e expelindo água mantendo o alimento preso."
+   },
+   {
+    "inicio": "01:02",
+    "fim": "01:06",
+    "funcao": "loop",
+    "narracao": "Uma adaptação genial que transforma uma cara fofa num pesadelo pra qualquer presa.",
+    "imagem": "Tartaruga nadando pacificamente em água cristalina, criando contraste com a revelação anterior e ligando de volta ao gancho."
+   }
+  ],
+  "cortes": [
+   {
+    "tempo": "00:01",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:02",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:03",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:08",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:09",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:10",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:14",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:19",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:22",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:27",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:31",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:33",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:36",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:41",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:44",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:49",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:52",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:57",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "01:02",
+    "tipo": "seco"
+   }
+  ],
+  "efeitos_visuais": [
+   {
+    "tempo": "00:00",
+    "efeito": "seta",
+    "em_qual_palavra": "isso",
+    "para_que": "Destacar o ponto de interesse na réplica do museu logo no primeiro segundo."
+   },
+   {
+    "tempo": "00:08",
+    "efeito": "zoom rápido",
+    "em_qual_palavra": "carinha",
+    "para_que": "Aproximar o display para enfatizar a ação da mão dentro da boca."
+   },
+   {
+    "tempo": "00:22",
+    "efeito": "câmera lenta",
+    "em_qual_palavra": "túnel",
+    "para_que": "Provocar sensação de imersão e horror corporal ao descer pela garganta espinhosa."
+   },
+   {
+    "tempo": "00:29",
+    "efeito": "texto animado",
+    "em_qual_palavra": "queratina",
+    "para_que": "Apontar com linha gráfica a anatomia da papila e nomear a estrutura."
+   }
+  ],
+  "efeitos_sonoros": [
+   {
+    "tempo": "00:00",
+    "som": "woosh",
+    "momento": "Entrada da seta e início do gancho."
+   },
+   {
+    "tempo": "00:10",
+    "som": "boom",
+    "momento": "Abertura da boca da tartaruga real com visual chocante."
+   }
+  ],
+  "musica": "Trilha sonora ambiente misteriosa, tensa e científica em volume moderado, mantendo a voz em primeiro plano com clareza.",
+  "legenda": {
+   "estilo": "Estilo dinâmico viral centralizado, fonte grossa sans-serif em caixa baixa, sombra projetada escura.",
+   "posicao": "Centro-inferior",
+   "palavras_por_vez": 1,
+   "cores": "Amarelo brilhante e ciano/azul para palavras-chave, branco para termos de apoio."
+  },
+  "ritmo": {
+   "segundos_medios_por_cena": 3.4,
+   "observacao": "Alternância equilibrada entre clipes de museu na introdução, fotos macro estáticas/cinemáticas para explicação anatômica e filmagens subaquáticas dinâmicas de predação."
+  },
+  "cta": "Não há CTA explícito verbal, apostando na retenção total e compartilhamento orgânico pelo fator curiosidade bizarra.",
+  "loop": "A fala final ('transforma uma cara fofa num pesadelo...') contrasta a fofura com o perigo, conectando perfeitamente com a frase inicial 'É por isso que você nunca deve...'.",
+  "origem_das_imagens": "Compilação mista de vídeos virais do TikTok/Instagram (visita ao museu interativo e interação com animais) com imagens de documentários oceânicos e fotografias biológicas macro.",
+  "licoes_para_copiar": [
+   "Iniciar o vídeo com um aviso imperativo de 'nunca faça isso' acompanhado de uma ação física imediata para retenção nos primeiros 2 segundos.",
+   "Usar uma experiência cotidiana/lúdica (criança em museu) como ponte para introduzir um fato científico bizarro e pouco conhecido.",
+   "Explicar conceitos biológicos complexos com analogias simples do dia a dia (unhas de queratina, válvula de mão única)."
+  ]
+ }
+}
