@@ -27,3 +27,9 @@ E da próxima vez que vir fogo na floresta, lembra: talvez esses bombeiros...
 - ❌ 60 Minutes Australia (cj0voLRdzIU): reportagem de 2009, quase só entrevista; só 0:41–0:49 e 1:55–2:00 servem. Descartado como fonte principal.
 - ⚠️ jrockyhill (2yiCZBhiVys): só 3:39–3:47 (tocha acendendo o contrafogo). Reserva.
 - Buscar melhores quando a cota da YouTube API renovar.
+
+## Origem das imagens do viral validado (OB0KuhmpiH0, 27,9 mi) — Gemini
+Compilação de clipes reais de bombeiros florestais (TikTok/Reels/câmeras de corpo e aeronaves):
+noite com pinga-fogo (drip torch), POV acendendo capim, linha de fogo na borda da mata, equipe ao
+entardecer acendendo o campo, ignição aérea por helicóptero, avião soltando retardante.
+→ Buscar no TikTok os originais: "drip torch", "backburn", "wildland firefighter", "firing operation".

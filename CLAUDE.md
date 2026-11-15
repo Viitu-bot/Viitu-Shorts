@@ -118,6 +118,13 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
 4. Ferramenta: `python3 -m viitu.contraste <proj>` (relatório) / `--aplicar` (espelha onde a direção
    repete). Nunca espelhar imagem com texto/logo/marca d'água (`"texto_na_imagem": true`).
 
+## De onde vêm as IMAGENS (mesma lógica do tema: material validado)
+1. Comece pelo **vídeo viral que validou o tema**: `viitu.assistir perguntar <link> "cenas, origem, marcas d'água"`.
+   Descubra de onde vieram as imagens dele e busque esses ORIGINAIS (ou equivalentes) com muitas views/likes.
+2. Brutos longos só com **≥ 1M de views** (`viitu.tema brutos` já filtra). Nunca reportagem antiga,
+   entrevista ou vídeo com poucas views.
+3. Clipes de TikTok/Reddit: só os que viralizaram (centenas de milhares de likes/upvotes).
+
 ## Pedir bruto ao dono: SÓ DEPOIS DE VERIFICAR
 - Nunca pedir para baixar um vídeo escolhido só pelo título. Antes, rodar
   `python3 -m viitu.assistir achar <link> "<cenas necessárias>"` e só pedir se tiver trechos bons

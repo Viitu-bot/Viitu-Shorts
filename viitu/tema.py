@@ -147,8 +147,9 @@ def lacuna(termo_pt: str, dias: int) -> None:
             print(f"  -- {_fmt(v['views']):>6} | {v['canal'][:22]} | {v['titulo'][:70]}")
 
 
-def brutos(termo: str, dias: int) -> None:
-    """Procura vídeos LONGOS (4–60 min) sobre o tema: os 'brutos' de onde saem vários Shorts."""
+def brutos(termo: str, dias: int, min_views: int = 1_000_000) -> None:
+    """Procura vídeos LONGOS (4–60 min) sobre o tema: os 'brutos' de onde saem vários Shorts.
+    Só lista material que já provou que prende (>= min_views). Bruto com poucas views não serve."""
     vistos = []
     for dur in ("medium", "long"):
         depois = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=dias)).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -159,8 +160,11 @@ def brutos(termo: str, dias: int) -> None:
             for v in yt._get("videos", 1, part="snippet,statistics,contentDetails", id=",".join(ids))["items"]:
                 vistos.append((int(v["statistics"].get("viewCount", 0)), yt.duracao_segundos(v["contentDetails"]["duration"]),
                                v["snippet"]["channelTitle"], v["snippet"]["publishedAt"][:10], v["snippet"]["title"], v["id"]))
+    vistos = [v for v in vistos if v[0] >= min_views]
     vistos.sort(reverse=True)
-    print(f"Brutos para '{termo}' (cota usada: {yt.cota_usada})")
+    print(f"Brutos para '{termo}' com >= {_fmt(min_views)} views (cota usada: {yt.cota_usada})")
+    if not vistos:
+        print("  nenhum bruto validado: use a ORIGEM das imagens do viral (viitu.assistir) ou clipes virais do TikTok/Reddit")
     for views, dur, canal, data, tit, vid in vistos[:12]:
         print(f"  {_fmt(views):>6} | {dur // 60:>3} min | {data} | {canal[:24]:<24} | {tit[:60]} | https://youtu.be/{vid}")
 
