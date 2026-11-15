@@ -38,6 +38,15 @@ movimento. Evite clipes com tag "ai generated" (exigem aviso de conteúdo sinté
 (sujeito; ou centro entre dois sujeitos em cena de ação; ou a parte descrita em `sujeito`) ~5x/s
 e faz um pan suave com keyframes a cada 0,25 s. `"seguir": false` desliga.
 
+## 1b. Procurar BRUTOS (vídeos longos do tema)
+Um vídeo longo (documentário, processo de fábrica) rende início, meio e fim de verdade, e vários
+Shorts. Liste candidatos com:
+```
+python3 -m viitu.tema brutos "<tema em inglês, ex.: vampire bat documentary>"
+```
+A nuvem não baixa do YouTube: o usuário baixa/grava a tela das cenas e envia no chat ou por Drive.
+Material de terceiros entra com narração transformadora + crédito na descrição.
+
 ## 2. Buscar e ANALISAR candidatos (nunca escolher por miniatura)
 ```
 python3 -m viitu.visao candidatos "goat eating" "cat stalking" ... -n 6 --saida <scratchpad>/cand

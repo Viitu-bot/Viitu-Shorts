@@ -113,6 +113,24 @@ def lacuna(termo_pt: str, dias: int) -> None:
             print(f"  -- {_fmt(v['views']):>6} | {v['canal'][:22]} | {v['titulo'][:70]}")
 
 
+def brutos(termo: str, dias: int) -> None:
+    """Procura vídeos LONGOS (4–60 min) sobre o tema: os 'brutos' de onde saem vários Shorts."""
+    vistos = []
+    for dur in ("medium", "long"):
+        depois = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=dias)).strftime("%Y-%m-%dT%H:%M:%SZ")
+        d = yt._get("search", 100, part="id", q=termo, type="video", order="viewCount",
+                    videoDuration=dur, publishedAfter=depois, maxResults=10)
+        ids = [i["id"]["videoId"] for i in d.get("items", [])]
+        if ids:
+            for v in yt._get("videos", 1, part="snippet,statistics,contentDetails", id=",".join(ids))["items"]:
+                vistos.append((int(v["statistics"].get("viewCount", 0)), yt.duracao_segundos(v["contentDetails"]["duration"]),
+                               v["snippet"]["channelTitle"], v["snippet"]["publishedAt"][:10], v["snippet"]["title"], v["id"]))
+    vistos.sort(reverse=True)
+    print(f"Brutos para '{termo}' (cota usada: {yt.cota_usada})")
+    for views, dur, canal, data, tit, vid in vistos[:12]:
+        print(f"  {_fmt(views):>6} | {dur // 60:>3} min | {data} | {canal[:24]:<24} | {tit[:60]} | https://youtu.be/{vid}")
+
+
 def main() -> None:
     p = argparse.ArgumentParser()
     sub = p.add_subparsers(dest="modo", required=True)
@@ -124,9 +142,14 @@ def main() -> None:
     lac = sub.add_parser("lacuna")
     lac.add_argument("termo")
     lac.add_argument("--dias", type=int, default=730)
+    br = sub.add_parser("brutos")
+    br.add_argument("termo")
+    br.add_argument("--dias", type=int, default=2000)
     a = p.parse_args()
     if a.modo == "candidatos":
         candidatos(a.dia, a.dias, a.extra, a.min_views)
+    elif a.modo == "brutos":
+        brutos(a.termo, a.dias)
     else:
         lacuna(a.termo, a.dias)
 
