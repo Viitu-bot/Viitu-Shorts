@@ -1,0 +1,176 @@
+{
+ "duracao_s": 31,
+ "gancho": {
+  "frase_falada": "Essa é uma das fábricas de doces mais limpas da Coreia do Sul",
+  "o_que_aparece_no_frame_0": "Maçarico dando acabamento brilhante em um pirulito com desenho de carinha, com uma seta vermelha apontando",
+  "texto_na_tela": "uma",
+  "por_que_prende": "Usa um estímulo visual altamente satisfatório (maçarico derretendo e limpando a superfície opaca do doce instantaneamente) combinado com a seta vermelha que direciona a atenção e uma afirmação superlativa sobre higiene e certificação."
+ },
+ "estrutura": [
+  {
+   "inicio": "00:00",
+   "fim": "00:05",
+   "funcao": "gancho",
+   "narracao": "Essa é uma das fábricas de doces mais limpas da Coreia do Sul, reconhecida pela Organização Mundial da Saúde.",
+   "imagem": "Maçarico dando brilho ao pirulito, separação manual dos pirulitos acabados com luvas cirúrgicas em ambiente estéril."
+  },
+  {
+   "inicio": "00:05",
+   "fim": "00:11",
+   "funcao": "virada",
+   "narracao": "E a parte mais interessante: esses doces não têm açúcar nenhum. O ingrediente secreto é isomalte,",
+   "imagem": "Moldes de pirulitos sendo desenformados, mostrando a transparência e cores esféricas perfeitas."
+  },
+  {
+   "inicio": "00:11",
+   "fim": "00:23",
+   "funcao": "explicacao",
+   "narracao": "um substituto com a mesma doçura, mas que não aumenta o açúcar no sangue. Eles derramam numa panela, aquecem até virar calda, despejam nos moldes e adicionam decorações feitas de papel comestível de xilitol.",
+   "imagem": "Processo industrial: despejando a calda quente transparente nos moldes de silicone azul, inserindo palitos e aplicando os papéis de estampa comestível."
+  },
+  {
+   "inicio": "00:23",
+   "fim": "00:29",
+   "funcao": "desmistificacao",
+   "narracao": "Cada peça passa por controle de qualidade antes de sair. Tudo isso por 10 dólares a sacola com seis doces.",
+   "imagem": "Trabalhadores uniformizados selecionando os pirulitos, corte de rebarbas com espátula e montagem da embalagem final para venda."
+  },
+  {
+   "inicio": "00:29",
+   "fim": "00:31",
+   "funcao": "cta",
+   "narracao": "Você experimentaria?",
+   "imagem": "Retorno ao maçarico atuando sobre a superfície rugosa de um pirulito esférico."
+  }
+ ],
+ "cortes": [
+  {
+   "tempo": "00:01",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:03",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:04",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:05",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:06",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:08",
+   "tipo": "zoom"
+  },
+  {
+   "tempo": "00:09",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:12",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:13",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:15",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:16",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:18",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:20",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:21",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:22",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:24",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:26",
+   "tipo": "seco"
+  },
+  {
+   "tempo": "00:29",
+   "tipo": "seco"
+  }
+ ],
+ "efeitos_visuais": [
+  {
+   "tempo": "00:00",
+   "efeito": "seta animada",
+   "em_qual_palavra": "Essa",
+   "para_que": "Apontar diretamente para a ação hipnotizante do maçarico derretendo a camada fosca do doce"
+  },
+  {
+   "tempo": "00:00",
+   "efeito": "texto animado",
+   "em_qual_palavra": "todas",
+   "para_que": "Legenda sincronizada dinâmica pulando no centro inferior para retenção"
+  },
+  {
+   "tempo": "00:08",
+   "efeito": "zoom rápido",
+   "em_qual_palavra": "nenhum",
+   "para_que": "Dar ênfase visual aos pirulitos translúcidos perfeitos no molde"
+  }
+ ],
+ "efeitos_sonoros": [
+  {
+   "tempo": "00:00",
+   "som": "chiado de maçarico / fogo",
+   "momento": "No exato instante em que o fogo atinge o pirulito"
+  },
+  {
+   "tempo": "00:06",
+   "som": "woosh suave",
+   "momento": "Na troca de moldes mecânicos"
+  },
+  {
+   "tempo": "00:24",
+   "som": "estalo / raspagem metálica",
+   "momento": "Ao cortar as rebarbas de açúcar com a espátula"
+  }
+ ],
+ "musica": "Trilha instrumental rítmica e moderna em volume médio-baixo, mantendo a voz da locução bem destacada e clara.",
+ "legenda": {
+  "estilo": "Palavra por palavra grande em fonte sem serifa preta com contorno/sombra suave",
+  "posicao": "Centro-inferior",
+  "palavras_por_vez": 1,
+  "cores": "Texto verde-limão com contorno escuro e destaque em branco conforme fala"
+ },
+ "ritmo": {
+  "segundos_medios_por_cena": 1.7,
+  "observacao": "Ritmo muito acelerado de corte (processo fabril condensado), mantendo a atenção constante sem perder a lógica sequencial da fabricação."
+ },
+ "cta": "Pergunta direta de engajamento no final: 'Você experimentaria?' para estimular comentários.",
+ "loop": "O vídeo termina mostrando a mesma ação de queima com maçarico do início, criando um ciclo visual contínuo e orgânico.",
+ "origem_das_imagens": "Imagens captadas de documentário de fábrica/processo industrial de confeitaria sul-coreana (estilo canais do YouTube 'Yummyboy' ou 'Food Kingdom'), compiladas e reeditadas.",
+ "licoes_para_copiar": [
+  "Comece com um clipe visualmente satisfatório ('oddly satisfying') no primeiro segundo acompanhado de seta para fixar o olhar.",
+  "Adicione um elemento curioso contra-intuitivo cedo (ex: 'doce sem açúcar que não afeta a glicose').",
+  "Mostre a cadeia completa de produção em cortes curtos de menos de 2 segundos para dar dinamismo a um processo industrial."
+ ]
+}

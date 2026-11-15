@@ -34,6 +34,15 @@ Clipes do usuário chegam por **link do Google Drive** (YouTube e Reddit bloquei
 3. **Clipes e edição:** seguram quem ficou. Clipe de terceiros (ex.: NatGeo) entra como PROVA no
    meio, não no gancho; o gancho usa imagem livre sempre que possível.
 
+## Padrões medidos nos canais de referência (raio-X pelo Gemini, nov/2026 — `pesquisa/raiox/`)
+- **Seta vermelha no frame 0** apontando para o sujeito: presente nos 3 vídeos analisados (A vida é
+  uma maravilha, Polaco sem Polônia, Andre Shorts). Círculo/seta de novo quando aparece um detalhe.
+- Gancho = afirmação contraintuitiva + imagem satisfatória/estranha no 1º segundo.
+- Ritmo: 1,7 a 2,9 s por cena. Legenda 1–2 palavras, centro-inferior, amarelo/verde com contorno.
+- Final com cena satisfatória; CTA simples ("Você experimentaria?") ou lúdico que puxa like
+  ("toque duas vezes na tela que aparece um peixinho").
+- Imagens: compilação de TikTok/Douyin/Instagram ou documentário de fábrica (um bruto).
+
 ## Protocolo HISA (roteiro)
 - **REGRA DE DURAÇÃO (definitiva, nov/2026). Só existem 2 formatos:**
   - **LONGO = 45 a 60 s** (110–150 palavras). **É o padrão.** Exige 1 clipe-âncora + 2 a 4 clipes reais
@@ -101,5 +110,7 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
   ElevenLabs (sound-generation e music), livres de direitos.
 
 ## Estrutura do repositório
+- `viitu/assistir.py`: Gemini assiste vídeo do YouTube pelo link (`dissecar`, `achar "<momento>"`,
+  `perguntar`). Grátis (GEMINI_API_KEY no .env). Use para referências e para achar o minuto exato nos brutos.
 - `radar/radar.py`: mede outliers de canais via yt-dlp (só funciona fora da nuvem)
 - `pesquisa/`: protocolo de mineração e o Gem antigo do Gemini (descontinuado para números)
