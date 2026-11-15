@@ -76,7 +76,7 @@ const SetaMarca: React.FC<{marca: Marca}> = ({marca}) => {
   const ang = lado === -1 ? 225 : 315;                   // graus: aponta para baixo, na direção do alvo
   const entra = spring({frame: local, fps, config: {damping: 13, stiffness: 160}});
   const cutuca = local > 10 ? Math.sin(((local - 10) / fps) * Math.PI * 4) * 12 : 0;
-  const dist = r + 40 + interpolate(entra, [0, 1], [260, 0]) + cutuca;
+  const dist = r * 0.6 + 30 + interpolate(entra, [0, 1], [260, 0]) + cutuca;
   const rad = (ang * Math.PI) / 180;
   const px = x - Math.cos(rad) * dist;
   const py = y + Math.sin(rad) * dist;
@@ -84,7 +84,7 @@ const SetaMarca: React.FC<{marca: Marca}> = ({marca}) => {
   const forma = 'M0,-20 L130,-20 L130,-52 L210,0 L130,52 L130,20 L0,20 Z';   // seta apontando para +x
   return (
     <svg width={1080} height={1920} style={{position: 'absolute', inset: 0, overflow: 'visible', opacity: saida * entra}}>
-      <g transform={`translate(${px},${py}) rotate(${-ang}) translate(-210,0)`}>
+      <g transform={`translate(${px},${py}) rotate(${-ang}) scale(1.45) translate(-210,0)`}>
         <path d={forma} fill="rgba(0,0,0,0.45)" transform="translate(4,6)" />
         <path d={forma} fill="#FF1E1E" stroke="white" strokeWidth={8} strokeLinejoin="round" />
       </g>

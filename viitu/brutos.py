@@ -61,7 +61,10 @@ def baixar(projeto: str) -> None:
     destino.mkdir(parents=True, exist_ok=True)
     CACHE.mkdir(parents=True, exist_ok=True)
     # cada vídeo tem a sua subpasta: brutos/<projeto>/ (arquivos soltos na raiz são ignorados)
-    novos = [it for it in _arquivos() if it.id not in reg and projeto in Path(it.path).parts]
+    itens = [it for it in _arquivos() if it.id not in reg]
+    novos = [it for it in itens if projeto in Path(it.path).parts]
+    if not novos:      # dono subiu direto na raiz de brutos/: aceita os arquivos novos de lá
+        novos = [it for it in itens if len(Path(it.path).parts) <= 2]
     if not novos:
         print(f"Nenhum arquivo novo em brutos/{projeto}/.")
         return
