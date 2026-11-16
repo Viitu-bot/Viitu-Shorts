@@ -417,6 +417,19 @@ def renderizar_cena(s: dict, pasta: Path, idx: int) -> Path:
             # clipe já 9:16 (TikTok/Reels): sem câmera virtual e sem zoom forte — zoom amplia a marca
             # d'água ("logo estourado") e borra vídeo de baixa resolução
             s.setdefault("foco", [0.5, 0.5]); s.setdefault("alvo", [0.5, 0.5]); s.setdefault("zoom", [1.0, 1.04])
+        # TRIAGEM: a cena tem que caber num trecho aprovado do clipe (sem tela de app, preto, corte interno)
+        tri = pasta / "clipes" / "triagem.json"
+        if tri.exists():
+            t = json.loads(tri.read_text(encoding="utf-8")).get(s["clipe"])
+            uso = n / FPS * float(s.get("velocidade", 1.0))
+            if t and not any(a <= s.get("inicio", 0) and s.get("inicio", 0) + uso <= b + 0.01 for a, b in t["trechos_utilizaveis"]):
+                cabem = [(a, b) for a, b in t["trechos_utilizaveis"] if b - a >= uso]
+                if not cabem:
+                    raise SystemExit(f"Cena '{s['em']}': nenhum trecho aprovado de {s['clipe']} tem {uso:.1f}s — escolha outro clipe")
+                a, b = min(cabem, key=lambda ab: abs(min(max(s.get('inicio', 0), ab[0]), ab[1] - uso) - s.get('inicio', 0)))
+                novo = min(max(s.get("inicio", 0), a), b - uso)
+                print(f"    triagem: cena '{s['em']}' movida de {s.get('inicio', 0):.2f}s para {novo:.2f}s (trecho aprovado {a}–{b})")
+                s["inicio"] = round(novo, 2)
         if True:
             # nunca usar a tela final (logo + @) de TikTok/Reels: detectada no próprio clipe
             limite = fim_util(clipe)

@@ -19,7 +19,10 @@ pelo chat. O vídeo final segue sendo entregue no chat (arquivos grandes não pa
    ```
    Se der erro de pasta não configurada, peça ao usuário o link da pasta e rode
    `python3 -m viitu.brutos configurar <link>`.
-3. Para cada arquivo novo: `ffprobe` (duração, resolução, áudio) e uma prancha com
+3. **Triagem obrigatória:** `python3 -m viitu.triagem <projeto>` → trechos utilizáveis de cada clipe
+   (sem tela do app, preto, desfoque ou corte interno) em `clipes/triagem.json`. Clipe REPROVADO não
+   entra. BAIXA RESOLUÇÃO (< 720p): usar só se não houver alternativa e avisar o dono.
+4. Para cada arquivo novo: `ffprobe` (duração, resolução, áudio) e uma prancha com
    `python3 -m viitu.visao clipe <arquivo>` (ou quadros com ffmpeg) para ver o conteúdo.
 4. Responda curto: o que chegou, o que tem de bom (com segundos), o que ainda falta, e siga para a
    montagem das cenas.

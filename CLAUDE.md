@@ -121,6 +121,18 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
 4. Ferramenta: `python3 -m viitu.contraste <proj>` (relatório) / `--aplicar` (espelha onde a direção
    repete). Nunca espelhar imagem com texto/logo/marca d'água (`"texto_na_imagem": true`).
 
+## Tema que já existe em PT-BR: outro ÂNGULO
+- Se a lacuna mostrar vídeos em português do mesmo tema (mesmo fracos), rodar
+  `python3 -m viitu.tema angulo "<tema>" "<busca em PT>"` e escolher um ângulo que nenhum deles usou
+  (outro porquê, consequência, conexão com o Brasil, mito desmentido, número surpreendente).
+
+## TRIAGEM DE CLIPES (obrigatória, antes de escolher cenas)
+- Todo clipe que entra roda `python3 -m viitu.triagem <proj>`: trechos utilizáveis (sem tela do app,
+  preto, desfoque ou corte interno), resolução e nota. O editor recusa/move cena fora de trecho aprovado.
+- Clipe REPROVADO não entra. < 720p = BAIXA RESOLUÇÃO: usar só sem alternativa.
+- Preferir originais sem tela de app: Reddit (upload original), arquivo enviado pelo criador com
+  permissão, Pixabay/Commons; TikTok baixado pelo app vem em 576p com logo e tela final.
+
 ## De onde vêm as IMAGENS (mesma lógica do tema: material validado)
 1. Comece pelo **vídeo viral que validou o tema**: `viitu.assistir perguntar <link> "cenas, origem, marcas d'água"`.
    Descubra de onde vieram as imagens dele e busque esses ORIGINAIS (ou equivalentes) com muitas views/likes.

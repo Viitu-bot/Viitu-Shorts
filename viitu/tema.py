@@ -169,6 +169,21 @@ def brutos(termo: str, dias: int, min_views: int = 1_000_000) -> None:
         print(f"  {_fmt(views):>6} | {dur // 60:>3} min | {data} | {canal[:24]:<24} | {tit[:60]} | https://youtu.be/{vid}")
 
 
+def angulo(tema: str, termo_pt: str) -> None:
+    """Se o tema já existe em PT-BR, propõe um ÂNGULO diferente dos vídeos brasileiros existentes."""
+    from viitu.logica_temas import _gemini_texto
+    ids = yt.buscar_ids(termo_pt, dias=730, maximo=15, idioma="pt", regiao="BR")
+    vids = sorted(yt.detalhes_videos(ids), key=lambda v: -v["views"])[:8]
+    lista = "\n".join(f"- {v['titulo']} ({_fmt(v['views'])})" for v in vids)
+    print(f"Vídeos em PT sobre '{termo_pt}':\n{lista or '- nenhum'}")
+    prompt = (f"Tema de um Short de curiosidade validado lá fora: '{tema}'. Já existem estes vídeos em português:\n{lista}\n"
+              "Proponha 3 ÂNGULOS diferentes dos que já existem (outro porquê, outra consequência, conexão com o Brasil, "
+              "um mito desmentido, um número/escala surpreendente). Para cada um: gancho de até 12 palavras e o que o "
+              "torna diferente dos vídeos existentes. Responda só JSON {\"angulos\": [{\"gancho\": ..., \"diferenca\": ...}]}.")
+    for a in json.loads(_gemini_texto(prompt))["angulos"]:
+        print(f"  → {a['gancho']}  |  {a['diferenca']}")
+
+
 def main() -> None:
     p = argparse.ArgumentParser()
     sub = p.add_subparsers(dest="modo", required=True)
@@ -180,12 +195,17 @@ def main() -> None:
     lac = sub.add_parser("lacuna")
     lac.add_argument("termo")
     lac.add_argument("--dias", type=int, default=730)
+    an = sub.add_parser("angulo")
+    an.add_argument("tema")
+    an.add_argument("termo_pt")
     br = sub.add_parser("brutos")
     br.add_argument("termo")
     br.add_argument("--dias", type=int, default=2000)
     a = p.parse_args()
     if a.modo == "candidatos":
         candidatos(a.dia, a.dias, a.extra, a.min_views)
+    elif a.modo == "angulo":
+        angulo(a.tema, a.termo_pt)
     elif a.modo == "brutos":
         brutos(a.termo, a.dias)
     else:
