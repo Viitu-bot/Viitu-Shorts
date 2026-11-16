@@ -1,0 +1,169 @@
+{
+ "_versao": "v1: clipes virais do TikTok (crédito na descrição, não espelhar) + Pixabay; contraste na escolha",
+ "cenas": [
+  {
+   "em": "Esses bombeiros",
+   "clipe": "tiktok_1.mp4",
+   "inicio": 10.5,
+   "texto_na_imagem": true,
+   "esperado": "a person",
+   "seta_auto": {
+    "texto": "a firefighter",
+    "atraso": 0.0
+   },
+   "_funcao": "gancho: bombeiro com tocha à noite + seta"
+  },
+  {
+   "em": "de propósito",
+   "clipe": "tiktok_2.mp4",
+   "inicio": 3.0,
+   "texto_na_imagem": true,
+   "esperado": "a red can",
+   "_contraste": "POV close"
+  },
+  {
+   "em": "A maioria acha",
+   "clipe": "pixabay_80269.mp4",
+   "inicio": 4.2,
+   "_funcao": "o 'mito': avião jogando água",
+   "_contraste": "aberto, dia",
+   "revisao": "manual"
+  },
+  {
+   "em": "Mas quando um incêndio",
+   "clipe": "pixabay_44186.mp4",
+   "inicio": 1.0,
+   "esperado": "smoke",
+   "_contraste": "parede de fumaça, equipe pequena"
+  },
+  {
+   "em": "é com mais fogo",
+   "clipe": "tiktok_4.mp4",
+   "inicio": 14.8,
+   "texto_na_imagem": true,
+   "esperado": "fire",
+   "_contraste": "noite, close no fogo"
+  },
+  {
+   "em": "Eles queimam uma faixa",
+   "clipe": "tiktok_4.mp4",
+   "inicio": 10.2,
+   "texto_na_imagem": true,
+   "esperado": "fire"
+  },
+  {
+   "em": "Quando as chamas chegam",
+   "clipe": "pixabay_148594.mp4",
+   "inicio": 6.0,
+   "esperado": "fire"
+  },
+  {
+   "em": "e morrem sozinhas",
+   "clipe": "pixabay_358803.mp4",
+   "inicio": 2.0,
+   "esperado": "trees",
+   "_contraste": "cinza, sem fogo"
+  },
+  {
+   "em": "Mas tem um porém",
+   "clipe": "tiktok_3.mp4",
+   "inicio": 0.3,
+   "texto_na_imagem": true,
+   "esperado": "fire",
+   "_funcao": "virada: círculos de fogo",
+   "revisao": "manual"
+  },
+  {
+   "em": "E os bombeiros usam",
+   "clipe": "pixabay_44186.mp4",
+   "inicio": 12.0,
+   "texto_na_imagem": false,
+   "esperado": "a person",
+   "revisao": "manual",
+   "_contraste": "equipe pequena sob a fumaça gigante (escala proposital)"
+  },
+  {
+   "em": "o próprio incêndio puxa",
+   "clipe": "tiktok_4.mp4",
+   "inicio": 0.8,
+   "texto_na_imagem": true,
+   "esperado": "fire",
+   "revisao": "manual"
+  },
+  {
+   "em": "e os dois se apagam",
+   "clipe": "tiktok_3.mp4",
+   "inicio": 6.5,
+   "texto_na_imagem": true,
+   "esperado": "fire",
+   "revisao": "manual"
+  },
+  {
+   "em": "Só que, se o vento",
+   "clipe": "tiktok_4.mp4",
+   "inicio": 17.8,
+   "texto_na_imagem": true,
+   "esperado": "a burning tree",
+   "_funcao": "perigo: árvore em chamas"
+  },
+  {
+   "em": "Por isso só equipes",
+   "clipe": "tiktok_1.mp4",
+   "inicio": 0.3,
+   "texto_na_imagem": true,
+   "esperado": "a person",
+   "_contraste": "rostos da equipe, de dia"
+  },
+  {
+   "em": "Aqui no Brasil",
+   "clipe": "tiktok_2.mp4",
+   "inicio": 9.8,
+   "texto_na_imagem": true,
+   "esperado": "fire",
+   "_funcao": "capim dourado (parece cerrado)",
+   "revisao": "manual"
+  },
+  {
+   "em": "Você teria coragem",
+   "clipe": "tiktok_4.mp4",
+   "inicio": 6.5,
+   "texto_na_imagem": true,
+   "esperado": "a person",
+   "_funcao": "silhueta contra o fogo"
+  },
+  {
+   "em": "Comenta",
+   "clipe": "tiktok_2.mp4",
+   "inicio": 6.0,
+   "texto_na_imagem": true,
+   "esperado": "fire"
+  },
+  {
+   "em": "E da próxima vez",
+   "clipe": "tiktok_1.mp4",
+   "inicio": 8.0,
+   "texto_na_imagem": true,
+   "esperado": "a person",
+   "_funcao": "loop: igual ao frame 0"
+  }
+ ],
+ "impacto_em": [
+  "Mas tem um porém"
+ ],
+ "destaques": [
+  "propósito",
+  "apaga",
+  "gigante",
+  "fogo",
+  "sozinhas",
+  "porém",
+  "contrafogo",
+  "vento",
+  "Brasil",
+  "coragem"
+ ],
+ "cta": {
+  "em": "Comenta",
+  "texto": "💬 COMENTA"
+ }
+}

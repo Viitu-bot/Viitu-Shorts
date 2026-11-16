@@ -73,12 +73,15 @@ def revisar(projeto: str) -> bool:
         ult = i
         inicios.append(0 if not inicios else round(palavras[i]["inicio"] * FPS))
 
-    usos = Counter(c["clipe"] for c in cenas)
-    ancora = usos.most_common(1)[0][0] if usos else None
-    for clipe, n in usos.items():
-        lim = MAX_ANCORA if clipe == ancora else MAX_OUTROS
-        if n > lim:
-            problemas.append(f"REPETIÇÃO: {clipe} aparece em {n} cenas (máximo {lim})")
+    # repetição = o MESMO trecho do mesmo clipe (inícios a menos de 3 s); trechos diferentes de um
+    # clipe rico não são repetição. Exceção: a última cena pode repetir a primeira (loop).
+    vistos = []
+    for j, c in enumerate(cenas):
+        t = c.get("inicio", 0)
+        rep = [k for k, (cl, tt) in enumerate(vistos) if cl == c["clipe"] and abs(tt - t) < 3]
+        if rep and not (j == len(cenas) - 1 and rep == [0]):
+            problemas.append(f"REPETIÇÃO: cena '{c['em']}' repete o trecho {c['clipe']}@{t}s")
+        vistos.append((c["clipe"], t))
 
     for k in range(len(cortes) - 1):
         f0, f1 = cortes[k], cortes[k + 1]

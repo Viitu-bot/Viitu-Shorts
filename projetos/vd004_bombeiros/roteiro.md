@@ -4,7 +4,7 @@ Validação: "Why do firefighters set fires?" (Curious cat, jan/2025) 27,9 mi �
 Categoria/gatilho: perigo + motivo oculto + mito desmentido ("bombeiro só apaga fogo").
 Lacuna PT-BR: fraca (máx. 143k, 2025).
 
-## RASCUNHO PARA APROVAÇÃO
+## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs)
 Esses bombeiros estão colocando fogo na floresta... de propósito.
 A maioria acha que bombeiro só apaga fogo. Mas quando um incêndio gigante vem vindo, às vezes o único jeito de parar o fogo... é com mais fogo.
 Eles queimam uma faixa de mato bem na frente do incêndio. Quando as chamas chegam ali, não encontram mais nada pra queimar... e morrem sozinhas.
@@ -13,6 +13,9 @@ Só que, se o vento virar, o contrafogo vira um segundo incêndio. Por isso só 
 Aqui no Brasil, brigadistas do Cerrado também usam fogo controlado pra evitar incêndios piores.
 Você teria coragem de acender o fogo, sabendo que um erro queima tudo? Comenta.
 E da próxima vez que vir fogo na floresta, lembra: talvez esses bombeiros...
+
+## Publicação (descrição)
+Créditos das imagens (TikTok): @mrbiscuitboy95 · @rosebudz_7 · @arvinhrushka · @devincorral2
 
 ## Evidências
 - Contrafogo (backfire/backburn): queimar o combustível à frente da frente de fogo [CONFIRMADO, NWCG/US Forest Service]
