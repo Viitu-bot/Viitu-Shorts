@@ -1,0 +1,98 @@
+{
+ "canal": "A vida é uma maravilha",
+ "id": "Eq_9SOjqRv0",
+ "titulo": "Bebês reborn incrivelmente realistas! 😱👶",
+ "views": 11180204,
+ "dur": 38,
+ "data": "2026-07-16",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -15,
+   "musica_nas_pausas_db": -10,
+   "whoosh_db": -6,
+   "pop_db": -8,
+   "boom_db": -12,
+   "riser_db": -10,
+   "foley_ambiencia_db": -20,
+   "foley_detalhe_db": -5,
+   "obs": "Foley de pintura e corte é bem destacado para imersão ASMR."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.2,
+   "cena_mais_longa_s": 2.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Cabeça de boneco envolta em plástico filme.",
+   "texto_na_tela": "alguns",
+   "seta_ou_circulo": true,
+   "movimento": "Zoom in rápido",
+   "frase": "Alguns dos bebês que você vê em filmes nunca foram reais."
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "Vermelha",
+    "estilo": "Sólida com contorno preto",
+    "quantas": 1,
+    "quando": "00:00"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": []
+  },
+  "legenda": {
+   "palavras_por_vez": 1,
+   "fonte": "grossa",
+   "cor_base": "Branco",
+   "cor_destaque": "Ciano",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [],
+  "transicoes": {
+   "tipos": [
+    "corte seco",
+    "zoom"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "Blur de fundo em close-ups",
+   "Color grading quente"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "TikTok/Douyin",
+   "marca_dagua_visivel": false,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "00:00",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "nenhum",
+   "loop": "A última palavra 'existe' conecta com o início da frase.",
+   "ultima_cena": "Mão acariciando a cabeça do boneco realista."
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Foley ASMR detalhado dos processos manuais.",
+   "Curiosidade visual pelo hiper-realismo perturbador.",
+   "Gancho emocional final sobre mães em luto."
+  ]
+ }
+}

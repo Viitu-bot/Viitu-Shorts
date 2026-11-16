@@ -1,0 +1,100 @@
+{
+ "canal": "Andre Shorts Br",
+ "id": "5VT-t-BTQpM",
+ "titulo": "Esse truque na praia vai SALVAR seus pertences! 😮🏖",
+ "views": 4629381,
+ "dur": 23,
+ "data": "2026-10-28",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -15,
+   "musica_nas_pausas_db": -5,
+   "whoosh_db": 0,
+   "pop_db": 0,
+   "boom_db": 0,
+   "riser_db": 0,
+   "foley_ambiencia_db": -10,
+   "foley_detalhe_db": -5,
+   "obs": "A música é de fundo, mas sobe de volume nos momentos de transição e pausas na fala."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 2.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Uma toalha de praia sendo estendida na areia com uma seta vermelha apontando para ela.",
+   "texto_na_tela": "Esta garota mostrou um truque que vai ser muito útil na praia",
+   "seta_ou_circulo": true,
+   "movimento": "Câmera na mão, levemente instável, acompanhando a ação.",
+   "frase": "Esta garota mostrou um truque que vai ser muito útil na praia"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": false,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "grossa, estilo desenho",
+    "quantas": 1,
+    "quando": "00:00.000"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": [
+    "nenhum"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 3,
+   "fonte": "grossa",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "nenhum"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "nenhum"
+  ],
+  "cor": "natural",
+  "imagens": {
+   "origem": "próprias",
+   "marca_dagua_visivel": false,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "00:00.000",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "Dá like",
+   "loop": "O vídeo termina abruptamente, sem emenda fluida.",
+   "ultima_cena": "A pessoa terminando de enterrar a toalha e pedindo o like."
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Legendas dinâmicas e rápidas",
+   "Cortes secos frequentes que mantêm o ritmo",
+   "Promessa de um 'truque útil' logo no início"
+  ]
+ }
+}

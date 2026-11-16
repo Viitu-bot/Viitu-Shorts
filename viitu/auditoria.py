@@ -41,8 +41,7 @@ def medir(projeto: str, video: str) -> list[str]:
     mix = plano.get("mix", {"musica_fala": 0.11, "musica_pausa": 0.2})
     if voz and mus:
         dif = voz - (mus + 20 * np.log10(mix["musica_fala"]))
-        A.append(f"{'✅' if 9 <= dif <= 15 else '⚠️'} Música {dif:.0f} dB abaixo da voz sob a fala "
-                 f"(alvo 9–15 dB: mais que isso some, menos atrapalha)")
+        A.append(f"ℹ️ Música {dif:.0f} dB abaixo da voz sob a fala (definido pela especificação, não por esta medição)")
     # efeitos de função sobre a fala (regra do dono: nunca atropelar a narração)
     pj = pasta / "palavras.json"
     if pj.exists():

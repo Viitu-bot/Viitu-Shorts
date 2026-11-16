@@ -1,0 +1,102 @@
+{
+ "canal": "GeneralTV",
+ "id": "IHriNx1_AJQ",
+ "titulo": "Por que motos grandes NÃO USAM corrente? 🏍️",
+ "views": 9763196,
+ "dur": 22,
+ "data": "2026-09-09",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -4,
+   "pop_db": -6,
+   "boom_db": -2,
+   "riser_db": -8,
+   "foley_ambiencia_db": -12,
+   "foley_detalhe_db": -4,
+   "obs": "A voz é o elemento central, com música de fundo dinâmica que sobe nos cortes e pausas."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.2,
+   "cena_mais_longa_s": 2.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Moto em dinamômetro com roda traseira girando",
+   "texto_na_tela": "Por que as motos mais brutas do mundo não usam corrente na roda traseira?",
+   "seta_ou_circulo": true,
+   "movimento": "Zoom in rápido",
+   "frase": "Por que as motos mais brutas do mundo não usam corrente na roda traseira?"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": true
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "desenhada à mão",
+    "quantas": 3,
+    "quando": "00:00, 00:04, 00:17"
+   },
+   "circulo": {
+    "cor": "vermelho",
+    "quantos": 3
+   },
+   "outros": [
+    "setas indicativas de movimento"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 3,
+   "fonte": "grossa",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "GENERALTV (marca d'água)"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco",
+    "zoom"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "brilho nas luzes de freio",
+   "flash nos cortes"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "TikTok/Douyin",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "estilo": "LEGO técnico",
+   "inicio": "00:12",
+   "duracao_s": 1,
+   "o_que_explica": "Funcionamento do eixo de transmissão"
+  },
+  "final": {
+   "cta": "incerto",
+   "loop": "o vídeo termina abruptamente, não emenda",
+   "ultima_cena": "Moto em showroom"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Cortes rápidos e dinâmicos",
+   "Uso de elementos visuais (setas/círculos) para guiar o olhar",
+   "Alternância entre imagens reais e animação explicativa"
+  ]
+ }
+}

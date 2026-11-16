@@ -182,6 +182,10 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
   (marcar `"revisao": "manual"` na cena quando o detector não serve, ex.: close extremo).
 
 ## EDIÇÃO PROFISSIONAL (memória obrigatória: `edicao/manual_edicao.md`)
+- **ESPECIFICAÇÃO FIXA** `edicao/especificacao.json` (da engenharia reversa de 35 Shorts do nicho): volume de cada
+  camada em dB relativo à voz (música −18 na fala / −6 nas pausas, whoosh −3, pop −5, boom 0, ambiência −12, ASMR −5)
+  e regras visuais (1,5 s/cena, corte seco + whoosh, punch, saturação). Mixagem é POR REGRA (`viitu/mix.py` normaliza
+  tudo à referência da voz e aplica a tabela), não por medição depois. Mudar só no JSON.
 - Antes de editar qualquer vídeo, ler o manual e passar no checklist da seção 8. Objetivo: IMERSÃO + retenção.
 - Som em 6 camadas: voz · trilha (ducking) · ambiência contínua · foley do que aparece · efeito pontual na ação ·
   efeitos de edição. Técnicas já automáticas: corte em J/L (som entra antes do corte), pan estéreo pelo lado do
@@ -200,7 +204,7 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
 - Pipeline: `python3 -m viitu.editar <proj> --remotion` → `cd remotion && npm run render`.
 - Identidade: flash branco→amarelo nos primeiros 0,2 s + "ding" no frame 0. Círculo vermelho perfeito
   que se desenha e segue o objeto, com "pop". Woosh variado nos cortes. Riser + impacto + flash +
-  tremida em "impacto_em". Botão INSCREVA-SE no fim. Trilha 9–15 dB abaixo da voz (`mix` no plano; auditoria mede).
+  tremida em "impacto_em". Botão INSCREVA-SE no fim. Níveis de som pela `especificacao.json`.
 - **Quando usar cada efeito (biblioteca validada):**
   | Momento | Visual | Som |
   |---|---|---|

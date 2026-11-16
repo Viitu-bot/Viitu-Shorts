@@ -78,7 +78,8 @@ def escolher(segs: list[dict], pasta: Path, fps: int) -> list[dict]:
         else:
             faixas.append({"f0": s["f0"], "f1": s["f1"], "som": f"foley_{som}.mp3", "_som": som})
     for f in faixas:
-        f["vol"] = 0.32 if f["_som"] in ("noite_grilos", "floresta_dia", "multidao", "fumaca_brasa") else 0.5
+        from viitu.mix import ganho      # foley próprio (reserva) = camada de ambiência
+        f["vol"] = ganho("ambiencia")
         # posição horizontal do sujeito (para o PAN estéreo): média das cenas cobertas pela faixa
         xs = [_x_sujeito(s) for s in segs if s["f0"] < f["f1"] and s["f1"] > f["f0"]]
         f["x"] = float(np.mean(xs)) if xs else 0.5
@@ -168,9 +169,10 @@ def camadas(faixas: list[dict]) -> list[dict]:
         if not arqs[0]:
             out.append(f)
             continue
-        out.append({**f, "arquivo": arqs[0], "vol": 0.55, "camada": "fundo"})
+        from viitu.mix import ganho
+        out.append({**f, "arquivo": arqs[0], "vol": ganho("ambiencia"), "camada": "fundo"})
         if arqs[1]:
-            out.append({**f, "arquivo": arqs[1], "vol": 0.42, "camada": "detalhe"})
+            out.append({**f, "arquivo": arqs[1], "vol": ganho("foley_detalhe"), "camada": "detalhe"})
     return out
 
 
@@ -201,7 +203,7 @@ def mixar(faixas: list[dict], fps: int, dur: float, saida: Path) -> Path:
         arq = f.get("arquivo") or str(FOLEY / f"{f['_som']}.mp3")
         ofs = (f["f0"] * 7.3) % 20 if f.get("arquivo") else 0        # cada cena pega outro trecho do som
         entradas += ["-stream_loop", "-1", "-ss", f"{ofs:.2f}", "-i", arq]
-        norm = "loudnorm=I=-20:TP=-3,aresample=48000," if f.get("arquivo") else ""   # camadas Sonniss no mesmo nível
+        norm = "loudnorm=I=-14:TP=-2,aresample=48000,"     # toda camada na referência da voz; o nível vem de "vol"
         filtros.append(
             f"[{i}:a]aformat=sample_rates=48000:channel_layouts=stereo,{norm}atrim=0:{d:.3f},asetpts=PTS-STARTPTS,"
             f"pan=stereo|c0={ge:.3f}*c0|c1={gd:.3f}*c1,volume={f['vol']:.2f},"

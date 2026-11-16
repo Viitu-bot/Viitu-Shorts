@@ -93,6 +93,54 @@ def amostra() -> dict:
     return out
 
 
+PROMPT_EDICAO = """Você é um editor sênior de YouTube Shorts fazendo ENGENHARIA REVERSA COMPLETA da edição deste vídeo
+(imagem e som). Responda SÓ o que tem certeza; senão "incerto". JSON, em português:
+{
+ "mix_volumes_vs_voz": {"musica_sob_fala_db": n, "musica_nas_pausas_db": n, "whoosh_db": n, "pop_db": n, "boom_db": n,
+   "riser_db": n, "foley_ambiencia_db": n, "foley_detalhe_db": n,
+   "obs": "dB RELATIVO à voz (0 = mesmo volume da voz; -12 = bem mais baixo; +3 = mais alto). Estime pelo que ouve."},
+ "ritmo": {"segundos_por_cena_media": n, "cena_mais_longa_s": n, "corta_no_inicio_de_frase": "sim|nao|misto"},
+ "gancho_3s": {"o_que_aparece_no_frame0": "...", "texto_na_tela": "...", "seta_ou_circulo": true/false, "movimento": "...", "frase": "..."},
+ "zoom_e_camera": {"zoom_constante_lento": true/false, "punch_in_em_palavra": true/false, "tremida": true/false, "camera_lenta": true/false},
+ "marcacoes": {"seta": {"cor": "...", "estilo": "...", "quantas": n, "quando": "..."}, "circulo": {"cor": "...", "quantos": n},
+   "outros": ["emojis, X, ✓, números, lupa..."]},
+ "legenda": {"palavras_por_vez": n, "fonte": "grossa|fina|...", "cor_base": "...", "cor_destaque": "...", "contorno": true/false,
+   "posicao": "topo|centro|centro-inferior|inferior", "animacao": "pop|nenhuma|...", "destaca_palavra_chave": true/false},
+ "texto_extra_na_tela": ["título/pergunta/números com o momento"],
+ "transicoes": {"tipos": ["corte seco|zoom|whip|glitch|flash|..."], "mais_comum": "..."},
+ "efeitos_visuais": ["flash, RGB, blur, shake, brilho... e quando"],
+ "cor": "natural|saturada|contrastada|quente|fria|filtro",
+ "imagens": {"origem": "TikTok/Douyin/stock/documentário/3D/próprias", "marca_dagua_visivel": true/false, "bordas_ou_fundo_desfocado": true/false},
+ "animacao_2d_3d": {"tem": true/false, "estilo": "...", "inicio": "MM:SS", "duracao_s": n, "o_que_explica": "..."},
+ "final": {"cta": "...", "loop": "como o fim emenda no começo", "ultima_cena": "..."},
+ "o_que_mais_contribui_para_reter": ["3 elementos de edição deste vídeo que mais seguram o espectador"]
+}"""
+
+
+def analisar_edicao(extras: list[str] | None = None) -> None:
+    """Questionário COMPLETO de edição (som + imagem) na amostra + vídeos que o dono mandou (hall_da_fama)."""
+    from viitu.assistir import perguntar
+    am = json.loads((PASTA / "amostra.json").read_text(encoding="utf-8"))
+    alvos = [(n, v) for n, c in am.items() for v in c["videos"]]
+    for f in sorted((RAIZ / "hall_da_fama" / "videos").glob("*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        alvos.append((d.get("canal", "?"), {"id": f.stem, "titulo": d.get("titulo", ""), "views": d.get("views", 0), "papel": "enviado_pelo_dono"}))
+    (PASTA / "edicao").mkdir(exist_ok=True)
+    if "--reverso" in sys.argv:
+        alvos = alvos[::-1]
+    for nome, v in alvos:
+        arq = PASTA / "edicao" / f"{v['id']}.json"
+        if arq.exists():
+            continue
+        try:
+            d = json.loads(perguntar(f"https://www.youtube.com/watch?v={v['id']}", PROMPT_EDICAO, fps=2))
+            arq.write_text(json.dumps({"canal": nome, **v, "analise": d}, ensure_ascii=False, indent=1), encoding="utf-8")
+            print(f"✅ {nome} | {v['titulo'][:50]}", flush=True)
+        except BaseException as e:
+            print(f"❌ {nome} | {v['id']} | {str(e)[:120]}", flush=True)
+        time.sleep(8)
+
+
 def analisar() -> None:
     from viitu.assistir import perguntar
     am = json.loads((PASTA / "amostra.json").read_text(encoding="utf-8"))
@@ -161,7 +209,61 @@ def resumo() -> str:
     return json.dumps({k: v for k, v in out.items() if not k.startswith("_")}, ensure_ascii=False, indent=1)
 
 
+def resumo_edicao() -> str:
+    """Consolida o questionário completo: mediana dos volumes por camada e padrões visuais mais comuns."""
+    import collections
+    xs = [json.loads(f.read_text(encoding="utf-8")) for f in sorted((PASTA / "edicao").glob("*.json"))]
+
+    def num(a, *ks):
+        for k in ks:
+            a = a.get(k) if isinstance(a, dict) else None
+        return a if isinstance(a, (int, float)) and not isinstance(a, bool) else None
+
+    def med(vals):
+        v = [x for x in vals if x is not None]
+        return (round(st.median(v), 1), len(v)) if v else (None, 0)
+
+    def mais(vals, n=4):
+        return collections.Counter(str(v).lower() for v in vals if v not in (None, "", "incerto")).most_common(n)
+
+    def tab(g):
+        A = [x["analise"] for x in g]
+        m = {k: med([num(a, "mix_volumes_vs_voz", k) for a in A]) for k in
+             ["musica_sob_fala_db", "musica_nas_pausas_db", "whoosh_db", "pop_db", "boom_db", "riser_db", "foley_ambiencia_db", "foley_detalhe_db"]}
+        return {"videos": len(A), "mix_mediana_db(n)": m,
+                "seg_por_cena": med([num(a, "ritmo", "segundos_por_cena_media") for a in A]),
+                "corta_inicio_frase": mais([(a.get("ritmo") or {}).get("corta_no_inicio_de_frase") for a in A]),
+                "frame0_seta_%": round(100 * sum(1 for a in A if (a.get("gancho_3s") or {}).get("seta_ou_circulo") is True) / max(len(A), 1)),
+                "zoom_lento_%": round(100 * sum(1 for a in A if (a.get("zoom_e_camera") or {}).get("zoom_constante_lento") is True) / max(len(A), 1)),
+                "punch_%": round(100 * sum(1 for a in A if (a.get("zoom_e_camera") or {}).get("punch_in_em_palavra") is True) / max(len(A), 1)),
+                "tremida_%": round(100 * sum(1 for a in A if (a.get("zoom_e_camera") or {}).get("tremida") is True) / max(len(A), 1)),
+                "camera_lenta_%": round(100 * sum(1 for a in A if (a.get("zoom_e_camera") or {}).get("camera_lenta") is True) / max(len(A), 1)),
+                "seta_cor": mais([((a.get("marcacoes") or {}).get("seta") or {}).get("cor") for a in A]),
+                "setas_por_video": med([num(a, "marcacoes", "seta", "quantas") for a in A]),
+                "legenda_palavras": mais([(a.get("legenda") or {}).get("palavras_por_vez") for a in A]),
+                "legenda_cor": mais([(a.get("legenda") or {}).get("cor_base") for a in A]),
+                "legenda_destaque": mais([(a.get("legenda") or {}).get("cor_destaque") for a in A]),
+                "legenda_posicao": mais([(a.get("legenda") or {}).get("posicao") for a in A]),
+                "legenda_animacao": mais([(a.get("legenda") or {}).get("animacao") for a in A]),
+                "transicao_mais_comum": mais([(a.get("transicoes") or {}).get("mais_comum") for a in A]),
+                "efeitos_visuais": mais([e for a in A for e in (a.get("efeitos_visuais") or [])], 8),
+                "cor": mais([a.get("cor") for a in A]),
+                "marca_dagua_%": round(100 * sum(1 for a in A if (a.get("imagens") or {}).get("marca_dagua_visivel") is True) / max(len(A), 1)),
+                "fundo_desfocado_%": round(100 * sum(1 for a in A if (a.get("imagens") or {}).get("bordas_ou_fundo_desfocado") is True) / max(len(A), 1)),
+                "animacao_%": round(100 * sum(1 for a in A if (a.get("animacao_2d_3d") or {}).get("tem") is True) / max(len(A), 1)),
+                "cta": mais([(a.get("final") or {}).get("cta") for a in A], 6),
+                "retencao": mais([r for a in A for r in (a.get("o_que_mais_contribui_para_reter") or [])], 10)}
+    por = collections.defaultdict(list)
+    for x in xs:
+        por[x["canal"]].append(x)
+    out = {"GERAL": tab(xs), "TOP": tab([x for x in xs if x.get("papel") == "top"]),
+           "ENVIADOS_PELO_DONO": tab([x for x in xs if x.get("papel") == "enviado_pelo_dono"]),
+           **{k: tab(v) for k, v in por.items()}}
+    (PASTA / "resumo_edicao.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    return json.dumps(out["GERAL"], ensure_ascii=False, indent=1)
+
+
 if __name__ == "__main__":
-    r = {"amostra": amostra, "analisar": analisar, "resumo": resumo}[sys.argv[1]]()
+    r = {"amostra": amostra, "analisar": analisar, "edicao": analisar_edicao, "resumo": resumo, "resumo_edicao": resumo_edicao}[sys.argv[1]]()
     if isinstance(r, str):
         print(r)

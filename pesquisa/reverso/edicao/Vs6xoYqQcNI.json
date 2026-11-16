@@ -1,0 +1,102 @@
+{
+ "canal": "A vida é uma maravilha",
+ "id": "Vs6xoYqQcNI",
+ "titulo": "Professores aprendem truque de segurança 🔒",
+ "views": 11438125,
+ "dur": 76,
+ "data": "2026-10-11",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -15,
+   "musica_nas_pausas_db": -10,
+   "whoosh_db": -6,
+   "pop_db": -6,
+   "boom_db": -4,
+   "riser_db": null,
+   "foley_ambiencia_db": -12,
+   "foley_detalhe_db": -3,
+   "obs": "Música de fundo discreta; foley de metal e impactos em destaque para realismo."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 4.0,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Policial demonstrando trava de cadeira em porta.",
+   "texto_na_tela": "você perguntou",
+   "seta_ou_circulo": true,
+   "movimento": "Ação manual rápida de encaixe.",
+   "frase": "Você já se perguntou porque tantos professores..."
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": false,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "clássica preenchida",
+    "quantas": 2,
+    "quando": "00:00 e 00:01"
+   },
+   "circulo": {
+    "cor": "amarelo",
+    "quantos": 2
+   },
+   "outros": [
+    "marca d'água @avidamaravilha"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 1,
+   "fonte": "grossa/sans-serif",
+   "cor_base": "branco",
+   "cor_destaque": "amarelo/ciano",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "@avidamaravilha"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco",
+    "zoom rápido"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "Blur em rostos distantes",
+   "Shake leve em chutes na porta"
+  ],
+  "cor": "natural",
+  "imagens": {
+   "origem": "TikTok/compilação de terceiros",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "estilo": "Render 3D técnico",
+   "inicio": "01:00",
+   "duracao_s": 4,
+   "o_que_explica": "Mecanismo de fechamento da carteira balística."
+  },
+  "final": {
+   "cta": "incerto",
+   "loop": "A última frase prepara o contexto da pergunta inicial.",
+   "ultima_cena": "Aluno entrando na carteira protetora."
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Curiosidade sobre métodos de segurança inusitados.",
+   "Cortes rápidos sincronizados com a narração.",
+   "Demonstrações visuais de testes de resistência."
+  ]
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "canal": "Polaco sem Polônia",
+ "id": "GDjPVWNlKO0",
+ "titulo": "O motor portátil que transforma qualquer bike em elétrica!",
+ "views": 10258129,
+ "dur": 21,
+ "data": "2026-09-05",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -4,
+   "pop_db": -6,
+   "boom_db": -2,
+   "riser_db": -8,
+   "foley_ambiencia_db": -12,
+   "foley_detalhe_db": -4,
+   "obs": "A voz é o elemento central, a música de fundo é um lo-fi rítmico que sobe de volume nos cortes e pausas."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 0.8,
+   "cena_mais_longa_s": 1.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Close-up do motor elétrico acoplado na roda traseira da bicicleta.",
+   "texto_na_tela": "DEPOIS DE CONHECER ESSA INVENÇÃO",
+   "seta_ou_circulo": true,
+   "movimento": "Zoom in lento e suave.",
+   "frase": "Depois de conhecer essa invenção, você provavelmente nunca mais vai gastar um centavo com combustível."
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "desenhada à mão, animada",
+    "quantas": 1,
+    "quando": "00:00.000"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": [
+    "nenhum"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 2,
+   "fonte": "grossa",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "DEPOIS DE CONHECER ESSA INVENÇÃO",
+   "NUNCA MAIS VAI GASTAR UM CENTAVO COM COMBUSTÍVEL"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco",
+    "zoom"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "flash nos cortes de transição",
+   "zoom digital dinâmico"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "TikTok",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "estilo": "3D",
+   "inicio": "00:04.500",
+   "duracao_s": 1.0,
+   "o_que_explica": "Apresentação do produto fora da bicicleta."
+  },
+  "final": {
+   "cta": "nenhum explícito",
+   "loop": "o vídeo termina com uma cena de uso e volta para o close do motor",
+   "ultima_cena": "pessoa andando de bicicleta"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Ritmo de cortes extremamente rápido",
+   "Legendas dinâmicas com destaque de cor",
+   "Uso de elementos visuais (setas) para guiar o olhar"
+  ]
+ }
+}

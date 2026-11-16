@@ -1,0 +1,102 @@
+{
+ "canal": "GeneralTV",
+ "id": "i7UCJjkTUQ4",
+ "titulo": "O erro GRAVE ao salvar um passarinho! 🐤",
+ "views": 10769889,
+ "dur": 24,
+ "data": "2026-09-03",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -2,
+   "pop_db": 0,
+   "boom_db": 2,
+   "riser_db": -4,
+   "foley_ambiencia_db": -10,
+   "foley_detalhe_db": -2,
+   "obs": "A trilha sonora é de suspense e mantém um volume constante, mas sobe levemente em momentos de transição."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 3.0,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Pássaro deitado no chão com a boca aberta",
+   "texto_na_tela": "Se você algum dia resgatar um pássaro",
+   "seta_ou_circulo": true,
+   "movimento": "Zoom in lento",
+   "frase": "Se você algum dia resgatar um pássaro, nunca dê água a ele desse jeito"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "desenhada à mão",
+    "quantas": 3,
+    "quando": "00:00, 00:17"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": [
+    "setas indicativas de perigo"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 2,
+   "fonte": "grossa",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "GENERALTV (marca d'água)"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco",
+    "flash"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "flash vermelho em momentos de erro (00:02, 00:13)",
+   "sobreposição de anatomia 3D"
+  ],
+  "cor": "contrastada",
+  "imagens": {
+   "origem": "stock/documentário",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "estilo": "didático/médico",
+   "inicio": "00:12",
+   "duracao_s": 2.0,
+   "o_que_explica": "O caminho errado da água indo para os pulmões"
+  },
+  "final": {
+   "cta": "nenhum explícito",
+   "loop": "o vídeo termina com uma dica prática e corta abruptamente para o início",
+   "ultima_cena": "Pássaro bebendo água em um recipiente raso"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Uso de elementos visuais de perigo (setas e flash vermelho)",
+   "Animação 3D didática que explica o erro fatal",
+   "Ritmo rápido com cortes precisos no início de cada frase"
+  ]
+ }
+}

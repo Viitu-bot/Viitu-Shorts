@@ -1,0 +1,107 @@
+{
+ "canal": "A vida é uma maravilha",
+ "id": "-cKEv0Dqi0o",
+ "titulo": "O homem que pulou de avião sem paraquedas 🪂",
+ "views": 10450619,
+ "dur": 81,
+ "data": "2026-11-05",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -3,
+   "pop_db": "incerto",
+   "boom_db": 0,
+   "riser_db": -6,
+   "foley_ambiencia_db": -12,
+   "foley_detalhe_db": -6,
+   "obs": "A música é o elemento de condução principal, subindo de volume nos momentos de tensão e pausas na narração."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 3.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Travis Pastrana caindo de um avião sem paraquedas",
+   "texto_na_tela": "2007",
+   "seta_ou_circulo": true,
+   "movimento": "câmera lenta",
+   "frase": "Em 2007, Travis Pastrana chocou todo mundo quando pulou de um avião sem paraquedas."
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": false,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": true
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "desenhada à mão",
+    "quantas": 2,
+    "quando": "00:00 e 00:24"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": [
+    "texto dinâmico centralizado",
+    "marca d'água do criador"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 2,
+   "fonte": "grossa",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "2007",
+   "Travis Pastrana",
+   "2016",
+   "Luke Aikins",
+   "30 por 30 metros",
+   "60 metros do chão"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "zoom in digital",
+   "câmera lenta"
+  ],
+  "cor": "natural",
+  "imagens": {
+   "origem": "documentário",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": true
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "incerto",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "nenhum explícito",
+   "loop": "o vídeo termina com o salto concluído, sem transição específica para o início",
+   "ultima_cena": "Travis Pastrana e Luke Aikins sendo celebrados"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "A narrativa de alto risco (pular sem paraquedas)",
+   "Edição rápida com cortes precisos no ritmo da fala",
+   "Legendas dinâmicas que destacam palavras-chave"
+  ]
+ }
+}

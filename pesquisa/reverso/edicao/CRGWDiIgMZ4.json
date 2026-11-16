@@ -1,0 +1,99 @@
+{
+ "canal": "Zack D. Films",
+ "id": "CRGWDiIgMZ4",
+ "titulo": "How Cookiecutter Sharks Bite Whales 😨",
+ "views": 61786815,
+ "dur": 28,
+ "data": "2026-10-09",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -8,
+   "whoosh_db": -6,
+   "pop_db": -10,
+   "boom_db": -4,
+   "riser_db": -10,
+   "foley_ambiencia_db": -22,
+   "foley_detalhe_db": -10,
+   "obs": "Volume da voz principal bem destacado, com efeitos sonoros marcantes (pop/whoosh) em transições e zoom."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 2.5,
+   "cena_mais_longa_s": 5.0,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_parece_no_frame0": "Close extremo na cabeça de um tubarão-charuto com olho azul brilhante abrindo a boca contra a pele de uma baleia.",
+   "texto_na_tela": "As it bites the whale",
+   "seta_ou_circulo": false,
+   "movimento": "Zoom in rápido na mandíbula",
+   "frase": "As it bites the whale"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": true
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "branco",
+    "estilo": "setas curvas em círculo",
+    "quantas": 1,
+    "quando": "00:08 - 00:10"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "os_circulos_sao": 0
+   },
+   "outros": [
+    "setas circulares animadas indicando rotação"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 2,
+   "fonte": "grossa",
+   "cor_base": "branco",
+   "cor_destaque": "branco",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": false
+  },
+  "texto_extra_na_tela": [],
+  "transicoes": {
+   "tipos": [
+    "corte seco",
+    "zoom"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "animação 3D didática simulando o ataque do tubarão"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "3D",
+   "marca_dagua_visivel": false,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "estilo": "3D realista em ambiente oceânico",
+   "inicio": "00:00",
+   "duracao_s": 27.0,
+   "o_que_explica": "Como o tubarão-charuto morde e arranca um pedaço de carne redondo de baleias e lulas"
+  },
+  "final": {
+   "cta": "nenhum",
+   "loop": "o tubarão solta a lula e o vídeo acaba, mas a temática oceânica permite loop fluido",
+   "ultima_cena": "Tubarão-charuto nadando perto de uma lula"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Animação 3D hiper-realista e curiosa sobre a mordida do tubarão",
+   "Efeitos sonoros cruciais de impacto e corte (foley detalhado)",
+   "Ritmo dinâmico com cortes rápidos e zoom constante"
+  ]
+ }
+}

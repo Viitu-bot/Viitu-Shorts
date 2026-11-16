@@ -18,7 +18,7 @@ export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, numb
 export type Plano = {
   fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
   cortes: number[]; impactos: number[]; foley?: {f0: number; f1: number; som: string; vol: number}[]; foley_mix?: boolean;
-  kit?: Record<string, string[]>; mix?: {musica_fala: number; musica_pausa: number}; sfx?: {f: number; som: string; vol: number}[];
+  kit?: Record<string, string[]>; mix?: Record<string, number>; visual?: Record<string, number | boolean>; sfx?: {f: number; som: string; vol: number}[];
   animacoes?: {nome: string; fase: string; f0: number; f1: number; eventos: Record<string, number>}[]; cta: {f0: number; texto: string} | null;
 };
 
@@ -167,6 +167,10 @@ const usePunch = (palavras: Palavra[]) => {
 
 const WOOSHES = ['woosh.mp3', 'whip.mp3', 'woosh2.mp3', 'woosh3.mp3'];
 // kit de identidade (assets/kit): alterna as 3 variações de cada função; cai no som próprio se faltar
+// MIXAGEM POR REGRA: ganho de cada camada vem do plano (edicao/especificacao.json); reserva = valores antigos
+const RESERVA: Record<string, number> = {voz: 1, musica_fala: 0.11, musica_pausa: 0.2, som_original: 0.35, whoosh: 0.32,
+  pop: 0.55, boom: 0.8, riser: 0.32, ding: 0.85, clique: 0.6};
+const M = (plano: Plano, camada: string) => plano.mix?.[camada] ?? RESERVA[camada] ?? 0.5;
 const kitSom = (plano: Plano, funcao: string, i: number, reserva: string) => {
   const l = plano.kit?.[funcao];
   return l && l.length ? l[i % l.length] : reserva;
@@ -183,9 +187,11 @@ const FundoComEfeitos: React.FC<{plano: Plano}> = ({plano}) => {
       ca = Math.max(ca, interpolate(k, [0, 1, 10], [0, 22, 0]));
     }
   }
-  for (const c of plano.cortes) {
-    const k = frame - c;
-    if (k >= 0 && k < 4) ca = Math.max(ca, interpolate(k, [0, 1, 4], [0, 9, 0]));
+  if (plano.visual?.glitch_no_corte !== false) {          // canais usam corte SECO; glitch só se a especificação pedir
+    for (const c of plano.cortes) {
+      const k = frame - c;
+      if (k >= 0 && k < 4) ca = Math.max(ca, interpolate(k, [0, 1, 4], [0, 9, 0]));
+    }
   }
   return (
     <Video src={staticFile('fundo.mp4')} muted
@@ -229,7 +235,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
   return (
     <AbsoluteFill style={{backgroundColor: 'black'}}>
       <AbsoluteFill style={{transform: `translate(${t.x}px, ${t.y}px) scale(${z * (t.x ? 1.03 : 1)})`,
-        filter: 'contrast(1.07) saturate(1.12)'}}>
+        filter: `contrast(${plano.visual?.contraste ?? 1.07}) saturate(${plano.visual?.saturacao ?? 1.12})`}}>
         <FundoComEfeitos plano={plano} />
       </AbsoluteFill>
       {/* animações explicativas próprias (motion graphics) cobrem a cena inteira */}
@@ -243,7 +249,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       {plano.marcas.map((m, k) => (
         <React.Fragment key={k}>
           {m.tipo === 'seta' ? <SetaMarca marca={m} /> : <CirculoMarca marca={m} />}
-          <Sequence from={m.f0} durationInFrames={30}><Audio src={staticFile(kitSom(plano, 'pop_marca', k, 'pop.mp3'))} volume={0.55} /></Sequence>
+          <Sequence from={m.f0} durationInFrames={30}><Audio src={staticFile(kitSom(plano, 'pop_marca', k, 'pop.mp3'))} volume={M(plano,'pop')} /></Sequence>
         </React.Fragment>
       ))}
 
@@ -256,33 +262,33 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       {plano.impactos.map((f, k) => (
         <React.Fragment key={k}>
           <FlashImpacto f={f} />
-          <Sequence from={Math.max(f - 50, 0)} durationInFrames={52}><Audio src={staticFile(kitSom(plano, 'riser_tensao', k, 'tensao.mp3'))} volume={0.32} /></Sequence>
-          <Sequence from={f} durationInFrames={60}><Audio src={staticFile(kitSom(plano, 'impacto_revelacao', k, 'boom.mp3'))} volume={0.8} /></Sequence>
+          <Sequence from={Math.max(f - 50, 0)} durationInFrames={52}><Audio src={staticFile(kitSom(plano, 'riser_tensao', k, 'tensao.mp3'))} volume={M(plano,'riser')} /></Sequence>
+          <Sequence from={f} durationInFrames={60}><Audio src={staticFile(kitSom(plano, 'impacto_revelacao', k, 'boom.mp3'))} volume={M(plano,'boom')} /></Sequence>
         </React.Fragment>
       ))}
 
       {plano.cta && (
         <Sequence from={plano.cta.f0} durationInFrames={75}>
           <BotaoInscrever texto={plano.cta.texto} />
-          <Audio src={staticFile('pop.mp3')} volume={0.6} />
-          <Sequence from={14} durationInFrames={20}><Audio src={staticFile('clique.mp3')} volume={0.6} /></Sequence>
+          <Audio src={staticFile('pop.mp3')} volume={M(plano,'pop')} />
+          <Sequence from={14} durationInFrames={20}><Audio src={staticFile('clique.mp3')} volume={M(plano,'clique')} /></Sequence>
         </Sequence>
       )}
 
       {/* efeitos sonoros: woosh variado em cada corte (começa um pouco antes) */}
       {plano.cortes.filter((c) => !plano.impactos.includes(c)).map((c, k) => (
         <Sequence key={k} from={Math.max(c - 4, 0)} durationInFrames={24}>
-          <Audio src={staticFile(plano.kit?.whoosh_corte ? plano.kit.whoosh_corte[k % plano.kit.whoosh_corte.length] : WOOSHES[k % WOOSHES.length])} volume={0.32} />
+          <Audio src={staticFile(plano.kit?.whoosh_corte ? plano.kit.whoosh_corte[k % plano.kit.whoosh_corte.length] : WOOSHES[k % WOOSHES.length])} volume={M(plano,'whoosh')} />
         </Sequence>
       ))}
 
       {/* sons de FUNÇÃO (número → ding, dinheiro → moeda, mito → buzzer...) */}
       {(plano.sfx ?? []).map((e, k) => (
-        <Sequence key={`sx${k}`} from={e.f} durationInFrames={60}><Audio src={staticFile(e.som)} volume={e.vol} /></Sequence>
+        <Sequence key={`sx${k}`} from={e.f} durationInFrames={60}><Audio src={staticFile(e.som)} volume={M(plano,'ding')} /></Sequence>
       ))}
 
       <FlashIdentidade />
-      <Sequence from={0} durationInFrames={30}><Audio src={staticFile('ding.mp3')} volume={0.85} /></Sequence>
+      <Sequence from={0} durationInFrames={30}><Audio src={staticFile('ding.mp3')} volume={M(plano,'ding')} /></Sequence>
 
       {/* FOLEY já mixado em Python: corte em J/L (entra antes do corte) + pan estéreo pelo lado do sujeito */}
       {plano.foley_mix ? (
@@ -299,11 +305,11 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       <Audio src={staticFile('musica.mp3')} loop
         volume={(f) => {
           const fim = interpolate(f, [durationInFrames - 10, durationInFrames], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-          return (falando(f) ? (plano.mix?.musica_fala ?? 0.11) : (plano.mix?.musica_pausa ?? 0.2)) * fim * vacuo(f);
+          return (falando(f) ? M(plano,'musica_fala') : M(plano,'musica_pausa')) * fim * vacuo(f);
         }} />
       {/* som original dos clipes por baixo da voz (padrão dos virais: chiado, raspagem, bicho) */}
-      <Audio src={staticFile('ambiente.m4a')} volume={(f) => 0.35 * vacuo(f)} />
-      <Audio src={staticFile('audio.m4a')} />
+      <Audio src={staticFile('ambiente.m4a')} volume={(f) => M(plano,'som_original') * vacuo(f)} />
+      <Audio src={staticFile('audio.m4a')} volume={M(plano,'voz')} />
     </AbsoluteFill>
   );
 };

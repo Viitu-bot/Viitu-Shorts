@@ -1,0 +1,100 @@
+{
+ "canal": "Andre Shorts Br",
+ "id": "js9G9XobN0o",
+ "titulo": "Por que o Show do Indiana Jones Foi CANCELADO? 😮",
+ "views": 4836158,
+ "dur": 39,
+ "data": "2026-08-23",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -3,
+   "pop_db": -3,
+   "boom_db": 0,
+   "riser_db": -6,
+   "foley_ambiencia_db": -12,
+   "foley_detalhe_db": -6,
+   "obs": "A voz é o elemento central, com efeitos sonoros (SFX) pontuando ações críticas para manter a atenção."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 2.5,
+   "cena_mais_longa_s": 4.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Cena do show da Disney com uma bola gigante",
+   "texto_na_tela": "Por que a Disney removeu do nada a cena da pedra do show do Indiana Jones?",
+   "seta_ou_circulo": true,
+   "movimento": "Zoom in lento",
+   "frase": "Por que a Disney removeu do nada a cena da pedra do show do Indiana Jones?"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": true
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "seta desenhada à mão",
+    "quantas": 1,
+    "quando": "00:11.500"
+   },
+   "circulo": {
+    "cor": "vermelho",
+    "quantos": 1
+   },
+   "outros": [
+    "legenda dinâmica"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 3,
+   "fonte": "grossa",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "Feito por profissionais, não tente em casa, ninguém se feriu"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "zoom in em momentos de impacto"
+  ],
+  "cor": "natural",
+  "imagens": {
+   "origem": "TikTok",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "incerto",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "nenhum explícito",
+   "loop": "o vídeo termina com uma conclusão e não emenda no início",
+   "ultima_cena": "equipe da Disney removendo a cena"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Gancho forte com pergunta curiosa sobre um tema popular",
+   "Edição rápida com legendas dinâmicas que acompanham a fala",
+   "Uso estratégico de SFX (whooshes e booms) para enfatizar o perigo e o erro técnico"
+  ]
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "canal": "Andre Shorts Br",
+ "id": "P_kITRBzwCs",
+ "titulo": "Diferenças dos Hashis do Japão, China e Coreia! 😮🥢",
+ "views": 115903,
+ "dur": 34,
+ "data": "2026-09-02",
+ "papel": "mediano",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -15,
+   "musica_nas_pausas_db": -5,
+   "whoosh_db": 0,
+   "pop_db": 0,
+   "boom_db": 0,
+   "riser_db": 0,
+   "foley_ambiencia_db": -10,
+   "foley_detalhe_db": -5,
+   "obs": "A música de fundo é constante, mas o volume é reduzido durante a narração para garantir clareza."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 3.0,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Três tipos de hashis lado a lado",
+   "texto_na_tela": "Qual é a diferença entre os hashis do Japão, da China e da Coreia?",
+   "seta_ou_circulo": true,
+   "movimento": "Seta vermelha apontando para o hashi da direita",
+   "frase": "Qual é a diferença entre os hashis do Japão, da China e da Coreia?"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": false,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "grossa",
+    "quantas": 2,
+    "quando": "00:00.000 e 00:01.000"
+   },
+   "circulo": {
+    "cor": "vermelho",
+    "quantos": 2
+   },
+   "outros": [
+    "Bandeiras (Japão, China, Coreia)",
+    "Emojis"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 2,
+   "fonte": "grossa",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "Japão",
+   "China",
+   "Coreia"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "nenhum"
+  ],
+  "cor": "natural",
+  "imagens": {
+   "origem": "TikTok/Douyin",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "incerto",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "nenhum explícito",
+   "loop": "o vídeo termina abruptamente, sem emenda clara",
+   "ultima_cena": "homem comendo com hashi"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Ritmo rápido de cortes",
+   "Legendas dinâmicas com destaque de cor",
+   "Uso de elementos visuais (setas, bandeiras) para guiar a atenção"
+  ]
+ }
+}

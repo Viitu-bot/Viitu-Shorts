@@ -1,0 +1,96 @@
+{
+ "canal": "?",
+ "id": "JsKK1c--rcQ",
+ "titulo": "",
+ "views": 0,
+ "papel": "enviado_pelo_dono",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -3,
+   "pop_db": -6,
+   "boom_db": -3,
+   "riser_db": -6,
+   "foley_ambiencia_db": -12,
+   "foley_detalhe_db": -3,
+   "obs": "A música é de fundo, mas sobe de volume nos cortes e transições. Efeitos sonoros (whooshes/pops) são bem presentes."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 2.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Pessoa saindo de uma porta minúscula de uma casa de palha",
+   "texto_na_tela": "VOCÊ JÁ PAROU PRA PENSAR",
+   "seta_ou_circulo": false,
+   "movimento": "Câmera na mão, movimento rápido de aproximação",
+   "frase": "Você já parou pra pensar por que as portas das casas nas aldeias africanas são tão miúdas?"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": false,
+   "punch_in_em_palavra": true,
+   "tremida": true,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "desenhada à mão",
+    "quantas": 1,
+    "quando": "00:06.000"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": []
+  },
+  "legenda": {
+   "palavras_por_vez": 3,
+   "fonte": "grossa",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [],
+  "transicoes": {
+   "tipos": [
+    "corte seco",
+    "zoom"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "shake em momentos de impacto",
+   "zoom digital para enfatizar pontos"
+  ],
+  "cor": "natural",
+  "imagens": {
+   "origem": "documentário",
+   "marca_dagua_visivel": false,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "00:00",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "nenhum explícito",
+   "loop": "o vídeo termina abruptamente, facilitando o loop",
+   "ultima_cena": "pessoa saindo da casa"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Curiosidade imediata sobre um comportamento incomum",
+   "Ritmo de edição rápido com cortes precisos",
+   "Uso de efeitos sonoros (SFX) para pontuar a narrativa"
+  ]
+ }
+}

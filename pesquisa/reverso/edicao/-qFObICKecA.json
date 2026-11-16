@@ -1,0 +1,100 @@
+{
+ "canal": "?",
+ "id": "-qFObICKecA",
+ "titulo": "",
+ "views": 0,
+ "papel": "enviado_pelo_dono",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -15,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": 0,
+   "pop_db": -3,
+   "boom_db": 0,
+   "riser_db": -3,
+   "foley_ambiencia_db": -12,
+   "foley_detalhe_db": -3,
+   "obs": "A trilha sonora é um lo-fi rítmico que dita o corte. Efeitos sonoros de corte (foley) são proeminentes."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.2,
+   "cena_mais_longa_s": 2.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Carne pendurada em um frigorífico",
+   "texto_na_tela": "CONSERVAR CARNE CRUA",
+   "seta_ou_circulo": true,
+   "movimento": "Zoom in lento",
+   "frase": "Conservar carne crua por meses sem refrigeração..."
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": true
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "desenhada à mão, preenchida",
+    "quantas": 1,
+    "quando": "00:00.000"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": [
+    "nenhum"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 3,
+   "fonte": "grossa, sans-serif, estilo Impact",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "Marca d'água do criador @POLACO SEM POLÔNIA"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco",
+    "zoom"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "flash de luz em cortes rápidos",
+   "aumento de saturação em cenas de comida"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "TikTok",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "00:00",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "nenhum explícito",
+   "loop": "o vídeo termina com o corte da carne, o que permite um loop fluido",
+   "ultima_cena": "Close-up extremo do corte da carne"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Ritmo frenético de cortes sincronizados com a música",
+   "Imagens de alta qualidade e close-ups sensoriais (food porn)",
+   "Legendas dinâmicas que mantêm o foco visual no centro da tela"
+  ]
+ }
+}

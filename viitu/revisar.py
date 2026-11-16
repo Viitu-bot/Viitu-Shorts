@@ -78,6 +78,8 @@ def revisar(projeto: str) -> bool:
     vistos = []
     for j, c in enumerate(cenas):
         t = c.get("inicio", 0)
+        if c.get("animacao"):          # clipe escondido atrás da animação: não conta como repetição
+            continue
         rep = [k for k, (cl, tt) in enumerate(vistos) if cl == c["clipe"] and abs(tt - t) < 3]
         if rep and not (j == len(cenas) - 1 and rep == [0]):
             problemas.append(f"REPETIÇÃO: cena '{c['em']}' repete o trecho {c['clipe']}@{t}s")

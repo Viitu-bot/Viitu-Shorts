@@ -1,0 +1,96 @@
+{
+ "canal": "?",
+ "id": "5R-S3kGLeJ8",
+ "titulo": "",
+ "views": 0,
+ "papel": "enviado_pelo_dono",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -4,
+   "pop_db": "incerto",
+   "boom_db": "incerto",
+   "riser_db": "incerto",
+   "foley_ambiencia_db": -10,
+   "foley_detalhe_db": -2,
+   "obs": "A música é de fundo, mas o foley (sons de massa, estalo, amassando) é bem presente e tem destaque."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 3,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Massa de pão sendo despejada de um recipiente",
+   "texto_na_tela": "ESSA MASSA",
+   "seta_ou_circulo": true,
+   "movimento": "Câmera lenta, despejando a massa",
+   "frase": "Essa massa cheia de bolhas parece estar viva"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": false,
+   "tremida": false,
+   "camera_lenta": true
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "seta desenhada/estática",
+    "quantas": 1,
+    "quando": "00:00.000"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": []
+  },
+  "legenda": {
+   "palavras_por_vez": 2,
+   "fonte": "grossa",
+   "cor_base": "amarelo",
+   "cor_destaque": "incerto",
+   "contorno": true,
+   "posicao": "centro",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "GENERALTV (marca d'água centralizada)"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "câmera lenta"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "stock",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "incerto",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "nenhum explícito",
+   "loop": "o vídeo termina com uma imagem de pão sendo aberto, o que permite um loop fluido",
+   "ultima_cena": "mãos abrindo um pão de fermentação natural"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Câmera lenta em texturas satisfatórias (massa elástica)",
+   "Ritmo de corte rápido sincronizado com a narração",
+   "Legendas grandes e centralizadas que forçam o foco no centro da tela"
+  ]
+ }
+}

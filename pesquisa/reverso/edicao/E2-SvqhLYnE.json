@@ -1,0 +1,101 @@
+{
+ "canal": "Andre Shorts Br",
+ "id": "E2-SvqhLYnE",
+ "titulo": "Esse gato mora em um AQUÁRIO! 😮",
+ "views": 7924752,
+ "dur": 52,
+ "data": "2026-10-28",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -10,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -8,
+   "pop_db": -5,
+   "boom_db": null,
+   "riser_db": null,
+   "foley_ambiencia_db": -15,
+   "foley_detalhe_db": -12,
+   "obs": "Trilha sonora animada mantida em nível constante abaixo da narração clara."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.4,
+   "cena_mais_longa_s": 3.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Gato preto e branco dentro de um aquário seco.",
+   "texto_na_tela": "esta",
+   "seta_ou_circulo": true,
+   "movimento": "Zoom rápido no gato dentro do vidro.",
+   "frase": "Esta gatinha chamada Ariel sempre foi obcecada por peixes."
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "3D com borda preta",
+    "quantas": 2,
+    "quando": "00:00 e 00:01"
+   },
+   "circulo": {
+    "cor": null,
+    "quantos": 0
+   },
+   "outros": [
+    "Legendas dinâmicas centrais"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 1,
+   "fonte": "grossa",
+   "cor_base": "amarela",
+   "cor_destaque": "branca",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "Ariel"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco",
+    "zoom"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "Saturação aumentada para destacar cores dos peixes e do aquário."
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "TikTok/Douyin",
+   "marca_dagua_visivel": false,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": null,
+   "inicio": null,
+   "duracao_s": null,
+   "o_que_explica": null
+  },
+  "final": {
+   "cta": "aperte duas vezes na tela",
+   "loop": "A frase final induz o reinício imediato pela curiosidade visual.",
+   "ultima_scene": "Gato cinza olhando para cima dentro da bolha do aquário."
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Processo de construção passo a passo (satisfatório).",
+   "Interação fofa e inusitada entre gatos e peixes.",
+   "Edição ágil com legendas que acompanham o fluxo da fala."
+  ]
+ }
+}

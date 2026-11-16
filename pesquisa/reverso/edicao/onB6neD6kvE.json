@@ -1,0 +1,107 @@
+{
+ "canal": "KSO Descobre",
+ "id": "onB6neD6kvE",
+ "titulo": "Nenhum edifício japonês nasce sem essa etapa! 🏗️ #curiosidades #japão #lugares",
+ "views": 3311967,
+ "dur": 34,
+ "data": "2026-05-07",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -4,
+   "pop_db": -6,
+   "boom_db": -2,
+   "riser_db": -8,
+   "foley_ambiencia_db": -12,
+   "foley_detalhe_db": -4,
+   "obs": "A música é constante, mas o volume é reduzido durante a narração. Efeitos sonoros de transição e detalhes (como o encaixe de peças) são bem destacados."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 2.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Um homem montando uma maquete de prédio de luxo.",
+   "texto_na_tela": "JAPÃO",
+   "seta_ou_circulo": false,
+   "movimento": "Câmera estática com movimento de mãos do montador.",
+   "frase": "No Japão, antes de erguer qualquer edifício, os engenheiros são obrigados a construir uma maquete fiel do projeto."
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "seta desenhada à mão",
+    "quantas": 1,
+    "quando": "00:09.500"
+   },
+   "circulo": {
+    "cor": "vermelho",
+    "quantos": 1
+   },
+   "outros": [
+    "zoom em detalhes de montagem"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 2,
+   "fonte": "grossa",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "JAPÃO (00:00.000)",
+   "DE (00:00.500)",
+   "ERGUER (00:01.000)",
+   "EDIFÍCIO (00:01.500)",
+   "ENGENHEIROS (00:02.000)",
+   "SÃO (00:02.500)",
+   "A (00:03.000)"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "zoom digital constante",
+   "destaque de cor em palavras-chave"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "TikTok/Douyin",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "incerto",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "incerto",
+   "loop": "o vídeo termina com uma imagem estática da maquete finalizada, facilitando o loop",
+   "ultima_cena": "Maquete completa do empreendimento Trio Island."
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Ritmo acelerado de cortes que mantém o interesse visual",
+   "Uso de legendas dinâmicas com destaque de cor",
+   "Conteúdo visualmente satisfatório (processo de montagem de maquetes detalhadas)"
+  ]
+ }
+}

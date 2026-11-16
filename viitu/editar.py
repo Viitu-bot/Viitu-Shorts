@@ -36,7 +36,7 @@ import numpy as np
 
 RAIZ = Path(__file__).resolve().parent.parent
 W, H, FPS = 1080, 1920, 30
-MAX_CENA = 3.2
+MAX_CENA = __import__("json").loads((Path(__file__).resolve().parent.parent / "edicao" / "especificacao.json").read_text(encoding="utf-8"))["visual"]["max_cena"]   # da engenharia reversa (1,5 s/cena nos canais)
 MODO_REMOTION = False   # True: não queima legenda/marcas; exporta plano para o Remotion      # cena maior que isso é dividida (regra dos 2–3 s)
 FONTES = RAIZ / "assets" / "fontes"
 SFX = RAIZ / "assets" / "sfx"
@@ -76,7 +76,7 @@ def montar_linha_do_tempo(palavras: list[dict], cfg: dict, fim_audio: float) -> 
                 final.append(x)
                 continue
             meio = (x["t0"] + x["t1"]) / 2
-            cand = [p["inicio"] for p in palavras if x["t0"] + 1.2 < p["inicio"] < x["t1"] - 1.2]
+            cand = [p["inicio"] for p in palavras if x["t0"] + 0.7 < p["inicio"] < x["t1"] - 0.7]
             if not cand:
                 final.append(x)
                 continue
@@ -600,7 +600,7 @@ def som_ambiente(pasta: Path, segs: list[dict], dur: float) -> Path:
     lista.write_text("".join(f"file '{p.name}'\n" for p in partes), encoding="utf-8")
     saida = pasta / "saida" / "ambiente.wav"
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lista),
-                    "-af", f"atrim=0:{dur:.3f},loudnorm=I=-20:TP=-3", str(saida)], check=True)
+                    "-af", f"atrim=0:{dur:.3f},loudnorm=I=-14:TP=-2", str(saida)], check=True)
     return saida
 
 
@@ -635,7 +635,8 @@ def _kit_e_sfx(cfg: dict, palavras: list[dict], pub: Path) -> tuple[dict, list[d
         nomes[func] = []
         for i, sm in enumerate(v["sons"]):
             dst = f"kit_{func}_{i}.mp3"
-            shutil.copy(baixar(sm), pub / dst)
+            from viitu.mix import normalizar
+            normalizar(baixar(sm), pub / dst, "pontual")
             nomes[func].append(dst)
     eventos, ultimo = [], -99.0
     if cfg.get("sfx_auto", False):      # só ligar quando houver gráfico de número/dinheiro na tela
@@ -665,8 +666,9 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
     shutil.copy(video, pub / "fundo.mp4")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(audio), "-c:a", "aac", "-b:a", "192k",
                     str(pub / "audio.m4a")], check=True)
-    for som in SFX.glob("*.mp3"):
-        shutil.copy(som, pub / som.name)
+    from viitu.mix import normalizar, ganho, espec
+    for som in SFX.glob("*.mp3"):          # sons próprios: normalizados à referência da voz
+        normalizar(som, pub / som.name, "pontual")
     # som original só de clipes livres (Pixabay/próprios): áudio de TikTok/Reels costuma ter música com direitos
     for g in segs:
         if g["clipe"].startswith(("tiktok", "bruto_", "ancora")) and "som_original" not in g:
@@ -687,7 +689,8 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
     musica = cfg.get("musica", "curioso_documentario.mp3")
     ini_mus = _inicio_musica(RAIZ / "assets" / "musica" / musica)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{ini_mus:.2f}", "-i", str(RAIZ / "assets" / "musica" / musica),
-                    "-c:a", "libmp3lame", "-q:a", "2", str(pub / "musica.mp3")], check=True)
+                    "-c:a", "libmp3lame", "-q:a", "2", str(pasta / "saida" / "musica_crua.mp3")], check=True)
+    normalizar(pasta / "saida" / "musica_crua.mp3", pub / "musica.mp3", "leito")
     kit_plano, sfx_plano = _kit_e_sfx(cfg, palavras, pub)
     destaques = {_norm(x) for x in cfg.get("destaques", [])}
 
@@ -722,8 +725,10 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
         "foley": [{"f0": f["f0"], "f1": f["f1"], "som": f["som"], "vol": f["vol"]} for f in faixas_foley],
         "foley_mix": True,
         "kit": kit_plano,
+        "visual": {k: v for k, v in espec()["visual"].items() if isinstance(v, (bool, int, float))},
         # volume da trilha: sob a fala / nas pausas (cfg "mix" sobrescreve) — ver logica_editor.md
-        "mix": {"musica_fala": 0.28, "musica_pausa": 0.42, **cfg.get("mix", {})},
+        # MIXAGEM POR REGRA: ganhos tirados de edicao/especificacao.json (dB relativos à voz; viitu/mix.py)
+        "mix": {k: round(10 ** (v / 20), 4) for k, v in {**espec()["mix_db"], **cfg.get("mix_db", {})}.items()},
         "sfx": sfx_plano,
         # animação explicativa própria: {"animacao": {"nome", "fase", "eventos": {evento: "palavra"}}} na cena
         "animacoes": [{"nome": s["animacao"]["nome"], "fase": s["animacao"].get("fase", ""), "f0": s["f0"], "f1": s["f1"],
@@ -732,7 +737,7 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
                       for s in segs if s.get("animacao")],
         "cta": (lambda c: {"f0": round(palavras[achar_palavra(palavras, c["em"], 0)]["inicio"] * FPS),
                            "texto": c.get("texto", "💬 COMENTA")} if isinstance(c, dict)
-                else ({"f0": segs[-1]["f0"] + 6, "texto": "INSCREVA-SE"} if c else None))(cfg.get("cta", True)),
+                else ({"f0": segs[-1]["f0"] + 6, "texto": "INSCREVA-SE"} if c else None))(cfg.get("cta", False)),   # canais: sem CTA explícito na maioria
     }
     (pub / "plano.json").write_text(json.dumps(plano, ensure_ascii=False), encoding="utf-8")
     print(f"Plano Remotion exportado: {pub.relative_to(RAIZ)}/plano.json")

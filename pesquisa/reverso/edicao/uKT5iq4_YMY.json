@@ -1,0 +1,99 @@
+{
+ "canal": "?",
+ "id": "uKT5iq4_YMY",
+ "titulo": "",
+ "views": 0,
+ "papel": "enviado_pelo_dono",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -15,
+   "musica_nas_pausas_db": -8,
+   "whoosh_db": -5,
+   "pop_db": -5,
+   "boom_db": -5,
+   "riser_db": -5,
+   "foley_ambiencia_db": -20,
+   "foley_detalhe_db": -10,
+   "obs": "A música de fundo é constante, mas abaixa significativamente quando a narração ocorre."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 3.0,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Peixe beta em um aquário com uma folha",
+   "texto_na_tela": "Quando os peixes beta...",
+   "seta_ou_circulo": true,
+   "movimento": "Zoom in lento",
+   "frase": "Quando os peixes beta descansam com o sono, eles frequentemente descansam nas folhas."
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": true
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "seta desenhada à mão",
+    "quantas": 2,
+    "quando": "00:00 e 00:39"
+   },
+   "circulo": {
+    "cor": "vermelho",
+    "quantos": 1
+   },
+   "outros": [
+    "emojis",
+    "ícone de like"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 3,
+   "fonte": "grossa",
+   "cor_base": "amarelo",
+   "cor_destaque": "branco",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "Vídeo para fins educacionais, feito por profissionais! nenhum animal se feriu, não tente em casa!"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "brilho no final"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "TikTok/stock",
+   "marca_dagua_visivel": false,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "estilo": "ícones animados",
+   "inicio": "01:00",
+   "duracao_s": 1.5,
+   "o_que_explica": "CTA de like"
+  },
+  "final": {
+   "cta": "Aperte duas vezes na tela",
+   "loop": "O vídeo termina com uma animação de peixe e volta para o início",
+   "ultima_cena": "Peixe beta com ícone de like"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Cortes rápidos e dinâmicos",
+   "Legendas grandes e coloridas no centro da tela",
+   "Elementos visuais como setas e círculos para guiar o olhar"
+  ]
+ }
+}

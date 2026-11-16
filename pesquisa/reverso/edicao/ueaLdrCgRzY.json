@@ -1,0 +1,102 @@
+{
+ "canal": "Polaco sem Polônia",
+ "id": "ueaLdrCgRzY",
+ "titulo": "A película que transforma qualquer vidro numa TV",
+ "views": 6378561,
+ "dur": 17,
+ "data": "2026-08-22",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -4,
+   "pop_db": -6,
+   "boom_db": -2,
+   "riser_db": -8,
+   "foley_ambiencia_db": -12,
+   "foley_detalhe_db": -4,
+   "obs": "A voz está em destaque, com efeitos sonoros (whooshes/pops) pontuando as transições e cortes."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.2,
+   "cena_mais_longa_s": 2.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Mão segurando uma película transparente sendo aplicada em um vidro",
+   "texto_na_tela": "ESSA PELÍCULA PLÁSTICA",
+   "seta_ou_circulo": true,
+   "movimento": "Zoom in lento e movimento de mão",
+   "frase": "Essa película plástica consegue transformar qualquer vidro comum"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "seta desenhada com sombra",
+    "quantas": 1,
+    "quando": "00:00.000"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": [
+    "nenhum"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 3,
+   "fonte": "grossa",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "@POLACO SEM POLÔNIA"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco",
+    "zoom"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "whoosh sonoro em cada corte",
+   "brilho nas transições"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "TikTok/Douyin",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "incerto",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "incerto",
+   "loop": "o vídeo termina abruptamente, sem um loop perfeito",
+   "ultima_cena": "Pavão exibindo as penas em uma tela transparente"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Ritmo acelerado com cortes a cada segundo",
+   "Uso de efeitos sonoros (whooshes) para manter o foco",
+   "Conteúdo visualmente satisfatório e curioso (tecnologia futurista)"
+  ]
+ }
+}

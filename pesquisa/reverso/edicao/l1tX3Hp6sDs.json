@@ -1,0 +1,100 @@
+{
+ "canal": "Polaco sem Polônia",
+ "id": "l1tX3Hp6sDs",
+ "titulo": "O acessório que está salvando os joelhos nas obras 🦿🏗️",
+ "views": 5456036,
+ "dur": 21,
+ "data": "2026-07-17",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -4,
+   "pop_db": "incerto",
+   "boom_db": "incerto",
+   "riser_db": "incerto",
+   "foley_ambiencia_db": -12,
+   "foley_detalhe_db": -8,
+   "obs": "A música de fundo é constante e o volume da voz é bem equilibrado e comprimido."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.2,
+   "cena_mais_longa_s": 2.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Close-up de um trabalhador usando um acessório de joelheira articulada.",
+   "texto_na_tela": "ESTE ACESSÓRIO RESOLVE UMA DOR DE CABEÇA QUE TODO TRABALHADOR",
+   "seta_ou_circulo": true,
+   "movimento": "Câmera em movimento acompanhando o passo do trabalhador.",
+   "frase": "Este acessório resolve uma dor de cabeça que todo trabalhador de obra conhece muito bem."
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": false,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "desenhada à mão",
+    "quantas": 1,
+    "quando": "00:00.500"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": [
+    "texto em destaque"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 3,
+   "fonte": "grossa",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "@POLACO SEM POLÔNIA"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "nenhum efeito visual complexo, apenas cortes rápidos"
+  ],
+  "cor": "natural",
+  "imagens": {
+   "origem": "TikTok",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "incerto",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "nenhum",
+   "loop": "o vídeo termina abruptamente, sem um loop planejado",
+   "ultima_cena": "trabalhador caminhando em um canteiro de obras"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Cortes rápidos e dinâmicos",
+   "Legendas grandes e centralizadas",
+   "Demonstração visual clara do problema e da solução"
+  ]
+ }
+}

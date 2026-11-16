@@ -3,13 +3,38 @@
 Pesquisa de nov/2026 (fontes no fim). Complementa `manual_edicao.md` (técnicas) e `biblioteca_sons.md` (sons).
 
 
+## 00. ESPECIFICAÇÃO FIXA (regra, não medição) — `edicao/especificacao.json`
+Tirada da engenharia reversa completa de 35 Shorts do nicho (6 canais + vídeos enviados pelo dono;
+`pesquisa/reverso/resumo_edicao.json`). Valores = mediana dos vídeos de maior sucesso. O editor obedece direto.
+
+**Mixagem (dB em relação à voz; todo som é normalizado à referência da voz antes — `viitu/mix.py`):**
+| Camada | Nível | Leitura |
+|---|---|---|
+| Voz | 0 | referência (−14 LUFS) |
+| Música sob a fala | **−18** | baixa enquanto fala… |
+| Música nas pausas | **−6** | …e SOBE forte nas pausas (o "respiro" que dá ritmo) |
+| Whoosh | −3 | quase o volume da voz, curto |
+| Pop (seta/círculo) | −5 | |
+| Boom (revelação) | **0** | tão alto quanto a voz, 1–2 por vídeo |
+| Riser | −6 | |
+| Ambiência (foley de fundo) | −12 | |
+| Detalhe ASMR (foley de perto) | −5 | alto: é o som que "dá realidade" |
+| Som original do clipe | −16 | quase sempre desligado |
+
+**Imagem:** 1,5 s por cena (máx. 2,0) · corte SECO + whoosh (34/35; sem glitch no corte) · punch-in na
+palavra-chave (91%) · zoom lento (69%) · câmera lenta no momento satisfatório (49%) · tremida só no impacto (6%) ·
+cor saturada (69%) · seta vermelha no frame 0 (80%) · legenda branca com destaque amarelo, contorno, centro-
+inferior, animação pop · CTA explícito ausente na maioria (19/35) → loop no lugar · marca d'água visível em 57%
+(comum, mas preferimos sem) · animação 2D/3D em 40%.
+Para mudar um valor: editar `especificacao.json` (nunca número solto no código).
+
 ## 0. ENGENHARIA REVERSA — 30 Shorts do nicho (nov/2026, `pesquisa/reverso/`)
 Amostra: A vida é uma maravilha, GeneralTV, KSO Descobre, Polaco sem Polônia, Andre Shorts Br, Zack D. Films —
 os 4 maiores sucessos do último ano de cada um + 1 vídeo mediano. Questionário respondido pelo Gemini (o que
 aparece na maioria vira regra; listagem som-a-som do Gemini se mostrou não confiável e foi descartada).
 | O que fazem | Resultado | Nossa regra |
 |---|---|---|
-| Música de fundo | **100%** dos vídeos, constante, ~**12–15 dB abaixo da voz** | `mix` 0,28/0,42 (≈12 dB) ✅ |
+| Música de fundo | **100%** dos vídeos | níveis na seção 00 ✅ |
 | Whoosh nos cortes | na **maioria** dos cortes em 29/30 | kit `whoosh_corte` em quase todo corte ✅ |
 | Pop quando aparece seta/círculo | **90%** | ✅ |
 | Foley/ASMR do que aparece | **93%** (som original do clipe desligado em 22/30, baixo em 8) | 2 camadas Sonniss ✅ |

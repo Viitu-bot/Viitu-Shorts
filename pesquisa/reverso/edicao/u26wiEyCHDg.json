@@ -1,0 +1,101 @@
+{
+ "canal": "A vida é uma maravilha",
+ "id": "u26wiEyCHDg",
+ "titulo": "O que se esconde na boca da tartaruga 🐢",
+ "views": 9588322,
+ "dur": 67,
+ "data": "2026-09-29",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -8,
+   "whoosh_db": -2,
+   "pop_db": -4,
+   "boom_db": 0,
+   "riser_db": -3,
+   "foley_ambiencia_db": -10,
+   "foley_detalhe_db": -2,
+   "obs": "dB RELATIVO à voz. A música é constante, mas os efeitos sonoros (whooshes, pops) são mixados bem acima da voz para criar impacto."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 2.5,
+   "cena_mais_longa_s": 4.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Uma mão sendo inserida na boca de uma tartaruga taxidermizada",
+   "texto_na_tela": "é por isso que você nunca deve",
+   "seta_ou_circulo": true,
+   "movimento": "zoom in rápido na boca da tartaruga",
+   "frase": "é por isso que você nunca deve colocar a mão na boca de uma tartaruga marinha"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": false,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": true
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "seta desenhada à mão",
+    "quantas": 1,
+    "quando": "00:00.000"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": [
+    "legenda dinâmica"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 3,
+   "fonte": "grossa",
+   "cor_base": "amarela",
+   "cor_destaque": "preta",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "Nenhum texto extra além da legenda"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "zoom in digital",
+   "efeitos sonoros de impacto"
+  ],
+  "cor": "natural",
+  "imagens": {
+   "origem": "stock/documentário",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "estilo": "3D realista",
+   "inicio": "00:13.000",
+   "duracao_s": 1.5,
+   "o_que_explica": "o interior da garganta da tartaruga"
+  },
+  "final": {
+   "cta": "nenhum",
+   "loop": "o vídeo termina com uma cena de tartaruga nadando, facilitando o loop",
+   "ultima_cena": "tartaruga nadando"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "O gancho visual forte (mão na boca da tartaruga)",
+   "A curiosidade sobre o perigo real (o que tem dentro da boca)",
+   "O ritmo acelerado com cortes precisos e efeitos sonoros de impacto"
+  ]
+ }
+}

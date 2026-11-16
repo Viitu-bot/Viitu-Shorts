@@ -1,0 +1,105 @@
+{
+ "canal": "KSO Descobre",
+ "id": "ATmqYITooB8",
+ "titulo": "Espiar essa van pode dar muito errado! 😳 #curiosidades #japão #lugares",
+ "views": 3665290,
+ "dur": 42,
+ "data": "2026-02-24",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -12,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -3,
+   "pop_db": -5,
+   "boom_db": 0,
+   "riser_db": -8,
+   "foley_ambiencia_db": -15,
+   "foley_detalhe_db": -10,
+   "obs": "A trilha sonora é rítmica e sobe levemente em transições rápidas."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 4.0,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Uma van azul com bolinhas brancas balançando na rua.",
+   "texto_na_tela": "SE VISITAR JAPÃO",
+   "seta_ou_circulo": true,
+   "movimento": "Zoom in rápido na van.",
+   "frase": "Se você algum dia visitar o Japão..."
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": true,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "Vermelha",
+    "estilo": "3D com borda preta",
+    "quantas": 1,
+    "quando": "00:02"
+   },
+   "circulo": {
+    "cor": "Vermelho",
+    "quantos": 1
+   },
+   "outros": [
+    "Lupa de busca no frame da van"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 1,
+   "fonte": "Montserrat ExtraBold",
+   "cor_base": "Branco",
+   "cor_destaque": "Amarelo",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "H&M ao fundo",
+   "SHIBUYA MEGA"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco",
+    "zoom whip",
+    "glitch"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "Blur nas bordas em 00:19",
+   "Shake rápido em 00:10",
+   "Flash branco em transições de impacto"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "TikTok/Douyin",
+   "marca_dagua_visivel": false,
+   "bordas_ou_fundo_desfocado": true
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "00:00",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "incerto",
+   "loop": "A frase final 'atrás daquele vidro' conecta com o mistério inicial da van.",
+   "ultima_cena": "Meninas olhando através do vidro espelhado."
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Curiosidade sobre o interior da van",
+   "Legendas dinâmicas palavra por palavra",
+   "Uso de zoom e efeitos sonoros de impacto (whoosh/boom)"
+  ]
+ }
+}

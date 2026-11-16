@@ -213,10 +213,7 @@
   "Brasil",
   "coragem"
  ],
- "cta": {
-  "em": "Comenta",
-  "texto": "💬 COMENTA"
- },
+ "cta": false,
  "creditos_descricao": "Imagens: @mrbiscuitboy95 @rosebudz_7 @arvinhrushka @devincorral2 (TikTok) e Pixabay.",
  "musica": "tensao_documentario.mp3"
 }

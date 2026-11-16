@@ -1,0 +1,96 @@
+{
+ "canal": "Zack D. Films",
+ "id": "0BZ1C83I2R4",
+ "titulo": "How Electrical Outlets Work 🤔",
+ "views": 77081950,
+ "dur": 25,
+ "data": "2026-10-18",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -15,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -3,
+   "pop_db": -5,
+   "boom_db": -2,
+   "riser_db": -4,
+   "foley_ambiencia_db": -10,
+   "foley_detalhe_db": -2,
+   "obs": "A trilha sonora é minimalista e serve apenas para dar ritmo, com efeitos sonoros (SFX) muito presentes e em volume alto para enfatizar a ação."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 3.0,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Uma mão segurando um carregador de celular prestes a ser conectado em uma tomada na parede.",
+   "texto_na_tela": "incerto",
+   "seta_ou_circulo": false,
+   "movimento": "Zoom in rápido para dentro da tomada.",
+   "frase": "incerto"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": false,
+   "punch_in_em_palavra": false,
+   "tremida": false,
+   "camera_lenta": true
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "incerto",
+    "estilo": "incerto",
+    "quantas": 0,
+    "quando": "incerto"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": []
+  },
+  "legenda": {
+   "palavras_por_vez": 0,
+   "fonte": "incerto",
+   "cor_base": "incerto",
+   "cor_destaque": "incerto",
+   "contorno": false,
+   "posicao": "incerto",
+   "animacao": "nenhuma",
+   "destaca_palavra_chave": false
+  },
+  "texto_extra_na_tela": [],
+  "transicoes": {
+   "tipos": [
+    "zoom"
+   ],
+   "mais_comum": "zoom"
+  },
+  "efeitos_visuais": [
+   "brilho (efeito elétrico) a partir de 00:13"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "3D",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "estilo": "3D renderizado",
+   "inicio": "00:00.500",
+   "duracao_s": 22.5,
+   "o_que_explica": "A animação mostra o interior da parede como uma sala de máquinas onde um hamster gera energia para carregar o celular."
+  },
+  "final": {
+   "cta": "incerto",
+   "loop": "O vídeo termina com o celular carregando e a imagem volta para a mão do usuário, criando um loop contínuo.",
+   "ultima_cena": "Mão segurando o celular carregando com 25% de bateria."
+  },
+  "o_que_mais_contribui_para_reter": [
+   "A curiosidade visual imediata do 'mundo dentro da parede'",
+   "A alta qualidade da animação 3D",
+   "O uso estratégico de efeitos sonoros que acompanham cada movimento mecânico"
+  ]
+ }
+}

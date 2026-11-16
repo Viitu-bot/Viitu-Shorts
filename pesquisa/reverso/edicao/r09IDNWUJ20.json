@@ -1,0 +1,102 @@
+{
+ "canal": "Polaco sem Polônia",
+ "id": "r09IDNWUJ20",
+ "titulo": "O secador inteligente que vai substituir as toalhas! 🚿💨",
+ "views": 35960,
+ "dur": 30,
+ "data": "2026-11-05",
+ "papel": "mediano",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -8,
+   "whoosh_db": -4,
+   "pop_db": -6,
+   "boom_db": -2,
+   "riser_db": -6,
+   "foley_ambiencia_db": -20,
+   "foley_detalhe_db": -10,
+   "obs": "A música de fundo é constante, com efeitos sonoros (whooshes e pops) sincronizados com as transições e cortes."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 2.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Duas mulheres de toalha em um banheiro, uma delas em cima de um dispositivo no chão.",
+   "texto_na_tela": "É POR ISSO QUE TODOS PRECISAM DE UM DESSES NO BANHEIRO",
+   "seta_ou_circulo": true,
+   "movimento": "Corte rápido entre as duas mulheres, zoom na que está usando o dispositivo.",
+   "frase": "É por isso que todos precisam de um desses no banheiro."
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "incerto",
+    "estilo": "incerto",
+    "quantas": 0,
+    "quando": "incerto"
+   },
+   "circulo": {
+    "cor": "vermelho",
+    "quantos": 1
+   },
+   "outros": [
+    "legenda dinâmica"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 3,
+   "fonte": "grossa",
+   "cor_base": "branco",
+   "cor_destaque": "amarelo",
+   "contorno": true,
+   "posicao": "inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "É POR ISSO QUE TODOS PRECISAM DE UM DESSES NO BANHEIRO",
+   "MAS QUASE NINGUÉM SABE QUE ISSO EXISTE"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "flash no início",
+   "zoom in digital"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "TikTok",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "00:00",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "incerto",
+   "loop": "o vídeo termina abruptamente, sem um loop perfeito",
+   "ultima_cena": "mulher em cima do secador de piso"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Gancho visual imediato (mulheres de toalha)",
+   "Legendas dinâmicas e coloridas que mantêm o foco",
+   "Ritmo de cortes rápidos que evita o tédio"
+  ]
+ }
+}

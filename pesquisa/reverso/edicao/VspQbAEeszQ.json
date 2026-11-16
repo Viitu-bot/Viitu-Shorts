@@ -1,0 +1,102 @@
+{
+ "canal": "Andre Shorts Br",
+ "id": "VspQbAEeszQ",
+ "titulo": "Posso nadar nessa piscina? 🤔🏊‍♂️",
+ "views": 4839813,
+ "dur": 49,
+ "data": "2026-09-17",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -3,
+   "pop_db": -3,
+   "boom_db": 0,
+   "riser_db": -3,
+   "foley_ambiencia_db": -12,
+   "foley_detalhe_db": -6,
+   "obs": "A música é constante, mas o volume é reduzido durante a narração. Efeitos sonoros (whooshes, pops) são usados em cada transição."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 2.5,
+   "cena_mais_longa_s": 4.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Piscina de hotel com escada submersa",
+   "texto_na_tela": "Posso nadar nesta piscina?",
+   "seta_ou_circulo": true,
+   "movimento": "Câmera em primeira pessoa descendo escada",
+   "frase": "Posso nadar nesta piscina?"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "grossa, desenhada",
+    "quantas": 1,
+    "quando": "00:00.000"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": [
+    "Legendas dinâmicas"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 1,
+   "fonte": "grossa",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "Feito por profissionais, para fins educacionais! ninguém se feriu! não tente em casa!"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco",
+    "whoosh"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "whoosh sonoro em cada corte",
+   "zoom in sutil"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "stock",
+   "marca_dagua_visivel": true,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "00:00",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "nenhum explícito",
+   "loop": "o vídeo termina abruptamente, facilitando o loop",
+   "ultima_cena": "Pessoa nadando em piscina suspensa"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Ritmo acelerado com cortes rápidos",
+   "Legendas dinâmicas que acompanham a fala",
+   "Curiosidade sobre locais perigosos ou inusitados"
+  ]
+ }
+}

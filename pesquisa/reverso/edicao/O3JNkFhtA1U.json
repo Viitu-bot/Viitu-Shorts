@@ -1,0 +1,103 @@
+{
+ "canal": "A vida é uma maravilha",
+ "id": "O3JNkFhtA1U",
+ "titulo": "Chineses enterram tronco por motivo genial 🪵🤑",
+ "views": 564194,
+ "dur": 38,
+ "data": "2026-06-30",
+ "papel": "mediano",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -3,
+   "pop_db": 0,
+   "boom_db": 0,
+   "riser_db": -6,
+   "foley_ambiencia_db": -12,
+   "foley_detalhe_db": -3,
+   "obs": "A música é de fundo, mas sobe de volume nas transições e pausas. Efeitos sonoros (pops, whooshes) são bem presentes."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 3.0,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Pessoas trabalhando em um campo de terra com troncos de madeira.",
+   "texto_na_tela": "fazendeiros chineses",
+   "seta_ou_circulo": true,
+   "movimento": "câmera lenta com zoom in",
+   "frase": "Fazendeiros chineses enterram esses troncos por um ano inteiro"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": true
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "vermelha",
+    "estilo": "desenhada à mão",
+    "quantas": 1,
+    "quando": "00:00.000"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": [
+    "números (1, 2) para indicar passos"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 2,
+   "fonte": "grossa",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "1 (00:02.500)",
+   "2 (00:13.000)"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco",
+    "zoom"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "zoom in constante",
+   "efeitos de transição sonora"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "TikTok/Douyin",
+   "marca_dagua_visivel": false,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "incerto",
+   "duracao_s": 0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "nenhum explícito",
+   "loop": "o vídeo termina abruptamente, sem loop planejado",
+   "ultima_cena": "pessoa segurando o fungo Fuling"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Curiosidade imediata sobre o processo agrícola incomum",
+   "Ritmo rápido de cortes que mantém o foco visual",
+   "Legendas dinâmicas e coloridas que facilitam a leitura"
+  ]
+ }
+}

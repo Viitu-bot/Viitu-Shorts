@@ -1,0 +1,101 @@
+{
+ "canal": "Zack D. Films",
+ "id": "gyOZv_ckZQU",
+ "titulo": "Why Dobermans Have Cropped Ears 😞",
+ "views": 51516523,
+ "dur": 32,
+ "data": "2026-10-30",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -10,
+   "whoosh_db": -5,
+   "pop_db": -8,
+   "boom_db": -5,
+   "riser_db": -10,
+   "foley_ambiencia_db": -15,
+   "foley_detalhe_db": -5,
+   "obs": "A trilha sonora é minimalista e serve apenas para preencher o silêncio, com efeitos sonoros (SFX) de corte e impacto bem presentes para enfatizar a ação."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 2.5,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Mão com luva azul segurando tesoura sobre orelha de cachorro",
+   "texto_na_tela": "Their floppy ears",
+   "seta_ou_circulo": false,
+   "movimento": "Zoom in lento",
+   "frase": "Their floppy ears are cut into a point"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": false,
+   "tremida": false,
+   "camera_lenta": false
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "rosa",
+    "estilo": "desenhada à mão",
+    "quantas": 2,
+    "quando": "00:04.500"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": [
+    "calendário animado (00:23.000)"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 3,
+   "fonte": "grossa",
+   "cor_base": "branca",
+   "cor_destaque": "amarela",
+   "contorno": true,
+   "posicao": "inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "Week 2, 3, 4 (00:23.000)"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "brilho vermelho na tesoura (00:01.000)",
+   "raio-x/corte transversal (00:16.500)"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "3D",
+   "marca_dagua_visivel": false,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "estilo": "3D realista",
+   "inicio": "00:00.000",
+   "duracao_s": 31,
+   "o_que_explica": "Procedimento cirúrgico de corte de orelha e cauda em Dobermans"
+  },
+  "final": {
+   "cta": "nenhum",
+   "loop": "o vídeo termina com os dois cães parados, o que permite um loop contínuo",
+   "ultima_cena": "Dois Dobermans, um com orelhas cortadas e outro não, olhando para a câmera"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Uso de animação 3D de alta qualidade para ilustrar um tema sensível",
+   "Ritmo de edição rápido com cortes precisos a cada frase",
+   "Efeitos sonoros (SFX) que dão peso e realismo às ações de corte"
+  ]
+ }
+}

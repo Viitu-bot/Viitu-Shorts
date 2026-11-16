@@ -1,0 +1,107 @@
+{
+ "canal": "KSO Descobre",
+ "id": "dxrIIO1YQrE",
+ "titulo": "O sonho “ou pesadelo” dos amantes de chocolate! 🤤 #curiosidades #istanbul #lugares",
+ "views": 28215,
+ "dur": 29,
+ "data": "2026-01-05",
+ "papel": "mediano",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -16.0,
+   "musica_nas_pausas_db": -6.0,
+   "whoosh_db": -8.0,
+   "pop_db": -10.0,
+   "boom_db": -4.0,
+   "riser_db": -10.0,
+   "foley_ambiencia_db": -14.0,
+   "foley_detalhe_db": -8.0,
+   "obs": "Música pop animada encobre o fundo; efeitos pontuais de whoosh/pop reforçam transições rápidas e tomadas de ação."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 0.8,
+   "cena_mais_longa_s": 2.2,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Uma criança lambendo uma enorme cascata de chocolate em uma parede marrom.",
+   "texto_na_tela": "PARA ESSAS CRIANÇAS, É IMPOSSÍVEL NÃO PROVAR ESSA CASCATA DE CHOCOLATE",
+   "seta_ou_circulo": true,
+   "movimento": "Zoom in rápido no rosto do menino lambendo o chocolate.",
+   "frase": "Para essas crianças, é impossível não provar essa cascata de chocolate."
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": true
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "Vermelha",
+    "estilo": "Desenho preenchido 3D/sombreado",
+    "quantas": 1,
+    "quando": "00:00.000"
+   },
+   "circulo": {
+    "cor": "Vermelho",
+    "quantos": 1
+   },
+   "outros": [
+    "Lupa",
+    "Ícones informativos"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 2,
+   "fonte": "grossa",
+   "cor_base": "Branco",
+   "cor_destaque": "Amarelo",
+   "contorno": true,
+   "posicao": "centro-inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": true
+  },
+  "texto_extra_na_tela": [
+   "Crianças lambendo chocolate",
+   "Museu de chocolate na Turquia",
+   "Sistema higiênico"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco",
+    "zoom in rápido",
+    "whip pan"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "Zoom dinâmico contínuo",
+   "Flash sutil nas trocas de cena",
+   "Correção de cor saturada e quente"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "TikTok/Douyin",
+   "marca_dagua_visivel": false,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "estilo": "incerto",
+   "inicio": "00:00.000",
+   "duracao_s": 0.0,
+   "o_que_explica": "incerto"
+  },
+  "final": {
+   "cta": "Mostrar a barra de chocolate turca como produto final.",
+   "loop": "A barra de chocolate no final conecta visualmente com a ideia de curiosidade sobre o museu no início.",
+   "ultima_cena": "Mão segurando barra de chocolate personalizada do museu."
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Ação bizarra e irresistível logo no primeiro segundo (crianças lambendo parede de chocolate).",
+   "Ritmo acelerado com cortes médios abaixo de 1 segundo mantendo alta estimulação visual.",
+   "Curiosidade gerada pela pergunta 'será que é higiênico/seguro?' respondida logo em seguida."
+  ]
+ }
+}

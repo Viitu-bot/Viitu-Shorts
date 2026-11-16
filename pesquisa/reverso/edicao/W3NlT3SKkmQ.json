@@ -1,0 +1,102 @@
+{
+ "canal": "Zack D. Films",
+ "id": "W3NlT3SKkmQ",
+ "titulo": "How To Get Water Out Of Your Ear 🤔",
+ "views": 51149581,
+ "dur": 30,
+ "data": "2026-10-13",
+ "papel": "top",
+ "analise": {
+  "mix_volumes_vs_voz": {
+   "musica_sob_fala_db": -18,
+   "musica_nas_pausas_db": -6,
+   "whoosh_db": -3,
+   "pop_db": -2,
+   "boom_db": 0,
+   "riser_db": -4,
+   "foley_ambiencia_db": -10,
+   "foley_detalhe_db": -5,
+   "obs": "A mixagem é profissional, com efeitos sonoros (SFX) de transição e ação em destaque para enfatizar o ritmo."
+  },
+  "ritmo": {
+   "segundos_por_cena_media": 1.5,
+   "cena_mais_longa_s": 3.0,
+   "corta_no_inicio_de_frase": "sim"
+  },
+  "gancho_3s": {
+   "o_que_aparece_no_frame0": "Uma menina andando de bicicleta em direção a uma piscina.",
+   "texto_na_tela": "If you fall into",
+   "seta_ou_circulo": false,
+   "movimento": "Câmera em movimento de acompanhamento (tracking shot) seguido de queda.",
+   "frase": "If you fall into a pool"
+  },
+  "zoom_e_camera": {
+   "zoom_constante_lento": true,
+   "punch_in_em_palavra": true,
+   "tremida": false,
+   "camera_lenta": true
+  },
+  "marcacoes": {
+   "seta": {
+    "cor": "azul ciano",
+    "estilo": "seta animada com contorno",
+    "quantas": 2,
+    "quando": "00:04.5 e 00:20.0"
+   },
+   "circulo": {
+    "cor": "incerto",
+    "quantos": 0
+   },
+   "outros": [
+    "números de velocidade (9.8 m/s)",
+    "ícone de desentupidor"
+   ]
+  },
+  "legenda": {
+   "palavras_por_vez": 3,
+   "fonte": "grossa (sans-serif)",
+   "cor_base": "branca",
+   "cor_destaque": "incerto",
+   "contorno": true,
+   "posicao": "inferior",
+   "animacao": "pop",
+   "destaca_palavra_chave": false
+  },
+  "texto_extra_na_tela": [
+   "9.8 m/s"
+  ],
+  "transicoes": {
+   "tipos": [
+    "corte seco"
+   ],
+   "mais_comum": "corte seco"
+  },
+  "efeitos_visuais": [
+   "brilho (glow) azul em torno da orelha",
+   "transparência em modelos 3D"
+  ],
+  "cor": "saturada",
+  "imagens": {
+   "origem": "3D",
+   "marca_dagua_visivel": false,
+   "bordas_ou_fundo_desfocado": false
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "estilo": "renderização 3D médica/anatômica",
+   "inicio": "00:02.0",
+   "duracao_s": 27.5,
+   "o_que_explica": "Mecânica da física do ouvido e o efeito de sucção da água."
+  },
+  "final": {
+   "cta": "nenhum explícito",
+   "loop": "o vídeo termina com a menina olhando para a câmera, facilitando o corte para o início",
+   "ultima_cena": "menina sorrindo após a água sair do ouvido"
+  },
+  "o_que_mais_contribui_para_reter": [
+   "Uso de animação 3D de alta qualidade para explicar um problema comum",
+   "Ritmo acelerado com cortes precisos no início de cada frase",
+   "Uso de efeitos sonoros (SFX) que dão peso e satisfação visual às ações"
+  ]
+ }
+}
