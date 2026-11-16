@@ -88,7 +88,7 @@ def auditar(projeto: str, video: str) -> None:
     try:
         from viitu.assistir import perguntar
         crit = json.loads(perguntar(video, PROMPT_CRITICA))
-    except Exception as e:  # Gemini fora do ar/cota
+    except BaseException as e:  # Gemini fora do ar/cota (SystemExit incluído)
         crit = {"erro": str(e)[:200]}
     md = [f"# Auditoria — {projeto}", "", "## Medições", *[f"- {a}" for a in A], "", "## Crítica (Gemini)"]
     if "erro" in crit:

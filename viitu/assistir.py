@@ -81,15 +81,17 @@ def perguntar(link: str, prompt: str, modelo: str = MODELO, json_saida: bool = T
                              **({"responseMimeType": "application/json"} if json_saida else {})},
     }
     import time
-    for tentativa in range(5):
+    reservas = [modelo, "gemini-3-flash-preview", "gemini-3.1-flash-lite", "gemini-flash-lite-latest"]
+    for tentativa in range(8):
+        modelo = reservas[min(tentativa // 2, len(reservas) - 1)]     # cota/lotado → próximo modelo grátis
         try:
             d = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
                               params={"key": _chave()}, json=corpo, timeout=600).json()
         except requests.RequestException as e:      # queda de rede/proxy: espera e tenta de novo
             d = {"error": {"message": str(e)[:120], "code": 503}}
         msg = d.get("error", {}).get("message", "")
-        if "high demand" in msg or d.get("error", {}).get("code") in (429, 500, 503):
-            time.sleep(20 * (tentativa + 1))     # servidor ocupado: espera e tenta de novo
+        if "high demand" in msg or "quota" in msg.lower() or d.get("error", {}).get("code") in (429, 500, 503):
+            time.sleep(5 if "quota" in msg.lower() else 15)     # servidor ocupado: espera e tenta de novo
             continue
         break
     if "error" in d:
