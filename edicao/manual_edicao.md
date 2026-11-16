@@ -113,3 +113,10 @@ O som segue a curva: trilha mais baixa na explicação, cheia na virada e no fin
 3. Corte na ação (ajustar a borda do corte para o pico de movimento) ⏳
 4. Cortes na batida da trilha ⏳
 5. Look de cor por clima do tema ⏳
+6. **Animação explicativa própria (motion graphics em SVG no Remotion)** — o "porquê" desenhado na tela
+   (ex.: a faixa queimada que o fogo não atravessa, setas de vento). Explica melhor que um clipe E é conteúdo
+   100% original (ajuda na monetização). Desenhar com `stroke-dasharray` (efeito lápis), sincronizado à palavra. ⏳
+7. **Gráfico que conversa com a cena** — cores do gráfico tiradas da paleta do clipe; sombra no elemento. ⏳
+8. **Recompor horizontal → vertical** (mover elementos para a tela em pé, em vez de cortar o meio). ⏳
+Fontes: JP Labs (Short, 53k views) e Felipe Borges "Claude Vídeo 2.0" (85k views, skill `Felpborges/claude-video`),
+analisados em 16/11/2026. Já fazemos: animação quadro a quadro, sincronia por palavra, prancha antes de entregar.
