@@ -1,0 +1,78 @@
+{
+ "canal": "KSO Descobre",
+ "id": "onB6neD6kvE",
+ "titulo": "Nenhum edifício japonês nasce sem essa etapa! 🏗️ #curiosidades #japão #lugares",
+ "views": 3311967,
+ "dur": 34,
+ "data": "2026-05-07",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 33,
+  "musica": {
+   "tem": true,
+   "estilo": "lo-fi hip hop instrumental",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 15,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "nao"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 25,
+  "efeitos_caem": "maioria_sobre_a_fala",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:12",
+     "som": "som de furadeira",
+     "na_tela": "furadeira na maquete",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "baixo",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "tipo": "incerto",
+   "inicio": "incerto",
+   "duracao_s": 0,
+   "o_que_explica": "incerto",
+   "som_na_animacao": "incerto"
+  },
+  "texto_e_graficos": [
+   "legenda centralizada em branco com fundo preto (00:00)",
+   "seta vermelha apontando para o topo do prédio (00:09)",
+   "círculo vermelho em volta do homem trabalhando (00:24)"
+  ],
+  "assinatura_sonora": "incerto",
+  "regras_do_editor": [
+   "Sempre inserir um efeito de 'whoosh' em cada transição de corte de cena.",
+   "Manter a música de fundo em volume constante e baixo, sem interrupções.",
+   "Adicionar efeitos sonoros de foley (como furadeira ou água) apenas quando a ação é explícita na tela.",
+   "Sincronizar o efeito sonoro de 'pop' com o surgimento de elementos gráficos como setas ou círculos.",
+   "Manter a narração em destaque, com a música de fundo sempre em um nível de decibéis significativamente menor.",
+   "Utilizar legendas centralizadas que mudam de cor ou estilo para enfatizar palavras-chave.",
+   "Evitar silêncios prolongados, preenchendo o áudio com a narração contínua e a trilha sonora."
+  ]
+ }
+}

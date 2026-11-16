@@ -1,0 +1,90 @@
+{
+ "canal": "Andre Shorts Br",
+ "id": "E2-SvqhLYnE",
+ "titulo": "Esse gato mora em um AQUÁRIO! 😮",
+ "views": 7924752,
+ "dur": 52,
+ "data": "2026-10-28",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 51.5,
+  "musica": {
+   "tem": true,
+   "estilo": "Upbeat, playful, lighthearted background music",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 15,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "nao"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 35,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 2,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "fala": "Esta gatinha",
+     "na_tela": "Seta vermelha apontando para o aquário",
+     "por_que": "Ênfase visual inicial"
+    },
+    {
+     "tempo": "00:44",
+     "fala": "reviravolta",
+     "na_tela": "Gato com cauda de sereia",
+     "por_que": "Ênfase na revelação cômica"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:13",
+     "som": "Som de corte de vidro",
+     "na_tela": "Vidraceiro cortando vidro",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "baixo",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "tipo": "incerto",
+   "inicio": "incerto",
+   "duracao_s": 0,
+   "o_que_explica": "incerto",
+   "som_na_animacao": "incerto"
+  },
+  "texto_e_graficos": [
+   "Seta vermelha grande (00:00)",
+   "Legendas dinâmicas centralizadas (00:00 - 00:51)"
+  ],
+  "assinatura_sonora": "incerto",
+  "regras_do_editor": [
+   "Sempre usar um efeito de whoosh em transições rápidas de cena.",
+   "Adicionar um efeito sonoro de impacto (boom) quando uma seta vermelha ou revelação importante aparece.",
+   "Manter a música de fundo em volume constante, sempre abaixo da narração.",
+   "Sincronizar a legenda com o ritmo da fala, destacando palavras-chave.",
+   "Adicionar sons de foley (corte de vidro, água) para aumentar a imersão nas cenas de construção.",
+   "Usar cortes rápidos para manter o engajamento do espectador.",
+   "Aplicar um efeito sonoro de 'pop' sempre que um elemento gráfico (seta) surge na tela."
+  ]
+ }
+}

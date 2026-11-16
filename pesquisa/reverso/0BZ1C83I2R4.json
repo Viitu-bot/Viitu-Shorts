@@ -1,0 +1,104 @@
+{
+ "canal": "Zack D. Films",
+ "id": "0BZ1C83I2R4",
+ "titulo": "How Electrical Outlets Work 🤔",
+ "views": 77081950,
+ "dur": 25,
+ "data": "2026-10-18",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 23,
+  "musica": {
+   "tem": true,
+   "estilo": "Eletrônica rítmica e motivacional",
+   "volume_vs_voz": "alta",
+   "db_estimado_abaixo_da_voz": 3,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [
+    "00:22 encerramento do vídeo"
+   ],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 16,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "nao_tem_seta",
+  "riser_antes_da_revelacao": {
+   "tem": true,
+   "exemplos": [
+    "00:10 aceleração da roda"
+   ]
+  },
+  "boom_ou_impacto": {
+   "quantos": 3,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "fala": "null",
+     "na_tela": "Plugue entrando",
+     "por_que": "Enfatizar conexão inicial"
+    },
+    {
+     "tempo": "00:11",
+     "fala": "null",
+     "na_tela": "Gerador ligando",
+     "por_que": "Marcar início da produção de energia"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 1,
+   "exemplos": [
+    {
+     "tempo": "00:21",
+     "fala": "null",
+     "na_tela": "Tela de carregamento"
+    }
+   ]
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:05",
+     "som": "Estalo de chicote",
+     "na_tela": "Personagem batendo chicote",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:12",
+     "som": "Zumbido elétrico",
+     "na_tela": "Eletricidade nos tubos",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "3D",
+   "inicio": "00:00",
+   "duracao_s": 23,
+   "o_que_explica": "Mecanismo interno de um carregador movido a hamster",
+   "som_na_animacao": "Foley mecânico e efeitos elétricos constantes"
+  },
+  "texto_e_graficos": [
+   "00:21 Interface de bateria 25%"
+  ],
+  "assinatura_sonora": "Logotipo visual Zack D. Films na tela do celular",
+  "regras_do_editor": [
+   "Inserir impacto grave em cada encaixe físico de plugues.",
+   "Utilizar whooshes rápidos em transições de câmera dinâmica.",
+   "Sincronizar foley de passos e engrenagens com o movimento 3D.",
+   "Adicionar zumbido elétrico crescente para indicar fluxo de energia.",
+   "Manter trilha sonora em loop rítmico para sustentar urgência.",
+   "Finalizar com som de sistema autêntico (iPhone) para realismo."
+  ]
+ }
+}

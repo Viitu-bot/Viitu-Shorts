@@ -1,0 +1,97 @@
+{
+ "canal": "Zack D. Films",
+ "id": "gyOZv_ckZQU",
+ "titulo": "Why Dobermans Have Cropped Ears 😞",
+ "views": 51516523,
+ "dur": 32,
+ "data": "2026-10-30",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 31,
+  "musica": {
+   "tem": true,
+   "estilo": "Lo-fi instrumental, calmo e rítmico",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 15,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "nao"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 22,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 2,
+   "exemplos": [
+    {
+     "tempo": "00:12",
+     "fala": "pulled",
+     "na_tela": "orelha sendo puxada",
+     "por_que": "enfatizar a ação de puxar"
+    },
+    {
+     "tempo": "00:16",
+     "fala": "broken",
+     "na_tela": "raio-x do rabo quebrado",
+     "por_que": "enfatizar o dano físico"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "som": "tesoura cortando",
+     "na_tela": "tesoura na orelha",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:02",
+     "som": "fita adesiva",
+     "na_tela": "fita sendo colada",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "3D",
+   "inicio": "00:00",
+   "duracao_s": 31,
+   "o_que_explica": "demonstração anatômica e comportamental de cães",
+   "som_na_animacao": "efeitos sonoros de foley e whooshes"
+  },
+  "texto_e_graficos": [
+   "legendas em branco com fundo preto (00:00-00:31)",
+   "setas rosas animadas (00:04)",
+   "calendário animado (00:23-00:24)"
+  ],
+  "assinatura_sonora": "não há uma assinatura sonora específica, apenas o uso consistente de whooshes em transições",
+  "regras_do_editor": [
+   "inserir whoosh em todas as transições de cena",
+   "adicionar som de foley para cada ação física (cortar, colar, bater)",
+   "manter a música de fundo em volume constante e baixo para não competir com a narração",
+   "usar efeitos de impacto (boom) para enfatizar momentos de dor ou dano físico",
+   "sincronizar legendas com a fala em tempo real",
+   "usar elementos visuais (setas/calendários) para reforçar a explicação anatômica",
+   "evitar sons de meme ou efeitos cômicos para manter o tom informativo"
+  ]
+ }
+}

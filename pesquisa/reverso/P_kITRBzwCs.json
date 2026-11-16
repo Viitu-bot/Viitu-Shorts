@@ -1,0 +1,92 @@
+{
+ "canal": "Andre Shorts Br",
+ "id": "P_kITRBzwCs",
+ "titulo": "Diferenças dos Hashis do Japão, China e Coreia! 😮🥢",
+ "views": 115903,
+ "dur": 34,
+ "data": "2026-09-02",
+ "papel": "mediano",
+ "analise": {
+  "duracao_s": 33.5,
+  "musica": {
+   "tem": true,
+   "estilo": "Lo-fi hip hop",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": -12,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "nao"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 24,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 2,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "fala": "Qual a diferença",
+     "na_tela": "Seta vermelha",
+     "por_que": "Início do vídeo"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 4,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "fala": "China",
+     "na_tela": "Bandeira da China"
+    }
+   ]
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:11",
+     "som": "Mastigação",
+     "na_tela": "Homem comendo",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "2D",
+   "inicio": "00:00",
+   "duracao_s": 3,
+   "o_que_explica": "Identifica países e hashis.",
+   "som_na_animacao": "pop/ding"
+  },
+  "texto_e_graficos": [
+   "Seta vermelha (00:00)",
+   "Bandeiras (00:00-00:02)",
+   "Círculo vermelho (00:17)",
+   "Retângulo azul (00:23)"
+  ],
+  "assinatura_sonora": "nenhuma",
+  "regras_do_editor": [
+   "Whoosh em transições.",
+   "Pop/Ding em gráficos.",
+   "Foley em ações de comer.",
+   "Música constante em loop.",
+   "Destaque colorido em legendas.",
+   "Círculos para foco visual.",
+   "Cortes frequentes para ritmo."
+  ]
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "canal": "Polaco sem Polônia",
+ "id": "GDjPVWNlKO0",
+ "titulo": "O motor portátil que transforma qualquer bike em elétrica!",
+ "views": 10258129,
+ "dur": 21,
+ "data": "2026-09-05",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 20.5,
+  "musica": {
+   "tem": true,
+   "estilo": "Eletrônica motivacional",
+   "volume_vs_voz": "media",
+   "db_estimado_abaixo_da_voz": 12,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 18,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": true,
+   "exemplos": [
+    "00:03 Acontece que..."
+   ]
+  },
+  "boom_ou_impacto": {
+   "quantos": 4,
+   "exemplos": [
+    {
+     "tempo": "00:01",
+     "fala": "Invenção",
+     "na_tela": "Dispositivo",
+     "por_que": "Destaque inicial"
+    },
+    {
+     "tempo": "00:08",
+     "fala": "Elétrica",
+     "na_tela": "Montagem",
+     "por_que": "Ponto de virada"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:05",
+     "som": "Cliques mecânicos",
+     "na_tela": "Encaixe do motor",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "tipo": null,
+   "inicio": null,
+   "duracao_s": 0,
+   "o_que_explica": null,
+   "som_na_animacao": null
+  },
+  "texto_e_graficos": [
+   "Seta vermelha (00:00)",
+   "Seta vermelha (00:01)",
+   "Legendas dinâmicas centrais (todo o vídeo)"
+  ],
+  "assinatura_sonora": "Não identificada",
+  "regras_do_editor": [
+   "Whoosh em cada transição de cena.",
+   "Foley mecânico em close-ups do produto.",
+   "Impactos em palavras de destaque na legenda.",
+   "Pop sonoro em elementos gráficos (setas).",
+   "Trilha eletrônica constante para manter energia.",
+   "Riser antes de mostrar o benefício principal."
+  ]
+ }
+}

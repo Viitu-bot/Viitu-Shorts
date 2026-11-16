@@ -1,0 +1,95 @@
+{
+ "canal": "Zack D. Films",
+ "id": "CRGWDiIgMZ4",
+ "titulo": "How Cookiecutter Sharks Bite Whales 😨",
+ "views": 61786815,
+ "dur": 28,
+ "data": "2026-10-09",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 27,
+  "musica": {
+   "tem": true,
+   "estilo": "Cinematográfica, suspense, percussiva",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 15,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [
+    "00:18 transição para explicação"
+   ],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 15,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": true,
+   "exemplos": [
+    "00:08 Then the shark twists"
+   ]
+  },
+  "boom_ou_impacto": {
+   "quantos": 2,
+   "exemplos": [
+    {
+     "tempo": "00:01",
+     "fala": "small upper teeth",
+     "na_tela": "dentes do tubarão",
+     "por_que": "ênfase na mordida"
+    },
+    {
+     "tempo": "00:11",
+     "fala": "carving out",
+     "na_tela": "tubarão girando",
+     "por_que": "ênfase no movimento de corte"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:01",
+     "som": "som de carne sendo cortada/rasgada",
+     "na_tela": "dentes do tubarão",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "3D",
+   "inicio": "00:00",
+   "duracao_s": 27,
+   "o_que_explica": "anatomia da mordida do tubarão charuto",
+   "som_na_animacao": "efeitos sonoros de foley e whooshes"
+  },
+  "texto_e_graficos": [
+   "Legendas centralizadas (00:00)",
+   "Seta circular branca indicando rotação (00:09)"
+  ],
+  "assinatura_sonora": "incerto",
+  "regras_do_editor": [
+   "Sempre usar whoosh em transições rápidas de câmera.",
+   "Adicionar efeitos de foley de 'corte' ou 'rasgo' quando os dentes tocam a pele.",
+   "A música deve ter um corte ou mudança de ritmo quando o assunto muda (ex: de baleia para lula).",
+   "Sempre usar um som de impacto (boom) para destacar a ação principal da mordida.",
+   "Legendas devem aparecer sincronizadas com a fala, centralizadas na parte inferior.",
+   "Usar elementos gráficos (setas/círculos) para guiar o olhar do espectador em movimentos complexos.",
+   "Manter a música de fundo em volume baixo para não competir com a narração.",
+   "Aumentar a intensidade dos efeitos sonoros em momentos de ação (giro do tubarão)."
+  ]
+ }
+}

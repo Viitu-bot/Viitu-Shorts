@@ -1,0 +1,83 @@
+{
+ "canal": "KSO Descobre",
+ "id": "ATmqYITooB8",
+ "titulo": "Espiar essa van pode dar muito errado! 😳 #curiosidades #japão #lugares",
+ "views": 3665290,
+ "dur": 42,
+ "data": "2026-02-24",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 41.5,
+  "musica": {
+   "tem": true,
+   "estilo": "Upbeat, pop, instrumental",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 15,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 25,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 2,
+   "exemplos": [
+    {
+     "tempo": "00:02",
+     "fala": "van",
+     "na_tela": "seta vermelha",
+     "por_que": "destacar o objeto"
+    },
+    {
+     "tempo": "00:19",
+     "fala": "realmente",
+     "na_tela": "círculo vermelho",
+     "por_que": "destacar a pessoa"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": false,
+   "exemplos": []
+  },
+  "som_original_do_clipe": "baixo",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "tipo": null,
+   "inicio": null,
+   "duracao_s": null,
+   "o_que_explica": null,
+   "som_na_animacao": null
+  },
+  "texto_e_graficos": [
+   "seta vermelha em 00:02",
+   "círculo vermelho em 00:19"
+  ],
+  "assinatura_sonora": "não há",
+  "regras_do_editor": [
+   "Adicionar whoosh em quase todas as transições de corte",
+   "Adicionar som de impacto (boom) quando um elemento gráfico (seta ou círculo) aparece",
+   "Manter a música de fundo em volume baixo constante",
+   "Sincronizar cortes de vídeo com a batida da música",
+   "Legendas aparecem centralizadas na parte inferior da tela",
+   "Aumentar o volume do áudio original apenas quando há fala de alguém no vídeo",
+   "Usar zoom in/out para enfatizar pontos específicos da narrativa"
+  ]
+ }
+}

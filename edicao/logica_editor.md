@@ -2,6 +2,29 @@
 
 Pesquisa de nov/2026 (fontes no fim). Complementa `manual_edicao.md` (técnicas) e `biblioteca_sons.md` (sons).
 
+
+## 0. ENGENHARIA REVERSA — 30 Shorts do nicho (nov/2026, `pesquisa/reverso/`)
+Amostra: A vida é uma maravilha, GeneralTV, KSO Descobre, Polaco sem Polônia, Andre Shorts Br, Zack D. Films —
+os 4 maiores sucessos do último ano de cada um + 1 vídeo mediano. Questionário respondido pelo Gemini (o que
+aparece na maioria vira regra; listagem som-a-som do Gemini se mostrou não confiável e foi descartada).
+| O que fazem | Resultado | Nossa regra |
+|---|---|---|
+| Música de fundo | **100%** dos vídeos, constante, ~**12–15 dB abaixo da voz** | `mix` 0,28/0,42 (≈12 dB) ✅ |
+| Whoosh nos cortes | na **maioria** dos cortes em 29/30 | kit `whoosh_corte` em quase todo corte ✅ |
+| Pop quando aparece seta/círculo | **90%** | ✅ |
+| Foley/ASMR do que aparece | **93%** (som original do clipe desligado em 22/30, baixo em 8) | 2 camadas Sonniss ✅ |
+| Riser antes da revelação | 47% | só quando há revelação forte |
+| Boom/impacto | mediana **2 por vídeo** (gancho/revelação/ação de força) | 1–2 ✅ |
+| Ding/notificação | mediana **0** | raro; só com número na tela |
+| Buzzer/acerto/sons de função | **não aparecem** | desligados por padrão (o dono também reprovou) |
+| Som em cada palavra da legenda | **0%** | nunca |
+| Sons de meme | **0%** em 30 vídeos | nunca |
+| Vácuo/silêncio dramático | 13% | só na virada principal |
+| Animação 2D/3D | **53%** dos vídeos (GeneralTV 80%, A vida 60%, Andre 40%, KSO/Polaco 20%, Zack 100%) — inserções de **1–10 s** no meio explicando mecanismo/anatomia; Zack: vídeo todo em 3D | animação curta no trecho do mecanismo ✅ |
+| Assinatura sonora própria | nenhum canal tem — a identidade vem da CONSISTÊNCIA (mesmos whooshes, mesmo estilo visual) | nosso ding+flash é diferencial; manter o kit fixo |
+Conclusão: o padrão do nicho é **limpo e consistente** (música constante + whoosh nos cortes + pop nas marcas +
+foley + 2 booms + animação curta). Efeito "engraçadinho" ou de função não faz parte da linguagem desses canais.
+
 ## 1. Identidade sonora do Viitu (o que faz reconhecer o canal sem ler o nome)
 Canal grande se reconhece pelo **conjunto pequeno e fixo** de sons que se repete em todo vídeo, sempre na
 mesma função. Regra: poucos sons, sempre os mesmos papéis, alternando 3 variações de cada.
@@ -11,9 +34,7 @@ mesma função. Regra: poucos sons, sempre os mesmos papéis, alternando 3 varia
 | Corte | whoosh de ar curto (3 variações) | kit `whoosh_corte` (Mixkit) |
 | Detalhe marcado | pop limpo | kit `pop_marca` |
 | Revelação | riser → vácuo → boom cinematográfico | kit `riser_tensao` + `impacto_revelacao` |
-| Fato/número | ding de notificação | kit `ding_fato` |
-| Mito desmentido | buzzer de resposta errada | kit `errado_mito` |
-| Resposta certa | chime de acerto | kit `certo_resposta` |
+| Fato/número (só com número animado na tela) | ding de notificação | kit `ding_fato` (raro) |
 | Final | botão inscrever + clique | próprio |
 O kit fica em `assets/kit/kit.json` (`python3 -m viitu.kit listar`). Mudar o kit = mudar a identidade: só com o dono.
 

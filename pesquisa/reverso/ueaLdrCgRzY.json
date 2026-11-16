@@ -1,0 +1,92 @@
+{
+ "canal": "Polaco sem Polônia",
+ "id": "ueaLdrCgRzY",
+ "titulo": "A película que transforma qualquer vidro numa TV",
+ "views": 6378561,
+ "dur": 17,
+ "data": "2026-08-22",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 16,
+  "musica": {
+   "tem": true,
+   "estilo": "Phonk/Eletrônica de alta energia",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 15,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 15,
+  "efeitos_caem": "maioria_sobre_a_fala",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": true,
+   "exemplos": [
+    "00:07"
+   ]
+  },
+  "boom_ou_impacto": {
+   "quantos": 2,
+   "exemplos": [
+    {
+     "tempo": "00:02",
+     "fala": "vidro comum",
+     "na_tela": "tubarão",
+     "por_que": "transição de cena"
+    },
+    {
+     "tempo": "00:08",
+     "fala": "qualquer janela",
+     "na_tela": "pantera",
+     "por_que": "transição de cena"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "som": "som de plástico sendo puxado",
+     "na_tela": "película sendo removida",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "2D",
+   "inicio": "00:00",
+   "duracao_s": 1,
+   "o_que_explica": "seta vermelha indicando a película",
+   "som_na_animacao": "pop"
+  },
+  "texto_e_graficos": [
+   "seta vermelha 00:00",
+   "legenda dinâmica centralizada 00:00-00:16"
+  ],
+  "assinatura_sonora": "não há",
+  "regras_do_editor": [
+   "Sempre usar um som de 'whoosh' em cada transição de corte rápido.",
+   "A música deve ser mantida em volume baixo para não competir com a narração.",
+   "Sempre que uma seta ou elemento gráfico aparecer, adicionar um efeito sonoro de 'pop'.",
+   "Utilizar efeitos de 'boom' ou impacto grave em transições de cena que mostram o resultado final do produto.",
+   "A narração deve ser rápida e sem pausas longas entre as frases.",
+   "Sincronizar os cortes de vídeo com a batida da música de fundo.",
+   "Adicionar efeitos sonoros de foley (como plástico ou vidro) para reforçar a ação visual do produto."
+  ]
+ }
+}

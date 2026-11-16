@@ -1,0 +1,84 @@
+{
+ "canal": "Andre Shorts Br",
+ "id": "5VT-t-BTQpM",
+ "titulo": "Esse truque na praia vai SALVAR seus pertences! 😮🏖",
+ "views": 4629381,
+ "dur": 23,
+ "data": "2026-10-28",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 22,
+  "musica": {
+   "tem": true,
+   "estilo": "Upbeat, Lo-fi Hip Hop",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 15,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "nao"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 20,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 1,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "fala": "Esta garota",
+     "na_tela": "Seta vermelha",
+     "por_que": "Ênfase inicial no objeto"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:09",
+     "som": "Escavação",
+     "na_tela": "Pá",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "baixo",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "tipo": null,
+   "inicio": null,
+   "duracao_s": null,
+   "o_que_explica": null,
+   "som_na_animacao": null
+  },
+  "texto_e_graficos": [
+   "Seta vermelha animada 00:00",
+   "Legendas centralizadas em destaque 00:00-00:22"
+  ],
+  "assinatura_sonora": "incerto",
+  "regras_do_editor": [
+   "Sempre inserir um efeito de whoosh em cada corte de cena",
+   "Manter a música de fundo em volume constante abaixo da narração",
+   "Adicionar efeitos sonoros de foley (pá, areia) para reforçar ações visuais",
+   "Sincronizar a seta vermelha com o início do vídeo para guiar o olhar",
+   "Utilizar legendas dinâmicas que mudam de cor ou tamanho conforme a ênfase da fala",
+   "Manter o ritmo de cortes rápido, não excedendo 1.5 segundos por plano",
+   "Remover ruídos de ambiente da praia para priorizar a voz do narrador"
+  ]
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "canal": "Polaco sem Polônia",
+ "id": "l1tX3Hp6sDs",
+ "titulo": "O acessório que está salvando os joelhos nas obras 🦿🏗️",
+ "views": 5456036,
+ "dur": 21,
+ "data": "2026-07-17",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 20,
+  "musica": {
+   "tem": true,
+   "estilo": "Eletrônica motivacional e rítmica",
+   "volume_vs_voz": "media",
+   "db_estimado_abaixo_da_voz": -12,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 18,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "nao_tem_seta",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 2,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "fala": "Este acessório",
+     "na_tela": "Close no suporte de perna",
+     "por_que": "Impacto inicial para prender atenção"
+    },
+    {
+     "tempo": "00:11",
+     "fala": "Distribui o peso",
+     "na_tela": "Trabalhador assentando tijolos",
+     "por_que": "Enfatizar transição para benefício prático"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "som": "Passos metálicos e mecânicos",
+     "na_tela": "Homem caminhando com o suporte",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:07",
+     "som": "Ajuste de tiras e velcro",
+     "na_tela": "Mãos prendendo o equipamento",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "tipo": null,
+   "inicio": "00:00",
+   "duracao_s": 0,
+   "o_que_explica": null,
+   "som_na_animacao": null
+  },
+  "texto_e_graficos": [
+   "Legendas dinâmicas centralizadas (00:00-00:20)",
+   "Marca d'água @POLACO SEM POLÔNIA (00:00-00:20)"
+  ],
+  "assinatura_sonora": "Não identificada",
+  "regras_do_editor": [
+   "Inserir Whoosh em transições para manter dinamismo.",
+   "Adicionar Foley exagerado em ações físicas para imersão.",
+   "Sincronizar cortes de cena com batidas da trilha.",
+   "Utilizar legendas palavra por palavra para retenção.",
+   "Aplicar impacto sonoro no primeiro frame como gancho.",
+   "Substituir áudio original por trilha e efeitos limpos."
+  ]
+ }
+}

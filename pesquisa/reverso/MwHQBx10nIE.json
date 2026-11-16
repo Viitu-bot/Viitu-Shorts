@@ -1,0 +1,98 @@
+{
+ "canal": "Polaco sem Polônia",
+ "id": "MwHQBx10nIE",
+ "titulo": "O Jeito Certo de Pegar Peso sem Destruir a Coluna 🏗️💪",
+ "views": 6918684,
+ "dur": 20,
+ "data": "2026-03-28",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 18,
+  "musica": {
+   "tem": true,
+   "estilo": "Batida eletrônica motivacional",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 15,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 18,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 1,
+   "exemplos": [
+    {
+     "tempo": "00:16",
+     "fala": "ficará reta",
+     "na_tela": "coluna reta",
+     "por_que": "Enfatizar a postura correta final"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 1,
+   "exemplos": [
+    {
+     "tempo": "00:16",
+     "fala": "ficará reta",
+     "na_tela": "botão inscreva-se"
+    }
+   ]
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:04",
+     "som": "Rangido de plástico/mola",
+     "na_tela": "Boneco dobrando a coluna",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:13",
+     "som": "Plástico batendo",
+     "na_tela": "Ajuste do balde no boneco",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "tipo": null,
+   "inicio": null,
+   "duracao_s": null,
+   "o_que_explica": null,
+   "som_na_animacao": null
+  },
+  "texto_e_graficos": [
+   "Seta vermelha apontando para o pé (00:00)",
+   "Seta vermelha apontando para o balde (00:07)",
+   "Seta vermelha apontando para a lombar (00:09)",
+   "Botão de inscrição e seta (00:16)"
+  ],
+  "assinatura_sonora": "não detectada",
+  "regras_do_editor": [
+   "Inserir whoosh em cada transição de zoom ou corte de câmera.",
+   "Adicionar efeito de 'pop' ou 'whoosh' agudo sempre que uma seta vermelha surgir.",
+   "Sincronizar foley de rangido mecânico com o movimento da coluna do boneco.",
+   "Manter trilha sonora constante em volume baixo para preencher o fundo.",
+   "Utilizar impacto (boom) no momento da demonstração da postura correta.",
+   "Inserir 'ding' de notificação exatamente na aparição do botão de inscrição.",
+   "Remover áudio original para focar na narração e efeitos adicionados."
+  ]
+ }
+}

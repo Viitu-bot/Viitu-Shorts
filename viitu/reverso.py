@@ -111,5 +111,57 @@ def analisar() -> None:
             time.sleep(8)
 
 
+def resumo() -> str:
+    """Consolida as respostas: % de vídeos que fazem cada coisa (geral, por canal, top × mediano)."""
+    import collections
+    am = json.loads((PASTA / "amostra.json").read_text(encoding="utf-8"))
+    linhas = {}
+    for nome, c in am.items():
+        for v in c["videos"]:
+            arq = PASTA / f"{v['id']}.json"
+            if arq.exists():
+                linhas.setdefault(nome, []).append(json.loads(arq.read_text(encoding="utf-8")))
+    todos = [x for l in linhas.values() for x in l]
+
+    def g(d, *ks):
+        for k in ks:
+            d = d.get(k) if isinstance(d, dict) else None
+        return d
+
+    def tab(grupo):
+        A = [x["analise"] for x in grupo]
+        n = len(A) or 1
+        cnt = lambda f: sum(1 for a in A if f(a))
+        db = [g(a, "musica", "db_estimado_abaixo_da_voz") for a in A if isinstance(g(a, "musica", "db_estimado_abaixo_da_voz"), (int, float))]
+        anim = [a for a in A if g(a, "animacao_2d_3d", "tem")]
+        return {
+            "videos": len(A),
+            "musica_presente_%": round(100 * cnt(lambda a: g(a, "musica", "tem")) / n),
+            "musica_db_abaixo_voz_mediana": st.median(db) if db else None,
+            "whoosh_nos_cortes": dict(collections.Counter(a.get("whoosh_nos_cortes") for a in A)),
+            "efeitos_caem": dict(collections.Counter(a.get("efeitos_caem") for a in A)),
+            "som_por_palavra_%": round(100 * cnt(lambda a: a.get("som_por_palavra_da_legenda") == "sim") / n),
+            "pop_em_seta_%": round(100 * cnt(lambda a: a.get("pop_em_seta_ou_circulo") == "sim") / n),
+            "riser_%": round(100 * cnt(lambda a: g(a, "riser_antes_da_revelacao", "tem")) / n),
+            "boom_mediana": st.median([g(a, "boom_ou_impacto", "quantos") or 0 for a in A]),
+            "ding_mediana": st.median([g(a, "ding_ou_notificacao", "quantos") or 0 for a in A]),
+            "memes": dict(collections.Counter(m for a in A for m in (a.get("sons_de_meme") or []) if m)),
+            "foley_%": round(100 * cnt(lambda a: g(a, "foley_do_que_aparece", "tem")) / n),
+            "som_original": dict(collections.Counter(a.get("som_original_do_clipe") for a in A)),
+            "vacuo_%": round(100 * cnt(lambda a: g(a, "silencio_ou_vacuo_dramatico", "tem")) / n),
+            "animacao_%": round(100 * len(anim) / n),
+            "animacao": [f"{g(a,'animacao_2d_3d','tipo')} {g(a,'animacao_2d_3d','duracao_s')}s em {g(a,'animacao_2d_3d','inicio')}: {g(a,'animacao_2d_3d','o_que_explica')}" for a in anim],
+        }
+    out = {"GERAL": tab(todos), "TOP": tab([x for x in todos if x["papel"] == "top"]),
+           "MEDIANO": tab([x for x in todos if x["papel"] == "mediano"]),
+           **{k: tab(v) for k, v in linhas.items()}}
+    out["_assinaturas"] = {x["canal"] + " | " + x["titulo"][:40]: x["analise"].get("assinatura_sonora") for x in todos}
+    out["_regras"] = [r for x in todos for r in (x["analise"].get("regras_do_editor") or [])]
+    (PASTA / "resumo.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    return json.dumps({k: v for k, v in out.items() if not k.startswith("_")}, ensure_ascii=False, indent=1)
+
+
 if __name__ == "__main__":
-    {"amostra": amostra, "analisar": analisar}[sys.argv[1]]()
+    r = {"amostra": amostra, "analisar": analisar, "resumo": resumo}[sys.argv[1]]()
+    if isinstance(r, str):
+        print(r)

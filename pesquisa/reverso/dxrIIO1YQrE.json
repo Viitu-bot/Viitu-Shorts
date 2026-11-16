@@ -1,0 +1,103 @@
+{
+ "canal": "KSO Descobre",
+ "id": "dxrIIO1YQrE",
+ "titulo": "O sonho “ou pesadelo” dos amantes de chocolate! 🤤 #curiosidades #istanbul #lugares",
+ "views": 28215,
+ "dur": 29,
+ "data": "2026-01-05",
+ "papel": "mediano",
+ "analise": {
+  "duracao_s": 27,
+  "musica": {
+   "tem": true,
+   "estilo": "Upbeat/Animada",
+   "volume_vs_voz": "media",
+   "db_estimado_abaixo_da_voz": 12,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 22,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 2,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "fala": "Para essas crianças",
+     "na_tela": "Criança na cascata",
+     "por_que": "Gancho inicial"
+    },
+    {
+     "tempo": "00:18",
+     "fala": "completamente seguro",
+     "na_tela": "Círculo vermelho",
+     "por_que": "Revelação de segurança"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 1,
+   "exemplos": [
+    {
+     "tempo": "00:26",
+     "fala": "chocolate turco",
+     "na_tela": "Barra de chocolate"
+    }
+   ]
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:03",
+     "som": "Raspagem",
+     "na_tela": "Colher no chocolate",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:25",
+     "som": "Mastigação",
+     "na_tela": "Homem comendo",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "tipo": "incerto",
+   "inicio": "00:00",
+   "duracao_s": 0,
+   "o_que_explica": "N/A",
+   "som_na_animacao": "N/A"
+  },
+  "texto_e_graficos": [
+   "Seta vermelha (00:00)",
+   "Círculo vermelho (00:18)",
+   "Legendas dinâmicas centrais"
+  ],
+  "assinatura_sonora": "Nenhuma",
+  "regras_do_editor": [
+   "Whoosh em transições de cena",
+   "Pop ao exibir setas ou círculos",
+   "Foley em ações manuais táteis",
+   "Impacto em ganchos e revelações",
+   "Música constante em volume médio",
+   "Legendas síncronas com a fala",
+   "Ding no encerramento com produto"
+  ]
+ }
+}

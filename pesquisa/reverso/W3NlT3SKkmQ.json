@@ -1,0 +1,100 @@
+{
+ "canal": "Zack D. Films",
+ "id": "W3NlT3SKkmQ",
+ "titulo": "How To Get Water Out Of Your Ear 🤔",
+ "views": 51149581,
+ "dur": 30,
+ "data": "2026-10-13",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 30,
+  "musica": {
+   "tem": true,
+   "estilo": "lo-fi hip hop instrumental",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 15,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "nao"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 18,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": true,
+   "exemplos": [
+    "00:15"
+   ]
+  },
+  "boom_ou_impacto": {
+   "quantos": 2,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "fala": "If you fall into",
+     "na_tela": "menina na bicicleta",
+     "por_que": "impacto da queda na piscina"
+    },
+    {
+     "tempo": "00:12",
+     "fala": "a plunger",
+     "na_tela": "desentupidor",
+     "por_que": "ênfase visual no objeto"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "som": "splash de água",
+     "na_tela": "queda na piscina",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:11",
+     "som": "som de sucção de desentupidor",
+     "na_tela": "desentupidor",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "3D",
+   "inicio": "00:02",
+   "duracao_s": 28,
+   "o_que_explica": "anatomia do ouvido e o processo de remoção de água",
+   "som_na_animacao": "efeitos de sucção e sons de água"
+  },
+  "texto_e_graficos": [
+   "seta azul (00:04)",
+   "desentupidor animado (00:11)",
+   "números de velocidade 9.8 m/s (00:20)"
+  ],
+  "assinatura_sonora": "não há uma assinatura sonora específica, apenas o uso consistente de whooshes em transições",
+  "regras_do_editor": [
+   "Adicionar whoosh em todas as transições de corte rápido",
+   "Sincronizar efeitos sonoros de foley (água, sucção) com a animação 3D",
+   "Manter a música de fundo em volume baixo para não competir com a narração",
+   "Inserir um som de impacto (boom) quando um objeto novo ou ação brusca aparece na tela",
+   "Utilizar pop sonoro sempre que uma seta ou elemento gráfico for inserido",
+   "Aplicar riser sonoro antes de momentos de revelação ou explicação técnica",
+   "Manter a narração em primeiro plano com compressão constante",
+   "Substituir todo o áudio original do vídeo por efeitos sonoros limpos e narração gravada"
+  ]
+ }
+}

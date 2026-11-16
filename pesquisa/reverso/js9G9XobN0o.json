@@ -1,0 +1,104 @@
+{
+ "canal": "Andre Shorts Br",
+ "id": "js9G9XobN0o",
+ "titulo": "Por que o Show do Indiana Jones Foi CANCELADO? 😮",
+ "views": 4836158,
+ "dur": 39,
+ "data": "2026-08-23",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 38,
+  "musica": {
+   "tem": true,
+   "estilo": "suspense/misterioso",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 15,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [
+    "00:06 mudança de tom para revelação",
+    "00:23 mudança de tom para o incidente"
+   ],
+   "cortes_na_batida": "nao"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 22,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": true,
+   "exemplos": [
+    "00:05 antes da revelação do alçapão"
+   ]
+  },
+  "boom_ou_impacto": {
+   "quantos": 3,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "fala": "Por que a Disney",
+     "na_tela": "Círculo vermelho",
+     "por_que": "Ênfase visual inicial"
+    },
+    {
+     "tempo": "00:11",
+     "fala": "pedra de fibra",
+     "na_tela": "Seta vermelha",
+     "por_que": "Ênfase no objeto"
+    },
+    {
+     "tempo": "00:26",
+     "fala": "pedra bateu",
+     "na_tela": "Pedra rolando",
+     "por_que": "Impacto do erro"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:04",
+     "som": "som de desaparecimento mágico",
+     "na_tela": "cena sumindo",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "baixo",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": true,
+   "exemplos": [
+    "00:23"
+   ]
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "2D",
+   "inicio": "00:00",
+   "duracao_s": 38,
+   "o_que_explica": "Legendas dinâmicas e marcações visuais",
+   "som_na_animacao": "whoosh"
+  },
+  "texto_e_graficos": [
+   "Círculo vermelho 00:00",
+   "Seta vermelha 00:11",
+   "Legendas em destaque 00:00-00:38"
+  ],
+  "assinatura_sonora": "incerto",
+  "regras_do_editor": [
+   "Sempre usar whoosh em transições de corte rápido",
+   "Adicionar efeito sonoro de impacto (boom) quando setas ou círculos aparecem",
+   "Manter a música de fundo em volume baixo para não competir com a narração",
+   "Sincronizar o surgimento de legendas com a fala",
+   "Usar um riser sonoro antes de revelações importantes",
+   "Aumentar o volume do som original apenas em momentos de clímax ou falha",
+   "Inserir pausas dramáticas (silêncio) antes de reviravoltas na história"
+  ]
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "canal": "Polaco sem Polônia",
+ "id": "r09IDNWUJ20",
+ "titulo": "O secador inteligente que vai substituir as toalhas! 🚿💨",
+ "views": 35960,
+ "dur": 30,
+ "data": "2026-11-05",
+ "papel": "mediano",
+ "analise": {
+  "duracao_s": 29.5,
+  "musica": {
+   "tem": true,
+   "estilo": "Phonk",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 15,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 18,
+  "efeitos_caem": "maioria_sobre_a_fala",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": false,
+   "exemplos": []
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "tipo": null,
+   "inicio": null,
+   "duracao_s": null,
+   "o_que_explica": null,
+   "som_na_animacao": null
+  },
+  "texto_e_graficos": [
+   "Círculo vermelho em 00:00",
+   "Legendas dinâmicas em todas as cenas"
+  ],
+  "assinatura_sonora": "Não há uma assinatura sonora específica, apenas o uso consistente de whooshes em transições",
+  "regras_do_editor": [
+   "Adicionar whoosh em cada corte de cena",
+   "Manter a música de fundo em volume baixo para priorizar a narração",
+   "Sincronizar a mudança de cena com a batida da música",
+   "Adicionar um efeito sonoro de 'pop' quando elementos gráficos como círculos aparecem",
+   "Aplicar legendas centralizadas que mudam de cor ou tamanho para enfatizar palavras-chave",
+   "Manter o áudio original do vídeo desligado, substituindo-o por narração e música",
+   "Utilizar cortes rápidos para manter o ritmo acelerado do vídeo"
+  ]
+ }
+}

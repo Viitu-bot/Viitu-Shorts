@@ -1,0 +1,111 @@
+{
+ "canal": "Zack D. Films",
+ "id": "vpTa-qK6h78",
+ "titulo": "How This Bug Disappears In A Blink 🧐",
+ "views": 9883012,
+ "dur": 39,
+ "data": "2026-11-07",
+ "papel": "mediano",
+ "analise": {
+  "duracao_s": 38,
+  "musica": {
+   "tem": true,
+   "estilo": "Lo-fi hip hop com batida constante",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 15,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "nao"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 22,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": true,
+   "exemplos": [
+    "00:11 quando a explicação do mecanismo começa"
+   ]
+  },
+  "boom_ou_impacto": {
+   "quantos": 3,
+   "exemplos": [
+    {
+     "tempo": "00:15",
+     "fala": "Slapping",
+     "na_tela": "Perna do inseto batendo no chão",
+     "por_que": "Ênfase no impacto físico"
+    },
+    {
+     "tempo": "00:30",
+     "fala": "the ground",
+     "na_tela": "Tubo colando no chão",
+     "por_que": "Ênfase no contato da cola"
+    },
+    {
+     "tempo": "00:34",
+     "fala": "a perfect landing",
+     "na_tela": "Inseto pousando",
+     "por_que": "Finalização da ação"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:15",
+     "som": "Som de impacto seco",
+     "na_tela": "Perna batendo no chão",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:31",
+     "som": "Som de sucção/cola",
+     "na_tela": "Tubo colando",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "3D",
+   "inicio": "00:11",
+   "duracao_s": 27,
+   "o_que_explica": "Mecanismo interno do inseto (perna e tubo)",
+   "som_na_animacao": "Efeitos sonoros de movimento e impacto"
+  },
+  "texto_e_graficos": [
+   "Legendas em branco com sombra preta (00:00-00:38)",
+   "Linhas tracejadas indicando movimento (00:01)",
+   "Moldura de câmera (00:04)",
+   "Contorno verde na perna (00:12)",
+   "Contador de giros (00:17)",
+   "Setas vermelhas de direção (00:22)",
+   "Alvo circular (00:24)",
+   "Contorno roxo no tubo (00:29)",
+   "Círculo verde de aterrissagem (00:33)"
+  ],
+  "assinatura_sonora": "incerto",
+  "regras_do_editor": [
+   "Adicionar whoosh em quase todas as transições de corte",
+   "Sincronizar efeitos de impacto (boom) com o contato físico do inseto no chão",
+   "Usar sons de foley (sucção/cola) para descrever ações biológicas específicas",
+   "Manter a música de fundo em volume baixo para não competir com a narração",
+   "Adicionar elementos gráficos (setas/círculos) acompanhados de um efeito sonoro de 'pop' ou 'click'",
+   "Utilizar contadores numéricos para enfatizar a velocidade do movimento",
+   "Aplicar contornos coloridos em partes do corpo do inseto durante a explicação técnica"
+  ]
+ }
+}
