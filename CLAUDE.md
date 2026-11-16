@@ -160,6 +160,21 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
 - Clipes do TikTok/Reels: o editor detecta a tela final em cada clipe (`fim_util`) e o revisor varre o vídeo quadro a quadro; crédito dos @ na descrição.
 - Antes de entregar: prancha com 1 quadro por segundo do vídeo final (ffmpeg fps=1) e olhar tudo — contraste, repetição de imagem parecida, cena escura, cena que não combina com a frase.
 
+## Direitos autorais: revisão de TODAS as partes (obrigatória antes de entregar)
+- `python3 -m viitu.direitos <proj>` → `saida/direitos.md`: voz, trilha, SFX/foley, fonte e cada clipe com
+  origem e status. ❌ bloqueia a entrega (áudio original de terceiro ligado, trilha fora da biblioteca,
+  faltam créditos). ⚠️ = terceiro sem permissão: crédito na descrição + pedir permissão.
+- No cenas.json: `"creditos_descricao"` (vai na descrição) e `"permissoes"` {clipe: "quem autorizou e quando"}.
+- **Trilhas só da biblioteca própria** (`assets/musica/`, geradas no ElevenLabs Music): tensao_documentario
+  (perigo/suspense), descoberta_leve (objeto/curiosidade leve), epico_engenharia (escala/engenharia),
+  natureza_calma (animais/natureza), curioso_documentario (geral). Escolher por `"musica"` no cenas.json.
+  Nunca música de outra fonte (nem "sem direitos" de sites: muitas têm Content ID).
+
+## Auditoria técnica (antes de entregar)
+- `python3 -m viitu.auditoria <proj> <video>` → medições (loudness, voz x trilha, cenas escuras, movimento
+  no gancho, cenas curtas/longas, palavras ilegíveis, folga do loop, baixa resolução) + crítica do Gemini
+  comparando com o Hall. Corrigir as prioridades antes de mandar ao dono.
+
 ## Revisão técnica OBRIGATÓRIA antes de entregar
 - `python3 -m viitu.revisar <proj>`: confere o meio de cada cena (`--rigoroso`: início/meio/fim) (assunto `esperado` na tela,
   centralizado, não cortado) e repetição de clipes (âncora ≤ 4 cenas, demais 1). Abrir

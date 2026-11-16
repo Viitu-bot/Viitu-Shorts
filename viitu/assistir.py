@@ -53,9 +53,30 @@ def _chave() -> str:
     raise SystemExit("Falta GEMINI_API_KEY no .env")
 
 
+def enviar_arquivo(caminho: str) -> str:
+    """Sobe um vídeo local para a File API do Gemini e devolve o file_uri (espera ficar ACTIVE)."""
+    import time
+    from pathlib import Path as P
+    dados = P(caminho).read_bytes()
+    ini = requests.post("https://generativelanguage.googleapis.com/upload/v1beta/files", params={"key": _chave()},
+                        headers={"X-Goog-Upload-Protocol": "resumable", "X-Goog-Upload-Command": "start",
+                                 "X-Goog-Upload-Header-Content-Length": str(len(dados)),
+                                 "X-Goog-Upload-Header-Content-Type": "video/mp4", "Content-Type": "application/json"},
+                        json={"file": {"display_name": P(caminho).name}}, timeout=60)
+    url = ini.headers["X-Goog-Upload-URL"]
+    info = requests.post(url, headers={"X-Goog-Upload-Offset": "0", "X-Goog-Upload-Command": "upload, finalize"},
+                         data=dados, timeout=600).json()["file"]
+    while info.get("state") == "PROCESSING":
+        time.sleep(5)
+        info = requests.get(f"https://generativelanguage.googleapis.com/v1beta/{info['name']}", params={"key": _chave()}).json()
+    return info["uri"]
+
+
 def perguntar(link: str, prompt: str, modelo: str = MODELO, json_saida: bool = True) -> str:
+    if not link.startswith("http"):
+        link = enviar_arquivo(link)          # arquivo local (ex.: nosso vídeo renderizado)
     corpo = {
-        "contents": [{"parts": [{"file_data": {"file_uri": link}}, {"text": prompt}]}],
+        "contents": [{"parts": [{"file_data": {"file_uri": link, "mime_type": "video/mp4"}}, {"text": prompt}]}],
         "generationConfig": {"temperature": 0.2,
                              **({"responseMimeType": "application/json"} if json_saida else {})},
     }
