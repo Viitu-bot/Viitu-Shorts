@@ -35,6 +35,7 @@ def revisar(projeto: str) -> bool:
     else:
         L("❌", f"Trilha: {musica}", "arquivo fora da biblioteca própria"); bloqueia = True
     L("✅", "Efeitos sonoros e foley", "assets/sfx e assets/foley, gerados no ElevenLabs (próprios)")
+    L("✅", "Sons profissionais (camadas de foley)", "Sonniss GDC Game Audio Bundle: royalty-free, YouTube monetizado, sem crédito")
     L("✅", "Fonte da legenda", "Anton, licença SIL Open Font License")
     if any(c.get("animacao") for c in cfg["cenas"]):
         L("✅", "Animações explicativas", "desenhadas em código no Remotion (próprias)")

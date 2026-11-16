@@ -624,6 +624,8 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
     for f in faixas_foley:          # pan pelo lado onde a ação acontece NA TELA (vídeo final)
         f["x"] = x_movimento(video, f["f0"], f["f1"])
     print("Foley:", ", ".join(f"{f['_som']} {f['f0'] / FPS:.1f}-{f['f1'] / FPS:.1f}s pan {f['x']:.2f}" for f in faixas_foley))
+    from viitu.foley import camadas
+    faixas_foley = camadas(faixas_foley)
     fol = mixar(faixas_foley, FPS, dur, pasta / "saida" / "foley.wav")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(fol), "-c:a", "aac", "-b:a", "192k",
                     str(pub / "foley.m4a")], check=True)

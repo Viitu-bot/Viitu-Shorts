@@ -117,6 +117,63 @@ def x_movimento(video: Path, f0: int, f1: int) -> float:
     return soma / peso / 89 if peso > 500 else 0.5
 
 
+# Camadas profissionais (Sonniss) por tipo de cena: (ambiência de fundo, detalhe de perto / ASMR)
+CAMADAS = {
+    "fogo_rugido": ("large wildfire roaring flames burning forest", "close up fire crackling and popping"),
+    "fogo_crepitando": ("burning grass fire crackling outdoors", "close up campfire crackling and popping"),
+    "fumaca_brasa": ("quiet smoldering embers after fire, soft crackle", "close up campfire crackling and popping"),
+    "vento": ("strong wind blowing through trees", "wind gust whoosh"),
+    "aviao": ("propeller airplane flying overhead", "airplane flyby pass"),
+    "helicoptero": ("helicopter flying overhead", "helicopter rotor close"),
+    "agua_jato": ("water hose spraying", "water splashing close"),
+    "passos_mato": ("footsteps on dry grass and leaves", "boots walking on dry leaves close"),
+    "noite_grilos": ("night forest ambience crickets", "crickets close"),
+    "floresta_dia": ("forest daytime birds ambience", "birds chirping close"),
+    "multidao": ("crowd murmur outdoors", "people talking nearby"),
+    "galinhas": ("chickens clucking on a farm", "chicken clucking close"),
+    "ovo_quebrando": ("egg sizzling in frying pan", "oil sizzling close"),
+}
+FOGO = r"fire|flame|burn|campfire|ember|blaze|bonfire|fireplace|wood ?stove"
+EXIGIR = {"fogo_rugido": FOGO, "fogo_crepitando": FOGO, "fumaca_brasa": r"ember|smolder|campfire|fireplace|stove|small fire|fire gentle|fire calm", "vento": r"wind|gust",
+          "aviao": r"plane|aircraft|airliner|propeller", "helicoptero": r"helicopter|heli|rotor",
+          "agua_jato": r"water|hose|spray|splash", "passos_mato": r"footstep|step|walk",
+          "noite_grilos": r"cricket|night", "floresta_dia": r"forest|bird|wood", "multidao": r"crowd|people|walla",
+          "galinhas": r"chicken|hen|rooster", "ovo_quebrando": r"sizzl|fry|pan"}
+ESCOLHAS = RAIZ / "assets" / "sonniss" / "escolhas.json"     # mesma descrição → mesmo som (rápido e consistente)
+
+
+def _som_sonniss(desc: str, dur_min: float, exigir: str | None = None) -> str | None:
+    import json
+    esc = json.loads(ESCOLHAS.read_text(encoding="utf-8")) if ESCOLHAS.exists() else {}
+    if desc not in esc:
+        try:
+            from viitu.sons import buscar
+            r = buscar(desc, dur_min=dur_min, n=1, exigir=exigir)[0]
+            esc[desc] = {"id": r["id"], "nome": r["nome"], "nota": r["nota"]}
+            ESCOLHAS.write_text(json.dumps(esc, ensure_ascii=False, indent=1), encoding="utf-8")
+        except Exception as e:          # sem rede/CLAP: fica o foley próprio
+            print(f"    sonniss indisponível para '{desc}': {str(e)[:80]}")
+            return None
+    from viitu.sons import baixar, _catalogo
+    return str(baixar(_catalogo()[esc[desc]["id"]]))
+
+
+def camadas(faixas: list[dict]) -> list[dict]:
+    """Troca cada faixa por 2 camadas Sonniss (fundo + detalhe ASMR) — ou mantém o foley próprio se faltar."""
+    out = []
+    for f in faixas:
+        par = CAMADAS.get(f["_som"])
+        rx = EXIGIR.get(f["_som"])
+        arqs = [_som_sonniss(par[0], 20, rx), _som_sonniss(par[1], 4, rx)] if par else [None, None]
+        if not arqs[0]:
+            out.append(f)
+            continue
+        out.append({**f, "arquivo": arqs[0], "vol": 0.55, "camada": "fundo"})
+        if arqs[1]:
+            out.append({**f, "arquivo": arqs[1], "vol": 0.42, "camada": "detalhe"})
+    return out
+
+
 PRE_LAP = 8     # quadros: o som da próxima cena entra ANTES do corte (corte em J)
 CAUDA = 6        # quadros: o som da cena anterior se arrasta depois do corte (corte em L)
 
@@ -141,9 +198,12 @@ def mixar(faixas: list[dict], fps: int, dur: float, saida: Path) -> Path:
         p = (f.get("x", 0.5) - 0.5) * 2 * 0.7                       # -0,7 … +0,7
         ang = (p + 1) * math.pi / 4
         ge, gd = math.cos(ang) * math.sqrt(2), math.sin(ang) * math.sqrt(2)
-        entradas += ["-stream_loop", "-1", "-i", str(FOLEY / f"{f['_som']}.mp3")]
+        arq = f.get("arquivo") or str(FOLEY / f"{f['_som']}.mp3")
+        ofs = (f["f0"] * 7.3) % 20 if f.get("arquivo") else 0        # cada cena pega outro trecho do som
+        entradas += ["-stream_loop", "-1", "-ss", f"{ofs:.2f}", "-i", arq]
+        norm = "loudnorm=I=-20:TP=-3,aresample=48000," if f.get("arquivo") else ""   # camadas Sonniss no mesmo nível
         filtros.append(
-            f"[{i}:a]aformat=sample_rates=48000:channel_layouts=stereo,atrim=0:{d:.3f},asetpts=PTS-STARTPTS,"
+            f"[{i}:a]aformat=sample_rates=48000:channel_layouts=stereo,{norm}atrim=0:{d:.3f},asetpts=PTS-STARTPTS,"
             f"pan=stereo|c0={ge:.3f}*c0|c1={gd:.3f}*c1,volume={f['vol']:.2f},"
             f"afade=t=in:d={max(fade_in, 0.12):.3f},afade=t=out:st={max(d - 0.25, 0):.3f}:d=0.25,"
             f"adelay={int(ini * 1000)}|{int(ini * 1000)}[f{i}]")

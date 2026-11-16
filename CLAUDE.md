@@ -189,6 +189,9 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
 - Imagem: cor unificada (contraste/saturação), vinheta e grão fino para clipes de fontes diferentes parecerem um filme.
 - Todo efeito precisa de motivo (o que o espectador sente/entende); picos fortes só no gancho e na virada.
 - Técnica nova aprendida (referência, pedido do dono) entra no manual com status ✅/🔧/⏳.
+- **Sons:** guia "para que serve e quando usar" em `edicao/biblioteca_sons.md`. Biblioteca profissional Sonniss
+  (7.319 sons, liberada p/ YouTube monetizado) via `python3 -m viitu.sons buscar "<descrição em inglês>"`; o editor
+  põe 2 camadas por cena (ambiência + detalhe ASMR). Conferir escolhas novas em `assets/sonniss/escolhas.json`.
 
 ## Acabamento (Remotion) e identidade
 - Pipeline: `python3 -m viitu.editar <proj> --remotion` → `cd remotion && npm run render`.
