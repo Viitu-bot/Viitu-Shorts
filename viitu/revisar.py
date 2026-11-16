@@ -138,6 +138,13 @@ def revisar(projeto: str) -> bool:
             cv2.putText(faixa, palavra[:14], (4, 50 + 22 * j), cv2.FONT_HERSHEY_SIMPLEX, 0.45, (200, 200, 200), 1)
         cv2.putText(faixa, (esperado or "")[:16], (4, 300), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 255, 0), 1)
         linhas.append(np.hstack([faixa] + tiles + [np.zeros((320, 180, 3), np.uint8)] * (3 - len(tiles))))
+    # varredura QUADRO A QUADRO do vídeo final: nenhuma tela final de TikTok/Reels pode aparecer
+    from viitu.editar import eh_tela_final
+    for f in range(0, total, 2):
+        img = _quadro(cap, f)
+        if img is not None and eh_tela_final(img):
+            problemas.append(f"TELA FINAL de TikTok/Reels aparece em {f / FPS:.2f}s")
+            break
     cap.release()
     # junta em colunas de até 8 linhas para caber numa imagem
     blocos = [np.vstack(linhas[i:i + 8]) for i in range(0, len(linhas), 8)]

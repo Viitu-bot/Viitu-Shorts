@@ -16,10 +16,11 @@
   {
    "em": "de propósito",
    "clipe": "tiktok_2.mp4",
-   "inicio": 3.0,
+   "inicio": 4.0,
    "texto_na_imagem": true,
    "esperado": "a red can",
-   "_contraste": "POV close"
+   "_contraste": "POV close",
+   "revisao": "manual"
   },
   {
    "em": "A maioria acha",
@@ -53,9 +54,12 @@
   },
   {
    "em": "Quando as chamas chegam",
-   "clipe": "pixabay_148594.mp4",
-   "inicio": 6.0,
-   "esperado": "fire"
+   "clipe": "tiktok_2.mp4",
+   "inicio": 0.3,
+   "esperado": "fire",
+   "texto_na_imagem": true,
+   "revisao": "manual",
+   "_contraste": "dia, chama chegando no capim (entre cenas noturnas)"
   },
   {
    "em": "e morrem sozinhas",
@@ -75,11 +79,10 @@
   },
   {
    "em": "E os bombeiros usam",
-   "clipe": "pixabay_44186.mp4",
-   "inicio": 12.0,
-   "texto_na_imagem": false,
+   "clipe": "tiktok_1.mp4",
+   "inicio": 4.0,
+   "texto_na_imagem": true,
    "esperado": "a person",
-   "revisao": "manual",
    "_contraste": "equipe pequena sob a fumaça gigante (escala proposital)"
   },
   {
@@ -117,7 +120,7 @@
   {
    "em": "Aqui no Brasil",
    "clipe": "tiktok_2.mp4",
-   "inicio": 9.8,
+   "inicio": 11.0,
    "texto_na_imagem": true,
    "esperado": "fire",
    "_funcao": "capim dourado (parece cerrado)",
@@ -129,22 +132,32 @@
    "inicio": 6.5,
    "texto_na_imagem": true,
    "esperado": "a person",
-   "_funcao": "silhueta contra o fogo"
+   "_funcao": "silhueta contra o fogo",
+   "revisao": "manual"
   },
   {
    "em": "Comenta",
    "clipe": "tiktok_2.mp4",
-   "inicio": 6.0,
+   "inicio": 7.6,
    "texto_na_imagem": true,
    "esperado": "fire"
   },
   {
    "em": "E da próxima vez",
+   "clipe": "pixabay_358803.mp4",
+   "inicio": 6.0,
+   "texto_na_imagem": false,
+   "esperado": "trees",
+   "_funcao": "loop: igual ao frame 0",
+   "revisao": "manual"
+  },
+  {
+   "em": "talvez esses bombeiros",
    "clipe": "tiktok_1.mp4",
-   "inicio": 8.0,
+   "inicio": 10.0,
    "texto_na_imagem": true,
    "esperado": "a person",
-   "_funcao": "loop: igual ao frame 0"
+   "_funcao": "loop: termina no bombeiro do frame 0"
   }
  ],
  "impacto_em": [

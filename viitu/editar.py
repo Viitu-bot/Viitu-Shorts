@@ -362,6 +362,42 @@ def auto_enquadrar(s: dict, clipe: Path, n_frames: int) -> None:
         s["zoom"] = [round(z, 2), round(min(z + 0.12, 1.75), 2)]
 
 
+_FIM_UTIL: dict = {}
+
+
+def eh_tela_final(img) -> bool:
+    """Tela de encerramento de TikTok/Reels: fundo escuro quase uniforme (azul-marinho/preto)."""
+    import cv2
+    g = cv2.resize(img, (72, 128))
+    hsv = cv2.cvtColor(g, cv2.COLOR_BGR2HSV)
+    escuro = (hsv[..., 2] < 60)
+    if escuro.mean() < 0.75:
+        return False
+    quente = ((hsv[..., 0] < 30) & (hsv[..., 1] > 120) & (hsv[..., 2] > 120)).mean()   # fogo/luz laranja
+    b, r = g[..., 0][escuro].astype(int).mean(), g[..., 2][escuro].astype(int).mean()
+    return quente < 0.005 and b > r + 4          # fundo azul-marinho, sem nenhuma chama
+
+
+def fim_util(clipe: Path) -> float:
+    """Último segundo utilizável do clipe (antes da tela final do TikTok/Reels), com 0,4 s de folga."""
+    import cv2
+    if clipe in _FIM_UTIL:
+        return _FIM_UTIL[clipe]
+    cap = cv2.VideoCapture(str(clipe))
+    fps = cap.get(cv2.CAP_PROP_FPS) or 30
+    n = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    fim = n / fps
+    for f in range(n - 1, max(n - int(8 * fps), 0), -2):     # procura do fim para trás (até 8 s)
+        cap.set(cv2.CAP_PROP_POS_FRAMES, f)
+        ok, img = cap.read()
+        if ok and not eh_tela_final(img):
+            fim = (f + 2) / fps
+            break
+    cap.release()
+    _FIM_UTIL[clipe] = max(fim - 0.4, 0.5) if fim < n / fps - 0.5 else n / fps
+    return _FIM_UTIL[clipe]
+
+
 def _clipe_vertical(clipe: Path) -> tuple[bool, float]:
     import cv2
     cap = cv2.VideoCapture(str(clipe))
@@ -381,13 +417,13 @@ def renderizar_cena(s: dict, pasta: Path, idx: int) -> Path:
             # clipe já 9:16 (TikTok/Reels): sem câmera virtual e sem zoom forte — zoom amplia a marca
             # d'água ("logo estourado") e borra vídeo de baixa resolução
             s.setdefault("foco", [0.5, 0.5]); s.setdefault("alvo", [0.5, 0.5]); s.setdefault("zoom", [1.0, 1.04])
-        if s["clipe"].startswith("tiktok") or s.get("fonte") == "tiktok":
-            # os últimos ~3,5 s do TikTok baixado são a tela final (logo + @): nunca usar
-            limite = dur_clipe - 3.5
+        if True:
+            # nunca usar a tela final (logo + @) de TikTok/Reels: detectada no próprio clipe
+            limite = fim_util(clipe)
             uso = n / FPS * float(s.get("velocidade", 1.0))
             if s.get("inicio", 0) + uso > limite:
                 s["inicio"] = max(limite - uso, 0)
-                print(f"    aviso: cena '{s['em']}' recuada para não pegar a tela final do TikTok")
+                print(f"    aviso: cena '{s['em']}' recuada para não pegar o fim do clipe ({limite:.1f}s)")
     if s.get("layout") == "inteiro":
         import cv2
         cap = cv2.VideoCapture(str(clipe))

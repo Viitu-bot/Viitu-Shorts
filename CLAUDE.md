@@ -145,7 +145,8 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
   `python3 -m viitu.assistir achar <link> "<cenas necessárias>"` e só pedir se tiver trechos bons
   (nítidos, recentes, com a ação, não entrevista) somando material suficiente.
 - Passar ao dono o link + os minutos exatos de cada trecho a gravar/baixar.
-- Clipes do TikTok: cortar antes da tela final (logo + @) que aparece nos últimos ~3 s; crédito dos @ na descrição.
+- Clipes do TikTok/Reels: o editor detecta a tela final em cada clipe (`fim_util`) e o revisor varre o vídeo quadro a quadro; crédito dos @ na descrição.
+- Antes de entregar: prancha com 1 quadro por segundo do vídeo final (ffmpeg fps=1) e olhar tudo — contraste, repetição de imagem parecida, cena escura, cena que não combina com a frase.
 
 ## Revisão técnica OBRIGATÓRIA antes de entregar
 - `python3 -m viitu.revisar <proj>`: confere o meio de cada cena (`--rigoroso`: início/meio/fim) (assunto `esperado` na tela,
