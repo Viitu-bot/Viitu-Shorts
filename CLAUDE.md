@@ -128,6 +128,18 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
    entrevista ou vídeo com poucas views.
 3. Clipes de TikTok/Reddit: só os que viralizaram (centenas de milhares de likes/upvotes).
 
+## Monetização e direitos (fazer do jeito certo)
+- Política de conteúdo reutilizado do YouTube: o que vale é **explicação/comentário original e
+  edição substancial**; compilação com narração mínima ou narração lida sobre clipes é rejeitada.
+  Permissão do criador NÃO basta para monetizar (support.google.com/youtube/answer/1311392).
+- Nosso diferencial obrigatório em todo vídeo: roteiro próprio que EXPLICA (não descreve), fatos com
+  fonte, edição com efeitos/marcas, cenas escolhidas e reordenadas. Nunca repostar clipe com voz por cima.
+- Voz de IA + clipes alheios é zona de risco: variar estrutura, ganchos e trilhas; nada de vídeo em série
+  "de molde" idêntico.
+- Clipe-âncora de terceiros: pedir permissão por DM (`pesquisa/permissao_clipes.md`), creditar o @.
+  Material próprio do dono (gravar no celular) sempre que possível.
+- Licenciamento pago (Jukin/Storyful/Newsflare) existe, mas não é necessário agora.
+
 ## Pedir bruto ao dono: SÓ DEPOIS DE VERIFICAR
 - Nunca pedir para baixar um vídeo escolhido só pelo título. Antes, rodar
   `python3 -m viitu.assistir achar <link> "<cenas necessárias>"` e só pedir se tiver trechos bons
