@@ -142,7 +142,7 @@ const BotaoInscrever: React.FC<{texto: string}> = ({texto}) => {
     <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center', paddingTop: 1330}}>
       <div style={{
         transform: `scale(${interpolate(entra, [0, 1], [0.3, 1]) * clique})`, opacity: entra,
-        backgroundColor: texto === 'INSCREVA-SE' && inscrito ? '#3d3d3d' : '#FF0000', color: 'white', fontFamily, fontSize: 64,
+        backgroundColor: texto === 'INSCREVA-SE' && inscrito ? '#3d3d3d' : '#FF0000', color: 'white', fontFamily, fontSize: 84,
         letterSpacing: 2, padding: '18px 44px', borderRadius: 999, boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
       }}>{texto === 'INSCREVA-SE' ? (inscrito ? '✓ INSCRITO' : '🔔 INSCREVA-SE') : texto}</div>
     </AbsoluteFill>
@@ -222,6 +222,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       {plano.cta && (
         <Sequence from={plano.cta.f0} durationInFrames={75}>
           <BotaoInscrever texto={plano.cta.texto} />
+          <Audio src={staticFile('pop.mp3')} volume={0.6} />
           <Sequence from={14} durationInFrames={20}><Audio src={staticFile('clique.mp3')} volume={0.6} /></Sequence>
         </Sequence>
       )}

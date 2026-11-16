@@ -40,6 +40,14 @@
    "_contraste": "parede de fumaça, equipe pequena"
   },
   {
+   "em": "às vezes o único",
+   "clipe": "pixabay_148594.mp4",
+   "inicio": 8.0,
+   "esperado": "fire",
+   "foley": "fogo_crepitando",
+   "_funcao": "quebra a caminhada: pinga-fogo derramando fogo"
+  },
+  {
    "em": "é com mais fogo",
    "clipe": "tiktok_4.mp4",
    "inicio": 14.8,
@@ -123,13 +131,26 @@
   },
   {
    "em": "Aqui no Brasil",
-   "clipe": "tiktok_2.mp4",
-   "inicio": 11.0,
-   "texto_na_imagem": true,
-   "esperado": "fire",
+   "clipe": "pixabay_99867.mp4",
+   "inicio": 20.0,
+   "texto_na_imagem": false,
+   "esperado": "smoke",
    "_funcao": "capim dourado (parece cerrado)",
+   "foley": "fogo_rugido",
    "revisao": "manual",
-   "foley": "fogo_crepitando"
+   "_contraste": "aéreo, de dia, campo enorme queimando",
+   "foco": [
+    0.55,
+    0.5
+   ],
+   "alvo": [
+    0.5,
+    0.6
+   ],
+   "zoom": [
+    1.0,
+    1.15
+   ]
   },
   {
    "em": "Você teria coragem",
@@ -139,14 +160,6 @@
    "esperado": "a person",
    "_funcao": "silhueta contra o fogo",
    "revisao": "manual"
-  },
-  {
-   "em": "Comenta",
-   "clipe": "tiktok_2.mp4",
-   "inicio": 7.6,
-   "texto_na_imagem": true,
-   "esperado": "fire",
-   "foley": "fogo_crepitando"
   },
   {
    "em": "E da próxima vez",

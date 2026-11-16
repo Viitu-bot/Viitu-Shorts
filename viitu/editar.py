@@ -137,6 +137,8 @@ def _filtro_cena(s: dict, entrada: str, eh_foto: bool, n_frames: int, primeira: 
              f":y='max(0\\,min(ih-ih/zoom\\,ih*{sy}-ih/zoom/2))':d=1:s={W}x{H}:fps={FPS}")
     if s.get("espelhar"):
         f += ",hflip"                       # inverte o lado (o cérebro não se acostuma)
+    if s.get("_escura"):
+        f += ",eq=gamma=1.35:brightness=0.04"   # cena escura demais: levanta as sombras sem estourar o fogo
     f += ",eq=contrast=1.06:saturation=1.12,unsharp=5:5:0.5,vignette=PI/5,setsar=1,format=yuv420p"     # bordas escuras guiam o olhar
     if not primeira and not MODO_REMOTION:
         f += ",fade=t=in:st=0:d=0.12:color=white"   # flash nos cortes (no Remotion: glitch RGB)
@@ -412,6 +414,15 @@ def renderizar_cena(s: dict, pasta: Path, idx: int) -> Path:
     eh_foto = clipe.suffix.lower() in (".jpg", ".jpeg", ".png", ".webp")
     n = s["f1"] - s["f0"]
     if not eh_foto:
+        import cv2
+        cap = cv2.VideoCapture(str(clipe))
+        cap.set(cv2.CAP_PROP_POS_FRAMES, int((s.get("inicio", 0) + n / FPS / 2) * (cap.get(cv2.CAP_PROP_FPS) or 30)))
+        ok, amostra = cap.read()
+        cap.release()
+        if ok and cv2.cvtColor(cv2.resize(amostra, (90, 160)), cv2.COLOR_BGR2GRAY).mean() < 45:
+            s["_escura"] = True
+        if s["clipe"].startswith("pixabay") and "zoom" not in s and not s.get("seguir", True) is False:
+            s.setdefault("zoom", [1.0, 1.12])       # banco de imagem costuma ser estático: Ken Burns leve
         vertical, dur_clipe = _clipe_vertical(clipe)
         if vertical and not s.get("efeito"):
             # clipe já 9:16 (TikTok/Reels): sem câmera virtual e sem zoom forte — zoom amplia a marca

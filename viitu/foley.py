@@ -78,5 +78,5 @@ def escolher(segs: list[dict], pasta: Path, fps: int) -> list[dict]:
         else:
             faixas.append({"f0": s["f0"], "f1": s["f1"], "som": f"foley_{som}.mp3", "_som": som})
     for f in faixas:
-        f["vol"] = 0.22 if f["_som"] in ("noite_grilos", "floresta_dia", "multidao", "fumaca_brasa") else 0.3
+        f["vol"] = 0.32 if f["_som"] in ("noite_grilos", "floresta_dia", "multidao", "fumaca_brasa") else 0.5
     return faixas

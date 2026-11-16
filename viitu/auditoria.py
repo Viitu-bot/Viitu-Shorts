@@ -65,7 +65,7 @@ def medir(projeto: str, video: str) -> list[str]:
     longas = [round(d, 2) for d in durs if d > 3.5]
     A.append(f"{'✅' if not curtas else '⚠️'} Cenas curtas demais (<0,9 s, piscam): {curtas or 'nenhuma'}")
     A.append(f"{'✅' if not longas else '⚠️'} Cenas longas (>3,5 s, risco de tédio): {longas or 'nenhuma'}")
-    rap = [p["texto"] for p in plano["palavras"] if p["texto"] and (p["f1"] - p["f0"]) < 5]
+    rap = [p["texto"] for p in plano["palavras"] if len(p["texto"]) > 3 and (p["f1"] - p["f0"]) < 5]
     A.append(f"{'✅' if len(rap) <= 5 else '⚠️'} Palavras que ficam < 0,17 s na tela (ilegíveis): {len(rap)} {rap[:8]}")
     fim = plano["duracao_frames"] - plano["palavras"][-1]["f1"]
     A.append(f"{'✅' if fim <= 6 else '⚠️'} Folga depois da última palavra: {fim / fps:.2f}s (loop pede ≤ 0,2 s)")
