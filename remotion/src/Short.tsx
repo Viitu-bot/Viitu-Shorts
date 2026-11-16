@@ -16,7 +16,7 @@ export type Palavra = {texto: string; f0: number; f1: number; destaque: boolean;
 export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, number, number][]; tipo?: 'circulo' | 'seta'};
 export type Plano = {
   fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
-  cortes: number[]; impactos: number[]; foley?: {f0: number; f1: number; som: string; vol: number}[]; cta: {f0: number; texto: string} | null;
+  cortes: number[]; impactos: number[]; foley?: {f0: number; f1: number; som: string; vol: number}[]; foley_mix?: boolean; cta: {f0: number; texto: string} | null;
 };
 
 const AMARELO = '#FFD400';
@@ -188,15 +188,43 @@ const FundoComEfeitos: React.FC<{plano: Plano}> = ({plano}) => {
   );
 };
 
+// ---------- acabamento de imagem: cor unificada + vinheta + grão (clipes de fontes diferentes viram "um filme") ----------
+const Acabamento: React.FC = () => {
+  const frame = useCurrentFrame();
+  return (
+    <>
+      <AbsoluteFill style={{background: 'radial-gradient(ellipse 75% 60% at 50% 45%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.42) 100%)'}} />
+      <AbsoluteFill style={{opacity: 0.07, mixBlendMode: 'overlay'}}>
+        <svg width={1080} height={1920}>
+          <filter id="grao"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves={2} seed={frame % 12} /></filter>
+          <rect width="100%" height="100%" filter="url(#grao)" />
+        </svg>
+      </AbsoluteFill>
+    </>
+  );
+};
+
 export const Short: React.FC<{plano: Plano}> = ({plano}) => {
   const {durationInFrames} = useVideoConfig();
   const z = usePunch(plano.palavras);
   const t = useTremida(plano.impactos);
+  const falando = (f: number) => plano.palavras.some((p) => f >= p.f0 - 2 && f <= p.f1 + 2);
+  // VÁCUO SONORO: o mundo "prende a respiração" 10 quadros antes do impacto e volta com mais força depois
+  const vacuo = (f: number) => {
+    let v = 1;
+    for (const i of plano.impactos) {
+      if (f >= i - 10 && f < i) v = Math.min(v, interpolate(f, [i - 10, i - 6], [1, 0.05], {extrapolateRight: 'clamp'}));
+      if (f >= i && f < i + 36) v = Math.max(v, interpolate(f, [i, i + 4, i + 36], [0.05, 1.35, 1], {extrapolateRight: 'clamp'}));
+    }
+    return v;
+  };
   return (
     <AbsoluteFill style={{backgroundColor: 'black'}}>
-      <AbsoluteFill style={{transform: `translate(${t.x}px, ${t.y}px) scale(${z * (t.x ? 1.03 : 1)})`}}>
+      <AbsoluteFill style={{transform: `translate(${t.x}px, ${t.y}px) scale(${z * (t.x ? 1.03 : 1)})`,
+        filter: 'contrast(1.07) saturate(1.12)'}}>
         <FundoComEfeitos plano={plano} />
       </AbsoluteFill>
+      <Acabamento />
 
       {plano.marcas.map((m, k) => (
         <React.Fragment key={k}>
@@ -237,23 +265,25 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       <FlashIdentidade />
       <Sequence from={0} durationInFrames={30}><Audio src={staticFile('ding.mp3')} volume={0.85} /></Sequence>
 
-      {/* FOLEY: o som do que está na tela, com fade nas bordas (ambiência contínua entre cortes iguais) */}
-      {(plano.foley ?? []).map((f, k) => (
+      {/* FOLEY já mixado em Python: corte em J/L (entra antes do corte) + pan estéreo pelo lado do sujeito */}
+      {plano.foley_mix ? (
+        <Audio src={staticFile('foley.m4a')}
+          volume={(f) => vacuo(f) * (falando(f) ? 0.85 : 1)} />
+      ) : (plano.foley ?? []).map((f, k) => (
         <Sequence key={`fo${k}`} from={f.f0} durationInFrames={Math.max(f.f1 - f.f0, 1)}>
           <Audio src={staticFile(f.som)} loop
             volume={(x) => f.vol * interpolate(x, [0, 6, f.f1 - f.f0 - 6, f.f1 - f.f0], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})} />
         </Sequence>
       ))}
 
-      {/* trilha com DUCKING: abaixa enquanto a voz fala, sobe nas pausas; some no final */}
+      {/* trilha com DUCKING (abaixa sob a voz) + VÁCUO antes do impacto (silêncio → boom → trilha volta mais forte) */}
       <Audio src={staticFile('musica.mp3')} loop
         volume={(f) => {
-          const falando = plano.palavras.some((p) => f >= p.f0 - 2 && f <= p.f1 + 2);
           const fim = interpolate(f, [durationInFrames - 10, durationInFrames], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-          return (falando ? 0.11 : 0.2) * fim;
+          return (falando(f) ? 0.11 : 0.2) * fim * vacuo(f);
         }} />
       {/* som original dos clipes por baixo da voz (padrão dos virais: chiado, raspagem, bicho) */}
-      <Audio src={staticFile('ambiente.m4a')} volume={0.35} />
+      <Audio src={staticFile('ambiente.m4a')} volume={(f) => 0.35 * vacuo(f)} />
       <Audio src={staticFile('audio.m4a')} />
     </AbsoluteFill>
   );

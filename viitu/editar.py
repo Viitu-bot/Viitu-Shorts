@@ -619,11 +619,14 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
         if g["clipe"].startswith(("tiktok", "bruto_", "ancora")) and "som_original" not in g:
             g["som_original"] = False
     amb = som_ambiente(pasta, segs, dur)
-    from viitu.foley import escolher, FOLEY
+    from viitu.foley import escolher, mixar, x_movimento
     faixas_foley = escolher(segs, pasta, FPS)
-    for f in faixas_foley:
-        shutil.copy(FOLEY / f"{f['_som']}.mp3", pub / f["som"])
-    print("Foley:", ", ".join(f"{f['_som']} {f['f0'] / FPS:.1f}-{f['f1'] / FPS:.1f}s" for f in faixas_foley))
+    for f in faixas_foley:          # pan pelo lado onde a ação acontece NA TELA (vídeo final)
+        f["x"] = x_movimento(video, f["f0"], f["f1"])
+    print("Foley:", ", ".join(f"{f['_som']} {f['f0'] / FPS:.1f}-{f['f1'] / FPS:.1f}s pan {f['x']:.2f}" for f in faixas_foley))
+    fol = mixar(faixas_foley, FPS, dur, pasta / "saida" / "foley.wav")
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(fol), "-c:a", "aac", "-b:a", "192k",
+                    str(pub / "foley.m4a")], check=True)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(amb), "-c:a", "aac", "-b:a", "160k",
                     str(pub / "ambiente.m4a")], check=True)
     musica = cfg.get("musica", "curioso_documentario.mp3")
@@ -659,6 +662,7 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
         "impactos": [round(palavras[achar_palavra(palavras, t, 0)]["inicio"] * FPS)
                      for t in cfg.get("impacto_em", [])],
         "foley": [{"f0": f["f0"], "f1": f["f1"], "som": f["som"], "vol": f["vol"]} for f in faixas_foley],
+        "foley_mix": True,
         "cta": (lambda c: {"f0": round(palavras[achar_palavra(palavras, c["em"], 0)]["inicio"] * FPS),
                            "texto": c.get("texto", "💬 COMENTA")} if isinstance(c, dict)
                 else ({"f0": segs[-1]["f0"] + 6, "texto": "INSCREVA-SE"} if c else None))(cfg.get("cta", True)),

@@ -181,6 +181,15 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
   `saida/revisao.jpg` e olhar. Só mandar ao dono com APROVADO ou com cada alerta conferido a olho
   (marcar `"revisao": "manual"` na cena quando o detector não serve, ex.: close extremo).
 
+## EDIÇÃO PROFISSIONAL (memória obrigatória: `edicao/manual_edicao.md`)
+- Antes de editar qualquer vídeo, ler o manual e passar no checklist da seção 8. Objetivo: IMERSÃO + retenção.
+- Som em 6 camadas: voz · trilha (ducking) · ambiência contínua · foley do que aparece · efeito pontual na ação ·
+  efeitos de edição. Técnicas já automáticas: corte em J/L (som entra antes do corte), pan estéreo pelo lado do
+  sujeito, vácuo sonoro antes do impacto (silêncio → boom → trilha volta mais forte).
+- Imagem: cor unificada (contraste/saturação), vinheta e grão fino para clipes de fontes diferentes parecerem um filme.
+- Todo efeito precisa de motivo (o que o espectador sente/entende); picos fortes só no gancho e na virada.
+- Técnica nova aprendida (referência, pedido do dono) entra no manual com status ✅/🔧/⏳.
+
 ## Acabamento (Remotion) e identidade
 - Pipeline: `python3 -m viitu.editar <proj> --remotion` → `cd remotion && npm run render`.
 - Identidade: flash branco→amarelo nos primeiros 0,2 s + "ding" no frame 0. Círculo vermelho perfeito
