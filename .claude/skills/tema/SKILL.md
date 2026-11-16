@@ -67,6 +67,7 @@ O usuário escolhe um e seguimos para `/clipes` e `/roteiro`.
    faça commit e push.
 
 ## Regras
+- Antes de mostrar qualquer vídeo ao dono: `python3 -m viitu.provar <link> --papel validacao|bruto` e copiar a linha (rótulo + views conferidas + link).
 - **Nunca invente números.** Todo número vem da saída do script.
 - Cota: cada `candidatos` gasta ~600 unidades, cada `lacuna` ~100. Limite diário grátis: 10.000.
 - O vídeo estrangeiro é **prova de demanda e fonte de informação**; a imagem do nosso vídeo

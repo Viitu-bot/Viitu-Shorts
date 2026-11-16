@@ -99,3 +99,7 @@ enquadramento e cenas ruins **antes** de mandar ao usuário.
 - Pixabay (principal, livre), Wikimedia Commons (reserva, instável na nuvem).
 - Clipes do usuário: TikTok por link direto (tentar baixar), Reddit/YouTube via link do Drive.
 - Nunca remover marca d'água de vídeo de terceiros; dar crédito na descrição.
+
+
+## Trava de números
+Antes de mostrar qualquer vídeo ao dono: `python3 -m viitu.provar <link> --papel validacao|bruto` e copiar a linha (rótulo + views conferidas + link).

@@ -8,6 +8,9 @@ nesta sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 - **Tutorial:** um passo por vez, sem dar várias opções. Decida e explique o porquê em uma linha.
 - Passos manuais do usuário: numerados, curtos, com links diretos.
 - **Nunca** invente números (views, inscritos). Números só da YouTube Data API ou de print do usuário.
+- **TRAVA DE NÚMEROS:** todo vídeo citado ao dono passa por `python3 -m viitu.provar <link> --papel
+  validacao|bruto|referencia` NA MESMA RESPOSTA, e é apresentado com o rótulo do papel + link exato
+  (a prova do tema ≠ o bruto). Validação e bruto só com ≥ 1M de views.
 - **Nunca** peça chave/senha no chat. Chaves ficam nos secrets do ambiente "Viitu".
 
 ## Fluxo de produção (meta final)

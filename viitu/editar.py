@@ -362,10 +362,32 @@ def auto_enquadrar(s: dict, clipe: Path, n_frames: int) -> None:
         s["zoom"] = [round(z, 2), round(min(z + 0.12, 1.75), 2)]
 
 
+def _clipe_vertical(clipe: Path) -> tuple[bool, float]:
+    import cv2
+    cap = cv2.VideoCapture(str(clipe))
+    w, h = cap.get(cv2.CAP_PROP_FRAME_WIDTH), cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    d = (cap.get(cv2.CAP_PROP_FRAME_COUNT) or 0) / (cap.get(cv2.CAP_PROP_FPS) or 30)
+    cap.release()
+    return (h > 0 and abs(w / h - W / H) < 0.04), d
+
+
 def renderizar_cena(s: dict, pasta: Path, idx: int) -> Path:
     clipe = pasta / "clipes" / s["clipe"]
     eh_foto = clipe.suffix.lower() in (".jpg", ".jpeg", ".png", ".webp")
     n = s["f1"] - s["f0"]
+    if not eh_foto:
+        vertical, dur_clipe = _clipe_vertical(clipe)
+        if vertical and not s.get("efeito"):
+            # clipe já 9:16 (TikTok/Reels): sem câmera virtual e sem zoom forte — zoom amplia a marca
+            # d'água ("logo estourado") e borra vídeo de baixa resolução
+            s.setdefault("foco", [0.5, 0.5]); s.setdefault("alvo", [0.5, 0.5]); s.setdefault("zoom", [1.0, 1.04])
+        if s["clipe"].startswith("tiktok") or s.get("fonte") == "tiktok":
+            # os últimos ~3,5 s do TikTok baixado são a tela final (logo + @): nunca usar
+            limite = dur_clipe - 3.5
+            uso = n / FPS * float(s.get("velocidade", 1.0))
+            if s.get("inicio", 0) + uso > limite:
+                s["inicio"] = max(limite - uso, 0)
+                print(f"    aviso: cena '{s['em']}' recuada para não pegar a tela final do TikTok")
     if s.get("layout") == "inteiro":
         import cv2
         cap = cv2.VideoCapture(str(clipe))
