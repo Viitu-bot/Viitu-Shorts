@@ -18,6 +18,7 @@ export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, numb
 export type Plano = {
   fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
   cortes: number[]; impactos: number[]; foley?: {f0: number; f1: number; som: string; vol: number}[]; foley_mix?: boolean;
+  kit?: Record<string, string[]>; sfx?: {f: number; som: string; vol: number}[];
   animacoes?: {nome: string; fase: string; f0: number; f1: number; eventos: Record<string, number>}[]; cta: {f0: number; texto: string} | null;
 };
 
@@ -165,6 +166,11 @@ const usePunch = (palavras: Palavra[]) => {
 };
 
 const WOOSHES = ['woosh.mp3', 'whip.mp3', 'woosh2.mp3', 'woosh3.mp3'];
+// kit de identidade (assets/kit): alterna as 3 variações de cada função; cai no som próprio se faltar
+const kitSom = (plano: Plano, funcao: string, i: number, reserva: string) => {
+  const l = plano.kit?.[funcao];
+  return l && l.length ? l[i % l.length] : reserva;
+};
 
 const FundoComEfeitos: React.FC<{plano: Plano}> = ({plano}) => {
   const frame = useCurrentFrame();
@@ -237,7 +243,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       {plano.marcas.map((m, k) => (
         <React.Fragment key={k}>
           {m.tipo === 'seta' ? <SetaMarca marca={m} /> : <CirculoMarca marca={m} />}
-          <Sequence from={m.f0} durationInFrames={20}><Audio src={staticFile('pop.mp3')} volume={0.55} /></Sequence>
+          <Sequence from={m.f0} durationInFrames={30}><Audio src={staticFile(kitSom(plano, 'pop_marca', k, 'pop.mp3'))} volume={0.55} /></Sequence>
         </React.Fragment>
       ))}
 
@@ -250,8 +256,8 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       {plano.impactos.map((f, k) => (
         <React.Fragment key={k}>
           <FlashImpacto f={f} />
-          <Sequence from={Math.max(f - 50, 0)} durationInFrames={52}><Audio src={staticFile('tensao.mp3')} volume={0.32} /></Sequence>
-          <Sequence from={f} durationInFrames={45}><Audio src={staticFile('boom.mp3')} volume={0.8} /></Sequence>
+          <Sequence from={Math.max(f - 50, 0)} durationInFrames={52}><Audio src={staticFile(kitSom(plano, 'riser_tensao', k, 'tensao.mp3'))} volume={0.32} /></Sequence>
+          <Sequence from={f} durationInFrames={60}><Audio src={staticFile(kitSom(plano, 'impacto_revelacao', k, 'boom.mp3'))} volume={0.8} /></Sequence>
         </React.Fragment>
       ))}
 
@@ -266,8 +272,13 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       {/* efeitos sonoros: woosh variado em cada corte (começa um pouco antes) */}
       {plano.cortes.filter((c) => !plano.impactos.includes(c)).map((c, k) => (
         <Sequence key={k} from={Math.max(c - 4, 0)} durationInFrames={24}>
-          <Audio src={staticFile(WOOSHES[k % WOOSHES.length])} volume={0.32} />
+          <Audio src={staticFile(plano.kit?.whoosh_corte ? plano.kit.whoosh_corte[k % plano.kit.whoosh_corte.length] : WOOSHES[k % WOOSHES.length])} volume={0.32} />
         </Sequence>
+      ))}
+
+      {/* sons de FUNÇÃO (número → ding, dinheiro → moeda, mito → buzzer...) */}
+      {(plano.sfx ?? []).map((e, k) => (
+        <Sequence key={`sx${k}`} from={e.f} durationInFrames={60}><Audio src={staticFile(e.som)} volume={e.vol} /></Sequence>
       ))}
 
       <FlashIdentidade />

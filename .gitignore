@@ -13,3 +13,4 @@ dados/brutos_cache/
 
 # biblioteca Sonniss: só o catálogo vai pro git; sons baixados sob demanda
 assets/sonniss/cache/
+assets/kit/cache/

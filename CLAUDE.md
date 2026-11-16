@@ -189,6 +189,9 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
 - Imagem: cor unificada (contraste/saturação), vinheta e grão fino para clipes de fontes diferentes parecerem um filme.
 - Todo efeito precisa de motivo (o que o espectador sente/entende); picos fortes só no gancho e na virada.
 - Técnica nova aprendida (referência, pedido do dono) entra no manual com status ✅/🔧/⏳.
+- **Lógica do editor** (qual efeito em que momento/cena, identidade sonora, bom × ultrapassado, orçamento de
+  estímulos, 3D e IA avaliados): `edicao/logica_editor.md`. Kit de identidade: `python3 -m viitu.kit listar`;
+  sons de função no cenas.json: `"sfx_em": [{"em": "acha", "som": "errado_mito"}]` (número/dinheiro são automáticos).
 - **Sons:** guia "para que serve e quando usar" em `edicao/biblioteca_sons.md`. Biblioteca profissional Sonniss
   (7.319 sons, liberada p/ YouTube monetizado) via `python3 -m viitu.sons buscar "<descrição em inglês>"`; o editor
   põe 2 camadas por cena (ambiência + detalhe ASMR). Conferir escolhas novas em `assets/sonniss/escolhas.json`.

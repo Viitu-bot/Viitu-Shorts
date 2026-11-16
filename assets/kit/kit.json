@@ -1,0 +1,563 @@
+{
+ "whoosh_corte": {
+  "uso": "corte com movimento ou entrada de gráfico; alternar os 3; nunca em todo corte",
+  "descricao": "short smooth air whoosh transition",
+  "sons": [
+   {
+    "id": 1461,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1461/1461-preview.mp3",
+    "titulo": "Short wind swoosh",
+    "dur": 1,
+    "categoria": "swoosh",
+    "nota": 0.239,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1461.mp3"
+   },
+   {
+    "id": 1491,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1491/1491-preview.mp3",
+    "titulo": "Arrow whoosh",
+    "dur": 1,
+    "categoria": "whoosh",
+    "nota": 0.182,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1491.mp3"
+   },
+   {
+    "id": 1489,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1489/1489-preview.mp3",
+    "titulo": "Air woosh",
+    "dur": 2,
+    "categoria": "whoosh",
+    "nota": 0.12,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1489.mp3"
+   }
+  ]
+ },
+ "impacto_revelacao": {
+  "uso": "a revelação/virada ('Mas...'): 1 a 2 por vídeo, depois do vácuo",
+  "descricao": "deep cinematic boom impact with sub bass",
+  "sons": [
+   {
+    "id": 2908,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2908/2908-preview.mp3",
+    "titulo": "Movie trailer epic impact",
+    "dur": 4,
+    "categoria": "impact",
+    "nota": 0.169,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2908.mp3"
+   },
+   {
+    "id": 781,
+    "url": "https://assets.mixkit.co/active_storage/sfx/781/781-preview.mp3",
+    "titulo": "Cinematic impact waves",
+    "dur": 7,
+    "categoria": "impact",
+    "nota": 0.159,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/781.mp3"
+   },
+   {
+    "id": 1687,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1687/1687-preview.mp3",
+    "titulo": "Dramatic metal explosion impact",
+    "dur": 4,
+    "categoria": "impact",
+    "nota": 0.123,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1687.mp3"
+   }
+  ]
+ },
+ "riser_tensao": {
+  "uso": "1 a 2 s antes da revelação; prepara o susto",
+  "descricao": "cinematic tension riser building up",
+  "sons": [
+   {
+    "id": 2670,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2670/2670-preview.mp3",
+    "titulo": "Electronic swell noise",
+    "dur": 8,
+    "categoria": "swell",
+    "nota": 0.322,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2670.mp3"
+   },
+   {
+    "id": 2630,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2630/2630-preview.mp3",
+    "titulo": "Terror sweep of darkness",
+    "dur": 7,
+    "categoria": "sweep",
+    "nota": 0.246,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2630.mp3"
+   },
+   {
+    "id": 2666,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2666/2666-preview.mp3",
+    "titulo": "Bass double swell",
+    "dur": 8,
+    "categoria": "swell",
+    "nota": 0.191,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2666.mp3"
+   }
+  ]
+ },
+ "pop_marca": {
+  "uso": "círculo/seta/adesivo aparecendo; chama o olho para o detalhe",
+  "descricao": "soft clean pop",
+  "sons": [
+   {
+    "id": 2354,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2354/2354-preview.mp3",
+    "titulo": "Message pop alert",
+    "dur": 1,
+    "categoria": "pop",
+    "nota": 0.197,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2354.mp3"
+   },
+   {
+    "id": 3000,
+    "url": "https://assets.mixkit.co/active_storage/sfx/3000/3000-preview.mp3",
+    "titulo": "Liquid bubble",
+    "dur": 1,
+    "categoria": "bubbles",
+    "nota": 0.157,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/3000.mp3"
+   },
+   {
+    "id": 2925,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2925/2925-preview.mp3",
+    "titulo": "Soap bubble sound",
+    "dur": 1,
+    "categoria": "pop",
+    "nota": 0.093,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2925.mp3"
+   }
+  ]
+ },
+ "ding_fato": {
+  "uso": "fato surpreendente, número na tela, 'você sabia'",
+  "descricao": "bright clean notification ding",
+  "sons": [
+   {
+    "id": 951,
+    "url": "https://assets.mixkit.co/active_storage/sfx/951/951-preview.mp3",
+    "titulo": "Positive notification",
+    "dur": 2,
+    "categoria": "notification",
+    "nota": 0.463,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/951.mp3"
+   },
+   {
+    "id": 2489,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2489/2489-preview.mp3",
+    "titulo": "Arabian mystery harp notification",
+    "dur": 3,
+    "categoria": "notification",
+    "nota": 0.104,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2489.mp3"
+   },
+   {
+    "id": 938,
+    "url": "https://assets.mixkit.co/active_storage/sfx/938/938-preview.mp3",
+    "titulo": "Uplifting bells notification",
+    "dur": 2,
+    "categoria": "ding",
+    "nota": 0.057,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/938.mp3"
+   }
+  ]
+ },
+ "shutter_foto": {
+  "uso": "foto/imagem parada que entra, 'registro' de um momento",
+  "descricao": "camera shutter click",
+  "sons": [
+   {
+    "id": 1433,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1433/1433-preview.mp3",
+    "titulo": "Camera lens shutter",
+    "dur": 1,
+    "categoria": "camera",
+    "nota": 0.305,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1433.mp3"
+   },
+   {
+    "id": 1432,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1432/1432-preview.mp3",
+    "titulo": "Camera digital shutter",
+    "dur": 1,
+    "categoria": "camera",
+    "nota": 0.281,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1432.mp3"
+   },
+   {
+    "id": 1440,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1440/1440-preview.mp3",
+    "titulo": "Classic camera click",
+    "dur": 1,
+    "categoria": "camera",
+    "nota": 0.177,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1440.mp3"
+   }
+  ]
+ },
+ "glitch_tech": {
+  "uso": "tecnologia, erro, transição para animação/gráfico",
+  "descricao": "short digital glitch",
+  "sons": [
+   {
+    "id": 1033,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1033/1033-preview.mp3",
+    "titulo": "Glitch roar",
+    "dur": 1,
+    "categoria": "glitch",
+    "nota": 0.503,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1033.mp3"
+   },
+   {
+    "id": 2951,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2951/2951-preview.mp3",
+    "titulo": "Digital glitch break",
+    "dur": 1,
+    "categoria": "glitch",
+    "nota": 0.141,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2951.mp3"
+   },
+   {
+    "id": 1034,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1034/1034-preview.mp3",
+    "titulo": "Glitch communication sound",
+    "dur": 1,
+    "categoria": "glitch",
+    "nota": 0.074,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1034.mp3"
+   }
+  ]
+ },
+ "digitar_texto": {
+  "uso": "texto/título sendo escrito na tela",
+  "descricao": "fast keyboard typing",
+  "sons": [
+   {
+    "id": 2534,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2534/2534-preview.mp3",
+    "titulo": "Keyboard  key presses",
+    "dur": 1,
+    "categoria": "keyboard",
+    "nota": 0.78,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2534.mp3"
+   },
+   {
+    "id": 1369,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1369/1369-preview.mp3",
+    "titulo": "Vintage typewriter hit",
+    "dur": 1,
+    "categoria": "typewriter",
+    "nota": 0.077,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1369.mp3"
+   },
+   {
+    "id": 1379,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1379/1379-preview.mp3",
+    "titulo": "Data short input on typewriter",
+    "dur": 2,
+    "categoria": "typewriter",
+    "nota": 0.029,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1379.mp3"
+   }
+  ]
+ },
+ "relogio_tempo": {
+  "uso": "tempo passando, contagem, urgência",
+  "descricao": "clock ticking",
+  "sons": [
+   {
+    "id": 1063,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1063/1063-preview.mp3",
+    "titulo": "Fast wall clock ticking",
+    "dur": 2,
+    "categoria": "clock",
+    "nota": 0.296,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1063.mp3"
+   },
+   {
+    "id": 1954,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1954/1954-preview.mp3",
+    "titulo": "Start match countdown",
+    "dur": 2,
+    "categoria": "countdown",
+    "nota": 0.265,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1954.mp3"
+   },
+   {
+    "id": 922,
+    "url": "https://assets.mixkit.co/active_storage/sfx/922/922-preview.mp3",
+    "titulo": "Simple countdown",
+    "dur": 6,
+    "categoria": "countdown",
+    "nota": 0.153,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/922.mp3"
+   }
+  ]
+ },
+ "coracao_tensao": {
+  "uso": "perigo, medo, suspense (sob a voz, baixo)",
+  "descricao": "slow heartbeat",
+  "sons": [
+   {
+    "id": 497,
+    "url": "https://assets.mixkit.co/active_storage/sfx/497/497-preview.mp3",
+    "titulo": "Cinematic heartbeat ambience",
+    "dur": 5,
+    "categoria": "heartbeat",
+    "nota": 0.948,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/497.mp3"
+   },
+   {
+    "id": 488,
+    "url": "https://assets.mixkit.co/active_storage/sfx/488/488-preview.mp3",
+    "titulo": "Cinematic transition swoosh heartbeat trailer",
+    "dur": 8,
+    "categoria": "heartbeat",
+    "nota": 0.032,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/488.mp3"
+   },
+   {
+    "id": 490,
+    "url": "https://assets.mixkit.co/active_storage/sfx/490/490-preview.mp3",
+    "titulo": "Human single heart beat",
+    "dur": 1,
+    "categoria": "heartbeat",
+    "nota": 0.02,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/490.mp3"
+   }
+  ]
+ },
+ "dinheiro": {
+  "uso": "preço, 'mais caro do mundo', economia",
+  "descricao": "cash register money",
+  "sons": [
+   {
+    "id": 1999,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1999/1999-preview.mp3",
+    "titulo": "Gold coin prize",
+    "dur": 1,
+    "categoria": "money",
+    "nota": 0.311,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1999.mp3"
+   },
+   {
+    "id": 2000,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3",
+    "titulo": "Melodic gold price",
+    "dur": 1,
+    "categoria": "money",
+    "nota": 0.278,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2000.mp3"
+   },
+   {
+    "id": 1993,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1993/1993-preview.mp3",
+    "titulo": "Clinking coins",
+    "dur": 1,
+    "categoria": "money",
+    "nota": 0.121,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1993.mp3"
+   }
+  ]
+ },
+ "errado_mito": {
+  "uso": "mito desmentido ('A maioria acha X...' → errado)",
+  "descricao": "wrong answer buzzer",
+  "sons": [
+   {
+    "id": 948,
+    "url": "https://assets.mixkit.co/active_storage/sfx/948/948-preview.mp3",
+    "titulo": "Wrong answer bass buzzer",
+    "dur": 2,
+    "categoria": "wrong",
+    "nota": "manual",
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/948.mp3"
+   },
+   {
+    "id": 946,
+    "url": "https://assets.mixkit.co/active_storage/sfx/946/946-preview.mp3",
+    "titulo": "Wrong answer fail notification",
+    "dur": 1,
+    "categoria": "wrong",
+    "nota": "manual",
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/946.mp3"
+   },
+   {
+    "id": 950,
+    "url": "https://assets.mixkit.co/active_storage/sfx/950/950-preview.mp3",
+    "titulo": "Game show wrong answer buzz",
+    "dur": 1,
+    "categoria": "wrong",
+    "nota": "manual",
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/950.mp3"
+   }
+  ]
+ },
+ "certo_resposta": {
+  "uso": "a resposta certa / o motivo real",
+  "descricao": "correct answer chime",
+  "sons": [
+   {
+    "id": 2015,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2015/2015-preview.mp3",
+    "titulo": "Winning chimes",
+    "dur": 2,
+    "categoria": "win",
+    "nota": 0.165,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2015.mp3"
+   },
+   {
+    "id": 600,
+    "url": "https://assets.mixkit.co/active_storage/sfx/600/600-preview.mp3",
+    "titulo": "Achievement bell",
+    "dur": 2,
+    "categoria": "win",
+    "nota": 0.132,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/600.mp3"
+   },
+   {
+    "id": 2017,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2017/2017-preview.mp3",
+    "titulo": "Winning swoosh",
+    "dur": 1,
+    "categoria": "win",
+    "nota": 0.131,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2017.mp3"
+   }
+  ]
+ },
+ "rewind": {
+  "uso": "voltar no tempo, 'mas antes...', loop",
+  "descricao": "tape rewind",
+  "sons": [
+   {
+    "id": 1092,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1092/1092-preview.mp3",
+    "titulo": "Fast tape rewind cinematic transition",
+    "dur": 1,
+    "categoria": "rewind",
+    "nota": 0.47,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1092.mp3"
+   },
+   {
+    "id": 1089,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1089/1089-preview.mp3",
+    "titulo": "Slow tape rewind cinematic transition",
+    "dur": 5,
+    "categoria": "rewind",
+    "nota": 0.162,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1089.mp3"
+   },
+   {
+    "id": 1088,
+    "url": "https://assets.mixkit.co/active_storage/sfx/1088/1088-preview.mp3",
+    "titulo": "Tape rewind cinematic transition",
+    "dur": 4,
+    "categoria": "rewind",
+    "nota": 0.16,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/1088.mp3"
+   }
+  ]
+ },
+ "scratch_quebra": {
+  "uso": "quebra de expectativa (usar pouco: datado se repetido)",
+  "descricao": "record scratch",
+  "sons": [
+   {
+    "id": 707,
+    "url": "https://assets.mixkit.co/active_storage/sfx/707/707-preview.mp3",
+    "titulo": "Vinyl record swipe",
+    "dur": 1,
+    "categoria": "dj-record-scratch",
+    "nota": 0.375,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/707.mp3"
+   },
+   {
+    "id": 706,
+    "url": "https://assets.mixkit.co/active_storage/sfx/706/706-preview.mp3",
+    "titulo": "Slow vinyl record scratch",
+    "dur": 3,
+    "categoria": "dj-record-scratch",
+    "nota": 0.195,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/706.mp3"
+   },
+   {
+    "id": 710,
+    "url": "https://assets.mixkit.co/active_storage/sfx/710/710-preview.mp3",
+    "titulo": "Vinyl record small scratch",
+    "dur": 1,
+    "categoria": "dj-record-scratch",
+    "nota": 0.151,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/710.mp3"
+   }
+  ]
+ },
+ "zoom_in": {
+  "uso": "zoom rápido no detalhe",
+  "descricao": "fast zoom in whoosh",
+  "sons": [
+   {
+    "id": 2622,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2622/2622-preview.mp3",
+    "titulo": "In and out zoom sound",
+    "dur": 1,
+    "categoria": "zoom",
+    "nota": 0.468,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2622.mp3"
+   },
+   {
+    "id": 2625,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2625/2625-preview.mp3",
+    "titulo": "Fast air zoom",
+    "dur": 1,
+    "categoria": "zoom",
+    "nota": 0.395,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2625.mp3"
+   },
+   {
+    "id": 2627,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2627/2627-preview.mp3",
+    "titulo": "Fast swipe zoom",
+    "dur": 1,
+    "categoria": "zoom",
+    "nota": 0.073,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2627.mp3"
+   }
+  ]
+ },
+ "brilho_revela": {
+  "uso": "algo bonito/satisfatório sendo revelado",
+  "descricao": "sparkle shimmer reveal",
+  "sons": [
+   {
+    "id": 3062,
+    "url": "https://assets.mixkit.co/active_storage/sfx/3062/3062-preview.mp3",
+    "titulo": "Magic wand sparkle",
+    "dur": 2,
+    "categoria": "sparkle",
+    "nota": 0.212,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/3062.mp3"
+   },
+   {
+    "id": 658,
+    "url": "https://assets.mixkit.co/active_storage/sfx/658/658-preview.mp3",
+    "titulo": "Choir magic shine",
+    "dur": 4,
+    "categoria": "magic",
+    "nota": 0.184,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/658.mp3"
+   },
+   {
+    "id": 2638,
+    "url": "https://assets.mixkit.co/active_storage/sfx/2638/2638-preview.mp3",
+    "titulo": "Magic transition sweep presentation",
+    "dur": 3,
+    "categoria": "magic",
+    "nota": 0.165,
+    "arquivo": "/home/user/Viitu-Shorts/assets/kit/cache/2638.mp3"
+   }
+  ]
+ }
+}

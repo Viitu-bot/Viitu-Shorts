@@ -604,6 +604,42 @@ def som_ambiente(pasta: Path, segs: list[dict], dur: float) -> Path:
     return saida
 
 
+NUMERO = re.compile(r"^\d|^(mil|milh[aã]o|milh[oõ]es|bilh[aã]o|bilh[oõ]es|dobro|metade)$", re.I)
+DINHEIRO = re.compile(r"^(reais|real|d[oó]lar(es)?|caro|cara|preço|custa|r\$)", re.I)
+
+
+def _kit_e_sfx(cfg: dict, palavras: list[dict], pub: Path) -> tuple[dict, list[dict]]:
+    """Copia o kit de identidade (assets/kit) para o Remotion e monta os sons de FUNÇÃO:
+    - automáticos: número → ding_fato · dinheiro → dinheiro (máx. 4, ≥ 3 s entre eles)
+    - manuais: cfg["sfx_em"] = [{"em": "acha", "som": "errado_mito", "vol": 0.5}]"""
+    import shutil
+    kj = RAIZ / "assets" / "kit" / "kit.json"
+    if not kj.exists():
+        return {}, []
+    from viitu.kit import baixar
+    kit = json.loads(kj.read_text(encoding="utf-8"))
+    nomes = {}
+    for func, v in kit.items():
+        nomes[func] = []
+        for i, sm in enumerate(v["sons"]):
+            dst = f"kit_{func}_{i}.mp3"
+            shutil.copy(baixar(sm), pub / dst)
+            nomes[func].append(dst)
+    eventos, ultimo = [], -99.0
+    if cfg.get("sfx_auto", True):
+        for p in palavras:
+            w = re.sub(r"[^\wR$]", "", p["palavra"])
+            func = "dinheiro" if DINHEIRO.match(w) else ("ding_fato" if NUMERO.match(w) else None)
+            if func and p["inicio"] - ultimo >= 3 and len(eventos) < 4 and p["inicio"] > 1.0:
+                eventos.append({"f": round(p["inicio"] * FPS), "som": nomes[func][len(eventos) % 3], "vol": 0.45})
+                ultimo = p["inicio"]
+    for e in cfg.get("sfx_em", []):
+        i = achar_palavra(palavras, e["em"], 0)
+        eventos.append({"f": round(palavras[i]["inicio"] * FPS), "som": nomes[e["som"]][e.get("var", 0) % 3],
+                        "vol": e.get("vol", 0.5)})
+    return nomes, eventos
+
+
 def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: dict,
                       video: Path, audio: Path, dur: float) -> None:
     import shutil
@@ -633,6 +669,7 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
                     str(pub / "ambiente.m4a")], check=True)
     musica = cfg.get("musica", "curioso_documentario.mp3")
     shutil.copy(RAIZ / "assets" / "musica" / musica, pub / "musica.mp3")
+    kit_plano, sfx_plano = _kit_e_sfx(cfg, palavras, pub)
     destaques = {_norm(x) for x in cfg.get("destaques", [])}
 
     def y_legenda(f: int) -> int:
@@ -665,6 +702,8 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
                      for t in cfg.get("impacto_em", [])],
         "foley": [{"f0": f["f0"], "f1": f["f1"], "som": f["som"], "vol": f["vol"]} for f in faixas_foley],
         "foley_mix": True,
+        "kit": kit_plano,
+        "sfx": sfx_plano,
         # animação explicativa própria: {"animacao": {"nome", "fase", "eventos": {evento: "palavra"}}} na cena
         "animacoes": [{"nome": s["animacao"]["nome"], "fase": s["animacao"].get("fase", ""), "f0": s["f0"], "f1": s["f1"],
                        "eventos": {k: round(palavras[achar_palavra(palavras, w, s["palavra_i"])]["inicio"] * FPS) - s["f0"]
