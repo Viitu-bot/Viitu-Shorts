@@ -185,6 +185,11 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
   y=1180; senão y=400). Nunca abaixo de ~1400 (interface do YouTube).
 - Remotion: `remotion.config.ts` usa WebGL por software (swangle) para os efeitos; skills oficiais em
   `.agents/skills` (remotion-markup, remotion-captions...).
+- **Sound design:** FOLEY por cena (`viitu/foley.py`: CLIP escolhe o som do que aparece; `"foley": "<nome>"`
+  força; cenas vizinhas iguais viram ambiência contínua) com fades; trilha com DUCKING (0,11 sob a voz,
+  0,20 nas pausas). Áudio original de TikTok/Reels/brutos fica DESLIGADO por padrão (música com direitos);
+  original só de clipes livres. Biblioteca: `assets/foley/` (fogo, vento, avião, helicóptero, água, passos,
+  grilos, galinhas, ovo, floresta, multidão, brasa).
 - Sons em `assets/sfx/` (normalizados a −1 dB de pico) e trilhas em `assets/musica/`, gerados no
   ElevenLabs (sound-generation e music), livres de direitos.
 

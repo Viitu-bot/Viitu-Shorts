@@ -14,3 +14,8 @@
 | `assets/musica/curioso_documentario.mp3` | trilha padrão (16% sob a voz) | "trilha instrumental rítmica, volume médio-baixo" (A vida é uma maravilha) |
 
 Novos sons entram aqui quando aparecerem de forma recorrente nos vídeos do Hall (ver `/analisar`).
+
+## Foley (assets/foley/, escolhido por cena automaticamente)
+fogo_crepitando · fogo_rugido · vento · aviao · helicoptero · agua_jato · passos_mato · noite_grilos ·
+galinhas · ovo_quebrando · floresta_dia · multidao · fumaca_brasa
+Novos: gerar no ElevenLabs (sound-generation, "..., no music"), normalizar a −3 dB e adicionar em ROTULOS (viitu/foley.py).

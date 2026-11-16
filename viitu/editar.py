@@ -603,7 +603,16 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
                     str(pub / "audio.m4a")], check=True)
     for som in SFX.glob("*.mp3"):
         shutil.copy(som, pub / som.name)
+    # som original só de clipes livres (Pixabay/próprios): áudio de TikTok/Reels costuma ter música com direitos
+    for g in segs:
+        if g["clipe"].startswith(("tiktok", "bruto_", "ancora")) and "som_original" not in g:
+            g["som_original"] = False
     amb = som_ambiente(pasta, segs, dur)
+    from viitu.foley import escolher, FOLEY
+    faixas_foley = escolher(segs, pasta, FPS)
+    for f in faixas_foley:
+        shutil.copy(FOLEY / f"{f['_som']}.mp3", pub / f["som"])
+    print("Foley:", ", ".join(f"{f['_som']} {f['f0'] / FPS:.1f}-{f['f1'] / FPS:.1f}s" for f in faixas_foley))
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(amb), "-c:a", "aac", "-b:a", "160k",
                     str(pub / "ambiente.m4a")], check=True)
     musica = cfg.get("musica", "curioso_documentario.mp3")
@@ -638,6 +647,7 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
         "cortes": [s["f0"] for s in segs[1:]],
         "impactos": [round(palavras[achar_palavra(palavras, t, 0)]["inicio"] * FPS)
                      for t in cfg.get("impacto_em", [])],
+        "foley": [{"f0": f["f0"], "f1": f["f1"], "som": f["som"], "vol": f["vol"]} for f in faixas_foley],
         "cta": (lambda c: {"f0": round(palavras[achar_palavra(palavras, c["em"], 0)]["inicio"] * FPS),
                            "texto": c.get("texto", "💬 COMENTA")} if isinstance(c, dict)
                 else ({"f0": segs[-1]["f0"] + 6, "texto": "INSCREVA-SE"} if c else None))(cfg.get("cta", True)),

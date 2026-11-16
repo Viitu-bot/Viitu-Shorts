@@ -16,7 +16,7 @@ export type Palavra = {texto: string; f0: number; f1: number; destaque: boolean;
 export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, number, number][]; tipo?: 'circulo' | 'seta'};
 export type Plano = {
   fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
-  cortes: number[]; impactos: number[]; cta: {f0: number; texto: string} | null;
+  cortes: number[]; impactos: number[]; foley?: {f0: number; f1: number; som: string; vol: number}[]; cta: {f0: number; texto: string} | null;
 };
 
 const AMARELO = '#FFD400';
@@ -236,9 +236,21 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       <FlashIdentidade />
       <Sequence from={0} durationInFrames={30}><Audio src={staticFile('ding.mp3')} volume={0.85} /></Sequence>
 
-      {/* trilha de fundo: baixa sob a voz, some suave no final */}
+      {/* FOLEY: o som do que está na tela, com fade nas bordas (ambiência contínua entre cortes iguais) */}
+      {(plano.foley ?? []).map((f, k) => (
+        <Sequence key={`fo${k}`} from={f.f0} durationInFrames={Math.max(f.f1 - f.f0, 1)}>
+          <Audio src={staticFile(f.som)} loop
+            volume={(x) => f.vol * interpolate(x, [0, 6, f.f1 - f.f0 - 6, f.f1 - f.f0], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})} />
+        </Sequence>
+      ))}
+
+      {/* trilha com DUCKING: abaixa enquanto a voz fala, sobe nas pausas; some no final */}
       <Audio src={staticFile('musica.mp3')} loop
-        volume={(f) => 0.16 * interpolate(f, [durationInFrames - 10, durationInFrames], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})} />
+        volume={(f) => {
+          const falando = plano.palavras.some((p) => f >= p.f0 - 2 && f <= p.f1 + 2);
+          const fim = interpolate(f, [durationInFrames - 10, durationInFrames], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+          return (falando ? 0.11 : 0.2) * fim;
+        }} />
       {/* som original dos clipes por baixo da voz (padrão dos virais: chiado, raspagem, bicho) */}
       <Audio src={staticFile('ambiente.m4a')} volume={0.35} />
       <Audio src={staticFile('audio.m4a')} />

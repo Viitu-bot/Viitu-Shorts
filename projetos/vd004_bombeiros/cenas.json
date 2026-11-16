@@ -20,7 +20,8 @@
    "texto_na_imagem": true,
    "esperado": "a red can",
    "_contraste": "POV close",
-   "revisao": "manual"
+   "revisao": "manual",
+   "foley": "fogo_crepitando"
   },
   {
    "em": "A maioria acha",
@@ -28,7 +29,8 @@
    "inicio": 4.2,
    "_funcao": "o 'mito': avião jogando água",
    "_contraste": "aberto, dia",
-   "revisao": "manual"
+   "revisao": "manual",
+   "foley": "aviao"
   },
   {
    "em": "Mas quando um incêndio",
@@ -59,7 +61,8 @@
    "esperado": "fire",
    "texto_na_imagem": true,
    "revisao": "manual",
-   "_contraste": "dia, chama chegando no capim (entre cenas noturnas)"
+   "_contraste": "dia, chama chegando no capim (entre cenas noturnas)",
+   "foley": "fogo_crepitando"
   },
   {
    "em": "e morrem sozinhas",
@@ -115,7 +118,8 @@
    "inicio": 0.3,
    "texto_na_imagem": true,
    "esperado": "a person",
-   "_contraste": "rostos da equipe, de dia"
+   "_contraste": "rostos da equipe, de dia",
+   "foley": "fogo_rugido"
   },
   {
    "em": "Aqui no Brasil",
@@ -124,7 +128,8 @@
    "texto_na_imagem": true,
    "esperado": "fire",
    "_funcao": "capim dourado (parece cerrado)",
-   "revisao": "manual"
+   "revisao": "manual",
+   "foley": "fogo_crepitando"
   },
   {
    "em": "Você teria coragem",
@@ -140,7 +145,8 @@
    "clipe": "tiktok_2.mp4",
    "inicio": 7.6,
    "texto_na_imagem": true,
-   "esperado": "fire"
+   "esperado": "fire",
+   "foley": "fogo_crepitando"
   },
   {
    "em": "E da próxima vez",
