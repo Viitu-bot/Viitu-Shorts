@@ -57,10 +57,20 @@
   },
   {
    "em": "Eles queimam uma faixa",
-   "clipe": "tiktok_4.mp4",
-   "inicio": 10.2,
-   "texto_na_imagem": true,
-   "esperado": "fire"
+   "clipe": "pixabay_358803.mp4",
+   "inicio": 12.0,
+   "manter": true,
+   "revisao": "manual",
+   "animacao": {
+    "nome": "contrafogo",
+    "fase": "faixa",
+    "eventos": {
+     "linha": "faixa",
+     "queima": "mato"
+    }
+   },
+   "foley": "fogo_crepitando",
+   "_nota": "animação própria (mapa): a faixa se desenha e queima"
   },
   {
    "em": "Quando as chamas chegam",
@@ -75,9 +85,18 @@
   {
    "em": "e morrem sozinhas",
    "clipe": "pixabay_358803.mp4",
-   "inicio": 2.0,
-   "esperado": "trees",
-   "_contraste": "cinza, sem fogo"
+   "inicio": 12.0,
+   "manter": true,
+   "revisao": "manual",
+   "animacao": {
+    "nome": "contrafogo",
+    "fase": "apaga",
+    "eventos": {
+     "apaga": "sozinhas"
+    }
+   },
+   "foley": "fumaca_brasa",
+   "_nota": "animação própria (mapa): o fogo chega na faixa e morre"
   },
   {
    "em": "Mas tem um porém",

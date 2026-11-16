@@ -663,6 +663,11 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
                      for t in cfg.get("impacto_em", [])],
         "foley": [{"f0": f["f0"], "f1": f["f1"], "som": f["som"], "vol": f["vol"]} for f in faixas_foley],
         "foley_mix": True,
+        # animação explicativa própria: {"animacao": {"nome", "fase", "eventos": {evento: "palavra"}}} na cena
+        "animacoes": [{"nome": s["animacao"]["nome"], "fase": s["animacao"].get("fase", ""), "f0": s["f0"], "f1": s["f1"],
+                       "eventos": {k: round(palavras[achar_palavra(palavras, w, s["palavra_i"])]["inicio"] * FPS) - s["f0"]
+                                   for k, w in s["animacao"].get("eventos", {}).items()}}
+                      for s in segs if s.get("animacao")],
         "cta": (lambda c: {"f0": round(palavras[achar_palavra(palavras, c["em"], 0)]["inicio"] * FPS),
                            "texto": c.get("texto", "💬 COMENTA")} if isinstance(c, dict)
                 else ({"f0": segs[-1]["f0"] + 6, "texto": "INSCREVA-SE"} if c else None))(cfg.get("cta", True)),

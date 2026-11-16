@@ -115,7 +115,11 @@ O som segue a curva: trilha mais baixa na explicação, cheia na virada e no fin
 5. Look de cor por clima do tema ⏳
 6. **Animação explicativa própria (motion graphics em SVG no Remotion)** — o "porquê" desenhado na tela
    (ex.: a faixa queimada que o fogo não atravessa, setas de vento). Explica melhor que um clipe E é conteúdo
-   100% original (ajuda na monetização). Desenhar com `stroke-dasharray` (efeito lápis), sincronizado à palavra. ⏳
+   100% original (ajuda na monetização). Desenhar com `stroke-dasharray` (efeito lápis), sincronizado à palavra. ✅
+   Como usar: na cena, `"animacao": {"nome": "contrafogo", "fase": "faixa", "eventos": {"linha": "faixa"}}` +
+   `"manter": true` + `"revisao": "manual"`. Componentes em `remotion/src/animacoes/` (1 por tema; o clipe da cena
+   fica coberto). Padrão: mapa/diagrama visto de cima, cores fortes, 1 ideia por animação, entra 2x (explica →
+   clipe real como prova → volta mostrando o resultado).
 7. **Gráfico que conversa com a cena** — cores do gráfico tiradas da paleta do clipe; sombra no elemento. ⏳
 8. **Recompor horizontal → vertical** (mover elementos para a tela em pé, em vez de cortar o meio). ⏳
 Fontes: JP Labs (Short, 53k views) e Felipe Borges "Claude Vídeo 2.0" (85k views, skill `Felpborges/claude-video`),

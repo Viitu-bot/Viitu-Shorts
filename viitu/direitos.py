@@ -36,8 +36,12 @@ def revisar(projeto: str) -> bool:
         L("❌", f"Trilha: {musica}", "arquivo fora da biblioteca própria"); bloqueia = True
     L("✅", "Efeitos sonoros e foley", "assets/sfx e assets/foley, gerados no ElevenLabs (próprios)")
     L("✅", "Fonte da legenda", "Anton, licença SIL Open Font License")
+    if any(c.get("animacao") for c in cfg["cenas"]):
+        L("✅", "Animações explicativas", "desenhadas em código no Remotion (próprias)")
     vistos = set()
     for c in cfg["cenas"]:
+        if c.get("animacao"):
+            continue              # o clipe dessa cena fica coberto pela animação
         cl = c["clipe"]
         if cl in vistos:
             continue
@@ -52,7 +56,7 @@ def revisar(projeto: str) -> bool:
                 L("⚠️", cl, "terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão")
             if any(x["clipe"] == cl and x.get("som_original") is True for x in cfg["cenas"]):
                 L("❌", f"áudio original de {cl}", "ligado: pode ter música com Content ID → desligar"); bloqueia = True
-    if any(not c["clipe"].startswith(("pixabay_", "commons_", "proprio_")) for c in cfg["cenas"]) and not creditos:
+    if any(not c.get("animacao") and not c["clipe"].startswith(("pixabay_", "commons_", "proprio_")) for c in cfg["cenas"]) and not creditos:
         L("❌", "créditos na descrição", "faltam (campo creditos_descricao no cenas.json)"); bloqueia = True
     md = ["# Direitos autorais — " + projeto, "", "| status | elemento | origem |", "|---|---|---|", *linhas, "",
           "**RESULTADO:** " + ("❌ NÃO ENTREGAR" if bloqueia else "✅ liberado (⚠️ = crédito na descrição + pedir permissão)")]

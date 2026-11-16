@@ -7,6 +7,7 @@ import {loadFont} from '@remotion/fonts';
 import {Video} from '@remotion/media';
 import {zoomBlur} from '@remotion/effects/zoom-blur';
 import {chromaticAberration} from '@remotion/effects/chromatic-aberration';
+import {Contrafogo} from './animacoes/Contrafogo';
 
 // fonte local (o navegador do render não baixa do Google Fonts atrás do proxy)
 const fontFamily = 'Anton';
@@ -16,7 +17,8 @@ export type Palavra = {texto: string; f0: number; f1: number; destaque: boolean;
 export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, number, number][]; tipo?: 'circulo' | 'seta'};
 export type Plano = {
   fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
-  cortes: number[]; impactos: number[]; foley?: {f0: number; f1: number; som: string; vol: number}[]; foley_mix?: boolean; cta: {f0: number; texto: string} | null;
+  cortes: number[]; impactos: number[]; foley?: {f0: number; f1: number; som: string; vol: number}[]; foley_mix?: boolean;
+  animacoes?: {nome: string; fase: string; f0: number; f1: number; eventos: Record<string, number>}[]; cta: {f0: number; texto: string} | null;
 };
 
 const AMARELO = '#FFD400';
@@ -224,6 +226,12 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
         filter: 'contrast(1.07) saturate(1.12)'}}>
         <FundoComEfeitos plano={plano} />
       </AbsoluteFill>
+      {/* animações explicativas próprias (motion graphics) cobrem a cena inteira */}
+      {(plano.animacoes ?? []).map((a, k) => (
+        <Sequence key={`an${k}`} from={a.f0} durationInFrames={Math.max(a.f1 - a.f0, 1)}>
+          {a.nome === 'contrafogo' && <Contrafogo fase={a.fase as 'faixa' | 'apaga'} dur={a.f1 - a.f0} eventos={a.eventos} />}
+        </Sequence>
+      ))}
       <Acabamento />
 
       {plano.marcas.map((m, k) => (
