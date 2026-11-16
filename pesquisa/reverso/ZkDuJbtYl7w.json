@@ -1,0 +1,96 @@
+{
+ "canal": "GeneralTV",
+ "id": "ZkDuJbtYl7w",
+ "titulo": "O erro que todo mundo comete ao comer favo de mel 🍯",
+ "views": 9359425,
+ "dur": 34,
+ "data": "2026-05-18",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 32.5,
+  "musica": {
+   "tem": true,
+   "estilo": "Suspense rítmico e tenso",
+   "volume_vs_voz": "media",
+   "db_estimado_abaixo_da_voz": 12,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 18,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 2,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "fala": "Por que você nunca deve",
+     "na_tela": "Seta vermelha apontando",
+     "por_que": "Impacto inicial para retenção"
+    },
+    {
+     "tempo": "00:23",
+     "fala": "Mas o perigo real",
+     "na_tela": "Mel escorrendo no prato",
+     "por_que": "Transição para o clímax informativo"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:01",
+     "som": "Mastigação crocante",
+     "na_tela": "Pessoa mordendo o favo",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:11",
+     "som": "Raspagem metálica",
+     "na_tela": "Espátula limpando o favo",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "tipo": null,
+   "inicio": "00:00",
+   "duracao_s": 0,
+   "o_que_explica": null,
+   "som_na_animacao": null
+  },
+  "texto_e_graficos": [
+   "Seta vermelha (00:00)",
+   "Legendas dinâmicas centrais (00:00-00:32)"
+  ],
+  "assinatura_sonora": "Não identificada",
+  "regras_do_editor": [
+   "Aplicar 'whoosh' em todas as transições de cena.",
+   "Sobrepor foley de ASMR em cenas de alimentação.",
+   "Sincronizar cortes visuais com batidas da trilha.",
+   "Silenciar áudio original para destacar a narração.",
+   "Usar impacto sonoro no gancho inicial do vídeo.",
+   "Enfatizar elementos gráficos com efeitos de 'pop'.",
+   "Manter trilha de suspense constante para engajamento."
+  ]
+ }
+}

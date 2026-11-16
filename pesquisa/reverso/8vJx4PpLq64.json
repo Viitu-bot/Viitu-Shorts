@@ -1,0 +1,97 @@
+{
+ "canal": "GeneralTV",
+ "id": "8vJx4PpLq64",
+ "titulo": "A invenção INTELIGENTE para limpar o Ouvido 👂",
+ "views": 7556329,
+ "dur": 42,
+ "data": "2026-11-10",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 40,
+  "musica": {
+   "tem": true,
+   "estilo": "Lo-fi eletrônico motivacional",
+   "volume_vs_voz": "media",
+   "db_estimado_abaixo_da_voz": 12,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "nao"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 28,
+  "efeitos_caem": "maioria_sobre_a_fala",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 2,
+   "exemplos": [
+    {
+     "tempo": "00:07",
+     "fala": "estrutura rígida",
+     "na_tela": "modelo 3D do ouvido",
+     "por_que": "Enfatizar o perigo do cotonete comum."
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 3,
+   "exemplos": [
+    {
+     "tempo": "00:18",
+     "fala": "ferramenta inovadora",
+     "na_tela": "demonstração do produto",
+     "por_que": "Destacar a solução positiva."
+    }
+   ]
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:31",
+     "som": "água corrente",
+     "na_tela": "lavando a ponta de silicone",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:22",
+     "som": "estalo/adesão",
+     "na_tela": "sujeira grudando na ponta",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "3D",
+   "inicio": "00:07",
+   "duracao_s": 10,
+   "o_que_explica": "Anatomia do ouvido e danos causados por hastes rígidas.",
+   "som_na_animacao": "Whooshes e impactos graves."
+  },
+  "texto_e_graficos": [
+   "Seta vermelha indicativa (00:00)",
+   "Legendas dinâmicas centrais (00:00-00:40)",
+   "Caixa do produto 'Sticky Ear Cleaner' (00:39)"
+  ],
+  "assinatura_sonora": "Não identificada.",
+  "regras_do_editor": [
+   "Inserir whoosh em transições de cena rápidas.",
+   "Adicionar foley de adesão para enfatizar a função do produto.",
+   "Usar impactos graves em momentos de alerta médico.",
+   "Manter trilha constante sem cortes na batida.",
+   "Sincronizar pop sounds com o surgimento de elementos gráficos.",
+   "Aplicar zoom digital constante para aumentar retenção visual."
+  ]
+ }
+}

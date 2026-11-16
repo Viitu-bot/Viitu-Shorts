@@ -18,7 +18,7 @@ export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, numb
 export type Plano = {
   fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
   cortes: number[]; impactos: number[]; foley?: {f0: number; f1: number; som: string; vol: number}[]; foley_mix?: boolean;
-  kit?: Record<string, string[]>; sfx?: {f: number; som: string; vol: number}[];
+  kit?: Record<string, string[]>; mix?: {musica_fala: number; musica_pausa: number}; sfx?: {f: number; som: string; vol: number}[];
   animacoes?: {nome: string; fase: string; f0: number; f1: number; eventos: Record<string, number>}[]; cta: {f0: number; texto: string} | null;
 };
 
@@ -299,7 +299,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       <Audio src={staticFile('musica.mp3')} loop
         volume={(f) => {
           const fim = interpolate(f, [durationInFrames - 10, durationInFrames], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-          return (falando(f) ? 0.11 : 0.2) * fim * vacuo(f);
+          return (falando(f) ? (plano.mix?.musica_fala ?? 0.11) : (plano.mix?.musica_pausa ?? 0.2)) * fim * vacuo(f);
         }} />
       {/* som original dos clipes por baixo da voz (padrão dos virais: chiado, raspagem, bicho) */}
       <Audio src={staticFile('ambiente.m4a')} volume={(f) => 0.35 * vacuo(f)} />

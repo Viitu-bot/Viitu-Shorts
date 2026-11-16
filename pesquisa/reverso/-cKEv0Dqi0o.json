@@ -1,0 +1,108 @@
+{
+ "canal": "A vida é uma maravilha",
+ "id": "-cKEv0Dqi0o",
+ "titulo": "O homem que pulou de avião sem paraquedas 🪂",
+ "views": 10450619,
+ "dur": 81,
+ "data": "2026-11-05",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 80,
+  "musica": {
+   "tem": true,
+   "estilo": "Cinematográfica e suspense",
+   "volume_vs_voz": "media",
+   "db_estimado_abaixo_da_voz": 10,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [
+    "00:13 transição de ano",
+    "00:54 descida final"
+   ],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 55,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": true,
+   "exemplos": [
+    "00:56 aproximação da rede"
+   ]
+  },
+  "boom_ou_impacto": {
+   "quantos": 3,
+   "exemplos": [
+    {
+     "tempo": "00:13",
+     "fala": "2016",
+     "na_tela": "Texto 2016",
+     "por_que": "Enfatizar transição temporal"
+    },
+    {
+     "tempo": "01:00",
+     "fala": "cheio",
+     "na_tela": "Impacto na rede",
+     "por_que": "Som de colisão com a rede"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:03",
+     "som": "Vento forte",
+     "na_tela": "Queda livre",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:15",
+     "som": "Motor de avião",
+     "na_tela": "Avião voando",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "baixo",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": true,
+   "exemplos": [
+    "00:59"
+   ]
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "mapa",
+   "inicio": "00:21",
+   "duracao_s": 4,
+   "o_que_explica": "Visão aérea do alvo e altitude",
+   "som_na_animacao": "Whoosh e vento"
+  },
+  "texto_e_graficos": [
+   "Seta vermelha (00:00)",
+   "Data 2007 (00:00)",
+   "Data 2016 (00:13)",
+   "Altitude 7.600m (00:17)",
+   "Dimensões 30x30m (00:22)",
+   "Altura 60m (00:24)"
+  ],
+  "assinatura_sonora": "não possui",
+  "regras_do_editor": [
+   "Whoosh em cada transição de cena rápida.",
+   "Pop sonoro ao surgir setas ou textos de destaque.",
+   "Foley de vento constante em cenas de queda livre.",
+   "Boom de impacto em mudanças de capítulo ou colisões.",
+   "Riser crescente para elevar tensão antes do pouso.",
+   "Corte total de som (vácuo) um segundo antes do impacto.",
+   "Música muda de intensidade conforme a altitude diminui.",
+   "Legendas coloridas sincronizadas com a fala principal."
+  ]
+ }
+}

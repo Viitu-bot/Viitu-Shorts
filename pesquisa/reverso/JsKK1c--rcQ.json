@@ -1,0 +1,83 @@
+{
+ "canal": "KSO Descobre",
+ "id": "JsKK1c--rcQ",
+ "titulo": "Essas portas não são pequenas à toa! 😳 #curiosidades #africa #lugares",
+ "views": 8304773,
+ "dur": 25,
+ "data": "2026-01-06",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 23,
+  "musica": {
+   "tem": true,
+   "estilo": "Percussiva africana rítmica",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 12,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 14,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 1,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "fala": "Você já parou",
+     "na_tela": "VOCÊ",
+     "por_que": "Enfatizar o início do hook"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:01",
+     "som": "Arrastar e fricção",
+     "na_tela": "Homem saindo da cabana",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "tipo": null,
+   "inicio": null,
+   "duracao_s": null,
+   "o_que_explica": null,
+   "som_na_animacao": null
+  },
+  "texto_e_graficos": [
+   "Legendas dinâmicas centrais (00:00-00:23)",
+   "Seta vermelha indicativa (00:05)"
+  ],
+  "assinatura_sonora": "Não identificada",
+  "regras_do_editor": [
+   "Whoosh em transições para manter dinamismo visual.",
+   "Legendas sincronizadas palavra por palavra com a locução.",
+   "Sfx de 'pop' ao exibir elementos gráficos como setas.",
+   "Foley de movimento adicionado para reforçar a ação física.",
+   "Cortes rápidos acompanhando o ritmo da trilha sonora.",
+   "Trilha percussiva constante em volume baixo sob a voz."
+  ]
+ }
+}

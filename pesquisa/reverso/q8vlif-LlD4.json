@@ -1,0 +1,108 @@
+{
+ "canal": "GeneralTV",
+ "id": "q8vlif-LlD4",
+ "titulo": "O truque da borracha nos pneus de Fórmula 1! 🏎️",
+ "views": 210318,
+ "dur": 32,
+ "data": "2026-07-31",
+ "papel": "mediano",
+ "analise": {
+  "duracao_s": 31,
+  "musica": {
+   "tem": true,
+   "estilo": "Eletrônica/Synthwave energética",
+   "volume_vs_voz": "media",
+   "db_estimado_abaixo_da_voz": 10,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [
+    "00:31 fim do vídeo"
+   ],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 18,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": true,
+   "exemplos": [
+    "00:06 truque de regulamento"
+   ]
+  },
+  "boom_ou_impacto": {
+   "quantos": 3,
+   "exemplos": [
+    {
+     "tempo": "00:06",
+     "fala": "truque",
+     "na_tela": "zoom e seta",
+     "por_que": "ênfase na revelação do segredo"
+    },
+    {
+     "tempo": "00:12",
+     "fala": "problema",
+     "na_tela": "transição rápida",
+     "por_que": "mudança de tom na narrativa"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 2,
+   "exemplos": [
+    {
+     "tempo": "00:02",
+     "fala": "1",
+     "na_tela": "círculo vermelho"
+    }
+   ]
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:01",
+     "som": "maçarico e raspagem",
+     "na_tela": "limpeza do pneu",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:13",
+     "som": "motor de F1",
+     "na_tela": "carro acelerando",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "2D",
+   "inicio": "00:01",
+   "duracao_s": 1,
+   "o_que_explica": "Setas e círculos indicando detritos nos pneus",
+   "som_na_animacao": "pop e whoosh"
+  },
+  "texto_e_graficos": [
+   "Setas vermelhas (00:01, 00:06, 00:16)",
+   "Círculo vermelho (00:02)",
+   "Legendas dinâmicas centrais (todo o vídeo)"
+  ],
+  "assinatura_sonora": "não identificada",
+  "regras_do_editor": [
+   "Whoosh em transições para manter dinamismo constante.",
+   "Foley exagerado adicionado para aumentar imersão visual.",
+   "Cortes visuais sincronizados com batidas da trilha.",
+   "Efeito 'pop' agudo ao exibir elementos gráficos.",
+   "Riser crescente antes de explicar o 'truque' técnico.",
+   "Legendas por palavra com destaque em cores alternadas.",
+   "Impacto (boom) em transições de tópicos importantes.",
+   "Som original silenciado para priorizar narração e efeitos."
+  ]
+ }
+}

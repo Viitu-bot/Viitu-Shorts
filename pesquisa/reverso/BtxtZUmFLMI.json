@@ -1,0 +1,109 @@
+{
+ "canal": "KSO Descobre",
+ "id": "BtxtZUmFLMI",
+ "titulo": "Ser militar na Índia só é possível se passar nesse teste 😳 #curiosidades #india #lugares",
+ "views": 3832535,
+ "dur": 31,
+ "data": "2026-03-19",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 29,
+  "musica": {
+   "tem": true,
+   "estilo": "Eletrônica rítmica e motivacional",
+   "volume_vs_voz": "media",
+   "db_estimado_abaixo_da_voz": 12,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [
+    "00:28 finalização do vídeo"
+   ],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 28,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": true,
+   "exemplos": [
+    "00:14 Mas por que os militares..."
+   ]
+  },
+  "boom_ou_impacto": {
+   "quantos": 3,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "fala": "Por que pisar em tinta vermelha...",
+     "na_tela": "Pé entrando na tinta",
+     "por_que": "Enfatizar o gancho inicial"
+    },
+    {
+     "tempo": "00:27",
+     "fala": "desqualificado na hora",
+     "na_tela": "Candidato sendo testado",
+     "por_que": "Impacto final dramático"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 2,
+   "exemplos": [
+    {
+     "tempo": "00:04",
+     "fala": "identificar pés planos",
+     "na_tela": "Círculo vermelho no pé"
+    }
+   ]
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:06",
+     "som": "Splash de água",
+     "na_tela": "Pé pisando no chão molhado",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:18",
+     "som": "Salto na água",
+     "na_tela": "Homem pulando no tanque",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": true,
+   "exemplos": [
+    "00:28"
+   ]
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "2D",
+   "inicio": "00:11",
+   "duracao_s": 3,
+   "o_que_explica": "Diagrama comparativo de tipos de arco plantar",
+   "som_na_animacao": "Whoosh e pop de surgimento"
+  },
+  "texto_e_graficos": [
+   "Seta vermelha (00:00)",
+   "Círculo vermelho (00:04)",
+   "Diagrama LOW/MID/HIGH (00:11)"
+  ],
+  "assinatura_sonora": "Não identificada",
+  "regras_do_editor": [
+   "Inserir whoosh em transições de cena rápidas.",
+   "Adicionar pop sonoro ao exibir setas ou círculos.",
+   "Sincronizar cortes principais com a batida da música.",
+   "Utilizar foley exagerado para ações físicas na tela.",
+   "Aplicar riser crescente antes de perguntas ou explicações.",
+   "Inserir boom de impacto no início e conclusão.",
+   "Remover áudio original para priorizar narração limpa."
+  ]
+ }
+}

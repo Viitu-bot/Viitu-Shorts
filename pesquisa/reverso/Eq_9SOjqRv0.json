@@ -1,0 +1,88 @@
+{
+ "canal": "A vida é uma maravilha",
+ "id": "Eq_9SOjqRv0",
+ "titulo": "Bebês reborn incrivelmente realistas! 😱👶",
+ "views": 11180204,
+ "dur": 38,
+ "data": "2026-07-16",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 36.5,
+  "musica": {
+   "tem": true,
+   "estilo": "Cinematográfica e inspiradora",
+   "volume_vs_voz": "media",
+   "db_estimado_abaixo_da_voz": 12,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "nao"
+  },
+  "whoosh_nos_cortes": "nenhum",
+  "cortes_total_aprox": 18,
+  "efeitos_caem": "maioria_sobre_a_fala",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "nao",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:01",
+     "som": "Corte de plástico e pinça",
+     "na_tela": "Abrindo a boca do boneco",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:05",
+     "som": "Pinceladas suaves",
+     "na_tela": "Pintando detalhes do rosto",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:20",
+     "som": "Pó e cerdas de pincel",
+     "na_tela": "Aplicando pó na pele",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "tipo": null,
+   "inicio": null,
+   "duracao_s": 0,
+   "o_que_explica": null,
+   "som_na_animacao": null
+  },
+  "texto_e_graficos": [
+   "Seta vermelha indicando o boneco (00:00)",
+   "Legendas dinâmicas coloridas centralizadas (00:00-00:36)"
+  ],
+  "assinatura_sonora": "Não identificada",
+  "regras_do_editor": [
+   "Substituir áudio original por foley ASMR detalhado.",
+   "Sincronizar sons de ferramentas com o toque na tela.",
+   "Manter trilha sonora constante para reforçar o clima.",
+   "Utilizar legendas que mudam de cor conforme a fala.",
+   "Evitar efeitos de transição sonora para manter o realismo.",
+   "Focar o design de som na textura dos materiais (plástico, tinta, pó)."
+  ]
+ }
+}

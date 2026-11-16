@@ -1,0 +1,100 @@
+{
+ "canal": "GeneralTV",
+ "id": "IHriNx1_AJQ",
+ "titulo": "Por que motos grandes NÃO USAM corrente? 🏍️",
+ "views": 9763196,
+ "dur": 22,
+ "data": "2026-09-09",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 21,
+  "musica": {
+   "tem": true,
+   "estilo": "Eletrônica/Phonk",
+   "volume_vs_voz": "media",
+   "db_estimado_abaixo_da_voz": 12,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 18,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 3,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "fala": "Por que as motos...",
+     "na_tela": "Moto no dinamômetro",
+     "por_que": "Impacto de abertura"
+    },
+    {
+     "tempo": "00:09",
+     "fala": "É por isso que...",
+     "na_tela": "Corrente quebrada no asfalto",
+     "por_que": "Transição de capítulo"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "som": "Motor em alta rotação",
+     "na_tela": "Moto verde acelerando",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:07",
+     "som": "Metal batendo/corrente",
+     "na_tela": "Close na corrente em movimento",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "baixo",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "3D",
+   "inicio": "00:12",
+   "duracao_s": 1.5,
+   "o_que_explica": "Mecânica do eixo de transmissão",
+   "som_na_animacao": "Engrenagens girando"
+  },
+  "texto_e_graficos": [
+   "Seta vermelha (00:00)",
+   "Círculo vermelho (00:01)",
+   "Seta vermelha (00:04)",
+   "Círculo vermelho (00:05)",
+   "Círculo vermelho (00:13)",
+   "Seta vermelha (00:17)"
+  ],
+  "assinatura_sonora": "Não identificada.",
+  "regras_do_editor": [
+   "Aplicar whoosh em transições de cena rápidas.",
+   "Inserir boom/impacto no início de novos argumentos.",
+   "Sincronizar pop sonoro com surgimento de setas/círculos.",
+   "Reforçar foley mecânico para ilustrar a narração.",
+   "Realizar cortes visuais seguindo o BPM da trilha.",
+   "Manter legendas dinâmicas no centro inferior.",
+   "Elevar volume do foley em breves pausas vocais."
+  ]
+ }
+}

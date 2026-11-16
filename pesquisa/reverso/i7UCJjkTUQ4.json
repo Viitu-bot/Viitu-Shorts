@@ -1,0 +1,118 @@
+{
+ "canal": "GeneralTV",
+ "id": "i7UCJjkTUQ4",
+ "titulo": "O erro GRAVE ao salvar um passarinho! 🐤",
+ "views": 10769889,
+ "dur": 24,
+ "data": "2026-09-03",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 23.5,
+  "musica": {
+   "tem": true,
+   "estilo": "Lo-fi Chill",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 15,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 18,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": true,
+   "exemplos": [
+    "00:09 transição para animação"
+   ]
+  },
+  "boom_ou_impacto": {
+   "quantos": 3,
+   "exemplos": [
+    {
+     "tempo": "00:02",
+     "fala": "desse jeito",
+     "na_tela": "filtro vermelho",
+     "por_que": "ênfase perigo"
+    },
+    {
+     "tempo": "00:06",
+     "fala": "duas aberturas",
+     "na_tela": "zoom boca",
+     "por_que": "foco anatômico"
+    },
+    {
+     "tempo": "00:13",
+     "fala": "pulmões",
+     "na_tela": "filtro vermelho",
+     "por_que": "consequência fatal"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 1,
+   "examples": [
+    {
+     "tempo": "00:16",
+     "fala": "detalhe",
+     "na_tela": "seta vermelha"
+    }
+   ]
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:01",
+     "som": "água despejando",
+     "na_tela": "garrafa",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:14",
+     "som": "chapinhar na água",
+     "na_tela": "coruja",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:18",
+     "som": "mastigação",
+     "na_tela": "filhote comendo",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "2D",
+   "inicio": "00:10",
+   "duracao_s": 4,
+   "o_que_explica": "Água entrando nos pulmões via traqueia.",
+   "som_na_animacao": "Whoosh e gotas d'água."
+  },
+  "texto_e_graficos": [
+   "Seta vermelha (00:00)",
+   "Filtro vermelho (00:02)",
+   "Círculo de destaque (00:06)",
+   "Seta vermelha (00:16)"
+  ],
+  "assinatura_sonora": "Nenhuma",
+  "regras_do_editor": [
+   "Pop ou ding em elementos gráficos de destaque.",
+   "Filtro vermelho + boom em alertas de perigo.",
+   "Whoosh em transições rápidas entre clipes.",
+   "Foley de água e comida adicionado para imersão.",
+   "Cortes sincronizados com a batida da música.",
+   "Riser antes de infográficos anatômicos.",
+   "Música lo-fi constante em volume baixo."
+  ]
+ }
+}

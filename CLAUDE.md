@@ -15,9 +15,9 @@ nesta sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 
 ## Fluxo de produção (meta final)
 1. `/tema <dia>` → 3 temas com números reais (YouTube Data API) + lacuna em PT-BR
-2. `/clipes` → vídeos que representam o tema (links YouTube + B-roll Pexels)
-3. `/roteiro` → roteiro guiado, passo a passo, com técnicas de retenção
-4. `/editar` → voz ElevenLabs + cortes sincronizados + flash + SFX + legenda → mp4
+2. `/clipes` → vídeos que representam o tema (clipe-âncora + Pixabay/Commons; animação no trecho do mecanismo)
+3. `/roteiro` → roteiro HISA com marcações de edição (skill `/roteiro`)
+4. `/editar` → voz, cenas, animação, sound design, Remotion + TODAS as verificações (skill `/editar`)
 5. Usuário agenda no app YouTube Studio (upload via API trava em privado sem auditoria)
 
 Clipes do usuário chegam **anexados no chat** (funciona) ou, se forem grandes, por **link do Google Drive** público (gdown). YouTube e Reddit bloqueiam downloads da nuvem.
@@ -200,24 +200,26 @@ sem CAIXA ALTA gritando. Só em português: o canal tem **dublagem automática**
 - Pipeline: `python3 -m viitu.editar <proj> --remotion` → `cd remotion && npm run render`.
 - Identidade: flash branco→amarelo nos primeiros 0,2 s + "ding" no frame 0. Círculo vermelho perfeito
   que se desenha e segue o objeto, com "pop". Woosh variado nos cortes. Riser + impacto + flash +
-  tremida em "impacto_em". Botão INSCREVA-SE no fim. Trilha de fundo a 16% sob a voz.
+  tremida em "impacto_em". Botão INSCREVA-SE no fim. Trilha 9–15 dB abaixo da voz (`mix` no plano; auditoria mede).
 - **Quando usar cada efeito (biblioteca validada):**
   | Momento | Visual | Som |
   |---|---|---|
   | Frame 0 (identidade) | flash branco→amarelo 0,2 s | ding |
-  | Corte comum | glitch RGB de 3 quadros (sem flash branco) | woosh / whip / woosh2 / woosh3 alternados |
+  | Corte comum | glitch RGB de 3 quadros (sem flash branco) | kit `whoosh_corte` (3 variações alternadas) |
   | Frase de impacto ("Mas...", revelação) — `impacto_em` | zoom blur + separação RGB + flash + tremida | drone de tensão antes + boom |
   | Palavra-chave (destaques) | punch de câmera 4,5% + legenda amarela maior | — |
   | Detalhe a observar | círculo vermelho perfeito que se desenha e segue o objeto | pop |
   | Final | botão INSCREVA-SE → ✓ INSCRITO | clique |
-  Não usar sons "meme" de direitos incertos (vine boom etc.); usar as versões próprias (boom, scratch).
+  Não usar sons "meme" de direitos incertos (vine boom etc.). Sons de edição vêm do kit (`assets/kit/kit.json`).
+  **Som de função (buzzer, acerto, ding, moeda) só com GRÁFICO correspondente na tela e na PAUSA** (dono: o
+  buzzer no meio da frase atrapalhou a narração; o "acerto" no "mais" não combinou).
 - **Legenda:** 1 palavra, altura automática longe do ponto de atenção (sujeito em cima → legenda em
   y=1180; senão y=400). Nunca abaixo de ~1400 (interface do YouTube).
 - Remotion: `remotion.config.ts` usa WebGL por software (swangle) para os efeitos; skills oficiais em
   `.agents/skills` (remotion-markup, remotion-captions...).
 - **Sound design:** FOLEY por cena (`viitu/foley.py`: CLIP escolhe o som do que aparece; `"foley": "<nome>"`
-  força; cenas vizinhas iguais viram ambiência contínua) com fades; trilha com DUCKING (0,11 sob a voz,
-  0,20 nas pausas). Áudio original de TikTok/Reels/brutos fica DESLIGADO por padrão (música com direitos);
+  força; cenas vizinhas iguais viram ambiência contínua) com fades; trilha com DUCKING (abaixa sob a voz, sobe nas
+  pausas maiores). Áudio original de TikTok/Reels/brutos fica DESLIGADO por padrão (música com direitos);
   original só de clipes livres. Biblioteca: `assets/foley/` (fogo, vento, avião, helicóptero, água, passos,
   grilos, galinhas, ovo, floresta, multidão, brasa).
 - Sons em `assets/sfx/` (normalizados a −1 dB de pico) e trilhas em `assets/musica/`, gerados no

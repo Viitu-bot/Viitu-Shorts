@@ -1,0 +1,111 @@
+{
+ "canal": "A vida é uma maravilha",
+ "id": "u26wiEyCHDg",
+ "titulo": "O que se esconde na boca da tartaruga 🐢",
+ "views": 9588322,
+ "dur": 67,
+ "data": "2026-09-29",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 60,
+  "musica": {
+   "tem": true,
+   "estilo": "Cinematográfico de suspense e tensão",
+   "volume_vs_voz": "media",
+   "db_estimado_abaixo_da_voz": 12,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [
+    "00:10 Mudança para tom mais sombrio na revelação"
+   ],
+   "cortes_na_batida": "sim"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 38,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": true,
+   "exemplos": [
+    "00:09 ...o que ela não sabia"
+   ]
+  },
+  "boom_ou_impacto": {
+   "quantos": 3,
+   "exemplos": [
+    {
+     "tempo": "00:10",
+     "fala": "sabia",
+     "na_tela": "Boca da tartaruga aberta",
+     "por_que": "Enfatizar o choque visual"
+    },
+    {
+     "tempo": "00:15",
+     "fala": "dentro",
+     "na_tela": "Close-up das papilas",
+     "por_que": "Destacar detalhe assustador"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 1,
+   "exemplos": [
+    {
+     "tempo": "00:15",
+     "fala": "esconde",
+     "na_tela": "Ícone de olho amarelo"
+    }
+   ]
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:38",
+     "som": "Água e sucção",
+     "na_tela": "Tartaruga comendo água-viva",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:57",
+     "som": "Mastigação viscosa",
+     "na_tela": "Tartaruga na areia comendo",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": true,
+   "exemplos": [
+    "00:09"
+   ]
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "2D",
+   "inicio": "00:29",
+   "duracao_s": 3,
+   "o_que_explica": "Estrutura da queratina nas papilas",
+   "som_na_animacao": "Whoosh e pop"
+  },
+  "texto_e_graficos": [
+   "Seta vermelha em 00:00",
+   "Ícone de olho em 00:15",
+   "Diagrama de papila em 00:29",
+   "Legendas dinâmicas durante todo o vídeo"
+  ],
+  "assinatura_sonora": "Não identificada",
+  "regras_do_editor": [
+   "Inserir whoosh em 90% das transições de cena.",
+   "Utilizar riser crescente antes de revelações visuais impactantes.",
+   "Aplicar impacto (boom) no frame exato da revelação do 'perigo'.",
+   "Adicionar foley de água e mastigação para preencher clipes mudos.",
+   "Sincronizar a troca de trilha sonora com a mudança de assunto.",
+   "Destacar palavras-chave na legenda com cores contrastantes (amarelo/verde).",
+   "Usar efeitos sonoros de 'pop' para elementos gráficos como setas.",
+   "Manter a voz do narrador com compressão alta e clara sobre a trilha."
+  ]
+ }
+}

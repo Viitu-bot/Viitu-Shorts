@@ -1,0 +1,98 @@
+{
+ "canal": "A vida é uma maravilha",
+ "id": "Vs6xoYqQcNI",
+ "titulo": "Professores aprendem truque de segurança 🔒",
+ "views": 11438125,
+ "dur": 76,
+ "data": "2026-10-11",
+ "papel": "top",
+ "analise": {
+  "duracao_s": 75,
+  "musica": {
+   "tem": true,
+   "estilo": "Suspense dramático e tenso",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 12,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "nao"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 48,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": false,
+   "exemplos": []
+  },
+  "boom_ou_impacto": {
+   "quantos": 6,
+   "exemplos": [
+    {
+     "tempo": "00:18",
+     "fala": "dispositivo de segurança",
+     "na_tela": "Pino vermelho encaixando",
+     "por_que": "Enfatizar o travamento mecânico"
+    },
+    {
+     "tempo": "00:38",
+     "fala": "baixo da porta",
+     "na_tela": "Homem chutando a porta",
+     "por_que": "Simular impacto físico real"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [
+   ""
+  ],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:18",
+     "som": "Clique metálico",
+     "na_tela": "Trava de metal no chão",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:54",
+     "som": "Deslize de metal",
+     "na_tela": "Painéis da carteira fechando",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": true,
+   "tipo": "3D",
+   "inicio": "01:00",
+   "duracao_s": 4,
+   "o_que_explica": "Funcionamento da carteira balística",
+   "som_na_animacao": "Whoosh e impactos leves"
+  },
+  "texto_e_graficos": [
+   "Seta vermelha em 00:00",
+   "Seta vermelha em 00:00.5",
+   "Legendas centrais dinâmicas durante todo o vídeo"
+  ],
+  "assinatura_sonora": "Não identificada",
+  "regras_do_editor": [
+   "Inserir whoosh em transições de cena rápidas.",
+   "Adicionar pop sound sincronizado com o surgimento de setas indicativas.",
+   "Substituir áudio original por foley exagerado para realismo mecânico.",
+   "Usar impactos graves (booms) em demonstrações de força física.",
+   "Manter trilha de suspense constante para reforçar a seriedade do tema.",
+   "Sincronizar cortes visuais com o ritmo da narração, não da música."
+  ]
+ }
+}

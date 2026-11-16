@@ -218,17 +218,5 @@
   "texto": "💬 COMENTA"
  },
  "creditos_descricao": "Imagens: @mrbiscuitboy95 @rosebudz_7 @arvinhrushka @devincorral2 (TikTok) e Pixabay.",
- "musica": "tensao_documentario.mp3",
- "sfx_em": [
-  {
-   "em": "acha",
-   "som": "errado_mito",
-   "vol": 0.45
-  },
-  {
-   "em": "é com mais fogo",
-   "som": "certo_resposta",
-   "vol": 0.45
-  }
- ]
+ "musica": "tensao_documentario.mp3"
 }

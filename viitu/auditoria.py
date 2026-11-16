@@ -38,9 +38,19 @@ def medir(projeto: str, video: str) -> list[str]:
     A.append(f"{'✅' if lu and -15.5 <= lu <= -13 else '⚠️'} Loudness {lu} LUFS (alvo −14)")
     voz = _lufs(str(RAIZ / "remotion" / "public" / "audio.m4a"))
     mus = _lufs(str(RAIZ / "remotion" / "public" / "musica.mp3"))
+    mix = plano.get("mix", {"musica_fala": 0.11, "musica_pausa": 0.2})
     if voz and mus:
-        dif = voz - (mus + 20 * np.log10(0.11))
-        A.append(f"{'✅' if dif >= 15 else '⚠️'} Voz {dif:.0f} dB acima da trilha sob a fala (alvo ≥ 15 dB)")
+        dif = voz - (mus + 20 * np.log10(mix["musica_fala"]))
+        A.append(f"{'✅' if 9 <= dif <= 15 else '⚠️'} Música {dif:.0f} dB abaixo da voz sob a fala "
+                 f"(alvo 9–15 dB: mais que isso some, menos atrapalha)")
+    # efeitos de função sobre a fala (regra do dono: nunca atropelar a narração)
+    pj = pasta / "palavras.json"
+    if pj.exists():
+        pal = json.loads(pj.read_text(encoding="utf-8"))
+        pal = pal if isinstance(pal, list) else pal.get("palavras", [])
+        sobre = [e["som"] for e in plano.get("sfx", [])
+                 if any(w["inicio"] * fps + 2 < e["f"] < w.get("fim", w["inicio"] + 0.3) * fps - 2 for w in pal)]
+        A.append(f"{'✅' if not sobre else '⚠️'} Sons de função em cima de palavra: {sobre or 'nenhum'}")
     cap = cv2.VideoCapture(video)
     n = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     brilhos, movs, ant = [], [], None
@@ -83,9 +93,11 @@ Responda em JSON: {"nota_0a10": n, "pontos_fortes": [...], "problemas": [{"tempo
 que mais aumentariam a retenção"]}. Seja específico com tempos. Não elogie à toa."""
 
 
-def auditar(projeto: str, video: str) -> None:
+def auditar(projeto: str, video: str, gemini: bool = True) -> None:
     A = medir(projeto, video)
     try:
+        if not gemini:
+            raise RuntimeError("crítica do Gemini pulada (--sem-gemini)")
         from viitu.assistir import perguntar
         crit = json.loads(perguntar(video, PROMPT_CRITICA))
     except BaseException as e:  # Gemini fora do ar/cota (SystemExit incluído)
@@ -105,4 +117,4 @@ def auditar(projeto: str, video: str) -> None:
 
 
 if __name__ == "__main__":
-    auditar(sys.argv[1], sys.argv[2])
+    auditar(sys.argv[1], sys.argv[2], gemini="--sem-gemini" not in sys.argv)

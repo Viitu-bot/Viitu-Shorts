@@ -1,0 +1,104 @@
+{
+ "canal": "A vida é uma maravilha",
+ "id": "O3JNkFhtA1U",
+ "titulo": "Chineses enterram tronco por motivo genial 🪵🤑",
+ "views": 564194,
+ "dur": 38,
+ "data": "2026-06-30",
+ "papel": "mediano",
+ "analise": {
+  "duracao_s": 36,
+  "musica": {
+   "tem": true,
+   "estilo": "Cinematográfica motivacional",
+   "volume_vs_voz": "baixa",
+   "db_estimado_abaixo_da_voz": 12,
+   "entra_no_inicio": true,
+   "para_ou_muda_em": [],
+   "cortes_na_batida": "nao"
+  },
+  "whoosh_nos_cortes": "maioria",
+  "cortes_total_aprox": 32,
+  "efeitos_caem": "misto",
+  "som_por_palavra_da_legenda": "nao",
+  "pop_em_seta_ou_circulo": "sim",
+  "riser_antes_da_revelacao": {
+   "tem": true,
+   "exemplos": [
+    "00:25 desapareceu completamente"
+   ]
+  },
+  "boom_ou_impacto": {
+   "quantos": 3,
+   "exemplos": [
+    {
+     "tempo": "00:00",
+     "fala": "fazendeiros",
+     "na_tela": "seta vermelha",
+     "por_que": "ênfase inicial"
+    },
+    {
+     "tempo": "00:26",
+     "fala": "substituídos",
+     "na_tela": "fungo gigante",
+     "por_que": "revelação do produto"
+    }
+   ]
+  },
+  "ding_ou_notificacao": {
+   "quantos": 0,
+   "exemplos": []
+  },
+  "sons_de_meme": [],
+  "foley_do_que_aparece": {
+   "tem": true,
+   "exemplos": [
+    {
+     "tempo": "00:01",
+     "som": "madeira batendo",
+     "na_tela": "troncos",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:10",
+     "som": "plástico",
+     "na_tela": "pacote de esporos",
+     "original_ou_adicionado": "adicionado"
+    },
+    {
+     "tempo": "00:30",
+     "som": "faca cortando",
+     "na_tela": "corte do fungo",
+     "original_ou_adicionado": "adicionado"
+    }
+   ]
+  },
+  "som_original_do_clipe": "desligado",
+  "silencio_ou_vacuo_dramatico": {
+   "tem": false,
+   "exemplos": []
+  },
+  "animacao_2d_3d": {
+   "tem": false,
+   "tipo": null,
+   "inicio": null,
+   "duracao_s": null,
+   "o_que_explica": null,
+   "som_na_animacao": null
+  },
+  "texto_e_graficos": [
+   "seta vermelha 00:00",
+   "número 1 00:02",
+   "número 2 00:12"
+  ],
+  "assinatura_sonora": "nenhuma",
+  "regras_do_editor": [
+   "Whoosh em transições de cena rápidas.",
+   "Foley exagerado para ações manuais (cortar, cavar).",
+   "Impacto (boom) em revelações visuais importantes.",
+   "Riser para criar tensão antes do resultado final.",
+   "Pop sonoro ao exibir elementos gráficos como setas.",
+   "Música constante para manter o ritmo informativo."
+  ]
+ }
+}

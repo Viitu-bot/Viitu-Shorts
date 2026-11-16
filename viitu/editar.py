@@ -604,6 +604,18 @@ def som_ambiente(pasta: Path, segs: list[dict], dur: float) -> Path:
     return saida
 
 
+def _inicio_musica(arq: Path) -> float:
+    """Primeiro segundo em que a trilha já está a até 4 dB do volume típico dela (pula a intro quase muda)."""
+    out = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(arq), "-af",
+                          "aresample=48000,asetnsamples=48000,astats=metadata=1:reset=1,ametadata=print:key=lavfi.astats.Overall.RMS_level",
+                          "-f", "null", "-"], capture_output=True, text=True).stderr
+    rms = [float(x) for x in re.findall(r"RMS_level=(-?[\d.]+)", out)]
+    if not rms:
+        return 0.0
+    alvo = float(np.median(rms)) - 4
+    return float(next((i for i, r in enumerate(rms) if r >= alvo), 0))
+
+
 NUMERO = re.compile(r"^\d|^(mil|milh[aã]o|milh[oõ]es|bilh[aã]o|bilh[oõ]es|dobro|metade)$", re.I)
 DINHEIRO = re.compile(r"^(reais|real|d[oó]lar(es)?|caro|cara|preço|custa|r\$)", re.I)
 
@@ -626,7 +638,7 @@ def _kit_e_sfx(cfg: dict, palavras: list[dict], pub: Path) -> tuple[dict, list[d
             shutil.copy(baixar(sm), pub / dst)
             nomes[func].append(dst)
     eventos, ultimo = [], -99.0
-    if cfg.get("sfx_auto", True):
+    if cfg.get("sfx_auto", False):      # só ligar quando houver gráfico de número/dinheiro na tela
         for p in palavras:
             w = re.sub(r"[^\wR$]", "", p["palavra"])
             func = "dinheiro" if DINHEIRO.match(w) else ("ding_fato" if NUMERO.match(w) else None)
@@ -635,7 +647,12 @@ def _kit_e_sfx(cfg: dict, palavras: list[dict], pub: Path) -> tuple[dict, list[d
                 ultimo = p["inicio"]
     for e in cfg.get("sfx_em", []):
         i = achar_palavra(palavras, e["em"], 0)
-        eventos.append({"f": round(palavras[i]["inicio"] * FPS), "som": nomes[e["som"]][e.get("var", 0) % 3],
+        # regra: som de função só na PAUSA (fim da frase onde está a palavra), nunca sobre a fala
+        j = i
+        while j + 1 < len(palavras) and palavras[j + 1]["inicio"] - palavras[j].get("fim", palavras[j + 1]["inicio"]) < 0.25:
+            j += 1
+        t = palavras[j].get("fim", palavras[j]["inicio"] + 0.3)
+        eventos.append({"f": round(t * FPS), "som": nomes[e["som"]][e.get("var", 0) % 3],
                         "vol": e.get("vol", 0.5)})
     return nomes, eventos
 
@@ -668,7 +685,9 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(amb), "-c:a", "aac", "-b:a", "160k",
                     str(pub / "ambiente.m4a")], check=True)
     musica = cfg.get("musica", "curioso_documentario.mp3")
-    shutil.copy(RAIZ / "assets" / "musica" / musica, pub / "musica.mp3")
+    ini_mus = _inicio_musica(RAIZ / "assets" / "musica" / musica)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{ini_mus:.2f}", "-i", str(RAIZ / "assets" / "musica" / musica),
+                    "-c:a", "libmp3lame", "-q:a", "2", str(pub / "musica.mp3")], check=True)
     kit_plano, sfx_plano = _kit_e_sfx(cfg, palavras, pub)
     destaques = {_norm(x) for x in cfg.get("destaques", [])}
 
@@ -703,6 +722,8 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
         "foley": [{"f0": f["f0"], "f1": f["f1"], "som": f["som"], "vol": f["vol"]} for f in faixas_foley],
         "foley_mix": True,
         "kit": kit_plano,
+        # volume da trilha: sob a fala / nas pausas (cfg "mix" sobrescreve) — ver logica_editor.md
+        "mix": {"musica_fala": 0.28, "musica_pausa": 0.42, **cfg.get("mix", {})},
         "sfx": sfx_plano,
         # animação explicativa própria: {"animacao": {"nome", "fase", "eventos": {evento: "palavra"}}} na cena
         "animacoes": [{"nome": s["animacao"]["nome"], "fase": s["animacao"].get("fase", ""), "f0": s["f0"], "f1": s["f1"],

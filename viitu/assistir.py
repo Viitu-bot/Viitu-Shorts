@@ -72,11 +72,12 @@ def enviar_arquivo(caminho: str) -> str:
     return info["uri"]
 
 
-def perguntar(link: str, prompt: str, modelo: str = MODELO, json_saida: bool = True) -> str:
+def perguntar(link: str, prompt: str, modelo: str = MODELO, json_saida: bool = True, fps: float | None = None) -> str:
     if not link.startswith("http"):
         link = enviar_arquivo(link)          # arquivo local (ex.: nosso vídeo renderizado)
     corpo = {
-        "contents": [{"parts": [{"file_data": {"file_uri": link, "mime_type": "video/mp4"}}, {"text": prompt}]}],
+        "contents": [{"parts": [{"file_data": {"file_uri": link, "mime_type": "video/mp4"},
+                                 **({"video_metadata": {"fps": fps}} if fps else {})}, {"text": prompt}]}],
         "generationConfig": {"temperature": 0.2,
                              **({"responseMimeType": "application/json"} if json_saida else {})},
     }
