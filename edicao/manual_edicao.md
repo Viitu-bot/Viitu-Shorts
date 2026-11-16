@@ -122,5 +122,11 @@ O som segue a curva: trilha mais baixa na explicação, cheia na virada e no fin
    clipe real como prova → volta mostrando o resultado).
 7. **Gráfico que conversa com a cena** — cores do gráfico tiradas da paleta do clipe; sombra no elemento. ⏳
 8. **Recompor horizontal → vertical** (mover elementos para a tela em pé, em vez de cortar o meio). ⏳
+9. **Animação 3D (maquete/diorama)** ✅ — `@remotion/three` (Three.js) dentro do Remotion, modelos low-poly feitos
+   em código (árvores, chamas, casas, pessoas) e setas para mostrar forças invisíveis (vento, calor, pressão).
+   Câmera de cima, inclinada, com leve giro e aproximação. Exemplo: `remotion/src/animacoes/Contrafogo3D.tsx`.
+   Padrão (engenharia reversa: 40–53% dos vídeos do nicho têm animação, inserções de 1–10 s): clipe real no gancho
+   e na virada → 3D explica o mecanismo → clipe real como prova → 3D mostra o resultado. Renderiza sem GPU
+   (lento: ~3–5x o tempo normal só nesses trechos).
 Fontes: JP Labs (Short, 53k views) e Felipe Borges "Claude Vídeo 2.0" (85k views, skill `Felpborges/claude-video`),
 analisados em 16/11/2026. Já fazemos: animação quadro a quadro, sincronia por palavra, prancha antes de entregar.

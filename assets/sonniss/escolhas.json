@@ -48,5 +48,15 @@
   "id": 1890,
   "nome": "RedSonic - Frying Water/water_dropped_on_electric_stove_02.mp3",
   "nota": 0.862
+ },
+ "strong wind blowing through trees": {
+  "id": 4584,
+  "nome": "Ivo Vicic - Wind/07 Wind_cypress tree canopy_near field.mp3",
+  "nota": 0.341
+ },
+ "wind gust whoosh": {
+  "id": 1692,
+  "nome": "Hzandbits - Urban Winds II/Wind,Ext,Alley,Whoosh,Fluctuating slightly,Wire flapping.mp3",
+  "nota": 0.218
  }
 }

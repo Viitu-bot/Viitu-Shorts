@@ -5,14 +5,17 @@
     "render": "remotion render src/index.ts Short out/short_remotion.mp4 --concurrency=4"
   },
   "dependencies": {
+    "@react-three/fiber": "8.17.10",
     "@remotion/cli": "^4.0.543",
     "@remotion/effects": "4.0.543",
     "@remotion/fonts": "^4.0.543",
     "@remotion/google-fonts": "^4.0.543",
     "@remotion/media": "4.0.543",
+    "@remotion/three": "4.0.543",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "remotion": "^4.0.543",
+    "three": "0.169.0",
     "typescript": "^7.0.2"
   }
 }

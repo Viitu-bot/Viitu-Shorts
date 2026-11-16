@@ -8,6 +8,7 @@ import {Video} from '@remotion/media';
 import {zoomBlur} from '@remotion/effects/zoom-blur';
 import {chromaticAberration} from '@remotion/effects/chromatic-aberration';
 import {Contrafogo} from './animacoes/Contrafogo';
+import {Contrafogo3D} from './animacoes/Contrafogo3D';
 
 // fonte local (o navegador do render não baixa do Google Fonts atrás do proxy)
 const fontFamily = 'Anton';
@@ -242,6 +243,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       {(plano.animacoes ?? []).map((a, k) => (
         <Sequence key={`an${k}`} from={a.f0} durationInFrames={Math.max(a.f1 - a.f0, 1)}>
           {a.nome === 'contrafogo' && <Contrafogo fase={a.fase as 'faixa' | 'apaga'} dur={a.f1 - a.f0} eventos={a.eventos} />}
+          {a.nome === 'contrafogo3d' && <Contrafogo3D fase={a.fase as 'ar' | 'encontro'} dur={a.f1 - a.f0} eventos={a.eventos} />}
         </Sequence>
       ))}
       <Acabamento />

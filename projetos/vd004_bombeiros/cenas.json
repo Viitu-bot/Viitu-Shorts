@@ -108,6 +108,22 @@
    "revisao": "manual"
   },
   {
+   "em": "um incêndio grande puxa",
+   "clipe": "pixabay_358803.mp4",
+   "inicio": 3.0,
+   "manter": true,
+   "revisao": "manual",
+   "animacao": {
+    "nome": "contrafogo3d",
+    "fase": "ar",
+    "eventos": {
+     "puxa": "puxa o ar"
+    }
+   },
+   "foley": "vento",
+   "_nota": "3D: incêndio puxa o ar (setas de vento)"
+  },
+  {
    "em": "E os bombeiros usam",
    "clipe": "tiktok_1.mp4",
    "inicio": 4.0,
@@ -117,19 +133,20 @@
   },
   {
    "em": "o próprio incêndio puxa",
-   "clipe": "tiktok_4.mp4",
-   "inicio": 0.8,
-   "texto_na_imagem": true,
-   "esperado": "fire",
-   "revisao": "manual"
-  },
-  {
-   "em": "e os dois se apagam",
-   "clipe": "tiktok_3.mp4",
-   "inicio": 6.5,
-   "texto_na_imagem": true,
-   "esperado": "fire",
-   "revisao": "manual"
+   "clipe": "pixabay_358803.mp4",
+   "inicio": 6.0,
+   "manter": true,
+   "revisao": "manual",
+   "animacao": {
+    "nome": "contrafogo3d",
+    "fase": "encontro",
+    "eventos": {
+     "puxa": "puxa o contrafogo",
+     "apagam": "apagam"
+    }
+   },
+   "foley": "fogo_crepitando",
+   "_nota": "3D: contrafogo puxado, encontro e apagam"
   },
   {
    "em": "Só que, se o vento",
