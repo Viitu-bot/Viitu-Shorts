@@ -29,6 +29,23 @@ Pré-requisito: tema validado por `/tema` (prova ≥ 1M, lacuna PT-BR, categoria
    igual você, inscrito do canal. Se não é, já se inscreve pra ver se…". Na tela: "SE INSCREVE" + rosto/gesto positivo.
    (Dado do dono vale mais que a média dos canais de referência, que quase não usam CTA.)
 
+## 2b. Fórmulas que funcionam (Hall da Fama — conferidas em 2+ vídeos de canais grandes)
+**Gancho (escolha 1):**
+- **A pergunta que o espectador faria:** "Por que não colocam tela no motor do avião?" / "Por que tampa tem anel que arrebenta?"
+- **Alerta/proibição:** "Nunca faça isso…", "Não cometa o erro de…" + ação física já acontecendo (tartaruga, van do Japão).
+- **Afirmação impossível:** "carne crua fora da geladeira por meses", "massa viva há 90 anos", "doce sem açúcar".
+- **Hipótese comum derrubada:** "Você acha que é X… mas" (terremoto no Japão → espelho falso).
+- **Ação estranha no frame 0** (alguém fazendo algo desconfortável/sem sentido) e a narração explica.
+**Meio:**
+- **Analogia do dia a dia** para o conceito difícil ("é queratina, igual sua unha"; "válvula de mão única").
+- **Duas camadas de motivo** (ex.: clima + segurança) para sustentar até o fim; a 2ª camada é a virada.
+- **História concreta > conceito** (o pão feito com a mesma massa desde 1932, não "fermentação").
+- Narração SEM pausa longa: cada segundo traz informação nova (o auto-cut ajuda; o texto também).
+**Fim:**
+- **Guardar a cena mais satisfatória/reveladora para o terço final** ("lado de dentro" do espelho, o fatiamento,
+  o resultado limpo) — é o que segura até o loop.
+- Prova real (teste, câmera oficial) depois da explicação.
+
 ## 3. Evidências
 Todo fato com [CONFIRMADO] + fonte ou [INCERTO]. Nada [INCERTO] no texto final.
 

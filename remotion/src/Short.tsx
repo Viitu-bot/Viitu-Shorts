@@ -316,8 +316,10 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       {/* trilha com DUCKING (abaixa sob a voz) + VÁCUO antes do impacto (silêncio → boom → trilha volta mais forte) */}
       <Audio src={staticFile('musica.mp3')} loop
         volume={(f) => {
-          const fim = interpolate(f, [durationInFrames - 10, durationInFrames], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-          return (falando(f) ? M(plano,'musica_fala') : M(plano,'musica_pausa')) * fim * vacuo(f);
+          // LOOP: a trilha SOBE nos últimos 1,5 s (padrão dos canais grandes) e não some — o fim emenda no começo
+          const sobe = interpolate(f, [durationInFrames - 45, durationInFrames - 5], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+          const base = falando(f) ? M(plano,'musica_fala') : M(plano,'musica_pausa');
+          return (base + (M(plano,'musica_pausa') * 1.3 - base) * sobe) * vacuo(f);
         }} />
       {/* som original dos clipes por baixo da voz (padrão dos virais: chiado, raspagem, bicho) */}
       <Audio src={staticFile('ambiente.m4a')} volume={(f) => M(plano,'som_original') * vacuo(f)} />

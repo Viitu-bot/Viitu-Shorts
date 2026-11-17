@@ -26,6 +26,7 @@ const useTexturas = (nomes: string[]) => {
       const t = loader.load(staticFile(`tex/${n}.jpg`), pronto, undefined, (e) => { setErro(`${n}: ${String(e)}`); pronto(); });
       t.wrapS = t.wrapT = THREE.RepeatWrapping;
       t.colorSpace = THREE.SRGBColorSpace;
+      if (n.endsWith('_hdri')) t.mapping = THREE.EquirectangularReflectionMapping;   // céu 360° real
       o[n] = t;
     });
     return o;
@@ -54,7 +55,19 @@ const Camera: React.FC<{pos: [number, number, number]; alvo: [number, number, nu
 
 const rep = (t: THREE.Texture | undefined, x: number, y: number) => { if (t) t.repeat.set(x, y); return t; };
 
-const ACO = '#d6dbe0';
+// HDRI: foto 360° de céu real (Poly Haven, CC0) ilumina a cena e aparece refletida no aço — aspecto de render de verdade
+const Ambiente: React.FC<{tex?: THREE.Texture; fundo: boolean; forca?: number}> = ({tex, fundo, forca = 1}) => {
+  const {scene} = useThree();
+  useEffect(() => {
+    if (!tex) return;
+    scene.environment = tex;
+    (scene as any).environmentIntensity = forca;
+    if (fundo) { scene.background = tex; (scene as any).backgroundIntensity = 1; }
+  }, [tex, fundo, forca]);
+  return null;
+};
+
+const ACO = '#e4e8ec';
 const PRETO = '#17181a';
 
 // ---------- a nave (origem = centro da base) ----------
@@ -88,11 +101,11 @@ const Nave: React.FC<NaveProps> = ({f, chama = 0, plasma = 0, pernas = 0, pernas
       {/* corpo: parte de baixo (opaca) e de cima (abre em corte para mostrar a carga) */}
       <mesh position={[0, 1.2, 0]}>
         <cylinderGeometry args={[0.45, 0.45, 2.4, 40, 1, true]} />
-        <meshStandardMaterial color={ACO} metalness={0.35} roughness={0.3} side={THREE.DoubleSide} />
+        <meshStandardMaterial color={ACO} metalness={0.85} roughness={0.22} side={THREE.DoubleSide} />
       </mesh>
       <mesh position={[0, 3.2, 0]}>
         <cylinderGeometry args={[0.45, 0.45, 1.6, 40, 1, true]} />
-        <meshStandardMaterial color={ACO} metalness={0.55} roughness={0.32} transparent={vidro} opacity={1 - corte * 0.8} depthWrite={!vidro} side={THREE.DoubleSide} />
+        <meshStandardMaterial color={ACO} metalness={0.85} roughness={0.22} transparent={vidro} opacity={1 - corte * 0.8} depthWrite={!vidro} side={THREE.DoubleSide} />
       </mesh>
       {/* anéis de solda */}
       {[0.5, 1.1, 1.7, 2.3, 2.9, 3.5].map((y) => (
@@ -110,7 +123,7 @@ const Nave: React.FC<NaveProps> = ({f, chama = 0, plasma = 0, pernas = 0, pernas
       <group position={[0, 4.0, 0]}>
         <mesh>
           <latheGeometry args={[perfilNariz, 40]} />
-          <meshStandardMaterial color={ACO} metalness={0.55} roughness={0.32} side={THREE.DoubleSide} />
+          <meshStandardMaterial color={ACO} metalness={0.85} roughness={0.22} side={THREE.DoubleSide} />
         </mesh>
         <mesh scale={[1.015, 1.0, 1.015]}>
           <latheGeometry args={[perfilNariz, 40, Math.PI / 2, Math.PI]} />
@@ -207,7 +220,7 @@ const Booster: React.FC = () => (
   <group>
     <mesh position={[0, 3.5, 0]}>
       <cylinderGeometry args={[0.45, 0.45, 7.0, 40]} />
-      <meshStandardMaterial color={ACO} metalness={0.55} roughness={0.36} />
+      <meshStandardMaterial color={ACO} metalness={0.85} roughness={0.25} />
     </mesh>
     {[1, 2, 3, 4, 5, 6].map((y) => (
       <mesh key={y} position={[0, y, 0]}><torusGeometry args={[0.452, 0.006, 4, 40]} /><meshStandardMaterial color="#8e959c" /></mesh>
@@ -342,7 +355,7 @@ const NAVE_Z = BRACO_Z + 1.65; // nave entre os braços
 export const Starship3D: React.FC<{fase: FaseStarship; dur: number; eventos: Record<string, number>}> = ({fase, dur, eventos}) => {
   const f = useCurrentFrame();
   const {width, height} = useVideoConfig();
-  const {tex, erro, pronto, h} = useTexturas(['coast_sand_01_diff', 'concrete_floor_02_diff']);
+  const {tex, erro, pronto, h} = useTexturas(['coast_sand_01_diff', 'concrete_floor_02_diff', 'ceu_nuvens_hdri']);
 
   if (fase === 'reentrada') {
     // nave de barriga, em brasa, caindo; perto do fim vira em pé e acende os motores
@@ -354,6 +367,7 @@ export const Starship3D: React.FC<{fase: FaseStarship; dur: number; eventos: Rec
       <ThreeCanvas width={width} height={height} style={{background: 'linear-gradient(#020510 0%, #0b1838 45%, #2b4f8a 75%, #e07a3f 100%)'}} gl={{alpha: true}} camera={{fov: 50, position: cam, near: 0.05, far: 400}}>
         <Camera pos={cam} alvo={[0, 0, 0]} />
         <Liberar pronto={pronto} h={h} />
+        <Ambiente tex={tex.ceu_nuvens_hdri} fundo={false} forca={0.5} />
         <ambientLight intensity={0.35} />
         <directionalLight position={[5, 3, 4]} intensity={2.0} color="#fff3e2" />
         <pointLight position={[0, -2.2, 0]} intensity={18 * plasma} distance={8} color="#ff7a33" />
@@ -438,6 +452,7 @@ export const Starship3D: React.FC<{fase: FaseStarship; dur: number; eventos: Rec
         <ThreeCanvas width={width} height={height} style={{backgroundColor: ceu}} camera={{fov: 50, position: camP, near: 0.05, far: 400}}>
           <Camera pos={camP} alvo={[0, 2.6, 0]} />
           <Liberar pronto={pronto} h={h} />
+          <Ambiente tex={tex.ceu_nuvens_hdri} fundo />
           <fog attach="fog" args={[ceu, 25, 120]} />
           <hemisphereLight args={['#e6f0fa', '#8a7a62', 0.85]} />
           <directionalLight position={sol.pos} intensity={sol.i} color={sol.cor} />
@@ -462,6 +477,7 @@ export const Starship3D: React.FC<{fase: FaseStarship; dur: number; eventos: Rec
       <ThreeCanvas width={width} height={height} style={{backgroundColor: ceu}} camera={{fov: 50, position: cam, near: 0.05, far: 500}}>
         <Camera pos={cam} alvo={alvo} />
         <Liberar pronto={pronto} h={h} />
+        <Ambiente tex={tex.ceu_nuvens_hdri} fundo={fase !== 'genial'} />
         <fog attach="fog" args={[ceu, 30, 160]} />
         <hemisphereLight args={[fase === 'genial' ? '#ffd2a8' : '#e6f0fa', '#7a6a52', 0.8]} />
         <directionalLight position={sol.pos} intensity={sol.i} color={sol.cor} />

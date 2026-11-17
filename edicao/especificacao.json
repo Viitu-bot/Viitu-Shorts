@@ -13,7 +13,8 @@
   "boom": 0,
   "riser": -6,
   "ding": -8,
-  "clique": -8
+  "clique": -8,
+  "hit": -6
  },
  "visual": {
   "seg_por_cena_alvo": 1.5,
@@ -34,5 +35,6 @@
   "legenda_y_alternativa": 1250
  },
  "_ajuste_17_11": "Ouvido do dono: com música −18 e foley −12/−5 a trilha sumia e o vento cobria tudo. Música −14 sob a fala; foley −18 (ambiência) / −12 (detalhe). Efeitos pontuais do 3D: nível próprio por evento (cenas.json).",
- "_formato_dono_17_11": "HISA 2.0 do dono: Tiro Curto 12–15 s (30–38 palavras, re-hook aos 6 s) e Bastidor 20–28 s (50–65 palavras); auto-cut de silêncios; legenda ouro no terço superior; sem fisheye."
+ "_formato_dono_17_11": "HISA 2.0 do dono: Tiro Curto 12–15 s (30–38 palavras, re-hook aos 6 s) e Bastidor 20–28 s (50–65 palavras); auto-cut de silêncios; legenda ouro no terço superior; sem fisheye.",
+ "_hit_17_11": "hit de ênfase na palavra forte (não/número/dinheiro), máx. 3 — A vida é uma maravilha, 13 vídeos"
 }

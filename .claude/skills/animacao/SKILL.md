@@ -22,6 +22,16 @@ Base: 40–53% dos vídeos dos canais do nicho têm animação; inserções de 1
 - **Lógica física consistente:** o que o fogo/água/etc. já atingiu muda de estado e não volta; no encontro de
   duas frentes não sobra faixa intacta; nada some sem motivo.
 
+## Nível de qualidade do 3D (dono, 17/11: "o 3D tá básico, a gaivota saiu sem bico")
+- **3D só em momentos curtos** (1–2 inserções de 2–5 s): o mecanismo impossível de filmar. O resto é clipe real.
+- **Iluminação HDRI sempre:** céu 360° real do Poly Haven (CC0) como `scene.environment` (+ fundo quando for ao ar livre);
+  aço com metalness 0.85 / roughness 0.22. Modelo: componente `Ambiente` em `Starship3D.tsx`; arquivo `assets/texturas/*_hdri.jpg`.
+- **Modelos prontos em vez de caixas** (bicho, veículo, máquina): GLB carregado com `GLTFLoader`, animação do modelo
+  sincronizada ao quadro. Fontes: Poly Haven models (CC0, objetos realistas), Quaternius (CC0, bichos animados),
+  Sketchfab (CC-BY, milhões, precisa de token da conta grátis), NASA 3D Resources (domínio público, naves).
+  Crédito do autor na descrição quando CC-BY.
+- Próximo nível a testar: Blender 4.0 (disponível no apt) renderizando a inserção em Cycles/CPU.
+
 ## Visual vivo (padrão desde o vd006)
 - **Cenário completo**, não objeto solto no vazio: chão, estrada, grama, céu com neblina. Texturas reais CC0 do
   Poly Haven em `assets/texturas/` (baixar `Diffuse` 1k pela API `api.polyhaven.com/files/<nome>`; o editor copia

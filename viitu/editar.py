@@ -670,6 +670,33 @@ def _kit_e_sfx(cfg: dict, palavras: list[dict], pub: Path) -> tuple[dict, list[d
     return nomes, eventos
 
 
+NEGACAO = {"nao", "nunca", "nenhum", "nenhuma", "ninguem", "jamais"}
+
+
+def _hits(cfg: dict, palavras: list[dict], impactos: list[int], pub: Path) -> list[dict]:
+    """HIT de ênfase (padrão A vida é uma maravilha/KSO): pancada seca curta NA palavra forte — negação ("não",
+    "nunca"), número ou dinheiro. Máx. 3 por vídeo, ≥ 3 s de distância, nunca perto da virada (que já tem boom).
+    Manual: "hits_em": ["não tem", "pegou"]; desligar: "hits_em": []."""
+    from viitu.mix import normalizar, ganho
+    if "hits_em" in cfg:
+        alvos = [achar_palavra(palavras, t, 0) for t in cfg["hits_em"]]
+    else:
+        alvos, ultimo = [], -9.0
+        for i, p in enumerate(palavras):
+            w = re.sub(r"[^\wR$]", "", p["palavra"])
+            cond = i > 0 and _norm(palavras[i - 1]["palavra"]) == "se"      # "se não é" (CTA) não é ênfase
+            forte = (_norm(w) in NEGACAO and not cond) or NUMERO.match(w) or DINHEIRO.match(w)
+            perto = any(abs(round(p["inicio"] * FPS) - f) < 20 for f in impactos)
+            if forte and not perto and p["inicio"] > 1.0 and p["inicio"] - ultimo >= 3 and len(alvos) < 3:
+                alvos.append(i)
+                ultimo = p["inicio"]
+    if not alvos:
+        return []
+    normalizar(RAIZ / "assets" / "sfx" / "hit_enfase.mp3", pub / "hit_enfase.mp3", "pontual")
+    return [{"f": round(palavras[i]["inicio"] * FPS), "som": "hit_enfase.mp3", "vol": round(ganho("hit"), 4), "dur": 30}
+            for i in alvos]
+
+
 def _sons_da_cena(segs: list[dict], palavras: list[dict], pub: Path) -> list[dict]:
     """Foley de AÇÃO em cena de clipe real (não é som de função): toca NA palavra, não na pausa.
     "sfx_cena": [{"em": "pegou", "arquivo": "assets/sfx/x.mp3", "db": -4, "dur": 2, "desloc": 0}]"""
@@ -807,6 +834,7 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
     }
     plano["sfx"] += _sons_da_animacao(segs, plano["animacoes"], pub)
     plano["sfx"] += _sons_da_cena(segs, palavras, pub)
+    plano["sfx"] += _hits(cfg, palavras, plano["impactos"], pub)
     (pub / "plano.json").write_text(json.dumps(plano, ensure_ascii=False), encoding="utf-8")
     print(f"Plano Remotion exportado: {pub.relative_to(RAIZ)}/plano.json")
 
