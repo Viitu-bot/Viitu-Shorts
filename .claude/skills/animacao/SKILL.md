@@ -16,6 +16,9 @@ Base: 40–53% dos vídeos dos canais do nicho têm animação; inserções de 1
 - 1 ideia por animação, 3 a 6 s por entrada; sincronizar eventos às palavras (`"eventos": {"puxa": "puxa o ar"}`).
 - Estilo: maquete low-poly vista de cima, câmera inclinada que se aproxima e gira um pouco, cores fortes,
   setas para forças invisíveis (vento, calor, pressão). Formato vertical: TUDO que importa precisa caber no quadro.
+- **Direção e física do movimento:** todo veículo/bicho anda para onde o nariz/cabeça aponta (no vd005 o avião
+  voava de ré); inclinação coerente (sobe de nariz para cima, plana de nariz um pouco abaixo, arredonda antes de
+  tocar); câmera nunca dentro de objeto (prédio, chão) nem cortando o sujeito. Conferir em quadros soltos.
 - **Lógica física consistente:** o que o fogo/água/etc. já atingiu muda de estado e não volta; no encontro de
   duas frentes não sobra faixa intacta; nada some sem motivo.
 

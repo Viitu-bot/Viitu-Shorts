@@ -197,7 +197,7 @@ const Aviao: React.FC<{rot: number; dano: number}> = ({rot, dano}) => (
     {[-1.25, 1.25].map((x, i) => (
       <group key={i}>
         <Motor rot={rot} dano={dano} escala={0.24} pos={[x, -0.42, 0.75]} semente={`a${i}`} />
-        <Fumaca centro={[x, -0.3, 0.2]} f={rot * 3} forca={dano} semente={`f${i}`} />
+        <Fumaca centro={[x, -0.3, 0.2]} f={rot * 3} forca={dano * 0.45} semente={`f${i}`} />
       </group>
     ))}
   </group>
@@ -315,7 +315,8 @@ export const Turbina3D: React.FC<Props> = ({fase, dur, eventos}) => {
     let rot = 0;
     for (let k = 0; k < f; k++) rot += interpolate(k, [tBate, tBate + 25], [0.6, 0], cl);
     const alt = f < tBate ? interpolate(f, [0, tBate], [2.6, 3.4], cl) : interpolate(f, [tBate, tPousa], [3.4, 0.35], cl);
-    const pitch = f < tBate ? -0.12 : interpolate(f, [tBate, tPousa - 8, tPousa], [-0.05, 0.08, -0.12], cl);
+    const pitch = f < tBate ? 0.12 : f < tPousa ? interpolate(f, [tBate, tBate + 15, tPousa - 14, tPousa - 2], [0.12, -0.07, -0.07, 0.1], cl)
+      : interpolate(f, [tPousa, tPousa + 14], [0.1, 0], cl);   // sobe nariz p/ cima, plana nariz um pouco abaixo, arredonda (flare) para tocar a água
     const velZ = f < tPousa ? 0.09 : interpolate(f, [tPousa, dur], [0.09, 0.01], cl);
     let z = 0;
     for (let k = 0; k < f; k++) z -= (k < tPousa ? 0.09 : interpolate(k, [tPousa, dur], [0.09, 0.01], cl));
@@ -328,7 +329,7 @@ export const Turbina3D: React.FC<Props> = ({fase, dur, eventos}) => {
         <fog attach="fog" args={['#9fc8ea', 18, 60]} />
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, z - 20]}>
           <planeGeometry args={[14, 140]} />
-          <meshStandardMaterial color="#3e6f96" metalness={0.3} roughness={0.25} />
+          <meshStandardMaterial color="#3e6f96" metalness={0.05} roughness={0.85} />
         </mesh>
         {[-1, 1].map((l) => (
           <group key={l}>
@@ -349,27 +350,40 @@ export const Turbina3D: React.FC<Props> = ({fase, dur, eventos}) => {
           </group>
         ))}
         <group position={plano} rotation={[pitch, 0, 0]}>
-          <Aviao rot={rot} dano={dano} />
+          {/* o modelo foi feito com o nariz para +z; o voo é para −z → gira 180° (antes ele voava de ré) */}
+          <group rotation={[0, Math.PI, 0]}>
+          <Aviao rot={rot} dano={dano * interpolate(f, [tPousa, tPousa + 30], [1, 0.35], cl)} />
           {f >= tVivos && [-2.2, -1.7, -1.2, 1.2, 1.7, 2.2].map((x, i) => (
             <mesh key={i} position={[x, 0.12, 0.2 + (i % 2) * 0.25]} scale={interpolate(f, [tVivos + i * 2, tVivos + i * 2 + 6], [0, 1], cl)}>
               <capsuleGeometry args={[0.06, 0.16, 4, 8]} />
               <meshStandardMaterial color="#ff8a1f" />
             </mesh>
           ))}
+          </group>
         </group>
-        {/* bando em V vindo de frente, na altura do avião */}
-        {f < tBate + 4 && Array.from({length: 13}, (_, i) => {
+        {/* bando em V vindo de frente; 2 gansos entram nas turbinas, o resto se espalha para cima e para os lados */}
+        {Array.from({length: 13}, (_, i) => {
           const fila = Math.ceil(i / 2);
           const lado = i === 0 ? 0 : (i % 2 ? -1 : 1);
           const prog = interpolate(f, [0, tBate], [0, 1], cl);
-          const gz = z - 2.2 + 0.75 - (1 - prog) * 14 + fila * 0.5;
-          const alvoX = i % 2 ? -1.25 : 1.25;
-          const gx = interpolate(prog, [0, 1], [lado * fila * 0.45, alvoX + lado * 0.08], cl);
-          const gy = alt - 0.42 + (1 - prog) * 0.6 + Math.sin(f * 0.3 + i) * 0.05;
+          const bate = i === 1 || i === 2;                       // os 2 da frente entram nas turbinas
+          const motorX = i === 1 ? -1.25 : 1.25;
+          if (bate && f >= tBate) return null;
+          let gx = lado * fila * 0.55;
+          let gz = z - 0.75 - (1 - prog) * 14 - fila * 0.45;
+          let gy = alt - 0.42 + (1 - prog) * 0.6 + Math.sin(f * 0.3 + i) * 0.05;
+          if (bate) { gx = interpolate(prog, [0, 1], [lado * 0.55, motorX], cl); gz = z - 0.75 - (1 - prog) * 14; }
+          if (!bate && f >= tBate) {                           // espalham: sobem e abrem para os lados, ficando para trás
+            const t = f - tBate;
+            gx += lado * t * 0.05 + (lado === 0 ? 0.04 * t : 0);
+            gy += t * 0.035;
+            gz = z - 0.75 - fila * 0.45 + t * 0.02;
+            if (t > 45) return null;
+          }
           return <Passaro key={i} pos={[gx, gy, gz]} f={f + i * 3} escala={0.45} cor="#3b3229" />;
         })}
-        <Particulas centro={[-1.25, alt - 0.42, z + 0.75]} t={(f - tBate) / 20} n={14} cor="#ffb347" tam={0.08} espalha={1.4} semente="b1" />
-        <Particulas centro={[1.25, alt - 0.42, z + 0.75]} t={(f - tBate) / 20} n={14} cor="#ffb347" tam={0.08} espalha={1.4} semente="b2" />
+        <Particulas centro={[-1.25, alt - 0.42, z - 0.75]} t={(f - tBate) / 20} n={14} cor="#ffb347" tam={0.08} espalha={1.4} semente="b1" />
+        <Particulas centro={[1.25, alt - 0.42, z - 0.75]} t={(f - tBate) / 20} n={14} cor="#ffb347" tam={0.08} espalha={1.4} semente="b2" />
         <Particulas centro={[0, 0.1, z]} t={splash} n={40} cor="#e8f4ff" tam={0.12} espalha={5} semente="sp" sobe={1.4} />
         {velZ < 0 && null}
       </>
@@ -383,7 +397,7 @@ export const Turbina3D: React.FC<Props> = ({fase, dur, eventos}) => {
     if (fase === 'ar') { cam = [2.6, 0.9, 4.2]; alvo = [0, 0, 1.0]; }
     else if (fase === 'quebra') { cam = [0.25, 0.15, 2.3 + Math.sin(f * 2.3) * 0.02]; alvo = [0, 0, 0.3]; }
     else if (fase === 'teste') { cam = [0.9, 0.3, 2.6]; alvo = [0, 0, 0.6]; }
-    else { cam = [alvo[0] - 6.5, alvo[1] + 1.6, alvo[2] + 5]; }
+    else { const c = [alvo[0] + 0.4, alvo[1] + 0.2, alvo[2] + 1.0]; cam = [c[0] - 5.0, c[1] + 3.2, c[2] - 7.5]; alvo = [c[0], c[1] - 0.1, c[2] + 0.3]; }
   }
   return (
     <ThreeCanvas width={width} height={height} style={{backgroundColor: fundo}} camera={{fov: 50, position: cam, near: 0.1, far: 200}}>
