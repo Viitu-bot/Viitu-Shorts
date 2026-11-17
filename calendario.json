@@ -3,36 +3,85 @@
   "segunda": {
     "familia": "Como é feito",
     "descricao": "Fábricas e linhas de produção de coisas do dia a dia",
-    "buscas": ["how it's made factory", "how is it made process", "factory production line satisfying", "cómo se fabrica"]
+    "buscas": [
+      "how it's made factory",
+      "how is it made process",
+      "factory production line satisfying",
+      "cómo se fabrica"
+    ]
   },
   "terca": {
     "familia": "Por que é assim?",
     "descricao": "O motivo oculto do design de objetos do dia a dia",
-    "buscas": ["why is it designed this way", "why does this have a hole", "hidden feature everyday object", "por qué tiene"]
+    "buscas": [
+      "why is it designed this way",
+      "why does this have a hole",
+      "hidden feature everyday object",
+      "por qué tiene"
+    ]
   },
   "quarta": {
     "familia": "Japão e China engenharia",
     "descricao": "Soluções urbanas, infraestrutura e tecnologia do Japão e da China",
-    "buscas": ["japan engineering genius", "why japan does this", "china infrastructure engineering", "japan clever invention"]
+    "buscas": [
+      "japan engineering genius",
+      "why japan does this",
+      "china infrastructure engineering",
+      "japan clever invention"
+    ]
   },
   "quinta": {
     "familia": "Máquinas e obras gigantes",
     "descricao": "Escala absurda: máquinas pesadas, pontes, barragens, navios",
-    "buscas": ["biggest machine in the world", "heavy machinery engineering", "mega construction engineering", "how they build bridge"]
+    "buscas": [
+      "biggest machine in the world",
+      "heavy machinery engineering",
+      "mega construction engineering",
+      "how they build bridge"
+    ]
   },
   "sexta": {
     "familia": "Ofícios extremos",
     "descricao": "Profissões perigosas ou artesanais impressionantes",
-    "buscas": ["most dangerous job", "satisfying craftsman skill", "extreme job height", "oficio artesano increible"]
+    "buscas": [
+      "most dangerous job",
+      "satisfying craftsman skill",
+      "extreme job height",
+      "oficio artesano increible"
+    ]
   },
   "sabado": {
     "familia": "Física do cotidiano",
     "descricao": "Experimentos visuais com explicação científica",
-    "buscas": ["physics explained experiment", "what happens if science", "science experiment explained", "why does this happen physics"]
+    "buscas": [
+      "physics explained experiment",
+      "what happens if science",
+      "science experiment explained",
+      "why does this happen physics"
+    ]
   },
   "domingo": {
     "familia": "Natureza com mecanismo oculto",
     "descricao": "Animais e plantas com comportamento ou estrutura curiosa e explicável",
-    "buscas": ["why do animals do this", "animal fact explained", "nature engineering animal", "plant that can"]
+    "buscas": [
+      "why do animals do this",
+      "animal fact explained",
+      "nature engineering animal",
+      "plant that can"
+    ]
+  },
+  "geral": {
+    "familia": "Geral (categorias que mais rendem)",
+    "descricao": "Motivo oculto, recorde/mais caro, perigo/erro, processo revelado — virais recentes de fora",
+    "buscas": [
+      "why is it designed this way",
+      "the real reason why",
+      "most expensive in the world",
+      "you've been doing it wrong",
+      "how does it work inside",
+      "this is why",
+      "por qué está hecho así",
+      "la verdadera razón"
+    ]
   }
 }
