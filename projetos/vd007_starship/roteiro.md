@@ -11,9 +11,8 @@ Perna de pouso é peso morto: cada quilo a menos é carga a mais.
 Por isso o pouso fica no chão: os braços seguram, e ele já volta pra rampa.
 Engenharia genial, igual você, inscrito do canal. Se não é, já se inscreve pra ver por que
 
-(64 palavras ≈ 24 s · loop: "...pra ver por que | esse foguete voltou do espaço...")
-
 ## Marcações de edição
+- 64 palavras ≈ 24 s · loop: "...pra ver por que" → "Esse foguete voltou do espaço..."
 - impacto_em: "torre" (No sábado, a torre pegou ele no ar)
 - destaques: foguete, perna, torre, ar, peso, carga, braços, rampa
 - 3D (/animacao), Starship3D:

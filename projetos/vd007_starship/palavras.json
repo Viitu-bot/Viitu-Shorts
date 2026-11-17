@@ -1,0 +1,332 @@
+[
+ {
+  "palavra": "Esse",
+  "inicio": 0.0,
+  "fim": 0.24
+ },
+ {
+  "palavra": "foguete",
+  "inicio": 0.28,
+  "fim": 0.72
+ },
+ {
+  "palavra": "voltou",
+  "inicio": 0.8,
+  "fim": 1.2
+ },
+ {
+  "palavra": "do",
+  "inicio": 1.24,
+  "fim": 1.28
+ },
+ {
+  "palavra": "espaço",
+  "inicio": 1.36,
+  "fim": 1.84
+ },
+ {
+  "palavra": "e",
+  "inicio": 1.93,
+  "fim": 2.01
+ },
+ {
+  "palavra": "não",
+  "inicio": 2.1,
+  "fim": 2.26
+ },
+ {
+  "palavra": "tem",
+  "inicio": 2.34,
+  "fim": 2.58
+ },
+ {
+  "palavra": "perna",
+  "inicio": 2.66,
+  "fim": 2.9
+ },
+ {
+  "palavra": "pra",
+  "inicio": 2.98,
+  "fim": 3.06
+ },
+ {
+  "palavra": "pousar.",
+  "inicio": 3.1,
+  "fim": 3.66
+ },
+ {
+  "palavra": "No",
+  "inicio": 3.75,
+  "fim": 3.91
+ },
+ {
+  "palavra": "sábado,",
+  "inicio": 3.95,
+  "fim": 4.47
+ },
+ {
+  "palavra": "a",
+  "inicio": 4.51,
+  "fim": 4.55
+ },
+ {
+  "palavra": "torre",
+  "inicio": 4.64,
+  "fim": 4.96
+ },
+ {
+  "palavra": "pegou",
+  "inicio": 5.05,
+  "fim": 5.25
+ },
+ {
+  "palavra": "ele",
+  "inicio": 5.33,
+  "fim": 5.49
+ },
+ {
+  "palavra": "no",
+  "inicio": 5.57,
+  "fim": 5.65
+ },
+ {
+  "palavra": "ar.",
+  "inicio": 5.73,
+  "fim": 5.89
+ },
+ {
+  "palavra": "Perna",
+  "inicio": 5.98,
+  "fim": 6.22
+ },
+ {
+  "palavra": "de",
+  "inicio": 6.3,
+  "fim": 6.38
+ },
+ {
+  "palavra": "pouso",
+  "inicio": 6.46,
+  "fim": 6.78
+ },
+ {
+  "palavra": "é",
+  "inicio": 6.86,
+  "fim": 6.94
+ },
+ {
+  "palavra": "peso",
+  "inicio": 7.03,
+  "fim": 7.23
+ },
+ {
+  "palavra": "morto:",
+  "inicio": 7.31,
+  "fim": 7.87
+ },
+ {
+  "palavra": "cada",
+  "inicio": 7.95,
+  "fim": 8.11
+ },
+ {
+  "palavra": "quilo",
+  "inicio": 8.19,
+  "fim": 8.35
+ },
+ {
+  "palavra": "a",
+  "inicio": 8.39,
+  "fim": 8.43
+ },
+ {
+  "palavra": "menos",
+  "inicio": 8.51,
+  "fim": 8.91
+ },
+ {
+  "palavra": "é",
+  "inicio": 8.99,
+  "fim": 9.15
+ },
+ {
+  "palavra": "carga",
+  "inicio": 9.19,
+  "fim": 9.47
+ },
+ {
+  "palavra": "a",
+  "inicio": 9.497,
+  "fim": 9.523
+ },
+ {
+  "palavra": "mais.",
+  "inicio": 9.55,
+  "fim": 10.11
+ },
+ {
+  "palavra": "Por",
+  "inicio": 10.15,
+  "fim": 10.19
+ },
+ {
+  "palavra": "isso",
+  "inicio": 10.27,
+  "fim": 10.51
+ },
+ {
+  "palavra": "o",
+  "inicio": 10.6,
+  "fim": 10.68
+ },
+ {
+  "palavra": "pouso",
+  "inicio": 10.76,
+  "fim": 11.08
+ },
+ {
+  "palavra": "fica",
+  "inicio": 11.12,
+  "fim": 11.32
+ },
+ {
+  "palavra": "no",
+  "inicio": 11.36,
+  "fim": 11.4
+ },
+ {
+  "palavra": "chão:",
+  "inicio": 11.48,
+  "fim": 11.88
+ },
+ {
+  "palavra": "os",
+  "inicio": 11.96,
+  "fim": 12.04
+ },
+ {
+  "palavra": "braços",
+  "inicio": 12.12,
+  "fim": 12.44
+ },
+ {
+  "palavra": "seguram,",
+  "inicio": 12.52,
+  "fim": 13.0
+ },
+ {
+  "palavra": "e",
+  "inicio": 13.04,
+  "fim": 13.08
+ },
+ {
+  "palavra": "ele",
+  "inicio": 13.16,
+  "fim": 13.24
+ },
+ {
+  "palavra": "já",
+  "inicio": 13.32,
+  "fim": 13.48
+ },
+ {
+  "palavra": "volta",
+  "inicio": 13.56,
+  "fim": 13.72
+ },
+ {
+  "palavra": "pra",
+  "inicio": 13.8,
+  "fim": 13.88
+ },
+ {
+  "palavra": "rampa.",
+  "inicio": 13.96,
+  "fim": 14.44
+ },
+ {
+  "palavra": "Engenharia",
+  "inicio": 14.56,
+  "fim": 15.16
+ },
+ {
+  "palavra": "genial,",
+  "inicio": 15.25,
+  "fim": 15.97
+ },
+ {
+  "palavra": "igual",
+  "inicio": 16.05,
+  "fim": 16.21
+ },
+ {
+  "palavra": "você,",
+  "inicio": 16.29,
+  "fim": 16.77
+ },
+ {
+  "palavra": "inscrito",
+  "inicio": 16.85,
+  "fim": 17.41
+ },
+ {
+  "palavra": "do",
+  "inicio": 17.45,
+  "fim": 17.49
+ },
+ {
+  "palavra": "canal.",
+  "inicio": 17.57,
+  "fim": 18.05
+ },
+ {
+  "palavra": "Se",
+  "inicio": 18.13,
+  "fim": 18.21
+ },
+ {
+  "palavra": "não",
+  "inicio": 18.25,
+  "fim": 18.37
+ },
+ {
+  "palavra": "é,",
+  "inicio": 18.45,
+  "fim": 18.77
+ },
+ {
+  "palavra": "já",
+  "inicio": 18.81,
+  "fim": 18.93
+ },
+ {
+  "palavra": "se",
+  "inicio": 19.01,
+  "fim": 19.09
+ },
+ {
+  "palavra": "inscreve",
+  "inicio": 19.18,
+  "fim": 19.54
+ },
+ {
+  "palavra": "pra",
+  "inicio": 19.62,
+  "fim": 19.78
+ },
+ {
+  "palavra": "ver",
+  "inicio": 19.86,
+  "fim": 19.94
+ },
+ {
+  "palavra": "por",
+  "inicio": 20.02,
+  "fim": 20.18
+ },
+ {
+  "palavra": "que",
+  "inicio": 20.26,
+  "fim": 20.58
+ }
+]

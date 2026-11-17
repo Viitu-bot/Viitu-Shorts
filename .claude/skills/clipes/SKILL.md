@@ -118,6 +118,9 @@ Montagem, verificações e prancha: `/editar`.
 
 ## Fontes
 - Pixabay (principal, livre), Wikimedia Commons (reserva, instável na nuvem).
+- **Tema quente / notícia:** o Commons costuma ter foto do evento com licença livre poucos dias depois (vd007: captura
+  da Ship 42, CC BY 4.0, 2 dias após). Busca: API `generator=search` + `iiextmetadatafilter=LicenseShortName|Artist`.
+  Confira se é FOTO REAL (um "Super Heavy catching" era animação). O resto vira 3D.
 - Clipes do usuário: TikTok por link direto (tentar baixar), Reddit/YouTube via link do Drive.
 - Nunca remover marca d'água de vídeo de terceiros; dar crédito na descrição.
 

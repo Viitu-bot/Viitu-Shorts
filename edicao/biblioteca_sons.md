@@ -47,3 +47,6 @@ No editor é automático: cada cena recebe **2 camadas** (tabela `CAMADAS` em `v
 | natureza_calma | orgânico | animais, natureza |
 | curioso_documentario | neutro | geral |
 Próximo: gerar mais trilhas (2 por clima) para não repetir a mesma em vídeos seguidos.
+
+- vd007: a Sonniss não tem foguete. Gerados no ElevenLabs (`assets/sfx/`): foguete_motor, reentrada_plasma, braco_metal,
+  motor_corte, hidraulico_grande, peca_solta. Endpoint `sound-generation`, header `xi-api-key: proxy-injected`.

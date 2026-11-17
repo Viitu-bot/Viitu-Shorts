@@ -28,6 +28,10 @@ Base: 40–53% dos vídeos dos canais do nicho têm animação; inserções de 1
   para `public/tex`). Modelo: `remotion/src/animacoes/Lama3D.tsx`.
 - Carregar texturas com o padrão do Lama3D (`useTexturas` + `<Liberar>`: o quadro só sai depois de um redesenho
   com a textura). Sem isso o chão sai PRETO em quadros aleatórios.
+- `useTexturas` no topo do componente = TODO `ThreeCanvas` de TODAS as fases precisa do `<Liberar>` (fase sem ele
+  trava o render por timeout — vd007).
+- Componente com várias fases (modelo `remotion/src/animacoes/Starship3D.tsx`): 1 arquivo, câmera e cenário por fase,
+  objetos reaproveitados (nave, torre). Confira se o lado certo do objeto encara a câmera (escudo preto ≠ aço).
 - NÃO usar normal map nem sombras (`shadows`) — no render sem GPU escurecem/pretejam o chão.
 - Efeitos com física: pedaços com gravidade e respingos esticados na direção do voo (lama, água, faísca),
   tremor/afundar do objeto, fumaça. Nada de "bolinhas" paradas.

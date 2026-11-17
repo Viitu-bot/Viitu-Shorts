@@ -1,0 +1,205 @@
+{
+ "_versao": "v1: 3D próprio (Starship3D: reentrada, captura, pernas, rampa, genial) + foto real da captura da Ship 42 (SpaceX, CC BY 4.0, Commons)",
+ "impacto_em": [
+  "pegou ele"
+ ],
+ "destaques": [
+  "foguete",
+  "perna",
+  "torre",
+  "ar",
+  "peso",
+  "carga",
+  "braços",
+  "rampa"
+ ],
+ "musica": "epico_engenharia.mp3",
+ "cta": {
+  "em": "inscrito",
+  "texto": "SE INSCREVE"
+ },
+ "creditos_descricao": "Foto da captura da Ship 42 (Flight 15): SpaceX, CC BY 4.0, via Wikimedia Commons. Animações 3D: Viitu Shorts. Fontes: Space.com, Universe Today.",
+ "cenas": [
+  {
+   "em": "Esse foguete voltou",
+   "clipe": "pixabay_119193.mp4",
+   "inicio": 0.0,
+   "manter": true,
+   "revisao": "manual",
+   "_funcao": "gancho: a nave voltando do espaço em brasa (um sujeito só)",
+   "foley": "vento",
+   "animacao": {
+    "nome": "starship3d",
+    "fase": "reentrada",
+    "eventos": {},
+    "sfx": [
+     {
+      "arquivo": "assets/sfx/reentrada_plasma.mp3",
+      "db": -9,
+      "dur": 2.0
+     }
+    ]
+   }
+  },
+  {
+   "em": "e não tem perna",
+   "clipe": "commons_ship42_catch.jpg",
+   "zoom": [
+    1.35,
+    1.6
+   ],
+   "foco": [
+    0.12,
+    0.5
+   ],
+   "alvo": [
+    0.45,
+    0.42
+   ],
+   "manter": true,
+   "revisao": "manual",
+   "_funcao": "prova: a base da nave, sem perna (mesmo sujeito)",
+   "foley": "vento",
+   "seta": [
+    562,
+    940,
+    150
+   ]
+  },
+  {
+   "em": "No sábado, a torre",
+   "clipe": "pixabay_119193.mp4",
+   "inicio": 0.0,
+   "manter": true,
+   "revisao": "manual",
+   "_funcao": "payoff: os braços fecham na nave",
+   "foley": "vento",
+   "animacao": {
+    "nome": "starship3d",
+    "fase": "captura",
+    "eventos": {
+     "pegou": "pegou ele"
+    },
+    "sfx": [
+     {
+      "arquivo": "assets/sfx/foguete_motor.mp3",
+      "db": -9,
+      "dur": 1.6
+     },
+     {
+      "evento": "pegou",
+      "arquivo": "assets/sfx/braco_metal.mp3",
+      "db": -4,
+      "dur": 2.0
+     },
+     {
+      "evento": "pegou",
+      "arquivo": "assets/sfx/motor_corte.mp3",
+      "db": -11,
+      "dur": 2.0,
+      "desloc": 0.1
+     }
+    ]
+   }
+  },
+  {
+   "em": "Perna de pouso",
+   "clipe": "pixabay_119193.mp4",
+   "inicio": 0.0,
+   "manter": true,
+   "revisao": "manual",
+   "_funcao": "mecanismo: perna = peso morto; solta e a carga entra",
+   "foley": "vento",
+   "animacao": {
+    "nome": "starship3d",
+    "fase": "pernas",
+    "eventos": {
+     "menos": "menos",
+     "carga": "carga"
+    },
+    "sfx": [
+     {
+      "evento": "menos",
+      "arquivo": "assets/sfx/peca_solta.mp3",
+      "db": -6,
+      "dur": 1.8
+     }
+    ]
+   }
+  },
+  {
+   "em": "Por isso o pouso",
+   "clipe": "pixabay_119193.mp4",
+   "inicio": 0.0,
+   "manter": true,
+   "revisao": "manual",
+   "_funcao": "eureka: pouso fica no chão; a torre devolve a nave à rampa",
+   "foley": "vento",
+   "animacao": {
+    "nome": "starship3d",
+    "fase": "rampa",
+    "eventos": {
+     "chao": "chão",
+     "volta": "volta"
+    },
+    "sfx": [
+     {
+      "evento": "volta",
+      "arquivo": "assets/sfx/hidraulico_grande.mp3",
+      "db": -10,
+      "dur": 2.5,
+      "desloc": -0.2
+     }
+    ]
+   }
+  },
+  {
+   "em": "Engenharia genial",
+   "clipe": "pixabay_119193.mp4",
+   "inicio": 0.0,
+   "manter": true,
+   "revisao": "manual",
+   "_funcao": "elogio: plano bonito de fim de tarde",
+   "foley": "vento",
+   "animacao": {
+    "nome": "starship3d",
+    "fase": "genial",
+    "eventos": {}
+   }
+  },
+  {
+   "em": "inscrito do canal",
+   "clipe": "commons_ship42_catch.jpg",
+   "zoom": [
+    1.12,
+    1.0
+   ],
+   "foco": [
+    0.3,
+    0.5
+   ],
+   "manter": true,
+   "revisao": "manual",
+   "_funcao": "prova real + CTA",
+   "foley": "vento"
+  },
+  {
+   "em": "por que",
+   "clipe": "pixabay_119193.mp4",
+   "inicio": 0.0,
+   "manter": true,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.0
+   ],
+   "_funcao": "loop: último quadro = primeiro",
+   "foley": "vento",
+   "animacao": {
+    "nome": "starship3d",
+    "fase": "reentrada",
+    "eventos": {}
+   }
+  }
+ ]
+}

@@ -21,3 +21,7 @@ projetos/**/saida/legenda.*
 projetos/**/voz_v*.mp3
 remotion/out/
 remotion/public/
+projetos/*/saida/revisao.*
+projetos/*/saida/*.wav
+projetos/*/saida/*.mp3
+projetos/*/saida/video_mudo.mp4
