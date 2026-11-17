@@ -39,6 +39,8 @@ Quando usar cada efeito: `edicao/logica_editor.md`. Técnicas: `edicao/manual_ed
 - **Clipe reaproveitado** (mesmo clipe em 2 cenas): na 2ª vez `"reverso": true` (toca ao contrário = continuação).
 - **Cena longa que o editor divide** (> 2 s) com movimento cíclico (hélice, roda, água): `"bumerangue": true` — a 2ª
   parte começa no último quadro da 1ª e toca ao contrário (sem o pulo de "copiar e colar"). Não usar com gente andando.
+- **Seta do gancho:** conferir no quadro 10 se ela aponta para o sujeito. Se o detector errar (pegou outro objeto,
+  fora do quadro), use posição fixa `"seta": [x, y, r]` (pixels da tela 1080x1920).
 - **Palavra de ação = ação acontecendo nela:** "decolagem" → rodas saindo do chão NESSE instante; "pouso" → avião
   tocando a pista. Calcule o `inicio` para o momento da ação cair na palavra.
 - Cena que não existe em vídeo mas tem cenário real (ex.: pássaros vistos da janela): clipe real + 3D sobreposto

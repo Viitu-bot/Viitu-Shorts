@@ -473,7 +473,11 @@ def renderizar_cena(s: dict, pasta: Path, idx: int) -> Path:
            "-frames:v", str(n), "-r", str(FPS), "-an", "-c:v", "libx264", "-preset", "veryfast",
            "-crf", "18", str(saida)]
     subprocess.run(cmd, check=True)
-    if s.get("seta_auto") and not s.get("dividida"):
+    if s.get("seta") and not s.get("dividida"):
+        # seta FIXA (x, y, r em pixels da tela 1080x1920) — quando o detector acha o objeto errado
+        x, y, r = s["seta"]
+        s["_seta_pos"] = [[x, y, r]] * n
+    elif s.get("seta_auto") and not s.get("dividida"):
         s2 = dict(s, marca_auto=s["seta_auto"])
         global MODO_REMOTION
         _m = MODO_REMOTION
@@ -677,7 +681,7 @@ def _sons_da_animacao(segs: list[dict], animacoes: list[dict], pub: Path) -> lis
     out, n = [], 0
     for s, a in zip([g for g in segs if g.get("animacao")], animacoes):
         for e in s["animacao"].get("sfx", []):
-            arq = _som_sonniss(e["busca"], e.get("min", 0.5), e.get("exigir"))
+            arq = str(RAIZ / e["arquivo"]) if e.get("arquivo") else _som_sonniss(e["busca"], e.get("min", 0.5), e.get("exigir"))
             if not arq:
                 continue
             ev = e.get("evento")
@@ -756,7 +760,7 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
                      for i, p in enumerate(palavras)],
         "marcas": [{"f0": s["f0"] + int(s["marca_auto"].get("atraso", 0.15) * FPS), "cena_f0": s["f0"], "f1": s["f1"],
                     "pos": s["_marca_pos"], "tipo": "circulo"} for s in segs if s.get("_marca_pos")]
-                  + [{"f0": s["f0"] + int(s["seta_auto"].get("atraso", 0.0) * FPS), "cena_f0": s["f0"], "f1": s["f1"],
+                  + [{"f0": s["f0"] + int(s.get("seta_auto", {}).get("atraso", 0.0) * FPS), "cena_f0": s["f0"], "f1": s["f1"],
                       "pos": s["_seta_pos"], "tipo": "seta"} for s in segs if s.get("_seta_pos")],
         "cortes": [s["f0"] for s in segs[1:]],
         "impactos": [round(palavras[achar_palavra(palavras, t, 0)]["inicio"] * FPS)

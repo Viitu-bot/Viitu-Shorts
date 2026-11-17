@@ -137,6 +137,9 @@ CAMADAS = {
     "hangar": ("large industrial hangar room tone", "industrial machine hum"),
     "voo": ("airliner flying overhead", "wind at high altitude"),
     "cabine": ("airplane cabin interior ambience during flight", "airplane cabin hum"),
+    "oficina": ("industrial machine hum", "mechanical gears whirring"),
+    "carro": ("car driving by on asphalt", "car tires rolling on asphalt"),
+    "lama": ("car wheel spinning in mud", "mud splash squelch"),
     "passaros": ("flock of seagulls flying overhead", "flock of seagulls flying overhead"),
 }
 FOGO = r"fire|flame|burn|campfire|ember|blaze|bonfire|fireplace|wood ?stove"
@@ -147,6 +150,8 @@ EXIGIR = {"fogo_rugido": FOGO, "fogo_crepitando": FOGO, "fumaca_brasa": r"ember|
           "galinhas": r"chicken|hen|rooster", "ovo_quebrando": r"sizzl|fry|pan",
           "turbina": r"jet|airliner|aircraft|airport", "hangar": r"hangar|hall|warehouse|industrial|factory|machine",
           "voo": r"plane|aircraft|airliner|jet|wind", "cabine": r"cabin|interior|airplane|plane",
+          "oficina": r"workshop|garage|tool|gear|mechan|machine", "carro": r"car|tire|tyre|vehicle|drive",
+          "lama": r"mud|squelch|splash|wheel|tire|tyre",
           "passaros": r"flock|seagull|gull|starling|flap|flutter|wings"}
 ESCOLHAS = RAIZ / "assets" / "sonniss" / "escolhas.json"     # mesma descrição → mesmo som (rápido e consistente)
 

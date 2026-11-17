@@ -1,0 +1,247 @@
+{
+ "_versao": "v1: filme de 1937 (domínio público) + Pixabay real + 3D do diferencial",
+ "impacto_em": [
+  "Mas tem um porém"
+ ],
+ "destaques": [
+  "curva",
+  "fora",
+  "motos",
+  "presas",
+  "arrastar",
+  "diferencial",
+  "engrenagens",
+  "lama",
+  "bloqueio"
+ ],
+ "musica": "curioso_documentario.mp3",
+ "cta": false,
+ "creditos_descricao": "Imagens: Pixabay e o filme \"Around the Corner\" (1937, Chevrolet/Jam Handy, domínio público, Prelinger Archives). Animações 3D: Viitu Shorts.",
+ "cenas": [
+  {
+   "em": "Repara nas rodas desse carro",
+   "clipe": "pixabay_72541.mp4",
+   "inicio": 7.8,
+   "foco": [
+    0.62,
+    0.5
+   ],
+   "alvo": [
+    0.55,
+    0.62
+   ],
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "esperado": "car",
+   "_funcao": "gancho (sem pilar)",
+   "foley": "carro",
+   "seta": [
+    730,
+    1440,
+    190
+   ]
+  },
+  {
+   "em": "uma gira mais rápido",
+   "clipe": "pixabay_94110.mp4",
+   "inicio": 3.0,
+   "sujeito": "red car",
+   "zoom": [
+    1.2,
+    1.35
+   ],
+   "esperado": "car",
+   "foley": "carro"
+  },
+  {
+   "em": "e quase ninguém sabe",
+   "clipe": "bruto_aroundthecorner1937.mp4",
+   "inicio": 197.0,
+   "layout": "inteiro",
+   "revisao": "manual",
+   "som_original": false,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "_nota": "1937: o diferencial embaixo do carro",
+   "foley": "oficina"
+  },
+  {
+   "em": "Na curva, a roda de fora",
+   "clipe": "pixabay_94110.mp4",
+   "inicio": 13.0,
+   "revisao": "manual",
+   "_contraste": "vista de cima, marcas de pneu em círculo",
+   "foley": "carro",
+   "sujeito": "red car",
+   "zoom": [
+    1.0,
+    1.15
+   ]
+  },
+  {
+   "em": "Igual nessa fila de motos",
+   "clipe": "bruto_aroundthecorner1937.mp4",
+   "inicio": 125.0,
+   "layout": "inteiro",
+   "revisao": "manual",
+   "som_original": false,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "_nota": "1937: motos com arcos desenhados",
+   "foley": "carro"
+  },
+  {
+   "em": "A maioria acha",
+   "clipe": "bruto_aroundthecorner1937.mp4",
+   "inicio": 208.0,
+   "layout": "inteiro",
+   "revisao": "manual",
+   "som_original": false,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "_nota": "1937: duas rodas presas no mesmo eixo",
+   "foley": "oficina"
+  },
+  {
+   "em": "Se fosse assim",
+   "clipe": "pixabay_94110.mp4",
+   "inicio": 10.0,
+   "sujeito": "red car",
+   "zoom": [
+    1.3,
+    1.5
+   ],
+   "esperado": "car",
+   "_contraste": "perto, derrapando",
+   "foley": "carro"
+  },
+  {
+   "em": "Por isso existe o diferencial",
+   "clipe": "pixabay_94110.mp4",
+   "inicio": 12.0,
+   "manter": true,
+   "revisao": "manual",
+   "foley": "oficina",
+   "animacao": {
+    "nome": "diferencial3d",
+    "fase": "dentro",
+    "eventos": {
+     "curva": "deixam"
+    },
+    "sfx": [
+     {
+      "busca": "mechanical gears whirring",
+      "exigir": "gear|mechan|machine|whir",
+      "db": -10,
+      "dur": 3
+     },
+     {
+      "evento": "curva",
+      "busca": "metal gear clunk",
+      "exigir": "metal|gear|clunk|mechan",
+      "db": -8,
+      "dur": 1.5
+     }
+    ]
+   }
+  },
+  {
+   "em": "Mas tem um porém",
+   "clipe": "bruto_aroundthecorner1937.mp4",
+   "inicio": 416.0,
+   "layout": "inteiro",
+   "revisao": "manual",
+   "som_original": false,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "_nota": "1937: engrenagens reais giradas à mão",
+   "foley": "oficina"
+  },
+  {
+   "em": "Se uma cai na lama",
+   "clipe": "pixabay_2165.mp4",
+   "inicio": 5.0,
+   "manter": true,
+   "revisao": "manual",
+   "foley": "lama",
+   "animacao": {
+    "nome": "diferencial3d",
+    "fase": "lama",
+    "eventos": {
+     "bloqueio": "bloqueio"
+    },
+    "sfx": [
+     {
+      "busca": "car tyre screech skid",
+      "exigir": "(car|auto|vehicle|drift).*(skid|screech|spin|tire|tyre)|(tire|tyre).*(skid|screech|spin|squeal)",
+      "db": -8,
+      "dur": 4,
+      "arquivo": "assets/sfx/pneu_lama.mp3"
+     },
+     {
+      "evento": "bloqueio",
+      "busca": "heavy metal lock clunk",
+      "exigir": "metal|lock|clunk|latch",
+      "db": -5,
+      "desloc": -0.2,
+      "dur": 1.5
+     },
+     {
+      "evento": "bloqueio",
+      "busca": "car engine revving",
+      "exigir": "rev|engine",
+      "db": -9,
+      "desloc": 0.2,
+      "dur": 2.5
+     }
+    ]
+   }
+  },
+  {
+   "em": "Então, na próxima curva",
+   "clipe": "pixabay_72541.mp4",
+   "inicio": 1.0,
+   "esperado": "car",
+   "foley": "carro",
+   "foco": [
+    0.42,
+    0.5
+   ]
+  },
+  {
+   "em": "repara",
+   "clipe": "pixabay_72541.mp4",
+   "inicio": 7.8,
+   "foco": [
+    0.62,
+    0.5
+   ],
+   "alvo": [
+    0.55,
+    0.62
+   ],
+   "zoom": [
+    1.0,
+    1.0
+   ],
+   "esperado": "car",
+   "_funcao": "loop",
+   "foley": "carro",
+   "seta": [
+    730,
+    1440,
+    190
+   ]
+  }
+ ]
+}

@@ -7,6 +7,10 @@
 | **Próprios ElevenLabs** (`assets/sfx`, `assets/foley`, `assets/musica`) | identidade do canal (ding, pop, woosh, boom), foley de reserva, 5 trilhas | nossos (plano pago) |
 Nunca: sons de "sites sem direitos" aleatórios, áudio original de TikTok/Reels, sons meme (vine boom etc.).
 
+## Quando a Sonniss não tem o som
+Gere no ElevenLabs (sound-generation, "..., no music"), salve em `assets/sfx/<nome>.mp3` e use no sfx do 3D com
+`"arquivo": "assets/sfx/<nome>.mp3"` (ex.: `pneu_lama.mp3`, criado para o vd006).
+
 ## Como buscar
 `python3 -m viitu.sons buscar "close up campfire crackling" --exigir "fire|campfire" --min 4`
 Descrição em inglês e concreta (o que, onde, distância). O sistema acha 12 candidatos pelo nome e o modelo

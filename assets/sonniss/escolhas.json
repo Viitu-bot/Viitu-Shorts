@@ -198,5 +198,70 @@
   "id": 903,
   "nome": "Hzandbits - Urban Winds/Wind,Ext,Urban,Plastic,Thin,Flutter,Violent.Mono.mp3",
   "nota": 0.821
+ },
+ "car driving by on asphalt": {
+  "id": 5142,
+  "nome": "Sound Sower - Vehicles Pass-by/22 MKH8040 Cars, Vehicles, traffic, road, rural, wave, moderate speed.mp3",
+  "nota": 0.257
+ },
+ "car tires rolling on asphalt": {
+  "id": 5142,
+  "nome": "Sound Sower - Vehicles Pass-by/22 MKH8040 Cars, Vehicles, traffic, road, rural, wave, moderate speed.mp3",
+  "nota": 0.234
+ },
+ "car engine idling in a garage": {
+  "id": 4773,
+  "nome": "Pole Position - Car Destruction/Car_Destruction_Damaged_Engine_t22_Ext_Heavy_Damage_No_Oil_Water_Hiss_XY_RSM191.mp3",
+  "nota": 0.388
+ },
+ "mechanical gears whirring": {
+  "id": 3150,
+  "nome": "3maze - Electric Motors/motor_long_006.mp3",
+  "nota": 0.476
+ },
+ "car wheel spinning in mud": {
+  "id": 3897,
+  "nome": "Rzpost - Ride on Bike/Bicycle,Wheel,Perspective,Gravel,Uphill,Slow,Speed,Skid_V2.mp3",
+  "nota": 0.814
+ },
+ "mud splash squelch": {
+  "id": 5481,
+  "nome": "Wav Junction Sound Effects - Footsteps/0014_Footsteps_water_puddle_single_splashes.mp3",
+  "nota": 0.73
+ },
+ "metal gear clunk": {
+  "id": 3156,
+  "nome": "3maze - FINAL IMPACT/metal_hit_004.mp3",
+  "nota": 0.391
+ },
+ "heavy metal lock clunk": {
+  "id": 705,
+  "nome": "3maze - High Impact/long_metal_005.mp3",
+  "nota": 0.385
+ },
+ "engine revving off road truck": {
+  "id": 3449,
+  "nome": "Fox Audio Post-Production - Old Cars – Short Passby/Old_Car_Short_Passby_04.mp3",
+  "nota": 0.267
+ },
+ "car tire wheelspin burnout": {
+  "id": 3894,
+  "nome": "Rzpost - Ride on Bike/Bicycle,Approach,Gravel,Fast,Speed,Super,Skid_V4.mp3",
+  "nota": 0.512
+ },
+ "car engine revving": {
+  "id": 6772,
+  "nome": "Pole Position - Pvpjbv 2062 1982/Pvpjbv 2062 - t9 - ONBRD - FAST - Drive Various - ENGINE - VP88.mp3",
+  "nota": 0.289
+ },
+ "workshop room tone with distant tools": {
+  "id": 5479,
+  "nome": "Wav Junction Sound Effects - Doors/0016_Garage_Door_Following_Door_Interior.mp3",
+  "nota": 0.812
+ },
+ "car tyre screech skid": {
+  "id": 5366,
+  "nome": "Submerged Tapes - Polystyrene Destruction/PD29,Polystyrene,Designed,Slow,Pitch,Up,Rubbery,Squealing,Squeak,Snap,At,End.mp3",
+  "nota": 0.623
  }
 }
