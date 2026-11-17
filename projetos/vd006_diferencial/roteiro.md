@@ -8,9 +8,9 @@ Imagem histórica: "Around the Corner" (1937, Chevrolet/Jam Handy) — Prelinger
 
 ## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs)
 Repara nas rodas desse carro na curva: uma gira mais rápido que a outra... e quase ninguém sabe por quê.
-Na curva, a roda de fora percorre um caminho maior. Igual nessa fila de motos: quem está por fora tem que correr mais pra não sair da linha.
-A maioria acha que as duas rodas giram presas no mesmo eixo. Se fosse assim, uma delas ia arrastar no asfalto, gastando pneu e travando a curva.
-Por isso existe o diferencial: engrenagens escondidas no meio do eixo que deixam cada roda girar no seu ritmo, sem cortar a força do motor.
+Na curva, a roda de fora percorre um caminho maior. Igual nessa fila de motos: quem está por fora corre mais pra não sair da linha.
+A maioria acha que as duas rodas giram presas no mesmo eixo. Se fosse assim, uma delas ia arrastar no asfalto e travar a curva.
+Por isso existe o diferencial: engrenagens escondidas no meio do eixo que deixam cada roda girar no seu ritmo, sem perder a força do motor.
 Mas tem um porém: ele manda a força pra roda mais fácil de girar. Se uma cai na lama, ela gira à toa... e o carro não sai do lugar. Por isso as caminhonetes têm o bloqueio do diferencial.
 Então, na próxima curva... repara...
 
