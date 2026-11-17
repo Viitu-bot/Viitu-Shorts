@@ -22,6 +22,15 @@ O usuário escolhe um e seguimos para `/clipes` e `/roteiro`.
    ```
    Se quiser, acrescente buscas com `--extra "termo"` (em inglês/espanhol) para variar.
 
+3a. **vidIQ (preferência do dono, sempre):**
+   - **Base = gringo validado sem versão no Brasil:** `vidiq_outliers` com `contentType: short`,
+     `language: en` (e às vezes `es`), keyword da família do dia, `minViews: 1000000`. Breakout ≥ 3x = prova forte.
+   - **Tema quente (hype):** `vidiq_trending_videos` e `vidiq_keyword_research` `mode: rising` `period: week`
+     (niche "curiosidades"/"engineering"). Se um assunto do momento encaixar no canal (tem "porquê" para
+     explicar), ele entra como uma das 3 opções, marcado 🔥, mesmo sem a validação de 2 anos — hype não espera.
+   - Cada chamada gasta 5 créditos (150/dia grátis). Views do vidIQ são pista; o número mostrado ao dono
+     sai do `viitu.provar`.
+
 3b. **Pesos de categoria/gatilho já estão na pontuação** (ver "Lógica de escolha" abaixo).
    Priorize: motivo oculto de objeto, recorde/"mais caro", perigo/erro, mito desmentido.
    Evite como tema principal: animal estranho sem "porquê", comida, corpo/saúde, truque, "olha isso".
