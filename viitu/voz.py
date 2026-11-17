@@ -63,6 +63,40 @@ def caracteres_para_palavras(al: dict) -> list[dict]:
     return palavras
 
 
+def auto_cut(arq: Path, palavras: list[dict], max_pausa: float = 0.12) -> list[dict]:
+    """AUTO-CUT (formato do dono): toda pausa entre palavras maior que `max_pausa` vira `max_pausa`.
+    Corta o áudio e reajusta os tempos das palavras (legenda continua sincronizada)."""
+    import subprocess
+    if not palavras:
+        return palavras
+    blocos, ini = [], 0.0
+    for a, b in zip(palavras, palavras[1:] + [None]):
+        fim = a["fim"]
+        if b is None or b["inicio"] - fim > max_pausa:
+            blocos.append((ini, fim + (0.06 if b else 0.15)))
+            ini = (b["inicio"] - 0.03) if b else 0
+    # novos tempos
+    novos, deslocado, bi = [], 0.0, 0
+    cortes = []
+    t_saida = 0.0
+    for (b0, b1) in blocos:
+        cortes.append((b0, b1, t_saida))
+        t_saida += b1 - b0
+    for w in palavras:
+        for (b0, b1, ts) in cortes:
+            if b0 - 1e-6 <= w["inicio"] <= b1 + 1e-6:
+                novos.append({**w, "inicio": round(ts + w["inicio"] - b0, 3), "fim": round(ts + min(w["fim"], b1) - b0, 3)})
+                break
+    filtros = "".join(f"[0:a]atrim={b0:.3f}:{b1:.3f},asetpts=PTS-STARTPTS[a{i}];" for i, (b0, b1) in enumerate(blocos))
+    filtros += "".join(f"[a{i}]" for i in range(len(blocos))) + f"concat=n={len(blocos)}:v=0:a=1[s]"
+    tmp = arq.with_name("voz_autocut.mp3")
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(arq), "-filter_complex", filtros, "-map", "[s]", str(tmp)], check=True)
+    tmp.replace(arq)
+    antes = palavras[-1]["fim"]
+    print(f"Auto-cut: {antes:.1f}s → {novos[-1]['fim']:.1f}s ({len(blocos)} blocos)")
+    return novos
+
+
 def gerar(projeto: str, voz: str, estabilidade: float, velocidade: float, modelo: str = MODELO) -> None:
     texto = texto_do_roteiro(projeto, com_tags=(modelo == "eleven_v3"))
     r = requests.post(
@@ -85,6 +119,7 @@ def gerar(projeto: str, voz: str, estabilidade: float, velocidade: float, modelo
     pasta = RAIZ / "projetos" / projeto
     (pasta / "voz.mp3").write_bytes(base64.b64decode(d["audio_base64"]))
     palavras = caracteres_para_palavras(d.get("normalized_alignment") or d["alignment"])
+    palavras = auto_cut(pasta / "voz.mp3", palavras)
     (pasta / "palavras.json").write_text(json.dumps(palavras, ensure_ascii=False, indent=1), encoding="utf-8")
     dur = palavras[-1]["fim"] if palavras else 0
     print(f"Voz gerada: {len(texto)} caracteres, {len(palavras)} palavras, {dur:.1f} s")

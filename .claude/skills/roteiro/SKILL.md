@@ -7,23 +7,23 @@ description: Escreve o roteiro do Viitu Shorts (protocolo HISA) a partir do tema
 
 Pré-requisito: tema validado por `/tema` (prova ≥ 1M, lacuna PT-BR, categoria/gatilho fortes).
 
-## 1. Formato (decida antes de escrever)
-- LONGO 45–60 s (110–150 palavras) é o padrão; CURTO 25–35 s (60–85) só com 1 clipe forte e 1 ideia.
-- Teste em curso (3 semanas): a cada 3 vídeos, 2 longos e 1 curto; depois comparar no Studio (visualizado vs.
-  deslizado, % assistido, views em 48 h, inscritos) e manter o vencedor. Nada entre 36 e 44 s.
-- Base: @avidamaravilha (300 Shorts): mediana 100k (21–30 s), 599k (31–45 s), 747k (46–60 s), 809k (61–90 s).
-- Voz: palavras ÷ 2,85 ≈ segundos (Otto, eleven_v4). 130 palavras ≈ 45 s.
-- **Corte o que não move a história.** Cada frase precisa abrir, responder ou virar algo. Se dá para tirar a
-  frase e o vídeo continua igual, tire (o dono sente "maçante" no meio quando há explicação dupla).
+## 1. Formato (HISA 2.0 do dono — escolha pelo bruto/tema)
+- **Tiro Curto 12–15 s = 30–38 palavras.** Curiosidade rápida, física bizarra, susto, gambiarra instantânea.
+  **Re-hook cravado aos ~6 s** (palavra ~15): uma nova pergunta rápida ou virada de expectativa.
+- **Bastidor 20–28 s = 50–65 palavras.** Engenharia, processo industrial, máquina pesada, trabalho manual:
+  risco/problema → macete técnico real → **momento eureka** no fim.
+- Voz: palavras ÷ 2,6 ≈ segundos (Otto, eleven_v4, com auto-cut). Contar antes de entregar.
+- Tom adulto (25+), sem linguagem infantil; duplo sentido só se a cena entregar a oportunidade.
 
 ## 2. Estrutura (HISA)
-1. **Gancho (0–3 s):** objeto nomeado em ≤ 8 palavras + lacuna. Voz em 0,0 s. Nunca entrega a resposta.
+1. **Gancho (≤ 3 s):** quebra de expectativa, objeto nomeado em ≤ 8 palavras + lacuna. Voz em 0,0 s. Nunca entrega a resposta.
+   **Ouro parcelado:** depois do gancho, a explicação vem em pedaços enquanto a ação acontece (nunca tudo de uma vez).
 2. **Desmistificação:** "A maioria acha X, mas…" → motivo real.
 3. **Mecanismo:** o "porquê" que vira ANIMAÇÃO 3D (`/animacao`) no meio do vídeo — escreva frases curtas e visuais
    (cada frase = um passo que dá para desenhar).
-4. **Virada:** "Mas tem um porém…" (segundo problema/bastidor) → `impacto_em`.
+4. **Virada:** "Mas tem um porém…" ou o re-hook → `impacto_em`.
 5. **Conexão/consequência** (Brasil, vida de quem assiste) — opcional, só se for forte.
-6. **CTA-elogio + loop (fórmula do próprio canal — ~200 inscritos em 10 mil views no vídeo do martim-pescador):**
+6. **CTA-elogio + loop (no Bastidor; no Tiro Curto só se couber) (fórmula do próprio canal — ~200 inscritos em 10 mil views no vídeo do martim-pescador):**
    "[sujeito] é [qualidade rara/admirável]… **igual você, inscrito do canal. Se não é, já se inscreve** pra [ver/saber]…"
    — o elogio liga o espectador ao tema e a frase suspensa emenda no gancho (loop). Ex.: "…uma engenharia genial,
    igual você, inscrito do canal. Se não é, já se inscreve pra ver se…". Na tela: "SE INSCREVE" + rosto/gesto positivo.

@@ -130,8 +130,8 @@ const PalavraNaTela: React.FC<{p: Palavra}> = ({p}) => {
     <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center', paddingTop: p.y - 80}}>
       <div style={{
         fontFamily, fontSize: p.destaque ? 138 : 124, letterSpacing: 2,
-        color: p.destaque ? AMARELO : '#FFFFFF',
-        WebkitTextStroke: '12px black', paintOrder: 'stroke fill',
+        color: '#FFD700',                       // formato do dono: toda palavra em amarelo ouro
+        WebkitTextStroke: '14px black', paintOrder: 'stroke fill',
         textShadow: '0 8px 18px rgba(0,0,0,0.55)',
         transform: `translateY(${subida}px) scale(${escala}) rotate(${p.destaque ? -2 : 0}deg)`,
       }}>{p.texto}</div>

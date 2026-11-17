@@ -750,7 +750,9 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
             alvo = seg.get("alvo", [0.5, 0.5])[1] * H
         # padrão dos virais do Hall: legenda no centro-inferior (logo acima da interface do YouTube);
         # só sobe para o terço de cima quando o sujeito está na parte de baixo da tela
-        return 1180 if alvo < 1000 else 420
+        # formato do dono: legenda no TERÇO SUPERIOR; só desce se o sujeito estiver em cima (não cobrir o sujeito)
+        v = espec()["visual"]
+        return v.get("legenda_y", 560) if alvo > 760 else v.get("legenda_y_alternativa", 1250)
 
     plano = {
         "fps": FPS, "duracao_frames": segs[-1]["f1"],

@@ -29,14 +29,20 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 6. `/publicar` → título, descrição, créditos, horário; o dono agenda no app do YouTube Studio
 - `/analisar <link>`: todo vídeo/canal que o dono mandar vira conhecimento (Hall da Fama).
 
-## O formato do canal (resumo; detalhes nas skills)
-- **Duração:** LONGO 45–60 s (padrão) ou CURTO 25–35 s. Nada entre 36 e 44 s. Encher linguiça derruba a retenção.
-- **Estrutura:** gancho (0–3 s, manda olhar + lacuna) → mito/motivo real → mecanismo em **3D** → virada
-  ("Mas tem um porém…") → loop (frase suspensa que emenda no começo).
-- **Imagens:** clipe real no gancho e como prova; **3D no trecho explicativo**; Pixabay como apoio.
-- **Edição:** segue a especificação fixa tirada de 35 Shorts do nicho (volumes, ritmo de 1,5 s/cena, corte seco
-  + whoosh, seta vermelha no frame 0, legenda com destaque amarelo).
+## O formato do canal: HISA 2.0 do dono (público adulto 25+, 100% faceless)
+- **Só 2 formatos:** **Tiro Curto** 12–15 s (30–38 palavras; curiosidade rápida, física bizarra, susto, gambiarra;
+  **re-hook aos 6 s**) ou **Bastidor** 20–28 s (50–65 palavras; engenharia, processo industrial, máquina, trabalho
+  manual: risco/problema → macete técnico → "momento eureka").
+- **Estrutura:** gancho ≤ 3 s quebrando a expectativa → **ouro parcelado** (a explicação vem aos poucos enquanto a ação
+  acontece) → eureka/virada → CTA-elogio (se couber) → **loop**: nunca termina em ponto final; fecha com conjunção
+  suspensa ("...vendo que", "...porque quando") que emenda na 1ª palavra.
+- **Áudio:** "ding" no 00:00; voz do Otto no máximo com silêncios cortados (auto-cut); som original de clipe LIVRE
+  sobe no clímax (de terceiro fica desligado: Content ID).
+- **Visual:** zero fisheye; legenda 1 palavra, amarelo ouro #FFD700, contorno preto forte, terço superior; 3D no
+  trecho explicativo; clipe real no gancho e como prova.
+- **Tom:** curiosidade técnica narrada com maturidade; duplo sentido ("lá ele") só pontual, quando a cena entregar.
 - **Temas que funcionam:** motivo oculto de objeto > recorde/"mais caro" > perigo/erro (`/tema`).
+- Comparar no Studio os vídeos de 45 s (vd005, vd006) com os do formato do dono antes de mudar qualquer regra.
 
 ## Mapa do conhecimento (onde cada coisa mora)
 | Assunto | Arquivo |
