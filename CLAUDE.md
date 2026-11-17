@@ -50,6 +50,11 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 | Projetos de vídeo (roteiro, cenas, saída) | `projetos/<vdNNN_nome>/` |
 | Código | `viitu/` (Python) e `remotion/src/` (acabamento e animações) |
 
+## Limpeza (sempre)
+- Depois de publicar um vídeo: apagar `projetos/<p>/clipes`, `saida/cenas` e vozes antigas (`voz_v*.mp3`); manter
+  roteiro, cenas.json, créditos e o mp4 final em `remotion/out/` só até o dono confirmar que postou.
+- Cache Sonniss: manter só os sons de `assets/sonniss/escolhas.json`. Versões antigas de arquivos não ficam no repositório.
+
 ## Ambiente
 - Nuvem não baixa do YouTube/Reddit: o dono envia clipes no chat ou na pasta Drive `brutos` (`/brutos`).
 - Gemini (análise de vídeo) tem cota grátis diária; se acabar, pular a crítica e seguir.

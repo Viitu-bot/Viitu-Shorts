@@ -14,3 +14,10 @@ dados/brutos_cache/
 # biblioteca Sonniss: só o catálogo vai pro git; sons baixados sob demanda
 assets/sonniss/cache/
 assets/kit/cache/
+
+# arquivos de trabalho (geráveis de novo)
+projetos/**/saida/cenas/
+projetos/**/saida/legenda.*
+projetos/**/voz_v*.mp3
+remotion/out/
+remotion/public/

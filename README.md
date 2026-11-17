@@ -1,29 +1,14 @@
 # Viitu Shorts — automação
 
-Ferramentas locais (Windows) para o canal Viitu Shorts.
+Pipeline de produção do canal @viitushorts (curiosidades em PT-BR), operado pelo Claude Code na nuvem.
+As regras e o mapa do projeto estão em `CLAUDE.md`; cada etapa é uma skill em `.claude/skills/`
+(`/tema`, `/roteiro`, `/clipes`, `/brutos`, `/animacao`, `/editar`, `/publicar`, `/analisar`).
 
 | Pasta | O que é |
 |---|---|
-| `pesquisa/protocolo_mineracao_temas.md` | Método para escolher subnicho e temas validados + prompts prontos para o Gemini |
-| `radar/` | Script que mede os números reais dos canais (outliers) — sem chave de API |
-
-## Instalação no Windows (uma vez)
-
-1. Instale o Python 3.11+ em https://www.python.org/downloads/ e **marque "Add Python to PATH"** na instalação.
-2. Baixe este repositório (botão verde **Code → Download ZIP** no GitHub) e descompacte.
-3. Abra a pasta, clique na barra de endereço, digite `cmd` e aperte Enter.
-4. Rode:
-   ```
-   pip install -r requirements.txt
-   ```
-
-## Usar o radar
-
-```
-python radar/radar.py canais radar/canais.txt
-python radar/radar.py buscar radar/buscas.txt
-```
-Os resultados saem em `radar/saida/` como `.csv` (abre no Excel ou no Google Sheets).
-
-Se aparecer erro 429 ou "Sign in to confirm you're not a bot", espere uns minutos ou rode com menos canais.
-Se persistir, atualize: `pip install -U yt-dlp`.
+| `viitu/` | código Python (temas, voz, editor, som, revisão, direitos, auditoria) |
+| `remotion/src/` | acabamento do vídeo e animações 3D |
+| `edicao/` | especificação fixa, lógica do editor, manual de técnicas, biblioteca de sons |
+| `hall_da_fama/`, `pesquisa/` | referências analisadas e engenharia reversa dos canais |
+| `projetos/vdNNN_*` | roteiro, cenas e créditos de cada vídeo (clipes e renders não vão para o git) |
+| `assets/` | sons, trilhas, fontes e catálogos (caches baixados ficam fora do git) |
