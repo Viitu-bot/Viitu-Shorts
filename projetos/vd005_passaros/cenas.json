@@ -52,7 +52,8 @@
    ],
    "revisao": "manual",
    "_contraste": "close frontal da turbina girando",
-   "foley": "turbina"
+   "foley": "turbina",
+   "bumerangue": true
   },
   {
    "em": "Mas a turbina engole",

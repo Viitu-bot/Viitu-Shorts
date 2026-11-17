@@ -85,6 +85,12 @@ def montar_linha_do_tempo(palavras: list[dict], cfg: dict, fim_audio: float) -> 
             a = {**x, "t1": corte}
             b = {**x, "t0": corte, "inicio": x.get("inicio", 0) + (corte - x["t0"]),
                  "zoom": [z[1] + 0.12, z[1] + 0.2], "dividida": True}
+            if x.get("bumerangue"):
+                # BUMERANGUE: a 2ª parte começa no último quadro da 1ª e toca AO CONTRÁRIO (sem pulo de "copiar e colar")
+                vel = float(x.get("velocidade", 1.0))
+                la, lb = (corte - x["t0"]) * vel, (x["t1"] - corte) * vel
+                b.update(inicio=max(x.get("inicio", 0) + la - lb, 0), reverso=not x.get("reverso", False),
+                         zoom=[z[1], z[1] + 0.06], bumerangue=False)
             pendentes[:0] = [a, b]
     for s in final:
         s["f0"], s["f1"] = round(s["t0"] * FPS), round(s["t1"] * FPS)
