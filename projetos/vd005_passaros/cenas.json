@@ -1,0 +1,154 @@
+{
+ "_versao": "v1: 3D próprio (turbina, grade, teste, Hudson) + Pixabay/Commons reais (sem IA, sem logo)",
+ "impacto_em": [
+  "Mas tem um porém"
+ ],
+ "destaques": [
+  "pássaro",
+  "grade",
+  "centenas",
+  "quebrar",
+  "metal",
+  "canhão",
+  "bando",
+  "rio",
+  "chão"
+ ],
+ "musica": "tensao_documentario.mp3",
+ "cta": false,
+ "creditos_descricao": "Imagens: Pixabay e Wikimedia Commons (foto da turbina: Ekki01, CC BY-SA 3.0). Animações 3D: Viitu Shorts.",
+ "cenas": [
+  {
+   "em": "Repara nessa turbina",
+   "clipe": "commons_Jet_engine_damaged_by_bird_strike.jpg",
+   "foco": [
+    0.42,
+    0.5
+   ],
+   "alvo": [
+    0.45,
+    0.55
+   ],
+   "zoom": [
+    1.0,
+    1.15
+   ],
+   "seta_auto": {
+    "texto": "bent fan blades of a jet engine"
+   },
+   "esperado": "engine",
+   "_funcao": "prova (gancho)",
+   "foley": "vento"
+  },
+  {
+   "em": "e ninguém consegue impedir",
+   "clipe": "pixabay_138891.mp4",
+   "inicio": 5.0,
+   "esperado": "bird",
+   "_contraste": "céu aberto, muitos pássaros",
+   "foley": "vento"
+  },
+  {
+   "em": "A maioria acha",
+   "clipe": "pixabay_52536.mp4",
+   "inicio": 0.0,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "revisao": "manual",
+   "_contraste": "close frontal da turbina girando",
+   "foley": "aviao"
+  },
+  {
+   "em": "Mas a turbina engole",
+   "clipe": "pixabay_52536.mp4",
+   "inicio": 0.0,
+   "manter": true,
+   "revisao": "manual",
+   "animacao": {
+    "nome": "turbina3d",
+    "fase": "ar",
+    "eventos": {
+     "travaria": "travaria"
+    }
+   },
+   "foley": "vento"
+  },
+  {
+   "em": "Pior: quando o pássaro",
+   "clipe": "pixabay_52536.mp4",
+   "inicio": 3.0,
+   "manter": true,
+   "revisao": "manual",
+   "animacao": {
+    "nome": "turbina3d",
+    "fase": "quebra",
+    "eventos": {
+     "batesse": "batesse",
+     "metal": "metal"
+    }
+   },
+   "foley": "vento"
+  },
+  {
+   "em": "Por isso fizeram o contrário",
+   "clipe": "pixabay_52536.mp4",
+   "inicio": 6.0,
+   "manter": true,
+   "revisao": "manual",
+   "animacao": {
+    "nome": "turbina3d",
+    "fase": "teste",
+    "eventos": {
+     "disparados": "disparados"
+    }
+   },
+   "foley": "vento"
+  },
+  {
+   "em": "Mas tem um porém",
+   "clipe": "pixabay_52536.mp4",
+   "inicio": 7.0,
+   "zoom": [
+    1.15,
+    1.3
+   ],
+   "revisao": "manual",
+   "foley": "aviao"
+  },
+  {
+   "em": "um bando inteiro",
+   "clipe": "pixabay_52536.mp4",
+   "inicio": 9.0,
+   "manter": true,
+   "revisao": "manual",
+   "animacao": {
+    "nome": "turbina3d",
+    "fase": "bando",
+    "eventos": {
+     "turbinas": "duas turbinas",
+     "pousou": "pousou no rio",
+     "todos": "Todos sobreviveram"
+    }
+   },
+   "foley": "vento"
+  },
+  {
+   "em": "E quase toda colisão",
+   "clipe": "pixabay_104378.mp4",
+   "inicio": 0.5,
+   "esperado": "airplane",
+   "_contraste": "chão, avião na pista",
+   "foley": "aviao"
+  },
+  {
+   "em": "Então, da próxima vez",
+   "clipe": "pixabay_205873.mp4",
+   "inicio": 1.0,
+   "revisao": "manual",
+   "_contraste": "janela, asa (loop)",
+   "foley": "aviao"
+  }
+ ]
+}

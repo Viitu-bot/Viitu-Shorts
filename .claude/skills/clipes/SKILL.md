@@ -23,7 +23,8 @@ pelo usuário via link do Drive ou TikTok), ele é a espinha do vídeo e o stock
   (`viitu.assistir perguntar <link> "cenas, origem, marcas d'água"`) e busque esses ORIGINAIS. Prefira: Reddit
   original, arquivo do criador com permissão, Pixabay/Commons, material gravado pelo dono. TikTok baixado vem em
   576p com logo e tela final (o editor corta a tela final; crédito do @ na descrição). Clipes de terceiros: só os
-  que viralizaram. Evite stock com tag "ai generated".
+  que viralizaram. **Antes de baixar do Pixabay, confira as tags pela API: "ai generated" = descartar** (no vd005, 2 dos 5
+  melhores clipes eram IA). Foto do Commons: confira se mostra mesmo o que a frase diz (um "birdstrike" era de trem).
 - **Brutos longos:** só com ≥ 1M de views (`viitu.tema brutos` filtra). Antes de pedir ao dono, verifique com
   `python3 -m viitu.assistir achar <link> "<cenas>"` e passe o link + os minutos exatos de cada trecho.
 - Clipe de terceiros entra como PROVA no meio, não no gancho (gancho com imagem livre sempre que possível).

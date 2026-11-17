@@ -5,7 +5,7 @@ Categoria/gatilho: perigo + motivo oculto + MITO DESMENTIDO ("é só pôr uma gr
 Lacuna PT-BR: não existe (máx. 30k).
 
 ## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs)
-Repara no nariz desse avião: isso foi um pássaro... e ninguém consegue impedir.
+Repara nessa turbina: isso foi um pássaro... e ninguém consegue impedir.
 A maioria acha que é só pôr uma grade na frente da turbina. Mas a turbina engole centenas de quilos de ar por segundo, e a grade travaria esse ar. Pior: quando o pássaro batesse, ela ia quebrar... e pedaço de metal dentro do motor é muito pior que o pássaro.
 Por isso fizeram o contrário: a turbina é testada engolindo pássaros, disparados por um canhão direto nas pás.
 Mas tem um porém: um bando inteiro. Em dois mil e nove, gansos entraram nas duas turbinas de um avião em Nova York, e o piloto pousou no rio. Todos sobreviveram.
