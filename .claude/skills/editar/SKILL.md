@@ -36,6 +36,7 @@ Quando usar cada efeito: `edicao/logica_editor.md`. Técnicas: `edicao/manual_ed
 ## 2b. Regras de montagem (cobradas pelo dono)
 - **Loop perfeito:** a última cena é o MESMO quadro do frame 0 (copie a cena 1 com `"em": "<última palavra>"`,
   `"zoom": [1.0, 1.0]`). O flash do frame 0 esconde a emenda.
+- **No máximo 2 cenas por clipe curto** (o revisor barra a 3ª). Faltou imagem? Busque outro clipe ou use 3D.
 - **Clipe reaproveitado** (mesmo clipe em 2 cenas): na 2ª vez `"reverso": true` (toca ao contrário = continuação).
 - **Cena longa que o editor divide** (> 2 s) com movimento cíclico (hélice, roda, água): `"bumerangue": true` — a 2ª
   parte começa no último quadro da 1ª e toca ao contrário (sem o pulo de "copiar e colar"). Não usar com gente andando.

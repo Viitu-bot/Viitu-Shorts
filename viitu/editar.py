@@ -710,6 +710,8 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(audio), "-c:a", "aac", "-b:a", "192k",
                     str(pub / "audio.m4a")], check=True)
     from viitu.mix import normalizar, ganho, espec
+    if (RAIZ / "assets" / "texturas").exists():          # texturas CC0 (Poly Haven) para o 3D
+        shutil.copytree(RAIZ / "assets" / "texturas", pub / "tex", dirs_exist_ok=True)
     for som in SFX.glob("*.mp3"):          # sons próprios: normalizados à referência da voz
         normalizar(som, pub / som.name, "pontual")
     # som original só de clipes livres (Pixabay/próprios): áudio de TikTok/Reels costuma ter música com direitos

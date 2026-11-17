@@ -15,6 +15,7 @@ Saída com código 1 se houver problema (não entregar).
 from __future__ import annotations
 
 import json
+import subprocess
 import sys
 from collections import Counter
 from pathlib import Path
@@ -84,6 +85,21 @@ def revisar(projeto: str) -> bool:
         if rep and not (j == len(cenas) - 1 and rep == [0]):
             problemas.append(f"REPETIÇÃO: cena '{c['em']}' repete o trecho {c['clipe']}@{t}s")
         vistos.append((c["clipe"], t))
+    # REGRA DO DONO: clipe curto (< 60 s) entra no máximo 2 vezes no vídeo (trechos diferentes ainda cansam);
+    # bruto longo conta cenas a mais de 10 s de distância como clipes diferentes. A última cena (loop) não conta.
+    import collections
+    usos = collections.defaultdict(list)
+    for j, c in enumerate(cenas):
+        if c.get("animacao") or (j == len(cenas) - 1 and c["clipe"] == cenas[0]["clipe"]):
+            continue
+        usos[c["clipe"]].append(c.get("inicio", 0))
+    for cl, ts in usos.items():
+        arq = pasta / "clipes" / cl
+        dur_cl = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+                                       str(arq)], capture_output=True, text=True).stdout.strip() or 0) if arq.exists() else 0
+        grupos = len({round(t / 10) for t in ts}) if dur_cl >= 60 else len(ts)
+        if dur_cl < 60 and grupos > 2:
+            problemas.append(f"CLIPE REPETIDO: {cl} aparece em {grupos} cenas (máx. 2) — troque por outro clipe ou 3D")
 
     for k in range(len(cortes) - 1):
         f0, f1 = cortes[k], cortes[k + 1]

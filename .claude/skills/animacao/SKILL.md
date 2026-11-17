@@ -22,6 +22,17 @@ Base: 40–53% dos vídeos dos canais do nicho têm animação; inserções de 1
 - **Lógica física consistente:** o que o fogo/água/etc. já atingiu muda de estado e não volta; no encontro de
   duas frentes não sobra faixa intacta; nada some sem motivo.
 
+## Visual vivo (padrão desde o vd006)
+- **Cenário completo**, não objeto solto no vazio: chão, estrada, grama, céu com neblina. Texturas reais CC0 do
+  Poly Haven em `assets/texturas/` (baixar `Diffuse` 1k pela API `api.polyhaven.com/files/<nome>`; o editor copia
+  para `public/tex`). Modelo: `remotion/src/animacoes/Lama3D.tsx`.
+- Carregar texturas com o padrão do Lama3D (`useTexturas` + `<Liberar>`: o quadro só sai depois de um redesenho
+  com a textura). Sem isso o chão sai PRETO em quadros aleatórios.
+- NÃO usar normal map nem sombras (`shadows`) — no render sem GPU escurecem/pretejam o chão.
+- Efeitos com física: pedaços com gravidade e respingos esticados na direção do voo (lama, água, faísca),
+  tremor/afundar do objeto, fumaça. Nada de "bolinhas" paradas.
+- Superfície irregular (poça, terreno): plano com vértices deslocados e borda irregular; borda baixa (sem "parede").
+
 ## 3D sobreposto a clipe real
 `ThreeCanvas` com `gl={{alpha: true}}` e fundo transparente por cima do clipe (ex.: gaivotas passando pela asa
 vista da janela). Bichos: forma característica (gaivota = asa em "M" com ponta preta), voando de FRENTE para onde
