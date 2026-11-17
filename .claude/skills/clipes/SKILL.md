@@ -122,6 +122,11 @@ Montagem, verificações e prancha: `/editar`.
   da Ship 42, CC BY 4.0, 2 dias após). Busca: API `generator=search` + `iiextmetadatafilter=LicenseShortName|Artist`.
   Confira se é FOTO REAL (um "Super Heavy catching" era animação). O resto vira 3D.
 - Clipes do usuário: TikTok por link direto (tentar baixar), Reddit/YouTube via link do Drive.
+- **X/Twitter:** `yt-dlp -o "x_%(autonumber)s.%(ext)s" <link do post>` funciona na nuvem (posts com vários vídeos baixam
+  todos). Fonte oficial (empresa/agência que filmou) > canal de terceiros. Áudio desligado, crédito na descrição,
+  trecho curto como PROVA. Ação rápida demais para a frase? `"velocidade": 2` encaixa a ação inteira.
+- **Foley de ação em clipe real** (tranco, motor): `"sfx_cena": [{"em": "<palavra>", "arquivo": ..., "db": ..}]` toca NA
+  palavra (o `sfx_em` é para som de função e vai para a pausa).
 - Nunca remover marca d'água de vídeo de terceiros; dar crédito na descrição.
 
 

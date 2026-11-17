@@ -1,5 +1,5 @@
 {
- "_versao": "v1: 3D próprio (Starship3D: reentrada, captura, pernas, rampa, genial) + foto real da captura da Ship 42 (SpaceX, CC BY 4.0, Commons)",
+ "_versao": "v2: vídeo real da SpaceX (câmera da torre) na captura + 3D (reentrada, pernas, rampa, genial) + foto Ship 42",
  "impacto_em": [
   "pegou ele"
  ],
@@ -18,7 +18,7 @@
   "em": "inscrito",
   "texto": "SE INSCREVE"
  },
- "creditos_descricao": "Foto da captura da Ship 42 (Flight 15): SpaceX, CC BY 4.0, via Wikimedia Commons. Animações 3D: Viitu Shorts. Fontes: Space.com, Universe Today.",
+ "creditos_descricao": "Vídeo da captura (câmera da torre): SpaceX (x.com/SpaceX). Foto da captura da Ship 42 (Flight 15): SpaceX, CC BY 4.0, via Wikimedia Commons. Animações 3D: Viitu Shorts. Fontes: Space.com, Universe Today.",
  "cenas": [
   {
    "em": "Esse foguete voltou",
@@ -73,39 +73,44 @@
   },
   {
    "em": "No sábado, a torre",
-   "clipe": "pixabay_119193.mp4",
-   "inicio": 0.0,
+   "clipe": "x_spacex_mechazilla.mp4",
+   "inicio": 4.3,
    "manter": true,
    "revisao": "manual",
-   "_funcao": "payoff: os braços fecham na nave",
+   "foco": [
+    0.42,
+    0.5
+   ],
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "som_original": false,
+   "_funcao": "prova real: câmera da torre, os braços pegam a nave (toque cai em 'pegou')",
+   "_fonte": "SpaceX no X, 14/11/2026: https://x.com/SpaceX/status/2122427170328883425 (vídeo 2), trecho 11,6–13,8 s",
    "foley": "vento",
-   "animacao": {
-    "nome": "starship3d",
-    "fase": "captura",
-    "eventos": {
-     "pegou": "pegou ele"
+   "sfx_cena": [
+    {
+     "em": "No sábado",
+     "arquivo": "assets/sfx/foguete_motor.mp3",
+     "db": -9,
+     "dur": 1.5
     },
-    "sfx": [
-     {
-      "arquivo": "assets/sfx/foguete_motor.mp3",
-      "db": -9,
-      "dur": 1.6
-     },
-     {
-      "evento": "pegou",
-      "arquivo": "assets/sfx/braco_metal.mp3",
-      "db": -4,
-      "dur": 2.0
-     },
-     {
-      "evento": "pegou",
-      "arquivo": "assets/sfx/motor_corte.mp3",
-      "db": -11,
-      "dur": 2.0,
-      "desloc": 0.1
-     }
-    ]
-   }
+    {
+     "em": "pegou",
+     "arquivo": "assets/sfx/braco_metal.mp3",
+     "db": -4,
+     "dur": 2.0
+    },
+    {
+     "em": "pegou",
+     "arquivo": "assets/sfx/motor_corte.mp3",
+     "db": -11,
+     "dur": 2.0,
+     "desloc": 0.1
+    }
+   ],
+   "velocidade": 2.0
   },
   {
    "em": "Perna de pouso",

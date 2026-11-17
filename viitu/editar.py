@@ -670,6 +670,25 @@ def _kit_e_sfx(cfg: dict, palavras: list[dict], pub: Path) -> tuple[dict, list[d
     return nomes, eventos
 
 
+def _sons_da_cena(segs: list[dict], palavras: list[dict], pub: Path) -> list[dict]:
+    """Foley de AÇÃO em cena de clipe real (não é som de função): toca NA palavra, não na pausa.
+    "sfx_cena": [{"em": "pegou", "arquivo": "assets/sfx/x.mp3", "db": -4, "dur": 2, "desloc": 0}]"""
+    from viitu.mix import normalizar
+    out = []
+    for s in segs:
+        for k, e in enumerate(s.get("sfx_cena", [])):
+            f = round(palavras[achar_palavra(palavras, e["em"], 0)]["inicio"] * FPS) + int(e.get("desloc", 0) * FPS)
+            nome = f"cena_sfx_{s['f0']}_{k}.mp3"
+            dur = e.get("dur", 3)
+            corte = pub / f"_tmpc_{k}.mp3"
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(RAIZ / e["arquivo"]), "-t", f"{dur:.2f}",
+                            "-af", f"afade=t=out:st={max(dur - 0.4, 0):.2f}:d=0.4", str(corte)], check=True)
+            normalizar(corte, pub / nome, "pontual")
+            corte.unlink(missing_ok=True)
+            out.append({"f": max(f, 0), "som": nome, "vol": round(10 ** (e.get("db", -6) / 20), 4), "dur": int(dur * FPS) + 10})
+    return out
+
+
 def _sons_da_animacao(segs: list[dict], animacoes: list[dict], pub: Path) -> list[dict]:
     """SOUND DESIGN DO 3D: cada cena de animação declara seus efeitos amarrados aos eventos dela:
     "animacao": {..., "sfx": [{"evento": "batesse", "busca": "<som em inglês>", "exigir": "regex", "db": -4,
@@ -787,6 +806,7 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
                 else ({"f0": segs[-1]["f0"] + 6, "texto": "INSCREVA-SE"} if c else None))(cfg.get("cta", False)),   # canais: sem CTA explícito na maioria
     }
     plano["sfx"] += _sons_da_animacao(segs, plano["animacoes"], pub)
+    plano["sfx"] += _sons_da_cena(segs, palavras, pub)
     (pub / "plano.json").write_text(json.dumps(plano, ensure_ascii=False), encoding="utf-8")
     print(f"Plano Remotion exportado: {pub.relative_to(RAIZ)}/plano.json")
 

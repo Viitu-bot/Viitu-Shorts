@@ -63,5 +63,6 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 
 ## Ambiente
 - Nuvem não baixa do YouTube/Reddit: o dono envia clipes no chat ou na pasta Drive `brutos` (`/brutos`).
+  **X (Twitter) baixa direto:** `yt-dlp <link do post>` (vd007: vídeo 4K oficial da SpaceX). Peça o link do post.
 - Gemini (análise de vídeo) tem cota grátis diária; se acabar, pular a crítica e seguir.
 - Sem GPU: 3D renderiza em software (mais lento, funciona). Veo/IA de vídeo pela API é paga.
