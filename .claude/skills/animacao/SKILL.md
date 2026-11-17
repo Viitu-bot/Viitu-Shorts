@@ -27,7 +27,14 @@ Base: 40–53% dos vídeos dos canais do nicho têm animação; inserções de 1
 2. Registre no `remotion/src/Short.tsx` (bloco "animações explicativas": `a.nome === '<tema>3d'`).
 3. No `cenas.json`, a cena: `"animacao": {"nome": "<tema>3d", "fase": "...", "eventos": {...}}`,
    `"manter": true`, `"revisao": "manual"`, `"foley"` do que se vê; o `"clipe"` fica escondido (qualquer Pixabay do projeto).
-4. `python3 -m viitu.editar <p> --remotion` e confira 3–4 quadros soltos de cada fase
+4. **Sound design do 3D (obrigatório — dono: "o 3D sem som acabou com a imersão")**:
+   - `"foley"` da cena = ambiência do LUGAR da animação (ex.: `turbina`, `hangar`, `voo`; tipos em `CAMADAS`, `viitu/foley.py`).
+   - `"sfx"` na animação = um som para CADA ação que acontece na tela, amarrado ao evento:
+     `{"evento": "batesse", "busca": "heavy body impact thud", "exigir": "impact|thud", "db": -3, "desloc": 0, "dur": 1.5}`.
+     Toda batida, quebra, disparo, explosão, splash, motor ligando/desligando ganha som.
+   - Conferir os nomes escolhidos em `assets/sonniss/escolhas.json` (o CLAP confunde: "ligando" ≠ "desligando",
+     sci-fi, turbina eólica ≠ jato) e trocar `busca`/`exigir` do que não combinar.
+5. `python3 -m viitu.editar <p> --remotion` e confira 3–4 quadros soltos de cada fase
    (`npx remotion still ... --frame=N --scale=0.3`) ANTES do render completo. Ajuste câmera/legibilidade.
-5. O 3D renderiza sem GPU (software): mais lento, funciona. Modelos/texturas extras: Poly Haven (CC0).
-6. Técnica nova que der certo → `edicao/manual_edicao.md` (seção animação).
+6. O 3D renderiza sem GPU (software): mais lento, funciona. Modelos/texturas extras: Poly Haven (CC0).
+7. Técnica nova que der certo → `edicao/manual_edicao.md` (seção animação).

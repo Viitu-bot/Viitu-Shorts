@@ -376,6 +376,15 @@ export const Turbina3D: React.FC<Props> = ({fase, dur, eventos}) => {
     );
   }
 
+  // CORTE DE CÂMERA dentro da cena (ritmo de ~1,5–3 s por plano, como nos canais do nicho)
+  const tCorte = fase === 'ar' ? (eventos.travaria ?? 999) : fase === 'quebra' ? (eventos.metal ?? 999) - 25
+    : fase === 'teste' ? (eventos.disparados ?? 999) + 3 : (eventos.pousou ?? 999) - 12;
+  if (f >= tCorte) {
+    if (fase === 'ar') { cam = [2.6, 0.9, 4.2]; alvo = [0, 0, 1.0]; }
+    else if (fase === 'quebra') { cam = [0.25, 0.15, 2.3 + Math.sin(f * 2.3) * 0.02]; alvo = [0, 0, 0.3]; }
+    else if (fase === 'teste') { cam = [0.9, 0.3, 2.6]; alvo = [0, 0, 0.6]; }
+    else { cam = [alvo[0] - 6.5, alvo[1] + 1.6, alvo[2] + 5]; }
+  }
   return (
     <ThreeCanvas width={width} height={height} style={{backgroundColor: fundo}} camera={{fov: 50, position: cam, near: 0.1, far: 200}}>
       <Camera pos={cam} alvo={alvo} />

@@ -8,7 +8,7 @@
 | ✅ | Sons profissionais (camadas de foley) | Sonniss GDC Game Audio Bundle: royalty-free, YouTube monetizado, sem crédito |
 | ✅ | Fonte da legenda | Anton, licença SIL Open Font License |
 | ✅ | Animações explicativas | desenhadas em código no Remotion (próprias) |
-| ✅ | commons_Jet_engine_damaged_by_bird_strike.jpg | Wikimedia Commons (ver creditos.txt) |
+| ✅ | commons_C-130_and_Hawk_in_nosecone_outside.jpg | Wikimedia Commons (ver creditos.txt) |
 | ✅ | pixabay_138891.mp4 | Pixabay (licença livre) |
 | ✅ | pixabay_52536.mp4 | Pixabay (licença livre) |
 | ✅ | pixabay_104378.mp4 | Pixabay (licença livre) |
@@ -16,4 +16,4 @@
 
 **RESULTADO:** ✅ liberado (⚠️ = crédito na descrição + pedir permissão)
 
-**Créditos para a descrição:** Imagens: Pixabay e Wikimedia Commons (foto da turbina: Ekki01, CC BY-SA 3.0). Animações 3D: Viitu Shorts.
+**Créditos para a descrição:** Imagens: Pixabay e Wikimedia Commons (foto do gavião no nariz do C-130: Air Combat Command, domínio público). Animações 3D: Viitu Shorts.

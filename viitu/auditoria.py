@@ -47,7 +47,7 @@ def medir(projeto: str, video: str) -> list[str]:
     if pj.exists():
         pal = json.loads(pj.read_text(encoding="utf-8"))
         pal = pal if isinstance(pal, list) else pal.get("palavras", [])
-        sobre = [e["som"] for e in plano.get("sfx", [])
+        sobre = [e["som"] for e in plano.get("sfx", []) if not e["som"].startswith("anim_sfx")   # som de AÇÃO do 3D pode
                  if any(w["inicio"] * fps + 2 < e["f"] < w.get("fim", w["inicio"] + 0.3) * fps - 2 for w in pal)]
         A.append(f"{'✅' if not sobre else '⚠️'} Sons de função em cima de palavra: {sobre or 'nenhum'}")
     cap = cv2.VideoCapture(video)
@@ -78,6 +78,9 @@ def medir(projeto: str, video: str) -> list[str]:
     A.append(f"{'✅' if len(rap) <= 5 else '⚠️'} Palavras que ficam < 0,17 s na tela (ilegíveis): {len(rap)} {rap[:8]}")
     fim = plano["duracao_frames"] - plano["palavras"][-1]["f1"]
     A.append(f"{'✅' if fim <= 6 else '⚠️'} Folga depois da última palavra: {fim / fps:.2f}s (loop pede ≤ 0,2 s)")
+    anim = plano.get("animacoes", [])
+    sem_som = [f"{a['fase']}" for a in anim if not any(a["f0"] <= e["f"] < a["f1"] for e in plano.get("sfx", []))]
+    A.append(f"{'✅' if not sem_som else '⚠️'} Cenas 3D sem efeito sonoro próprio: {sem_som or 'nenhuma'}")
     baixa = [k for k, v in tri.items() if v.get("nota") == "BAIXA RESOLUÇÃO"]
     A.append(f"{'✅' if not baixa else '⚠️'} Fontes em baixa resolução (<720p): {baixa or 'nenhuma'}")
     return A

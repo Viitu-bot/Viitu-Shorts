@@ -71,7 +71,7 @@ def escolher(segs: list[dict], pasta: Path, fps: int) -> list[dict]:
         por_cena.append(nomes[i] if p[i] > 0.35 else None)
     faixas = []
     for s, som in zip(segs, por_cena):
-        if not som or not (FOLEY / f"{som}.mp3").exists():
+        if not som or not ((FOLEY / f"{som}.mp3").exists() or som in CAMADAS):
             continue
         if faixas and faixas[-1]["_som"] == som and abs(faixas[-1]["f1"] - s["f0"]) <= 1:
             faixas[-1]["f1"] = s["f1"]           # continua a mesma ambiência através do corte
@@ -133,13 +133,21 @@ CAMADAS = {
     "multidao": ("crowd murmur outdoors", "people talking nearby"),
     "galinhas": ("chickens clucking on a farm", "chicken clucking close"),
     "ovo_quebrando": ("egg sizzling in frying pan", "oil sizzling close"),
+    "turbina": ("jet engine idling at the airport, distant", "airliner jet engine whine"),
+    "hangar": ("large industrial hangar room tone", "industrial machine hum"),
+    "voo": ("airliner flying overhead", "wind at high altitude"),
+    "cabine": ("airplane cabin interior ambience during flight", "airplane cabin hum"),
+    "passaros": ("flock of seagulls flying overhead", "flock of seagulls flying overhead"),
 }
 FOGO = r"fire|flame|burn|campfire|ember|blaze|bonfire|fireplace|wood ?stove"
 EXIGIR = {"fogo_rugido": FOGO, "fogo_crepitando": FOGO, "fumaca_brasa": r"ember|smolder|campfire|fireplace|stove|small fire|fire gentle|fire calm", "vento": r"wind|gust",
           "aviao": r"plane|aircraft|airliner|propeller", "helicoptero": r"helicopter|heli|rotor",
           "agua_jato": r"water|hose|spray|splash", "passos_mato": r"footstep|step|walk",
           "noite_grilos": r"cricket|night", "floresta_dia": r"forest|bird|wood", "multidao": r"crowd|people|walla",
-          "galinhas": r"chicken|hen|rooster", "ovo_quebrando": r"sizzl|fry|pan"}
+          "galinhas": r"chicken|hen|rooster", "ovo_quebrando": r"sizzl|fry|pan",
+          "turbina": r"jet|airliner|aircraft|airport", "hangar": r"hangar|hall|warehouse|industrial|factory|machine",
+          "voo": r"plane|aircraft|airliner|jet|wind", "cabine": r"cabin|interior|airplane|plane",
+          "passaros": r"flock|seagull|gull|starling|flap|flutter|wings"}
 ESCOLHAS = RAIZ / "assets" / "sonniss" / "escolhas.json"     # mesma descrição → mesmo som (rápido e consistente)
 
 

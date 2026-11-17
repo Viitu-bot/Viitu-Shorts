@@ -5,264 +5,274 @@
   "fim": 0.4
  },
  {
-  "palavra": "nessa",
+  "palavra": "no",
   "inicio": 0.48,
-  "fim": 0.68
+  "fim": 0.56
  },
  {
-  "palavra": "turbina:",
-  "inicio": 0.72,
-  "fim": 1.36
+  "palavra": "nariz",
+  "inicio": 0.68,
+  "fim": 0.96
+ },
+ {
+  "palavra": "desse",
+  "inicio": 1.04,
+  "fim": 1.16
+ },
+ {
+  "palavra": "avião:",
+  "inicio": 1.2,
+  "fim": 1.76
  },
  {
   "palavra": "isso",
-  "inicio": 1.44,
-  "fim": 1.6
- },
- {
-  "palavra": "foi",
-  "inicio": 1.68,
-  "fim": 1.8
- },
- {
-  "palavra": "um",
   "inicio": 1.84,
   "fim": 2.0
  },
  {
+  "palavra": "foi",
+  "inicio": 2.08,
+  "fim": 2.16
+ },
+ {
+  "palavra": "um",
+  "inicio": 2.24,
+  "fim": 2.32
+ },
+ {
   "palavra": "pássaro...",
-  "inicio": 2.053,
-  "fim": 2.72
+  "inicio": 2.4,
+  "fim": 3.12
  },
  {
   "palavra": "e",
-  "inicio": 2.76,
-  "fim": 2.8
+  "inicio": 3.16,
+  "fim": 3.2
  },
  {
   "palavra": "ninguém",
-  "inicio": 2.88,
-  "fim": 3.44
+  "inicio": 3.28,
+  "fim": 3.76
  },
  {
   "palavra": "consegue",
-  "inicio": 3.56,
-  "fim": 3.92
+  "inicio": 3.88,
+  "fim": 4.24
  },
  {
   "palavra": "impedir.",
-  "inicio": 4.0,
-  "fim": 4.64
+  "inicio": 4.32,
+  "fim": 4.8
  },
  {
   "palavra": "A",
-  "inicio": 4.68,
-  "fim": 4.72
+  "inicio": 5.04,
+  "fim": 5.08
  },
  {
   "palavra": "maioria",
-  "inicio": 4.8,
-  "fim": 5.28
- },
- {
-  "palavra": "acha",
-  "inicio": 5.4,
+  "inicio": 5.12,
   "fim": 5.52
  },
  {
-  "palavra": "que",
-  "inicio": 5.6,
-  "fim": 5.68
- },
- {
-  "palavra": "é",
-  "inicio": 5.76,
+  "palavra": "acha",
+  "inicio": 5.68,
   "fim": 5.84
  },
  {
+  "palavra": "que",
+  "inicio": 5.92,
+  "fim": 5.96
+ },
+ {
+  "palavra": "é",
+  "inicio": 6.0,
+  "fim": 6.08
+ },
+ {
   "palavra": "só",
-  "inicio": 5.88,
-  "fim": 6.0
+  "inicio": 6.12,
+  "fim": 6.24
  },
  {
   "palavra": "pôr",
-  "inicio": 6.08,
-  "fim": 6.2
+  "inicio": 6.32,
+  "fim": 6.48
  },
  {
   "palavra": "uma",
-  "inicio": 6.24,
-  "fim": 6.4
+  "inicio": 6.56,
+  "fim": 6.64
  },
  {
   "palavra": "grade",
-  "inicio": 6.48,
-  "fim": 6.8
+  "inicio": 6.72,
+  "fim": 7.04
  },
  {
   "palavra": "na",
-  "inicio": 6.88,
-  "fim": 6.96
+  "inicio": 7.12,
+  "fim": 7.2
  },
  {
   "palavra": "frente",
-  "inicio": 7.04,
-  "fim": 7.28
+  "inicio": 7.24,
+  "fim": 7.44
  },
  {
   "palavra": "da",
-  "inicio": 7.32,
-  "fim": 7.36
+  "inicio": 7.52,
+  "fim": 7.6
  },
  {
   "palavra": "turbina.",
-  "inicio": 7.44,
-  "fim": 8.08
- },
- {
-  "palavra": "Mas",
-  "inicio": 8.12,
+  "inicio": 7.68,
   "fim": 8.16
  },
  {
-  "palavra": "a",
+  "palavra": "Mas",
   "inicio": 8.24,
-  "fim": 8.28
+  "fim": 8.4
+ },
+ {
+  "palavra": "a",
+  "inicio": 8.48,
+  "fim": 8.52
  },
  {
   "palavra": "turbina",
-  "inicio": 8.32,
-  "fim": 8.72
+  "inicio": 8.56,
+  "fim": 8.96
  },
  {
   "palavra": "engole",
-  "inicio": 8.8,
-  "fim": 9.04
+  "inicio": 9.04,
+  "fim": 9.36
  },
  {
   "palavra": "centenas",
-  "inicio": 9.12,
-  "fim": 9.76
+  "inicio": 9.56,
+  "fim": 10.0
  },
  {
   "palavra": "de",
-  "inicio": 9.8,
-  "fim": 9.84
+  "inicio": 10.08,
+  "fim": 10.16
  },
  {
   "palavra": "quilos",
-  "inicio": 10.0,
-  "fim": 10.24
+  "inicio": 10.24,
+  "fim": 10.48
  },
  {
   "palavra": "de",
-  "inicio": 10.32,
-  "fim": 10.4
+  "inicio": 10.56,
+  "fim": 10.64
  },
  {
   "palavra": "ar",
-  "inicio": 10.48,
-  "fim": 10.56
+  "inicio": 10.72,
+  "fim": 10.8
  },
  {
   "palavra": "por",
-  "inicio": 10.64,
-  "fim": 10.72
+  "inicio": 10.88,
+  "fim": 10.96
  },
  {
   "palavra": "segundo,",
-  "inicio": 10.8,
-  "fim": 11.52
+  "inicio": 11.04,
+  "fim": 11.76
  },
  {
   "palavra": "e",
-  "inicio": 11.56,
-  "fim": 11.6
+  "inicio": 11.8,
+  "fim": 11.84
  },
  {
   "palavra": "a",
-  "inicio": 11.64,
-  "fim": 11.68
+  "inicio": 11.88,
+  "fim": 11.92
  },
  {
   "palavra": "grade",
-  "inicio": 11.76,
-  "fim": 12.08
+  "inicio": 12.0,
+  "fim": 12.32
  },
  {
   "palavra": "travaria",
-  "inicio": 12.24,
-  "fim": 12.8
+  "inicio": 12.4,
+  "fim": 12.96
  },
  {
   "palavra": "esse",
-  "inicio": 12.92,
-  "fim": 13.04
+  "inicio": 13.08,
+  "fim": 13.2
  },
  {
   "palavra": "ar.",
-  "inicio": 13.12,
-  "fim": 13.44
+  "inicio": 13.28,
+  "fim": 13.6
  },
  {
   "palavra": "Pior:",
-  "inicio": 13.547,
-  "fim": 14.0
- },
- {
-  "palavra": "quando",
-  "inicio": 14.053,
+  "inicio": 13.64,
   "fim": 14.16
  },
  {
-  "palavra": "o",
+  "palavra": "quando",
   "inicio": 14.2,
-  "fim": 14.24
+  "fim": 14.32
+ },
+ {
+  "palavra": "o",
+  "inicio": 14.36,
+  "fim": 14.4
  },
  {
   "palavra": "pássaro",
-  "inicio": 14.32,
-  "fim": 14.64
+  "inicio": 14.48,
+  "fim": 14.8
  },
  {
   "palavra": "batesse,",
-  "inicio": 14.773,
-  "fim": 15.36
- },
- {
-  "palavra": "ela",
-  "inicio": 15.44,
+  "inicio": 14.84,
   "fim": 15.52
  },
  {
-  "palavra": "ia",
+  "palavra": "ela",
   "inicio": 15.6,
   "fim": 15.68
  },
  {
-  "palavra": "quebrar...",
+  "palavra": "ia",
   "inicio": 15.76,
-  "fim": 16.4
+  "fim": 15.84
+ },
+ {
+  "palavra": "quebrar...",
+  "inicio": 15.92,
+  "fim": 16.48
  },
  {
   "palavra": "e",
-  "inicio": 16.453,
-  "fim": 16.507
+  "inicio": 16.52,
+  "fim": 16.56
  },
  {
   "palavra": "pedaço",
-  "inicio": 16.56,
-  "fim": 17.04
+  "inicio": 16.64,
+  "fim": 17.12
  },
  {
   "palavra": "de",
-  "inicio": 17.12,
-  "fim": 17.16
+  "inicio": 17.16,
+  "fim": 17.2
  },
  {
   "palavra": "metal",
-  "inicio": 17.2,
-  "fim": 17.52
+  "inicio": 17.28,
+  "fim": 17.6
  },
  {
   "palavra": "dentro",
@@ -286,7 +296,7 @@
  },
  {
   "palavra": "muito",
-  "inicio": 19.0,
+  "inicio": 19.04,
   "fim": 19.36
  },
  {
@@ -301,37 +311,37 @@
  },
  {
   "palavra": "o",
-  "inicio": 19.84,
-  "fim": 19.92
+  "inicio": 19.8,
+  "fim": 19.84
  },
  {
   "palavra": "pássaro.",
-  "inicio": 19.973,
-  "fim": 20.56
+  "inicio": 19.92,
+  "fim": 20.48
  },
  {
   "palavra": "Por",
-  "inicio": 20.6,
-  "fim": 20.64
+  "inicio": 20.52,
+  "fim": 20.56
  },
  {
   "palavra": "isso",
-  "inicio": 20.72,
+  "inicio": 20.64,
   "fim": 20.88
  },
  {
   "palavra": "fizeram",
-  "inicio": 20.96,
-  "fim": 21.36
+  "inicio": 20.92,
+  "fim": 21.28
  },
  {
   "palavra": "o",
-  "inicio": 21.44,
-  "fim": 21.547
+  "inicio": 21.32,
+  "fim": 21.36
  },
  {
   "palavra": "contrário:",
-  "inicio": 21.653,
+  "inicio": 21.44,
   "fim": 22.16
  },
  {
@@ -342,326 +352,326 @@
  {
   "palavra": "turbina",
   "inicio": 22.32,
-  "fim": 22.8
+  "fim": 22.72
  },
  {
   "palavra": "é",
-  "inicio": 22.84,
-  "fim": 22.88
+  "inicio": 22.76,
+  "fim": 22.8
  },
  {
   "palavra": "testada",
-  "inicio": 22.96,
-  "fim": 23.36
+  "inicio": 22.88,
+  "fim": 23.28
  },
  {
   "palavra": "engolindo",
-  "inicio": 23.44,
-  "fim": 23.92
+  "inicio": 23.36,
+  "fim": 23.84
  },
  {
   "palavra": "pássaros,",
-  "inicio": 24.08,
-  "fim": 24.72
+  "inicio": 23.92,
+  "fim": 24.56
  },
  {
   "palavra": "disparados",
-  "inicio": 24.84,
-  "fim": 25.36
+  "inicio": 24.68,
+  "fim": 25.2
  },
  {
   "palavra": "por",
-  "inicio": 25.44,
-  "fim": 25.52
+  "inicio": 25.28,
+  "fim": 25.36
  },
  {
   "palavra": "um",
-  "inicio": 25.56,
-  "fim": 25.6
+  "inicio": 25.4,
+  "fim": 25.44
  },
  {
   "palavra": "canhão",
-  "inicio": 25.68,
-  "fim": 26.0
+  "inicio": 25.52,
+  "fim": 25.84
  },
  {
   "palavra": "direto",
-  "inicio": 26.08,
+  "inicio": 25.92,
+  "fim": 26.32
+ },
+ {
+  "palavra": "nas",
+  "inicio": 26.4,
   "fim": 26.56
  },
  {
-  "palavra": "nas",
-  "inicio": 26.64,
-  "fim": 26.72
- },
- {
   "palavra": "pás.",
-  "inicio": 26.8,
-  "fim": 27.36
+  "inicio": 26.64,
+  "fim": 27.12
  },
  {
   "palavra": "Mas",
-  "inicio": 27.52,
-  "fim": 27.68
+  "inicio": 27.24,
+  "fim": 27.36
  },
  {
   "palavra": "tem",
-  "inicio": 27.76,
-  "fim": 27.84
+  "inicio": 27.44,
+  "fim": 27.52
  },
  {
   "palavra": "um",
-  "inicio": 27.88,
-  "fim": 27.92
+  "inicio": 27.56,
+  "fim": 27.6
  },
  {
   "palavra": "porém:",
-  "inicio": 28.0,
-  "fim": 28.56
+  "inicio": 27.68,
+  "fim": 28.24
  },
  {
   "palavra": "um",
-  "inicio": 28.6,
-  "fim": 28.64
+  "inicio": 28.32,
+  "fim": 28.4
  },
  {
   "palavra": "bando",
-  "inicio": 28.8,
-  "fim": 29.12
+  "inicio": 28.56,
+  "fim": 28.88
  },
  {
   "palavra": "inteiro.",
-  "inicio": 29.32,
-  "fim": 29.88
+  "inicio": 29.08,
+  "fim": 29.64
  },
  {
   "palavra": "Em",
-  "inicio": 30.0,
-  "fim": 30.08
+  "inicio": 29.76,
+  "fim": 29.84
  },
  {
   "palavra": "dois",
-  "inicio": 30.12,
-  "fim": 30.24
+  "inicio": 29.92,
+  "fim": 30.0
  },
  {
   "palavra": "mil",
-  "inicio": 30.32,
-  "fim": 30.4
+  "inicio": 30.08,
+  "fim": 30.16
  },
  {
   "palavra": "e",
-  "inicio": 30.44,
-  "fim": 30.48
+  "inicio": 30.24,
+  "fim": 30.28
  },
  {
   "palavra": "nove,",
-  "inicio": 30.56,
-  "fim": 30.96
+  "inicio": 30.32,
+  "fim": 30.8
  },
  {
   "palavra": "gansos",
-  "inicio": 31.0,
-  "fim": 31.36
+  "inicio": 30.84,
+  "fim": 31.2
  },
  {
   "palavra": "entraram",
-  "inicio": 31.44,
-  "fim": 31.92
+  "inicio": 31.28,
+  "fim": 31.76
  },
  {
   "palavra": "nas",
-  "inicio": 32.04,
-  "fim": 32.16
+  "inicio": 31.88,
+  "fim": 32.0
  },
  {
   "palavra": "duas",
-  "inicio": 32.24,
-  "fim": 32.4
+  "inicio": 32.08,
+  "fim": 32.24
  },
  {
   "palavra": "turbinas",
-  "inicio": 32.48,
-  "fim": 32.88
+  "inicio": 32.32,
+  "fim": 32.8
  },
  {
   "palavra": "de",
-  "inicio": 32.96,
-  "fim": 32.987
+  "inicio": 32.84,
+  "fim": 32.88
  },
  {
   "palavra": "um",
-  "inicio": 33.013,
-  "fim": 33.04
+  "inicio": 32.92,
+  "fim": 32.96
  },
  {
   "palavra": "avião",
-  "inicio": 33.12,
-  "fim": 33.44
+  "inicio": 33.08,
+  "fim": 33.28
  },
  {
   "palavra": "em",
-  "inicio": 33.48,
-  "fim": 33.52
+  "inicio": 33.32,
+  "fim": 33.36
  },
  {
   "palavra": "Nova",
-  "inicio": 33.64,
-  "fim": 33.76
+  "inicio": 33.44,
+  "fim": 33.6
  },
  {
   "palavra": "York,",
-  "inicio": 33.96,
-  "fim": 34.32
+  "inicio": 33.68,
+  "fim": 34.16
  },
  {
   "palavra": "e",
-  "inicio": 34.347,
-  "fim": 34.373
+  "inicio": 34.2,
+  "fim": 34.24
  },
  {
   "palavra": "o",
-  "inicio": 34.4,
-  "fim": 34.44
+  "inicio": 34.267,
+  "fim": 34.293
  },
  {
   "palavra": "piloto",
-  "inicio": 34.48,
-  "fim": 34.88
+  "inicio": 34.32,
+  "fim": 34.72
  },
  {
   "palavra": "pousou",
-  "inicio": 34.96,
+  "inicio": 34.88,
   "fim": 35.28
  },
  {
   "palavra": "no",
-  "inicio": 35.36,
-  "fim": 35.44
+  "inicio": 35.32,
+  "fim": 35.36
  },
  {
   "palavra": "rio.",
-  "inicio": 35.56,
-  "fim": 35.92
+  "inicio": 35.44,
+  "fim": 35.84
  },
  {
   "palavra": "Todos",
-  "inicio": 36.08,
-  "fim": 36.24
+  "inicio": 36.0,
+  "fim": 36.16
  },
  {
   "palavra": "sobreviveram.",
-  "inicio": 36.28,
-  "fim": 37.12
+  "inicio": 36.2,
+  "fim": 37.04
  },
  {
   "palavra": "E",
-  "inicio": 37.16,
+  "inicio": 37.12,
   "fim": 37.2
  },
  {
   "palavra": "quase",
-  "inicio": 37.36,
-  "fim": 37.68
+  "inicio": 37.24,
+  "fim": 37.6
  },
  {
   "palavra": "toda",
-  "inicio": 37.84,
-  "fim": 38.0
+  "inicio": 37.68,
+  "fim": 37.84
  },
  {
   "palavra": "colisão",
-  "inicio": 38.08,
-  "fim": 38.56
+  "inicio": 37.92,
+  "fim": 38.32
  },
  {
   "palavra": "acontece",
-  "inicio": 38.68,
-  "fim": 39.12
+  "inicio": 38.4,
+  "fim": 38.96
  },
  {
   "palavra": "perto",
-  "inicio": 39.28,
-  "fim": 39.52
+  "inicio": 39.0,
+  "fim": 39.28
  },
  {
   "palavra": "do",
-  "inicio": 39.6,
-  "fim": 39.68
+  "inicio": 39.36,
+  "fim": 39.44
  },
  {
   "palavra": "chão,",
-  "inicio": 39.76,
-  "fim": 40.16
+  "inicio": 39.52,
+  "fim": 39.84
  },
  {
   "palavra": "na",
-  "inicio": 40.2,
-  "fim": 40.24
+  "inicio": 39.92,
+  "fim": 40.0
  },
  {
   "palavra": "decolagem",
-  "inicio": 40.32,
-  "fim": 40.96
+  "inicio": 40.08,
+  "fim": 40.72
  },
  {
   "palavra": "e",
-  "inicio": 41.04,
-  "fim": 41.12
+  "inicio": 40.8,
+  "fim": 40.84
  },
  {
   "palavra": "no",
-  "inicio": 41.2,
-  "fim": 41.28
+  "inicio": 40.88,
+  "fim": 41.04
  },
  {
   "palavra": "pouso.",
-  "inicio": 41.36,
-  "fim": 41.84
+  "inicio": 41.093,
+  "fim": 41.6
  },
  {
   "palavra": "Então,",
-  "inicio": 42.0,
-  "fim": 42.48
+  "inicio": 41.72,
+  "fim": 42.16
  },
  {
   "palavra": "da",
-  "inicio": 42.56,
-  "fim": 42.64
+  "inicio": 42.24,
+  "fim": 42.32
  },
  {
   "palavra": "próxima",
-  "inicio": 42.72,
-  "fim": 43.04
+  "inicio": 42.36,
+  "fim": 42.64
  },
  {
   "palavra": "vez",
-  "inicio": 43.12,
-  "fim": 43.28
+  "inicio": 42.72,
+  "fim": 42.96
  },
  {
   "palavra": "que",
-  "inicio": 43.32,
-  "fim": 43.36
+  "inicio": 43.0,
+  "fim": 43.04
  },
  {
   "palavra": "estiver",
-  "inicio": 43.44,
-  "fim": 43.68
+  "inicio": 43.12,
+  "fim": 43.36
  },
  {
   "palavra": "na",
-  "inicio": 43.72,
-  "fim": 43.76
+  "inicio": 43.4,
+  "fim": 43.44
  },
  {
   "palavra": "janela...",
-  "inicio": 43.84,
-  "fim": 44.56
+  "inicio": 43.52,
+  "fim": 44.24
  },
  {
   "palavra": "repara...",
-  "inicio": 44.64,
-  "fim": 45.36
+  "inicio": 44.36,
+  "fim": 45.04
  }
 ]

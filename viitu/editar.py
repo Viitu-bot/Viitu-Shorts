@@ -658,6 +658,37 @@ def _kit_e_sfx(cfg: dict, palavras: list[dict], pub: Path) -> tuple[dict, list[d
     return nomes, eventos
 
 
+def _sons_da_animacao(segs: list[dict], animacoes: list[dict], pub: Path) -> list[dict]:
+    """SOUND DESIGN DO 3D: cada cena de animação declara seus efeitos amarrados aos eventos dela:
+    "animacao": {..., "sfx": [{"evento": "batesse", "busca": "<som em inglês>", "exigir": "regex", "db": -4,
+                               "desloc": 0, "dur": 3}]}
+    O som vem da biblioteca Sonniss (CLAP escuta e escolhe; escolha guardada em escolhas.json), normalizado à
+    referência da voz (viitu/mix.py) e tocado no quadro do evento com o nível "db" relativo à voz."""
+    from viitu.foley import _som_sonniss
+    from viitu.mix import normalizar
+    out, n = [], 0
+    for s, a in zip([g for g in segs if g.get("animacao")], animacoes):
+        for e in s["animacao"].get("sfx", []):
+            arq = _som_sonniss(e["busca"], e.get("min", 0.5), e.get("exigir"))
+            if not arq:
+                continue
+            ev = e.get("evento")
+            f = a["f0"] + (a["eventos"].get(ev, 0) if ev else 0) + int(e.get("desloc", 0) * FPS)
+            nome = f"anim_sfx_{n}.mp3"
+            dur = e.get("dur", 4)
+            corte = pasta_tmp = pub / f"_tmp_{n}.mp3"
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{e.get('ini', 0):.2f}", "-i", arq, "-t", f"{dur:.2f}",
+                            "-af", f"afade=t=out:st={max(dur - 0.4, 0):.2f}:d=0.4", str(corte)], check=True)
+            normalizar(corte, pub / nome, "pontual")
+            corte.unlink(missing_ok=True)
+            out.append({"f": max(f, 0), "som": nome, "vol": round(10 ** (e.get("db", -6) / 20), 4),
+                        "dur": int(dur * FPS) + 10})
+            n += 1
+    if out:
+        print("Sons do 3D:", ", ".join(f"{o['som']}@{o['f'] / FPS:.1f}s" for o in out))
+    return out
+
+
 def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: dict,
                       video: Path, audio: Path, dur: float) -> None:
     import shutil
@@ -739,6 +770,7 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
                            "texto": c.get("texto", "💬 COMENTA")} if isinstance(c, dict)
                 else ({"f0": segs[-1]["f0"] + 6, "texto": "INSCREVA-SE"} if c else None))(cfg.get("cta", False)),   # canais: sem CTA explícito na maioria
     }
+    plano["sfx"] += _sons_da_animacao(segs, plano["animacoes"], pub)
     (pub / "plano.json").write_text(json.dumps(plano, ensure_ascii=False), encoding="utf-8")
     print(f"Plano Remotion exportado: {pub.relative_to(RAIZ)}/plano.json")
 

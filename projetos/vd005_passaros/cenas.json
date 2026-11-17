@@ -16,29 +16,23 @@
  ],
  "musica": "tensao_documentario.mp3",
  "cta": false,
- "creditos_descricao": "Imagens: Pixabay e Wikimedia Commons (foto da turbina: Ekki01, CC BY-SA 3.0). Animações 3D: Viitu Shorts.",
+ "creditos_descricao": "Imagens: Pixabay e Wikimedia Commons (foto do gavião no nariz do C-130: Air Combat Command, domínio público). Animações 3D: Viitu Shorts.",
  "cenas": [
   {
-   "em": "Repara nessa turbina",
-   "clipe": "commons_Jet_engine_damaged_by_bird_strike.jpg",
-   "foco": [
-    0.42,
-    0.5
-   ],
-   "alvo": [
-    0.45,
-    0.55
-   ],
+   "em": "Repara no nariz desse avião",
+   "clipe": "commons_C-130_and_Hawk_in_nosecone_outside.jpg",
+   "layout": "inteiro",
    "zoom": [
     1.0,
-    1.15
+    1.06
    ],
    "seta_auto": {
-    "texto": "bent fan blades of a jet engine"
+    "texto": "a dead hawk"
    },
-   "esperado": "engine",
+   "esperado": "bird",
+   "revisao": "manual",
    "_funcao": "prova (gancho)",
-   "foley": "vento"
+   "foley": "turbina"
   },
   {
    "em": "e ninguém consegue impedir",
@@ -46,7 +40,7 @@
    "inicio": 5.0,
    "esperado": "bird",
    "_contraste": "céu aberto, muitos pássaros",
-   "foley": "vento"
+   "foley": "passaros"
   },
   {
    "em": "A maioria acha",
@@ -58,7 +52,7 @@
    ],
    "revisao": "manual",
    "_contraste": "close frontal da turbina girando",
-   "foley": "aviao"
+   "foley": "turbina"
   },
   {
    "em": "Mas a turbina engole",
@@ -71,9 +65,24 @@
     "fase": "ar",
     "eventos": {
      "travaria": "travaria"
-    }
+    },
+    "sfx": [
+     {
+      "busca": "air suction whoosh",
+      "exigir": "whoosh|air|suction|swoosh",
+      "db": -10,
+      "dur": 2
+     },
+     {
+      "evento": "travaria",
+      "busca": "jet turbine engine winding down",
+      "exigir": "jet|turbine|aircraft|airliner",
+      "db": -9,
+      "dur": 3
+     }
+    ]
    },
-   "foley": "vento"
+   "foley": "turbina"
   },
   {
    "em": "Pior: quando o pássaro",
@@ -87,9 +96,41 @@
     "eventos": {
      "batesse": "batesse",
      "metal": "metal"
-    }
+    },
+    "sfx": [
+     {
+      "evento": "batesse",
+      "busca": "heavy body impact thud",
+      "exigir": "impact|thud|hit|punch",
+      "db": -3,
+      "dur": 1.5
+     },
+     {
+      "evento": "batesse",
+      "busca": "metal debris crash and clatter",
+      "exigir": "metal",
+      "db": -5,
+      "desloc": 0.1,
+      "dur": 2
+     },
+     {
+      "evento": "metal",
+      "busca": "metal grinding and scraping inside a machine",
+      "exigir": "metal|grind|scrap",
+      "db": -7,
+      "desloc": -0.6,
+      "dur": 3
+     },
+     {
+      "evento": "metal",
+      "busca": "engine explosion bang",
+      "exigir": "explosion|bang|blast",
+      "db": -5,
+      "dur": 2.5
+     }
+    ]
    },
-   "foley": "vento"
+   "foley": "turbina"
   },
   {
    "em": "Por isso fizeram o contrário",
@@ -102,9 +143,27 @@
     "fase": "teste",
     "eventos": {
      "disparados": "disparados"
-    }
+    },
+    "sfx": [
+     {
+      "evento": "disparados",
+      "busca": "compressed air cannon launch blast",
+      "exigir": "cannon|pneumatic|compressed|air|blast|launch",
+      "db": -4,
+      "desloc": -0.15,
+      "dur": 2
+     },
+     {
+      "evento": "disparados",
+      "busca": "heavy impact thud",
+      "exigir": "impact|thud|hit",
+      "db": -4,
+      "desloc": 0.25,
+      "dur": 1.5
+     }
+    ]
    },
-   "foley": "vento"
+   "foley": "hangar"
   },
   {
    "em": "Mas tem um porém",
@@ -115,7 +174,7 @@
     1.3
    ],
    "revisao": "manual",
-   "foley": "aviao"
+   "foley": "turbina"
   },
   {
    "em": "um bando inteiro",
@@ -130,9 +189,41 @@
      "turbinas": "duas turbinas",
      "pousou": "pousou no rio",
      "todos": "Todos sobreviveram"
-    }
+    },
+    "sfx": [
+     {
+      "busca": "geese honking flock flying",
+      "exigir": "geese|goose|honk|bird",
+      "db": -9,
+      "desloc": 0.2,
+      "dur": 3.5
+     },
+     {
+      "evento": "turbinas",
+      "busca": "engine explosion bang",
+      "exigir": "explosion|bang|blast",
+      "db": -4,
+      "dur": 2
+     },
+     {
+      "evento": "turbinas",
+      "busca": "jet turbine engine winding down",
+      "exigir": "jet|turbine|aircraft|airliner",
+      "db": -9,
+      "desloc": 0.5,
+      "dur": 3
+     },
+     {
+      "evento": "pousou",
+      "busca": "large heavy water splash close",
+      "exigir": "splash",
+      "db": -4,
+      "desloc": 0.3,
+      "dur": 2.5
+     }
+    ]
    },
-   "foley": "vento"
+   "foley": "voo"
   },
   {
    "em": "E quase toda colisão",
@@ -140,7 +231,7 @@
    "inicio": 0.5,
    "esperado": "airplane",
    "_contraste": "chão, avião na pista",
-   "foley": "aviao"
+   "foley": "turbina"
   },
   {
    "em": "Então, da próxima vez",
@@ -148,7 +239,7 @@
    "inicio": 1.0,
    "revisao": "manual",
    "_contraste": "janela, asa (loop)",
-   "foley": "aviao"
+   "foley": "cabine"
   }
  ]
 }

@@ -3,10 +3,10 @@
  "_regra": "dB relativos à voz (0 = mesmo volume da voz). Todo som é normalizado à referência da voz antes (viitu/mix.py): leitos pela loudness integrada, efeitos curtos pelo pico percebido.",
  "mix_db": {
   "voz": 0,
-  "musica_fala": -18,
+  "musica_fala": -14,
   "musica_pausa": -6,
-  "ambiencia": -12,
-  "foley_detalhe": -5,
+  "ambiencia": -18,
+  "foley_detalhe": -12,
   "som_original": -16,
   "whoosh": -3,
   "pop": -5,
@@ -29,5 +29,6 @@
   "seta_frame0": "vermelha (80% usam seta no frame 0)",
   "legenda": "branca, destaque amarelo, contorno, centro-inferior, animação pop",
   "cta": "nenhum explícito na maioria (19/35); loop no lugar"
- }
+ },
+ "_ajuste_17_11": "Ouvido do dono: com música −18 e foley −12/−5 a trilha sumia e o vento cobria tudo. Música −14 sob a fala; foley −18 (ambiência) / −12 (detalhe). Efeitos pontuais do 3D: nível próprio por evento (cenas.json)."
 }

@@ -20,7 +20,7 @@ export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, numb
 export type Plano = {
   fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
   cortes: number[]; impactos: number[]; foley?: {f0: number; f1: number; som: string; vol: number}[]; foley_mix?: boolean;
-  kit?: Record<string, string[]>; mix?: Record<string, number>; visual?: Record<string, number | boolean>; sfx?: {f: number; som: string; vol: number}[];
+  kit?: Record<string, string[]>; mix?: Record<string, number>; visual?: Record<string, number | boolean>; sfx?: {f: number; som: string; vol?: number; dur?: number}[];
   animacoes?: {nome: string; fase: string; f0: number; f1: number; eventos: Record<string, number>}[]; cta: {f0: number; texto: string} | null;
 };
 
@@ -288,7 +288,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
 
       {/* sons de FUNÇÃO (número → ding, dinheiro → moeda, mito → buzzer...) */}
       {(plano.sfx ?? []).map((e, k) => (
-        <Sequence key={`sx${k}`} from={e.f} durationInFrames={60}><Audio src={staticFile(e.som)} volume={M(plano,'ding')} /></Sequence>
+        <Sequence key={`sx${k}`} from={e.f} durationInFrames={e.dur ?? 60}><Audio src={staticFile(e.som)} volume={e.vol ?? M(plano,'ding')} /></Sequence>
       ))}
 
       <FlashIdentidade />
