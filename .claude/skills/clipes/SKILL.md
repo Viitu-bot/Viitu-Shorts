@@ -5,6 +5,9 @@ description: Escolhe e baixa os VÍDEOS que representam cada frase do roteiro do
 
 # /clipes: escolher cenas como um editor
 
+**Meta de proporção (A vida é uma maravilha, 13 vídeos):** ~80% clipe real (viral vertical de TikTok/Douyin/Instagram/X),
+3D só no trecho impossível de filmar (1–2 inserções). Cada cena real ganha o foley da ação que aparece (`sfx_cena`).
+
 Regra de ouro: **vídeo, não foto.** Foto só para uma prova visual impossível em vídeo (ex.: macro
 de pupila) ou para uma demonstração com efeito, no máximo 2 vezes por vídeo.
 **Clipe-âncora primeiro:** se existir um vídeo real do fenômeno (Reddit/TikTok/Douyin, enviado

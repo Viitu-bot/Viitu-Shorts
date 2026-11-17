@@ -50,6 +50,22 @@ aparece na maioria vira regra; listagem som-a-som do Gemini se mostrou não conf
 Conclusão: o padrão do nicho é **limpo e consistente** (música constante + whoosh nos cortes + pop nas marcas +
 foley + 2 booms + animação curta). Efeito "engraçadinho" ou de função não faz parte da linguagem desses canais.
 
+## 0b. A VIDA É UMA MARAVILHA a fundo — 13 Shorts do nicho, os de mais views (17/11/2026)
+Dados: `pesquisa/canais/avidamaravilha_edicao.md` (ficha cena a cena, `python3 -m viitu.canal_profundo`). Consenso entre vídeos:
+| Elemento | O que ele faz | Nome técnico (CapCut) | Viitu |
+|---|---|---|---|
+| Imagem | **83% clipe real** (vídeo viral de TikTok/Douyin/Instagram, 72% vertical nativo); 3D só 13% (realista, Blender/stock) | — | estávamos 3D demais: 3D só no que não existe em vídeo |
+| Corte | 99% corte seco | hard cut | igual |
+| Som do clipe | **removido em 83% das cenas e REFEITO com foley da ação** (grude, água, impacto, clique, bolhas) | foley | foley de ação por cena (`sfx_cena`), não só ambiência |
+| Transição | whoosh em ~metade dos cortes | Whoosh/Swoosh | igual (kit `whoosh_corte`) |
+| Ênfase | hit/impacto em "não", valores, nomes; sub drop na revelação; pop na seta/legenda; ding no detalhe | Hit, Sub drop, Pop, Ding | falta o hit nas palavras-chave |
+| Câmera | punch-in nas palavras-chave (25 vezes em 13 vídeos); zoom in lento em clipe parado | Punch-in / Ken Burns | igual (punch 4,5%) |
+| Marcação | seta vermelha no começo; círculo raro | — | igual |
+| Música | constante, baixa (phonk/suspense cinematográfico), **sobe no fim** para o loop | — | falta subir no fim |
+| Legenda | branca, 1 palavra, **palavra-chave colorida** (amarelo/ciano/verde), centro-inferior, entra quicando | Quicar (bounce) | nosso formato: dourada no terço superior (manter; testar só o destaque) |
+| Voz | IA masculina grave | — | Otto |
+| Estrutura | gancho visual chocante → pergunta → explicação → prova real → virada → fecho que emenda | — | igual ao HISA |
+
 ## 1. Identidade sonora do Viitu (o que faz reconhecer o canal sem ler o nome)
 Canal grande se reconhece pelo **conjunto pequeno e fixo** de sons que se repete em todo vídeo, sempre na
 mesma função. Regra: poucos sons, sempre os mesmos papéis, alternando 3 variações de cada.

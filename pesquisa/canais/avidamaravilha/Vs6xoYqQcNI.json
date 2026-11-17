@@ -1,0 +1,276 @@
+{
+ "id": "Vs6xoYqQcNI",
+ "titulo": "Professores aprendem truque de segurança 🔒",
+ "dur": 76,
+ "views": 11278457,
+ "likes": 374673,
+ "coment": 9641,
+ "data": "2026-10-11",
+ "hora": 18,
+ "dia": "dom",
+ "tags": [
+  "seguranca escolar",
+  "estados unidos",
+  "voce sabia",
+  "curiosidades",
+  "dispositivo barricada",
+  "nightlock",
+  "barracuda defense",
+  "lockdown escolar",
+  "ALICE protocol",
+  "fatos interessantes",
+  "shorts curiosidades",
+  "aprender algo novo",
+  "protecao escolar",
+  "carteiras protetoras",
+  "protocolos escolares",
+  "tecnologia de seguranca",
+  "protecao infantil",
+  "educacao americana",
+  "infraestrutura escolar",
+  "polietileno balistico",
+  "escolas publicas",
+  "treinamento de professores",
+  "prevencao escolar",
+  "inovacao educacional"
+ ],
+ "categoria": "perigo/erro/segurança",
+ "gatilho": "utilidade (truque)",
+ "objeto": "segurança professores",
+ "busca_en": "teacher safety hack",
+ "previo": {
+  "views": 85099104,
+  "titulo": "Samjhe Steam Power ? #scienceandfun #ashusir #physics #experiment #hack",
+  "canal": "Science and fun",
+  "data": "2025-10-13",
+  "idioma": "hi",
+  "atraso_dias": 363,
+  "link": "https://youtube.com/shorts/JY2gVdZs8wQ"
+ },
+ "grupo": "top",
+ "ficha": {
+  "cenas": [
+   {
+    "inicio": "00:00",
+    "fim": "00:02",
+    "narracao": "Você já se perguntou",
+    "imagem": "Policial demonstrando trava de cadeira em porta",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral (TikTok/Instagram)",
+    "pistas_da_origem": "marca d'água @avidamaravilha, proporção 9:16",
+    "enquadramento": "vertical nativo",
+    "movimento": "punch-in",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'perguntou'"
+    ],
+    "marcacao_na_tela": "seta vermelha apontando para a cadeira",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "impacto metálico quando a cadeira toca a porta"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:02",
+    "fim": "00:05",
+    "narracao": "porque tantos professores nos Estados Unidos",
+    "imagem": "Professora em sala de aula travando porta com cadeira",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral",
+    "pistas_da_origem": "qualidade de câmera de celular",
+    "enquadramento": "vertical nativo",
+    "movimento": "punch-in",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'Estados Unidos'"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "clique metálico"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:05",
+    "fim": "00:12",
+    "narracao": "estão aprendendo a trancar portas... empurravam mesas ou cadeiras",
+    "imagem": "Simulação de emergência em escola asiática",
+    "tipo": "clipe real",
+    "origem_provavel": "reportagem/TV",
+    "pistas_da_origem": "baixa resolução, aspecto de câmera de segurança",
+    "enquadramento": "horizontal recortado",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "arrastar de móveis"
+    ],
+    "som_original_do_clipe": "mantido baixo",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:12",
+    "fim": "00:18",
+    "narracao": "isso pode atrasar alguém... atinge a fechadura e a moldura",
+    "imagem": "Close em cadeira travando maçaneta",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral",
+    "pistas_da_origem": "detalhe técnico da trava",
+    "enquadramento": "vertical nativo",
+    "movimento": "punch-in",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'fechadura'"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "impacto",
+    "som_dentro": [
+     "batida de porta"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:18",
+    "fim": "00:33",
+    "narracao": "algumas salas agora usam dispositivo de segurança fixado no chão",
+    "imagem": "Demonstração da trava Nightlock no chão",
+    "tipo": "clipe real",
+    "origem_provavel": "câmera do fabricante",
+    "pistas_da_origem": "iluminação profissional, foco no produto",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "clique metálico",
+    "som_dentro": [
+     "encaixe de metal (foley)"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:33",
+    "fim": "00:43",
+    "narracao": "em vez de colocar toda pressão na fechadura... difícil de arrombar",
+    "imagem": "Homens tentando arrombar porta com chutes e marreta",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo de teste/fabricante",
+    "pistas_da_origem": "cenário de teste controlado",
+    "enquadramento": "horizontal recortado",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "impacto forte",
+    "som_dentro": [
+     "sons de chutes e marretadas sincronizados"
+    ],
+    "som_original_do_clipe": "mantido baixo",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:43",
+    "fim": "00:47",
+    "narracao": "mas uma porta mais forte ainda é só a primeira camada",
+    "imagem": "Cadeira sendo colocada na maçaneta novamente",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral",
+    "pistas_da_origem": "repetição de tema visual",
+    "enquadramento": "vertical nativo",
+    "movimento": "punch-in",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'primeira'"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "clique metálico"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:47",
+    "fim": "01:15",
+    "narracao": "algumas escolas testando carteiras protetoras... material balístico",
+    "imagem": "Demonstração de mesa escolar blindada e simulação 3D",
+    "tipo": "clipe real|3D realista",
+    "origem_provavel": "câmera do fabricante/simulação 3D",
+    "pistas_da_origem": "estética de produto inovador, render 3D limpo",
+    "enquadramento": "vertical nativo",
+    "movimento": "zoom in lento",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'balístico'"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "riser",
+    "som_dentro": [
+     "som de porta de correr metálica",
+     "impacto surdo"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   }
+  ],
+  "musica": {
+   "estilo": "Cinematográfico de suspense/tensão",
+   "andamento": "médio",
+   "volume_vs_voz": "baixo",
+   "momentos_em_que_muda": [
+    "00:00 inicia tensão",
+    "01:14 fade out final"
+   ]
+  },
+  "camadas_de_som": {
+   "diegetico_dos_clipes": "Usa sons de impactos e travas para reforçar realismo.",
+   "foley_adicionado": "Cliques metálicos, batidas de porta e whooshes de transição.",
+   "sfx_de_transicao": "Whoosh e Risers entre mudanças de assunto.",
+   "sfx_de_enfase": "Impactos (hits) em palavras-chave como 'fechadura' e 'balístico'."
+  },
+  "tres_d": {
+   "tem": true,
+   "estilo": "realista",
+   "parece_feito_em": "stock 3D",
+   "assinatura_visual": "Iluminação de estúdio, fundo infinito cinza, animação suave de peças.",
+   "como_alterna_com_real": "Corte seco entre o vídeo da pessoa usando a mesa e o render técnico."
+  },
+  "legenda": {
+   "palavras_por_vez": 1,
+   "cor_base": "branco",
+   "cor_destaque": "amarelo",
+   "posicao": "centro-inferior",
+   "animacao": "pop/escala no surgimento"
+  },
+  "estrutura_do_roteiro": [
+   "gancho: pergunta sobre professores e cadeiras",
+   "contexto: métodos antigos e falhas",
+   "solução 1: dispositivo de trava de chão (Nightlock)",
+   "prova: teste de resistência da porta",
+   "solução 2: carteiras com proteção balística",
+   "fecho: resumo das camadas de proteção"
+  ],
+  "assinatura_do_canal": [
+   "Legendas dinâmicas de uma palavra",
+   "Uso constante de punch-ins para manter ritmo",
+   "Foley de metal/impacto exagerado",
+   "Setas vermelhas de indicação no início",
+   "Roteiro focado em curiosidades de segurança/tecnologia"
+  ]
+ }
+}

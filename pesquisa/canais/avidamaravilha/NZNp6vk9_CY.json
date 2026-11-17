@@ -1,0 +1,371 @@
+{
+ "id": "NZNp6vk9_CY",
+ "titulo": "Essa máquina nunca é desligada ⛏️",
+ "dur": 69,
+ "views": 7426634,
+ "likes": 242880,
+ "coment": 1584,
+ "data": "2026-10-10",
+ "hora": 18,
+ "dia": "sáb",
+ "tags": [],
+ "categoria": "como é feito (processo/fábrica)",
+ "gatilho": "surpresa visual (olha isso)",
+ "objeto": "máquina contínua",
+ "busca_en": "machines that never stop",
+ "ficha": {
+  "cenas": [
+   {
+    "inicio": "00:00",
+    "fim": "00:03",
+    "narracao": "desligar essa máquina é tão absurdamente caro",
+    "imagem": "roda de caçambas escavando terra escura",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral (TikTok/Douyin/Instagram)",
+    "pistas_da_origem": "qualidade de rede social, ângulo de drone",
+    "enquadramento": "vertical nativo",
+    "movimento": "zoom in lento",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'caro'"
+    ],
+    "marcacao_na_tela": "seta vermelha apontando para a roda",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "whoosh na transição de zoom"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:03",
+    "fim": "00:05",
+    "narracao": "que os engenheiros literalmente deixam ela ligada sempre",
+    "imagem": "escavadora gigante parada em campo verde",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral (TikTok/Douyin/Instagram)",
+    "pistas_da_origem": "ângulo baixo, céu nublado",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "nenhum"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:05",
+    "fim": "00:06",
+    "narracao": "ela pesa mais de 14",
+    "imagem": "roda de caçambas em operação",
+    "tipo": "clipe real",
+    "origem_provavel": "stock",
+    "pistas_da_origem": "alta resolução, luz solar direta",
+    "enquadramento": "horizontal recortado",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "hit",
+    "som_dentro": [
+     "nenhum"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:06",
+    "fim": "00:08",
+    "narracao": "mil toneladas",
+    "imagem": "simulação da máquina em mundo Minecraft",
+    "tipo": "3D cartoon",
+    "origem_provavel": "simulação 3D comprada/canal de 3D",
+    "pistas_da_origem": "estética de blocos Minecraft",
+    "enquadramento": "horizontal recortado",
+    "movimento": "pan",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "nenhum"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:08",
+    "fim": "00:11",
+    "narracao": "e é maior que a maioria dos prédios",
+    "imagem": "pessoa de laranja andando sob a roda gigante",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral (TikTok/Douyin/Instagram)",
+    "pistas_da_origem": "escala humana para comparação",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'prédios'"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "hit",
+    "som_dentro": [
+     "whoosh no punch-in"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:11",
+    "fim": "00:15",
+    "narracao": "mas se move tão devagar que você consegue ultrapassar ela andando",
+    "imagem": "máquina se movendo lateralmente em mina",
+    "tipo": "clipe real",
+    "origem_provavel": "stock",
+    "pistas_da_origem": "estabilização profissional",
+    "enquadramento": "horizontal recortado",
+    "movimento": "pan acompanhando",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "nenhum"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:15",
+    "fim": "00:21",
+    "narracao": "a parte maluca é que mesmo quando não tem trabalho para fazer eles nunca apertam o botão de desligar",
+    "imagem": "grupo de engenheiros observando a roda verde",
+    "tipo": "clipe real",
+    "origem_provavel": "reportagem/TV",
+    "pistas_da_origem": "qualidade de broadcast, pessoas uniformizadas",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'desligar'"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "hit",
+    "som_dentro": [
+     "whoosh no punch-in"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:21",
+    "fim": "00:25",
+    "narracao": "trazer esse motor gigantesco para uma parada completa e ligar de novo",
+    "imagem": "homem de costas olhando máquina enferrujada",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral (TikTok/Douyin/Instagram)",
+    "pistas_da_origem": "estética urbana/industrial abandonada",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "nenhum"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:25",
+    "fim": "00:33",
+    "narracao": "consome tanta energia e dinheiro que é literalmente mais barato manter ela funcionando 365 dias por ano",
+    "imagem": "drone sobrevoando estrutura da escavadora",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral (TikTok/Douyin/Instagram)",
+    "pistas_da_origem": "movimento de drone FPV/cinemático",
+    "enquadramento": "vertical nativo",
+    "movimento": "zoom out lento",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "hit",
+    "som_dentro": [
+     "nenhum"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:33",
+    "fim": "00:39",
+    "narracao": "por isso a Bagger 293 o maior veículo terrestre do mundo nunca dorme",
+    "imagem": "caminhonete branca passando em frente à máquina",
+    "tipo": "clipe real",
+    "origem_provavel": "câmera do fabricante/empresa",
+    "pistas_da_origem": "veículo de serviço com logo",
+    "enquadramento": "horizontal recortado",
+    "movimento": "pan",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "nenhum"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:39",
+    "fim": "00:44",
+    "narracao": "ela consome 16,56 megawatts de eletricidade",
+    "imagem": "roda escavando parede de terra",
+    "tipo": "clipe real",
+    "origem_provavel": "stock",
+    "pistas_da_origem": "ângulo clássico de documentário",
+    "enquadramento": "horizontal recortado",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "hit",
+    "som_dentro": [
+     "nenhum"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:44",
+    "fim": "00:51",
+    "narracao": "o suficiente para abastecer 30 mil casas ao mesmo tempo e mesmo assim só precisa de 5 pessoas para operar",
+    "imagem": "close na roda de caçambas despejando terra",
+    "tipo": "clipe real",
+    "origem_provavel": "stock",
+    "pistas_da_origem": "detalhe técnico da operação",
+    "enquadramento": "horizontal recortado",
+    "movimento": "zoom in lento",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "nenhum"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:51",
+    "fim": "00:55",
+    "narracao": "todo dia ela move 240 mil metros cúbicos de terra",
+    "imagem": "caçambas subindo com terra",
+    "tipo": "clipe real",
+    "origem_provavel": "stock",
+    "pistas_da_origem": "detalhe em câmera lenta",
+    "enquadramento": "horizontal recortado",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "hit",
+    "som_dentro": [
+     "nenhum"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:55",
+    "fim": "01:07",
+    "narracao": "equivalente ao trabalho de 40 mil operários custou mais de 500 milhões de reais e levou 10 anos para ser construída e montada na Alemanha onde extrai carvão desde 1995",
+    "imagem": "roda gigante escavando encosta de areia",
+    "tipo": "clipe real",
+    "origem_provavel": "stock",
+    "pistas_da_origem": "plano aberto, escala massiva",
+    "enquadramento": "horizontal recortado",
+    "movimento": "zoom in lento",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in final"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "hit no valor monetário"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   }
+  ],
+  "musica": {
+   "estilo": "Cinematográfica/Tensa",
+   "andamento": "médio",
+   "volume_vs_voz": "baixo",
+   "momentos_em_que_muda": [
+    "00:00 início com batida constante"
+   ]
+  },
+  "camadas_de_som": {
+   "diegetico_dos_clipes": "removido totalmente",
+   "foley_adicionado": "não detectado",
+   "sfx_de_transicao": "whooshes em quase todos os cortes",
+   "sfx_de_enfase": "hits/impactos em palavras-chave e números"
+  },
+  "tres_d": {
+   "tem": true,
+   "estilo": "cartoon",
+   "parece_feito_em": "Minecraft",
+   "assinatura_visual": "blocos, estética de jogo",
+   "como_alterna_com_real": "corte seco entre real e simulação"
+  },
+  "legenda": {
+   "palavras_por_vez": 1,
+   "cor_base": "branco",
+   "cor_destaque": "amarelo e ciano",
+   "posicao": "centro-inferior",
+   "animacao": "pop-up/escala"
+  },
+  "estrutura_do_roteiro": [
+   "gancho: custo de desligar",
+   "curiosidade: nunca desliga",
+   "especificações: peso e tamanho",
+   "explicação técnica: custo de reinício",
+   "dados de performance: energia e volume de terra",
+   "histórico: custo e origem"
+  ],
+  "assinatura_do_canal": [
+   "legendas dinâmicas de uma palavra",
+   "uso frequente de whoosh e hit",
+   "punch-ins constantes para manter retenção",
+   "mix de imagens reais e simulações",
+   "setas vermelhas para guiar o olhar"
+  ]
+ }
+}

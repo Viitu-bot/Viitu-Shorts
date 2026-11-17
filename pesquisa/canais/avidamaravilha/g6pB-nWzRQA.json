@@ -1,0 +1,266 @@
+{
+ "id": "g6pB-nWzRQA",
+ "titulo": "O CLT mais infernal de todos 🔥⚠️",
+ "dur": 37,
+ "views": 7201862,
+ "likes": 103292,
+ "coment": 780,
+ "data": "2026-06-13",
+ "hora": 18,
+ "dia": "sáb",
+ "tags": [
+  "usina de aco",
+  "laminacao de aco",
+  "industria pesada",
+  "profissoes perigosas",
+  "voce sabia",
+  "curiosidades",
+  "metalurgia",
+  "fabrica de aco",
+  "hot mill",
+  "trabalho perigoso",
+  "china industria",
+  "automacao industrial",
+  "seguranca do trabalho",
+  "siderurgia",
+  "fatos interessantes",
+  "shorts curiosidades",
+  "aprender algo novo",
+  "aco incandescente",
+  "fundicao",
+  "processos industriais",
+  "trabalho insalubre",
+  "robos industriais",
+  "profissao de risco",
+  "engenharia metalurgica"
+ ],
+ "categoria": "perigo/erro/segurança",
+ "gatilho": "perigo/medo",
+ "objeto": "trabalho infernal",
+ "busca_en": "dangerous work conditions",
+ "ficha": {
+  "cenas": [
+   {
+    "inicio": "00:00",
+    "fim": "00:04",
+    "narracao": "por que é tão difícil contratar trabalhadores numa usina de laminação de aço?",
+    "imagem": "Trabalhador manuseando barra de aço incandescente.",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral (TikTok/Instagram)",
+    "pistas_da_origem": "qualidade de celular, ângulo amador, legenda em português sobreposta.",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'difícil'",
+     "zoom in lento"
+    ],
+    "marcacao_na_tela": "seta vermelha apontando para a barra",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "whoosh na entrada da seta",
+     "hit/impacto em 'difícil'"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:04",
+    "fim": "00:08",
+    "narracao": "parece simples, mas o perigo vai muito além do que você imagina",
+    "imagem": "Outro trabalhador puxando barra quente com gancho.",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral",
+    "pistas_da_origem": "ambiente industrial precário",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'imagina'"
+    ],
+    "marcacao_na_tela": "círculo amarelo destacando a ponta da barra",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "hit em 'imagina'"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:08",
+    "fim": "00:16",
+    "narracao": "quando uma barra de aço incandescente sai da máquina, os trabalhadores têm que agarrar a ponta na hora e alimentarem outra máquina",
+    "imagem": "Montagem rápida de vários trabalhadores em diferentes máquinas.",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral",
+    "pistas_da_origem": "cortes rápidos de diferentes fontes",
+    "enquadramento": "vertical nativo",
+    "movimento": "acelerado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "speed ramp para agilizar o processo"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "foley de metal sendo arrastado"
+    ],
+    "som_original_do_clipe": "mantido baixo",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:16",
+    "fim": "00:19",
+    "narracao": "se não forem rápidos o suficiente, as consequências são desastrosas",
+    "imagem": "Barra de aço chicoteando e saindo do trilho.",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral",
+    "pistas_da_origem": "baixa resolução, cena de acidente",
+    "enquadramento": "horizontal recortado",
+    "movimento": "parado",
+    "efeito_na_entrada": "flash branco",
+    "efeitos_dentro": [
+     "camera shake no momento do chicoteio"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "boom/sub drop",
+    "som_dentro": [
+     "som de chicote/estalo"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:19",
+    "fim": "00:22",
+    "narracao": "uma barra de 10 metros pode chicotear pelo galpão inteiro",
+    "imagem": "Trabalhador desviando de barra que voa pelo chão.",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral",
+    "pistas_da_origem": "ângulo de câmera de segurança",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'inteiro'"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "hit em 'inteiro'"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:22",
+    "fim": "00:23",
+    "narracao": "se acertar alguém, o ferimento é grave",
+    "imagem": "Barra atingindo o teto e gerando faíscas.",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral",
+    "pistas_da_origem": "faíscas e luz intensa",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "slow motion no impacto"
+    ],
+    "marcacao_na_tela": "círculo azul no ponto de impacto",
+    "som_no_corte": "hit",
+    "som_dentro": [
+     "foley de faíscas/eletricidade"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:23",
+    "fim": "00:26",
+    "narracao": "e o ambiente é praticamente infernal",
+    "imagem": "Trabalhador suado operando em calor extremo.",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral",
+    "pistas_da_origem": "brilho avermelhado na imagem",
+    "enquadramento": "vertical nativo",
+    "movimento": "zoom in lento",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "filtro de calor/ondulação"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "foley de fogo/labareda"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:26",
+    "fim": "00:35",
+    "narracao": "com temperatura constantemente acima de 60 graus celsius. é por isso que, não importa o salário, ainda é extremamente difícil encontrar trabalhadores",
+    "imagem": "Trabalhador comemorando após manobra bem-sucedida.",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral",
+    "pistas_da_origem": "reação genuína de alívio",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in final em 'trabalhadores'"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "ding no final"
+    ],
+    "som_original_do_clipe": "mantido alto no grito final",
+    "musica": "sobe volume no final"
+   }
+  ],
+  "musica": {
+   "estilo": "Suspense rítmico com batida industrial",
+   "andamento": "médio",
+   "volume_vs_voz": "baixo",
+   "momentos_em_que_muda": [
+    "00:16 sobe o tom para aumentar tensão",
+    "00:34 sobe volume para o encerramento"
+   ]
+  },
+  "camadas_de_som": {
+   "diegetico_dos_clipes": "Usa pouco, apenas para gritos ou impactos metálicos específicos.",
+   "foley_adicionado": "Sons de metal, fogo e estalos de chicote para realismo.",
+   "sfx_de_transicao": "Whooshes rápidos em quase todos os cortes.",
+   "sfx_de_enfase": "Hits/impactos em palavras-chave como 'difícil' e 'desastrosas'."
+  },
+  "tres_d": {
+   "tem": false,
+   "estilo": "null",
+   "parece_feito_em": "null",
+   "assinatura_visual": "null",
+   "como_alterna_com_real": "null"
+  },
+  "legenda": {
+   "palavras_por_vez": 1,
+   "cor_base": "branco",
+   "cor_destaque": "ciano e verde",
+   "posicao": "centro inferior",
+   "animacao": "pop-up com leve tremor"
+  },
+  "estrutura_do_roteiro": [
+   "gancho: pergunta sobre dificuldade de contratação",
+   "explicação: como funciona o processo perigoso",
+   "prova: cenas de acidentes e chicoteio de barras",
+   "contexto: condições ambientais extremas (calor)",
+   "fecho: conclusão reforçando o gancho inicial"
+  ],
+  "assinatura_do_canal": [
+   "Legendas dinâmicas de uma palavra",
+   "Uso frequente de setas e círculos de destaque",
+   "SFX de impacto sincronizado com a fala",
+   "Cortes rápidos de vídeos virais de baixa qualidade",
+   "Narrativa focada em curiosidades perigosas"
+  ]
+ }
+}

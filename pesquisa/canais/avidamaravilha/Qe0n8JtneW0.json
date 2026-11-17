@@ -1,0 +1,245 @@
+{
+ "id": "Qe0n8JtneW0",
+ "titulo": "Posso nadar aqui? Nunca! ⚠️",
+ "dur": 71,
+ "views": 5972760,
+ "likes": 169463,
+ "coment": 648,
+ "data": "2026-10-06",
+ "hora": 12,
+ "dia": "ter",
+ "tags": [
+  "seguranca aquatica",
+  "perigo na agua",
+  "voce sabia",
+  "curiosidades",
+  "refracao da luz",
+  "correntes de retorno",
+  "lagos de cratera",
+  "rip current",
+  "kawah ijen",
+  "rio qiantang",
+  "fatos interessantes",
+  "shorts curiosidades",
+  "aprender algo novo",
+  "pororoca",
+  "karenia brevis",
+  "espuma do mar",
+  "semporna",
+  "poluicao marinha",
+  "afogamento",
+  "salva vidas",
+  "dicas de seguranca",
+  "aguas perigosas",
+  "natacao segura",
+  "meio ambiente",
+  "OMS"
+ ],
+ "categoria": "perigo/erro/segurança",
+ "gatilho": "perigo/medo",
+ "objeto": "nadar perigo",
+ "busca_en": "dangerous swimming spots",
+ "ficha": {
+  "cenas": [
+   {
+    "inicio": "00:00",
+    "fim": "00:10",
+    "narracao": "Posso nadar aqui? Absolutamente não. Não se deixe enganar pela refração da água...",
+    "imagem": "Cachoeira pequena com poço aparentemente raso; câmera submerge revelando profundidade.",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral (TikTok/Douyin/Instagram)",
+    "pistas_da_origem": "marca d'água @avidamaravilha, qualidade de celular",
+    "enquadramento": "vertical nativo",
+    "movimento": "zoom in lento seguido de mergulho da câmera",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'absolutamente'",
+     "máscara de transição para baixo d'água"
+    ],
+    "marcacao_na_tela": "seta vermelha apontando para o poço",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "hit/impacto em 'não'",
+     "som de bolhas ao submergir"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:10",
+    "fim": "00:19",
+    "narracao": "Posso nadar aqui? Não pode. Esse tipo de poço profundo geralmente se conecta a rios subterrâneos...",
+    "imagem": "Homem com vara testando profundidade de buraco em rio verde.",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral (TikTok/Douyin/Instagram)",
+    "pistas_da_origem": "proporção vertical, baixa resolução",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'não pode'"
+    ],
+    "marcacao_na_tela": "seta vermelha apontando para o buraco",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "hit em 'não'"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:19",
+    "fim": "00:31",
+    "narracao": "Posso nadar aqui? Isso é um lago de cratera ácida, extremamente corrosivo...",
+    "imagem": "Lago azul turquesa (Kawah Ijen) com fumaça vulcânica e teste de corrosão.",
+    "tipo": "clipe real",
+    "origem_provavel": "reportagem/TV",
+    "pistas_da_origem": "proporção horizontal recortada, qualidade profissional",
+    "enquadramento": "horizontal recortado",
+    "movimento": "pan e zoom in",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "slow motion no objeto dissolvendo"
+    ],
+    "marcacao_na_tela": "seta vermelha no lago",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "som de efervescência/ácido"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:31",
+    "fim": "00:43",
+    "narracao": "Posso nadar aqui? Não pode. Isso é espuma do mar, feita de impurezas orgânicas e poluentes...",
+    "imagem": "Cidades e praias cobertas por densa camada de espuma branca.",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral (TikTok/Douyin/Instagram)",
+    "pistas_da_origem": "múltiplos clipes de fontes variadas",
+    "enquadramento": "horizontal recortado",
+    "movimento": "pan e tremida de câmera",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "match cut entre diferentes locais com espuma"
+    ],
+    "marcacao_na_tela": "seta vermelha na espuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "som de vento/mar"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:43",
+    "fim": "00:51",
+    "narracao": "Posso nadar aqui? Não pode. Isso é uma corrente de retorno mortal, geralmente escondida...",
+    "imagem": "Simulação de areia movediça/redemoinho sugando água na praia.",
+    "tipo": "3D realista",
+    "origem_provavel": "simulação 3D comprada/canal de 3D",
+    "pistas_da_origem": "física da água e areia perfeita demais para ser real",
+    "enquadramento": "horizontal recortado",
+    "movimento": "zoom in lento",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in no centro do redemoinho"
+    ],
+    "marcacao_na_tela": "seta vermelha no redemoinho",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "som de sucção/vácuo"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:51",
+    "fim": "00:58",
+    "narracao": "Posso nadar aqui? Isso é Semporna. Não se iluda... vira a cabeça e olha, é tudo lixo flutuante.",
+    "imagem": "Escada para mar cristalino que revela montanha de lixo ao girar a câmera.",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral (TikTok/Douyin/Instagram)",
+    "pistas_da_origem": "POV de celular, movimento brusco",
+    "enquadramento": "vertical nativo",
+    "movimento": "whip pan (virada rápida de câmera)",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "motion blur no movimento da câmera"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "hit dramático na revelação do lixo"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:58",
+    "fim": "01:10",
+    "narracao": "Posso nadar aqui? Isso é um afluente do rio Qiantang... a pororoca pode chegar a 9 metros.",
+    "imagem": "Ondas geométricas perfeitas no rio seguidas de inundação urbana.",
+    "tipo": "clipe real",
+    "origem_provavel": "reportagem/TV",
+    "pistas_da_origem": "proporção horizontal, logos chineses ao fundo",
+    "enquadramento": "horizontal recortado",
+    "movimento": "pan acompanhando a onda",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in na onda quebrando"
+    ],
+    "marcacao_na_tela": "seta vermelha na onda",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "som de água forte/estouro"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   }
+  ],
+  "musica": {
+   "estilo": "Suspense/Tensão cinematográfica",
+   "andamento": "médio",
+   "volume_vs_voz": "baixo",
+   "momentos_em_que_muda": [
+    "00:00 início da trilha constante",
+    "01:10 fade out final"
+   ]
+  },
+  "camadas_de_som": {
+   "diegetico_dos_clipes": "não usa; áudio original totalmente substituído",
+   "foley_adicionado": "bolhas, efervescência, vento, sucção de água",
+   "sfx_de_transicao": "whooshes em todos os cortes de cena",
+   "sfx_de_enfase": "hits/impactos nas palavras 'não' e 'absolutamente'"
+  },
+  "tres_d": {
+   "tem": true,
+   "estilo": "realista",
+   "parece_feito_em": "Unreal ou stock 3D",
+   "assinatura_visual": "simulação de fluidos e partículas de areia",
+   "como_alterna_com_real": "inserido como se fosse um local real entre outros clipes"
+  },
+  "legenda": {
+   "palavras_por_vez": 1,
+   "cor_base": "branco",
+   "cor_destaque": "amarelo ou verde",
+   "posicao": "centro inferior",
+   "animacao": "pop/escala no surgimento"
+  },
+  "estrutura_do_roteiro": [
+   "gancho: pergunta recorrente 'Posso nadar aqui?'",
+   "negação: resposta negativa imediata",
+   "explicação: revelação do perigo oculto",
+   "repetição: estrutura cíclica para retenção",
+   "fecho: curiosidade final sobre fenômeno natural"
+  ],
+  "assinatura_do_canal": [
+   "uso constante de setas vermelhas",
+   "legendas dinâmicas de uma palavra",
+   "trilha sonora de suspense",
+   "curadoria de vídeos virais/satisfatórios",
+   "narração em tom de alerta/curiosidade"
+  ]
+ }
+}

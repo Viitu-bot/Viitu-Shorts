@@ -1,0 +1,363 @@
+{
+ "id": "jwyd6jNraZM",
+ "titulo": "Por que não colocam tela no motor do avião? ✈️",
+ "views": 2608589,
+ "dur": 63,
+ "canal": "A vida é uma maravilha",
+ "ficha": {
+  "cenas": [
+   {
+    "inicio": "00:00",
+    "fim": "00:01",
+    "narracao": "O motor de um avião",
+    "imagem": "3D: figuras humanas sugadas por turbina.",
+    "tipo": "3D realista",
+    "origem_provavel": "simulação 3D comprada/canal de 3D",
+    "pistas_da_origem": "estética de simulação física de partículas",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'motor'"
+    ],
+    "marcacao_na_tela": "seta vermelha indicando turbina",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "whoosh na sucção"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:01",
+    "fim": "00:05",
+    "narracao": "é tão potente que pode sugar um pássaro",
+    "imagem": "3D: pássaro sugado por turbina em voo.",
+    "tipo": "3D realista",
+    "origem_provavel": "simulação 3D comprada/canal de 3D",
+    "pistas_da_origem": "grid azul no fundo",
+    "enquadramento": "vertical nativo",
+    "movimento": "pan acompanhando o pássaro",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "slow motion no impacto"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "hit/impacto no choque"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:05",
+    "fim": "00:11",
+    "narracao": "então por que não colocam uma tela protetora",
+    "imagem": "3D: tela metálica surge na frente do motor.",
+    "tipo": "3D realista",
+    "origem_provavel": "simulação 3D comprada/canal de 3D",
+    "pistas_da_origem": "mesmo cenário de grid",
+    "enquadramento": "vertical nativo",
+    "movimento": "zoom in lento",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "punch-in em 'tela'"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "sfx metálico ao aparecer a tela"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:11",
+    "fim": "00:12",
+    "narracao": "nenhum pássaro morra",
+    "imagem": "Real: pássaros voando perto de avião pousando.",
+    "tipo": "clipe real",
+    "origem_provavel": "stock",
+    "pistas_da_origem": "qualidade cinematográfica, horizontal recortado",
+    "enquadramento": "horizontal recortado",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "som de turbina baixo"
+    ],
+    "som_original_do_clipe": "mantido baixo",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:12",
+    "fim": "00:15",
+    "narracao": "motor a jato projetado para puxar ar",
+    "imagem": "3D: fluxo de ar azul entrando na turbina.",
+    "tipo": "3D realista",
+    "origem_provavel": "simulação 3D comprada/canal de 3D",
+    "pistas_da_origem": "partículas de fluxo",
+    "enquadramento": "vertical nativo",
+    "movimento": "zoom in",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "whoosh",
+    "som_dentro": [
+     "sfx de vento"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:15",
+    "fim": "00:18",
+    "narracao": "se colocar uma tela na frente",
+    "imagem": "Real: close em turbina de avião no pátio.",
+    "tipo": "clipe real",
+    "origem_provavel": "stock",
+    "pistas_da_origem": "alta definição, céu azul",
+    "enquadramento": "horizontal recortado",
+    "movimento": "zoom in lento",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "nenhum"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:18",
+    "fim": "00:23",
+    "narracao": "menos ar entraria reduzindo o empuxo",
+    "imagem": "3D: tela bloqueando fluxo de ar.",
+    "tipo": "3D realista",
+    "origem_provavel": "simulação 3D comprada/canal de 3D",
+    "pistas_da_origem": "grid azul",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "sfx de motor falhando"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:23",
+    "fim": "00:26",
+    "narracao": "se um pássaro grande atingir a tela",
+    "imagem": "Real: POV de janela de avião, motor explode.",
+    "tipo": "clipe real",
+    "origem_provavel": "vídeo viral",
+    "pistas_da_origem": "baixa qualidade, amador",
+    "enquadramento": "horizontal recortado",
+    "movimento": "tremida de câmera",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "boom/impacto",
+    "som_dentro": [
+     "explosão"
+    ],
+    "som_original_do_clipe": "mantido alto",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:26",
+    "fim": "00:32",
+    "narracao": "pedaços quebrados seriam sugados",
+    "imagem": "3D: tela quebrando e entrando no motor.",
+    "tipo": "3D realista",
+    "origem_provavel": "simulação 3D comprada/canal de 3D",
+    "pistas_da_origem": "grid azul",
+    "enquadramento": "vertical nativo",
+    "movimento": "zoom in",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "sfx de metal quebrando"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:32",
+    "fim": "00:40",
+    "narracao": "motores usam pás de titânio resistentes",
+    "imagem": "3D: pássaro atingindo pás da turbina.",
+    "tipo": "3D realista",
+    "origem_provavel": "simulação 3D comprada/canal de 3D",
+    "pistas_da_origem": "detalhe das pás",
+    "enquadramento": "vertical nativo",
+    "movimento": "slow motion extremo",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "hit abafado"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:40",
+    "fim": "00:45",
+    "narracao": "conseguem quebrar em pedaços pequenos",
+    "imagem": "3D: pássaro sendo triturado internamente.",
+    "tipo": "3D realista",
+    "origem_provavel": "simulação 3D comprada/canal de 3D",
+    "pistas_da_origem": "visão interna do motor",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "sfx de trituração"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:45",
+    "fim": "00:49",
+    "narracao": "mantendo o motor funcionando",
+    "imagem": "Real: avião da Qantas decolando.",
+    "tipo": "clipe real",
+    "origem_provavel": "stock",
+    "pistas_da_origem": "logo da Qantas, horizontal recortado",
+    "enquadramento": "horizontal recortado",
+    "movimento": "pan acompanhando decolagem",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "som de turbina"
+    ],
+    "som_original_do_clipe": "mantido baixo",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:49",
+    "fim": "00:53",
+    "narracao": "motores passam por testes de certificação",
+    "imagem": "Real: teste de ingestão de pássaro em bancada.",
+    "tipo": "clipe real",
+    "origem_provavel": "câmera do fabricante/empresa",
+    "pistas_da_origem": "ambiente de laboratório, alta velocidade",
+    "enquadramento": "horizontal recortado",
+    "movimento": "câmera lenta",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "impacto seco"
+    ],
+    "som_original_do_clipe": "mantido baixo",
+    "musica": "continua"
+   },
+   {
+    "inicio": "00:53",
+    "fim": "01:02",
+    "narracao": "canhões de pássaros contra turbinas",
+    "imagem": "3D: canhão disparando pássaro em turbina.",
+    "tipo": "3D realista",
+    "origem_provavel": "simulação 3D comprada/canal de 3D",
+    "pistas_da_origem": "estilo de simulação técnica",
+    "enquadramento": "vertical nativo",
+    "movimento": "parado",
+    "efeito_na_entrada": "corte seco",
+    "efeitos_dentro": [
+     "nenhum"
+    ],
+    "marcacao_na_tela": "nenhuma",
+    "som_no_corte": "nenhum",
+    "som_dentro": [
+     "sfx de disparo",
+     "impacto"
+    ],
+    "som_original_do_clipe": "removido",
+    "musica": "continua"
+   }
+  ],
+  "musica": {
+   "estilo": "Cinematográfica de suspense/curiosidade",
+   "andamento": "médio",
+   "volume_vs_voz": "baixo",
+   "momentos_em_que_muda": [
+    "00:00 início constante"
+   ]
+  },
+  "camadas_de_som": {
+   "diegetico_dos_clipes": "Usa sons de turbina e explosão em clipes reais.",
+   "foley_adicionado": "Whooshes, impactos metálicos, trituração e vento.",
+   "sfx_de_transicao": "Whooshes rápidos nos cortes de cena 3D.",
+   "sfx_de_enfase": "Impactos (hits) sincronizados com colisões de pássaros."
+  },
+  "tres_d": {
+   "tem": true,
+   "estilo": "realista",
+   "parece_feito_em": "Blender",
+   "assinatura_visual": "Uso de grid azul de fundo e simulação de partículas de sangue/metal.",
+   "como_alterna_com_real": "Cortes secos entre simulação explicativa e prova real."
+  },
+  "legenda": {
+   "palavras_por_vez": 1,
+   "cor_base": "branco",
+   "cor_destaque": "verde",
+   "posicao": "centro-inferior",
+   "animacao": "pop-up simples"
+  },
+  "estrutura_do_roteiro": [
+   "gancho: visual chocante de sucção",
+   "pergunta: por que não usar tela?",
+   "explicação: perda de empuxo e risco de quebra",
+   "solução: pás de titânio",
+   "prova: testes de certificação",
+   "fecho: demonstração do canhão"
+  ],
+  "assinatura_do_canal": [
+   "Legendas de uma palavra com destaque verde",
+   "Alternância constante entre 3D e stock footage",
+   "SFX de impacto exagerados",
+   "Uso de setas vermelhas no gancho",
+   "Narrador com tom informativo e acelerado"
+  ]
+ }
+}
