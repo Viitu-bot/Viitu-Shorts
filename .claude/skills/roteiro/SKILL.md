@@ -23,7 +23,11 @@ Pré-requisito: tema validado por `/tema` (prova ≥ 1M, lacuna PT-BR, categoria
    (cada frase = um passo que dá para desenhar).
 4. **Virada:** "Mas tem um porém…" (segundo problema/bastidor) → `impacto_em`.
 5. **Conexão/consequência** (Brasil, vida de quem assiste) — opcional, só se for forte.
-6. **CTA curto** (pergunta simples) + **loop:** frase final suspensa (`...`) que emenda na 1ª palavra.
+6. **CTA-elogio + loop (fórmula do próprio canal — ~200 inscritos em 10 mil views no vídeo do martim-pescador):**
+   "[sujeito] é [qualidade rara/admirável]… **igual você, inscrito do canal. Se não é, já se inscreve** pra [ver/saber]…"
+   — o elogio liga o espectador ao tema e a frase suspensa emenda no gancho (loop). Ex.: "…uma engenharia genial,
+   igual você, inscrito do canal. Se não é, já se inscreve pra ver se…". Na tela: "SE INSCREVE" + rosto/gesto positivo.
+   (Dado do dono vale mais que a média dos canais de referência, que quase não usam CTA.)
 
 ## 3. Evidências
 Todo fato com [CONFIRMADO] + fonte ou [INCERTO]. Nada [INCERTO] no texto final.

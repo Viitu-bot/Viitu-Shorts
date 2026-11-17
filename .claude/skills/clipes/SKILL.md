@@ -11,6 +11,9 @@ de pupila) ou para uma demonstração com efeito, no máximo 2 vezes por vídeo.
 pelo usuário via link do Drive ou TikTok), ele é a espinha do vídeo e o stock só completa.
 
 ## 0. Regras (definidas com o dono)
+- **Gancho = um sujeito só do começo ao fim da frase.** Cada palavra de ação aparece NESSE sujeito: "Repara nas rodas
+  desse carro **na curva**" → o mesmo carro, e em "curva" ele está fazendo a curva (corte antes da palavra, mesmo
+  carro). Trocar de sujeito/clipe no meio da frase do gancho separa os conceitos e confunde (dono, vd006).
 - **Toda cena é escolhida com o cuidado do gancho:** representa exatamente a frase E tem apelo visual (o melhor
   trecho, assunto em destaque, enquadrado). Sem cena de enchimento. Decidir NA ESCOLHA, não consertar depois.
 - **Contraste com a cena anterior:** mudar pelo menos 1 eixo — escala, quantidade, direção (`"espelhar": true`),

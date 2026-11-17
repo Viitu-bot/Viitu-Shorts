@@ -86,7 +86,7 @@ qualquer trecho de música/filme/meme famoso (Content ID). Boom só 1–2 por v�
 | Explicação de mecanismo | **animação (2D/3D)** | whoosh na entrada + foley da animação | o "porquê" desenhado |
 | Mudança de lugar | corte com nova ambiência | ambiência nova entra antes (J) | |
 | Ação na tela (cai, bate, acende) | corte NA ação | efeito pontual sincronizado | |
-| Pergunta ao espectador / CTA | botão/adesivo | pop + clique | último 10% |
+| CTA (padrão do canal) | "SE INSCREVE" na tela + rosto/joinha | pop | CTA-elogio ligado ao tema + loop (`/roteiro`, item 6) |
 | Loop (última frase) | volta à 1ª imagem | som contínuo emenda no início | sem silêncio no fim |
 
 ## 4. Mapa de decisão: TIPO DE CENA → tratamento
