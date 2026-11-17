@@ -11,6 +11,7 @@ Adicionar: `python -m viitu.hall adicionar <link>` (ou peça no chat: `/analisar
 | 8,304,772 | 1.4% | 25s | 2.7 | KSO Descobre | [Essas portas não são pequenas à toa! 😳 #curiosidades #africa #lugares](https://youtube.com/shorts/JsKK1c--rcQ) | top do canal @ksodescobre |
 | 3,832,533 | 1.8% | 31s | 2.1 | KSO Descobre | [Ser militar na Índia só é possível se passar nesse teste 😳 #curiosidades #india #lugares](https://youtube.com/shorts/BtxtZUmFLMI) | top do canal @ksodescobre |
 | 3,665,288 | 3.0% | 42s | 2.5 | KSO Descobre | [Espiar essa van pode dar muito errado! 😳 #curiosidades #japão #lugares](https://youtube.com/shorts/ATmqYITooB8) | top do canal @ksodescobre |
+| 2,608,589 | 2.5% | 63s | 1.8 | A vida é uma maravilha | [Por que não colocam tela no motor do avião? ✈️](https://youtube.com/shorts/jwyd6jNraZM) | enviado pelo dono |
 | 2,417,749 | 1.8% | 32s | 1.7 | A vida é uma maravilha | [O pirulito mais saudável do mundo 🍭](https://youtube.com/shorts/A9qo_k3wFoQ) | enviado pelo dono |
 | 783,337 | 3.4% | 32s | 2.9 | Polaco sem Polônia | [A engenharia milenar para conservar carne sem geladeira! 🥩🇹🇷](https://youtube.com/shorts/-qFObICKecA) | enviado pelo dono |
 | 344,704 | 4.9% | 63s | 2.5 | Andre Shorts Br | [Esse peixe RESPIRA fora d'água!? 😮🐟](https://youtube.com/shorts/uKT5iq4_YMY) | enviado pelo dono |
@@ -18,13 +19,13 @@ Adicionar: `python -m viitu.hall adicionar <link>` (ou peça no chat: `/analisar
 
 ## 📊 Lições consolidadas (calculadas sobre todos os vídeos do Hall)
 
-- Vídeos analisados: **9**
-- **Seta vermelha no frame 0:** 7/9 (77%) · círculo em algum momento: 3/9
+- Vídeos analisados: **10**
+- **Seta vermelha no frame 0:** 8/10 (80%) · círculo em algum momento: 3/10
 - **Ritmo:** mediana de **2.5 s por cena**
-- **Legenda — posição:** centro-inferior (5), centro inferior (1), centro da tela / centro inferior (1), centro inferior da tela. (1)
-- **Legenda — palavras por vez:** 1 (8), 2 (1)
-- **Efeitos visuais mais usados:** texto animado (6), seta (6), zoom rápido (3), seta animada vermelha (3), seta animada (2), círculo (2), zoom (1), câmera lenta/close-up macro (1), legenda cinética com pop-in (1), círculo vermelho pulsante (1)
-- **Sons mais usados:** pop (3), woosh suave (2), ding (2), whoosh (2), woosh (2), som diegético (1), transição sutil (1), chiado de maçarico (1), estalo (1), rumble (1)
+- **Legenda — posição:** centro-inferior (5), centro inferior (2), centro da tela / centro inferior (1), centro inferior da tela. (1)
+- **Legenda — palavras por vez:** 1 (9), 2 (1)
+- **Efeitos visuais mais usados:** texto animado (7), seta (7), zoom rápido (3), seta animada vermelha (3), seta animada (2), círculo (2), zoom (1), câmera lenta/close-up macro (1), legenda cinética com pop-in (1), círculo vermelho pulsante (1)
+- **Sons mais usados:** pop (3), woosh (3), woosh suave (2), ding (2), whoosh (2), boom (2), som diegético (1), transição sutil (1), chiado de maçarico (1), estalo (1)
 
 ## 🎵 Músicas observadas
 
@@ -35,6 +36,7 @@ Adicionar: `python -m viitu.hall adicionar <link>` (ou peça no chat: `/analisar
 - **KSO Descobre** — Trilha sonora eletrônica de suspense/curiosidade em ritmo constante, em volume moderado logo abaixo da narração, mantendo a tensão da revelação.
 - **KSO Descobre** — Trilha instrumental de suspense e curiosidade em andamento médio, mixada em volume secundário abaixo da narração clara de locução.
 - **KSO Descobre** — Trilha rítmica com percussão tribal/étnica moderna e batida envolvente em volume médio-baixo, servindo de cama para a locução gerada por IA.
+- **A vida é uma maravilha** — Trilha de suspense/curiosidade tecnológica, volume baixo para priorizar a narração clara.
 - **A vida é uma maravilha** — Trilha sonora ambiente misteriosa, tensa e científica em volume moderado, mantendo a voz em primeiro plano com clareza.
 - **Andre Shorts Br** — Trilha sonora calma, acústica e curiosa em segundo plano, mantida em volume suave sem competir com a locução.
 
@@ -66,6 +68,12 @@ Adicionar: `python -m viitu.hall adicionar <link>` (ou peça no chat: `/analisar
 - Contrapor uma hipótese lógica comum (ex: achar que é terremoto no Japão) antes de entregar a resposta real.
 - Uso de marcações pontuais como seta e círculo vermelho para direcionar o olhar em momentos-chave sem poluir o vídeo inteiro.
 - Revelação visual surpreendente mostrando o contraste de dentro vs. fora (o espelho falso visto pelos dois lados).
+
+**Por que não colocam tela no motor do avião? ✈️** (A vida é uma maravilha)
+- Use uma pergunta contra-intuitiva no início ('Por que não colocam uma tela?').
+- Alterne entre simulações didáticas e provas reais (testes de laboratório).
+- Destaque palavras-chave na legenda com cores vibrantes para reforçar o aprendizado visual.
+- Mantenha a narração sem pausas longas, preenchendo cada segundo com informação.
 
 **O pirulito mais saudável do mundo 🍭** (A vida é uma maravilha)
 - Comece com um clipe visualmente satisfatório ('oddly satisfying') no primeiro segundo acompanhado de seta para fixar o olhar.

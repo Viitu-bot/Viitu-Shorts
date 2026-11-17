@@ -11,6 +11,9 @@ O dono agenda no app do YouTube Studio (upload pela API trava em privado sem aud
 - Repete a LACUNA do gancho e não pressupõe conhecimento ("O olho da cabra faz algo que o seu não faz", não
   "Por que o olho da cabra gira?").
 - Fórmulas validadas nos canais BR: "A/O [coisa] que [faz algo incrível]" e "Esse [coisa] [faz algo absurdo]!?".
+- 3ª fórmula (A vida é uma maravilha: "Por que não colocam tela no motor do avião?" 2,6 mi; "Por que tampa tem anel
+  que arrebenta" 2,4 mi): **"Por que [objeto que TODO MUNDO conhece] (não) tem [detalhe/solução óbvia]?"** — é a pergunta
+  que o próprio espectador faria. Vale quando o objeto é conhecido; título vago ("O inimigo do avião...") é o pior caso.
 - 4–8 palavras, 1 emoji no fim, sem CAIXA ALTA gritando. Só em português (dublagem automática está ativa).
 
 ## 2. Descrição

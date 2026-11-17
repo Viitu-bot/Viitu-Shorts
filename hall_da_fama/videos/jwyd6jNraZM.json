@@ -1,0 +1,156 @@
+{
+ "meta": {
+  "id": "jwyd6jNraZM",
+  "link": "https://youtube.com/shorts/jwyd6jNraZM",
+  "titulo": "Por que não colocam tela no motor do avião? ✈️",
+  "canal": "A vida é uma maravilha",
+  "handle": "@avidamaravilha",
+  "inscritos_canal": 442000,
+  "publicado": "2026-10-19T21:00",
+  "duracao_s": 63,
+  "views": 2608589,
+  "likes": 64778,
+  "comentarios": 755,
+  "origem": "enviado pelo dono"
+ },
+ "raiox": {
+  "duracao_s": 62,
+  "gancho": {
+   "frase_falada": "O motor de um avião é tão potente que pode sugar um pássaro voando junto com o fluxo de ar.",
+   "o_que_aparece_no_frame_0": "Close-up de uma turbina de avião em 3D com uma seta vermelha apontando para o trem de pouso e uma massa de pássaros simulados no chão.",
+   "texto_na_tela": "motor",
+   "por_que_prende": "Utiliza um visual impactante e visceral (simulação de pássaros sendo sugados) para gerar curiosidade imediata sobre um perigo real da aviação."
+  },
+  "estrutura": [
+   {
+    "inicio": "00:00",
+    "fim": "00:10",
+    "funcao": "gancho",
+    "narracao": "O motor de um avião é tão potente que pode sugar um pássaro... Mas então, por que não colocam uma tela protetora?",
+    "imagem": "Simulação 3D de pássaros sendo sugados pela turbina e a proposta visual de uma grade."
+   },
+   {
+    "inicio": "00:11",
+    "fim": "00:23",
+    "funcao": "explicacao",
+    "narracao": "O motor a jato é projetado para puxar o máximo de ar possível. Uma tela reduziria o empuxo e aumentaria o consumo.",
+    "imagem": "Diagramas de fluxo de ar e aviões decolando."
+   },
+   {
+    "inicio": "00:24",
+    "fim": "00:33",
+    "funcao": "desmistificacao",
+    "narracao": "Se um pássaro grande quebrar a tela, os pedaços de metal causariam mais danos que o próprio pássaro.",
+    "imagem": "Simulação de colisão destrutiva com a grade metálica."
+   },
+   {
+    "inicio": "00:34",
+    "fim": "00:49",
+    "funcao": "explicacao",
+    "narracao": "Motores usam pás de titânio resistentes que quebram o pássaro em pedaços pequenos.",
+    "imagem": "Close-up das pás da turbina e simulação de pássaro sendo processado sem danificar o motor."
+   },
+   {
+    "inicio": "00:50",
+    "fim": "01:02",
+    "funcao": "explicacao",
+    "narracao": "Motores passam por testes de certificação com canhões de pássaros em alta velocidade.",
+    "imagem": "Imagens reais de testes de laboratório disparando carcaças contra turbinas."
+   }
+  ],
+  "cortes": [
+   {
+    "tempo": "00:01",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:05",
+    "tipo": "zoom"
+   },
+   {
+    "tempo": "00:11",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:23",
+    "tipo": "zoom"
+   },
+   {
+    "tempo": "00:33",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:50",
+    "tipo": "seco"
+   }
+  ],
+  "efeitos_visuais": [
+   {
+    "tempo": "00:00",
+    "efeito": "seta",
+    "em_qual_palavra": "null",
+    "para_que": "Direcionar o olhar para o ponto de sucção."
+   },
+   {
+    "tempo": "00:01",
+    "efeito": "texto animado",
+    "em_qual_palavra": "motor",
+    "para_que": "Enfatizar o sujeito do vídeo."
+   },
+   {
+    "tempo": "00:06",
+    "efeito": "grade sobreposta",
+    "em_qual_palavra": "tela",
+    "para_que": "Ilustrar a solução hipotética que será refutada."
+   },
+   {
+    "tempo": "00:26",
+    "efeito": "explosão/faíscas",
+    "em_qual_palavra": "quebrados",
+    "para_que": "Mostrar o perigo da falha da tela."
+   }
+  ],
+  "efeitos_sonoros": [
+   {
+    "tempo": "00:01",
+    "som": "turbina",
+    "momento": "Início da sucção."
+   },
+   {
+    "tempo": "00:05",
+    "som": "woosh",
+    "momento": "Transição para a pergunta."
+   },
+   {
+    "tempo": "00:26",
+    "som": "boom",
+    "momento": "Impacto do pássaro na tela."
+   },
+   {
+    "tempo": "00:55",
+    "som": "thud",
+    "momento": "Disparo do canhão de pássaros."
+   }
+  ],
+  "musica": "Trilha de suspense/curiosidade tecnológica, volume baixo para priorizar a narração clara.",
+  "legenda": {
+   "estilo": "Fonte bold, sem serifa, com sombra",
+   "posicao": "Centro inferior",
+   "palavras_por_vez": 1,
+   "cores": "Branco com destaque em Ciano/Azul claro"
+  },
+  "ritmo": {
+   "segundos_medios_por_cena": 1.8,
+   "observacao": "Ritmo acelerado com alternância constante entre simulação 3D e imagens reais para manter o engajamento."
+  },
+  "cta": "Não há CTA explícito (apenas marca d'água @avidamaravilha).",
+  "loop": "O vídeo termina falando de 'colisão' e o início mostra visualmente uma colisão/sucção, criando uma conexão temática.",
+  "origem_das_imagens": "Mix de simulações 3D (estilo Vision of America), imagens de arquivo de aviação comercial e vídeos de testes de engenharia aeroespacial.",
+  "licoes_para_copiar": [
+   "Use uma pergunta contra-intuitiva no início ('Por que não colocam uma tela?').",
+   "Alterne entre simulações didáticas e provas reais (testes de laboratório).",
+   "Destaque palavras-chave na legenda com cores vibrantes para reforçar o aprendizado visual.",
+   "Mantenha a narração sem pausas longas, preenchendo cada segundo com informação."
+  ]
+ }
+}

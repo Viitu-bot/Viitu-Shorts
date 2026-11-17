@@ -47,6 +47,8 @@ O usuário escolhe um e seguimos para `/clipes` e `/roteiro`.
    ```
    python3 -m viitu.tema lacuna "<tema em português, como um brasileiro buscaria>"
    ```
+   **Rode 3 frases diferentes** (o assunto, o objeto + "por que não", o ângulo da pergunta). No vd005 ("pássaro x avião")
+   a lacuna deu vazia, mas a A vida é uma maravilha tinha 2,6 mi com "Por que não colocam tela no motor do avião?".
    ATENÇÃO: o veredito do script olha só views. **Leia os títulos em PT** e julgue se são
    o MESMO tema e o MESMO ângulo. Vídeo PT de assunto diferente não conta como concorrência.
 
