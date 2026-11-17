@@ -41,11 +41,23 @@
   },
   {
    "em": "às vezes o único",
-   "clipe": "pixabay_148594.mp4",
-   "inicio": 8.0,
+   "clipe": "pixabay_44187.mp4",
+   "inicio": 6.0,
+   "foco": [
+    0.55,
+    0.45
+   ],
+   "alvo": [
+    0.55,
+    0.45
+   ],
+   "zoom": [
+    1.0,
+    1.1
+   ],
    "esperado": "fire",
-   "foley": "fogo_crepitando",
-   "_funcao": "quebra a caminhada: pinga-fogo derramando fogo"
+   "foley": "fogo_rugido",
+   "_contraste": "aéreo, incêndio grande (entre cenas no chão)"
   },
   {
    "em": "é com mais fogo",
@@ -164,38 +176,6 @@
    "esperado": "a person",
    "_contraste": "rostos da equipe, de dia",
    "foley": "fogo_rugido"
-  },
-  {
-   "em": "Aqui no Brasil",
-   "clipe": "pixabay_99867.mp4",
-   "inicio": 20.0,
-   "texto_na_imagem": false,
-   "esperado": "smoke",
-   "_funcao": "capim dourado (parece cerrado)",
-   "foley": "fogo_rugido",
-   "revisao": "manual",
-   "_contraste": "aéreo, de dia, campo enorme queimando",
-   "foco": [
-    0.55,
-    0.5
-   ],
-   "alvo": [
-    0.5,
-    0.6
-   ],
-   "zoom": [
-    1.0,
-    1.15
-   ]
-  },
-  {
-   "em": "Você teria coragem",
-   "clipe": "tiktok_4.mp4",
-   "inicio": 6.5,
-   "texto_na_imagem": true,
-   "esperado": "a person",
-   "_funcao": "silhueta contra o fogo",
-   "revisao": "manual"
   },
   {
    "em": "E da próxima vez",

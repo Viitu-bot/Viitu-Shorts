@@ -10,6 +10,24 @@ de pupila) ou para uma demonstração com efeito, no máximo 2 vezes por vídeo.
 **Clipe-âncora primeiro:** se existir um vídeo real do fenômeno (Reddit/TikTok/Douyin, enviado
 pelo usuário via link do Drive ou TikTok), ele é a espinha do vídeo e o stock só completa.
 
+## 0. Regras (definidas com o dono)
+- **Toda cena é escolhida com o cuidado do gancho:** representa exatamente a frase E tem apelo visual (o melhor
+  trecho, assunto em destaque, enquadrado). Sem cena de enchimento. Decidir NA ESCOLHA, não consertar depois.
+- **Contraste com a cena anterior:** mudar pelo menos 1 eixo — escala, quantidade, direção (`"espelhar": true`),
+  energia. `python3 -m viitu.contraste <proj> --aplicar`. Nunca espelhar imagem com texto/logo (`"texto_na_imagem": true`).
+- **Quando NÃO procurar clipe → `/animacao` (3D):** a cena explica um mecanismo que não existe em vídeo, é muito
+  difícil de achar ou é impossível de filmar (dentro do corpo, forças invisíveis, antes/depois, "o que acontece se").
+- **Triagem obrigatória** antes de escolher: `python3 -m viitu.triagem <proj>` (tela do app, preto, desfoque, corte
+  interno, resolução). REPROVADO não entra; < 720p só sem alternativa.
+- **De onde vêm as imagens:** comece pelo viral que validou o tema
+  (`viitu.assistir perguntar <link> "cenas, origem, marcas d'água"`) e busque esses ORIGINAIS. Prefira: Reddit
+  original, arquivo do criador com permissão, Pixabay/Commons, material gravado pelo dono. TikTok baixado vem em
+  576p com logo e tela final (o editor corta a tela final; crédito do @ na descrição). Clipes de terceiros: só os
+  que viralizaram. Evite stock com tag "ai generated".
+- **Brutos longos:** só com ≥ 1M de views (`viitu.tema brutos` filtra). Antes de pedir ao dono, verifique com
+  `python3 -m viitu.assistir achar <link> "<cenas>"` e passe o link + os minutos exatos de cada trecho.
+- Clipe de terceiros entra como PROVA no meio, não no gancho (gancho com imagem livre sempre que possível).
+
 ## 1. Plano de cenas por GATILHO PSICOLÓGICO
 Para cada frase do roteiro, defina a função da cena antes do objeto citado:
 
@@ -91,9 +109,8 @@ python3 -m viitu.clipes baixar <projeto> pixabay-foto <id>
 - `"marca": {"x":..,"y":..,"r":..}`: círculo vermelho sobre o detalhe (coordenadas 1080x1920).
 - `"efeito": "girar" | "desgirar"` para demonstrações.
 
-## 5. Revisão obrigatória
-Depois do render, extraia ~25 quadros (um por cena) numa prancha e olhe. Corrija
-enquadramento e cenas ruins **antes** de mandar ao usuário.
+## 5. Depois
+Montagem, verificações e prancha: `/editar`.
 
 ## Fontes
 - Pixabay (principal, livre), Wikimedia Commons (reserva, instável na nuvem).

@@ -13,9 +13,8 @@ O usuário escolhe um e seguimos para `/clipes` e `/roteiro`.
 1. **Dia:** use o dia que o usuário disse (o dia em que o vídeo será POSTADO). Sem dia, use amanhã.
    Leia `calendario.json` para saber a família do dia.
 
-2. **Chave:** se `python3 -m viitu.tema ...` der erro de chave/permissão, peça ao usuário
-   para mandar a chave da YouTube Data API e salve em `.env` como `YOUTUBE_API_KEY=...`
-   (o `.env` está no .gitignore; nunca faça commit dele).
+2. **Chave:** se `python3 -m viitu.tema ...` der erro de chave/permissão, NÃO peça a chave no chat:
+   diga ao dono para colocá-la nos secrets do ambiente (ou no `.env`, fora do git) e pare aqui.
 
 3. **Candidatos:**
    ```
@@ -23,7 +22,7 @@ O usuário escolhe um e seguimos para `/clipes` e `/roteiro`.
    ```
    Se quiser, acrescente buscas com `--extra "termo"` (em inglês/espanhol) para variar.
 
-3b. **Pesos de categoria/gatilho já estão na pontuação** (ver "LÓGICA DE ESCOLHA DE TEMA" no CLAUDE.md).
+3b. **Pesos de categoria/gatilho já estão na pontuação** (ver "Lógica de escolha" abaixo).
    Priorize: motivo oculto de objeto, recorde/"mais caro", perigo/erro, mito desmentido.
    Evite como tema principal: animal estranho sem "porquê", comida, corpo/saúde, truque, "olha isso".
 
@@ -33,7 +32,7 @@ O usuário escolhe um e seguimos para `/clipes` e `/roteiro`.
    - datas comemorativas de outros países (ex.: Diwali), temas sem "porquê" a explicar,
      conteúdo que dependa de idioma falado.
 
-5. **Nota 0–12** (critérios em `CLAUDE.md`). Fique com os ~6 melhores com nota ≥ 9.
+5. **Nota 0–12** (critérios abaixo). Fique com os ~6 melhores com nota ≥ 9.
 
 6. **Lacuna PT-BR** para cada um dos ~6:
    ```
@@ -72,3 +71,25 @@ O usuário escolhe um e seguimos para `/clipes` e `/roteiro`.
 - Cota: cada `candidatos` gasta ~600 unidades, cada `lacuna` ~100. Limite diário grátis: 10.000.
 - O vídeo estrangeiro é **prova de demanda e fonte de informação**; a imagem do nosso vídeo
   vem de outra fonte (ver `/clipes`).
+
+
+## Lógica de escolha (625 vídeos de 3 canais BR — `hall_da_fama/logica_temas.md`)
+1. Fonte = temas evergreen que já viralizaram lá fora (em média 1,5 a 2 anos antes). Pré-validação é
+   obrigatória, mas não separa sucesso de fracasso.
+2. O que separa é CATEGORIA + GATILHO (mediana de views):
+   🥇 motivo oculto de objeto/design (A vida 2,5M · GeneralTV 930k · KSO 2,7M) · 🥈 recorde/escala/"mais caro"
+   (2,0M · 1,9M) · 🥉 perigo/erro/segurança (1,4M · 979k). Gatilhos fortes: dinheiro/escala, mito desmentido,
+   motivo oculto, perigo/medo, processo revelado. Fracos: animal estranho, comida, corpo/saúde, truque,
+   lugar/cultura, "olha isso" sem explicação; título com pergunta direta ("Você conseguiria…?") ou vago.
+3. `viitu/tema.py` aplica PESO_CATEGORIA e PESO_GATILHO, busca temas de até 2 anos com ≥ 2M views.
+4. Bônus: tema cujo mecanismo dá uma boa ANIMAÇÃO 3D (o canal explica o "porquê" desenhado).
+
+## Nota 0–12 (0 a 2 por critério; produzir só com ≥ 9)
+Objeto do dia a dia · pergunta concreta (Por que / Como / O que acontece se) · resposta não aparece na imagem ·
+resposta surpreendente · afeta a vida de quem assiste · imagem forte para o frame 0.
+Validação: Short em outro idioma com views ≥ 3× a mediana do próprio canal e sem versão forte em PT-BR.
+
+## Tema que já existe em PT-BR: outro ÂNGULO
+Se a lacuna mostrar vídeos em português do mesmo tema (mesmo fracos):
+`python3 -m viitu.tema angulo "<tema>" "<busca em PT>"` e escolha um ângulo que nenhum usou (outro porquê,
+consequência, conexão com o Brasil, mito desmentido, número surpreendente).

@@ -135,3 +135,9 @@ qualquer trecho de música/filme/meme famoso (Content ID). Boom só 1–2 por v�
 ## Fontes
 YouTube Data API (medições acima); Sonniss (licença); Mixkit Sound Effects Free License; guias de SFX para Shorts
 (Soundstripe, CreatorSFX); preços Veo (BenchLM, Puter); limites grátis de IA (fast.io, aivideobootcamp).
+
+## Histórico (vindo do CLAUDE.md antigo, para referência)
+- Análise de 12 vídeos do próprio canal (~20k views, nov/2026): os que funcionaram tinham UM clipe-âncora real,
+  vertical, com início-meio-fim; clipe horizontal cortado para 9:16 fica ruim; stock só como complemento.
+- Primeiro raio-X de 9 virais (`hall_da_fama/README.md`, `pesquisa/raiox/`): seta no frame 0 em 77%, ~2,5 s por cena,
+  legenda de 1 palavra. A especificação atual (seção 00) substitui esses números onde houver conflito.

@@ -10,8 +10,6 @@ A maioria acha que bombeiro só apaga fogo. Mas quando um incêndio gigante vem 
 Eles queimam uma faixa de mato bem na frente do incêndio. Quando as chamas chegam ali, não encontram mais nada pra queimar... e morrem sozinhas.
 Mas tem um porém: um incêndio grande puxa o ar pra dentro dele. E os bombeiros usam isso: o próprio incêndio puxa o contrafogo na direção dele, e os dois se apagam quando se encontram.
 Só que, se o vento virar, o contrafogo vira um segundo incêndio. Por isso só equipes treinadas podem fazer isso.
-Aqui no Brasil, brigadistas do Cerrado também usam fogo controlado pra evitar incêndios piores.
-Você teria coragem de acender o fogo, sabendo que um erro queima tudo? Comenta.
 E da próxima vez que vir fogo na floresta, lembra: talvez esses bombeiros...
 
 ## Publicação (descrição)

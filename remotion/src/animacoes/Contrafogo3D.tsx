@@ -86,9 +86,9 @@ export const Contrafogo3D: React.FC<Props> = ({fase, dur, eventos}) => {
   const tApaga = eventos.apagam ?? Math.round(dur * 0.75);
   const fogoZ = fase === 'ar'
     ? interpolate(f, [0, dur], [-5.4, -4.6], cl)
-    : interpolate(f, [0, tApaga], [-4.6, ENCONTRO_Z - 0.15], cl);
+    : interpolate(f, [0, tApaga], [-4.6, ENCONTRO_Z], cl);
   const contraZ = fase === 'ar' ? ESTRADA_Z - 0.4
-    : interpolate(f, [0, tPuxa, tApaga], [ESTRADA_Z - 0.4, ESTRADA_Z - 1.0, ENCONTRO_Z + 0.15], cl);
+    : interpolate(f, [0, tPuxa, tApaga], [ESTRADA_Z - 0.4, ESTRADA_Z - 1.0, ENCONTRO_Z], cl);
   const alturaFogo = fase === 'ar' ? 1.5 : 1.5 * interpolate(f, [tApaga, tApaga + 18], [1, 0], cl);
   const alturaContra = fase === 'ar' ? 0 : interpolate(f, [0, 8], [0.25, 0.75], cl) * interpolate(f, [tApaga, tApaga + 18], [1, 0], cl);
   const fumacaForca = fase === 'encontro' ? 1 + interpolate(f, [tApaga, tApaga + 20], [0, 0.8], cl) : 1;
@@ -135,7 +135,7 @@ export const Contrafogo3D: React.FC<Props> = ({fase, dur, eventos}) => {
 
       {/* árvores: queimadas viram tronco preto */}
       {ARVORES.map((a, i) => {
-        const queimada = a.z < fogoZ - 0.3 || (fase === 'encontro' && a.z > contraZ + 0.3);
+        const queimada = a.z < fogoZ + 0.15 || (fase === 'encontro' && a.z > contraZ - 0.15);
         return (
           <group key={i} position={[a.x, 0, a.z]} scale={a.s}>
             <mesh position={[0, 0.25, 0]}>

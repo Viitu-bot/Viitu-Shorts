@@ -7,17 +7,17 @@
  {
   "palavra": "bombeiros",
   "inicio": 0.32,
-  "fim": 0.82
+  "fim": 0.88
  },
  {
   "palavra": "estão",
-  "inicio": 0.88,
-  "fim": 1.16
+  "inicio": 0.96,
+  "fim": 1.12
  },
  {
   "palavra": "colocando",
   "inicio": 1.2,
-  "fim": 1.6
+  "fim": 1.52
  },
  {
   "palavra": "fogo",
@@ -32,91 +32,91 @@
  {
   "palavra": "floresta...",
   "inicio": 2.24,
-  "fim": 3.04
+  "fim": 3.2
  },
  {
   "palavra": "de",
-  "inicio": 3.12,
-  "fim": 3.2
+  "inicio": 3.24,
+  "fim": 3.28
  },
  {
   "palavra": "propósito.",
   "inicio": 3.36,
-  "fim": 4.0
+  "fim": 4.08
  },
  {
   "palavra": "A",
-  "inicio": 4.24,
-  "fim": 4.28
+  "inicio": 4.32,
+  "fim": 4.4
  },
  {
   "palavra": "maioria",
-  "inicio": 4.32,
-  "fim": 4.72
+  "inicio": 4.48,
+  "fim": 4.88
  },
  {
   "palavra": "acha",
-  "inicio": 4.8,
-  "fim": 5.04
- },
- {
-  "palavra": "que",
-  "inicio": 5.12,
+  "inicio": 4.96,
   "fim": 5.2
  },
  {
+  "palavra": "que",
+  "inicio": 5.28,
+  "fim": 5.32
+ },
+ {
   "palavra": "bombeiro",
-  "inicio": 5.24,
-  "fim": 5.76
+  "inicio": 5.36,
+  "fim": 5.84
  },
  {
   "palavra": "só",
-  "inicio": 5.92,
-  "fim": 6.0
+  "inicio": 6.0,
+  "fim": 6.08
  },
  {
   "palavra": "apaga",
-  "inicio": 6.08,
-  "fim": 6.4
+  "inicio": 6.16,
+  "fim": 6.48
  },
  {
   "palavra": "fogo.",
-  "inicio": 6.48,
-  "fim": 7.04
+  "inicio": 6.56,
+  "fim": 7.12
  },
  {
   "palavra": "Mas",
-  "inicio": 7.16,
-  "fim": 7.28
+  "inicio": 7.24,
+  "fim": 7.36
  },
  {
   "palavra": "quando",
-  "inicio": 7.36,
-  "fim": 7.52
+  "inicio": 7.4,
+  "fim": 7.6
  },
  {
   "palavra": "um",
-  "inicio": 7.6,
-  "fim": 7.64
+  "inicio": 7.64,
+  "fim": 7.68
  },
  {
   "palavra": "incêndio",
-  "inicio": 7.68,
+  "inicio": 7.8,
   "fim": 8.16
  },
  {
   "palavra": "gigante",
-  "inicio": 8.24,
+  "inicio": 8.2,
   "fim": 8.8
  },
  {
   "palavra": "vem",
   "inicio": 8.84,
-  "fim": 9.04
+  "fim": 8.96
  },
  {
   "palavra": "vindo,",
-  "inicio": 9.08,
+  "inicio": 9.04,
   "fim": 9.52
  },
  {
@@ -131,267 +131,267 @@
  },
  {
   "palavra": "o",
-  "inicio": 10.24,
-  "fim": 10.32
+  "inicio": 10.2,
+  "fim": 10.24
  },
  {
   "palavra": "único",
-  "inicio": 10.4,
+  "inicio": 10.32,
   "fim": 10.64
  },
  {
   "palavra": "jeito",
   "inicio": 10.72,
-  "fim": 11.04
+  "fim": 10.96
  },
  {
   "palavra": "de",
-  "inicio": 11.08,
+  "inicio": 11.04,
   "fim": 11.12
  },
  {
   "palavra": "parar",
   "inicio": 11.2,
-  "fim": 11.44
+  "fim": 11.36
  },
  {
   "palavra": "o",
-  "inicio": 11.52,
-  "fim": 11.6
+  "inicio": 11.4,
+  "fim": 11.44
  },
  {
   "palavra": "fogo...",
-  "inicio": 11.64,
-  "fim": 12.24
+  "inicio": 11.52,
+  "fim": 12.16
  },
  {
   "palavra": "é",
-  "inicio": 12.28,
-  "fim": 12.32
+  "inicio": 12.2,
+  "fim": 12.24
  },
  {
   "palavra": "com",
-  "inicio": 12.4,
-  "fim": 12.56
+  "inicio": 12.32,
+  "fim": 12.48
  },
  {
   "palavra": "mais",
-  "inicio": 12.72,
-  "fim": 13.12
+  "inicio": 12.56,
+  "fim": 12.96
  },
  {
   "palavra": "fogo.",
-  "inicio": 13.2,
-  "fim": 13.6
+  "inicio": 13.0,
+  "fim": 13.36
  },
  {
   "palavra": "Eles",
-  "inicio": 13.84,
-  "fim": 14.08
+  "inicio": 13.6,
+  "fim": 13.84
  },
  {
   "palavra": "queimam",
-  "inicio": 14.16,
-  "fim": 14.48
+  "inicio": 13.92,
+  "fim": 14.24
  },
  {
   "palavra": "uma",
-  "inicio": 14.56,
-  "fim": 14.64
+  "inicio": 14.32,
+  "fim": 14.4
  },
  {
   "palavra": "faixa",
-  "inicio": 14.72,
-  "fim": 14.96
+  "inicio": 14.48,
+  "fim": 14.72
  },
  {
   "palavra": "de",
-  "inicio": 15.04,
-  "fim": 15.12
+  "inicio": 14.8,
+  "fim": 14.88
  },
  {
   "palavra": "mato",
-  "inicio": 15.16,
-  "fim": 15.52
+  "inicio": 14.92,
+  "fim": 15.2
  },
  {
   "palavra": "bem",
+  "inicio": 15.36,
+  "fim": 15.52
+ },
+ {
+  "palavra": "na",
   "inicio": 15.6,
   "fim": 15.76
  },
  {
-  "palavra": "na",
-  "inicio": 15.84,
-  "fim": 15.92
- },
- {
   "palavra": "frente",
-  "inicio": 16.0,
-  "fim": 16.24
+  "inicio": 15.8,
+  "fim": 16.08
  },
  {
   "palavra": "do",
-  "inicio": 16.32,
-  "fim": 16.36
+  "inicio": 16.12,
+  "fim": 16.16
  },
  {
   "palavra": "incêndio.",
-  "inicio": 16.4,
-  "fim": 17.04
+  "inicio": 16.28,
+  "fim": 16.88
  },
  {
   "palavra": "Quando",
-  "inicio": 17.08,
-  "fim": 17.2
+  "inicio": 16.933,
+  "fim": 17.04
  },
  {
   "palavra": "as",
-  "inicio": 17.24,
-  "fim": 17.28
+  "inicio": 17.12,
+  "fim": 17.2
  },
  {
   "palavra": "chamas",
-  "inicio": 17.36,
-  "fim": 17.68
+  "inicio": 17.24,
+  "fim": 17.52
  },
  {
   "palavra": "chegam",
-  "inicio": 17.76,
-  "fim": 18.0
+  "inicio": 17.6,
+  "fim": 17.84
  },
  {
   "palavra": "ali,",
-  "inicio": 18.12,
-  "fim": 18.48
+  "inicio": 17.96,
+  "fim": 18.32
  },
  {
   "palavra": "não",
-  "inicio": 18.52,
-  "fim": 18.64
+  "inicio": 18.347,
+  "fim": 18.4
  },
  {
   "palavra": "encontram",
-  "inicio": 18.72,
-  "fim": 19.12
+  "inicio": 18.48,
+  "fim": 18.88
  },
  {
   "palavra": "mais",
-  "inicio": 19.16,
-  "fim": 19.36
+  "inicio": 18.92,
+  "fim": 19.2
  },
  {
   "palavra": "nada",
-  "inicio": 19.44,
-  "fim": 19.68
+  "inicio": 19.28,
+  "fim": 19.52
  },
  {
   "palavra": "pra",
-  "inicio": 19.76,
-  "fim": 19.84
+  "inicio": 19.6,
+  "fim": 19.68
  },
  {
   "palavra": "queimar...",
-  "inicio": 19.92,
-  "fim": 20.56
+  "inicio": 19.76,
+  "fim": 20.48
  },
  {
   "palavra": "e",
-  "inicio": 20.6,
-  "fim": 20.64
+  "inicio": 20.52,
+  "fim": 20.56
  },
  {
   "palavra": "morrem",
-  "inicio": 20.72,
-  "fim": 21.04
+  "inicio": 20.64,
+  "fim": 20.96
  },
  {
   "palavra": "sozinhas.",
-  "inicio": 21.16,
+  "inicio": 21.04,
   "fim": 21.84
  },
  {
   "palavra": "Mas",
   "inicio": 22.0,
-  "fim": 22.32
+  "fim": 22.16
  },
  {
   "palavra": "tem",
-  "inicio": 22.4,
-  "fim": 22.56
+  "inicio": 22.24,
+  "fim": 22.32
  },
  {
   "palavra": "um",
-  "inicio": 22.6,
-  "fim": 22.64
+  "inicio": 22.4,
+  "fim": 22.48
  },
  {
   "palavra": "porém:",
-  "inicio": 22.72,
-  "fim": 23.28
+  "inicio": 22.56,
+  "fim": 23.04
  },
  {
   "palavra": "um",
-  "inicio": 23.32,
-  "fim": 23.36
+  "inicio": 23.08,
+  "fim": 23.12
  },
  {
   "palavra": "incêndio",
-  "inicio": 23.48,
-  "fim": 23.84
+  "inicio": 23.24,
+  "fim": 23.6
  },
  {
   "palavra": "grande",
-  "inicio": 23.92,
-  "fim": 24.32
+  "inicio": 23.68,
+  "fim": 24.08
  },
  {
   "palavra": "puxa",
-  "inicio": 24.48,
-  "fim": 24.8
+  "inicio": 24.24,
+  "fim": 24.56
  },
  {
   "palavra": "o",
-  "inicio": 24.88,
-  "fim": 24.96
+  "inicio": 24.64,
+  "fim": 24.72
  },
  {
   "palavra": "ar",
-  "inicio": 25.04,
-  "fim": 25.12
+  "inicio": 24.8,
+  "fim": 24.88
  },
  {
   "palavra": "pra",
-  "inicio": 25.2,
-  "fim": 25.28
+  "inicio": 24.96,
+  "fim": 25.12
  },
  {
   "palavra": "dentro",
-  "inicio": 25.36,
-  "fim": 25.68
+  "inicio": 25.2,
+  "fim": 25.44
  },
  {
   "palavra": "dele.",
-  "inicio": 25.76,
-  "fim": 26.16
+  "inicio": 25.52,
+  "fim": 26.0
  },
  {
   "palavra": "E",
-  "inicio": 26.2,
-  "fim": 26.24
+  "inicio": 26.04,
+  "fim": 26.08
  },
  {
   "palavra": "os",
-  "inicio": 26.28,
-  "fim": 26.32
+  "inicio": 26.12,
+  "fim": 26.16
  },
  {
   "palavra": "bombeiros",
-  "inicio": 26.4,
-  "fim": 26.88
+  "inicio": 26.24,
+  "fim": 26.8
  },
  {
   "palavra": "usam",
-  "inicio": 26.96,
+  "inicio": 26.88,
   "fim": 27.2
  },
  {
@@ -406,157 +406,157 @@
  },
  {
   "palavra": "próprio",
-  "inicio": 27.88,
+  "inicio": 27.92,
   "fim": 28.16
  },
  {
   "palavra": "incêndio",
   "inicio": 28.24,
-  "fim": 28.72
+  "fim": 28.88
  },
  {
   "palavra": "puxa",
-  "inicio": 28.88,
-  "fim": 29.16
+  "inicio": 28.96,
+  "fim": 29.2
  },
  {
   "palavra": "o",
-  "inicio": 29.2,
-  "fim": 29.28
+  "inicio": 29.28,
+  "fim": 29.36
  },
  {
   "palavra": "contrafogo",
-  "inicio": 29.44,
-  "fim": 29.84
- },
- {
-  "palavra": "na",
-  "inicio": 29.92,
+  "inicio": 29.56,
   "fim": 30.0
  },
  {
-  "palavra": "direção",
+  "palavra": "na",
   "inicio": 30.08,
-  "fim": 30.56
+  "fim": 30.16
+ },
+ {
+  "palavra": "direção",
+  "inicio": 30.28,
+  "fim": 30.72
  },
  {
   "palavra": "dele,",
-  "inicio": 30.64,
-  "fim": 31.04
+  "inicio": 30.8,
+  "fim": 31.2
  },
  {
   "palavra": "e",
-  "inicio": 31.08,
-  "fim": 31.12
- },
- {
-  "palavra": "os",
-  "inicio": 31.2,
+  "inicio": 31.24,
   "fim": 31.28
  },
  {
-  "palavra": "dois",
+  "palavra": "os",
   "inicio": 31.36,
-  "fim": 31.52
+  "fim": 31.44
  },
  {
-  "palavra": "se",
-  "inicio": 31.6,
+  "palavra": "dois",
+  "inicio": 31.52,
   "fim": 31.68
  },
  {
+  "palavra": "se",
+  "inicio": 31.72,
+  "fim": 31.76
+ },
+ {
   "palavra": "apagam",
-  "inicio": 31.8,
-  "fim": 32.16
+  "inicio": 31.84,
+  "fim": 32.32
  },
  {
   "palavra": "quando",
-  "inicio": 32.24,
-  "fim": 32.4
+  "inicio": 32.36,
+  "fim": 32.48
  },
  {
   "palavra": "se",
-  "inicio": 32.48,
-  "fim": 32.56
+  "inicio": 32.56,
+  "fim": 32.64
  },
  {
   "palavra": "encontram.",
-  "inicio": 32.6,
-  "fim": 33.28
+  "inicio": 32.72,
+  "fim": 33.36
  },
  {
   "palavra": "Só",
-  "inicio": 33.32,
-  "fim": 33.44
+  "inicio": 33.4,
+  "fim": 33.52
  },
  {
   "palavra": "que,",
-  "inicio": 33.52,
-  "fim": 34.0
- },
- {
-  "palavra": "se",
-  "inicio": 34.04,
+  "inicio": 33.6,
   "fim": 34.08
  },
  {
+  "palavra": "se",
+  "inicio": 34.12,
+  "fim": 34.16
+ },
+ {
   "palavra": "o",
-  "inicio": 34.16,
-  "fim": 34.2
+  "inicio": 34.24,
+  "fim": 34.28
  },
  {
   "palavra": "vento",
-  "inicio": 34.24,
-  "fim": 34.56
+  "inicio": 34.32,
+  "fim": 34.64
  },
  {
   "palavra": "virar,",
-  "inicio": 34.68,
-  "fim": 35.12
+  "inicio": 34.76,
+  "fim": 35.2
  },
  {
   "palavra": "o",
-  "inicio": 35.2,
-  "fim": 35.28
+  "inicio": 35.28,
+  "fim": 35.36
  },
  {
   "palavra": "contrafogo",
-  "inicio": 35.48,
-  "fim": 36.0
+  "inicio": 35.56,
+  "fim": 36.08
  },
  {
   "palavra": "vira",
-  "inicio": 36.08,
-  "fim": 36.24
- },
- {
-  "palavra": "um",
-  "inicio": 36.28,
+  "inicio": 36.16,
   "fim": 36.32
  },
  {
-  "palavra": "segundo",
+  "palavra": "um",
   "inicio": 36.4,
-  "fim": 36.88
+  "fim": 36.48
+ },
+ {
+  "palavra": "segundo",
+  "inicio": 36.6,
+  "fim": 36.96
  },
  {
   "palavra": "incêndio.",
-  "inicio": 37.04,
-  "fim": 37.6
+  "inicio": 37.08,
+  "fim": 37.733
  },
  {
   "palavra": "Por",
-  "inicio": 37.68,
-  "fim": 37.76
+  "inicio": 37.787,
+  "fim": 37.84
  },
  {
   "palavra": "isso",
-  "inicio": 37.84,
-  "fim": 38.16
+  "inicio": 37.92,
+  "fim": 38.24
  },
  {
   "palavra": "só",
-  "inicio": 38.24,
+  "inicio": 38.28,
   "fim": 38.4
  },
  {
@@ -577,216 +577,76 @@
  {
   "palavra": "fazer",
   "inicio": 40.0,
-  "fim": 40.24
+  "fim": 40.16
  },
  {
   "palavra": "isso.",
-  "inicio": 40.36,
-  "fim": 40.72
- },
- {
-  "palavra": "Aqui",
-  "inicio": 40.8,
-  "fim": 40.96
- },
- {
-  "palavra": "no",
-  "inicio": 41.0,
-  "fim": 41.04
- },
- {
-  "palavra": "Brasil,",
-  "inicio": 41.12,
-  "fim": 41.68
- },
- {
-  "palavra": "brigadistas",
-  "inicio": 41.76,
-  "fim": 42.32
- },
- {
-  "palavra": "do",
-  "inicio": 42.36,
-  "fim": 42.4
- },
- {
-  "palavra": "Cerrado",
-  "inicio": 42.48,
-  "fim": 42.96
- },
- {
-  "palavra": "também",
-  "inicio": 43.04,
-  "fim": 43.36
- },
- {
-  "palavra": "usam",
-  "inicio": 43.44,
-  "fim": 43.76
- },
- {
-  "palavra": "fogo",
-  "inicio": 43.84,
-  "fim": 44.0
- },
- {
-  "palavra": "controlado",
-  "inicio": 44.08,
-  "fim": 44.64
- },
- {
-  "palavra": "pra",
-  "inicio": 44.72,
-  "fim": 44.8
- },
- {
-  "palavra": "evitar",
-  "inicio": 44.88,
-  "fim": 45.28
- },
- {
-  "palavra": "incêndios",
-  "inicio": 45.4,
-  "fim": 45.76
- },
- {
-  "palavra": "piores.",
-  "inicio": 45.84,
-  "fim": 46.48
- },
- {
-  "palavra": "Você",
-  "inicio": 46.6,
-  "fim": 46.72
- },
- {
-  "palavra": "teria",
-  "inicio": 46.8,
-  "fim": 47.04
- },
- {
-  "palavra": "coragem",
-  "inicio": 47.12,
-  "fim": 47.52
- },
- {
-  "palavra": "de",
-  "inicio": 47.56,
-  "fim": 47.6
- },
- {
-  "palavra": "acender",
-  "inicio": 47.68,
-  "fim": 48.0
- },
- {
-  "palavra": "o",
-  "inicio": 48.08,
-  "fim": 48.16
- },
- {
-  "palavra": "fogo,",
-  "inicio": 48.2,
-  "fim": 48.64
- },
- {
-  "palavra": "sabendo",
-  "inicio": 48.693,
-  "fim": 48.96
- },
- {
-  "palavra": "que",
-  "inicio": 49.04,
-  "fim": 49.12
- },
- {
-  "palavra": "um",
-  "inicio": 49.2,
-  "fim": 49.28
- },
- {
-  "palavra": "erro",
-  "inicio": 49.36,
-  "fim": 49.68
- },
- {
-  "palavra": "queima",
-  "inicio": 49.72,
-  "fim": 50.08
- },
- {
-  "palavra": "tudo?",
-  "inicio": 50.12,
-  "fim": 50.64
- },
- {
-  "palavra": "Comenta.",
-  "inicio": 50.72,
-  "fim": 51.28
+  "inicio": 40.24,
+  "fim": 40.773
  },
  {
   "palavra": "E",
-  "inicio": 51.32,
-  "fim": 51.36
+  "inicio": 40.827,
+  "fim": 40.88
  },
  {
   "palavra": "da",
-  "inicio": 51.44,
-  "fim": 51.52
+  "inicio": 40.96,
+  "fim": 41.12
  },
  {
   "palavra": "próxima",
-  "inicio": 51.6,
-  "fim": 51.92
+  "inicio": 41.16,
+  "fim": 41.52
  },
  {
   "palavra": "vez",
-  "inicio": 52.0,
-  "fim": 52.16
+  "inicio": 41.64,
+  "fim": 41.76
  },
  {
   "palavra": "que",
-  "inicio": 52.24,
-  "fim": 52.32
+  "inicio": 41.8,
+  "fim": 41.84
  },
  {
   "palavra": "vir",
-  "inicio": 52.44,
-  "fim": 52.56
+  "inicio": 41.92,
+  "fim": 42.08
  },
  {
   "palavra": "fogo",
-  "inicio": 52.6,
-  "fim": 52.8
+  "inicio": 42.16,
+  "fim": 42.4
  },
  {
   "palavra": "na",
-  "inicio": 52.88,
-  "fim": 52.96
+  "inicio": 42.44,
+  "fim": 42.48
  },
  {
   "palavra": "floresta,",
-  "inicio": 53.04,
-  "fim": 53.76
+  "inicio": 42.56,
+  "fim": 43.36
  },
  {
   "palavra": "lembra:",
-  "inicio": 53.84,
-  "fim": 54.32
+  "inicio": 43.44,
+  "fim": 44.0
  },
  {
   "palavra": "talvez",
-  "inicio": 54.44,
-  "fim": 54.8
+  "inicio": 44.12,
+  "fim": 44.4
  },
  {
   "palavra": "esses",
-  "inicio": 54.92,
-  "fim": 55.04
+  "inicio": 44.48,
+  "fim": 44.72
  },
  {
   "palavra": "bombeiros...",
-  "inicio": 55.08,
-  "fim": 56.0
+  "inicio": 44.773,
+  "fim": 45.6
  }
 ]
