@@ -137,6 +137,8 @@ def _filtro_cena(s: dict, entrada: str, eh_foto: bool, n_frames: int, primeira: 
              f":y='max(0\\,min(ih-ih/zoom\\,ih*{sy}-ih/zoom/2))':d=1:s={W}x{H}:fps={FPS}")
     if s.get("espelhar"):
         f += ",hflip"                       # inverte o lado (o cérebro não se acostuma)
+    if s.get("reverso"):
+        f += f",trim=end_frame={n_frames},reverse"   # corta o trecho exato e toca ao contrário (clipe reaproveitado vira "continuação", não repetição)
     if s.get("_escura"):
         f += ",eq=gamma=1.35:brightness=0.04"   # cena escura demais: levanta as sombras sem estourar o fogo
     f += ",eq=contrast=1.06:saturation=1.12,unsharp=5:5:0.5,vignette=PI/5,setsar=1,format=yuv420p"     # bordas escuras guiam o olhar

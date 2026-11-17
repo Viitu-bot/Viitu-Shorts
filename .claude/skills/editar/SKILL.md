@@ -33,6 +33,15 @@ Quando usar cada efeito: `edicao/logica_editor.md`. Técnicas: `edicao/manual_ed
 - **Som de função** (buzzer, acerto, ding, moeda) só com gráfico correspondente na tela e na pausa. Na dúvida, não.
 - Sem CTA explícito por padrão (os canais usam o loop); sem sons de meme.
 
+## 2b. Regras de montagem (cobradas pelo dono)
+- **Loop perfeito:** a última cena é o MESMO quadro do frame 0 (copie a cena 1 com `"em": "<última palavra>"`,
+  `"zoom": [1.0, 1.0]`). O flash do frame 0 esconde a emenda.
+- **Clipe reaproveitado** (mesmo clipe em 2 cenas): na 2ª vez `"reverso": true` (toca ao contrário = continuação).
+- **Palavra de ação = ação acontecendo nela:** "decolagem" → rodas saindo do chão NESSE instante; "pouso" → avião
+  tocando a pista. Calcule o `inicio` para o momento da ação cair na palavra.
+- Cena que não existe em vídeo mas tem cenário real (ex.: pássaros vistos da janela): clipe real + 3D sobreposto
+  com fundo transparente (modelo `remotion/src/animacoes/PassarosJanela3D.tsx`).
+
 ## 3. Verificações obrigatórias (nesta ordem; corrigir antes de seguir)
 1. `python3 -m viitu.revisar <p>` → abrir `saida/revisao.jpg` (cena de animação é ignorada na repetição).
 2. `python3 -m viitu.auditoria <p> remotion/out/<p>.mp4` (`--sem-gemini` se a cota acabou): loudness −14,

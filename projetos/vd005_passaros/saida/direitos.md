@@ -11,8 +11,8 @@
 | ✅ | commons_C-130_and_Hawk_in_nosecone_outside.jpg | Wikimedia Commons (ver creditos.txt) |
 | ✅ | pixabay_138891.mp4 | Pixabay (licença livre) |
 | ✅ | pixabay_52536.mp4 | Pixabay (licença livre) |
-| ✅ | pixabay_104378.mp4 | Pixabay (licença livre) |
-| ✅ | pixabay_205873.mp4 | Pixabay (licença livre) |
+| ✅ | pixabay_32948.mp4 | Pixabay (licença livre) |
+| ✅ | pixabay_143853.mp4 | Pixabay (licença livre) |
 
 **RESULTADO:** ✅ liberado (⚠️ = crédito na descrição + pedir permissão)
 

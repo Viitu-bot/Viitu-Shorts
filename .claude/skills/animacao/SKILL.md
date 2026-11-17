@@ -19,6 +19,11 @@ Base: 40–53% dos vídeos dos canais do nicho têm animação; inserções de 1
 - **Lógica física consistente:** o que o fogo/água/etc. já atingiu muda de estado e não volta; no encontro de
   duas frentes não sobra faixa intacta; nada some sem motivo.
 
+## 3D sobreposto a clipe real
+`ThreeCanvas` com `gl={{alpha: true}}` e fundo transparente por cima do clipe (ex.: gaivotas passando pela asa
+vista da janela). Bichos: forma característica (gaivota = asa em "M" com ponta preta), voando de FRENTE para onde
+se movem, batida de asa lenta, tamanho que não domina a tela.
+
 ## Como fazer
 1. Copie o modelo `remotion/src/animacoes/Contrafogo3D.tsx` para `remotion/src/animacoes/<Tema>3D.tsx`.
    Ele mostra: `ThreeCanvas` do `@remotion/three`, câmera via `useThree`, objetos em código (árvores, chamas,
