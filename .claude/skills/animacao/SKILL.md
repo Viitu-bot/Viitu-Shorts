@@ -9,6 +9,8 @@ description: Cria a animação 3D explicativa do Short (Three.js no Remotion) pa
 "o que acontece se", algo raro ou impossível de filmar) vira 3D. Clipe real fica no gancho e como prova.
 Base: 40–53% dos vídeos dos canais do nicho têm animação; inserções de 1–10 s (`edicao/logica_editor.md`).
 
+**Sempre 3D, nunca 2D** (dono: a animação 2D do mapa ficou simples; o 3D é o padrão do canal).
+
 ## Padrão de uso
 - Narrativa: clipe real → **3D explica** → clipe real como prova → **3D mostra o resultado**.
 - 1 ideia por animação, 3 a 6 s por entrada; sincronizar eventos às palavras (`"eventos": {"puxa": "puxa o ar"}`).
