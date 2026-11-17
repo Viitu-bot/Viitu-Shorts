@@ -5,16 +5,16 @@
 | ✅ | Voz (narração) | ElevenLabs, plano Starter com licença comercial |
 | ✅ | Trilha: tensao_documentario.mp3 | gerada no ElevenLabs Music (própria) |
 | ✅ | Efeitos sonoros e foley | assets/sfx e assets/foley, gerados no ElevenLabs (próprios) |
+| ✅ | Sons profissionais (camadas de foley) | Sonniss GDC Game Audio Bundle: royalty-free, YouTube monetizado, sem crédito |
 | ✅ | Fonte da legenda | Anton, licença SIL Open Font License |
 | ✅ | Animações explicativas | desenhadas em código no Remotion (próprias) |
 | ⚠️ | tiktok_1.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ⚠️ | tiktok_2.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ✅ | pixabay_80269.mp4 | Pixabay (licença livre) |
 | ✅ | pixabay_44186.mp4 | Pixabay (licença livre) |
-| ✅ | pixabay_148594.mp4 | Pixabay (licença livre) |
+| ✅ | pixabay_44187.mp4 | Pixabay (licença livre) |
 | ⚠️ | tiktok_4.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ⚠️ | tiktok_3.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
-| ✅ | pixabay_99867.mp4 | Pixabay (licença livre) |
 | ✅ | pixabay_358803.mp4 | Pixabay (licença livre) |
 
 **RESULTADO:** ✅ liberado (⚠️ = crédito na descrição + pedir permissão)
