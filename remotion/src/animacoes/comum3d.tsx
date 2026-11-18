@@ -1,4 +1,5 @@
 import React, {useEffect, useMemo, useState} from 'react';
+import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 import * as THREE from 'three';
 import {continueRender, delayRender, staticFile} from 'remotion';
 import {useThree} from '@react-three/fiber';
@@ -62,4 +63,25 @@ export const Ambiente: React.FC<{tex?: THREE.Texture; fundo: boolean; forca?: nu
 export const rep = (t: THREE.Texture | undefined, x: number, y: number, ox = 0) => {
   if (t) { t.repeat.set(x, y); t.offset.x = ox; }
   return t;
+};
+
+// MODELO PRONTO (GLB do Sketchfab/Poly Haven): carrega uma vez, segura o quadro até chegar, devolve a cena
+// já centrada e com o comprimento maior em metros reais. Use <primitive object={m.cena} /> (clone se for usar 2x).
+export const useModelo = (arquivo: string) => {
+  const [cena, setCena] = useState<THREE.Group | null>(null);
+  const [h] = useState(() => delayRender(`modelo ${arquivo}`));
+  useEffect(() => {
+    new GLTFLoader().load(staticFile(`modelos/${arquivo}`), (g) => {
+      const raiz = new THREE.Group();
+      raiz.add(g.scene);
+      g.scene.updateMatrixWorld(true);
+      const caixa = new THREE.Box3().setFromObject(g.scene);
+      const centro = caixa.getCenter(new THREE.Vector3());
+      g.scene.position.sub(centro);
+      raiz.userData.tamanho = caixa.getSize(new THREE.Vector3());
+      setCena(raiz);
+      continueRender(h);
+    }, undefined, (e) => { console.error(e); continueRender(h); });
+  }, []);
+  return cena;
 };

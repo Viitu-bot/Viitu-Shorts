@@ -758,6 +758,10 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
     from viitu.mix import normalizar, ganho, espec
     if (RAIZ / "assets" / "texturas").exists():          # texturas CC0 (Poly Haven) para o 3D
         shutil.copytree(RAIZ / "assets" / "texturas", pub / "tex", dirs_exist_ok=True)
+    if (RAIZ / "assets" / "modelos").exists():           # modelos 3D prontos (Sketchfab CC-BY, Poly Haven CC0)
+        (pub / "modelos").mkdir(exist_ok=True)
+        for g in (RAIZ / "assets" / "modelos").glob("*.glb"):
+            shutil.copy(g, pub / "modelos" / g.name)
     for som in SFX.glob("*.mp3"):          # sons próprios: normalizados à referência da voz
         normalizar(som, pub / som.name, "pontual")
     # som original só de clipes livres (Pixabay/próprios): áudio de TikTok/Reels costuma ter música com direitos
