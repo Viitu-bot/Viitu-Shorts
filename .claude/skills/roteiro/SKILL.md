@@ -5,6 +5,8 @@ description: Escreve o roteiro do Viitu Shorts (protocolo HISA) a partir do tema
 
 # /roteiro: roteiro HISA que já nasce editável
 
+> **Planta oficial:** `edicao/formato.md` (batidas, tempos, B-roll, quando usar 3D, som). Siga-a.
+
 Pré-requisito: tema validado por `/tema` (prova ≥ 1M, lacuna PT-BR, categoria/gatilho fortes).
 
 ## 0. Antes de escrever (reclamações do dono — `edicao/reclamacoes.md`)

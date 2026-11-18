@@ -5,6 +5,8 @@ description: Edita o Short do Viitu do roteiro aprovado até o mp4 final (voz, c
 
 # /editar: do roteiro aprovado ao mp4 conferido
 
+> **Planta oficial:** `edicao/formato.md` (batidas, tempos, B-roll, quando usar 3D, som). Siga-a.
+
 Valores fixos (volumes, ritmo, cor): `edicao/especificacao.json` — nunca número solto no código.
 Quando usar cada efeito: `edicao/logica_editor.md`. Técnicas: `edicao/manual_edicao.md`. Sons: `edicao/biblioteca_sons.md`.
 

@@ -7,7 +7,7 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 - **Tutorial:** um passo por vez, sem dar várias opções. Decida e explique o porquê em uma linha.
 - Passos manuais do dono: numerados, curtos, com links diretos.
 - Antes de entregar qualquer coisa, confira você mesmo (prancha, revisão). Nunca entregue sem olhar.
-- **Toda etapa começa por `edicao/reclamacoes.md`** (o que o dono já reprovou). As travas `viitu.montagem` (antes do
+- **Toda etapa segue `edicao/formato.md` (a planta) e começa por `edicao/reclamacoes.md`** (o que o dono já reprovou). As travas `viitu.montagem` (antes do
   render) e `viitu.entrega` (antes de mandar) são obrigatórias em TODO vídeo.
 - Técnica nova aprendida (referência, pedido do dono) vai para o lugar certo do mapa abaixo, não para cá.
 
@@ -49,6 +49,7 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 ## Mapa do conhecimento (onde cada coisa mora)
 | Assunto | Arquivo |
 |---|---|
+| **O FORMATO (planta: roteiro + B-roll + 3D + som, batida por batida)** | `edicao/formato.md` |
 | **Reclamações recorrentes do dono → regras + trava da montagem** | `edicao/reclamacoes.md` · `viitu/montagem.py` |
 | Volumes de som e regras visuais (valores fixos) | `edicao/especificacao.json` |
 | Qual efeito em qual momento/cena, engenharia reversa dos canais | `edicao/logica_editor.md` |

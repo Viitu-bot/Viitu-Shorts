@@ -120,6 +120,10 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
             erros.append(f"R2 3D CURTO: {dur3d:.1f} s de 3D; a explicação precisa de ≥ 4 s para ser entendida.")
         if dur3d > 0.45 * total and not cfg.get("bloco_3d_longo"):     # só quando o dono pediu o 3D longo
             erros.append(f"R2 3D DEMAIS: {dur3d:.1f} s ({dur3d / total:.0%}); máximo 45% do vídeo.")
+        ini3d = tempos[idx3d[0]][0] / total
+        if not 0.25 <= ini3d <= 0.6 and 0 not in idx3d:
+            erros.append(f"R2 3D FORA DO MEIO: o bloco 3D começa em {ini3d:.0%} do vídeo; a explicação fica entre 25% e 60% "
+                         "(edicao/formato.md).")
         if 0 in idx3d:
             erros.append("R3 GANCHO EM 3D: o gancho é sempre clipe real.")
 

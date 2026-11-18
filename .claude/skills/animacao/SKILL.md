@@ -5,6 +5,8 @@ description: Cria a animação 3D explicativa do Short (Three.js no Remotion) pa
 
 # /animacao: o mecanismo em 3D
 
+> **Planta oficial:** `edicao/formato.md` (batidas, tempos, B-roll, quando usar 3D, som). Siga-a.
+
 **Regra do canal:** toda parte explicativa que não tem vídeo bom (mecanismo invisível, dentro de algo, forças,
 "o que acontece se", algo raro ou impossível de filmar) vira 3D. Clipe real fica no gancho e como prova.
 Base: 40–53% dos vídeos dos canais do nicho têm animação; inserções de 1–10 s (`edicao/logica_editor.md`).

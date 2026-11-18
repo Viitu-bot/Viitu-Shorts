@@ -5,6 +5,8 @@ description: Escolhe e baixa os VÍDEOS que representam cada frase do roteiro do
 
 # /clipes: escolher cenas como um editor
 
+> **Planta oficial:** `edicao/formato.md` (batidas, tempos, B-roll, quando usar 3D, som). Siga-a.
+
 **ANTES DE TUDO: `edicao/reclamacoes.md`** (padrões de reclamação do dono e a estrutura de montagem padrão).
 A trava `python3 -m viitu.montagem <p>` barra: clipe em > 2 cenas, < 60% de fontes diferentes, 3D picotado,
 gancho com foto/3D/< 720p, clipe desfocado ou parado. **Meta: ≥ 7 fontes reais diferentes por vídeo.**
