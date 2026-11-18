@@ -71,3 +71,29 @@ para o loop** (o editor já faz). Nenhum dos 43 usa música clássica. Todas as 
 Gerar trilha nova: `POST https://api.elevenlabs.io/v1/music?output_format=mp3_44100_128` com
 `{"prompt": "...instrumental..., no vocals, loopable", "music_length_ms": 45000}` (header `xi-api-key: proxy-injected`),
 UMA de cada vez (em paralelo dá 429). Conferir o estilo com o CLAP (rótulos sem "lo-fi", que vira balaio) antes de usar.
+
+## Músicas CONHECIDAS do nicho (identificadas pelo Gemini em 33 Shorts dos canais de referência, 18/11/2026)
+Só vídeos de curiosidade/engenharia (A vida é uma maravilha, GeneralTV, KSO, Polaco, Andre, Zack D.) + sons do TikTok
+usados em vídeos de explicação/ciência (vidIQ). Repetição em 2+ canais = mais confiável (o Gemini pode errar 1 nome).
+Dados: `pesquisa/musicas_nicho.json`.
+
+| Música | Visto em | Clima → quando usar | Direitos / como usar |
+|---|---|---|---|
+| The Lost Soul Down — NBSPLV | **4** (A vida ×2, GeneralTV ×2) | eletrônica misteriosa → perigo, motivo oculto técnico | com direitos → **app** |
+| The Next Episode (remix/instrumental) — Dr. Dre | **3** (Zack D., Polaco, KSO) | hip-hop marcante → invenção, gadget, processo | com direitos → **app** |
+| Montagem - PR Funk — S3BZS | **2** (A vida) | phonk BR → máquina, esporte, processo satisfatório | com direitos → **app** |
+| MTG - CHIHIRO — DJ Arana | 1 (A vida "CLT infernal") | phonk BR pesado → trabalho perigoso | com direitos → **app** |
+| Nocturne Op. 9 nº 2 — Chopin | 1 (A vida "caneta do Da Vinci") | clássica elegante → história, arte, invenção antiga | obra livre; gravação livre do Commons (pendente: Commons 429) |
+| The Lamp — The Deli | 1 (A vida "cobertor mais caro") | lo-fi → explicação calma, dinheiro/raro | com direitos → **app** |
+| Je te laisserai des mots — Patrick Watson | 1 (Andre) | piano melancólico → virada emocional | com direitos → **app** |
+| The Sound of Your Fear | 1 (Zack D. tubarão) | suspense pulsante → bicho perigoso | com direitos → **app** |
+| The Gonk — Herbert Chappell | 1 (Zack D. tomadas) | orquestra cômica → objeto do dia a dia engraçado | biblioteca KPM (reclama) → **app** |
+| Monkeys Spinning Monkeys — Kevin MacLeod | 1 (Andre hashis) | brincalhona → curiosidade leve, outro país | **livre com crédito** → `brincalhao_kevin_monkeys.mp3` |
+| Happy — MBB | 1 (Zack D.) | violão alegre → final feliz, bicho | livre com crédito (artista royalty-free) |
+| Blade Runner 2049 — Synthwave Goose (TikTok) | vídeos de freio de avião (3,3 mi) e porca/parafuso (2,9 mi) | synthwave → engenharia, aviação | com direitos → **app** |
+| Mysterious and Sad — Beats by Lucky (TikTok) | radiotelescópio (3,8 mi), IA que projeta motor | mistério → tecnologia estranha | com direitos → **app** |
+
+**Como usar a música com direitos sem levar reclamação:** no `cenas.json`, `"musica": "app:The Lost Soul Down - NBSPLV"` →
+o editor gera o vídeo SEM trilha; na hora de enviar, o dono toca em **Adicionar som** no app do YouTube, escolhe a faixa
+(é licenciada para Shorts) e baixa o volume dela para ~10–15% (o nosso sidechain não alcança a trilha do app).
+Nunca embutir música com direitos no arquivo: o Content ID reivindica a receita ou bloqueia.

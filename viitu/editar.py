@@ -778,10 +778,17 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(amb), "-c:a", "aac", "-b:a", "160k",
                     str(pub / "ambiente.m4a")], check=True)
     musica = cfg.get("musica", "curioso_documentario.mp3")
-    ini_mus = _inicio_musica(RAIZ / "assets" / "musica" / musica)
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{ini_mus:.2f}", "-i", str(RAIZ / "assets" / "musica" / musica),
-                    "-c:a", "libmp3lame", "-q:a", "2", str(pasta / "saida" / "musica_crua.mp3")], check=True)
-    normalizar(pasta / "saida" / "musica_crua.mp3", pub / "musica.mp3", "leito")
+    if musica.startswith("app:"):
+        # música FAMOSA (com direitos): o vídeo sai SEM trilha e o dono adiciona no app do YouTube ("Adicionar som"),
+        # que é licenciado para Shorts. O sidechain não alcança essa trilha: volume dela baixo no app (ver /publicar).
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", "1",
+                        "-q:a", "9", str(pub / "musica.mp3")], check=True)
+        print(f"Trilha: SEM música no arquivo; adicionar no app do YouTube: {musica[4:]}")
+    else:
+        ini_mus = _inicio_musica(RAIZ / "assets" / "musica" / musica)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{ini_mus:.2f}", "-i", str(RAIZ / "assets" / "musica" / musica),
+                        "-c:a", "libmp3lame", "-q:a", "2", str(pasta / "saida" / "musica_crua.mp3")], check=True)
+        normalizar(pasta / "saida" / "musica_crua.mp3", pub / "musica.mp3", "leito")
     kit_plano, sfx_plano = _kit_e_sfx(cfg, palavras, pub)
     destaques = {_norm(x) for x in cfg.get("destaques", [])}
 

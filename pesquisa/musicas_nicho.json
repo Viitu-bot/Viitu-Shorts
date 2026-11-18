@@ -1,0 +1,227 @@
+[
+ {
+  "id": "ueaLdrCgRzY",
+  "canal": "Polaco sem Polônia",
+  "titulo": "A película que transforma qualquer vidro numa TV",
+  "reconhece": true,
+  "musica": "Stereo Love - Edward Maya & Vika Jigulina",
+  "descricao": null,
+  "confianca": "alta"
+ },
+ {
+  "id": "q8vlif-LlD4",
+  "canal": "GeneralTV",
+  "titulo": "O truque da borracha nos pneus de Fórmula 1! 🏎️",
+  "reconhece": false,
+  "musica": null,
+  "descricao": "Música eletrônica animada com batida marcante, baixo proeminente e clima energético.",
+  "confianca": "alta"
+ },
+ {
+  "id": "8vJx4PpLq64",
+  "canal": "GeneralTV",
+  "titulo": "A invenção INTELIGENTE para limpar o Ouvido 👂",
+  "reconhece": true,
+  "musica": "The Lost Soul Down - NBSPLV",
+  "descricao": "Uma faixa eletrônica/house com um baixo marcante e melodia cativante, popular em vídeos curtos.",
+  "confianca": "alta"
+ },
+ {
+  "id": "dxrIIO1YQrE",
+  "canal": "KSO Descobre",
+  "titulo": "O sonho “ou pesadelo” dos amantes de chocolate! 🤤 ",
+  "reconhece": false,
+  "musica": null,
+  "descricao": "Música acústica alegre e saltitante, com violão dedilhado e ritmo leve, transmitindo um clima positivo e curioso.",
+  "confianca": "alta"
+ },
+ {
+  "id": "5VT-t-BTQpM",
+  "canal": "Andre Shorts Br",
+  "titulo": "Esse truque na praia vai SALVAR seus pertences! 😮🏖",
+  "reconhece": true,
+  "musica": "Je te laisserai des mots - Patrick Watson",
+  "descricao": "Uma melodia suave e melancólica tocada no piano.",
+  "confianca": "alta"
+ },
+ {
+  "id": "CRGWDiIgMZ4",
+  "canal": "Zack D. Films",
+  "titulo": "How Cookiecutter Sharks Bite Whales 😨",
+  "reconhece": true,
+  "musica": "The Sound of Your Fear - Midi-P",
+  "descricao": "Uma trilha eletrônica rítmica e pulsante com sons de sintetizador, frequentemente usada em vídeos informativos e de curiosidades.",
+  "confianca": "alta"
+ },
+ {
+  "id": "W3NlT3SKkmQ",
+  "canal": "Zack D. Films",
+  "titulo": "How To Get Water Out Of Your Ear 🤔",
+  "reconhece": true,
+  "musica": "The Next Episode (San Holo Remix) - Dr. Dre",
+  "descricao": "Remix eletrônico animado e rítmico da famosa música de Dr. Dre.",
+  "confianca": "alta"
+ },
+ {
+  "id": "GDjPVWNlKO0",
+  "canal": "Polaco sem Polônia",
+  "titulo": "O motor portátil que transforma qualquer bike em e",
+  "reconhece": true,
+  "musica": "The Next Episode (San Holo Remix) - Dr. Dre ft. Snoop Dogg",
+  "descricao": "Remix eletrônico de hip-hop com batida marcante e sintetizadores.",
+  "confianca": "alta"
+ },
+ {
+  "id": "0BZ1C83I2R4",
+  "canal": "Zack D. Films",
+  "titulo": "How Electrical Outlets Work 🤔",
+  "reconhece": true,
+  "musica": "The Gonk - Herbert Chappell",
+  "descricao": "Uma trilha orquestral animada e cômica, com um ritmo saltitante e clima de comédia pastelão.",
+  "confianca": "alta"
+ },
+ {
+  "id": "P_kITRBzwCs",
+  "canal": "Andre Shorts Br",
+  "titulo": "Diferenças dos Hashis do Japão, China e Coreia! 😮🥢",
+  "reconhece": true,
+  "musica": "Monkeys Spinning Monkeys - Kevin MacLeod",
+  "descricao": "Uma trilha instrumental alegre e rítmica com sons de xilofone e flauta, comum em vídeos de humor e curiosidades.",
+  "confianca": "alta"
+ },
+ {
+  "id": "BtxtZUmFLMI",
+  "canal": "KSO Descobre",
+  "titulo": "Ser militar na Índia só é possível se passar nesse",
+  "reconhece": true,
+  "musica": "The Next Episode (Instrumental) - Dr. Dre",
+  "descricao": "Um instrumental de hip-hop clássico com uma batida rítmica e sintetizadores marcantes.",
+  "confianca": "alta"
+ },
+ {
+  "id": "IHriNx1_AJQ",
+  "canal": "GeneralTV",
+  "titulo": "Por que motos grandes NÃO USAM corrente? 🏍️",
+  "reconhece": true,
+  "musica": "The Lost Soul Down - NBSPLV",
+  "descricao": "Música eletrônica acelerada com batida forte e sintetizadores repetitivos.",
+  "confianca": "alta"
+ },
+ {
+  "id": "i7UCJjkTUQ4",
+  "canal": "GeneralTV",
+  "titulo": "O erro GRAVE ao salvar um passarinho! 🐤",
+  "reconhece": false,
+  "musica": null,
+  "descricao": "Música instrumental de estilo lo-fi/chillhop com batida suave, sintetizadores atmosféricos e um clima relaxante.",
+  "confianca": "media"
+ },
+ {
+  "id": "r09IDNWUJ20",
+  "canal": "Polaco sem Polônia",
+  "titulo": "O secador inteligente que vai substituir as toalha",
+  "reconhece": true,
+  "musica": "The Magic Bomb (Sped Up) - Hoàng Read",
+  "descricao": "Uma faixa eletrônica animada e acelerada com batidas rítmicas e um clima divertido.",
+  "confianca": "alta"
+ },
+ {
+  "id": "E2-SvqhLYnE",
+  "canal": "Andre Shorts Br",
+  "titulo": "Esse gato mora em um AQUÁRIO! 😮",
+  "reconhece": false,
+  "musica": null,
+  "descricao": "Instrumental de música eletrônica leve e animada, com sintetizadores brilhantes e ritmo constante.",
+  "confianca": "media"
+ },
+ {
+  "id": "JsKK1c--rcQ",
+  "canal": "KSO Descobre",
+  "titulo": "Essas portas não são pequenas à toa! 😳 #curiosidad",
+  "reconhece": false,
+  "musica": null,
+  "descricao": "Instrumental de percussão tribal com ritmo acelerado e clima enérgico.",
+  "confianca": "alta"
+ },
+ {
+  "id": "ZkDuJbtYl7w",
+  "canal": "GeneralTV",
+  "titulo": "O erro que todo mundo comete ao comer favo de mel ",
+  "reconhece": false,
+  "musica": null,
+  "descricao": "Uma trilha eletrônica animada e rápida, com uma melodia de sintetizador marcante, comum em vídeos curtos.",
+  "confianca": "baixa"
+ },
+ {
+  "id": "ATmqYITooB8",
+  "canal": "KSO Descobre",
+  "titulo": "Espiar essa van pode dar muito errado! 😳 #curiosid",
+  "reconhece": false,
+  "musica": null,
+  "descricao": "Uma faixa de música eletrônica animada e rítmica com sintetizadores brilhantes e uma batida pop dançante.",
+  "confianca": "baixa"
+ },
+ {
+  "id": "MwHQBx10nIE",
+  "canal": "Polaco sem Polônia",
+  "titulo": "O Jeito Certo de Pegar Peso sem Destruir a Coluna ",
+  "reconhece": false,
+  "musica": null,
+  "descricao": "Música eletrônica instrumental com batida marcante, sintetizadores modernos e um clima enérgico e motivacional.",
+  "confianca": "alta"
+ },
+ {
+  "id": "VspQbAEeszQ",
+  "canal": "Andre Shorts Br",
+  "titulo": "Posso nadar nessa piscina? 🤔🏊‍♂️",
+  "reconhece": false,
+  "musica": null,
+  "descricao": "Uma faixa de música eletrônica instrumental, com um ritmo acelerado, sintetizadores pulsantes e uma atmosfera enérgica.",
+  "confianca": "alta"
+ },
+ {
+  "id": "onB6neD6kvE",
+  "canal": "KSO Descobre",
+  "titulo": "Nenhum edifício japonês nasce sem essa etapa! 🏗️ #",
+  "reconhece": false,
+  "musica": null,
+  "descricao": "Instrumental eletrônico de ritmo acelerado com sintetizadores modernos e uma batida pulsante, criando um clima tecnológico e dinâmico.",
+  "confianca": "baixa"
+ },
+ {
+  "id": "vpTa-qK6h78",
+  "canal": "Zack D. Films",
+  "titulo": "How This Bug Disappears In A Blink 🧐",
+  "reconhece": false,
+  "musica": null,
+  "descricao": "Uma faixa instrumental de ritmo acelerado, com sintetizadores modernos e um clima enérgico e lúdico.",
+  "confianca": "baixa"
+ },
+ {
+  "id": "js9G9XobN0o",
+  "canal": "Andre Shorts Br",
+  "titulo": "Por que o Show do Indiana Jones Foi CANCELADO? 😮",
+  "reconhece": false,
+  "musica": null,
+  "descricao": "Trilha sonora de suspense com sintetizadores tensos, batidas eletrônicas rápidas e clima de perseguição.",
+  "confianca": "alta"
+ },
+ {
+  "id": "l1tX3Hp6sDs",
+  "canal": "Polaco sem Polônia",
+  "titulo": "O acessório que está salvando os joelhos nas obras",
+  "reconhece": false,
+  "musica": null,
+  "descricao": "Uma faixa de música eletrônica instrumental com um ritmo rápido, sintetizadores modernos e uma atmosfera energética e motivacional.",
+  "confianca": "baixa"
+ },
+ {
+  "id": "gyOZv_ckZQU",
+  "canal": "Zack D. Films",
+  "titulo": "Why Dobermans Have Cropped Ears 😞",
+  "reconhece": true,
+  "musica": "Happy - MBB",
+  "descricao": "Música acústica alegre e otimista com violão e percussão leve.",
+  "confianca": "alta"
+ }
+]
