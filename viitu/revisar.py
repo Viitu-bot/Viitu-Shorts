@@ -85,7 +85,7 @@ def revisar(projeto: str) -> bool:
             # foto: o "trecho" é o enquadramento; outro foco/zoom = outra imagem (máx. 2 usos por foto)
             t = (tuple(c.get("foco", [])), tuple(c.get("zoom", [])))
             usos = sum(1 for o in cenas[:j] if o["clipe"] == c["clipe"])
-            if usos >= 2:
+            if usos >= 2 and j != len(cenas) - 1:     # a última cena (loop) copia a primeira de propósito
                 problemas.append(f"REPETIÇÃO: foto {c['clipe']} usada mais de 2 vezes")
             if any(cl == c["clipe"] and tt == t for cl, tt in vistos):
                 problemas.append(f"REPETIÇÃO: cena '{c['em']}' repete o mesmo enquadramento de {c['clipe']}")
