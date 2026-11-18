@@ -1,17 +1,123 @@
 {
- "_versao": "v0: teste do 3D (clipes HD ainda baixando)",
- "impacto_em": ["Mas o avião novo"],
- "destaques": ["pousar", "presidente", "bocal", "teto", "voo", "tanque", "bilhões", "economizar"],
+ "_versao": "v1: foto real AF1 (Rushmore, PD) + 3D com modelos prontos (encaixe e 'sem') + Pixabay no fecho; Commons HD bloqueado (429)",
+ "impacto_em": [
+  "Mas o avião novo"
+ ],
+ "destaques": [
+  "pousar",
+  "presidente",
+  "bocal",
+  "teto",
+  "voo",
+  "tanque",
+  "bilhões",
+  "economizar"
+ ],
  "musica": "epico_engenharia.mp3",
- "cta": {"em": "inscrito", "texto": "SE INSCREVE"},
- "creditos_descricao": "Imagens: Força Aérea dos EUA (domínio público) via Wikimedia Commons e Internet Archive. Modelos 3D: Boeing 747-100 (rd.palaciosdeleon26) e KC-135R (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts.",
+ "cta": {
+  "em": "inscrito",
+  "texto": "SE INSCREVE"
+ },
+ "creditos_descricao": "Imagens: Força Aérea dos EUA (domínio público) via Wikimedia Commons; Pixabay. Modelos 3D: Boeing 747-100 (rd.palaciosdeleon26) e KC-135R (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts.",
  "cenas": [
-  {"em": "Esse avião pode", "clipe": "commons_af1_rushmore.jpg", "zoom": [1.0, 1.12], "revisao": "manual", "foley": "voo", "_provisorio": "trocar pelo vídeo HD do pouso"},
-  {"em": "É o avião", "clipe": "arquivo_af1.mp4", "inicio": 9.0, "revisao": "manual", "foley": "turbina"},
-  {"em": "Ele tem um bocal", "clipe": "arquivo_af1.mp4", "inicio": 0.0, "manter": true, "revisao": "manual", "foley": "voo",
-   "animacao": {"nome": "reabastece3d", "fase": "encaixe", "eventos": {"encosta": "encosta", "enche": "enche"}}},
-  {"em": "Mas o avião novo", "clipe": "commons_af1_rushmore.jpg", "zoom": [1.2, 1.0], "revisao": "manual", "foley": "voo"},
-  {"em": "Engenharia de outro", "clipe": "arquivo_af1.mp4", "inicio": 40.0, "revisao": "manual", "foley": "turbina"},
-  {"em": "por que", "clipe": "commons_af1_rushmore.jpg", "zoom": [1.0, 1.0], "_funcao": "loop", "foley": "voo"}
+  {
+   "em": "Esse avião pode",
+   "clipe": "commons_af1_rushmore.jpg",
+   "zoom": [
+    1.35,
+    1.5
+   ],
+   "foco": [
+    0.72,
+    0.5
+   ],
+   "revisao": "manual",
+   "foley": "voo",
+   "_funcao": "gancho: o Air Force One real (um sujeito só)",
+   "alvo": [
+    0.5,
+    0.3
+   ],
+   "seta": [
+    640,
+    900,
+    150
+   ]
+  },
+  {
+   "em": "É o avião",
+   "clipe": "commons_af1_rushmore.jpg",
+   "layout": "inteiro",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "revisao": "manual",
+   "foley": "voo",
+   "_funcao": "foto inteira: avião + presidentes do Monte Rushmore"
+  },
+  {
+   "em": "Ele tem um bocal",
+   "clipe": "pixabay_6522.mp4",
+   "inicio": 0.0,
+   "manter": true,
+   "revisao": "manual",
+   "foley": "voo",
+   "animacao": {
+    "nome": "reabastece3d",
+    "fase": "encaixe",
+    "eventos": {
+     "encosta": "encosta",
+     "enche": "enche"
+    }
+   }
+  },
+  {
+   "em": "Mas o avião novo",
+   "clipe": "pixabay_6522.mp4",
+   "inicio": 0.0,
+   "manter": true,
+   "revisao": "manual",
+   "foley": "voo",
+   "animacao": {
+    "nome": "reabastece3d",
+    "fase": "sem",
+    "eventos": {
+     "sem": "sem esse"
+    }
+   }
+  },
+  {
+   "em": "Engenharia de outro",
+   "clipe": "pixabay_6522.mp4",
+   "inicio": 20.0,
+   "revisao": "manual",
+   "manter": true,
+   "foley": "voo",
+   "_funcao": "fecho: asa em voo real"
+  },
+  {
+   "em": "por que",
+   "clipe": "commons_af1_rushmore.jpg",
+   "zoom": [
+    1.35,
+    1.35
+   ],
+   "foco": [
+    0.72,
+    0.5
+   ],
+   "_funcao": "loop",
+   "foley": "voo",
+   "alvo": [
+    0.5,
+    0.3
+   ],
+   "seta": [
+    640,
+    900,
+    150
+   ]
+  }
  ]
 }
