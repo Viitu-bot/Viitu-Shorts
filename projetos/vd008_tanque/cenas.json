@@ -1,0 +1,19 @@
+{
+ "_versao": "v0: 3D do tanque pronto; clipes reais de caminhão-tanque AINDA PROVISÓRIOS (aguardando links do dono)",
+ "impacto_em": ["todas furadas"],
+ "destaques": ["perigoso", "meio", "freada", "empurra", "paredes", "furadas", "devagar", "ondinhas"],
+ "musica": "tensao_documentario.mp3",
+ "cta": {"em": "inscrito", "texto": "SE INSCREVE"},
+ "creditos_descricao": "Imagens: Pixabay. Animação 3D: Viitu Shorts. Fontes: manual CDL (NY DMV), SafeRack.",
+ "cenas": [
+  {"em": "O caminhão-tanque", "clipe": "pixabay_143479.mp4", "inicio": 0.0, "_provisorio": "trocar pelo caminhão-tanque real (gancho)", "foley": "carro"},
+  {"em": "Na freada", "clipe": "pixabay_143479.mp4", "inicio": 0.0, "manter": true, "revisao": "manual", "foley": "carro",
+   "animacao": {"nome": "tanque3d", "fase": "onda", "eventos": {"bate": "bate", "empurra": "empurra"}}},
+  {"em": "Por isso o tanque", "clipe": "pixabay_143479.mp4", "inicio": 0.0, "manter": true, "revisao": "manual", "foley": "carro",
+   "animacao": {"nome": "tanque3d", "fase": "paredes", "eventos": {"paredes": "paredes", "furadas": "furadas"}}},
+  {"em": "O líquido passa", "clipe": "pixabay_143479.mp4", "inicio": 0.0, "manter": true, "revisao": "manual", "foley": "carro",
+   "animacao": {"nome": "tanque3d", "fase": "ondinhas", "eventos": {}}},
+  {"em": "Engenharia esperta", "clipe": "pixabay_53582.mp4", "inicio": 5.0, "_provisorio": "caminhão-tanque real fazendo curva", "foley": "carro"},
+  {"em": "por que", "clipe": "pixabay_143479.mp4", "inicio": 0.0, "zoom": [1.0, 1.0], "_funcao": "loop", "foley": "carro"}
+ ]
+}

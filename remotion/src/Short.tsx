@@ -14,6 +14,7 @@ import {PassarosJanela3D} from './animacoes/PassarosJanela3D';
 import {Diferencial3D} from './animacoes/Diferencial3D';
 import {Lama3D} from './animacoes/Lama3D';
 import {Starship3D, FaseStarship} from './animacoes/Starship3D';
+import {Tanque3D, FaseTanque} from './animacoes/Tanque3D';
 
 // fonte local (o navegador do render não baixa do Google Fonts atrás do proxy)
 const fontFamily = 'Anton';
@@ -252,6 +253,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
           {a.nome === 'diferencial3d' && a.fase !== 'lama' && <Diferencial3D fase={a.fase as 'dentro' | 'lama'} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'passarosjanela' && <PassarosJanela3D dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'turbina3d' && <Turbina3D fase={a.fase as 'ar' | 'quebra' | 'teste' | 'bando'} dur={a.f1 - a.f0} eventos={a.eventos} />}
+          {a.nome === 'tanque3d' && <Tanque3D fase={a.fase as FaseTanque} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'starship3d' && <Starship3D fase={a.fase as FaseStarship} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'contrafogo3d' && <Contrafogo3D fase={a.fase as 'ar' | 'encontro'} dur={a.f1 - a.f0} eventos={a.eventos} />}
         </Sequence>
