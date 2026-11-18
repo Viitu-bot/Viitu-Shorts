@@ -8,4 +8,4 @@ Formato: `AAAA-MM-DD (postagem) | família | tema | link do vídeo publicado (qu
 2026-11-17 12:00 | Perigo/motivo oculto | O inimigo do avião que ninguém consegue parar (bird strike) — LONGO 45 s, 3D, vd005 v5 | (postado; teste de horário: 12h)
 2026-11-18 06:00 | Motivo oculto/processo | A peça do carro que você nunca viu (diferencial) — LONGO 45 s, 3D + filme 1937, vd006 v1 | (agendado; teste de horário: 06h)
 2026-11-19 18:00 | Máquinas e obras gigantes | 🔥 "A torre que pegou a Starship no ar 🚀" (Ship 42, Flight 15) — BASTIDOR 20,6 s, vd007 v3 | (pronto para agendar)
-2026-11-20 (sex) | Motivo oculto/perigo | 🔥 Por que o caminhão-tanque meio cheio é o perigoso (quebra-ondas) — vd008 | (radar 18/11: YouTube+TikTok, PT vazio)
+2026-11-21 (sáb) | Motivo oculto/perigo | 🔥 Por que o caminhão-tanque meio cheio é o perigoso (quebra-ondas) — vd008 | (radar 18/11: YouTube+TikTok, PT vazio)
