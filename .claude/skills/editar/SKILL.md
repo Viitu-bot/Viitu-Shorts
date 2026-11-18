@@ -69,7 +69,11 @@ aval do dono). Não renderizar planta reprovada.
 - Regras embutidas: boom termina antes da próxima palavra; sem whoosh na emenda do loop; música só sobe depois da
   última fala. Medir sem mudar nada: `python3 -m viitu.mixagem --medir`.
 
-## 3. Verificações obrigatórias (nesta ordem; corrigir antes de seguir)
+## 3. TRAVA DE ENTREGA (obrigatória, um comando só)
+`python3 -m viitu.entrega <p>` → roda montagem R1–R8, revisar, direitos, auditoria e gera `saida/prancha.jpg`.
+**BLOQUEADA = não mandar ao dono.** LIBERADA = olhar a prancha com a lista de conferência e só então enviar.
+
+### Detalhe de cada verificação (o `viitu.entrega` já roda todas)
 1. `python3 -m viitu.revisar <p>` → abrir `saida/revisao.jpg` (cena de animação é ignorada na repetição).
 2. `python3 -m viitu.auditoria <p> remotion/out/<p>.mp4` (`--sem-gemini` se a cota acabou): loudness −14,
    efeitos sobre a fala, cenas escuras, ritmo, loop.

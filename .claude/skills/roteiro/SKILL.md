@@ -7,6 +7,16 @@ description: Escreve o roteiro do Viitu Shorts (protocolo HISA) a partir do tema
 
 Pré-requisito: tema validado por `/tema` (prova ≥ 1M, lacuna PT-BR, categoria/gatilho fortes).
 
+## 0. Antes de escrever (reclamações do dono — `edicao/reclamacoes.md`)
+- **Explicação que dá para entender:** 1 ideia por frase; o trecho do mecanismo precisa caber num bloco 3D de 6–10 s
+  (Bastidor). Ler em voz alta: se a explicação "acaba antes de começar", cortar informação, não acelerar.
+- **Fato vivo:** o que o roteiro afirma no presente ainda é verdade HOJE? Buscar notícia recente do assunto
+  (vd009: o avião "atual" já tinha sido trocado em julho; o texto teve de virar "o antigo avião conseguia").
+- **Cada frase pede uma imagem que existe:** quem é citado (presidente, piloto, operário) aparece de verdade;
+  marque `[PESSOA: ...]` para o /clipes buscar.
+- **Sem CTA de carimbo:** o padrão é o loop. CTA só quando o tema dá um elogio natural, e NUNCA igual ao do vídeo
+  anterior (conferir `dados/temas_feitos.md`).
+
 ## 1. Formato (HISA 2.0 do dono — escolha pelo bruto/tema)
 - **Tiro Curto 12–15 s = 30–38 palavras.** Curiosidade rápida, física bizarra, susto, gambiarra instantânea.
   **Re-hook cravado aos ~6 s** (palavra ~15): uma nova pergunta rápida ou virada de expectativa.
@@ -23,7 +33,8 @@ Pré-requisito: tema validado por `/tema` (prova ≥ 1M, lacuna PT-BR, categoria
    (cada frase = um passo que dá para desenhar).
 4. **Virada:** "Mas tem um porém…" ou o re-hook → `impacto_em`.
 5. **Conexão/consequência** (Brasil, vida de quem assiste) — opcional, só se for forte.
-6. **CTA-elogio + loop (no Bastidor; no Tiro Curto só se couber) (fórmula do próprio canal — ~200 inscritos em 10 mil views no vídeo do martim-pescador):**
+6. **Loop (sempre) + CTA-elogio só quando couber natural** (dono, 18/11: "CTA repetitivo, engessado"). Quando usar,
+   adaptar ao tema e variar a frase de vídeo para vídeo (referência do martim-pescador, ~200 inscritos em 10 mil views):
    "[sujeito] é [qualidade rara/admirável]… **igual você, inscrito do canal. Se não é, já se inscreve** pra [ver/saber]…"
    — o elogio liga o espectador ao tema e a frase suspensa emenda no gancho (loop). Ex.: "…uma engenharia genial,
    igual você, inscrito do canal. Se não é, já se inscreve pra ver se…". Na tela: "SE INSCREVE" + rosto/gesto positivo.
