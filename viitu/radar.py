@@ -62,7 +62,7 @@ def _classificar(titulos: list[str]) -> list[dict]:
         f"Você escolhe temas para um canal BR de Shorts de curiosidade técnica (público adulto, faceless, explica o PORQUÊ "
         f"de objetos, máquinas, engenharia, perigo). Para cada título: categoria ({CATEGORIAS}), gatilho ({GATILHOS}), "
         "tema_pt (o assunto em até 8 palavras), buscas_pt (3 jeitos DIFERENTES que um brasileiro buscaria esse mesmo "
-        "assunto no YouTube: o assunto, o objeto + 'por que', a pergunta), porque (0-2: tem um porquê surpreendente "
+        "assunto no YouTube: 1ª = o OBJETO GENÉRICO sem esporte/marca/país (ex.: 'bola sem ar', não 'bola de futebol americano Wilson'), 2ª = o objeto + 'por que', 3ª = a pergunta), porque (0-2: tem um porquê surpreendente "
         "para explicar?), cara_do_canal (0-2: perigo/ação/máquina com clipe real fácil de achar = 2; meme, pessoa "
         "famosa, comida, dança, desenho, jogo, produto à venda = 0), descartar (true se não é curiosidade explicável). "
         "Devolva só JSON {\"itens\": [{\"i\": n, \"categoria\": .., \"gatilho\": .., \"tema_pt\": .., \"buscas_pt\": [..], "
