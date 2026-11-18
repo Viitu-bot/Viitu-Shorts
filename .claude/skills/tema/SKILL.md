@@ -28,6 +28,11 @@ O usuário escolhe um e seguimos para `/clipes` e `/roteiro`.
    (frescor 25 · força 25 · categoria 20 · lacuna PT com 3 buscas 20 · cara do canal 10). Gasta ~5 mil da cota da API
    (10 mil/dia): rode o radar ANTES de outras buscas. Os passos abaixo só refinam os 3 melhores do radar.
 
+   **Cota da API do YouTube acabou? O projeto NÃO para** — radar pelo vidIQ (cota própria): `vidiq_trending_videos`
+   (sortBy recentVphEngaged, últimos 10 dias) + `vidiq_outliers` (publishedWithin thisMonth, sort vph) + lacuna com
+   `vidiq_youtube_search` (regionCode BR, 2 frases) + `vidiq_instagram_tiktok_outlier_search` (tema em 2+ plataformas =
+   hype confirmado). Views continuam pelo `viitu.provar` (videos.list não gasta a cota de busca).
+
 3. **O que está quente AGORA (primeiro passo, sempre — dono: "vídeo que até minha avó já viu não serve"):**
    `python3 -m viitu.quente` → Shorts do nicho publicados nos últimos 7 dias ordenados por views/hora (API do YouTube,
    EN e PT) + Google Trends em alta no BR/EUA. Tema fresco com porquê forte entra como 🔥 (vale mais que o validado antigo).
