@@ -22,6 +22,12 @@ O usuário escolhe um e seguimos para `/clipes` e `/roteiro`.
    ```
    Se quiser, acrescente buscas com `--extra "termo"` (em inglês/espanhol) para variar.
 
+0. **RADAR (pesquisa conjunta, sempre primeiro):** antes, salve os IDs dos outliers/trending do vidIQ em
+   `dados/pesquisas/<hoje>_vidiq.json` (lista de IDs). Depois `python3 -m viitu.radar --top 6`: junta Shorts do nicho
+   dos últimos 10 dias (views/hora) + 90 dias (validação) + vidIQ + Google Trends, classifica e dá nota 0–100
+   (frescor 25 · força 25 · categoria 20 · lacuna PT com 3 buscas 20 · cara do canal 10). Gasta ~5 mil da cota da API
+   (10 mil/dia): rode o radar ANTES de outras buscas. Os passos abaixo só refinam os 3 melhores do radar.
+
 3. **O que está quente AGORA (primeiro passo, sempre — dono: "vídeo que até minha avó já viu não serve"):**
    `python3 -m viitu.quente` → Shorts do nicho publicados nos últimos 7 dias ordenados por views/hora (API do YouTube,
    EN e PT) + Google Trends em alta no BR/EUA. Tema fresco com porquê forte entra como 🔥 (vale mais que o validado antigo).
