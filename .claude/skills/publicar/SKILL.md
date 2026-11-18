@@ -16,6 +16,10 @@ O dono agenda no app do YouTube Studio (upload pela API trava em privado sem aud
   que o próprio espectador faria. Vale quando o objeto é conhecido; título vago ("O inimigo do avião...") é o pior caso.
 - 4–8 palavras, 1 emoji no fim, sem CAIXA ALTA gritando. Só em português (dublagem automática está ativa).
 
+## 1b. Música famosa (cenas.json com "musica": "app:<faixa>")
+Passo extra para o dono no envio: **Adicionar som** → buscar a faixa → volume da faixa em ~10–15% e o som original em 100%.
+(Nunca embutir música com direitos no arquivo. Faixas livres com crédito, como Kevin MacLeod, vão com o crédito na descrição.)
+
 ## 2. Descrição
 1–2 frases com o gancho + `creditos_descricao` do cenas.json (todos os @ de terceiros e Pixabay) + fonte dos fatos.
 
