@@ -12,8 +12,11 @@ Base: 40–53% dos vídeos dos canais do nicho têm animação; inserções de 1
 **Sempre 3D, nunca 2D** (dono: a animação 2D do mapa ficou simples; o 3D é o padrão do canal).
 
 ## Padrão de uso
-- Narrativa: clipe real → **3D explica** → clipe real como prova → **3D mostra o resultado**.
-- 1 ideia por animação, 3 a 6 s por entrada; sincronizar eventos às palavras (`"eventos": {"puxa": "puxa o ar"}`).
+- Narrativa: clipe real (gancho/contexto) → **3D explica em UM bloco contínuo** → clipe real como prova/virada.
+  NUNCA intercalar clipe real dentro da explicação (dono, vd009 18/11: "o 3D foi cortado pelas imagens reais no meio
+  da explicação, não faz sentido"). Várias fases do mecanismo = várias cenas 3D SEGUIDAS (a câmera continua).
+- Bloco de 6–10 s no Bastidor (3–5 s no Tiro Curto), máximo 45% do vídeo; eventos nas palavras
+  (`"eventos": {"puxa": "puxa o ar"}`). Trava: `viitu.montagem` regra R2.
 - Estilo: maquete low-poly vista de cima, câmera inclinada que se aproxima e gira um pouco, cores fortes,
   setas para forças invisíveis (vento, calor, pressão). Formato vertical: TUDO que importa precisa caber no quadro.
 - **Direção e física do movimento:** todo veículo/bicho anda para onde o nariz/cabeça aponta (no vd005 o avião
@@ -23,7 +26,7 @@ Base: 40–53% dos vídeos dos canais do nicho têm animação; inserções de 1
   duas frentes não sobra faixa intacta; nada some sem motivo.
 
 ## Nível de qualidade do 3D (dono, 17/11: "o 3D tá básico, a gaivota saiu sem bico")
-- **3D só em momentos curtos** (1–2 inserções de 2–5 s): o mecanismo impossível de filmar. O resto é clipe real.
+- **3D só no trecho explicativo** (um bloco contínuo): o mecanismo impossível de filmar. O resto é clipe real.
 - **Iluminação HDRI sempre:** céu 360° real do Poly Haven (CC0) como `scene.environment` (+ fundo quando for ao ar livre);
   aço com metalness 0.85 / roughness 0.22. Modelo: componente `Ambiente` em `Starship3D.tsx`; arquivo `assets/texturas/*_hdri.jpg`.
 - **Modelos prontos em vez de caixas** (bicho, veículo, máquina): GLB carregado com `GLTFLoader`, animação do modelo

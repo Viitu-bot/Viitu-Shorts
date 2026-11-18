@@ -29,6 +29,7 @@ import argparse
 import json
 import re
 import subprocess
+import sys
 import unicodedata
 from pathlib import Path
 
@@ -854,6 +855,16 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
 
 def editar(projeto: str) -> None:
     pasta = RAIZ / "projetos" / projeto
+    # TRAVA: a planta da montagem (reclamações recorrentes do dono) precisa passar antes de gastar render
+    from viitu.montagem import checar
+    erros, avisos = checar(projeto)
+    for a in avisos:
+        print("  ⚠️", a)
+    if erros and "--forcar" not in sys.argv:
+        print("PLANTA DA MONTAGEM REPROVADA — corrigir o cenas.json (edicao/reclamacoes.md):")
+        for e in erros:
+            print("  ❌", e)
+        sys.exit(1)
     palavras = json.loads((pasta / "palavras.json").read_text(encoding="utf-8"))
     cfg = json.loads((pasta / "cenas.json").read_text(encoding="utf-8"))
     (pasta / "saida" / "cenas").mkdir(parents=True, exist_ok=True)
@@ -903,6 +914,7 @@ def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("projeto")
     p.add_argument("--remotion", action="store_true", help="exporta vídeo limpo + plano para o Remotion")
+    p.add_argument("--forcar", action="store_true", help="pula a trava da montagem (só com aval do dono)")
     a = p.parse_args()
     global MODO_REMOTION
     MODO_REMOTION = a.remotion

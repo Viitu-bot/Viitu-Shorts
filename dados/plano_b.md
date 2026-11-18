@@ -7,7 +7,7 @@ Começo de sessão: `python3 -m viitu.saude` (testa tudo em ~1 min) + `vidiq_bal
 | Quando | O que falhou | Efeito | Correção aplicada |
 |---|---|---|---|
 | 18/11 madrugada | Cota de BUSCA da API do YouTube (10 mil/dia) | radar parou | radar pelo vidIQ (skill /tema); radar não trava mais (segue com o que coletou); views continuam (videos.list é outra cota) |
-| 18/11 tarde | Créditos do vidIQ (150/dia) gastos em tema + música | busca automática de clipe parou | orçamento diário (abaixo); clipes têm reserva no Archive/Pixabay/yt-dlp |
+| 18/11 tarde | Créditos do vidIQ gastos — e eles são **150 por MÊS** (renova dia 17), não por dia | busca automática de clipe parou | busca de clipe agora é pela busca web (TikTok/X/Instagram) + yt-dlp, sem cota; vidIQ só para tema/título |
 | 18/11 o dia todo | Wikimedia Commons 429 (bloqueio do nosso IP) | sem fotos/vídeos do Commons | Internet Archive, TikTok/Instagram/X via yt-dlp; não ficar esperando o Commons |
 | 18/11 | Chave do Pexels salva com "Bearer" (401) | Pexels inútil | dono cola a chave PURA nas configurações do ambiente (o formulário sempre põe Bearer) |
 | 18/11 | API do ElevenLabs sem responder (timeout) | voz/sons/música | site no ar = instabilidade deles: esperar e tentar de novo; voz é gerada logo no começo do vídeo para não travar o fim |
@@ -24,7 +24,7 @@ Começo de sessão: `python3 -m viitu.saude` (testa tudo em ~1 min) + `vidiq_bal
 | Tema (radar) | `viitu.radar` (API YouTube) | vidIQ trending/outliers + youtube_search | `viitu.quente` (Google Trends) | Hall da Fama / `dados/pesquisas` antigas |
 | Lacuna PT-BR | `viitu.tema lacuna` (API) | `vidiq_youtube_search` regionCode BR | — | — |
 | Views (trava) | `viitu.provar` (videos.list, quase nunca acaba) | print do dono | — | — |
-| Clipes reais | Pixabay / Commons | vidIQ TikTok/IG + yt-dlp | Internet Archive / NASA | dono manda link (X/TikTok) |
+| Clipes reais | busca web TikTok/X/IG + yt-dlp | Pixabay / Pexels | Internet Archive / NASA (480p: só prova) | vidIQ (se houver crédito) → dono manda link |
 | 3D | modelos Sketchfab / Poly Haven | modelo em código | — | — |
 | Voz | ElevenLabs (Otto) | esperar e repetir | — | — |
 | Música | biblioteca própria (`assets/musica`) | `app:` música do app do YouTube | Kevin MacLeod (CC BY) | — |
@@ -33,7 +33,7 @@ Começo de sessão: `python3 -m viitu.saude` (testa tudo em ~1 min) + `vidiq_bal
 
 ## Orçamento diário (para não acabar no meio)
 - **API do YouTube (busca, 10 mil):** radar ~5,5 mil (1x por dia, logo cedo) + lacunas extras ≤ 20 (2 mil). Resto: reserva.
-- **vidIQ (150 créditos):** tema ≤ 60 · clipes ≥ 40 (8 buscas) · títulos ≤ 20 · análises/estudos: só o que sobrar.
+- **vidIQ (150 créditos POR MÊS, renova dia 17):** ~35 por semana. Tema ≤ 20/semana · títulos ≤ 10 · clipes: não depende mais dele.
 - **Gemini:** grátis com limite diário; análises em lote de canal só fora do dia de produção.
 - **ElevenLabs:** voz ~400 caracteres por vídeo; sons/trilhas novas só quando faltar na biblioteca.
 

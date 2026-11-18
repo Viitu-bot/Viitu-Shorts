@@ -8,6 +8,10 @@ description: Edita o Short do Viitu do roteiro aprovado até o mp4 final (voz, c
 Valores fixos (volumes, ritmo, cor): `edicao/especificacao.json` — nunca número solto no código.
 Quando usar cada efeito: `edicao/logica_editor.md`. Técnicas: `edicao/manual_edicao.md`. Sons: `edicao/biblioteca_sons.md`.
 
+## 0. Antes de montar
+`edicao/reclamacoes.md` + `python3 -m viitu.montagem <p>` (o editor também roda e PARA se houver ❌; `--forcar` só com
+aval do dono). Não renderizar planta reprovada.
+
 ## 1. Montagem
 1. Voz: `python3 -m viitu.voz <p>` (Otto, eleven_v4; lê o "TEXTO FINAL PARA A VOZ" do roteiro.md) →
    `voz.mp3` + `palavras.json`. Antes de refazer, guarde a anterior (`voz_vNN.mp3`).
@@ -36,7 +40,7 @@ Quando usar cada efeito: `edicao/logica_editor.md`. Técnicas: `edicao/manual_ed
 ## 2b. Regras de montagem (cobradas pelo dono)
 - **Loop perfeito:** a última cena é o MESMO quadro do frame 0 (copie a cena 1 com `"em": "<última palavra>"`,
   `"zoom": [1.0, 1.0]`). O flash do frame 0 esconde a emenda.
-- **No máximo 2 cenas por clipe curto** (o revisor barra a 3ª). Faltou imagem? Busque outro clipe ou use 3D.
+- **No máximo 2 cenas por arquivo de clipe, curto ou longo** (trava R1). Faltou imagem? Buscar outra fonte (/clipes 0b).
 - **Clipe reaproveitado** (mesmo clipe em 2 cenas): na 2ª vez `"reverso": true` (toca ao contrário = continuação).
 - **Cena longa que o editor divide** (> 2 s) com movimento cíclico (hélice, roda, água): `"bumerangue": true` — a 2ª
   parte começa no último quadro da 1ª e toca ao contrário (sem o pulo de "copiar e colar"). Não usar com gente andando.
@@ -51,7 +55,8 @@ Quando usar cada efeito: `edicao/logica_editor.md`. Técnicas: `edicao/manual_ed
 
 ## 2c. Sound design à prova de voz (desde 18/11 — dono: "efeito por cima da voz não pode acontecer")
 - `viitu/mixagem.py` roda sozinho no fim do `editar --remotion`: simula a mixagem inteira, aplica SIDECHAIN em TODAS
-  as camadas não-voz (`plano.duck`, o Short.tsx multiplica cada uma por `D(plano, f)`) para o fundo ficar ≥ 10 dB
+  as camadas não-voz (`plano.duck`; música/foley/ambiente recebem o duck GRAVADO no arquivo `*_d.m4a`, sons curtos
+  multiplicam por `D(plano, f)` no Short.tsx — volume por quadro em faixa longa estoura o ffmpeg) para o fundo ficar ≥ 10 dB
   abaixo da voz, e recorta 2–4 kHz da música/foley/ambiente (espaço da inteligibilidade).
 - Ler as 2 linhas que ele imprime: **DEPOIS** precisa de pior ≥ 0 dB e quase nada abaixo de 10 dB. Se a culpa for
   sempre a mesma camada, baixar o nível base dela em `edicao/especificacao.json` (não só confiar no ducking).

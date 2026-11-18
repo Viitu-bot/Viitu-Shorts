@@ -5,8 +5,11 @@ description: Escolhe e baixa os VÍDEOS que representam cada frase do roteiro do
 
 # /clipes: escolher cenas como um editor
 
-**Meta de proporção (A vida é uma maravilha, 13 vídeos):** ~80% clipe real (viral vertical de TikTok/Douyin/Instagram/X),
-3D só no trecho impossível de filmar (1–2 inserções). Cada cena real ganha o foley da ação que aparece (`sfx_cena`).
+**ANTES DE TUDO: `edicao/reclamacoes.md`** (padrões de reclamação do dono e a estrutura de montagem padrão).
+A trava `python3 -m viitu.montagem <p>` barra: clipe em > 2 cenas, < 60% de fontes diferentes, 3D picotado,
+gancho com foto/3D/< 720p, clipe desfocado ou parado. **Meta: ≥ 7 fontes reais diferentes por vídeo.**
+Estrutura: gancho real → contexto real → **explicação 3D em UM bloco contínuo** → prova/virada real → loop.
+Cada cena real ganha o foley da ação que aparece (`sfx_cena`).
 
 Regra de ouro: **vídeo, não foto.** Foto só para uma prova visual impossível em vídeo (ex.: macro
 de pupila) ou para uma demonstração com efeito, no máximo 2 vezes por vídeo.
@@ -17,7 +20,7 @@ pelo usuário via link do Drive ou TikTok), ele é a espinha do vídeo e o stock
 - **NUNCA foto parada no gancho** e nunca entregar vídeo com cena real faltando (vd009, 18/11: abri com foto, repeti a
   mesma foto 3x e deixei 10 s de 3D — o dono reprovou). Se as fontes livres falharem (Commons 429, Pixabay sem o
   sujeito), PARE e peça ao dono 3–4 links do X/TikTok/Instagram do sujeito exato (eu baixo com yt-dlp) ANTES de montar.
-  Ritmo: nenhuma cena > 2 s sem corte ou ação nova; 3D no máximo ~4 s somados.
+  Ritmo: nenhuma cena > 2 s sem corte ou ação nova. Faltou fonte → buscar mais (0b), NUNCA repetir o mesmo arquivo.
 - **Gancho = um sujeito só do começo ao fim da frase.** Cada palavra de ação aparece NESSE sujeito: "Repara nas rodas
   desse carro **na curva**" → o mesmo carro, e em "curva" ele está fazendo a curva (corte antes da palavra, mesmo
   carro). Trocar de sujeito/clipe no meio da frase do gancho separa os conceitos e confunde (dono, vd006).
@@ -39,13 +42,14 @@ pelo usuário via link do Drive ou TikTok), ele é a espinha do vídeo e o stock
   `python3 -m viitu.assistir achar <link> "<cenas>"` e passe o link + os minutos exatos de cada trecho.
 - Clipe de terceiros entra como PROVA no meio, não no gancho (gancho com imagem livre sempre que possível).
 
-## 0b. BUSCA AUTOMÁTICA de clipe real (sem o dono procurar — padrão desde 18/11)
-1. `vidiq_instagram_tiktok_outlier_search` com `query` = a CENA exata em inglês ("real footage of X doing Y"),
-   `datePostedAfter` recente, `viewsMin` 20000 → lista de Reels/TikToks com link.
-2. `yt-dlp -o "tt_<perfil>_<id>.%(ext)s" <link>` baixa (TikTok sai em 1080x1920 sem marca no arquivo; Instagram também).
-3. Triar (prancha), cortar o trecho, `som_original: false`, crédito do @ na descrição.
-- Custa 5 créditos do vidIQ por busca (150/dia). Pesquisa de tema também gasta: deixar ~40 créditos para os clipes.
-- Fontes livres primeiro quando houver (Commons/Pixabay); a busca automática cobre o que elas não têm.
+## 0b. BUSCA AUTOMÁTICA de clipe real (sem o dono procurar)
+1. Para cada cena, a AÇÃO em inglês ("B-2 refueling receptacle opening", "747 takeoff wheels leaving runway").
+2. `WebSearch` com `allowed_domains: ["tiktok.com", "x.com", "instagram.com"]` → links de posts (sem cota).
+   Prefira contas OFICIAIS (forças armadas dos EUA, NASA, SpaceX, fabricante): domínio público ou fonte primária.
+3. `yt-dlp -o "<rede>_<perfil>_<id>.%(ext)s" <link>` → `python3 -m viitu.triagem <p>` → prancha → escolher.
+4. Reserva: Pixabay/Pexels, Internet Archive (480p só como prova), vidIQ TikTok/IG quando houver crédito
+   (150 por MÊS, renova dia 17), e só por último pedir link ao dono.
+- Bilibili: busca funciona (`yt-dlp "bilisearch8:<termo em chinês>"`) mas o download é bloqueado na nuvem.
 
 ## 1. Plano de cenas por GATILHO PSICOLÓGICO
 Para cada frase do roteiro, defina a função da cena antes do objeto citado:

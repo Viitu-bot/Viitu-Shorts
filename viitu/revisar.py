@@ -5,7 +5,7 @@ Para cada cena do vídeo montado (saida/video_mudo.mp4), olha INÍCIO, MEIO e FI
     sem isso, o detector YOLO de animais/pessoas)
   - está enquadrado? (centro do assunto dentro da faixa central e tamanho mínimo)
   - outro elemento domina a imagem? (ex.: a galinha do fundo maior que o galo)
-Também conta a repetição de clipes (âncora ≤ 4 cenas, demais ≤ 1).
+Também conta a repetição de clipes (cada arquivo ≤ 2 cenas, curto ou longo; ver viitu/montagem.py).
 Gera saida/revisao.jpg (3 quadros por cena, com os problemas escritos) e saida/revisao.json.
 
 Uso: python -m viitu.revisar <projeto>
@@ -107,8 +107,8 @@ def revisar(projeto: str) -> bool:
         arq = pasta / "clipes" / cl
         dur_cl = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
                                        str(arq)], capture_output=True, text=True).stdout.strip() or 0) if arq.exists() else 0
-        grupos = len({round(t / 10) for t in ts}) if dur_cl >= 60 else len(ts)
-        if dur_cl < 60 and grupos > 2:
+        grupos = len(ts)       # dono (18/11): bruto longo também cansa — 7 cenas do mesmo avião = repetição
+        if grupos > 2:
             problemas.append(f"CLIPE REPETIDO: {cl} aparece em {grupos} cenas (máx. 2) — troque por outro clipe ou 3D")
 
     for k in range(len(cortes) - 1):
