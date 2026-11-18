@@ -39,6 +39,14 @@ pelo usuário via link do Drive ou TikTok), ele é a espinha do vídeo e o stock
   `python3 -m viitu.assistir achar <link> "<cenas>"` e passe o link + os minutos exatos de cada trecho.
 - Clipe de terceiros entra como PROVA no meio, não no gancho (gancho com imagem livre sempre que possível).
 
+## 0b. BUSCA AUTOMÁTICA de clipe real (sem o dono procurar — padrão desde 18/11)
+1. `vidiq_instagram_tiktok_outlier_search` com `query` = a CENA exata em inglês ("real footage of X doing Y"),
+   `datePostedAfter` recente, `viewsMin` 20000 → lista de Reels/TikToks com link.
+2. `yt-dlp -o "tt_<perfil>_<id>.%(ext)s" <link>` baixa (TikTok sai em 1080x1920 sem marca no arquivo; Instagram também).
+3. Triar (prancha), cortar o trecho, `som_original: false`, crédito do @ na descrição.
+- Custa 5 créditos do vidIQ por busca (150/dia). Pesquisa de tema também gasta: deixar ~40 créditos para os clipes.
+- Fontes livres primeiro quando houver (Commons/Pixabay); a busca automática cobre o que elas não têm.
+
 ## 1. Plano de cenas por GATILHO PSICOLÓGICO
 Para cada frase do roteiro, defina a função da cena antes do objeto citado:
 
