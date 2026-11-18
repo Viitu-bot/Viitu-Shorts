@@ -28,14 +28,20 @@ const preparar = (cena: THREE.Group | null, pintar?: (m: THREE.Mesh) => void) =>
 
 const Nuvens: React.FC<{f: number}> = ({f}) => (
   <group>
-    {Array.from({length: 26}, (_, i) => {
-      const x = (random(`nx${i}`) - 0.5) * 900, z = ((random(`nz${i}`) - 0.5) * 900 + f * 3.5) % 900 - 450;
-      const s = 40 + random(`ns${i}`) * 90;
+    {Array.from({length: 18}, (_, c) => {
+      const cx = (random(`cx${c}`) - 0.5) * 1400, cz = ((random(`cz${c}`) - 0.5) * 1400 + f * 4) % 1400 - 700;
       return (
-        <mesh key={i} position={[x, -60 - random(`ny${i}`) * 30, z]} scale={[s, s * 0.25, s * 0.7]}>
-          <sphereGeometry args={[1, 14, 10]} />
-          <meshStandardMaterial color="#ffffff" roughness={1} transparent opacity={0.9} />
-        </mesh>
+        <group key={c} position={[cx, -140 - random(`cy${c}`) * 40, cz]}>
+          {Array.from({length: 7}, (_, i) => {
+            const s = 25 + random(`s${c}${i}`) * 45;
+            return (
+              <mesh key={i} position={[(random(`x${c}${i}`) - 0.5) * 120, random(`y${c}${i}`) * 12, (random(`z${c}${i}`) - 0.5) * 80]} scale={[s, s * 0.45, s]}>
+                <sphereGeometry args={[1, 16, 12]} />
+                <meshStandardMaterial color="#ffffff" roughness={1} transparent opacity={0.55} depthWrite={false} />
+              </mesh>
+            );
+          })}
+        </group>
       );
     })}
   </group>
@@ -48,10 +54,17 @@ export const Reabastece3D: React.FC<{fase: string; dur: number; eventos: Record<
   const b747 = useModelo('boeing747.glb');
   const kc = useModelo('kc135.glb');
   // Air Force One: azul-claro em cima, branco embaixo (pinta pelo lado do vértice? usa tom geral azul-claro + metal)
+  // tira a pintura de companhia aérea do modelo: fuselagem/asas lisas (branco-azulado do Air Force One), sem marca
   const af1 = preparar(b747, (m) => {
     const mat = m.material as THREE.MeshStandardMaterial;
-    if (mat.color) mat.color.lerp(new THREE.Color('#9fc3e6'), 0.35);
-    mat.metalness = Math.min((mat.metalness ?? 0) + 0.2, 0.6);
+    const nome = (mat.name || '').toLowerCase();
+    const manter = ['glass', 'window', 'wheel', 'dials', 'black'].some((k) => nome.includes(k));
+    if (!manter) {                                       // tira TODA a pintura (inclusive a cauda da ANA)
+      mat.map = null;
+      mat.color = new THREE.Color(nome.includes('wing') ? '#cfd6dd' : '#eef3f8');
+      mat.metalness = 0.35; mat.roughness = 0.35;
+      mat.needsUpdate = true;
+    }
   });
   const tanque = preparar(kc);
 
@@ -64,18 +77,18 @@ export const Reabastece3D: React.FC<{fase: string; dur: number; eventos: Record<
 
   // posições: 747 embaixo; KC-135 à frente e acima; o bocal fica no teto do 747 logo atrás da cabine
   const P747: [number, number, number] = [0, balanco * 0.4, 0];
-  const BOCAL: [number, number, number] = [0, 6.4 + balanco * 0.4, -22];
-  const PKC: [number, number, number] = [0, 22 + balanco, -42];
-  const ponta: [number, number, number] = [0, interpolate(desce, [0, 1], [16, BOCAL[1] + 0.3]) + balanco * (1 - desce * 0.6), interpolate(desce, [0, 1], [-30, BOCAL[2]])];
-  const raiz: [number, number, number] = [0, PKC[1] - 2.5, PKC[2] + 18];
+  const BOCAL: [number, number, number] = [0, 0.9 + balanco * 0.4, -23];     // teto da cabine superior do 747
+  const PKC: [number, number, number] = [0, 16.6 + balanco, -48];
+  const raiz: [number, number, number] = [0, PKC[1] - 4.2, PKC[2] + 18];   // embaixo da cauda do tanque
+  const ponta: [number, number, number] = [0, interpolate(desce, [0, 1], [raiz[1] - 4, BOCAL[1] + 0.4]) + balanco * (1 - desce * 0.6), interpolate(desce, [0, 1], [raiz[2] + 3, BOCAL[2]])];
   const lanca = new THREE.Vector3(...ponta).sub(new THREE.Vector3(...raiz));
   const compr = lanca.length();
   const meio = new THREE.Vector3(...raiz).add(lanca.clone().multiplyScalar(0.5));
   const quat = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), lanca.clone().normalize());
 
   const k = interpolate(f, [0, dur], [0, 1], suave);
-  const cam: [number, number, number] = [interpolate(k, [0, 1], [70, 22]), interpolate(k, [0, 1], [18, 12]), interpolate(k, [0, 1], [30, -6])];
-  const alvo: [number, number, number] = [0, interpolate(k, [0, 1], [8, 7]), interpolate(k, [0, 1], [-20, -22])];
+  const cam: [number, number, number] = [interpolate(k, [0, 1], [58, 20]), interpolate(k, [0, 1], [14, 9]), interpolate(k, [0, 1], [18, -12])];
+  const alvo: [number, number, number] = [0, interpolate(k, [0, 1], [7, 5]), interpolate(k, [0, 1], [-28, -25])];
 
   return (
     <ThreeCanvas width={width} height={height} camera={{fov: 40, position: cam, near: 0.5, far: 3000}}>
@@ -86,8 +99,8 @@ export const Reabastece3D: React.FC<{fase: string; dur: number; eventos: Record<
       <directionalLight position={[60, 120, 40]} intensity={2.4} color="#fff6e8" />
       <fog attach="fog" args={['#d8e6f2', 200, 1400]} />
       <Nuvens f={f} />
-      {af1 && <group position={P747}><primitive object={af1} /></group>}
-      {tanque && <group position={PKC}><primitive object={tanque} /></group>}
+      {af1 && <group position={P747} rotation={[0, 0, 0]}><primitive object={af1} /></group>}
+      {tanque && <group position={PKC} rotation={[0, Math.PI, 0]}><primitive object={tanque} /></group>}
       {/* lança do tanque (tubo com aletas) */}
       <mesh position={meio.toArray() as [number, number, number]} quaternion={quat}>
         <cylinderGeometry args={[0.35, 0.45, compr, 16]} />
