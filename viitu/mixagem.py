@@ -158,6 +158,33 @@ def recortar_frequencia() -> None:
         tmp.replace(arq)
 
 
+def assar_duck(plano: dict) -> None:
+    """Grava o duck DENTRO das faixas contínuas (música, foley, ambiente) em cópias *_d.m4a.
+    Motivo: com o ganho por quadro no Short.tsx, o Remotion monta uma fórmula de volume gigante para o ffmpeg e o
+    render falha ("Missing ')' or too many args", vd009 18/11). Os sons curtos seguem com D() no Remotion."""
+    sr, n_q = 48000, plano["duracao_frames"]
+    duck = np.array(plano["duck"], dtype=np.float32)
+    for nome, loop in (("musica.mp3", True), ("foley.m4a", False), ("ambiente.m4a", False)):
+        arq = PUB / nome
+        if not arq.exists():
+            continue
+        raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(arq), "-ac", "2", "-ar", str(sr), "-f", "f32le", "-"],
+                             capture_output=True).stdout
+        x = np.frombuffer(raw, dtype=np.float32).reshape(-1, 2).copy()
+        n = int(n_q / FPS * sr) + sr
+        if len(x) == 0:
+            continue
+        if loop and len(x) < n:
+            x = np.tile(x, (int(np.ceil(n / len(x))), 1))
+        t = np.arange(len(x)) / sr * FPS                      # posição em quadros
+        g = np.interp(t, np.arange(len(duck)) + 0.5, duck, left=duck[0], right=1.0).astype(np.float32)
+        y = (x * g[:, None]).astype(np.float32)
+        destino = PUB / (arq.stem + "_d.m4a")
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(sr), "-ac", "2", "-i", "-",
+                        "-c:a", "aac", "-b:a", "192k", str(destino)], input=y.tobytes(), check=True)
+    plano["duck_assado"] = True
+
+
 def aplicar(medir_so: bool = False) -> str:
     arq = PUB / "plano.json"
     plano = json.loads(arq.read_text(encoding="utf-8"))
@@ -169,6 +196,7 @@ def aplicar(medir_so: bool = False) -> str:
     txt = [relatorio(antes, "ANTES do ducking")]
     if not medir_so:
         plano["duck"] = calcular_duck(antes)
+        assar_duck(plano)
         arq.write_text(json.dumps(plano, ensure_ascii=False), encoding="utf-8")
         # medição do resultado: o fundo inteiro multiplicado pelo duck
         g = np.repeat(np.array(plano["duck"]), int(np.ceil(SR / FPS)))[: int(plano["duracao_frames"] / FPS * SR) + SR]

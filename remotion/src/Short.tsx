@@ -25,7 +25,7 @@ export type Palavra = {texto: string; f0: number; f1: number; destaque: boolean;
 export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, number, number][]; tipo?: 'circulo' | 'seta'};
 export type Plano = {
   fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
-  cortes: number[]; impactos: number[]; duck?: number[]; foley?: {f0: number; f1: number; som: string; vol: number}[]; foley_mix?: boolean;
+  cortes: number[]; impactos: number[]; duck?: number[]; duck_assado?: boolean; foley?: {f0: number; f1: number; som: string; vol: number}[]; foley_mix?: boolean;
   kit?: Record<string, string[]>; mix?: Record<string, number>; visual?: Record<string, number | boolean>; sfx?: {f: number; som: string; vol?: number; dur?: number}[];
   animacoes?: {nome: string; fase: string; f0: number; f1: number; eventos: Record<string, number>}[]; cta: {f0: number; texto: string} | null;
 };
@@ -180,7 +180,12 @@ const RESERVA: Record<string, number> = {voz: 1, musica_fala: 0.11, musica_pausa
   pop: 0.55, boom: 0.8, riser: 0.32, ding: 0.85, clique: 0.6};
 const M = (plano: Plano, camada: string) => plano.mix?.[camada] ?? RESERVA[camada] ?? 0.5;
 // SIDECHAIN: ganho por quadro calculado em viitu/mixagem.py para o fundo ficar sempre ≥ 10 dB abaixo da voz
+// volumes em degraus de 1,5 dB: inaudível, mas mantém pequena a fórmula de volume que o Remotion passa ao ffmpeg
+// (com valores contínuos a fórmula estoura o limite e o render falha — vd009, 18/11)
+const Q = (v: number) => (v <= 0.0005 ? 0 : Math.pow(10, (Math.round((20 * Math.log10(v)) / 1.5) * 1.5) / 20));
 const D = (plano: Plano, f: number) => plano.duck?.[Math.max(0, Math.round(f))] ?? 1;
+// faixas contínuas: o duck já vem gravado no arquivo *_d.m4a (viitu/mixagem.assar_duck)
+const DC = (plano: Plano, f: number) => (plano.duck_assado ? 1 : D(plano, f));
 const kitSom = (plano: Plano, funcao: string, i: number, reserva: string) => {
   const l = plano.kit?.[funcao];
   return l && l.length ? l[i % l.length] : reserva;
@@ -267,7 +272,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       {plano.marcas.map((m, k) => (
         <React.Fragment key={k}>
           {m.tipo === 'seta' ? <SetaMarca marca={m} /> : <CirculoMarca marca={m} />}
-          <Sequence from={m.f0} durationInFrames={30}><Audio src={staticFile(kitSom(plano, 'pop_marca', k, 'pop.mp3'))} volume={(x) => M(plano,'pop') * D(plano, m.f0 + x)} /></Sequence>
+          <Sequence from={m.f0} durationInFrames={30}><Audio src={staticFile(kitSom(plano, 'pop_marca', k, 'pop.mp3'))} volume={(x) => Q(M(plano,'pop') * D(plano, m.f0 + x))} /></Sequence>
         </React.Fragment>
       ))}
 
@@ -280,12 +285,12 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       {plano.impactos.map((f, k) => (
         <React.Fragment key={k}>
           <FlashImpacto f={f} />
-          <Sequence from={Math.max(f - 50, 0)} durationInFrames={52}><Audio src={staticFile(kitSom(plano, 'riser_tensao', k, 'tensao.mp3'))} volume={(x) => M(plano,'riser') * D(plano, Math.max(f - 50, 0) + x)} /></Sequence>
+          <Sequence from={Math.max(f - 50, 0)} durationInFrames={52}><Audio src={staticFile(kitSom(plano, 'riser_tensao', k, 'tensao.mp3'))} volume={(x) => Q(M(plano,'riser') * D(plano, Math.max(f - 50, 0) + x))} /></Sequence>
           <Sequence from={f} durationInFrames={60}><Audio src={staticFile(kitSom(plano, 'impacto_revelacao', k, 'boom.mp3'))} volume={(x) => {
             // o boom termina (fade) antes da PRÓXIMA palavra depois da pausa: nunca ressoa por cima da fala
             const prox = plano.palavras.find((p) => p.f0 > f + 4)?.f0 ?? f + 60;
             const corte = interpolate(x, [Math.max(prox - f - 8, 2), Math.max(prox - f - 1, 3)], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-            return M(plano,'boom') * D(plano, f + x) * corte;
+            return Q(M(plano,'boom') * D(plano, f + x) * corte);
           }} /></Sequence>
         </React.Fragment>
       ))}
@@ -301,22 +306,22 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       {/* efeitos sonoros: woosh variado em cada corte (começa um pouco antes) */}
       {plano.cortes.filter((c, i) => !plano.impactos.includes(c) && i < plano.cortes.length - 1).map((c, k) => (   /* sem whoosh na emenda do loop */
         <Sequence key={k} from={Math.max(c - 4, 0)} durationInFrames={24}>
-          <Audio src={staticFile(plano.kit?.whoosh_corte ? plano.kit.whoosh_corte[k % plano.kit.whoosh_corte.length] : WOOSHES[k % WOOSHES.length])} volume={(x) => M(plano,'whoosh') * D(plano, Math.max(c - 4, 0) + x)} />
+          <Audio src={staticFile(plano.kit?.whoosh_corte ? plano.kit.whoosh_corte[k % plano.kit.whoosh_corte.length] : WOOSHES[k % WOOSHES.length])} volume={(x) => Q(M(plano,'whoosh') * D(plano, Math.max(c - 4, 0) + x))} />
         </Sequence>
       ))}
 
       {/* sons de FUNÇÃO (número → ding, dinheiro → moeda, mito → buzzer...) */}
       {(plano.sfx ?? []).map((e, k) => (
-        <Sequence key={`sx${k}`} from={e.f} durationInFrames={e.dur ?? 60}><Audio src={staticFile(e.som)} volume={(x) => (e.vol ?? M(plano,'ding')) * D(plano, e.f + x)} /></Sequence>
+        <Sequence key={`sx${k}`} from={e.f} durationInFrames={e.dur ?? 60}><Audio src={staticFile(e.som)} volume={(x) => Q((e.vol ?? M(plano,'ding')) * D(plano, e.f + x))} /></Sequence>
       ))}
 
       <FlashIdentidade />
-      <Sequence from={0} durationInFrames={30}><Audio src={staticFile('ding.mp3')} volume={(x) => M(plano,'ding') * D(plano, x)} /></Sequence>
+      <Sequence from={0} durationInFrames={30}><Audio src={staticFile('ding.mp3')} volume={(x) => Q(M(plano,'ding') * D(plano, x))} /></Sequence>
 
       {/* FOLEY já mixado em Python: corte em J/L (entra antes do corte) + pan estéreo pelo lado do sujeito */}
       {plano.foley_mix ? (
-        <Audio src={staticFile('foley.m4a')}
-          volume={(f) => vacuo(f) * (falando(f) ? 0.85 : 1) * D(plano, f)} />
+        <Audio src={staticFile(plano.duck_assado ? 'foley_d.m4a' : 'foley.m4a')}
+          volume={(f) => Q(vacuo(f) * (falando(f) ? 0.85 : 1) * DC(plano, f))} />
       ) : (plano.foley ?? []).map((f, k) => (
         <Sequence key={`fo${k}`} from={f.f0} durationInFrames={Math.max(f.f1 - f.f0, 1)}>
           <Audio src={staticFile(f.som)} loop
@@ -325,17 +330,17 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       ))}
 
       {/* trilha com DUCKING (abaixa sob a voz) + VÁCUO antes do impacto (silêncio → boom → trilha volta mais forte) */}
-      <Audio src={staticFile('musica.mp3')} loop
+      <Audio src={staticFile(plano.duck_assado ? 'musica_d.m4a' : 'musica.mp3')} loop
         volume={(f) => {
           // LOOP: a trilha SOBE nos últimos 1,5 s (padrão dos canais grandes) e não some — o fim emenda no começo
           // sobe só DEPOIS da última fala longa (no loop a voz vai até o fim: o sidechain segura o resto)
           const ultimaPausa = plano.palavras.length ? plano.palavras[plano.palavras.length - 1].f1 : durationInFrames;
           const sobe = interpolate(f, [Math.max(durationInFrames - 45, ultimaPausa), Math.max(durationInFrames - 5, ultimaPausa + 1)], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
           const base = falando(f) ? M(plano,'musica_fala') : M(plano,'musica_pausa');
-          return (base + (M(plano,'musica_pausa') * 1.3 - base) * sobe) * vacuo(f) * D(plano, f);
+          return Q((base + (M(plano,'musica_pausa') * 1.3 - base) * sobe) * vacuo(f) * DC(plano, f));
         }} />
       {/* som original dos clipes por baixo da voz (padrão dos virais: chiado, raspagem, bicho) */}
-      <Audio src={staticFile('ambiente.m4a')} volume={(f) => M(plano,'som_original') * vacuo(f) * D(plano, f)} />
+      <Audio src={staticFile(plano.duck_assado ? 'ambiente_d.m4a' : 'ambiente.m4a')} volume={(f) => Q(M(plano,'som_original') * vacuo(f) * DC(plano, f))} />
       <Audio src={staticFile('audio.m4a')} volume={M(plano,'voz')} />
     </AbsoluteFill>
   );

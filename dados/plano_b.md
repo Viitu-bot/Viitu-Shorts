@@ -15,6 +15,7 @@ Começo de sessão: `python3 -m viitu.saude` (testa tudo em ~1 min) + `vidiq_bal
 | 18/11 | ElevenLabs Music 429 em pedidos paralelos | trilhas falharam | gerar UMA de cada vez |
 | 18/11 | Música famosa com direitos | risco de Content ID | modo `"musica": "app:<faixa>"` (dono adiciona no app) |
 | 17–18/11 | Sound design cobrindo a voz | reclamação do dono | sidechain universal (`viitu/mixagem.py`) + regra de margem 10 dB |
+| 18/11 noite | Render travou no áudio ("Missing ')'" no ffmpeg) | vd009 não saiu | duck gravado dentro da música/foley/ambiente (`mixagem.assar_duck` → `*_d.m4a`); volumes em degraus de 1,5 dB no Short.tsx |
 | 18/11 | Vídeo montado com foto parada / 3D demais por falta de fonte | dono reprovou o vd009 v1 | regra no /clipes: se a fonte falhar, trocar de fonte ou pedir links — nunca foto parada no gancho |
 
 ## Cadeia de reservas por etapa
