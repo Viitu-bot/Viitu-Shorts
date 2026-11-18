@@ -1,63 +1,125 @@
 {
- "_versao": "v1: foto real AF1 (Rushmore, PD) + 3D com modelos prontos (encaixe e 'sem') + Pixabay no fecho; Commons HD bloqueado (429)",
+ "_versao": "v2: roteiro explicado (27 s, sem CTA), vídeo real do AF1 (Bagram) + reabastecimento real (F-22, TikTok) + 747-8 real + 3D só 2 toques",
  "impacto_em": [
-  "Mas o avião novo"
+  "Só que o avião novo"
  ],
  "destaques": [
-  "pousar",
   "presidente",
-  "bocal",
+  "ar",
+  "emergência",
+  "escritório",
   "teto",
-  "voo",
-  "tanque",
+  "bocal",
+  "lança",
+  "encaixa",
   "bilhões",
   "economizar"
  ],
  "musica": "epico_engenharia.mp3",
- "cta": {
-  "em": "inscrito",
-  "texto": "SE INSCREVE"
- },
- "creditos_descricao": "Imagens: Força Aérea dos EUA (domínio público) via Wikimedia Commons; Pixabay. Modelos 3D: Boeing 747-100 (rd.palaciosdeleon26) e KC-135R (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts.",
+ "cta": false,
+ "creditos_descricao": "Imagens: Air Force One em Bagram (arquivo, Internet Archive); reabastecimento do F-22: @usa.navy.seal1 (TikTok, imagens da Força Aérea dos EUA); Modelos 3D: Boeing 747-100 (rd.palaciosdeleon26) e KC-135R (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts.",
  "cenas": [
   {
-   "em": "Esse avião pode",
-   "clipe": "commons_af1_rushmore.jpg",
-   "zoom": [
-    1.35,
-    1.5
-   ],
+   "em": "O avião do presidente",
+   "clipe": "arquivo_af1_bagram.mp4",
+   "inicio": 22.0,
    "foco": [
-    0.72,
+    0.45,
     0.5
    ],
-   "revisao": "manual",
-   "foley": "voo",
-   "_funcao": "gancho: o Air Force One real (um sujeito só)",
-   "alvo": [
-    0.5,
-    0.3
+   "zoom": [
+    1.1,
+    1.2
    ],
+   "revisao": "manual",
+   "foley": "turbina",
    "seta": [
-    640,
-    900,
+    540,
+    960,
     150
+   ],
+   "_funcao": "gancho: AF1 real taxiando (um sujeito só)"
+  },
+  {
+   "em": "consegue ficar no ar",
+   "clipe": "arquivo_af1_bagram.mp4",
+   "inicio": 35.7,
+   "layout": "inteiro",
+   "zoom": [
+    1.25,
+    1.4
+   ],
+   "revisao": "manual",
+   "foley": "turbina",
+   "_funcao": "decolagem: sai do chão em 'ar'",
+   "alvo": [
+    0.4,
+    0.45
    ]
   },
   {
-   "em": "É o avião",
-   "clipe": "commons_af1_rushmore.jpg",
+   "em": "sem pousar",
+   "clipe": "arquivo_af1_bagram.mp4",
+   "inicio": 39.0,
    "layout": "inteiro",
    "zoom": [
-    1.0,
-    1.08
+    1.2,
+    1.3
    ],
    "revisao": "manual",
    "foley": "voo",
-   "_funcao": "foto inteira: avião + presidentes do Monte Rushmore"
+   "alvo": [
+    0.33,
+    0.36
+   ]
   },
   {
-   "em": "Ele tem um bocal",
+   "em": "Numa emergência",
+   "clipe": "arquivo_af1_bagram.mp4",
+   "inicio": 2.0,
+   "foco": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "revisao": "manual",
+   "foley": "turbina"
+  },
+  {
+   "em": "e quanto menos pousar",
+   "clipe": "arquivo_af1_bagram.mp4",
+   "inicio": 28.0,
+   "foco": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.1,
+    1.0
+   ],
+   "revisao": "manual",
+   "foley": "turbina"
+  },
+  {
+   "em": "O segredo fica no teto",
+   "clipe": "arquivo_af1_bagram.mp4",
+   "inicio": 24.0,
+   "foco": [
+    0.42,
+    0.5
+   ],
+   "zoom": [
+    1.3,
+    1.5
+   ],
+   "revisao": "manual",
+   "foley": "turbina"
+  },
+  {
+   "em": "logo atrás da cabine",
    "clipe": "pixabay_6522.mp4",
    "inicio": 0.0,
    "manter": true,
@@ -65,15 +127,76 @@
    "foley": "voo",
    "animacao": {
     "nome": "reabastece3d",
-    "fase": "encaixe",
-    "eventos": {
-     "encosta": "encosta",
-     "enche": "enche"
-    }
+    "fase": "bocal",
+    "eventos": {}
    }
   },
   {
-   "em": "Mas o avião novo",
+   "em": "Um avião-tanque",
+   "clipe": "tt_usa.navy.seal1_7677460421040803102.mp4",
+   "inicio": 22.5,
+   "zoom": [
+    1.18,
+    1.18
+   ],
+   "alvo": [
+    0.5,
+    0.62
+   ],
+   "som_original": false,
+   "revisao": "manual",
+   "foley": "voo"
+  },
+  {
+   "em": "desce uma lança",
+   "clipe": "tt_usa.navy.seal1_7677460421040803102.mp4",
+   "inicio": 35.5,
+   "zoom": [
+    1.18,
+    1.25
+   ],
+   "alvo": [
+    0.5,
+    0.62
+   ],
+   "som_original": false,
+   "revisao": "manual",
+   "foley": "voo"
+  },
+  {
+   "em": "encaixa ali",
+   "clipe": "tt_usa.navy.seal1_7677460421040803102.mp4",
+   "inicio": 41.5,
+   "zoom": [
+    1.18,
+    1.3
+   ],
+   "alvo": [
+    0.5,
+    0.62
+   ],
+   "som_original": false,
+   "revisao": "manual",
+   "foley": "voo"
+  },
+  {
+   "em": "e enche o tanque",
+   "clipe": "tt_usa.navy.seal1_7677460421040803102.mp4",
+   "inicio": 50.5,
+   "zoom": [
+    1.18,
+    1.25
+   ],
+   "alvo": [
+    0.5,
+    0.6
+   ],
+   "som_original": false,
+   "revisao": "manual",
+   "foley": "voo"
+  },
+  {
+   "em": "Só que o avião novo",
    "clipe": "pixabay_6522.mp4",
    "inicio": 0.0,
    "manter": true,
@@ -88,34 +211,38 @@
    }
   },
   {
-   "em": "Engenharia de outro",
-   "clipe": "pixabay_6522.mp4",
-   "inicio": 20.0,
-   "revisao": "manual",
-   "manter": true,
-   "foley": "voo",
-   "_funcao": "fecho: asa em voo real"
-  },
-  {
-   "em": "por que",
-   "clipe": "commons_af1_rushmore.jpg",
+   "em": "Então aproveita",
+   "clipe": "arquivo_af1_bagram.mp4",
+   "inicio": 12.0,
+   "layout": "inteiro",
    "zoom": [
-    1.35,
+    1.25,
     1.35
    ],
-   "foco": [
-    0.72,
-    0.5
-   ],
-   "_funcao": "loop",
+   "revisao": "manual",
    "foley": "voo",
    "alvo": [
     0.5,
-    0.3
+    0.45
+   ]
+  },
+  {
+   "em": "enquanto",
+   "clipe": "arquivo_af1_bagram.mp4",
+   "inicio": 22.0,
+   "foco": [
+    0.45,
+    0.5
    ],
+   "zoom": [
+    1.1,
+    1.1
+   ],
+   "_funcao": "loop",
+   "foley": "turbina",
    "seta": [
-    640,
-    900,
+    540,
+    960,
     150
    ]
   }

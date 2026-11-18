@@ -68,12 +68,13 @@ export const Reabastece3D: React.FC<{fase: string; dur: number; eventos: Record<
   });
   const tanque = preparar(kc);
 
-  const sem = fase === 'sem';                           // "o avião novo vem SEM esse truque": tanque vai embora, bocal some (X)
+  const sem = fase === 'sem';
+  const soBocal = fase === 'bocal';                     // close no bocal do teto (sem o tanque ainda)                           // "o avião novo vem SEM esse truque": tanque vai embora, bocal some (X)
   const tSem = eventos.sem ?? Math.round(dur * 0.55);
   const tEnc = eventos.encosta ?? Math.round(dur * 0.45);
   const tEnc2 = eventos.enche ?? Math.round(dur * 0.7);
-  const desce = sem ? interpolate(f, [0, 18], [0.6, 0], suave) : interpolate(f, [0, tEnc], [0, 1], suave);   // lança baixando até o bocal
-  const encaixe = interpolate(f, [tEnc - 2, tEnc + 4], [0, 1], cl);
+  const desce = soBocal ? 0 : sem ? interpolate(f, [0, 18], [0.6, 0], suave) : interpolate(f, [0, tEnc], [0, 1], suave);   // lança baixando até o bocal
+  const encaixe = sem || soBocal ? 0 : interpolate(f, [tEnc - 2, tEnc + 4], [0, 1], cl);
   const fluxo = sem ? 0 : interpolate(f, [tEnc2 - 4, tEnc2 + 6], [0, 1], cl);
   const foge = sem ? interpolate(f, [0, dur], [0, 1], suave) : 0;           // tanque sobe e vai embora
   const xVermelho = sem ? interpolate(f, [tSem - 3, tSem + 3], [0, 1], cl) : 0;
@@ -82,7 +83,7 @@ export const Reabastece3D: React.FC<{fase: string; dur: number; eventos: Record<
   // posições: 747 embaixo; KC-135 à frente e acima; o bocal fica no teto do 747 logo atrás da cabine
   const P747: [number, number, number] = [0, balanco * 0.4, 0];
   const BOCAL: [number, number, number] = [0, 0.9 + balanco * 0.4, -23];     // teto da cabine superior do 747
-  const PKC: [number, number, number] = [0, 16.6 + balanco + foge * 40, -48 - foge * 120];
+  const PKC: [number, number, number] = soBocal ? [0, 400, -900] : [0, 16.6 + balanco + foge * 40, -48 - foge * 120];
   const raiz: [number, number, number] = [0, PKC[1] - 4.2, PKC[2] + 18];   // embaixo da cauda do tanque
   const ponta: [number, number, number] = [0, interpolate(desce, [0, 1], [raiz[1] - 4, BOCAL[1] + 0.4]) + balanco * (1 - desce * 0.6), interpolate(desce, [0, 1], [raiz[2] + 3, BOCAL[2]])];
   const lanca = new THREE.Vector3(...ponta).sub(new THREE.Vector3(...raiz));
@@ -91,8 +92,13 @@ export const Reabastece3D: React.FC<{fase: string; dur: number; eventos: Record<
   const quat = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), lanca.clone().normalize());
 
   const k = sem ? 1 : interpolate(f, [0, dur], [0, 1], suave);
-  const cam: [number, number, number] = [interpolate(k, [0, 1], [58, 20]), interpolate(k, [0, 1], [14, 9]), interpolate(k, [0, 1], [18, -12])];
-  const alvo: [number, number, number] = [0, interpolate(k, [0, 1], [7, 5]), interpolate(k, [0, 1], [-28, -25])];
+  const kb = interpolate(f, [0, dur], [0, 1], suave);       // fase bocal: câmera desliza do nariz até o bocal
+  const cam: [number, number, number] = soBocal
+    ? [interpolate(kb, [0, 1], [14, 6]), interpolate(kb, [0, 1], [6, 4.5]), interpolate(kb, [0, 1], [-48, -17])]
+    : [interpolate(k, [0, 1], [58, 20]), interpolate(k, [0, 1], [14, 9]), interpolate(k, [0, 1], [18, -12])];
+  const alvo: [number, number, number] = soBocal
+    ? [0, 0.8, interpolate(kb, [0, 1], [-30, -23])]
+    : [0, interpolate(k, [0, 1], [7, 5]), interpolate(k, [0, 1], [-28, -25])];
 
   return (
     <ThreeCanvas width={width} height={height} camera={{fov: 40, position: cam, near: 0.5, far: 3000}}>
@@ -106,11 +112,11 @@ export const Reabastece3D: React.FC<{fase: string; dur: number; eventos: Record<
       {af1 && <group position={P747} rotation={[0, 0, 0]}><primitive object={af1} /></group>}
       {tanque && <group position={PKC} rotation={[0, Math.PI, 0]}><primitive object={tanque} /></group>}
       {/* lança do tanque (tubo com aletas) */}
-      <mesh position={meio.toArray() as [number, number, number]} quaternion={quat}>
+      <mesh visible={!soBocal} position={meio.toArray() as [number, number, number]} quaternion={quat}>
         <cylinderGeometry args={[0.35, 0.45, compr, 16]} />
         <meshStandardMaterial color="#9aa2aa" metalness={0.7} roughness={0.35} />
       </mesh>
-      <group position={ponta}>
+      <group position={ponta} visible={!soBocal}>
         <mesh><cylinderGeometry args={[0.18, 0.25, 1.4, 12]} /><meshStandardMaterial color="#5d646b" metalness={0.8} /></mesh>
         <mesh position={[0, 0.9, 0]}><boxGeometry args={[3.2, 0.08, 0.8]} /><meshStandardMaterial color="#9aa2aa" metalness={0.6} /></mesh>
       </group>
@@ -122,7 +128,7 @@ export const Reabastece3D: React.FC<{fase: string; dur: number; eventos: Record<
       ))}
       <mesh position={BOCAL} visible={!sem || xVermelho < 0.5}>
         <cylinderGeometry args={[0.6, 0.6, 0.15, 20]} />
-        <meshStandardMaterial color={encaixe > 0.5 ? '#3dff6a' : '#ffd23d'} emissive={encaixe > 0.5 ? '#3dff6a' : '#ffaa00'} emissiveIntensity={1.4} />
+        <meshStandardMaterial color={encaixe > 0.5 ? '#3dff6a' : '#ffd23d'} emissive={encaixe > 0.5 ? '#3dff6a' : '#ffaa00'} emissiveIntensity={soBocal ? 1 + Math.sin(f * 0.4) * 0.8 : 1.4} />
       </mesh>
       {/* combustível passando pela lança: traços brilhantes descendo */}
       {fluxo > 0.01 && Array.from({length: 14}, (_, i) => {

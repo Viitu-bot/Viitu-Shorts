@@ -5,14 +5,15 @@ Radar 18/11: "Why Air Force One Never Has to Land" (OddFrame) 41,2 mi, 144,7x o 
 Fórmula de gancho: afirmação impossível.
 
 ## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs)
-Esse avião pode ficar no ar sem pousar pra abastecer.
-É o avião do presidente americano.
-Ele tem um bocal no teto: outro avião encosta em pleno voo e enche o tanque.
-Mas o avião novo, de bilhões de dólares, vem sem esse truque... pra economizar.
-Engenharia de outro nível, igual você, inscrito do canal. Se não é, já se inscreve pra ver por que
+O avião do presidente americano consegue ficar no ar sem pousar pra abastecer.
+Numa emergência, ele vira um escritório voando, e quanto menos pousar, melhor.
+O segredo fica no teto, logo atrás da cabine: um bocal.
+Um avião-tanque voa por cima, desce uma lança, encaixa ali e enche o tanque em pleno voo.
+Só que o avião novo, de bilhões de dólares, vem sem esse bocal... pra economizar.
+Então aproveita, porque por enquanto
 
 ## Marcações de edição
-- 62 palavras ≈ 23 s · loop: "...pra ver por que" → "Esse avião pode ficar no ar..."
+- v2 (dono reprovou a v1: corrido, sem o porquê, CTA de carimbo): 74 palavras ≈ 27 s, sem CTA, loop "...porque por enquanto" → "o avião do presidente..."
 - impacto_em: "Mas o avião novo"
 - destaques: pousar, presidente, bocal, teto, voo, tanque, bilhões, economizar
 - hits (auto): nenhum forte previsto; manual "sem esse truque"
