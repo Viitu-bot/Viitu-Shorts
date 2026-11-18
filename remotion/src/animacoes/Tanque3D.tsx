@@ -94,7 +94,7 @@ const Respingos: React.FC<{f: number; t0: number; x: number; forca: number}> = (
   );
 };
 
-export type FaseTanque = 'onda' | 'paredes' | 'ondinhas';
+export type FaseTanque = 'abre' | 'onda' | 'paredes' | 'ondinhas';
 
 export const Tanque3D: React.FC<{fase: FaseTanque; dur: number; eventos: Record<string, number>}> = ({fase, dur, eventos}) => {
   const f = useCurrentFrame();
@@ -102,10 +102,18 @@ export const Tanque3D: React.FC<{fase: FaseTanque; dur: number; eventos: Record<
   const {tex, erro, pronto, h} = useTexturas(['asphalt_02_diff', 'grass_path_2_diff', 'ceu_nuvens_hdri']);
 
   // ----- movimento do caminhão e inclinação do líquido por fase -----
-  let vel = 0, inclina = 0, onda = 0, empurra = 0, pitch = 0, paredesOp = 0, paredesSobe = 0, respingo = -999;
+  let vel = 0, inclina = 0, onda = 0, empurra = 0, pitch = 0, paredesOp = 0, paredesSobe = 0, respingo = -999, abre = 1;
   let cam: [number, number, number] = [5.8, 2.6, 8.2];
   let alvo: [number, number, number] = [0.2, 0.2, 0];
-  if (fase === 'onda') {
+  if (fase === 'abre') {
+    // o caminhão fechado andando; a câmera chega perto e a metade da frente do tanque gira para cima ("abre")
+    const tMeio = eventos.meio ?? Math.round(dur * 0.6);
+    vel = 1;
+    abre = interpolate(f, [tMeio - 14, tMeio + 6], [0, 1], suave);
+    const k = interpolate(f, [0, tMeio + 6], [0, 1], suave);
+    cam = [interpolate(k, [0, 1], [17, 11.5]), interpolate(k, [0, 1], [1.6, 4.6]), interpolate(k, [0, 1], [13.5, 5.2])];
+    alvo = [interpolate(k, [0, 1], [0.6, 1.1]), interpolate(k, [0, 1], [-0.4, -0.5]), 0];
+  } else if (fase === 'onda') {
     const tBate = eventos.bate ?? Math.round(dur * 0.55);
     const tEmp = eventos.empurra ?? Math.round(dur * 0.75);
     vel = interpolate(f, [0, 10, tBate], [1, 1, 0], cl);
@@ -122,7 +130,7 @@ export const Tanque3D: React.FC<{fase: FaseTanque; dur: number; eventos: Record<
     paredesSobe = interpolate(f, [tPar - 6, tPar + 10], [0, 1], suave);
     paredesOp = interpolate(f, [tPar - 6, tPar], [0, 1], cl);
     const close = interpolate(f, [tFur - 10, tFur + 4], [0, 1], suave);
-    cam = [interpolate(close, [0, 1], [10.8, 1.6]), interpolate(close, [0, 1], [4.4, 0.35]), interpolate(close, [0, 1], [4.8, 2.6])];
+    cam = [interpolate(close, [0, 1], [11.0, 1.6]), interpolate(close, [0, 1], [4.4, 0.35]), interpolate(close, [0, 1], [5.0, 2.6])];
     alvo = [interpolate(close, [0, 1], [0.4, 0.0]), interpolate(close, [0, 1], [-0.4, -0.05]), 0];
   } else {
     paredesOp = 1; paredesSobe = 1;
@@ -135,7 +143,7 @@ export const Tanque3D: React.FC<{fase: FaseTanque; dur: number; eventos: Record<
 
   // estrada andando (o caminhão fica no quadro): soma da velocidade quadro a quadro
   let pista = 0;
-  for (let k = 0; k < f; k++) pista += (fase === 'paredes' ? 0 : (k < 10 ? 1 : vel)) * 0.012;
+  for (let k = 0; k < f; k++) pista += (fase === 'paredes' ? 0 : (fase === 'abre' || k < 10 ? 1 : vel)) * 0.012;
 
   // altura do líquido em x: plano inclinado (sobe na frente = +x) + onda; com paredes, cada compartimento inclina sozinho
   const altura = (x: number) => {
@@ -181,28 +189,88 @@ export const Tanque3D: React.FC<{fase: FaseTanque; dur: number; eventos: Record<
             <cylinderGeometry args={[R, R, L, 48, 1, true, Math.PI / 2, Math.PI]} />
             <meshStandardMaterial color="#d7dce1" metalness={0.85} roughness={0.22} side={THREE.DoubleSide} />
           </mesh>
-          <mesh rotation={[0, 0, Math.PI / 2]}>
-            <cylinderGeometry args={[R + 0.004, R + 0.004, L, 48, 1, true, -Math.PI / 2, Math.PI]} />
-            <meshStandardMaterial color="#d7dce1" metalness={0.85} roughness={0.22} transparent opacity={0.12} side={THREE.DoubleSide} depthWrite={false} />
-          </mesh>
-          {[X0, X0 + L].map((x) => (
-            <mesh key={x} position={[x, 0, 0]} rotation={[0, Math.PI / 2, 0]}>
-              <circleGeometry args={[R, 48, -Math.PI / 2, Math.PI]} /><meshStandardMaterial color="#b8bec4" metalness={0.8} roughness={0.3} side={THREE.DoubleSide} />
+          {abre >= 0.99 && (
+            <mesh rotation={[0, 0, Math.PI / 2]}>
+              <cylinderGeometry args={[R + 0.004, R + 0.004, L, 48, 1, true, -Math.PI / 2, Math.PI]} />
+              <meshStandardMaterial color="#d7dce1" metalness={0.85} roughness={0.22} transparent opacity={0.1} side={THREE.DoubleSide} depthWrite={false} />
             </mesh>
+          )}
+          {/* metade da frente: TAMPA que gira para cima pela dobradiça do topo e some */}
+          {abre < 0.99 && (
+            <group position={[0, R, 0]} rotation={[-abre * 1.9, 0, 0]}>
+              <group position={[0, -R, 0]}>
+                <mesh rotation={[0, 0, Math.PI / 2]}>
+                  <cylinderGeometry args={[R + 0.004, R + 0.004, L, 48, 1, true, -Math.PI / 2, Math.PI]} />
+                  <meshStandardMaterial color="#d7dce1" metalness={0.85} roughness={0.22} side={THREE.DoubleSide}
+                    transparent opacity={interpolate(abre, [0.75, 0.99], [1, 0], cl)} />
+                </mesh>
+                {[0.6, 1.8, 3.0, -0.6, -1.8, -3.0].map((x) => (
+                  <mesh key={x} position={[x, 0, 0]} rotation={[0, Math.PI / 2, 0]}>
+                    <torusGeometry args={[R + 0.01, 0.012, 4, 48, Math.PI]} />
+                    <meshStandardMaterial color="#9aa1a8" metalness={0.8} roughness={0.3} transparent opacity={interpolate(abre, [0.75, 0.99], [1, 0], cl)} />
+                  </mesh>
+                ))}
+              </group>
+            </group>
+          )}
+          {/* tampas abauladas nas pontas (metade de trás fixa; a da frente acompanha a tampa) */}
+          {[X0, X0 + L].map((x) => (
+            <group key={x} position={[x, 0, 0]} scale={[x < 0 ? -0.28 : 0.28, 1, 1]}>
+              <mesh>
+                <sphereGeometry args={[R, 40, 20, abre < 0.99 ? Math.PI / 2 : Math.PI, abre < 0.99 ? Math.PI : Math.PI / 2, 0, Math.PI]} />
+                <meshStandardMaterial color="#c9ced4" metalness={0.85} roughness={0.25} side={THREE.DoubleSide} />
+              </mesh>
+            </group>
           ))}
-          {/* borda do corte (anel vermelho) para ler como "corte" */}
-          {[-1, 1].map((s) => (
-            <mesh key={s} position={[0, s * R, 0]}><boxGeometry args={[L, 0.03, 0.03]} /><meshBasicMaterial color="#e23b2e" /></mesh>
+          {/* borda do corte (vermelha) aparece quando abre */}
+          {abre > 0.5 && [-1, 1].map((s) => (
+            <mesh key={s} position={[0, s * R, 0]}><boxGeometry args={[L, 0.03, 0.03]} /><meshBasicMaterial color="#e23b2e" transparent opacity={abre} /></mesh>
+          ))}
+          {/* passarela, guarda-corpo, bocas de visita e escada no topo */}
+          <mesh position={[0, R + 0.06, -0.15]}><boxGeometry args={[L * 0.9, 0.03, 0.4]} /><meshStandardMaterial color="#8e959c" metalness={0.7} roughness={0.4} /></mesh>
+          {Array.from({length: 9}, (_, i) => (
+            <mesh key={i} position={[X0 + 0.5 + i * 0.75, R + 0.3, -0.35]}><cylinderGeometry args={[0.015, 0.015, 0.5, 6]} /><meshStandardMaterial color="#c3c8cd" metalness={0.8} /></mesh>
+          ))}
+          <mesh position={[0, R + 0.55, -0.35]} rotation={[0, 0, Math.PI / 2]}><cylinderGeometry args={[0.015, 0.015, L * 0.85, 6]} /><meshStandardMaterial color="#c3c8cd" metalness={0.8} /></mesh>
+          {[-2.4, 0, 2.4].map((x) => (
+            <mesh key={x} position={[x, R + 0.1, -0.15]}><cylinderGeometry args={[0.28, 0.3, 0.14, 24]} /><meshStandardMaterial color="#b0b6bc" metalness={0.85} roughness={0.25} /></mesh>
+          ))}
+          {Array.from({length: 7}, (_, i) => (
+            <mesh key={i} position={[X0 - 0.32, -0.9 + i * 0.32, 0.5]}><boxGeometry args={[0.04, 0.03, 0.4]} /><meshStandardMaterial color="#c3c8cd" metalness={0.8} /></mesh>
           ))}
           <Liquido altura={altura} />
           {PAREDES.map((x) => <Parede key={x} x={x - 0.025} op={paredesOp} sobe={paredesSobe} />)}
           {/* chassi, cabine e rodas */}
           <mesh position={[0.6, -1.3, 0]}><boxGeometry args={[9.6, 0.25, 1.0]} /><meshStandardMaterial color="#2b2d30" roughness={0.6} /></mesh>
           <group position={[4.65, -0.35, 0]}>
-            <mesh><boxGeometry args={[1.9, 2.1, 2.3]} /><meshStandardMaterial color="#c8281f" metalness={0.4} roughness={0.35} /></mesh>
+            <mesh><boxGeometry args={[1.9, 2.1, 2.3]} /><meshPhysicalMaterial color="#c8281f" metalness={0.3} roughness={0.25} clearcoat={1} clearcoatRoughness={0.1} /></mesh>
+            <mesh position={[0, 1.2, 0]}><boxGeometry args={[1.6, 0.3, 2.1]} /><meshPhysicalMaterial color="#b0221b" metalness={0.3} roughness={0.3} clearcoat={1} /></mesh>
             <mesh position={[0.96, 0.35, 0]}><boxGeometry args={[0.02, 0.8, 2.0]} /><meshStandardMaterial color="#1b2836" metalness={0.7} roughness={0.08} /></mesh>
-            <mesh position={[0.97, -0.75, 0]}><boxGeometry args={[0.04, 0.35, 2.3]} /><meshStandardMaterial color="#d8dde2" metalness={0.9} roughness={0.2} /></mesh>
+            {/* grade cromada, faróis, para-choque, retrovisores */}
+            <mesh position={[0.97, -0.35, 0]}><boxGeometry args={[0.03, 0.5, 1.2]} /><meshStandardMaterial color="#1e2124" roughness={0.5} /></mesh>
+            {[-0.5, -0.4, -0.3, -0.2].map((y) => (
+              <mesh key={y} position={[0.99, y, 0]}><boxGeometry args={[0.02, 0.03, 1.2]} /><meshStandardMaterial color="#e2e6ea" metalness={0.95} roughness={0.15} /></mesh>
+            ))}
+            {[-0.85, 0.85].map((z) => (
+              <mesh key={z} position={[0.98, -0.45, z]}><boxGeometry args={[0.03, 0.18, 0.32]} /><meshStandardMaterial color="#fffbe8" emissive="#fff3c4" emissiveIntensity={1.2} /></mesh>
+            ))}
+            <mesh position={[0.97, -0.85, 0]}><boxGeometry args={[0.08, 0.3, 2.35]} /><meshStandardMaterial color="#d8dde2" metalness={0.9} roughness={0.2} /></mesh>
+            {[-1, 1].map((s) => (
+              <group key={s} position={[0.7, 0.45, s * 1.32]}>
+                <mesh position={[0, 0, s * 0.05]}><boxGeometry args={[0.04, 0.04, 0.12]} /><meshStandardMaterial color="#2a2d30" /></mesh>
+                <mesh position={[0, 0, s * 0.12]}><boxGeometry args={[0.06, 0.45, 0.14]} /><meshStandardMaterial color="#2a2d30" metalness={0.5} /></mesh>
+              </group>
+            ))}
+            {/* escapamentos verticais atrás da cabine */}
+            {[-0.9, 0.9].map((z) => (
+              <mesh key={z} position={[-1.05, 0.9, z]}><cylinderGeometry args={[0.07, 0.07, 2.6, 14]} /><meshStandardMaterial color="#e6eaee" metalness={0.95} roughness={0.12} /></mesh>
+            ))}
           </group>
+          {/* tanque de combustível do caminhão e para-lamas */}
+          <mesh position={[3.3, -1.55, 0.62]} rotation={[0, 0, Math.PI / 2]}><cylinderGeometry args={[0.28, 0.28, 1.1, 20]} /><meshStandardMaterial color="#d7dce1" metalness={0.9} roughness={0.18} /></mesh>
+          {[-3.3, 5.0].map((x) => [-1, 1].map((s) => (
+            <mesh key={`${x}${s}`} position={[x, -1.95, s * 1.05]}><boxGeometry args={[0.04, 0.55, 0.45]} /><meshStandardMaterial color="#141414" roughness={0.9} /></mesh>
+          )))}
           {[[-2.6, 1], [-1.5, 1], [4.4, 1], [-2.6, -1], [-1.5, -1], [4.4, -1]].map(([x, z], k) => (
             <Roda key={k} x={x} z={z * 1.05} ang={pista * 40} />
           ))}
