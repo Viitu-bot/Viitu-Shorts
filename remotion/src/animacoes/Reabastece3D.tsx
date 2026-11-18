@@ -148,7 +148,7 @@ export const Reabastece3D: React.FC<{fase: string; dur: number; eventos: Record<
       <hemisphereLight args={['#eaf2fb', '#9aa5b0', 0.7]} />
       <directionalLight position={[60, 120, 40]} intensity={2.4} color="#fff6e8" />
       <fog attach="fog" args={['#d8e6f2', 200, 1400]} />
-      <Nuvens f={f} />
+      {!completo && <Nuvens f={f} />}{/* no close do 'completo' as nuvens soltas cruzavam o nariz; o céu HDRI já tem nuvens */}
       {af1 && <group position={P747} rotation={[0, 0, 0]}><primitive object={af1} /></group>}
       {tanque && <group position={PKC} rotation={[0, Math.PI, 0]}><primitive object={tanque} /></group>}
       {/* lança do tanque (tubo com aletas) */}
@@ -166,8 +166,12 @@ export const Reabastece3D: React.FC<{fase: string; dur: number; eventos: Record<
           <boxGeometry args={[4.2, 0.55, 0.3]} /><meshBasicMaterial color="#ff2a2a" />
         </mesh>
       ))}
+      {/* moldura escura do receptáculo (porta aberta) */}
+      <mesh position={[BOCAL[0], BOCAL[1] - 0.02, BOCAL[2]]} rotation={[Math.PI / 2, 0, 0]} visible={!sem || xVermelho < 0.5}>
+        <torusGeometry args={[0.52, 0.09, 10, 28]} /><meshStandardMaterial color="#2a2f35" metalness={0.6} roughness={0.4} />
+      </mesh>
       <mesh position={BOCAL} visible={!sem || xVermelho < 0.5}>
-        <cylinderGeometry args={[0.6, 0.6, 0.15, 20]} />
+        <cylinderGeometry args={[0.42, 0.42, 0.05, 24]} />
         <meshStandardMaterial color={encaixe > 0.5 ? '#3dff6a' : '#ffd23d'} emissive={encaixe > 0.5 ? '#3dff6a' : '#ffaa00'} emissiveIntensity={soBocal ? 1 + Math.sin(f * 0.4) * 0.8 : 1.4} />
       </mesh>
       {/* combustível passando pela lança: traços brilhantes descendo */}

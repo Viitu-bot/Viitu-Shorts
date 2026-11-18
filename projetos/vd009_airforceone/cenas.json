@@ -45,12 +45,12 @@
    "som_original": false,
    "revisao": "manual",
    "zoom": [
-    1.35,
-    1.4
+    1.55,
+    1.6
    ],
    "alvo": [
-    0.45,
-    0.36
+    0.42,
+    0.47
    ],
    "foley": "voo",
    "_funcao": "no ar: turbina azul do AF1 + caça escoltando (sem a legenda da CBS)"
@@ -88,12 +88,12 @@
    "som_original": false,
    "revisao": "manual",
    "zoom": [
-    1.5,
-    1.55
+    1.75,
+    1.8
    ],
    "alvo": [
     0.5,
-    0.64
+    0.69
    ],
    "foley": "voo",
    "_funcao": "escritório voando: janela do AF1 com o caça lá fora (sem o rosto do tiktoker)"
@@ -208,11 +208,15 @@
    "som_original": false,
    "revisao": "manual",
    "zoom": [
-    1.1,
-    1.15
+    1.35,
+    1.4
    ],
    "foley": "voo",
-   "_funcao": "o piloto do caça olhando (ninguém percebeu)"
+   "_funcao": "o piloto do caça olhando (ninguém percebeu)",
+   "alvo": [
+    0.5,
+    0.62
+   ]
   },
   {
    "em": "que",
