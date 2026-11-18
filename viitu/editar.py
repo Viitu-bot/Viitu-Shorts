@@ -700,16 +700,23 @@ def _hits(cfg: dict, palavras: list[dict], impactos: list[int], pub: Path) -> li
 
 def _sons_da_cena(segs: list[dict], palavras: list[dict], pub: Path) -> list[dict]:
     """Foley de AÇÃO em cena de clipe real (não é som de função): toca NA palavra, não na pausa.
-    "sfx_cena": [{"em": "pegou", "arquivo": "assets/sfx/x.mp3", "db": -4, "dur": 2, "desloc": 0}]"""
+    "sfx_cena": [{"em": "pegou", "arquivo": "assets/sfx/x.mp3" | "busca": "<som em inglês>", "db": -4, "dur": 2, "desloc": 0}]"""
     from viitu.mix import normalizar
+    from viitu.foley import _som_sonniss
     out = []
     for s in segs:
         for k, e in enumerate(s.get("sfx_cena", [])):
+            if not e.get("arquivo"):                     # "busca": som em inglês → biblioteca Sonniss (CLAP escolhe)
+                arq = _som_sonniss(e["busca"], e.get("min", 0.5), e.get("exigir"))
+                if not arq:
+                    print(f"  ⚠️ som de cena não achado: {e['busca']}")
+                    continue
+                e = {**e, "arquivo": str(Path(arq).relative_to(RAIZ)) if str(arq).startswith(str(RAIZ)) else arq}
             f = round(palavras[achar_palavra(palavras, e["em"], 0)]["inicio"] * FPS) + int(e.get("desloc", 0) * FPS)
             nome = f"cena_sfx_{s['f0']}_{k}.mp3"
             dur = e.get("dur", 3)
             corte = pub / f"_tmpc_{k}.mp3"
-            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(RAIZ / e["arquivo"]), "-t", f"{dur:.2f}",
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{e.get('ini', 0):.2f}", "-i", str(RAIZ / e["arquivo"]), "-t", f"{dur:.2f}",
                             "-af", f"afade=t=out:st={max(dur - 0.4, 0):.2f}:d=0.4", str(corte)], check=True)
             normalizar(corte, pub / nome, "pontual")
             corte.unlink(missing_ok=True)

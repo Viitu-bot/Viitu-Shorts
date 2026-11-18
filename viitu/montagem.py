@@ -13,6 +13,9 @@ palavras.json (tempos reais da voz) e os arquivos dos clipes. Com qualquer ❌ o
                  "baixa_res_ok": "<motivo>" e nunca no gancho.
   R5 FOTO        no máximo 2 fotos, nunca no gancho, nunca seguidas.
   R6 LOOP        a última cena é o mesmo clipe e o mesmo segundo da primeira.
+  R8 SOM         sound design é parte da planta, não enfeite: todo bloco 3D tem sfx amarrado a CADA evento + entrada;
+                 o gancho e ≥ 60% das cenas reais têm som de AÇÃO (sfx_cena: o que aparece na tela); há virada
+                 (impacto_em → riser/vácuo/boom) e música definida. Dono (18/11): "parece que só pôs um em cima do outro".
   R7 CENA LONGA  cena real ≥ 4 s sem "manter" vira o mesmo plano parado na tela (o editor divide, mas repete o clipe).
 
 Exceção registrada: "bloco_3d_longo": "<pedido do dono>" no cenas.json (vd008: o dono pediu o tanque aberto em 3D).
@@ -132,6 +135,26 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
     # R6 loop
     if not loop_ok or abs(cenas[ultima].get("inicio", 0) - cenas[0].get("inicio", 0)) > 0.3:
         erros.append("R6 LOOP: a última cena precisa ser o mesmo clipe e o mesmo segundo da primeira.")
+
+    # R8 som
+    for k in idx3d:
+        a = cenas[k]["animacao"]
+        sfx = a.get("sfx", [])
+        faltam = [ev for ev in a.get("eventos", {}) if not any(e.get("evento") == ev for e in sfx)]
+        if len(sfx) < 2 or faltam:
+            erros.append(f"R8 3D SEM SOUND DESIGN: cena {k + 1} tem {len(sfx)} sfx" + (f"; eventos sem som: {faltam}" if faltam else "")
+                         + " (animacao.sfx: entrada + 1 por evento).")
+    reais_idx = [k for k in range(len(cenas)) if not eh_3d[k] and not (k == ultima and loop_ok)]
+    com_acao = [k for k in reais_idx if cenas[k].get("sfx_cena")]
+    if reais_idx and 0 not in com_acao:
+        erros.append("R8 GANCHO SEM SOM DE AÇÃO: a 1ª cena precisa de sfx_cena (o som do que aparece).")
+    if reais_idx and len(com_acao) < math.ceil(0.6 * len(reais_idx)):
+        erros.append(f"R8 POUCO SOM DE AÇÃO: {len(com_acao)}/{len(reais_idx)} cenas reais com sfx_cena (mínimo 60%). "
+                     f"Sem som: cenas {[k + 1 for k in reais_idx if k not in com_acao]}.")
+    if not cfg.get("impacto_em"):
+        erros.append("R8 SEM VIRADA SONORA: defina impacto_em (riser → vácuo → boom).")
+    if not cfg.get("musica"):
+        erros.append("R8 SEM MÚSICA: defina musica (biblioteca própria ou app:<faixa>).")
 
     # R4 qualidade + R7 cena longa (por cena real)
     medidos = {}

@@ -18,7 +18,7 @@
  ],
  "musica": "epico_engenharia.mp3",
  "cta": false,
- "creditos_descricao": "Imagens: @wikiair, @cbsnews, @echo_actual, @aaronrheins, @pilotwife3 e @ethanrockenfeller (TikTok); @sentdefender e @Turbinetraveler (X); reabastecimentos com imagens da Força Aérea dos EUA. Modelos 3D: Boeing 747-100 (rd.palaciosdeleon26) e KC-135R (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts.",
+ "creditos_descricao": "Imagens: @wikiair, @cbsnews, @echo_actual, @aaronrheins, @pilotwife3 e @ethanrockenfeller (TikTok); @sentdefender, @Turbinetraveler e @RapidResponse47 (X); reabastecimentos com imagens da Força Aérea dos EUA. Modelos 3D: Boeing 747-100 (rd.palaciosdeleon26) e KC-135R (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts.",
  "cenas": [
   {
    "em": "O antigo avião",
@@ -36,7 +36,15 @@
     700,
     150
    ],
-   "_funcao": "gancho: Air Force One clássico real passando por cima (um sujeito só)"
+   "_funcao": "gancho: Air Force One clássico real passando por cima (um sujeito só)",
+   "sfx_cena": [
+    {
+     "em": "O antigo",
+     "busca": "airliner flying overhead",
+     "db": -6,
+     "dur": 2.2
+    }
+   ]
   },
   {
    "em": "conseguia ficar no ar",
@@ -53,7 +61,15 @@
     0.45
    ],
    "foley": "voo",
-   "_funcao": "no ar: turbina azul do AF1 + caça escoltando (sem a legenda da CBS)"
+   "_funcao": "no ar: turbina azul do AF1 + caça escoltando (sem a legenda da CBS)",
+   "sfx_cena": [
+    {
+     "em": "conseguia",
+     "busca": "airliner jet engine whine",
+     "db": -9,
+     "dur": 1.4
+    }
+   ]
   },
   {
    "em": "sem pousar",
@@ -66,7 +82,15 @@
     1.12
    ],
    "foley": "voo",
-   "_funcao": "abastecer: lança do avião-tanque (prévia da prova)"
+   "_funcao": "abastecer: lança do avião-tanque (prévia da prova)",
+   "sfx_cena": [
+    {
+     "em": "sem pousar",
+     "busca": "wind at high altitude",
+     "db": -10,
+     "dur": 2.0
+    }
+   ]
   },
   {
    "em": "Numa emergência",
@@ -79,10 +103,44 @@
     1.2
    ],
    "foley": "turbina",
-   "_funcao": "tensão: AF1 na pista à noite, comitiva"
+   "_funcao": "tensão: AF1 na pista à noite, comitiva",
+   "sfx_cena": [
+    {
+     "em": "Numa",
+     "busca": "jet engine idling at the airport, distant",
+     "db": -10,
+     "dur": 1.2
+    }
+   ]
   },
   {
    "em": "ele virava um escritório",
+   "clipe": "x_rr47_2008041666188361801.mp4",
+   "inicio": 3.0,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.15,
+    1.25
+   ],
+   "alvo": [
+    0.38,
+    0.4
+   ],
+   "foley": "voo",
+   "baixa_res_ok": "único vídeo oficial (Casa Branca) do presidente trabalhando dentro do avião",
+   "sfx_cena": [
+    {
+     "em": "ele virava",
+     "busca": "airplane cabin interior ambience during flight",
+     "db": -12,
+     "dur": 1.4
+    }
+   ],
+   "_funcao": "escritório voando: o PRESIDENTE a bordo, selo presidencial atrás (pedido do dono)"
+  },
+  {
+   "em": "voando",
    "clipe": "tt_aaronrheins_7504304726243069227.mp4",
    "inicio": 4.4,
    "som_original": false,
@@ -96,7 +154,15 @@
     0.69
    ],
    "foley": "voo",
-   "_funcao": "escritório voando: janela do AF1 com o caça lá fora (sem o rosto do tiktoker)"
+   "_funcao": "escritório voando: janela do AF1 com o caça lá fora (sem o rosto do tiktoker)",
+   "sfx_cena": [
+    {
+     "em": "voando",
+     "busca": "airplane cabin hum",
+     "db": -11,
+     "dur": 1.0
+    }
+   ]
   },
   {
    "em": "e quanto menos pousar",
@@ -109,7 +175,15 @@
     1.25
    ],
    "foley": "turbina",
-   "_funcao": "pousar: o AF1 descendo para a pista"
+   "_funcao": "pousar: o AF1 descendo para a pista",
+   "sfx_cena": [
+    {
+     "em": "e quanto",
+     "busca": "airplane flyby pass",
+     "db": -7,
+     "dur": 2.3
+    }
+   ]
   },
   {
    "em": "O segredo fica",
@@ -124,7 +198,33 @@
     "eventos": {
      "tanque": "avião-tanque",
      "lanca": "desce uma"
-    }
+    },
+    "sfx": [
+     {
+      "busca": "wind gust whoosh",
+      "db": -8,
+      "dur": 1.5
+     },
+     {
+      "evento": "tanque",
+      "busca": "airliner flying overhead",
+      "db": -8,
+      "dur": 2.5
+     },
+     {
+      "evento": "lanca",
+      "busca": "mechanical gears whirring",
+      "db": -10,
+      "dur": 1.2
+     },
+     {
+      "evento": "lanca",
+      "desloc": 0.85,
+      "busca": "heavy metal lock clunk",
+      "db": -5,
+      "dur": 1.2
+     }
+    ]
    },
    "_funcao": "EXPLICAÇÃO 3D em UM bloco: bocal em cima do nariz → avião-tanque chega → lança desce e encaixa"
   },
@@ -143,7 +243,15 @@
     0.55
    ],
    "foley": "voo",
-   "_funcao": "prova real: a lança chegando no caça (visão do operador)"
+   "_funcao": "prova real: a lança chegando no caça (visão do operador)",
+   "sfx_cena": [
+    {
+     "em": "encaixa",
+     "busca": "metal gear clunk",
+     "db": -5,
+     "dur": 1.0
+    }
+   ]
   },
   {
    "em": "e enche o tanque",
@@ -156,7 +264,15 @@
     1.1
    ],
    "foley": "voo",
-   "_funcao": "prova real: lança encaixada no bocal do teto de um B-2"
+   "_funcao": "prova real: lança encaixada no bocal do teto de um B-2",
+   "sfx_cena": [
+    {
+     "em": "enche",
+     "busca": "liquid flowing through a pipe",
+     "db": -9,
+     "dur": 1.9
+    }
+   ]
   },
   {
    "em": "Só que o avião novo",
@@ -169,7 +285,15 @@
     1.25
    ],
    "foley": "turbina",
-   "_funcao": "virada: o avião novo (vermelho) chegando"
+   "_funcao": "virada: o avião novo (vermelho) chegando",
+   "sfx_cena": [
+    {
+     "em": "Só que",
+     "busca": "airliner flying overhead",
+     "db": -8,
+     "dur": 1.3
+    }
+   ]
   },
   {
    "em": "que o presidente usa",
@@ -182,7 +306,15 @@
     1.15
    ],
    "foley": "voo",
-   "_funcao": "o novo em uso: hangar com bandeira"
+   "_funcao": "o novo em uso: hangar com bandeira",
+   "sfx_cena": [
+    {
+     "em": "que o presidente",
+     "busca": "crowd applause indoors",
+     "db": -12,
+     "dur": 1.8
+    }
+   ]
   },
   {
    "em": "veio sem esse",
@@ -199,7 +331,15 @@
     0.45
    ],
    "foley": "turbina",
-   "_funcao": "o nariz do novo, sem o bocal"
+   "_funcao": "o nariz do novo, sem o bocal",
+   "sfx_cena": [
+    {
+     "em": "veio sem",
+     "busca": "jet engine turbine whine close",
+     "db": -9,
+     "dur": 1.5
+    }
+   ]
   },
   {
    "em": "e ninguém percebeu",
@@ -216,6 +356,14 @@
    "alvo": [
     0.5,
     0.62
+   ],
+   "sfx_cena": [
+    {
+     "em": "e ninguém",
+     "busca": "fighter jet flyby",
+     "db": -8,
+     "dur": 1.3
+    }
    ]
   },
   {

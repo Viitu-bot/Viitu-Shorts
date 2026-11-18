@@ -53,6 +53,12 @@ aval do dono). Não renderizar planta reprovada.
 - Cena que não existe em vídeo mas tem cenário real (ex.: pássaros vistos da janela): clipe real + 3D sobreposto
   com fundo transparente (modelo `remotion/src/animacoes/PassarosJanela3D.tsx`).
 
+## 2b-som. Sound design é PLANTA, não enfeite (trava R8, dono 18/11)
+- Todo bloco 3D: `"animacao": {..., "sfx": [{"busca": "wind gust whoosh"}, {"evento": "<cada evento>", "busca": ...}]}`.
+- Cada cena real: `"sfx_cena": [{"em": "<palavra>", "busca": "<o som do que aparece, em inglês>", "db": -8, "dur": 1.5}]`
+  (o editor acha na Sonniss pelo CLAP). Gancho obrigatório; ≥ 60% das cenas reais.
+- Sem isso o `viitu.montagem` reprova e o editor não monta.
+
 ## 2c. Sound design à prova de voz (desde 18/11 — dono: "efeito por cima da voz não pode acontecer")
 - `viitu/mixagem.py` roda sozinho no fim do `editar --remotion`: simula a mixagem inteira, aplica SIDECHAIN em TODAS
   as camadas não-voz (`plano.duck`; música/foley/ambiente recebem o duck GRAVADO no arquivo `*_d.m4a`, sons curtos
