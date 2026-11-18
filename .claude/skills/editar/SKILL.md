@@ -49,6 +49,15 @@ Quando usar cada efeito: `edicao/logica_editor.md`. Técnicas: `edicao/manual_ed
 - Cena que não existe em vídeo mas tem cenário real (ex.: pássaros vistos da janela): clipe real + 3D sobreposto
   com fundo transparente (modelo `remotion/src/animacoes/PassarosJanela3D.tsx`).
 
+## 2c. Sound design à prova de voz (desde 18/11 — dono: "efeito por cima da voz não pode acontecer")
+- `viitu/mixagem.py` roda sozinho no fim do `editar --remotion`: simula a mixagem inteira, aplica SIDECHAIN em TODAS
+  as camadas não-voz (`plano.duck`, o Short.tsx multiplica cada uma por `D(plano, f)`) para o fundo ficar ≥ 10 dB
+  abaixo da voz, e recorta 2–4 kHz da música/foley/ambiente (espaço da inteligibilidade).
+- Ler as 2 linhas que ele imprime: **DEPOIS** precisa de pior ≥ 0 dB e quase nada abaixo de 10 dB. Se a culpa for
+  sempre a mesma camada, baixar o nível base dela em `edicao/especificacao.json` (não só confiar no ducking).
+- Regras embutidas: boom termina antes da próxima palavra; sem whoosh na emenda do loop; música só sobe depois da
+  última fala. Medir sem mudar nada: `python3 -m viitu.mixagem --medir`.
+
 ## 3. Verificações obrigatórias (nesta ordem; corrigir antes de seguir)
 1. `python3 -m viitu.revisar <p>` → abrir `saida/revisao.jpg` (cena de animação é ignorada na repetição).
 2. `python3 -m viitu.auditoria <p> remotion/out/<p>.mp4` (`--sem-gemini` se a cota acabou): loudness −14,

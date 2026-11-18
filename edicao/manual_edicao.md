@@ -130,3 +130,11 @@ O som segue a curva: trilha mais baixa na explicação, cheia na virada e no fin
    (lento: ~3–5x o tempo normal só nesses trechos).
 Fontes: JP Labs (Short, 53k views) e Felipe Borges "Claude Vídeo 2.0" (85k views, skill `Felpborges/claude-video`),
 analisados em 16/11/2026. Já fazemos: animação quadro a quadro, sincronia por palavra, prancha antes de entregar.
+
+
+## Sidechain universal e recorte de frequência (18/11/2026)
+Técnica de estúdio: todo som que não é voz (música, foley, efeitos, whoosh, riser/boom, pops) obedece a um ganho
+calculado quadro a quadro a partir da voz (ducking por sidechain), com ataque rápido (~2 quadros) e soltura suave
+(~8 quadros). Alvo: fundo ≥ 10 dB abaixo da voz durante a fala. Além disso, a música, o foley e o ambiente perdem
+−4 dB em 3 kHz (e −1,5 dB em 1,2 kHz): é a faixa da inteligibilidade, então a voz atravessa o fundo sem precisar
+abaixá-lo tanto. Medido no vd008: quadros com a voz disputando espaço caíram de 307 para 27 (de 669).

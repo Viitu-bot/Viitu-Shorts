@@ -837,6 +837,8 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
     plano["sfx"] += _hits(cfg, palavras, plano["impactos"], pub)
     (pub / "plano.json").write_text(json.dumps(plano, ensure_ascii=False), encoding="utf-8")
     print(f"Plano Remotion exportado: {pub.relative_to(RAIZ)}/plano.json")
+    from viitu.mixagem import aplicar as _mix
+    _mix()                                   # sidechain + recorte de frequência: a voz nunca fica coberta
 
 
 def editar(projeto: str) -> None:
