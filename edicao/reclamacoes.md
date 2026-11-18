@@ -46,3 +46,5 @@ Tiro Curto 12–15 s: igual, com o bloco 3D de 3–5 s (ou sem 3D se o clipe rea
 - [ ] A cena faz SENTIR (perigo, escala, alívio), não só ilustra?
 - [ ] O 3D tem física certa (direção do nariz, estado que não volta) e som próprio?
 - [ ] Nada de logo/marca d'água/tela de app; legenda não cobre o sujeito.
+- [ ] Clipe horizontal recortado: a PESSOA/sujeito está dentro do recorte? (vd009: o recorte pegou o selo e deixou o
+      presidente de fora — todas as travas passaram; só a prancha pegou). Use `"foco": [x, 0.5]` + `"seguir": false`.
