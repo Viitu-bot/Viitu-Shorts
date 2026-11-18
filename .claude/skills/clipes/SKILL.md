@@ -14,6 +14,10 @@ de pupila) ou para uma demonstração com efeito, no máximo 2 vezes por vídeo.
 pelo usuário via link do Drive ou TikTok), ele é a espinha do vídeo e o stock só completa.
 
 ## 0. Regras (definidas com o dono)
+- **NUNCA foto parada no gancho** e nunca entregar vídeo com cena real faltando (vd009, 18/11: abri com foto, repeti a
+  mesma foto 3x e deixei 10 s de 3D — o dono reprovou). Se as fontes livres falharem (Commons 429, Pixabay sem o
+  sujeito), PARE e peça ao dono 3–4 links do X/TikTok/Instagram do sujeito exato (eu baixo com yt-dlp) ANTES de montar.
+  Ritmo: nenhuma cena > 2 s sem corte ou ação nova; 3D no máximo ~4 s somados.
 - **Gancho = um sujeito só do começo ao fim da frase.** Cada palavra de ação aparece NESSE sujeito: "Repara nas rodas
   desse carro **na curva**" → o mesmo carro, e em "curva" ele está fazendo a curva (corte antes da palavra, mesmo
   carro). Trocar de sujeito/clipe no meio da frase do gancho separa os conceitos e confunde (dono, vd006).
