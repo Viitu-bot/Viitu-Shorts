@@ -2,5 +2,6 @@
  "montagem": true,
  "revisar": true,
  "direitos": true,
- "auditoria": true
+ "auditoria": true,
+ "ouvido": false
 }
