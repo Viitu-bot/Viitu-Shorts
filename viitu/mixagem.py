@@ -127,8 +127,13 @@ def analisar(plano: dict) -> dict:
     camadas_db = {k: _db_por_quadro(x, nq) for k, x in L.items()}
     margem = np.where(fala_q, vs - b, 99)
     soma = lambda ks: _db_por_quadro(sum(L[k] for k in ks), nq)
-    return {"v": vs, "b": b, "fala": fala_q, "margem": margem, "camadas": camadas_db,
-            "margem_leito": np.where(fala_q, vs - soma(LEITO), 99), "margem_fx": np.where(fala_q, vs - soma(FX), 99)}
+    # SEM BOMBEAR (bug do vd009, 18/11): comparar com o nível MÉDIO da fala, não com o quadro. No fim de cada palavra a
+    # voz cai e a conta quadro a quadro afundava a trilha justo nas pausas (o contrário do que o editor faz).
+    vref = float(np.median(v[fala_q])) if fala_q.any() else -20.0
+    ativa = np.convolve((v > vref - 12).astype(float), np.ones(5), "same") > 0      # voz soando (±2 quadros)
+    ativa &= fala_q
+    return {"v": vs, "b": b, "fala": ativa, "margem": margem, "camadas": camadas_db, "vref": vref,
+            "margem_leito": np.where(ativa, vref - soma(LEITO), 99), "margem_fx": np.where(ativa, vs - soma(FX), 99)}
 
 
 def calcular_duck(a: dict, chave: str = "margem", alvo_db: float = MARGEM, piso: float = 0.03) -> list[float]:
@@ -143,6 +148,7 @@ def calcular_duck(a: dict, chave: str = "margem", alvo_db: float = MARGEM, piso:
     for q in range(nq):
         prev = out[q - 1] if q else 1.0
         out[q] = g[q] if g[q] < prev else min(g[q], prev + 0.12)
+    out = np.convolve(np.pad(out, 6, mode="edge"), np.ones(13) / 13, "valid")    # leito: sem pulsar entre palavras
     return [round(float(max(x, piso)), 3) for x in out]
 
 
