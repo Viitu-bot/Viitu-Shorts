@@ -2,14 +2,16 @@ import React from 'react';
 import {Composition, staticFile} from 'remotion';
 import {Short, Plano} from './Short';
 import {Reabastece3D} from './animacoes/Reabastece3D';
+import {Abrams3D} from './animacoes/Abrams3D';
 
 // Teste3D: confere quadros soltos de uma animação sem montar o Short inteiro
 // npx remotion still src/index.ts Teste3D x.png --frame=N --props='{"fase":"completo","dur":180,"eventos":{"tanque":60,"lanca":110}}'
-const Teste3D: React.FC<{fase: string; dur: number; eventos: Record<string, number>}> = (p) => <Reabastece3D {...p} />;
+const Teste3D: React.FC<{nome?: string; fase: string; dur: number; eventos: Record<string, number>; debug?: boolean}> = (p) =>
+  p.nome === 'abrams3d' ? <Abrams3D {...p} /> : <Reabastece3D {...p} />;
 
 export const RemotionRoot: React.FC = () => (
   <>
-  <Composition id="Teste3D" component={Teste3D} width={1080} height={1920} fps={30} durationInFrames={240}
+  <Composition id="Teste3D" component={Teste3D} width={1080} height={1920} fps={30} durationInFrames={300}
     defaultProps={{fase: 'completo', dur: 180, eventos: {tanque: 60, lanca: 110}}} />
   <Composition
     id="Short"
