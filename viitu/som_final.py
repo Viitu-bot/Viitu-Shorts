@@ -50,6 +50,46 @@ def _vacuo(plano: dict, n: int) -> np.ndarray:
     return g
 
 
+def _ler(arq: Path) -> np.ndarray:
+    r = subprocess.run(["ffmpeg", "-v", "error", "-i", str(arq), "-ac", "1", "-ar", "16000", "-f", "f32le", "-"],
+                       capture_output=True).stdout
+    return np.frombuffer(r, np.float32)
+
+
+def medir(projeto: str, plano: dict) -> dict:
+    """SOM MEDIDO (trava objetiva; o Gemini dá notas de 3 a 8,5 para o mesmo arquivo). Nos stems já mixados:
+    música audível sob a voz, respira nas pausas, efeitos de ação presentes, impacto na virada, ambiência, nada por
+    cima das palavras. Mesmo áudio = mesmo resultado."""
+    st = RAIZ / "projetos" / projeto / "saida" / "stems"
+    v, l, f = (_ler(st / f"{n}_m.wav") for n in ("voz", "leito", "efeitos"))
+    n = min(len(v), len(l), len(f))
+    v, l, f = v[:n], l[:n], f[:n]
+    w = 1600                                                         # 0,1 s
+    db = lambda x: 10 * np.log10(np.mean(x.astype(np.float64) ** 2) + 1e-12)
+    jan = lambda x: np.array([db(x[i:i + w]) for i in range(0, n - w, w)])
+    V, Lj, F = jan(v), jan(l), jan(f)
+    vref = np.median(V[V > np.percentile(V, 40)])
+    fala, pausa = V > vref - 10, V < vref - 25
+    t = lambda q: min(int(q / mx.FPS * 10), len(V) - 1)              # quadro → janela
+    sob = float(np.median(Lj[fala] - vref))
+    respira = float(np.median(Lj[pausa]) - np.median(Lj[fala])) if pausa.sum() >= 3 else 0.0
+    picos = [float(F[max(t(e["f"]) - 1, 0):t(e["f"]) + 6].max() - vref) for e in plano.get("sfx", [])]
+    acao_ok = sum(p >= -12 for p in picos)
+    imp = [float(F[t(i):t(i) + 6].max() - vref) for i in plano.get("impactos", [])]
+    tapa = float(np.percentile((F - V)[fala], 98))                 # efeito acima da voz em plena fala
+    r = {
+        "musica_sob_voz_db": (round(sob, 1), -20 <= sob <= -8),
+        "musica_respira_db": (round(respira, 1), respira >= 3 or pausa.sum() < 3),
+        "efeitos_acao_audiveis": (f"{acao_ok}/{len(picos)}", not picos or acao_ok >= 0.7 * len(picos)),
+        "impacto_virada_db": ([round(x, 1) for x in imp], all(x >= -6 for x in imp)),
+        "efeito_sobre_voz_db": (round(tapa, 1), tapa <= 0),
+    }
+    print("SOM MEDIDO:")
+    for k, (val, ok) in r.items():
+        print(f"  {'✅' if ok else '❌'} {k}: {val}")
+    return {k: {"valor": val, "ok": bool(ok)} for k, (val, ok) in r.items()}
+
+
 def montar(projeto: str) -> dict:
     pasta = RAIZ / "projetos" / projeto
     mp4 = RAIZ / "remotion" / "out" / f"{projeto}.mp4"
@@ -63,8 +103,10 @@ def montar(projeto: str) -> dict:
     n = int(plano["duracao_frames"] / mx.FPS * SR)
     voz = voz[:n]
     vac = _vacuo(plano, n)
-    leito = sum(L[k][:n] for k in LEITO) * vac
-    fx = sum(L[k][:n] for k in FX)
+    AMB = 2.0                                           # ambiência/foley +6 dB (ouvido: "ambiência tímida")
+    leito = (L["musica"][:n] + AMB * (L["foley"][:n] + L["ambiente"][:n])) * vac
+    BOOM = 2.2                                          # riser/boom da virada +7 dB: o "ponto de exclamação" precisa bater
+    fx = L["whoosh"][:n] + L["sfx"][:n] + L["marcas"][:n] + BOOM * L["virada"][:n]
     st = pasta / "saida" / "stems"
     st.mkdir(parents=True, exist_ok=True)
     for nome, x in (("voz", voz), ("leito", leito), ("efeitos", fx)):
@@ -73,16 +115,19 @@ def montar(projeto: str) -> dict:
     mix = st / "mix.wav"
     grafo = (
         "[0:a]highpass=f=80,acompressor=threshold=0.125:ratio=2.5:attack=8:release=120:makeup=1.3,asplit=3[v][vk1][vk2];"
-        # leito: sidechain real pela voz — abaixa ~10 dB quando a voz fala, sobe nas pausas (soltura 400 ms: sem bombear)
-        "[1:a][vk1]sidechaincompress=threshold=0.02:ratio=8:attack=20:release=400:knee=4[l];"
+        # leito: sidechain real pela voz — abaixa ~10 dB quando a voz fala, sobe nas pausas (soltura 250 ms: sem bombear)
+        "[1:a][vk1]sidechaincompress=threshold=0.05:ratio=4:attack=15:release=250:knee=4[l];"
         # efeitos curtos: só encostam (ratio baixo), continuam claros
         "[2:a][vk2]sidechaincompress=threshold=0.08:ratio=2:attack=5:release=150[f];"
-        "[v][l][f]amix=inputs=3:normalize=0,alimiter=limit=0.89:level=false,"
+        "[l]asplit=2[l1][l2];[f]asplit=2[f1][f2];[v]asplit=2[v1][v2];"
+        "[v1][l1][f1]amix=inputs=3:normalize=0,alimiter=limit=0.89:level=false,"
         "loudnorm=I=-14:TP=-1.5:LRA=9,aresample=48000[out]"
     )
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(st / "voz.wav"), "-i", str(st / "leito.wav"),
                     "-i", str(st / "efeitos.wav"), "-filter_complex", grafo, "-map", "[out]", "-c:a", "pcm_s16le",
-                    str(mix)], check=True)
+                    str(mix), "-map", "[v2]", str(st / "voz_m.wav"), "-map", "[l2]", str(st / "leito_m.wav"),
+                    "-map", "[f2]", str(st / "efeitos_m.wav")], check=True)
+    medidas = medir(projeto, plano)
     tmp = mp4.with_name(f"_{mp4.name}")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(mp4), "-i", str(mix), "-map", "0:v", "-map", "1:a",
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(tmp)],
@@ -90,7 +135,7 @@ def montar(projeto: str) -> dict:
     tmp.replace(mp4)
     db = lambda x: float(10 * np.log10(np.mean(x.astype(np.float64) ** 2) + 1e-12))
     info = {"voz_db": round(db(voz), 1), "leito_db": round(db(leito), 1), "efeitos_db": round(db(fx), 1),
-            "mp4": str(mp4.relative_to(RAIZ))}
+            "mp4": str(mp4.relative_to(RAIZ)), "medidas": medidas}
     (pasta / "saida" / "som_final.json").write_text(json.dumps(info, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Som final aplicado em {info['mp4']} · stems em {st.relative_to(RAIZ)} · "
           f"voz {info['voz_db']} / leito {info['leito_db']} / efeitos {info['efeitos_db']} dB (antes do sidechain)")

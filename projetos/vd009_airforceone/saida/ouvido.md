@@ -1,17 +1,12 @@
-Como sound designer, aqui está a análise técnica do áudio:
-
-### 1) Análise segundo a segundo
-*   **0:00 - 0:05:** Som de turbina de avião (jet engine) com *low-pass filter* (abafado). *Whoosh* de transição em cada corte.
-*   **0:05 - 0:08:** Som de ambiente de escritório (teclado, murmúrios) misturado com som de cabine de avião.
-*   **0:08 - 0:10:** Som de turbina aumentando o volume.
-*   **0:10 - 0:15:** Som de "clique" metálico ou *pop* quando o bocal é destacado. Efeito de *riser* (subida de tom) para criar tensão.
-*   **0:15 - 0:18:** Som de "clique" de encaixe (conector) seguido de um som de sucção/fluxo de combustível (líquido).
-*   **0:18 - 0:24:** Som de turbina em *fade out* e transição para som de ambiente de hangar (eco, vozes distantes).
-
-### 2) Música
-A música é um *lo-fi/hip-hop* instrumental genérico. Ela é perceptível, mas **não tem dinâmica**. Ela mantém o mesmo volume e intensidade do início ao fim, ignorando os ganchos visuais e as viradas da narração. Falta um *ducking* (abaixamento automático) mais preciso quando a voz entra e um *build-up* nos momentos de revelação técnica.
-
-### 3) Efeitos de Ação
-Os efeitos são claros e bem escolhidos, mas a **sincronização é inconsistente**. O som do "encaixe" do reabastecimento ocorre um pouco antes da animação visual, o que gera um leve desconforto auditivo. Além disso, o volume dos efeitos de transição (*whooshes*) está muito alto em relação à narração, competindo pela atenção do espectador.
-
-NOTA: 6/10 — Falta de ducking na música, sincronia imprecisa dos efeitos e ausência de dinâmica sonora nas transições.
+✅ Há música de fundo perceptível durante o vídeo todo?  (votos sim: 3/3)
+❌ A música fica mais baixa sob a voz e volta nas pausas, SEM afundar de repente quando a voz para?  (votos sim: 0/3)
+✅ A música/som cresce ou ganha energia na virada (por volta dos 75% do vídeo) ou no fim?  (votos sim: 3/3)
+✅ Há um impacto sonoro claro (boom/hit) na virada do roteiro?  (votos sim: 3/3)
+✅ Os sons de ação (avião, metal, líquido, máquina) são claramente audíveis quando a ação aparece?  (votos sim: 3/3)
+✅ Nenhum efeito ou whoosh cobre/mascara palavras da narração?  (votos sim: 3/3)
+❌ Os whooshes de transição estão dosados (não em todo corte, não cansativos)?  (votos sim: 0/3)
+❌ Há ambiência de fundo que dá sensação de lugar (não soa como estúdio vazio)?  (votos sim: 0/3)
+✅ A narração está clara, à frente, sem distorção?  (votos sim: 3/3)
+✅ O fim do vídeo não tem silêncio (o som emenda para o loop)?  (votos sim: 3/3)
+Problemas citados: música não faz ducking (abaixa e volta) corretamente; excesso de whooshes em quase todos os cortes; falta de ambiência sonora
+NOTA: 7/10 (itens aprovados pela maioria de 3 escutas)

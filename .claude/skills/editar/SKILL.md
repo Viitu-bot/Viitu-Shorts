@@ -72,7 +72,11 @@ aval do dono). Não renderizar planta reprovada.
   última fala. Medir sem mudar nada: `python3 -m viitu.mixagem --medir`.
 
 ## 3. TRAVA DE ENTREGA (obrigatória, um comando só)
-`python3 -m viitu.entrega <p>` → roda montagem R1–R8, revisar, direitos, auditoria e gera `saida/prancha.jpg`.
+`python3 -m viitu.entrega <p>` → roda montagem R1–R8, revisar, direitos, auditoria, a **PÓS-PRODUÇÃO DE SOM**
+(`viitu.som_final`: o áudio do mp4 é refeito depois do render — voz/leito/efeitos com sidechain real, −14 LUFS) e o
+**SOM MEDIDO** (música −8 a −20 dB sob a voz, respira ≥ 3 dB nas pausas, ≥ 70% dos efeitos audíveis, impacto da virada
+≥ −6 dB, nada acima da voz), e gera `saida/prancha.jpg`. Ajuste de som = mexer em `viitu/som_final.py` e rodar de
+novo (segundos, sem novo render). O Gemini (`viitu.ouvido`) é só 2ª opinião.
 **BLOQUEADA = não mandar ao dono.** LIBERADA = olhar a prancha com a lista de conferência e só então enviar.
 
 ### Detalhe de cada verificação (o `viitu.entrega` já roda todas)

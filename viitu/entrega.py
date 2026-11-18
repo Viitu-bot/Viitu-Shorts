@@ -4,7 +4,8 @@ comando só (antes eram 4 soltas e dependiam de lembrar):
   1. planta da montagem (viitu.montagem: R1–R8 — repetição, 3D em bloco, gancho, qualidade, fotos, loop, SOM)
   2. revisão de enquadramento e telas de app (viitu.revisar)
   3. direitos e créditos (viitu.direitos)
-  4b. OUVIDO: o Gemini escuta e dá nota ao sound design (mínimo 8/10; dono 18/11: "parece que só tem clipe e narração")
+  4b. SOM: pós-produção (viitu.som_final: mixagem depois do render, sidechain real, −14 LUFS) + SOM MEDIDO (bloqueia)
+  4c. OUVIDO do Gemini: 2ª opinião (não bloqueia: deu de 3 a 8,5 para o mesmo arquivo)
   4. auditoria técnica do mp4 (viitu.auditoria: loudness, efeito sobre a fala, cenas escuras, ritmo, loop;
      com Gemini se houver cota, sem ele se não houver)
   5. prancha 1 quadro/s em saida/prancha.jpg + a lista de conferência visual de edicao/reclamacoes.md
@@ -58,6 +59,13 @@ def entregar(projeto: str) -> bool:
         res["auditoria"] = False
         print("❌ 4. Auditoria: mp4 não encontrado em", mp4.relative_to(RAIZ))
     else:
+        # 4b. SOM: pós-produção (mixagem depois do render) + medição objetiva — bloqueia. Gemini = 2ª opinião.
+        from viitu.som_final import montar
+        info = montar(projeto)
+        falhas = [k for k, m in info["medidas"].items() if not m["ok"]]
+        res["som_medido"] = not falhas
+        print(("✅" if not falhas else "❌"), "4b. Som medido (música sob a voz, respira, efeitos, impacto, nada sobre a voz)"
+              + (f" — falhou: {falhas}" if falhas else ""))
         ok, txt = _rodar("auditoria", ["viitu.auditoria", projeto, str(mp4)])
         if not ok:                                           # Gemini sem cota: audita só as medições
             ok, txt = _rodar("auditoria", ["viitu.auditoria", projeto, str(mp4), "--sem-gemini"])
@@ -70,13 +78,7 @@ def entregar(projeto: str) -> bool:
         from viitu.ouvido import ouvir
         nota, txt = ouvir(str(mp4))
         (pasta / "saida" / "ouvido.md").write_text(txt, encoding="utf-8")
-        res["ouvido"] = nota is not None and nota >= 8
-        if nota is None:
-            print("⚠️ 4b. Ouvido (Gemini) indisponível — ouvir com fone antes de mandar; NÃO libera sozinho")
-        else:
-            print(("✅" if res["ouvido"] else "❌"), f"4b. Ouvido do sound design: nota {nota}/10 (mínimo 8) — saida/ouvido.md")
-            if not res["ouvido"]:
-                print("     ", txt.strip().splitlines()[-1][:300])
+        print(f"ℹ️ 4c. Ouvido do Gemini (2ª opinião, não bloqueia — varia de 3 a 8,5 no mesmo arquivo): {nota}/10 — saida/ouvido.md")
         prancha = pasta / "saida" / "prancha.jpg"
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(mp4), "-vf", "fps=1,scale=180:-1,tile=9x4",
                         "-frames:v", "1", str(prancha)], check=False)

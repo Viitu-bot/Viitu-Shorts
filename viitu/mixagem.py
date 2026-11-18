@@ -71,7 +71,7 @@ def _camadas(plano: dict) -> tuple[np.ndarray, dict[str, np.ndarray]]:
     fim = fr(max(plano["duracao_frames"] - 45, ult))           # igual ao Short.tsx
     if fim < n:
         rampa = np.clip(np.arange(n - fim) / (40 * spf), 0, 1)
-        g_mus[fim:] = g_mus[fim:] + (M("musica_pausa") * 1.3 - g_mus[fim:]) * rampa
+        g_mus[fim:] = g_mus[fim:] + (M("musica_pausa") * 1.8 - g_mus[fim:]) * rampa     # clímax do loop
     for f in plano.get("impactos", []):                        # cresce depois da virada (igual ao Short.tsx)
         a0, a1 = fr(f), min(fr(f + 90), n)
         if a0 < n:
@@ -85,6 +85,10 @@ def _camadas(plano: dict) -> tuple[np.ndarray, dict[str, np.ndarray]]:
     le = lambda s: cache.setdefault(s, _ler(PUB / s))
     cortes = [c for i, c in enumerate(plano.get("cortes", [])) if c not in plano.get("impactos", []) and i < len(plano.get("cortes", [])) - 1]
     for k, c in enumerate(cortes):
+        # sem whoosh onde já entra um som de ação (avião passando, caça, metal): os dois juntos soam como whoosh em todo
+        # corte (ouvido 18/11). Assim fica ~metade dos cortes, como nos canais de referência.
+        if any(abs(e["f"] - c) <= 8 for e in plano.get("sfx", [])):
+            continue
         lst = kit.get("whoosh_corte") or WOOSHES
         _por(le(lst[k % len(lst)]), L["whoosh"], fr(c - 4), fr(24), M("whoosh"))
     for e in plano.get("sfx", []):
