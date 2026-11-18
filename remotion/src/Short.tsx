@@ -340,7 +340,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
           const sobe = interpolate(f, [Math.max(durationInFrames - 45, ultimaPausa), Math.max(durationInFrames - 5, ultimaPausa + 1)], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
           const base = falando(f) ? M(plano,'musica_fala') : M(plano,'musica_pausa');
           // cresce depois do boom da virada e volta em 2,5 s (dinâmica; igual ao viitu/mixagem.py)
-          const pos = (plano.impactos ?? []).reduce((g, i) => (f >= i && f < i + 75 ? 1.5 - 0.5 * Math.pow((f - i) / 75, 2) : g), 1);
+          const pos = (plano.impactos ?? []).reduce((g, i) => (f >= i && f < i + 90 ? 2.0 - 1.0 * Math.pow((f - i) / 90, 2) : g), 1);
           return Q((base + (M(plano,'musica_pausa') * 1.3 - base) * sobe) * pos * vacuo(f) * DC(plano, f));
         }} />
       {/* som original dos clipes por baixo da voz (padrão dos virais: chiado, raspagem, bicho) */}

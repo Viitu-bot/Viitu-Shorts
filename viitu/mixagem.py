@@ -25,11 +25,11 @@ PUB = RAIZ / "remotion" / "public"
 SR = 16000                 # suficiente para medir energia
 FPS = 30
 MARGEM = 10.0              # dB: LEITO contínuo (música, foley, ambiente) pelo menos isso abaixo da voz durante a fala
-MARGEM_FX = 3.0            # dB: efeitos CURTOS (whoosh, sfx de ação, virada, pop) podem chegar perto da voz
-PISO_FX = 0.4              # efeito curto nunca abaixa mais que ~8 dB (dono 18/11: "efeitos enterrados, só narração")
+MARGEM_FX = 4.0            # dB: efeitos CURTOS (whoosh, sfx de ação, virada, pop) podem chegar perto da voz
+PISO_FX = 0.3              # efeito curto nunca abaixa mais que ~8 dB (dono 18/11: "efeitos enterrados, só narração")
 LEITO = ("musica", "foley", "ambiente")
 FX = ("whoosh", "sfx", "virada", "marcas")
-POS_VIRADA = 1.5           # a trilha cresce depois do boom da virada (dinâmica; Gemini: "música linear")
+POS_VIRADA = 2.0           # a trilha cresce depois do boom da virada (dinâmica; Gemini: "música linear")
 RESERVA = {"voz": 1, "musica_fala": 0.11, "musica_pausa": 0.2, "som_original": 0.35, "whoosh": 0.32,
            "pop": 0.55, "boom": 0.8, "riser": 0.32, "ding": 0.85, "clique": 0.6}
 WOOSHES = ["woosh.mp3", "whip.mp3", "woosh2.mp3", "woosh3.mp3"]
@@ -73,9 +73,9 @@ def _camadas(plano: dict) -> tuple[np.ndarray, dict[str, np.ndarray]]:
         rampa = np.clip(np.arange(n - fim) / (40 * spf), 0, 1)
         g_mus[fim:] = g_mus[fim:] + (M("musica_pausa") * 1.3 - g_mus[fim:]) * rampa
     for f in plano.get("impactos", []):                        # cresce depois da virada (igual ao Short.tsx)
-        a0, a1 = fr(f), min(fr(f + 75), n)
+        a0, a1 = fr(f), min(fr(f + 90), n)
         if a0 < n:
-            g_mus[a0:a1] *= POS_VIRADA - (POS_VIRADA - 1) * np.clip(np.arange(a1 - a0) / (75 * spf), 0, 1) ** 2
+            g_mus[a0:a1] *= POS_VIRADA - (POS_VIRADA - 1) * np.clip(np.arange(a1 - a0) / (90 * spf), 0, 1) ** 2
     _por(_ler(PUB / "musica.mp3"), L["musica"], 0, ganho=g_mus, loop=True)
     if plano.get("foley_mix"):
         _por(_ler(PUB / "foley.m4a"), L["foley"], 0, ganho=np.where(falando, 0.85, 1.0).astype(np.float32))

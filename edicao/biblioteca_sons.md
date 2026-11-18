@@ -31,7 +31,7 @@ No editor é automático: cada cena recebe **2 camadas** (tabela `CAMADAS` em `v
 
 ## Mixagem em 2 grupos (desde 18/11 — dono: "parece que só tem clipe e narração")
 - **Leito** (música, foley contínuo, ambiente): 10 dB abaixo da voz durante a fala (`plano.duck`, gravado nos `*_d.m4a`).
-- **Efeitos curtos** (whoosh, som de ação, riser/boom, pop, ding): só 3 dB abaixo, piso 0,4 (`plano.duck_fx`). Efeito
+- **Efeitos curtos** (whoosh, som de ação, riser/boom, pop, ding): só 4 dB abaixo, piso 0,3 (`plano.duck_fx`); whoosh −8 dB. Efeito
   enterrado = vídeo "sem edição". `sfx_cena` entre −2 e −6 dB; 3D entre −2 e −6 dB.
 - Música CRESCE 2,5 s depois do boom da virada (dinâmica). O OUVIDO (`viitu.ouvido`, Gemini) dá a nota final (≥ 8).
 
