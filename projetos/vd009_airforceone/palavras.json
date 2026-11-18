@@ -5,363 +5,353 @@
   "fim": 0.08
  },
  {
-  "palavra": "avião",
+  "palavra": "antigo",
   "inicio": 0.17,
   "fim": 0.37
  },
  {
-  "palavra": "do",
+  "palavra": "avião",
   "inicio": 0.45,
-  "fim": 0.49
+  "fim": 0.77
+ },
+ {
+  "palavra": "do",
+  "inicio": 0.81,
+  "fim": 0.85
  },
  {
   "palavra": "presidente",
-  "inicio": 0.53,
-  "fim": 0.93
+  "inicio": 0.93,
+  "fim": 1.33
  },
  {
   "palavra": "americano",
-  "inicio": 1.01,
-  "fim": 1.57
+  "inicio": 1.37,
+  "fim": 1.89
  },
  {
-  "palavra": "consegue",
-  "inicio": 1.65,
-  "fim": 1.97
+  "palavra": "conseguia",
+  "inicio": 1.97,
+  "fim": 2.45
  },
  {
   "palavra": "ficar",
-  "inicio": 2.05,
-  "fim": 2.29
+  "inicio": 2.53,
+  "fim": 2.77
  },
  {
   "palavra": "no",
-  "inicio": 2.37,
-  "fim": 2.53
+  "inicio": 2.85,
+  "fim": 2.93
  },
  {
   "palavra": "ar",
-  "inicio": 2.61,
-  "fim": 2.69
+  "inicio": 3.02,
+  "fim": 3.14
  },
  {
   "palavra": "sem",
-  "inicio": 2.78,
-  "fim": 3.02
+  "inicio": 3.22,
+  "fim": 3.46
  },
  {
   "palavra": "pousar",
-  "inicio": 3.1,
-  "fim": 3.58
+  "inicio": 3.54,
+  "fim": 4.02
  },
  {
   "palavra": "pra",
-  "inicio": 3.66,
-  "fim": 3.74
+  "inicio": 4.1,
+  "fim": 4.18
  },
  {
   "palavra": "abastecer.",
-  "inicio": 3.78,
-  "fim": 4.5
+  "inicio": 4.22,
+  "fim": 4.94
  },
  {
   "palavra": "Numa",
-  "inicio": 4.59,
-  "fim": 4.75
+  "inicio": 5.03,
+  "fim": 5.19
  },
  {
   "palavra": "emergência,",
-  "inicio": 4.79,
-  "fim": 5.55
+  "inicio": 5.23,
+  "fim": 5.99
  },
  {
   "palavra": "ele",
-  "inicio": 5.63,
-  "fim": 5.71
+  "inicio": 6.07,
+  "fim": 6.15
  },
  {
-  "palavra": "vira",
-  "inicio": 5.79,
-  "fim": 5.95
+  "palavra": "virava",
+  "inicio": 6.23,
+  "fim": 6.47
  },
  {
   "palavra": "um",
-  "inicio": 5.99,
-  "fim": 6.03
+  "inicio": 6.51,
+  "fim": 6.55
  },
  {
   "palavra": "escritório",
-  "inicio": 6.11,
-  "fim": 6.75
+  "inicio": 6.63,
+  "fim": 7.27
  },
  {
   "palavra": "voando,",
-  "inicio": 6.83,
-  "fim": 7.39
+  "inicio": 7.35,
+  "fim": 7.99
  },
  {
   "palavra": "e",
-  "inicio": 7.43,
-  "fim": 7.47
+  "inicio": 8.03,
+  "fim": 8.07
  },
  {
   "palavra": "quanto",
-  "inicio": 7.55,
-  "fim": 7.87
+  "inicio": 8.15,
+  "fim": 8.47
  },
  {
   "palavra": "menos",
-  "inicio": 7.99,
-  "fim": 8.19
+  "inicio": 8.55,
+  "fim": 8.87
  },
  {
   "palavra": "pousar,",
-  "inicio": 8.27,
-  "fim": 8.91
+  "inicio": 8.91,
+  "fim": 9.59
  },
  {
   "palavra": "melhor.",
-  "inicio": 8.99,
-  "fim": 9.55
+  "inicio": 9.68,
+  "fim": 10.2
  },
  {
   "palavra": "O",
-  "inicio": 9.64,
-  "fim": 9.68
+  "inicio": 10.29,
+  "fim": 10.33
  },
  {
   "palavra": "segredo",
-  "inicio": 9.72,
-  "fim": 10.12
+  "inicio": 10.37,
+  "fim": 10.85
  },
  {
   "palavra": "fica",
-  "inicio": 10.2,
-  "fim": 10.36
- },
- {
-  "palavra": "no",
-  "inicio": 10.44,
-  "fim": 10.52
- },
- {
-  "palavra": "teto,",
-  "inicio": 10.6,
-  "fim": 11.16
- },
- {
-  "palavra": "logo",
-  "inicio": 11.24,
-  "fim": 11.48
- },
- {
-  "palavra": "atrás",
-  "inicio": 11.57,
-  "fim": 11.77
- },
- {
-  "palavra": "da",
-  "inicio": 11.81,
-  "fim": 11.85
- },
- {
-  "palavra": "cabine:",
-  "inicio": 11.93,
-  "fim": 12.57
- },
- {
-  "palavra": "um",
-  "inicio": 12.65,
-  "fim": 12.73
- },
- {
-  "palavra": "bocal.",
-  "inicio": 12.81,
-  "fim": 13.41
- },
- {
-  "palavra": "Um",
-  "inicio": 13.53,
-  "fim": 13.61
- },
- {
-  "palavra": "avião-tanque",
-  "inicio": 13.69,
-  "fim": 14.41
- },
- {
-  "palavra": "voa",
-  "inicio": 14.49,
-  "fim": 14.65
- },
- {
-  "palavra": "por",
-  "inicio": 14.73,
-  "fim": 14.89
- },
- {
-  "palavra": "cima,",
-  "inicio": 14.97,
-  "fim": 15.45
- },
- {
-  "palavra": "desce",
-  "inicio": 15.54,
-  "fim": 15.74
- },
- {
-  "palavra": "uma",
-  "inicio": 15.82,
-  "fim": 15.9
- },
- {
-  "palavra": "lança,",
-  "inicio": 15.98,
-  "fim": 16.46
- },
- {
-  "palavra": "encaixa",
-  "inicio": 16.55,
-  "fim": 16.99
- },
- {
-  "palavra": "ali",
-  "inicio": 17.11,
-  "fim": 17.23
- },
- {
-  "palavra": "e",
-  "inicio": 17.32,
-  "fim": 17.48
- },
- {
-  "palavra": "enche",
-  "inicio": 17.57,
-  "fim": 17.77
- },
- {
-  "palavra": "o",
-  "inicio": 17.81,
-  "fim": 17.85
- },
- {
-  "palavra": "tanque",
-  "inicio": 17.93,
-  "fim": 18.17
+  "inicio": 10.89,
+  "fim": 11.09
  },
  {
   "palavra": "em",
-  "inicio": 18.26,
-  "fim": 18.38
+  "inicio": 11.18,
+  "fim": 11.3
  },
  {
-  "palavra": "pleno",
-  "inicio": 18.42,
-  "fim": 18.62
+  "palavra": "cima",
+  "inicio": 11.34,
+  "fim": 11.54
  },
  {
-  "palavra": "voo.",
-  "inicio": 18.7,
-  "fim": 19.26
+  "palavra": "do",
+  "inicio": 11.62,
+  "fim": 11.7
  },
  {
-  "palavra": "Só",
-  "inicio": 19.3,
-  "fim": 19.38
+  "palavra": "nariz:",
+  "inicio": 11.78,
+  "fim": 12.42
  },
  {
-  "palavra": "que",
-  "inicio": 19.42,
-  "fim": 19.5
+  "palavra": "um",
+  "inicio": 12.5,
+  "fim": 12.58
  },
  {
-  "palavra": "o",
-  "inicio": 19.527,
-  "fim": 19.553
+  "palavra": "bocal.",
+  "inicio": 12.66,
+  "fim": 13.26
  },
  {
-  "palavra": "avião",
-  "inicio": 19.58,
-  "fim": 19.82
+  "palavra": "Um",
+  "inicio": 13.38,
+  "fim": 13.46
  },
  {
-  "palavra": "novo,",
-  "inicio": 19.9,
-  "fim": 20.3
+  "palavra": "avião-tanque",
+  "inicio": 13.54,
+  "fim": 14.26
  },
  {
-  "palavra": "de",
-  "inicio": 20.34,
-  "fim": 20.38
- },
- {
-  "palavra": "bilhões",
-  "inicio": 20.47,
-  "fim": 20.95
- },
- {
-  "palavra": "de",
-  "inicio": 20.99,
-  "fim": 21.03
- },
- {
-  "palavra": "dólares,",
-  "inicio": 21.11,
-  "fim": 21.75
- },
- {
-  "palavra": "vem",
-  "inicio": 21.83,
-  "fim": 22.07
- },
- {
-  "palavra": "sem",
-  "inicio": 22.15,
-  "fim": 22.31
- },
- {
-  "palavra": "esse",
-  "inicio": 22.4,
-  "fim": 22.52
- },
- {
-  "palavra": "bocal...",
-  "inicio": 22.61,
-  "fim": 23.197
- },
- {
-  "palavra": "pra",
-  "inicio": 23.237,
-  "fim": 23.277
- },
- {
-  "palavra": "economizar.",
-  "inicio": 23.357,
-  "fim": 24.237
- },
- {
-  "palavra": "Então",
-  "inicio": 24.327,
-  "fim": 24.487
- },
- {
-  "palavra": "aproveita,",
-  "inicio": 24.527,
-  "fim": 25.407
- },
- {
-  "palavra": "porque",
-  "inicio": 25.487,
-  "fim": 25.647
+  "palavra": "voa",
+  "inicio": 14.34,
+  "fim": 14.58
  },
  {
   "palavra": "por",
-  "inicio": 25.737,
-  "fim": 25.897
+  "inicio": 14.66,
+  "fim": 14.74
  },
  {
-  "palavra": "enquanto",
-  "inicio": 25.977,
-  "fim": 26.777
+  "palavra": "cima,",
+  "inicio": 14.82,
+  "fim": 15.38
+ },
+ {
+  "palavra": "desce",
+  "inicio": 15.46,
+  "fim": 15.7
+ },
+ {
+  "palavra": "uma",
+  "inicio": 15.78,
+  "fim": 15.86
+ },
+ {
+  "palavra": "lança,",
+  "inicio": 15.95,
+  "fim": 16.39
+ },
+ {
+  "palavra": "encaixa",
+  "inicio": 16.48,
+  "fim": 16.92
+ },
+ {
+  "palavra": "ali",
+  "inicio": 17.01,
+  "fim": 17.13
+ },
+ {
+  "palavra": "e",
+  "inicio": 17.22,
+  "fim": 17.3
+ },
+ {
+  "palavra": "enche",
+  "inicio": 17.42,
+  "fim": 17.62
+ },
+ {
+  "palavra": "o",
+  "inicio": 17.66,
+  "fim": 17.7
+ },
+ {
+  "palavra": "tanque",
+  "inicio": 17.78,
+  "fim": 18.02
+ },
+ {
+  "palavra": "em",
+  "inicio": 18.11,
+  "fim": 18.23
+ },
+ {
+  "palavra": "pleno",
+  "inicio": 18.27,
+  "fim": 18.55
+ },
+ {
+  "palavra": "voo.",
+  "inicio": 18.63,
+  "fim": 19.11
+ },
+ {
+  "palavra": "Só",
+  "inicio": 19.15,
+  "fim": 19.23
+ },
+ {
+  "palavra": "que",
+  "inicio": 19.27,
+  "fim": 19.35
+ },
+ {
+  "palavra": "o",
+  "inicio": 19.377,
+  "fim": 19.403
+ },
+ {
+  "palavra": "avião",
+  "inicio": 19.43,
+  "fim": 19.75
+ },
+ {
+  "palavra": "novo,",
+  "inicio": 19.79,
+  "fim": 20.23
+ },
+ {
+  "palavra": "que",
+  "inicio": 20.27,
+  "fim": 20.31
+ },
+ {
+  "palavra": "o",
+  "inicio": 20.337,
+  "fim": 20.363
+ },
+ {
+  "palavra": "presidente",
+  "inicio": 20.39,
+  "fim": 20.87
+ },
+ {
+  "palavra": "usa",
+  "inicio": 20.96,
+  "fim": 21.08
+ },
+ {
+  "palavra": "desde",
+  "inicio": 21.16,
+  "fim": 21.48
+ },
+ {
+  "palavra": "julho,",
+  "inicio": 21.57,
+  "fim": 22.05
+ },
+ {
+  "palavra": "veio",
+  "inicio": 22.13,
+  "fim": 22.45
+ },
+ {
+  "palavra": "sem",
+  "inicio": 22.54,
+  "fim": 22.66
+ },
+ {
+  "palavra": "esse",
+  "inicio": 22.74,
+  "fim": 22.82
+ },
+ {
+  "palavra": "bocal...",
+  "inicio": 22.9,
+  "fim": 23.62
+ },
+ {
+  "palavra": "e",
+  "inicio": 23.66,
+  "fim": 23.7
+ },
+ {
+  "palavra": "ninguém",
+  "inicio": 23.78,
+  "fim": 24.34
+ },
+ {
+  "palavra": "percebeu",
+  "inicio": 24.42,
+  "fim": 24.9
+ },
+ {
+  "palavra": "que",
+  "inicio": 24.98,
+  "fim": 25.38
  }
 ]
