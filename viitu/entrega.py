@@ -4,6 +4,7 @@ comando só (antes eram 4 soltas e dependiam de lembrar):
   1. planta da montagem (viitu.montagem: R1–R8 — repetição, 3D em bloco, gancho, qualidade, fotos, loop, SOM)
   2. revisão de enquadramento e telas de app (viitu.revisar)
   3. direitos e créditos (viitu.direitos)
+  4b. OUVIDO: o Gemini escuta e dá nota ao sound design (mínimo 8/10; dono 18/11: "parece que só tem clipe e narração")
   4. auditoria técnica do mp4 (viitu.auditoria: loudness, efeito sobre a fala, cenas escuras, ritmo, loop;
      com Gemini se houver cota, sem ele se não houver)
   5. prancha 1 quadro/s em saida/prancha.jpg + a lista de conferência visual de edicao/reclamacoes.md
@@ -66,6 +67,16 @@ def entregar(projeto: str) -> bool:
         print(("✅" if res["auditoria"] else "❌"), "4. Auditoria técnica (som, loudness, ritmo, loop)")
         for g in graves[:8]:
             print("     ", g.strip())
+        from viitu.ouvido import ouvir
+        nota, txt = ouvir(str(mp4))
+        (pasta / "saida" / "ouvido.md").write_text(txt, encoding="utf-8")
+        res["ouvido"] = nota is not None and nota >= 8
+        if nota is None:
+            print("⚠️ 4b. Ouvido (Gemini) indisponível — ouvir com fone antes de mandar; NÃO libera sozinho")
+        else:
+            print(("✅" if res["ouvido"] else "❌"), f"4b. Ouvido do sound design: nota {nota}/10 (mínimo 8) — saida/ouvido.md")
+            if not res["ouvido"]:
+                print("     ", txt.strip().splitlines()[-1][:300])
         prancha = pasta / "saida" / "prancha.jpg"
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(mp4), "-vf", "fps=1,scale=180:-1,tile=9x4",
                         "-frames:v", "1", str(prancha)], check=False)

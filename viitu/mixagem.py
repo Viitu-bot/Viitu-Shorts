@@ -24,7 +24,12 @@ RAIZ = Path(__file__).resolve().parent.parent
 PUB = RAIZ / "remotion" / "public"
 SR = 16000                 # suficiente para medir energia
 FPS = 30
-MARGEM = 10.0              # dB: fundo sempre pelo menos isso abaixo da voz durante a fala
+MARGEM = 10.0              # dB: LEITO contínuo (música, foley, ambiente) pelo menos isso abaixo da voz durante a fala
+MARGEM_FX = 3.0            # dB: efeitos CURTOS (whoosh, sfx de ação, virada, pop) podem chegar perto da voz
+PISO_FX = 0.4              # efeito curto nunca abaixa mais que ~8 dB (dono 18/11: "efeitos enterrados, só narração")
+LEITO = ("musica", "foley", "ambiente")
+FX = ("whoosh", "sfx", "virada", "marcas")
+POS_VIRADA = 1.5           # a trilha cresce depois do boom da virada (dinâmica; Gemini: "música linear")
 RESERVA = {"voz": 1, "musica_fala": 0.11, "musica_pausa": 0.2, "som_original": 0.35, "whoosh": 0.32,
            "pop": 0.55, "boom": 0.8, "riser": 0.32, "ding": 0.85, "clique": 0.6}
 WOOSHES = ["woosh.mp3", "whip.mp3", "woosh2.mp3", "woosh3.mp3"]
@@ -67,6 +72,10 @@ def _camadas(plano: dict) -> tuple[np.ndarray, dict[str, np.ndarray]]:
     if fim < n:
         rampa = np.clip(np.arange(n - fim) / (40 * spf), 0, 1)
         g_mus[fim:] = g_mus[fim:] + (M("musica_pausa") * 1.3 - g_mus[fim:]) * rampa
+    for f in plano.get("impactos", []):                        # cresce depois da virada (igual ao Short.tsx)
+        a0, a1 = fr(f), min(fr(f + 75), n)
+        if a0 < n:
+            g_mus[a0:a1] *= POS_VIRADA - (POS_VIRADA - 1) * np.clip(np.arange(a1 - a0) / (75 * spf), 0, 1) ** 2
     _por(_ler(PUB / "musica.mp3"), L["musica"], 0, ganho=g_mus, loop=True)
     if plano.get("foley_mix"):
         _por(_ler(PUB / "foley.m4a"), L["foley"], 0, ganho=np.where(falando, 0.85, 1.0).astype(np.float32))
@@ -117,12 +126,14 @@ def analisar(plano: dict) -> dict:
     b = _db_por_quadro(fundo, nq)
     camadas_db = {k: _db_por_quadro(x, nq) for k, x in L.items()}
     margem = np.where(fala_q, vs - b, 99)
-    return {"v": vs, "b": b, "fala": fala_q, "margem": margem, "camadas": camadas_db}
+    soma = lambda ks: _db_por_quadro(sum(L[k] for k in ks), nq)
+    return {"v": vs, "b": b, "fala": fala_q, "margem": margem, "camadas": camadas_db,
+            "margem_leito": np.where(fala_q, vs - soma(LEITO), 99), "margem_fx": np.where(fala_q, vs - soma(FX), 99)}
 
 
-def calcular_duck(a: dict) -> list[float]:
-    nq = len(a["margem"])
-    precisa = np.where(a["fala"], np.minimum(0, a["margem"] - MARGEM), 0)       # dB a abaixar (≤ 0)
+def calcular_duck(a: dict, chave: str = "margem", alvo_db: float = MARGEM, piso: float = 0.03) -> list[float]:
+    nq = len(a[chave])
+    precisa = np.where(a["fala"], np.minimum(0, a[chave] - alvo_db), 0)       # dB a abaixar (≤ 0)
     alvo = 10 ** (precisa / 20)
     # ataque: o ganho já cai 2 quadros antes; soltura: volta em ~8 quadros
     g = np.ones(nq)
@@ -132,7 +143,7 @@ def calcular_duck(a: dict) -> list[float]:
     for q in range(nq):
         prev = out[q - 1] if q else 1.0
         out[q] = g[q] if g[q] < prev else min(g[q], prev + 0.12)
-    return [round(float(max(x, 0.03)), 3) for x in out]
+    return [round(float(max(x, piso)), 3) for x in out]
 
 
 def relatorio(a: dict, titulo: str) -> str:
@@ -195,18 +206,26 @@ def aplicar(medir_so: bool = False) -> str:
     antes = analisar(plano)
     txt = [relatorio(antes, "ANTES do ducking")]
     if not medir_so:
-        plano["duck"] = calcular_duck(antes)
+        plano["duck"] = calcular_duck(antes, "margem_leito", MARGEM)              # leito: −10 dB sob a voz
+        plano["duck_fx"] = calcular_duck(antes, "margem_fx", MARGEM_FX, PISO_FX)  # efeitos curtos: −3 dB, piso
         assar_duck(plano)
         arq.write_text(json.dumps(plano, ensure_ascii=False), encoding="utf-8")
-        # medição do resultado: o fundo inteiro multiplicado pelo duck
-        g = np.repeat(np.array(plano["duck"]), int(np.ceil(SR / FPS)))[: int(plano["duracao_frames"] / FPS * SR) + SR]
+        nq = plano["duracao_frames"]
+        rep = lambda d: np.repeat(np.array(d), int(np.ceil(SR / FPS)))
         voz, L = _camadas(plano)
         L.pop("_falando")
-        g = np.pad(g, (0, max(0, len(voz) - len(g))), constant_values=1.0)[: len(voz)]
-        depois = {**antes, "b": _db_por_quadro(sum(L.values()) * g, plano["duracao_frames"])}
+        def ganho(d):
+            g = rep(d)
+            return np.pad(g, (0, max(0, len(voz) - len(g))), constant_values=1.0)[: len(voz)]
+        gl, gf = ganho(plano["duck"]), ganho(plano["duck_fx"])
+        Ld = {k: x * (gl if k in LEITO else gf) for k, x in L.items()}
+        depois = {**antes, "b": _db_por_quadro(sum(Ld.values()), nq)}
         depois["margem"] = np.where(antes["fala"], antes["v"] - depois["b"], 99)
-        depois["camadas"] = {k: _db_por_quadro(x * g, plano["duracao_frames"]) for k, x in L.items()}
-        txt.append(relatorio(depois, "DEPOIS do ducking"))
+        depois["camadas"] = {k: _db_por_quadro(x, nq) for k, x in Ld.items()}
+        ml = np.where(antes["fala"], antes["v"] - _db_por_quadro(sum(Ld[k] for k in LEITO), nq), 99)
+        txt.append(relatorio(depois, "DEPOIS do ducking (tudo junto)"))
+        txt.append(f"Leito (música/foley/ambiente) sob a fala: mediana {np.median(ml[antes['fala']]):.1f} dB · "
+                   f"efeitos curtos: duck médio onde tocam {np.mean(np.array(plano['duck_fx'])[: nq]):.2f} (piso {PISO_FX})")
     print("\n".join(txt))
     return "\n".join(txt)
 

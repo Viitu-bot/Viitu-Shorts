@@ -29,6 +29,12 @@ No editor é automático: cada cena recebe **2 camadas** (tabela `CAMADAS` em `v
 | **UI / pop / ding** | chama o olho para um elemento gráfico | círculo, seta, número na tela, CTA | curto | próprios: pop, ding, clique |
 | **Silêncio (vácuo)** | o efeito mais forte: o mundo prende a respiração | 0,3 s antes do impacto | — | automático em `impacto_em` |
 
+## Mixagem em 2 grupos (desde 18/11 — dono: "parece que só tem clipe e narração")
+- **Leito** (música, foley contínuo, ambiente): 10 dB abaixo da voz durante a fala (`plano.duck`, gravado nos `*_d.m4a`).
+- **Efeitos curtos** (whoosh, som de ação, riser/boom, pop, ding): só 3 dB abaixo, piso 0,4 (`plano.duck_fx`). Efeito
+  enterrado = vídeo "sem edição". `sfx_cena` entre −2 e −6 dB; 3D entre −2 e −6 dB.
+- Música CRESCE 2,5 s depois do boom da virada (dinâmica). O OUVIDO (`viitu.ouvido`, Gemini) dá a nota final (≥ 8).
+
 ## Regras de ouro
 1. Toda cena tem som do que mostra; ambiência nunca corta no seco (corte em J/L automático).
 2. Ver e ouvir a mesma coisa: fogo pequeno = estalo; incêndio = rugido grave. Escala do som = escala da imagem.
@@ -62,6 +68,7 @@ para o loop** (o editor já faz). Nenhum dos 43 usa música clássica. Todas as 
 | Mistério (sem batida) | `misterio_sombrio.mp3` | segredo, "ninguém sabe por quê", fenômeno estranho | Andre "Posso nadar nessa piscina?" |
 | Phonk / eletrônica (~11) | `phonk_processo.mp3` | processo satisfatório, máquina, invenção, esporte | A vida "bolas de handebol", "LUVA na Copa"; Polaco |
 | Lo-fi hip hop (~9) | `lofi_curioso.mp3` | motivo oculto do dia a dia explicado com calma, truque | Zack D. "Water out of your ear"; KSO "edifício japonês" |
+| Synthwave (aviação) | `synthwave_aviacao.mp3` | avião, aeronave, máquina de alta tecnologia | TikTok: freio de avião (3,3 mi), porca/parafuso (2,9 mi) — estilo "Blade Runner 2049" |
 | Épica (~3) | `epico_engenharia.mp3` | escala gigante, recorde, engenharia monumental | A vida "ponte mais alta do mundo" |
 | Brincalhona (~3) | `upbeat_brincalhao.mp3`, `curioso_documentario.mp3` | humor, bicho, comida, "olha isso" | KSO "chocolate", Andre "gato no aquário" |
 | Emocional (~2) | `emocional_piano.mp3` | virada humana/emocional (história, luto, superação) | A vida "Bebês reborn" (sobe na virada emocional) |

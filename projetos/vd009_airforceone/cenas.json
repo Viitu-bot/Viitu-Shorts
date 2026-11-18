@@ -16,7 +16,7 @@
   "julho",
   "ninguém"
  ],
- "musica": "epico_engenharia.mp3",
+ "musica": "synthwave_aviacao.mp3",
  "cta": false,
  "creditos_descricao": "Imagens: @wikiair, @cbsnews, @echo_actual, @aaronrheins, @pilotwife3 e @ethanrockenfeller (TikTok); @sentdefender, @Turbinetraveler e @RapidResponse47 (X); reabastecimentos com imagens da Força Aérea dos EUA. Modelos 3D: Boeing 747-100 (rd.palaciosdeleon26) e KC-135R (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts.",
  "cenas": [
@@ -41,7 +41,7 @@
     {
      "em": "O antigo",
      "busca": "airliner flying overhead",
-     "db": -6,
+     "db": -2,
      "dur": 2.2
     }
    ]
@@ -66,7 +66,7 @@
     {
      "em": "conseguia",
      "busca": "airliner jet engine whine",
-     "db": -9,
+     "db": -4,
      "dur": 1.4
     }
    ]
@@ -87,7 +87,7 @@
     {
      "em": "sem pousar",
      "busca": "wind at high altitude",
-     "db": -10,
+     "db": -5,
      "dur": 2.0
     }
    ]
@@ -108,7 +108,7 @@
     {
      "em": "Numa",
      "busca": "jet engine idling at the airport, distant",
-     "db": -10,
+     "db": -5,
      "dur": 1.2
     }
    ]
@@ -133,7 +133,7 @@
     {
      "em": "ele virava",
      "busca": "airplane cabin interior ambience during flight",
-     "db": -12,
+     "db": -7,
      "dur": 1.4
     }
    ],
@@ -164,7 +164,7 @@
     {
      "em": "voando",
      "busca": "airplane cabin hum",
-     "db": -11,
+     "db": -6,
      "dur": 1.0
     }
    ]
@@ -185,7 +185,7 @@
     {
      "em": "e quanto",
      "busca": "airplane flyby pass",
-     "db": -7,
+     "db": -2,
      "dur": 2.3
     }
    ]
@@ -207,26 +207,26 @@
     "sfx": [
      {
       "busca": "wind gust whoosh",
-      "db": -8,
+      "db": -4,
       "dur": 1.5
      },
      {
       "evento": "tanque",
       "busca": "airliner flying overhead",
-      "db": -8,
+      "db": -4,
       "dur": 2.5
      },
      {
       "evento": "lanca",
       "busca": "mechanical gears whirring",
-      "db": -10,
+      "db": -6,
       "dur": 1.2
      },
      {
       "evento": "lanca",
       "desloc": 0.85,
       "busca": "heavy metal lock clunk",
-      "db": -5,
+      "db": -2,
       "dur": 1.2
      }
     ]
@@ -253,7 +253,7 @@
     {
      "em": "encaixa",
      "busca": "metal gear clunk",
-     "db": -5,
+     "db": -2,
      "dur": 1.0
     }
    ]
@@ -274,7 +274,7 @@
     {
      "em": "enche",
      "busca": "liquid flowing through a pipe",
-     "db": -9,
+     "db": -4,
      "dur": 1.9
     }
    ]
@@ -295,7 +295,7 @@
     {
      "em": "Só que",
      "busca": "airliner flying overhead",
-     "db": -8,
+     "db": -3,
      "dur": 1.3
     }
    ]
@@ -316,7 +316,7 @@
     {
      "em": "que o presidente",
      "busca": "crowd applause indoors",
-     "db": -12,
+     "db": -7,
      "dur": 1.8
     }
    ]
@@ -341,7 +341,7 @@
     {
      "em": "veio sem",
      "busca": "jet engine turbine whine close",
-     "db": -9,
+     "db": -4,
      "dur": 1.5
     }
    ]
@@ -366,7 +366,7 @@
     {
      "em": "e ninguém",
      "busca": "fighter jet flyby",
-     "db": -8,
+     "db": -3,
      "dur": 1.3
     }
    ]
