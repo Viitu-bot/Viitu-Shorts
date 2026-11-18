@@ -1,0 +1,317 @@
+[
+ {
+  "palavra": "O",
+  "inicio": 0.0,
+  "fim": 0.08
+ },
+ {
+  "palavra": "caminhão-tanque",
+  "inicio": 0.16,
+  "fim": 0.88
+ },
+ {
+  "palavra": "mais",
+  "inicio": 0.96,
+  "fim": 1.2
+ },
+ {
+  "palavra": "perigoso",
+  "inicio": 1.28,
+  "fim": 1.84
+ },
+ {
+  "palavra": "não",
+  "inicio": 1.93,
+  "fim": 2.09
+ },
+ {
+  "palavra": "é",
+  "inicio": 2.13,
+  "fim": 2.17
+ },
+ {
+  "palavra": "o",
+  "inicio": 2.21,
+  "fim": 2.25
+ },
+ {
+  "palavra": "cheio...",
+  "inicio": 2.34,
+  "fim": 2.98
+ },
+ {
+  "palavra": "é",
+  "inicio": 3.02,
+  "fim": 3.06
+ },
+ {
+  "palavra": "o",
+  "inicio": 3.1,
+  "fim": 3.14
+ },
+ {
+  "palavra": "meio",
+  "inicio": 3.23,
+  "fim": 3.63
+ },
+ {
+  "palavra": "cheio.",
+  "inicio": 3.71,
+  "fim": 4.35
+ },
+ {
+  "palavra": "Na",
+  "inicio": 4.39,
+  "fim": 4.43
+ },
+ {
+  "palavra": "freada,",
+  "inicio": 4.51,
+  "fim": 5.15
+ },
+ {
+  "palavra": "o",
+  "inicio": 5.19,
+  "fim": 5.23
+ },
+ {
+  "palavra": "líquido",
+  "inicio": 5.31,
+  "fim": 5.63
+ },
+ {
+  "palavra": "continua",
+  "inicio": 5.72,
+  "fim": 6.08
+ },
+ {
+  "palavra": "andando,",
+  "inicio": 6.16,
+  "fim": 6.8
+ },
+ {
+  "palavra": "bate",
+  "inicio": 6.89,
+  "fim": 7.05
+ },
+ {
+  "palavra": "na",
+  "inicio": 7.13,
+  "fim": 7.21
+ },
+ {
+  "palavra": "frente",
+  "inicio": 7.25,
+  "fim": 7.61
+ },
+ {
+  "palavra": "e",
+  "inicio": 7.7,
+  "fim": 7.78
+ },
+ {
+  "palavra": "empurra",
+  "inicio": 7.87,
+  "fim": 8.19
+ },
+ {
+  "palavra": "o",
+  "inicio": 8.23,
+  "fim": 8.27
+ },
+ {
+  "palavra": "caminhão.",
+  "inicio": 8.35,
+  "fim": 8.91
+ },
+ {
+  "palavra": "Por",
+  "inicio": 8.99,
+  "fim": 9.07
+ },
+ {
+  "palavra": "isso",
+  "inicio": 9.15,
+  "fim": 9.31
+ },
+ {
+  "palavra": "o",
+  "inicio": 9.39,
+  "fim": 9.47
+ },
+ {
+  "palavra": "tanque",
+  "inicio": 9.55,
+  "fim": 9.71
+ },
+ {
+  "palavra": "tem",
+  "inicio": 9.79,
+  "fim": 9.95
+ },
+ {
+  "palavra": "paredes",
+  "inicio": 10.04,
+  "fim": 10.36
+ },
+ {
+  "palavra": "por",
+  "inicio": 10.44,
+  "fim": 10.52
+ },
+ {
+  "palavra": "dentro...",
+  "inicio": 10.61,
+  "fim": 11.21
+ },
+ {
+  "palavra": "todas",
+  "inicio": 11.33,
+  "fim": 11.61
+ },
+ {
+  "palavra": "furadas.",
+  "inicio": 11.69,
+  "fim": 12.49
+ },
+ {
+  "palavra": "O",
+  "inicio": 12.53,
+  "fim": 12.57
+ },
+ {
+  "palavra": "líquido",
+  "inicio": 12.65,
+  "fim": 13.05
+ },
+ {
+  "palavra": "passa",
+  "inicio": 13.13,
+  "fim": 13.29
+ },
+ {
+  "palavra": "devagar,",
+  "inicio": 13.41,
+  "fim": 14.01
+ },
+ {
+  "palavra": "e",
+  "inicio": 14.05,
+  "fim": 14.09
+ },
+ {
+  "palavra": "a",
+  "inicio": 14.13,
+  "fim": 14.17
+ },
+ {
+  "palavra": "onda",
+  "inicio": 14.25,
+  "fim": 14.49
+ },
+ {
+  "palavra": "gigante",
+  "inicio": 14.53,
+  "fim": 15.05
+ },
+ {
+  "palavra": "vira",
+  "inicio": 15.14,
+  "fim": 15.3
+ },
+ {
+  "palavra": "várias",
+  "inicio": 15.39,
+  "fim": 15.79
+ },
+ {
+  "palavra": "ondinhas.",
+  "inicio": 15.88,
+  "fim": 16.64
+ },
+ {
+  "palavra": "Engenharia",
+  "inicio": 16.76,
+  "fim": 17.2
+ },
+ {
+  "palavra": "esperta,",
+  "inicio": 17.29,
+  "fim": 17.89
+ },
+ {
+  "palavra": "igual",
+  "inicio": 17.97,
+  "fim": 18.21
+ },
+ {
+  "palavra": "você,",
+  "inicio": 18.29,
+  "fim": 18.77
+ },
+ {
+  "palavra": "inscrito",
+  "inicio": 18.89,
+  "fim": 19.33
+ },
+ {
+  "palavra": "do",
+  "inicio": 19.37,
+  "fim": 19.41
+ },
+ {
+  "palavra": "canal.",
+  "inicio": 19.49,
+  "fim": 19.97
+ },
+ {
+  "palavra": "Se",
+  "inicio": 20.01,
+  "fim": 20.05
+ },
+ {
+  "palavra": "não",
+  "inicio": 20.13,
+  "fim": 20.21
+ },
+ {
+  "palavra": "é,",
+  "inicio": 20.29,
+  "fim": 20.61
+ },
+ {
+  "palavra": "já",
+  "inicio": 20.69,
+  "fim": 20.77
+ },
+ {
+  "palavra": "se",
+  "inicio": 20.85,
+  "fim": 20.93
+ },
+ {
+  "palavra": "inscreve",
+  "inicio": 21.01,
+  "fim": 21.41
+ },
+ {
+  "palavra": "pra",
+  "inicio": 21.49,
+  "fim": 21.57
+ },
+ {
+  "palavra": "entender",
+  "inicio": 21.61,
+  "fim": 21.97
+ },
+ {
+  "palavra": "por",
+  "inicio": 22.05,
+  "fim": 22.21
+ },
+ {
+  "palavra": "que",
+  "inicio": 22.29,
+  "fim": 22.61
+ }
+]
