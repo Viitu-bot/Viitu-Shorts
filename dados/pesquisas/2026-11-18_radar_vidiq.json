@@ -1,0 +1,24 @@
+{
+ "data": "2026-11-18",
+ "fontes": [
+  "vidIQ trending (recentVphEngaged, 10 dias)",
+  "vidIQ outliers thisMonth por vph",
+  "vidIQ YouTube search BR (lacuna)",
+  "vidIQ TikTok/Instagram outliers",
+  "YouTube API (provar)"
+ ],
+ "vencedor": "caminhão-tanque meio cheio (quebra-ondas)",
+ "provas_yt": [
+  "4_axYKXq2UY",
+  "JTCDHhdsiIY"
+ ],
+ "provas_tiktok": [
+  "@scibite808 1.6M",
+  "@qzzxc359 1.3M",
+  "@physicsrants 273k"
+ ],
+ "lacuna_pt": "g_MjANNuSAE 2.4k (único)",
+ "descartados": {
+  "guard-rail": "PT forte 6,5 mi (Ukfy4rn1Q0c)"
+ }
+}
