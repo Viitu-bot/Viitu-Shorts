@@ -27,7 +27,17 @@ Referência: A vida é uma maravilha posta 12h/18h; GeneralTV 17h–20h (19h com
 - `python3 -m viitu.direitos <p>` sem ❌.
 - Clipe de terceiro sem permissão: mandar ao dono o texto de DM (`pesquisa/permissao_clipes.md`) com os @;
   quando autorizarem, registrar em `"permissoes"` no cenas.json.
-- Comentário fixado opcional (curiosidade extra que puxa resposta).
+- **Comentário fixado (formato Viitu, sempre):** conferido em 18/11 que A vida é uma maravilha e KSO NÃO fixam comentário
+  (0 comentários do dono em 200 recentes) — não existe formato externo validado; este é o nosso, medir no Studio
+  (comentários/1000 views) e ajustar. Nos canais deles, os comentários com mais likes são opinião/hipótese engraçada e
+  "vontade de…", nunca respostas de múltipla escolha.
+  1. **1ª linha = a pergunta que o vídeo deixou no ar** (ex.: "E a nossa pupila, que é redonda?").
+  2. **Resposta com fato NOVO** (não está no vídeo), 2–3 linhas, linguagem falada, com fonte conferida: explicação
+     técnica, caso brasileiro famoso ou número surpreendente.
+  3. **CTA de conversa** (opinião ou história da pessoa, ou pedido do próximo tema): "Você teria coragem…?",
+     "Conta aí se…", "Qual bicho você quer que eu explique depois?". NUNCA A/B/C.
+  - Para não parecer IA: sem títulos ("Curiosidade extra:"), sem listas, sem travessão longo, no máx. 1–2 emojis,
+    sem hashtags, frases curtas como o dono escreveria no celular.
 
 ## 5. Registrar
 Adicionar em `dados/temas_feitos.md` (tema, projeto, data/horário), commit e push.
