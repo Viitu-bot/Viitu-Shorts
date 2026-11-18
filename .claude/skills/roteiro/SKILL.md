@@ -55,6 +55,9 @@ Todo fato com [CONFIRMADO] + fonte ou [INCERTO]. Nada [INCERTO] no texto final.
 - `animacao`: quais frases viram animação e o que ela mostra (1 ideia por animação).
 - `sfx_em`: só onde houver um GRÁFICO correspondente na tela (X no mito, ✓ na resposta, contador no número).
   Sem gráfico, não marque (som de função sem imagem soa aleatório e atropela a narração).
+- `musica`: escolher pela tabela "Trilhas por categoria" (`edicao/biblioteca_sons.md`) a partir do GATILHO do roteiro
+  (perigo → suspense rítmico; segredo → mistério; processo/máquina → phonk; dia a dia calmo → lo-fi; escala → épica;
+  humor/bicho → brincalhona; virada humana → emocional; outro país → cultural gerada na hora).
 - Título e descrição: ver `/publicar`.
 
 ## 5. Entregar ao dono

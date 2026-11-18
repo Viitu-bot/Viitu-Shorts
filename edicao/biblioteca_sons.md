@@ -50,3 +50,24 @@ Próximo: gerar mais trilhas (2 por clima) para não repetir a mesma em vídeos 
 
 - vd007: a Sonniss não tem foguete. Gerados no ElevenLabs (`assets/sfx/`): foguete_motor, reentrada_plasma, braco_metal,
   motor_corte, hidraulico_grande, peca_solta. Endpoint `sound-generation`, header `xi-api-key: proxy-injected`.
+
+## Trilhas por categoria (pesquisa 18/11/2026: 43 Shorts de referência — A vida é uma maravilha, GeneralTV, KSO, Polaco, Andre, Zack D.)
+Regras medidas: **100% dos vídeos têm trilha**; fica 12–18 dB abaixo da voz (nossa spec: −14 sob a fala, −6 nas pausas);
+entra no frame 0 e quase sempre é **constante**; quando muda, é para **subir na revelação/virada** ou **subir no final
+para o loop** (o editor já faz). Nenhum dos 43 usa música clássica. Todas as nossas são próprias (ElevenLabs Music).
+
+| Categoria (nos 43) | Arquivo | Quando usar (gatilho do roteiro) | Referência |
+|---|---|---|---|
+| Suspense rítmico (~12) | `tensao_documentario.mp3` | perigo/erro, "nunca faça", acidente, risco | A vida "O CLT mais infernal", "Posso nadar aqui?" |
+| Mistério (sem batida) | `misterio_sombrio.mp3` | segredo, "ninguém sabe por quê", fenômeno estranho | Andre "Posso nadar nessa piscina?" |
+| Phonk / eletrônica (~11) | `phonk_processo.mp3` | processo satisfatório, máquina, invenção, esporte | A vida "bolas de handebol", "LUVA na Copa"; Polaco |
+| Lo-fi hip hop (~9) | `lofi_curioso.mp3` | motivo oculto do dia a dia explicado com calma, truque | Zack D. "Water out of your ear"; KSO "edifício japonês" |
+| Épica (~3) | `epico_engenharia.mp3` | escala gigante, recorde, engenharia monumental | A vida "ponte mais alta do mundo" |
+| Brincalhona (~3) | `upbeat_brincalhao.mp3`, `curioso_documentario.mp3` | humor, bicho, comida, "olha isso" | KSO "chocolate", Andre "gato no aquário" |
+| Emocional (~2) | `emocional_piano.mp3` | virada humana/emocional (história, luto, superação) | A vida "Bebês reborn" (sobe na virada emocional) |
+| Calma/natureza | `natureza_calma.mp3`, `descoberta_leve.mp3` | natureza contemplativa, bicho calmo | — |
+| Cultural (~2) | gerar na hora | lugar/tradição de outro país: instrumento típico | A vida "gelo antigo" (chinesa); KSO "portas" (africana) |
+
+Gerar trilha nova: `POST https://api.elevenlabs.io/v1/music?output_format=mp3_44100_128` com
+`{"prompt": "...instrumental..., no vocals, loopable", "music_length_ms": 45000}` (header `xi-api-key: proxy-injected`),
+UMA de cada vez (em paralelo dá 429). Conferir o estilo com o CLAP (rótulos sem "lo-fi", que vira balaio) antes de usar.
