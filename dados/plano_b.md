@@ -10,7 +10,7 @@ Começo de sessão: `python3 -m viitu.saude` (testa tudo em ~1 min) + `vidiq_bal
 | 18/11 tarde | Créditos do vidIQ gastos — e eles são **150 por MÊS** (renova dia 17), não por dia | busca automática de clipe parou | busca de clipe agora é pela busca web (TikTok/X/Instagram) + yt-dlp, sem cota; vidIQ só para tema/título |
 | 18/11 o dia todo | Wikimedia Commons 429 (bloqueio do nosso IP) | sem fotos/vídeos do Commons | Internet Archive, TikTok/Instagram/X via yt-dlp; não ficar esperando o Commons |
 | 18/11 | Chave do Pexels salva com "Bearer" (401) | Pexels inútil | dono cola a chave PURA nas configurações do ambiente (o formulário sempre põe Bearer) |
-| 18/11 | API do ElevenLabs sem responder (timeout) | voz/sons/música | site no ar = instabilidade deles: esperar e tentar de novo; voz é gerada logo no começo do vídeo para não travar o fim |
+| 18/11 | "ElevenLabs fora" era falso alarme: só a consulta de assinatura trava | saúde acusava falha | teste da saúde passou a usar /v1/models; a voz gera normal |
 | 18/11 | Reinício da sessão matou render em segundo plano | vídeo não saiu | render SEMPRE com `run_in_background` da ferramenta (não `&` no shell); conferir o log ao voltar |
 | 18/11 | ElevenLabs Music 429 em pedidos paralelos | trilhas falharam | gerar UMA de cada vez |
 | 18/11 | Música famosa com direitos | risco de Content ID | modo `"musica": "app:<faixa>"` (dono adiciona no app) |

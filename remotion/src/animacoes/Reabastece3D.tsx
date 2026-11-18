@@ -2,6 +2,7 @@ import React, {useMemo} from 'react';
 import * as THREE from 'three';
 import {interpolate, random, useCurrentFrame, useVideoConfig, Easing} from 'remotion';
 import {ThreeCanvas} from '@remotion/three';
+import {useThree} from '@react-three/fiber';
 import {Ambiente, Camera, Liberar, useModelo, useTexturas} from './comum3d';
 
 // vd009: reabastecimento em voo do Air Force One. Modelos PRONTOS (Sketchfab, CC BY 4.0): Boeing 747-100
@@ -47,6 +48,22 @@ const Nuvens: React.FC<{f: number}> = ({f}) => (
   </group>
 );
 
+// corta tudo abaixo da barriga (pernas do trem de pouso que o modelo traz abaixadas); precisa estar DENTRO do canvas
+const Recolher: React.FC<{obj: THREE.Group | null}> = ({obj}) => {
+  const {gl} = useThree();
+  useMemo(() => {
+    if (!obj) return;
+    obj.updateMatrixWorld(true);
+    const r = new THREE.Raycaster(new THREE.Vector3(0, -60, -10), new THREE.Vector3(0, 1, 0));
+    const h = r.intersectObject(obj, true)[0];
+    if (!h) return;
+    gl.localClippingEnabled = true;
+    const plano = new THREE.Plane(new THREE.Vector3(0, 1, 0), -(h.point.y - 0.6));
+    obj.traverse((o) => { const m = o as THREE.Mesh; if (m.isMesh) (m.material as THREE.Material).clippingPlanes = [plano]; });
+  }, [obj]);
+  return null;
+};
+
 export const Reabastece3D: React.FC<{fase: string; dur: number; eventos: Record<string, number>}> = ({fase, dur, eventos}) => {
   const f = useCurrentFrame();
   const {width, height} = useVideoConfig();
@@ -58,6 +75,7 @@ export const Reabastece3D: React.FC<{fase: string; dur: number; eventos: Record<
   const af1 = preparar(b747, (m) => {
     const mat = m.material as THREE.MeshStandardMaterial;
     const nome = (mat.name || '').toLowerCase();
+    if (nome.includes('wheel')) m.visible = false;      // em voo o trem de pouso está recolhido (dono: física coerente)
     const manter = ['glass', 'window', 'wheel', 'dials', 'black'].some((k) => nome.includes(k));
     if (!manter) {                                       // tira TODA a pintura (inclusive a cauda da ANA)
       mat.map = null;
@@ -69,21 +87,38 @@ export const Reabastece3D: React.FC<{fase: string; dur: number; eventos: Record<
   const tanque = preparar(kc);
 
   const sem = fase === 'sem';
-  const soBocal = fase === 'bocal';                     // close no bocal do teto (sem o tanque ainda)                           // "o avião novo vem SEM esse truque": tanque vai embora, bocal some (X)
+  // 'completo' (padrão desde 18/11): UMA tomada contínua para a explicação inteira — close no bocal → o avião-tanque
+  // chega → a lança desce e encaixa no fim. Nada de clipe real no meio (trava R2 do viitu.montagem).
+  const completo = fase === 'completo';
+  const tTq = eventos.tanque ?? Math.round(dur * 0.4);
+  const tLa = eventos.lanca ?? Math.round(dur * 0.65);
+  const chega = completo ? interpolate(f, [tTq - 6, tLa], [0, 1], suave) : 1;         // tanque descendo até a posição
+  const soBocal = fase === 'bocal' || (completo && f < tTq - 6);                     // close no bocal do teto (sem o tanque ainda)                           // "o avião novo vem SEM esse truque": tanque vai embora, bocal some (X)
   const tSem = eventos.sem ?? Math.round(dur * 0.55);
   const tEnc = eventos.encosta ?? Math.round(dur * 0.45);
   const tEnc2 = eventos.enche ?? Math.round(dur * 0.7);
-  const desce = soBocal ? 0 : sem ? interpolate(f, [0, 18], [0.6, 0], suave) : interpolate(f, [0, tEnc], [0, 1], suave);   // lança baixando até o bocal
-  const encaixe = sem || soBocal ? 0 : interpolate(f, [tEnc - 2, tEnc + 4], [0, 1], cl);
-  const fluxo = sem ? 0 : interpolate(f, [tEnc2 - 4, tEnc2 + 6], [0, 1], cl);
+  const desce = soBocal ? 0 : sem ? interpolate(f, [0, 18], [0.6, 0], suave)
+    : completo ? interpolate(f, [tLa, dur - 4], [0, 1], suave) : interpolate(f, [0, tEnc], [0, 1], suave);   // lança baixando até o bocal
+  const encaixe = sem || soBocal ? 0 : completo ? interpolate(f, [dur - 6, dur - 2], [0, 1], cl) : interpolate(f, [tEnc - 2, tEnc + 4], [0, 1], cl);
+  const fluxo = sem || completo ? 0 : interpolate(f, [tEnc2 - 4, tEnc2 + 6], [0, 1], cl);
   const foge = sem ? interpolate(f, [0, dur], [0, 1], suave) : 0;           // tanque sobe e vai embora
   const xVermelho = sem ? interpolate(f, [tSem - 3, tSem + 3], [0, 1], cl) : 0;
   const balanco = Math.sin(f * 0.07) * 0.25;
 
   // posições: 747 embaixo; KC-135 à frente e acima; o bocal fica no teto do 747 logo atrás da cabine
   const P747: [number, number, number] = [0, balanco * 0.4, 0];
-  const BOCAL: [number, number, number] = [0, 0.9 + balanco * 0.4, -23];     // teto da cabine superior do 747
-  const PKC: [number, number, number] = soBocal ? [0, 400, -900] : [0, 16.6 + balanco + foge * 40, -48 - foge * 120];
+  // bocal EM CIMA DO NARIZ (receptáculo dos 747 presidenciais): altura tirada da superfície real do modelo
+  const ZB = completo ? -29 : -23;
+  const topo = useMemo(() => {
+    if (!af1) return 0.9;
+    af1.updateMatrixWorld(true);
+    const r = new THREE.Raycaster(new THREE.Vector3(0, 60, ZB), new THREE.Vector3(0, -1, 0));
+    const h = r.intersectObject(af1, true)[0];
+    return h ? h.point.y + 0.05 : 0.9;
+  }, [af1]);
+  const BOCAL: [number, number, number] = [0, topo + balanco * 0.4, ZB];
+  const PKC: [number, number, number] = soBocal ? [0, 400, -900]
+    : [0, 16.6 + balanco + foge * 40 + (1 - chega) * 45, ZB - 25 - foge * 120];
   const raiz: [number, number, number] = [0, PKC[1] - 4.2, PKC[2] + 18];   // embaixo da cauda do tanque
   const ponta: [number, number, number] = [0, interpolate(desce, [0, 1], [raiz[1] - 4, BOCAL[1] + 0.4]) + balanco * (1 - desce * 0.6), interpolate(desce, [0, 1], [raiz[2] + 3, BOCAL[2]])];
   const lanca = new THREE.Vector3(...ponta).sub(new THREE.Vector3(...raiz));
@@ -91,19 +126,24 @@ export const Reabastece3D: React.FC<{fase: string; dur: number; eventos: Record<
   const meio = new THREE.Vector3(...raiz).add(lanca.clone().multiplyScalar(0.5));
   const quat = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), lanca.clone().normalize());
 
-  const k = sem ? 1 : interpolate(f, [0, dur], [0, 1], suave);
-  const kb = interpolate(f, [0, dur], [0, 1], suave);       // fase bocal: câmera desliza do nariz até o bocal
-  const cam: [number, number, number] = soBocal
-    ? [interpolate(kb, [0, 1], [14, 6]), interpolate(kb, [0, 1], [6, 4.5]), interpolate(kb, [0, 1], [-48, -17])]
+  const k = sem ? 1 : completo ? interpolate(f, [tTq - 6, dur], [0, 1], suave) : interpolate(f, [0, dur], [0, 1], suave);
+  const kb = completo ? interpolate(f, [0, tTq - 6], [0, 1], suave) : interpolate(f, [0, dur], [0, 1], suave);   // câmera desliza do nariz até o bocal
+  const dz = ZB + 23;                                         // desloca câmeras quando o bocal vai para o nariz
+  const camBocal: [number, number, number] = [interpolate(kb, [0, 1], [14, 6]), interpolate(kb, [0, 1], [6, 4.5]) + topo - 0.9, interpolate(kb, [0, 1], [-48, -17]) + dz];
+  // completo: do close no bocal abre para um plano 3/4 que mostra o tanque em cima e a lança chegando ao nariz
+  const cam: [number, number, number] = soBocal ? camBocal
+    : completo ? [interpolate(k, [0, 1], [6, 34]), interpolate(k, [0, 1], [4.5 + topo - 0.9, 12]), interpolate(k, [0, 1], [-17 + dz, -8])]
     : [interpolate(k, [0, 1], [58, 20]), interpolate(k, [0, 1], [14, 9]), interpolate(k, [0, 1], [18, -12])];
   const alvo: [number, number, number] = soBocal
-    ? [0, 0.8, interpolate(kb, [0, 1], [-30, -23])]
+    ? [0, topo - 0.1, interpolate(kb, [0, 1], [-30, -23]) + dz]
+    : completo ? [0, interpolate(k, [0, 1], [topo, 6]), interpolate(k, [0, 1], [ZB, ZB - 6])]
     : [0, interpolate(k, [0, 1], [7, 5]), interpolate(k, [0, 1], [-28, -25])];
 
   return (
     <ThreeCanvas width={width} height={height} camera={{fov: 40, position: cam, near: 0.5, far: 3000}}>
       <Camera pos={cam} alvo={alvo} />
       <Liberar pronto={pronto} h={h} />
+      <Recolher obj={af1} />
       <Ambiente tex={tex.ceu_nuvens_hdri} fundo />
       <hemisphereLight args={['#eaf2fb', '#9aa5b0', 0.7]} />
       <directionalLight position={[60, 120, 40]} intensity={2.4} color="#fff6e8" />

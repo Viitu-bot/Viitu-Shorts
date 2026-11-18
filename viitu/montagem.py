@@ -35,7 +35,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 FOTO = (".jpg", ".jpeg", ".png", ".webp")
 MAX_USOS = 2
 MIN_VARIEDADE = 0.6
-MIN_RES = 720
+MIN_RES = 600          # px úteis no lado menor da tela vertical (horizontal 1080p recortado = 607)
 
 
 def _dimensoes(arq: Path) -> tuple[int, int]:
@@ -145,8 +145,10 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
         w, h = medidos.setdefault(c["clipe"], _dimensoes(arq))
         dur = tempos[k][1] - tempos[k][0]
         lado = min(w, h)
+        if w > h and c.get("layout") != "inteiro":     # horizontal recortado para 9:16: sobra só h*9/16 de largura
+            lado = min(lado, int(h * 9 / 16) + 1)
         if lado < MIN_RES:
-            msg = f"R4 BAIXA RESOLUÇÃO: {c['clipe']} tem {w}x{h} (cena {k + 1})"
+            msg = f"R4 BAIXA RESOLUÇÃO: {c['clipe']} tem {w}x{h} → {lado} px úteis na tela vertical (cena {k + 1})"
             if k == 0:
                 erros.append(msg + " — proibido no gancho.")
             elif not c.get("baixa_res_ok"):

@@ -51,11 +51,9 @@ def gemini():
 
 
 def elevenlabs():
-    r = requests.get("https://api.elevenlabs.io/v1/user/subscription", headers={"xi-api-key": "proxy-injected"}, timeout=45)
-    if r.status_code != 200:
-        return False, f"HTTP {r.status_code}"
-    d = r.json()
-    return True, f"{d.get('character_count')}/{d.get('character_limit')} caracteres usados"
+    # /v1/models responde rápido; /v1/user/subscription trava às vezes mesmo com a voz funcionando (18/11)
+    r = requests.get("https://api.elevenlabs.io/v1/models", headers={"xi-api-key": "proxy-injected"}, timeout=30)
+    return r.status_code == 200, f"HTTP {r.status_code}"
 
 
 def pixabay():
@@ -120,7 +118,8 @@ def main() -> None:
         if not ok:
             falhas.append(f"   → plano B: {plano_b}")
             print(falhas[-1])
-    print("\nvidIQ: conferir com vidiq_balance (o Claude faz). Plano B dele: API do YouTube + Pixabay/Commons/Archive.")
+    print("\nvidIQ: conferir com vidiq_balance (o Claude faz). São 150 créditos POR MÊS (renova dia 17).")
+    print("Clipes não dependem dele: busca web (TikTok/X/Instagram) + yt-dlp.")
     print(f"\n{len(falhas)} serviço(s) com falha." if falhas else "\nTudo funcionando.")
 
 
