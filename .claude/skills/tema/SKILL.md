@@ -22,6 +22,10 @@ O usuário escolhe um e seguimos para `/clipes` e `/roteiro`.
    ```
    Se quiser, acrescente buscas com `--extra "termo"` (em inglês/espanhol) para variar.
 
+3. **O que está quente AGORA (primeiro passo, sempre — dono: "vídeo que até minha avó já viu não serve"):**
+   `python3 -m viitu.quente` → Shorts do nicho publicados nos últimos 7 dias ordenados por views/hora (API do YouTube,
+   EN e PT) + Google Trends em alta no BR/EUA. Tema fresco com porquê forte entra como 🔥 (vale mais que o validado antigo).
+
 3a. **vidIQ (preferência do dono, sempre):**
    - **Base = gringo validado sem versão no Brasil:** `vidiq_outliers` com `contentType: short`,
      `language: en` (e às vezes `es`), keyword da família do dia, `minViews: 1000000`. Breakout ≥ 3x = prova forte.
