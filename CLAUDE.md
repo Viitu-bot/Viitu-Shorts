@@ -70,5 +70,7 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
   (o processo nunca para por uma cota ou serviço fora do ar).
 - Nuvem não baixa do YouTube/Reddit: o dono envia clipes no chat ou na pasta Drive `brutos` (`/brutos`).
   **X (Twitter) baixa direto:** `yt-dlp <link do post>` (vd007: vídeo 4K oficial da SpaceX). Peça o link do post.
-- Gemini (análise de vídeo) tem cota grátis diária; se acabar, pular a crítica e seguir.
+- **Gemini é opcional** (dono 18/11: "não dependa tanto do Gemini"): nenhuma trava nem etapa de produção depende dele.
+  Classificar temas e julgar roteiro/cenas = o próprio Claude; som e imagem = medições próprias. Gemini só com `--gemini`
+  (ex.: dissecar vídeo de referência no /analisar, onde é o único que assiste YouTube pelo link).
 - Sem GPU: 3D renderiza em software (mais lento, funciona). Veo/IA de vídeo pela API é paga.

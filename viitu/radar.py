@@ -6,7 +6,7 @@ Fontes (cada uma traz candidatos):
   3. IDs que o Claude salvou do vidIQ (outliers/trending) em dados/pesquisas/<hoje>_vidiq.json    → breakout
   4. Google Trends em alta no BR/EUA (marca o tema que bate com assunto do momento)              → hype
 
-Cada candidato é classificado (Gemini, texto) e pontuado em 5 critérios:
+Cada candidato é classificado (pelo Claude na sessão; Gemini só com --gemini) e pontuado em 5 critérios:
   frescor 25 · força (views × quantas vezes acima do próprio canal) 25 · categoria×gatilho 20 ·
   lacuna PT-BR (3 buscas em português) 20 · cara do canal Viitu (perigo/ação com clipe real, porquê forte) 10
 
@@ -67,7 +67,21 @@ def _classificar(titulos: list[str]) -> list[dict]:
         "famosa, comida, dança, desenho, jogo, produto à venda = 0), descartar (true se não é curiosidade explicável). "
         "Devolva só JSON {\"itens\": [{\"i\": n, \"categoria\": .., \"gatilho\": .., \"tema_pt\": .., \"buscas_pt\": [..], "
         "\"porque\": n, \"cara_do_canal\": n, \"descartar\": bool}]}.\n\n" + lista)
-    itens = json.loads(_gemini_texto(prompt))["itens"]
+    if "--gemini" in sys.argv:
+        itens = json.loads(_gemini_texto(prompt))["itens"]
+    else:
+        # PADRÃO SEM GEMINI (dono 18/11: "não dependa tanto do Gemini"): o Claude classifica na própria sessão.
+        hoje = dt.date.today().isoformat()
+        arq = PASTA / f"{hoje}_classificacao.json"
+        if not arq.exists():
+            PASTA.mkdir(parents=True, exist_ok=True)
+            (PASTA / f"{hoje}_candidatos.json").write_text(json.dumps(
+                {"instrucao": prompt.split("\n\n")[0], "titulos": [{"i": k, "titulo": t} for k, t in enumerate(titulos)]},
+                ensure_ascii=False, indent=1), encoding="utf-8")
+            print(f"CLASSIFICAR: o Claude lê dados/pesquisas/{hoje}_candidatos.json, grava {arq.name} no formato "
+                  "{\"itens\": [...]} e roda o radar de novo (sem gastar cota: a coleta fica em cache).")
+            sys.exit(2)
+        itens = json.loads(arq.read_text(encoding="utf-8"))["itens"]
     out = [{} for _ in titulos]
     for it in itens:
         k = int(it.get("i", -1))
@@ -102,7 +116,13 @@ def _feitos() -> str:
 
 
 def radar(top: int = 8, com_lacuna: bool = True) -> list[dict]:
-    brutos = _coletar()
+    cache = PASTA / f"{dt.date.today().isoformat()}_coleta.json"     # 2ª passada do dia não gasta cota de busca
+    if cache.exists():
+        brutos = {k: {"fontes": set(v)} for k, v in json.loads(cache.read_text(encoding="utf-8")).items()}
+    else:
+        brutos = _coletar()
+        PASTA.mkdir(parents=True, exist_ok=True)
+        cache.write_text(json.dumps({k: sorted(v["fontes"]) for k, v in brutos.items()}), encoding="utf-8")
     vids = [v for v in yt.detalhes_videos(list(brutos)) if v["views"] >= 300_000]
     agora = dt.datetime.now(dt.timezone.utc)
     for v in vids:

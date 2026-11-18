@@ -27,6 +27,11 @@ O usuário escolhe um e seguimos para `/clipes` e `/roteiro`.
    ```
    Se quiser, acrescente buscas com `--extra "termo"` (em inglês/espanhol) para variar.
 
+0a. **Classificação sem Gemini (padrão desde 18/11):** `python3 -m viitu.radar` coleta (cota de busca, guardada em
+   cache do dia) e sai com código 2 pedindo classificação. O Claude lê `dados/pesquisas/<hoje>_candidatos.json`,
+   classifica cada título com os campos da instrução (categoria, gatilho, tema_pt, buscas_pt, porque, cara_do_canal,
+   descartar), grava `dados/pesquisas/<hoje>_classificacao.json` como `{"itens": [...]}` e roda o radar de novo
+   (não gasta cota de busca). Gemini só com `--gemini`.
 0. **RADAR (pesquisa conjunta, sempre primeiro):** antes, salve os IDs dos outliers/trending do vidIQ em
    `dados/pesquisas/<hoje>_vidiq.json` (lista de IDs). Depois `python3 -m viitu.radar --top 6`: junta Shorts do nicho
    dos últimos 10 dias (views/hora) + 90 dias (validação) + vidIQ + Google Trends, classifica e dá nota 0–100

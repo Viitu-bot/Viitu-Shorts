@@ -21,7 +21,7 @@ Começo de sessão: `python3 -m viitu.saude` (testa tudo em ~1 min) + `vidiq_bal
 ## Cadeia de reservas por etapa
 | Etapa | 1ª | 2ª | 3ª | 4ª |
 |---|---|---|---|---|
-| Tema (radar) | `viitu.radar` (API YouTube) | vidIQ trending/outliers + youtube_search | `viitu.quente` (Google Trends) | Hall da Fama / `dados/pesquisas` antigas |
+| Tema (radar) | `viitu.radar` (API YouTube; o Claude classifica, coleta em cache) | vidIQ trending/outliers + youtube_search | `viitu.quente` (Google Trends) | Hall da Fama / `dados/pesquisas` antigas |
 | Lacuna PT-BR | `viitu.tema lacuna` (API) | `vidiq_youtube_search` regionCode BR | — | — |
 | Views (trava) | `viitu.provar` (videos.list, quase nunca acaba) | print do dono | — | — |
 | Clipes reais | busca web TikTok/X/IG + yt-dlp | Pixabay / Pexels | Internet Archive / NASA (480p: só prova) | vidIQ (se houver crédito) → dono manda link |
@@ -29,7 +29,7 @@ Começo de sessão: `python3 -m viitu.saude` (testa tudo em ~1 min) + `vidiq_bal
 | Voz | ElevenLabs (Otto) | esperar e repetir | — | — |
 | Música | biblioteca própria (`assets/musica`) | `app:` música do app do YouTube | Kevin MacLeod (CC BY) | — |
 | Efeitos | Sonniss (cache) | Mixkit kit | ElevenLabs sound-generation | — |
-| Análise de vídeo | Gemini | pular a crítica | — | — |
+| Análise de vídeo | medições próprias + o Claude olha a prancha | Gemini só com --gemini (2ª opinião) | — | — |
 
 ## Orçamento diário (para não acabar no meio)
 - **API do YouTube (busca, 10 mil):** radar ~5,5 mil (1x por dia, logo cedo) + lacunas extras ≤ 20 (2 mil). Resto: reserva.

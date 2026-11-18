@@ -5,7 +5,8 @@ comando só (antes eram 4 soltas e dependiam de lembrar):
   2. revisão de enquadramento e telas de app (viitu.revisar)
   3. direitos e créditos (viitu.direitos)
   4b. SOM: pós-produção (viitu.som_final: mixagem depois do render, sidechain real, −14 LUFS) + SOM MEDIDO (bloqueia)
-  4c. OUVIDO do Gemini: 2ª opinião (não bloqueia: deu de 3 a 8,5 para o mesmo arquivo)
+  4c. OUVIDO do Gemini: só com --gemini, 2ª opinião (não bloqueia: deu de 3 a 8,5 para o mesmo arquivo)
+  Nada aqui depende do Gemini: todas as travas são medições próprias.
   4. auditoria técnica do mp4 (viitu.auditoria: loudness, efeito sobre a fala, cenas escuras, ritmo, loop;
      com Gemini se houver cota, sem ele se não houver)
   5. prancha 1 quadro/s em saida/prancha.jpg + a lista de conferência visual de edicao/reclamacoes.md
@@ -66,19 +67,18 @@ def entregar(projeto: str) -> bool:
         res["som_medido"] = not falhas
         print(("✅" if not falhas else "❌"), "4b. Som medido (música sob a voz, respira, efeitos, impacto, nada sobre a voz)"
               + (f" — falhou: {falhas}" if falhas else ""))
-        ok, txt = _rodar("auditoria", ["viitu.auditoria", projeto, str(mp4)])
-        if not ok:                                           # Gemini sem cota: audita só as medições
-            ok, txt = _rodar("auditoria", ["viitu.auditoria", projeto, str(mp4), "--sem-gemini"])
+        ok, txt = _rodar("auditoria", ["viitu.auditoria", projeto, str(mp4)] + ([] if "--gemini" in sys.argv else ["--sem-gemini"]))
         aud = pasta / "saida" / "auditoria.md"
         graves = [l for l in aud.read_text(encoding="utf-8").splitlines() if "❌" in l] if aud.exists() else []
         res["auditoria"] = ok and not graves
         print(("✅" if res["auditoria"] else "❌"), "4. Auditoria técnica (som, loudness, ritmo, loop)")
         for g in graves[:8]:
             print("     ", g.strip())
-        from viitu.ouvido import ouvir
-        nota, txt = ouvir(str(mp4))
-        (pasta / "saida" / "ouvido.md").write_text(txt, encoding="utf-8")
-        print(f"ℹ️ 4c. Ouvido do Gemini (2ª opinião, não bloqueia — varia de 3 a 8,5 no mesmo arquivo): {nota}/10 — saida/ouvido.md")
+        if "--gemini" in sys.argv:                       # 2ª opinião só quando pedida (dono: "não dependa do Gemini")
+            from viitu.ouvido import ouvir
+            nota, txt = ouvir(str(mp4))
+            (pasta / "saida" / "ouvido.md").write_text(txt, encoding="utf-8")
+            print(f"ℹ️ 4c. Ouvido do Gemini (2ª opinião, não bloqueia): {nota}/10 — saida/ouvido.md")
         prancha = pasta / "saida" / "prancha.jpg"
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(mp4), "-vf", "fps=1,scale=180:-1,tile=9x4",
                         "-frames:v", "1", str(prancha)], check=False)
@@ -93,4 +93,4 @@ def entregar(projeto: str) -> bool:
 
 
 if __name__ == "__main__":
-    sys.exit(0 if entregar(sys.argv[1]) else 1)
+    sys.exit(0 if entregar([a for a in sys.argv[1:] if not a.startswith('--')][0]) else 1)

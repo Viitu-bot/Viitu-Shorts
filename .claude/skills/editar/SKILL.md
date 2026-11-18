@@ -76,12 +76,12 @@ aval do dono). Não renderizar planta reprovada.
 (`viitu.som_final`: o áudio do mp4 é refeito depois do render — voz/leito/efeitos com sidechain real, −14 LUFS) e o
 **SOM MEDIDO** (música −8 a −20 dB sob a voz, respira ≥ 3 dB nas pausas, ≥ 70% dos efeitos audíveis, impacto da virada
 ≥ −6 dB, nada acima da voz), e gera `saida/prancha.jpg`. Ajuste de som = mexer em `viitu/som_final.py` e rodar de
-novo (segundos, sem novo render). O Gemini (`viitu.ouvido`) é só 2ª opinião.
+novo (segundos, sem novo render). Gemini fora do fluxo: só com `--gemini` (2ª opinião, não bloqueia).
 **BLOQUEADA = não mandar ao dono.** LIBERADA = olhar a prancha com a lista de conferência e só então enviar.
 
 ### Detalhe de cada verificação (o `viitu.entrega` já roda todas)
 1. `python3 -m viitu.revisar <p>` → abrir `saida/revisao.jpg` (cena de animação é ignorada na repetição).
-2. `python3 -m viitu.auditoria <p> remotion/out/<p>.mp4` (`--sem-gemini` se a cota acabou): loudness −14,
+2. `python3 -m viitu.auditoria <p> remotion/out/<p>.mp4` (a entrega já roda com `--sem-gemini`): loudness −14,
    efeitos sobre a fala, cenas escuras, ritmo, loop.
 3. `python3 -m viitu.direitos <p>` → sem ❌.
 4. Prancha 1 quadro/s: `ffmpeg -i <mp4> -vf "fps=1,scale=144:-1,tile=14x4" -frames:v 1 prancha.png` e OLHAR:
