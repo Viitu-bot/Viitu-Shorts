@@ -263,5 +263,20 @@
   "id": 5366,
   "nome": "Submerged Tapes - Polystyrene Destruction/PD29,Polystyrene,Designed,Slow,Pitch,Up,Rubbery,Squealing,Squeak,Snap,At,End.mp3",
   "nota": 0.623
+ },
+ "liquid flowing through a pipe": {
+  "id": 5506,
+  "nome": "Wav Junction Sound Effects - Water/0008_Water_small_drainpipe_close_to_opening.mp3",
+  "nota": 0.306
+ },
+ "crowd applause indoors": {
+  "id": 2853,
+  "nome": "Soundrangers - Audience Reactions/nightclub_audience_applause_cheers_07.mp3",
+  "nota": 0.182
+ },
+ "fighter jet flyby": {
+  "id": 3188,
+  "nome": "Airborne Sound - Attack Aircraft Maneuvers/Jet,Fighter,FA-18C,Hornet,Medium Distant,Climb,Right to High,Crest and Hold,Kill Engine,191.mp3",
+  "nota": 0.3
  }
 }
