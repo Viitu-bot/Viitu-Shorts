@@ -32,20 +32,20 @@ Evidências v4:
   quase para (não para 100%: por isso "quase") [CONFIRMADO: patente US 5593157; Mental Floss]
 - Feltro saiu do roteiro: é só a capa, não segura o ar (o dono achou a explicação rasa)
 
-## ✅ TEXTO FINAL PARA A VOZ (v3, em uso) (ElevenLabs)
+## ✅ TEXTO FINAL PARA A VOZ (v4, aprovado pelo dono 20/11)
 Toda bola de tênis nasce partida ao meio.
-A maioria acha que ela é maciça, mas na verdade são duas conchas de borracha coladas uma na outra.
-Antes de fechar, uma máquina enfia ar sob pressão, que faz ela quicar, mas que escapa aos poucos.
-Depois, dois feltros em forma de oito abraçam a bola,
-e ela vai pra uma lata pressurizada, onde o ar não tem pra onde fugir.
-E se você também quica de volta pro começo, se inscreve, porque
+Parece maciça, mas são duas conchas de borracha com cola na borda.
+Elas fecham numa prensa cheia de ar comprimido: o ar fica preso, e o calor funde as duas numa peça só.
+Só que a borracha deixa o ar vazar devagar.
+Por isso vai pra lata pressurizada: com a mesma pressão fora, o ar quase não sai.
+Se você também quica de volta pro começo, se inscreve, porque
 
 ## Partes (BÍBLIA §1)
-- [GANCHO] "Toda bola de tênis nasce partida ao meio." — metades saindo do molde (bruto 0 s)
-- [INÍCIO] "A maioria acha que ela é maciça, mas na verdade são duas conchas de borracha coladas uma na outra." — pilha de metades → cola (bruto)
-- [MEIO] "Antes de fechar, uma máquina enfia ar sob pressão, que faz ela quicar, mas que escapa aos poucos." (3D: ar entra, fecha, quica, vaza) · "Depois, dois feltros em forma de oito abraçam a bola," (bruto)
-- [FINAL] "e ela vai pra uma lata pressurizada, onde o ar não tem pra onde fugir." — EUREKA: a lata abrindo (tsss)
-- [CTA] "E se você também quica de volta pro começo, se inscreve, porque" — nasce do acontecimento (a bola quica de volta ↔ você volta ao começo pelo loop)
+- [GANCHO] "Toda bola de tênis nasce partida ao meio." — metades na forma (bruto 0 s) → prensa (6,8 s)
+- [INÍCIO] "Parece maciça, mas são duas conchas de borracha com cola na borda." — metades ocas no cesto → cola → metades unidas
+- [MEIO] "Elas fecham numa prensa cheia de ar comprimido: o ar fica preso, e o calor funde as duas numa peça só. Só que a borracha deixa o ar vazar devagar." — 3D Prensa (bloco único)
+- [FINAL] "Por isso vai pra lata pressurizada: com a mesma pressão fora, o ar quase não sai." — lata abrindo
+- [CTA] "Se você também quica de volta pro começo, se inscreve, porque" — bolas prontas + botão
 - LOOP → "toda bola de tênis nasce partida ao meio"
 
 ## Evidências

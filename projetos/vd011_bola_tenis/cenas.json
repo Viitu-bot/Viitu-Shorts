@@ -1,5 +1,5 @@
 {
- "_versao": "v1: formato processo (bruto cronológico), 5 partes + CTA, 3D da pressão",
+ "_versao": "v4: roteiro aprovado 20/11 (como o ar fica preso / por que vaza), 3D prensa real, trilha própria no arquivo",
  "formato": "processo",
  "bruto_cronologico": "tt_smartestworkers_7522122396917189901.mp4",
  "impacto_em": [
@@ -9,19 +9,22 @@
   "meio",
   "maciça",
   "conchas",
-  "borracha",
+  "cola",
+  "borda",
+  "prensa",
   "ar",
-  "pressão",
-  "quicar",
-  "escapa",
-  "feltros",
-  "oito",
+  "comprimido",
+  "preso",
+  "calor",
+  "peça",
+  "vazar",
   "lata",
   "pressurizada",
+  "pressão",
   "volta",
   "inscreve"
  ],
- "musica": "app:Montagem - PR Funk (S3BZS)",
+ "musica": "phonk_processo.mp3",
  "cta": {
   "em": "se inscreve",
   "texto": "SE INSCREVE"
@@ -48,8 +51,7 @@
    ],
    "_parte": "GANCHO",
    "_funcao": "tomada 0: metades na forma",
-   "sfx_cena": [],
-   "_som": "sem efeito: a imagem é o bastão mexendo na forma; não há som certo na biblioteca (antes tocava prensa aqui — errado)"
+   "sfx_cena": []
   },
   {
    "em": "partida ao meio",
@@ -78,9 +80,6 @@
    ]
   },
   {
-   "em": "A maioria acha",
-   "clipe": "tt_smartestworkers_7522122396917189901.mp4",
-   "inicio": 11.5,
    "som_original": false,
    "revisao": "manual",
    "zoom": [
@@ -91,32 +90,15 @@
     0.5,
     0.42
    ],
-   "_parte": "INÍCIO",
-   "_funcao": "tomada 4: a máquina"
-  },
-  {
-   "em": "que ela é maciça",
+   "em": "Parece maciça",
    "clipe": "tt_smartestworkers_7522122396917189901.mp4",
    "inicio": 14.45,
-   "som_original": false,
-   "revisao": "manual",
-   "zoom": [
-    1.4,
-    1.45
-   ],
-   "alvo": [
-    0.5,
-    0.42
-   ],
-   "_parte": "INÍCIO",
-   "_funcao": "metades OCAS caindo no cesto: desmente o 'maciça' (antes repetia o quadro do gancho)",
    "velocidade": 0.85,
-   "trecho_conferido": "cesto de metades ocas 14,45–15,4 s, sem corte interno (prancha 0,5 s)"
+   "trecho_conferido": "cesto de metades ocas 14,45–15,4 s, sem corte interno (prancha 0,5 s)",
+   "_parte": "INÍCIO",
+   "_funcao": "metades OCAS no cesto: desmente o 'maciça'"
   },
   {
-   "em": "mas na verdade",
-   "clipe": "tt_smartestworkers_7522122396917189901.mp4",
-   "inicio": 20.8,
    "som_original": false,
    "revisao": "manual",
    "zoom": [
@@ -127,13 +109,15 @@
     0.5,
     0.42
    ],
+   "em": "mas são duas conchas",
+   "clipe": "tt_smartestworkers_7522122396917189901.mp4",
+   "inicio": 19.75,
+   "velocidade": 0.5,
+   "trecho_conferido": "mãos segurando a concha oca 19,75–20,6 s, sem corte (prancha 0,25 s)",
    "_parte": "INÍCIO",
-   "_funcao": "tomada 6: a cola"
+   "_funcao": "a concha de borracha na mão (câmera lenta)"
   },
   {
-   "em": "duas conchas",
-   "clipe": "tt_smartestworkers_7522122396917189901.mp4",
-   "inicio": 25.2,
    "som_original": false,
    "revisao": "manual",
    "zoom": [
@@ -144,32 +128,29 @@
     0.5,
     0.42
    ],
+   "em": "com cola na borda",
+   "clipe": "tt_smartestworkers_7522122396917189901.mp4",
+   "inicio": 23.05,
+   "trecho_conferido": "pincel passando cola na BORDA das metades 23,05–24,3 s (prancha 0,25 s)",
    "_parte": "INÍCIO",
-   "_funcao": "tomada 7: metades sendo unidas (contínua)",
-   "sfx_cena": [
-    {
-     "em": "coladas",
-     "arquivo": "assets/sfx/gen_two_rubber_halves_pressed_together_with_a_squeak.mp3",
-     "db": -4,
-     "dur": 1.4,
-     "no_clipe": 27.95
-    }
-   ]
+   "_funcao": "a cola sendo passada na borda — a ação da frase"
   },
   {
-   "em": "Antes de fechar",
+   "em": "Elas fecham",
    "clipe": "tt_ciberpandora_7230079003736935706.mp4",
    "inicio": 10,
    "manter": true,
    "revisao": "manual",
    "_parte": "MEIO",
    "animacao": {
-    "nome": "bola3d",
+    "nome": "prensa3d",
     "fase": "completo",
     "eventos": {
-     "ar": "enfia",
-     "quica": "quicar",
-     "escapa": "escapa"
+     "ar": "cheia",
+     "fecha": "preso",
+     "calor": "calor",
+     "peca": "peça",
+     "vaza": "vazar"
     },
     "sfx": [
      {
@@ -181,53 +162,38 @@
       "evento": "ar",
       "arquivo": "assets/sonniss/cache/3232.mp3",
       "db": -4,
-      "dur": 1.6
+      "dur": 1.8
      },
      {
-      "evento": "quica",
-      "arquivo": "assets/sfx/gen_tennis_ball_bouncing_twice_on_a_hard_floor_close.mp3",
+      "evento": "fecha",
+      "arquivo": "assets/sfx/gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3",
       "db": -2,
       "dur": 1.2
      },
      {
-      "evento": "escapa",
+      "evento": "calor",
+      "arquivo": "assets/sfx/gen_heated_metal_press_sizzling_soft_hiss_of_hot_rubbe.mp3",
+      "db": -6,
+      "dur": 1.6
+     },
+     {
+      "evento": "peca",
+      "arquivo": "assets/sonniss/cache/5924.mp3",
+      "db": -5,
+      "dur": 1.0
+     },
+     {
+      "evento": "vaza",
       "arquivo": "assets/sfx/gen_slow_soft_air_leaking_hiss_from_a_small_hole.mp3",
       "db": -5,
       "dur": 2.0
      }
     ]
    },
-   "_funcao": "3D: ar sob pressão entra, fecha, quica, o ar escapa aos poucos"
+   "_funcao": "3D do processo real: câmara enche de ar comprimido → prensa fecha e prende o ar → calor funde a borda → peça só → ar atravessa a borracha devagar"
   },
   {
-   "em": "Depois, dois feltros",
-   "clipe": "tt_smartestworkers_7522122396917189901.mp4",
-   "inicio": 47.6,
-   "som_original": false,
-   "revisao": "manual",
-   "zoom": [
-    1.4,
-    1.45
-   ],
-   "alvo": [
-    0.5,
-    0.42
-   ],
-   "_parte": "MEIO",
-   "_funcao": "tomadas 12-14 SEM CORTE: o feltro em oito do começo ao fim (dono: mostrar a ação)",
-   "sfx_cena": [
-    {
-     "em": "feltros",
-     "arquivo": "assets/sfx/gen_felt_fabric_rubbed_and_pressed_onto_a_rubber_ball_.mp3",
-     "db": -4,
-     "dur": 1.6,
-     "no_clipe": 49.0
-    }
-   ],
-   "velocidade": 1.15
-  },
-  {
-   "em": "e ela vai",
+   "em": "Por isso",
    "clipe": "tt_thetennis101_7476930115079802134.mp4",
    "inicio": 3.2,
    "som_original": false,
@@ -237,11 +203,11 @@
     1.15
    ],
    "_parte": "FINAL",
-   "_funcao": "EUREKA: tira a tampa da lata (trecho nítido; 3.6+ reprova na nitidez), emenda na abertura em câmera lenta",
+   "_funcao": "lata: tira a tampa (trecho nítido)",
    "sfx_cena": []
   },
   {
-   "em": "onde o ar",
+   "em": "com a mesma pressão",
    "clipe": "tt_thetennis101_7476930115079802134.mp4",
    "inicio": 6.25,
    "som_original": false,
@@ -251,7 +217,7 @@
     1.15
    ],
    "_parte": "FINAL",
-   "_funcao": "lata aberta em câmera lenta (único trecho nítido)",
+   "_funcao": "lata abre em câmera lenta: o tsss prova que tem pressão lá dentro",
    "velocidade": 0.5,
    "sfx_cena": [
     {
@@ -264,7 +230,7 @@
    ]
   },
   {
-   "em": "E se você",
+   "em": "Se você",
    "clipe": "tt_smartestworkers_7522122396917189901.mp4",
    "inicio": 60.8,
    "som_original": false,
