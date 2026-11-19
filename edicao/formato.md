@@ -65,4 +65,5 @@ Mixagem em 2 grupos (leito −10 dB / efeitos −3 dB). Nota do OUVIDO (Gemini) 
 
 ## 6. Ordem de produção (cada etapa confere a planta)
 `/tema` (tem imagem? fato vale hoje?) → `/roteiro` (batidas e palavras da §1/§2) → `/clipes` (≥ 7 fontes, §4) →
-`/animacao` (§3) → `/editar` (§5; `viitu.montagem` barra) → render → `viitu.entrega` (ouvido + prancha) → enviar.
+`/animacao` (§3) → `/editar` (§5; `viitu.montagem` barra) → **decupagem** (`viitu.decupagem`: folha de cenas e sons,
+conferida pelo Claude ANTES do render; a entrega cobra) → render → `viitu.entrega` (ouvido + prancha) → enviar.

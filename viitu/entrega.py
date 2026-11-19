@@ -51,6 +51,11 @@ def entregar(projeto: str) -> bool:
         velho.append("vídeo final mais velho que o plano (renderizar de novo)")   # com impressão: só o SOM mudou, a imagem é a mesma
     res["atualizado"] = not velho
     print(("✅" if not velho else "❌"), "0. Vídeo gerado a partir do cenas.json atual" + (f" — desatualizado: {velho}" if velho else ""))
+    # DECUPAGEM (cérebro de editor, dono 19/11): a folha de cenas tem que existir e ser do cenas.json atual
+    dec = pasta / "saida" / "decupagem.jpg"
+    res["decupagem"] = dec.exists() and dec.stat().st_mtime >= cen.stat().st_mtime
+    print(("✅" if res["decupagem"] else "❌"), "0b. Decupagem conferida antes do render"
+          + ("" if res["decupagem"] else f" — rode: python3 -m viitu.decupagem {projeto} e CONFIRA a folha"))
     from viitu.montagem import checar
     erros, avisos = checar(projeto)
     res["montagem"] = not erros

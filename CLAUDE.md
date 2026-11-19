@@ -29,7 +29,8 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 2. `/roteiro` → texto HISA + marcações de edição
 3. `/clipes` (+ `/brutos` se o dono enviar arquivos) → cenas reais escolhidas e triadas
 4. `/animacao` → o trecho explicativo em 3D (o que não existe em vídeo, é difícil de achar ou impossível de filmar)
-5. `/editar` → voz, montagem, som, Remotion e **`python3 -m viitu.entrega <p>` LIBERADA** (sem isso não se entrega)
+5. `/editar` → voz, montagem, **decupagem conferida antes do render** (`python3 -m viitu.decupagem <p>`: folha com
+   cada cena, frase e som — o "cérebro de editor"), som, Remotion e **`python3 -m viitu.entrega <p>` LIBERADA** (sem isso não se entrega)
 6. `/publicar` → título, descrição, créditos, horário; o dono agenda no app do YouTube Studio
 - `/analisar <link>`: todo vídeo/canal que o dono mandar vira conhecimento (Hall da Fama).
 

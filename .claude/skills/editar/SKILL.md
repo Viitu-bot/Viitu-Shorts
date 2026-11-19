@@ -22,7 +22,11 @@ aval do dono). Não renderizar planta reprovada.
 3. `cenas.json`: `"em"` (trecho onde a cena começa), `"clipe"`, `"inicio"`; animação 3D com
    `"animacao": {...}, "manter": true, "revisao": "manual"`; `"musica"` pelo clima; `"impacto_em"` (virada);
    `"destaques"`; `"creditos_descricao"`; `"permissoes"`.
-4. `python3 -m viitu.editar <p> --remotion` → `cd remotion && npm run render` →
+4. **DECUPAGEM (cérebro de editor, obrigatória):** `python3 -m viitu.decupagem <p>` → `saida/decupagem.jpg`. O Claude
+   ABRE a folha e confere linha por linha ANTES do render: a imagem mostra o que a frase diz? a tomada é a certa? o som
+   listado é do contexto (nada de galo, inseto, golfe)? alguma cena repetida/fraca? Errou → corrige o cenas.json e
+   gera de novo. A entrega reprova se a decupagem não existir ou for mais velha que o cenas.json.
+5. `python3 -m viitu.editar <p> --remotion` → `cd remotion && npm run render` →
    `cp out/short_remotion.mp4 out/<p>.mp4`. Antes do render completo, confira quadros soltos de animações novas
    (`npx remotion still src/index.ts Short <arq>.png --frame=N --scale=0.3`).
 
