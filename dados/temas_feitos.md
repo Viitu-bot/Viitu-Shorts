@@ -10,4 +10,5 @@ Formato: `AAAA-MM-DD (postagem) | família | tema | link do vídeo publicado (qu
 2026-11-19 18:00 | Máquinas e obras gigantes | 🔥 "A torre que pegou a Starship no ar 🚀" (Ship 42, Flight 15) — BASTIDOR 20,6 s, vd007 v3 | (pronto para agendar)
 2026-11-21 (sáb) | Motivo oculto/perigo | 🔥 Por que o caminhão-tanque meio cheio é o perigoso (quebra-ondas) — vd008 | (radar 18/11: YouTube+TikTok, PT vazio)
 (substituído) | Motivo oculto/engenharia | Por que o Air Force One não precisa pousar — vd009 (dono pediu outro tema p/ domingo; projeto guardado)
-2026-11-22 (dom) | Perigo/motivo oculto | 🔥 O tanque feito para explodir (painéis de alívio do Abrams) — BASTIDOR, vd010 | (prova 2,66 mi em ~5 dias; PT vazio)
+(substituído) | Perigo/motivo oculto | O tanque feito para explodir — vd010 (dono pediu troca: imagem de guerra limitou a qualidade; projeto guardado)
+2026-11-22 (dom) | Processo (bruto cronológico) | Toda bola de tênis nasce partida ao meio (ar sob pressão, lata pressurizada) — vd011 | (prova 15,7 mi; PT vazio, maior 9k)
