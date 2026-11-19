@@ -90,10 +90,14 @@ def medir(projeto: str, plano: dict) -> dict:
     return {k: {"valor": val, "ok": bool(ok)} for k, (val, ok) in r.items()}
 
 
-def montar(projeto: str) -> dict:
+def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict:
+    """limpo=True: a RECEITA DOS CANAIS ANALISADOS (logica_editor.md) — trilha constante + whoosh nos cortes + riser/boom
+    na virada + ding; sem efeito de ação por cena e sem ambiência (os efeitos escolhidos por CLAP "não encaixavam")."""
     pasta = RAIZ / "projetos" / projeto
     mp4 = RAIZ / "remotion" / "out" / f"{projeto}.mp4"
     plano = json.loads((mx.PUB / "plano.json").read_text(encoding="utf-8"))
+    if limpo:
+        plano = {**plano, "sfx": [e for e in plano.get("sfx", []) if False], "foley_mix": False}
     sr_antigo, mx.SR = mx.SR, SR                         # mesma reconstrução, em qualidade de entrega
     try:
         voz, L = mx._camadas({k: v for k, v in plano.items() if k not in ("duck", "duck_fx")})
@@ -121,7 +125,7 @@ def montar(projeto: str) -> dict:
     mus = L["musica"][:n] * para(L["musica"][:n], -11, fala_m)               # trilha −11 antes do sidechain (~−15 depois)
     amb = L["foley"][:n] + L["ambiente"][:n]
     amb = amb * para(amb, -15, fala_m)                                         # ambiência presente, abaixo da música
-    leito = (mus + amb) * vac
+    leito = (mus + (0 if limpo else amb)) * vac
     # efeitos curtos: cada evento normalizado pelo PICO de 0,1 s → −6 dB da voz (claro, sem passar por cima);
     # a virada (riser/boom) até o nível da voz
     spf = SR / mx.FPS
@@ -169,7 +173,10 @@ def montar(projeto: str) -> dict:
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(mp4), "-i", str(mix), "-map", "0:v", "-map", "1:a",
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(tmp)],
                    check=True)
-    tmp.replace(mp4)
+    if saida:
+        tmp.replace(saida)
+    else:
+        tmp.replace(mp4)
     db = lambda x: float(10 * np.log10(np.mean(x.astype(np.float64) ** 2) + 1e-12))
     info = {"voz_db": round(db(voz), 1), "leito_db": round(db(leito), 1), "efeitos_db": round(db(fx), 1),
             "mp4": str(mp4.relative_to(RAIZ)), "medidas": medidas}
@@ -180,4 +187,8 @@ def montar(projeto: str) -> dict:
 
 
 if __name__ == "__main__":
-    montar(sys.argv[1])
+    import argparse
+    a = argparse.ArgumentParser()
+    a.add_argument("projeto"); a.add_argument("--limpo", action="store_true"); a.add_argument("--saida")
+    x = a.parse_args()
+    montar(x.projeto, x.limpo, Path(x.saida) if x.saida else None)
