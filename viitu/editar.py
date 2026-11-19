@@ -444,14 +444,21 @@ def renderizar_cena(s: dict, pasta: Path, idx: int) -> Path:
         if tri.exists():
             t = json.loads(tri.read_text(encoding="utf-8")).get(s["clipe"])
             uso = n / FPS * float(s.get("velocidade", 1.0))
-            if t and not any(a <= s.get("inicio", 0) and s.get("inicio", 0) + uso <= b + 0.01 for a, b in t["trechos_utilizaveis"]):
-                cabem = [(a, b) for a, b in t["trechos_utilizaveis"] if b - a >= uso]
-                if not cabem:
-                    raise SystemExit(f"Cena '{s['em']}': nenhum trecho aprovado de {s['clipe']} tem {uso:.1f}s — escolha outro clipe")
-                a, b = min(cabem, key=lambda ab: abs(min(max(s.get('inicio', 0), ab[0]), ab[1] - uso) - s.get('inicio', 0)))
-                novo = min(max(s.get("inicio", 0), a), b - uso)
-                print(f"    triagem: cena '{s['em']}' movida de {s.get('inicio', 0):.2f}s para {novo:.2f}s (trecho aprovado {a}–{b})")
-                s["inicio"] = round(novo, 2)
+            ini0 = s.get("inicio", 0)
+            tr = t["trechos_utilizaveis"] if t else []
+            cabe = any(a <= ini0 and ini0 + uso <= b + 0.01 for a, b in tr)
+            if t and not cabe and s.get("_bruto"):
+                # BRUTO CRONOLÓGICO: pode atravessar os cortes internos do próprio bruto (lacunas curtas ≤ 0,6 s entre
+                # trechos), nunca tela preta/app (lacunas longas)
+                dentro = [(a, b) for a, b in tr if b > ini0 and a < ini0 + uso]
+                lacunas = [b2[0] - b1[1] for b1, b2 in zip(dentro, dentro[1:])]
+                cabe = bool(dentro) and dentro[0][0] <= ini0 + 0.3 and dentro[-1][1] + 0.3 >= ini0 + uso and all(g <= 0.6 for g in lacunas)
+            if t and not cabe:
+                # SEM ESCOLHA AUTOMÁTICA (vd011, 19/11): antes a cena era MOVIDA em silêncio para outro trecho (o gancho
+                # virou o operário). Agora para e mostra as opções para o Claude decidir conferindo a imagem.
+                cabem = [(a, b) for a, b in tr if b - a >= uso]
+                raise SystemExit(f"Cena '{s['em']}' ({s['clipe']}@{ini0}s, {uso:.1f}s) não cabe num trecho aprovado. "
+                                 f"Trechos com {uso:.1f}s+: {cabem[:8]} — escolher na prancha e corrigir o cenas.json.")
         if True:
             # nunca usar a tela final (logo + @) de TikTok/Reels: detectada no próprio clipe
             limite = fim_util(clipe)
@@ -913,6 +920,8 @@ def editar(projeto: str) -> None:
     dur = segs[-1]["f1"] / FPS
     print(f"{len(segs)} cortes em {dur:.2f} s (média {dur / len(segs):.2f} s por cena)")
 
+    for s in segs:                                     # bruto cronológico pode atravessar os cortes internos dele
+        s["_bruto"] = s.get("clipe") == cfg.get("bruto_cronologico")
     arquivos = []
     for i, s in enumerate(segs):
         arquivos.append(renderizar_cena(s, pasta, i))

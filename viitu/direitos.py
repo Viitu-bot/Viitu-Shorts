@@ -30,7 +30,9 @@ def revisar(projeto: str) -> bool:
     L = lambda st, item, origem: linhas.append(f"| {st} | {item} | {origem} |")
     L("✅", "Voz (narração)", "ElevenLabs, plano Starter com licença comercial")
     musica = cfg.get("musica", "curioso_documentario.mp3")
-    if (RAIZ / "assets" / "musica" / musica).exists():
+    if musica.startswith("app:"):              # arquivo SEM trilha; o dono adiciona a faixa licenciada no app do YouTube
+        L("✅", f"Trilha: {musica[4:]}", "fora do arquivo; adicionada pelo dono no app do YouTube (licenciada para Shorts)")
+    elif (RAIZ / "assets" / "musica" / musica).exists():
         L("✅", f"Trilha: {musica}", "gerada no ElevenLabs Music (própria)")
     else:
         L("❌", f"Trilha: {musica}", "arquivo fora da biblioteca própria"); bloqueia = True
