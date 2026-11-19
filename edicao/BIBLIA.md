@@ -37,6 +37,9 @@ O roteiro.md marca cada parte com o rótulo `[GANCHO]`, `[INÍCIO]`, `[MEIO]`, `
 - Efeitos: whoosh nos cortes, impacto na virada, som da ação principal quando ele EXISTE na cena (não enfeite genérico).
 
 ## 5. Temas (não travar e acertar)
+- **PRIORIDADE (dono, 19/11): vídeos de PROCESSO tirados de UM bruto CRONOLÓGICO** (ex.: fabricação de canudo; ref. "Como
+  fazem o buraco da agulha?", A vida é uma maravilha, 1,4 mi). O processo já tem começo, meio e fim: o roteiro segue a
+  ordem das etapas do bruto, cada cena é uma etapa nova (não é repetição), e é muito mais rápido de produzir.
 - Fonte: o que já viralizou lá fora (≥ 1M, prova pelo `viitu.provar`) e não existe em PT-BR (lacuna em 3 buscas) +
   assunto quente da semana. Radar 1x por dia (cache), vidIQ só para tema (crédito mensal).
 - Tema só entra se tiver IMAGEM real provável (≥ 7 fontes) e fato que vale HOJE.

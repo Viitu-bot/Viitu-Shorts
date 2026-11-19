@@ -1,0 +1,137 @@
+{
+ "meta": {
+  "id": "73OqaZt1lKU",
+  "link": "https://youtube.com/shorts/73OqaZt1lKU",
+  "titulo": "Como fazem o buraco da agulha? 💉",
+  "canal": "A vida é uma maravilha",
+  "handle": "@avidamaravilha",
+  "inscritos_canal": 447000,
+  "publicado": "2026-10-23T21:00",
+  "duracao_s": 67,
+  "views": 1436776,
+  "likes": 32878,
+  "comentarios": 156,
+  "origem": "enviado pelo dono: processo de um bruto só"
+ },
+ "raiox": {
+  "duracao_s": 66,
+  "gancho": {
+   "frase_falada": "A maioria das pessoas acredita que agulhas médicas são fabricadas perfurando uma barra metálica sólida por dentro.",
+   "o_que_aparece_no_frame_0": "Close-up macro de uma agulha hipodérmica mergulhada em um líquido âmbar.",
+   "texto_na_tela": "maioria",
+   "por_que_prende": "Usa um 'fato' comum que as pessoas acham que sabem para imediatamente desmenti-lo, gerando curiosidade sobre o processo real."
+  },
+  "estrutura": [
+   {
+    "inicio": "00:00",
+    "fim": "00:06",
+    "funcao": "gancho",
+    "narracao": "A maioria das pessoas acredita que agulhas médicas são fabricadas perfurando uma barra metálica sólida por dentro.",
+    "imagem": "Macro de agulha e simulação de perfuração."
+   },
+   {
+    "inicio": "00:06",
+    "fim": "00:21",
+    "funcao": "desmistificacao",
+    "narracao": "Mas fazer assim seria praticamente impossível. O verdadeiro problema não é o tamanho do buraco, mas a precisão.",
+    "imagem": "Broca tentando perfurar metal e entortando/quebrando."
+   },
+   {
+    "inicio": "00:22",
+    "fim": "00:46",
+    "funcao": "explicacao",
+    "narracao": "As agulhas não começam como barras sólidas. Desde o início, já são minúsculos tubos metálicos ocos.",
+    "imagem": "Processo industrial de trefilação e compressão de tubos."
+   },
+   {
+    "inicio": "00:47",
+    "fim": "01:00",
+    "funcao": "virada",
+    "narracao": "Mas ainda falta a parte mais importante: a ponta não é cortada de forma reta. Ela é afiada em vários ângulos microscópicos.",
+    "imagem": "Processo de afiação e polimento das pontas."
+   },
+   {
+    "inicio": "01:00",
+    "fim": "01:06",
+    "funcao": "loop",
+    "narracao": "Todo esse nível de engenharia e precisão extrema para um objeto que a maioria mal observa durante alguns segundos.",
+    "imagem": "Linha de produção final e close da agulha na pele."
+   }
+  ],
+  "cortes": [
+   {
+    "tempo": "00:02",
+    "tipo": "zoom"
+   },
+   {
+    "tempo": "00:06",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:09",
+    "tipo": "seco"
+   },
+   {
+    "tempo": "00:34",
+    "tipo": "seco"
+   }
+  ],
+  "efeitos_visuais": [
+   {
+    "tempo": "00:00",
+    "efeito": "seta",
+    "em_qual_palavra": "maioria",
+    "para_que": "Apontar para o detalhe do furo da agulha."
+   },
+   {
+    "tempo": "00:09",
+    "efeito": "círculo",
+    "em_qual_palavra": "verdadeiro",
+    "para_que": "Destacar a ponta da broca."
+   },
+   {
+    "tempo": "00:00",
+    "efeito": "texto animado",
+    "em_qual_palavra": "todas",
+    "para_que": "Legendas dinâmicas que surgem conforme a fala para retenção."
+   }
+  ],
+  "efeitos_sonoros": [
+   {
+    "tempo": "00:00",
+    "som": "woosh",
+    "momento": "Transição inicial de zoom."
+   },
+   {
+    "tempo": "00:08",
+    "som": "ding",
+    "momento": "Aparecimento do círculo verde de destaque."
+   },
+   {
+    "tempo": "00:34",
+    "som": "pop",
+    "momento": "Aparecimento do ícone de mão apontando."
+   }
+  ],
+  "musica": "Trilha sonora de estilo 'documentário científico' ou 'curiosidades', com batida constante e volume moderado, abaixo da voz.",
+  "legenda": {
+   "estilo": "Fonte bold, sem serifa, com sombra projetada",
+   "posicao": "Centro da tela",
+   "palavras_por_vez": 1,
+   "cores": "Branco com destaque em amarelo para palavras-chave"
+  },
+  "ritmo": {
+   "segundos_medios_por_cena": 1.8,
+   "observacao": "O ritmo é acelerado para manter a retenção, trocando de ângulo ou cena a cada frase curta."
+  },
+  "cta": "Não possui CTA explícito.",
+  "loop": "O vídeo termina com 'alguns segundos' e reinicia com 'A maioria das pessoas', criando uma continuidade semântica sobre o tempo de observação.",
+  "origem_das_imagens": "Compilação de vídeos industriais e documentários (estilo 'How It's Made'). Possui marca d'água do canal @avidamaravilha.",
+  "licoes_para_copiar": [
+   "Uso de legendas de uma única palavra no centro para forçar o foco.",
+   "Desmentir um senso comum logo nos primeiros 3 segundos.",
+   "Uso de elementos gráficos simples (setas e círculos) para guiar o olhar em imagens complexas.",
+   "Sincronização de efeitos sonoros sutis com elementos visuais."
+  ]
+ }
+}

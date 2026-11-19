@@ -113,10 +113,18 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
         if eh_3d[k] or (k == ultima and loop_ok):
             continue
         usos[c["clipe"]].append(k + 1)
+    # BRUTO CRONOLÓGICO (BÍBLIA §5): o arquivo marcado pode estar em muitas cenas SE cada uma for uma etapa nova:
+    # inícios sempre crescentes e ≥ 1,5 s de distância (nada de voltar ao mesmo trecho)
+    bruto = cfg.get("bruto_cronologico")
+    if bruto and bruto in usos:
+        ts = [cenas[k - 1].get("inicio", 0) for k in usos[bruto]]
+        if any(b2 - a2 < 1.5 for a2, b2 in zip(ts, ts[1:])):
+            erros.append(f"R1 BRUTO FORA DE ORDEM: {bruto} volta ou repete trecho (inícios {ts}); cada cena = etapa NOVA, em ordem.")
+        usos.pop(bruto)
     for cl, ks in usos.items():
         if len(ks) > MAX_USOS:
             erros.append(f"R1 REPETIÇÃO: {cl} aparece em {len(ks)} cenas ({ks}); máximo {MAX_USOS}. Buscar outra fonte.")
-    reais = sum(len(v) for v in usos.values())
+    reais = sum(len(v) for v in usos.values())          # (o bruto cronológico não entra na conta de variedade)
     if reais and len(usos) < math.ceil(reais * MIN_VARIEDADE):
         erros.append(f"R1 VARIEDADE: {len(usos)} fontes para {reais} cenas reais (mínimo {math.ceil(reais * MIN_VARIEDADE)}).")
 

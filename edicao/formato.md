@@ -24,6 +24,13 @@ Base: HISA 2.0 do dono + engenharia reversa de A vida é uma maravilha, Zack D. 
 | 4. PAYOFF | 6–12 s | a resposta | 3D de 3–5 s se for invisível; senão real | som por evento |
 | 5. LOOP | fim | frase suspensa | frame 0 | música sobe |
 
+## 2b. Processo de UM bruto cronológico (prioridade do dono)
+No `cenas.json`: `"bruto_cronologico": "<arquivo do bruto>"`. As cenas seguem a ORDEM do bruto (inícios crescentes, ≥ 1,5 s
+entre elas): cada frase do roteiro = a etapa que aparece naquele trecho. O gancho pode ser o resultado final ou a etapa
+mais estranha; o 3D entra só para o que a câmera não mostra (dentro da máquina). Fonte do bruto: `python3 -m viitu.tema
+brutos "<processo em inglês>"` (≥ 1M) → o dono baixa e sobe na pasta Drive `brutos` (a nuvem não baixa do YouTube) ou
+X/TikTok/Archive pelo yt-dlp.
+
 ## 3. Quando usar 3D (decida nesta ordem)
 1. **Existe vídeo real que MOSTRA o mecanismo com clareza?** → use o real (3D é para o que a câmera não alcança).
 2. **É invisível, por dentro, uma força, um "e se", antes/depois, raro ou impossível de filmar?** → 3D.
