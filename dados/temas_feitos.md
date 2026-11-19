@@ -12,4 +12,4 @@ Formato: `AAAA-MM-DD (postagem) | família | tema | link do vídeo publicado (qu
 (substituído) | Motivo oculto/engenharia | Por que o Air Force One não precisa pousar — vd009 (dono pediu outro tema p/ domingo; projeto guardado)
 (substituído) | Perigo/motivo oculto | O tanque feito para explodir — vd010 (dono pediu troca: imagem de guerra limitou a qualidade; projeto guardado)
 2026-11-22 06:00 | Processo (bruto cronológico) | "A bola de tênis nasce partida ao meio 🎾" — BASTIDOR 24,6 s, 3D prensa real, trilha no arquivo, vd011 v4 | (pronto para agendar; teste de horário: 06h)
-2026-11-23 (seg) | Processo (bruto cronológico) | A cor que nasce dentro da bola de gude — vd012 | (prova 111,8 mi; PT fraco, maior do mesmo tema 187k)
+2026-11-23 18:00 | Processo (bruto cronológico) | "A cor que nasce dentro da bola de gude 🔮" — BASTIDOR 28,1 s, 3D do fio colorido, trilha no arquivo, vd012 | (pronto para agendar; teste de horário: 18h)
