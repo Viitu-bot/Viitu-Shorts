@@ -1,0 +1,245 @@
+{
+ "instrucao": "Você escolhe temas para um canal BR de Shorts de curiosidade técnica (público adulto, faceless, explica o PORQUÊ de objetos, máquinas, engenharia, perigo). Para cada título: categoria (['como é feito (processo/fábrica)', 'motivo oculto de objeto/design', 'animal com comportamento estranho', 'lugar/cultura de outro país', 'truque/hack do dia a dia', 'perigo/erro/segurança', 'recorde/escala/mais caro do mundo', 'invenção/tecnologia', 'corpo humano/saúde', 'comida/culinária curiosa', 'pessoa/feito extraordinário', 'natureza/fenômeno', 'outro']), gatilho (['motivo oculto (por que é assim)', 'processo revelado (como fazem)', 'surpresa visual (olha isso)', 'perigo/medo', 'dinheiro/escala', 'nojo/estranheza', 'fofura/emoção', 'utilidade (truque)', 'mito desmentido']), tema_pt (o assunto em até 8 palavras), buscas_pt (3 jeitos DIFERENTES que um brasileiro buscaria esse mesmo assunto no YouTube: 1ª = o OBJETO GENÉRICO sem esporte/marca/país (ex.: 'bola sem ar', não 'bola de futebol americano Wilson'), 2ª = o objeto + 'por que', 3ª = a pergunta), porque (0-2: tem um porquê surpreendente para explicar?), cara_do_canal (0-2: perigo/ação/máquina com clipe real fácil de achar = 2; meme, pessoa famosa, comida, dança, desenho, jogo, produto à venda = 0), descartar (true se não é curiosidade explicável). Devolva só JSON {\"itens\": [{\"i\": n, \"categoria\": .., \"gatilho\": .., \"tema_pt\": .., \"buscas_pt\": [..], \"porque\": n, \"cara_do_canal\": n, \"descartar\": bool}]}.",
+ "titulos": [
+  {
+   "i": 0,
+   "titulo": "ADX Florence: Why Your Cell Window Is 4 Inches Wide #shorts"
+  },
+  {
+   "i": 1,
+   "titulo": "How submarine works #science #fun #shorts #entertainment"
+  },
+  {
+   "i": 2,
+   "titulo": "Why SASHA Is the Real Hero of the Garden 🌿 #kids #shorts"
+  },
+  {
+   "i": 3,
+   "titulo": "Unboxing 120 New Acrylic Colors 🎨 😱 #shorts"
+  },
+  {
+   "i": 4,
+   "titulo": "Cutest Diwali Diya in 2026 🪔 😍 #shorts"
+  },
+  {
+   "i": 5,
+   "titulo": "This Sofa Changes Shape in Seconds! 🤯🛋️ #shorts"
+  },
+  {
+   "i": 6,
+   "titulo": "Sky Design Painting Bedroom Design 🏡 art #viralvideo #trendingvideo #shortsfeed #shorts #viral"
+  },
+  {
+   "i": 7,
+   "titulo": "Water drop drawing. BEGINNERS to LEGEND. #howtodraw #art #drawing #artist #cartoon #shorts"
+  },
+  {
+   "i": 8,
+   "titulo": "Diwali Lamp Idea at Home in 2026 😱 #shorts"
+  },
+  {
+   "i": 9,
+   "titulo": "Why Air Force One Never Has to Land #shorts"
+  },
+  {
+   "i": 10,
+   "titulo": "Why Did Everyone Stop Using the Airless NFL Football 🤯 #shorts"
+  },
+  {
+   "i": 11,
+   "titulo": "Top genius design ideas #design #decor #interior #furniture #shorts"
+  },
+  {
+   "i": 12,
+   "titulo": "Rahasia Keluarga yang Belum Ia Ketahui #shorts"
+  },
+  {
+   "i": 13,
+   "titulo": "How a Ditch in a Field Becomes a Trench"
+  },
+  {
+   "i": 14,
+   "titulo": "10 Weird Things You Didn't Know About Bobby Fischer"
+  },
+  {
+   "i": 15,
+   "titulo": "Top Funniest Design Fails 😂 ( Part #126 ) #shorts #funniestfails #perfactboy"
+  },
+  {
+   "i": 16,
+   "titulo": "Workplace Failure And WorkerHumor 🔥 Ep 3 #adamrose #construction #engineering #workers #shorts"
+  },
+  {
+   "i": 17,
+   "titulo": "Por que ela ficou assim? 👀 #toia #fyp #trending #shorts"
+  },
+  {
+   "i": 18,
+   "titulo": "This Bedroom Renovation Gives A Teenager His Own Private World #shorts"
+  },
+  {
+   "i": 19,
+   "titulo": "1 Easy Flower Painting Tip 😱 🌸 #shorts"
+  },
+  {
+   "i": 20,
+   "titulo": "Los dinosaurios no eran así... #sabiasque #curiosidades #shorts"
+  },
+  {
+   "i": 21,
+   "titulo": "3D Pen vs 3D Printer - Build on design #shorts"
+  },
+  {
+   "i": 22,
+   "titulo": "Model blouse design #shorts #shortsvideo"
+  },
+  {
+   "i": 23,
+   "titulo": "This Smart Shower System Is Amazing! 🚿🔥 | Luxury Bathroom Design #shorts"
+  },
+  {
+   "i": 24,
+   "titulo": "Por que será que a Mãe está brigando com Ela? 😳 #shorts"
+  },
+  {
+   "i": 25,
+   "titulo": "🤯 Goodbye Traditional Wash Basin! 😍 Modern Smart Bathroom Design #shorts(part ૩)"
+  },
+  {
+   "i": 26,
+   "titulo": "Beautiful Birthday Cake Design #shortsfeed #cake #viralvideo #shorts #explore #trending #new #feed"
+  },
+  {
+   "i": 27,
+   "titulo": "Stunning Teal Blue 3D Flowers & Marble Wall Art 😍✨ #shorts #epoxy #viral"
+  },
+  {
+   "i": 28,
+   "titulo": "¿Hongos zombi y árboles con ojos? ¿Te acercarías? #Shorts #Naturaleza #Animales #Curiosidades"
+  },
+  {
+   "i": 29,
+   "titulo": "1 Milhão de Volts: Por Que Eles Usam Roupa de METAL na Alta Tensão? #curiosidades #shorts"
+  },
+  {
+   "i": 30,
+   "titulo": "10 Weird Things You Didn't Know About penguinz0"
+  },
+  {
+   "i": 31,
+   "titulo": "A cidade que ficava nas costas de uma capivara #curiosidades #shorts"
+  },
+  {
+   "i": 32,
+   "titulo": "Easiest 3D Painting with Red Blue Colors 😱 #shorts"
+  },
+  {
+   "i": 33,
+   "titulo": "Make a Beautiful Chocolate Cake Design #shorts #reels #cake #video #trending #reels #explore"
+  },
+  {
+   "i": 34,
+   "titulo": "Why this tank was designed to explode #ww2history #shorts"
+  },
+  {
+   "i": 35,
+   "titulo": "Como esse pássaro conseguiu engolir isso? 😳 #shorts #memes #animais #aves #curiosidades #urubu"
+  },
+  {
+   "i": 36,
+   "titulo": "CRIARAM UM NOVO BICO PARA ESSE TUCANO 🖨️🐦 #shorts #curiosidades"
+  },
+  {
+   "i": 37,
+   "titulo": "10 Weird Things You Didn't Know About Jensen Huang"
+  },
+  {
+   "i": 38,
+   "titulo": "Why ducklings follow people #shorts #animals"
+  },
+  {
+   "i": 39,
+   "titulo": "Vintage Style Metal Toy Model 😱🔥 | Amazing Retro Design #Shorts"
+  },
+  {
+   "i": 40,
+   "titulo": "The Best Water Physics Moments 😂🗿 #usa"
+  },
+  {
+   "i": 41,
+   "titulo": "10 Weird Things You Didn't Know About Pewdiepie"
+  },
+  {
+   "i": 42,
+   "titulo": "Why the F-47 Has No Tail | Boeing F-47 #shorts"
+  },
+  {
+   "i": 43,
+   "titulo": "Why Gold is the Ultimate Dragon Bedding?! 🐉🪙 #shorts"
+  },
+  {
+   "i": 44,
+   "titulo": "Esta Casa es Más Pequeña que mi paciencia 😌 #humor #shorts"
+  },
+  {
+   "i": 45,
+   "titulo": "Yummy Chocolate Cake Design #shorts #viral #video #reels #explore #trending #viralreels"
+  },
+  {
+   "i": 46,
+   "titulo": "GATORADE + FANTA UVA = ? 🤤 #shorts #curiosidades"
+  },
+  {
+   "i": 47,
+   "titulo": "¿Qué pasaría si Perú 🇵🇪 desapareciera del mapa? 🗺️😱 #shorts"
+  },
+  {
+   "i": 48,
+   "titulo": "Por que será que ela fez isso? 👀 #toia #fyp #trending #shorts"
+  },
+  {
+   "i": 49,
+   "titulo": "Vale la pena este balón que brilla? 🤔⚽#futbol #curiosidades #shorts #deportes #regalo #top #viral"
+  },
+  {
+   "i": 50,
+   "titulo": "Dragon Math: Why giant dragons are impossible 🐉🚫 #shorts"
+  },
+  {
+   "i": 51,
+   "titulo": "Minecraft Medieval Bridge Design....🤔 (Payphone) #minecraft #shorts"
+  },
+  {
+   "i": 52,
+   "titulo": "Os Fãs de Undertale Já Tocaram MEGALOVANIA em TUDO! #undertale  #jogos #games #curiosidades"
+  },
+  {
+   "i": 53,
+   "titulo": "El Chaleco antibalas MÁS BARATO DE TEMU ¿FUNCIONA? #airsoft #defensapersonal #shorts"
+  },
+  {
+   "i": 54,
+   "titulo": "DIY Color Paper at home 😱 #shorts"
+  },
+  {
+   "i": 55,
+   "titulo": "¿Con esta piedra puedo vivir sin trabajar? #stone #popular #Science #curiosidades #shorts"
+  },
+  {
+   "i": 56,
+   "titulo": "Diwali special Rangoli Design 🤩🎇 #diwalirangoli #shorts #rangoli #rangolidesigns"
+  },
+  {
+   "i": 57,
+   "titulo": "Ramayana - 9 Mind Blowing Facts You Didn't Know | #shorts #ramayana #yash #ranbirkapoor"
+  },
+  {
+   "i": 58,
+   "titulo": "¿Por qué te da asco tu propia saliva? #cerebro  #cuerpohumano  #curiosidades  #shorts"
+  },
+  {
+   "i": 59,
+   "titulo": "স্কচটেপ দিয়ে দারুণ সহজ মেহেদী ডিজাইন😍 #shorts #youtubeshorts"
+  }
+ ]
+}
