@@ -3,7 +3,7 @@
 ## Medições
 - ✅ Loudness -14.3 LUFS (alvo −14)
 - ℹ️ Música 72 dB abaixo da voz sob a fala (definido pela especificação, não por esta medição)
-- ✅ Sons de função em cima de palavra: nenhum
+- ⚠️ Sons de função em cima de palavra: ['cena_sfx_48_0.mp3', 'cena_sfx_173_0.mp3']
 - ✅ Quadros muito escuros: 0 (em )
 - ✅ Movimento nos 2 primeiros segundos: 75.4 (gancho precisa de ação)
 - ⚠️ Cenas curtas demais (<0,9 s, piscam): [0.87, 0.6]
