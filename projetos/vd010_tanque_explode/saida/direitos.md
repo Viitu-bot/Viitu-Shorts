@@ -9,11 +9,11 @@
 | ✅ | Fonte da legenda | Anton, licença SIL Open Font License |
 | ✅ | Animações explicativas | desenhadas em código no Remotion (próprias) |
 | ⚠️ | tt_key4kt_7607650082661469470.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
-| ⚠️ | x_ralee85_1586330060180848640.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
-| ⚠️ | x_osinttechnical_1842851539091689603.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ⚠️ | tt_tankersofficial_7495114660790766890.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ⚠️ | x_osinttechnical_2090801951445303443.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
+| ⚠️ | x_osinttechnical_1842851539091689603.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
+| ⚠️ | tt_eltiosam_7471841403832651013.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 
 **RESULTADO:** ✅ liberado (⚠️ = crédito na descrição + pedir permissão)
 
-**Créditos para a descrição:** Imagens: @key4kt_ e @tankersofficial (TikTok); @RALee85 e @Osinttechnical (X). Modelo 3D: M1A1 Abrams (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts.
+**Créditos para a descrição:** Imagens: @key4kt_, @tankersofficial e @el_tio_sam04 (TikTok); @Osinttechnical (X). Modelo 3D: M1A1 Abrams (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts.

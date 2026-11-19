@@ -1,8 +1,8 @@
 {
  "atualizado": true,
  "montagem": true,
- "revisar": true,
+ "revisar": false,
  "direitos": true,
- "som_medido": true,
+ "som_medido": false,
  "auditoria": true
 }
