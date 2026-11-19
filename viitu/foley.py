@@ -59,6 +59,10 @@ def escolher(segs: list[dict], pasta: Path, fps: int) -> list[dict]:
         if "foley" in s:
             por_cena.append(s["foley"])
             continue
+        # SEM ADIVINHAR (vd011, 19/11): a classificação pela imagem pôs "galinhas/galo" numa fábrica de bolas de tênis.
+        # Ambiência só quando a cena declara "foley"; sem isso, fica só a trilha.
+        por_cena.append(None)
+        continue
         clipe = pasta / "clipes" / s["clipe"]
         img = _quadro(clipe, s.get("inicio", 0) + (s["f1"] - s["f0"]) / fps / 2 * float(s.get("velocidade", 1)))
         if img is None:

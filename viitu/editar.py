@@ -73,7 +73,9 @@ def montar_linha_do_tempo(palavras: list[dict], cfg: dict, fim_audio: float) -> 
         pendentes = [s]
         while pendentes:
             x = pendentes.pop(0)
-            if x["t1"] - x["t0"] <= MAX_CENA or x.get("efeito") or x.get("manter"):
+            # NÃO PICOTAR (dono, 19/11): dividir uma ação contínua em vários cortes do MESMO clipe parecia "clipe repetido".
+            # A troca de cena a cada 2–3 s vem de clipes/etapas diferentes no cenas.json; dividir só com "dividir": true.
+            if not x.get("dividir") or x["t1"] - x["t0"] <= MAX_CENA or x.get("efeito") or x.get("manter"):
                 final.append(x)
                 continue
             meio = (x["t0"] + x["t1"]) / 2

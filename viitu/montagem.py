@@ -238,8 +238,9 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
             erros.append(f"R4 DESFOCADO: cena {k + 1} ({c['clipe']}@{c.get('inicio', 0)}s) nitidez {nit:.0f}.")
         if mov < 1.0 and not c.get("parado_ok"):
             avisos.append(f"R4 PARADO: cena {k + 1} ({c['clipe']}) quase sem movimento ({mov:.1f}); parece foto.")
-        if dur >= 4 and not c.get("manter"):
-            avisos.append(f"R7 CENA LONGA: cena {k + 1} dura {dur:.1f} s com um clipe só; precisa de ação nova ou outro clipe.")
+        lim_cena = 6.0 if cfg.get("formato") == "processo" else 4.0           # processo: deixar a ação satisfatória rodar
+        if dur >= lim_cena:
+            avisos.append(f"R7 CENA LONGA: cena {k + 1} dura {dur:.1f} s com um clipe só (limite {lim_cena:.0f} s); trocar de etapa/clipe.")
     return erros, avisos
 
 

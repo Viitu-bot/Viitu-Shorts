@@ -30,11 +30,15 @@ O roteiro.md marca cada parte com o rótulo `[GANCHO]`, `[INÍCIO]`, `[MEIO]`, `
 - Clipes reais de qualidade, sem repetir, sem logo/texto de terceiro (reclamacoes.md).
 
 ## 4. Som (imersão — dono: "o vídeo não é imersivo")
-- **Música SEMPRE audível**, constante desde o frame 0: −10 a −12 dB sob a voz (no celular, −17 some), sobe nas pausas,
+- **Música = a que os canais do nicho usam** (dono, 19/11): faixa conhecida da pesquisa (`formatos.json` → `musica_app`), adicionada pelo
+  dono no app do YouTube ao postar (é licenciada para Shorts; embutir dá Content ID). O arquivo sai sem trilha e com a faixa indicada.
+- Quando for trilha própria (exceção): **SEMPRE audível**, constante desde o frame 0: −10 a −12 dB sob a voz (no celular, −17 some), sobe nas pausas,
   cresce na virada e no fim (loop). Categoria pela pesquisa (biblioteca_sons.md). Música conhecida do nicho
   (com direitos) = adicionada pelo dono no app do YouTube; nesse caso o arquivo vai sem trilha e o dono sabe.
 - Som original do clipe (quando livre) sobe no clímax; de terceiro, foley próprio no lugar.
 - Efeitos: whoosh nos cortes, impacto na virada, som da ação principal quando ele EXISTE na cena (não enfeite genérico).
+- **Ambiência só escolhida**, nunca adivinhada pela imagem (vd011: a adivinhação pôs galo cantando numa fábrica).
+- **Ação contínua não se picota** em cortes do mesmo clipe: a troca de cena vem de etapas/clipes diferentes (dono, 19/11).
 
 ## 5. Temas (não travar e acertar)
 - **PRIORIDADE (dono, 19/11): vídeos de PROCESSO tirados de UM bruto CRONOLÓGICO** (ex.: fabricação de canudo; ref. "Como

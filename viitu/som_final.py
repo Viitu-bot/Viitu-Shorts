@@ -50,6 +50,10 @@ def _vacuo(plano: dict, n: int) -> np.ndarray:
     return g
 
 
+def pasta_proj(projeto: str) -> Path:
+    return RAIZ / "projetos" / projeto
+
+
 def _ler(arq: Path) -> np.ndarray:
     r = subprocess.run(["ffmpeg", "-v", "error", "-i", str(arq), "-ac", "1", "-ar", "16000", "-f", "f32le", "-"],
                        capture_output=True).stdout
@@ -81,9 +85,10 @@ def medir(projeto: str, plano: dict) -> dict:
     tapa = float(np.percentile((F - V)[fala], 98))
     dg = _ler(st / "ding.wav") if (st / "ding.wav").exists() else np.zeros(1600, np.float32)
     dpk = float(max(db(dg[i:i + w]) for i in range(0, 4 * w, w // 2)) - vref)                 # efeito acima da voz em plena fala
+    app = str(json.loads((pasta_proj(projeto) / "cenas.json").read_text(encoding="utf-8")).get("musica", "")).startswith("app:")
     r = {
-        "musica_sob_voz_db": (round(sob, 1), -14 <= sob <= -8),       # BÍBLIA §4: audível no celular
-        "musica_respira_db": (round(respira, 1), respira >= 3 or pausa.sum() < 3),
+        "musica_sob_voz_db": ("pelo app" if app else round(sob, 1), app or -14 <= sob <= -8),       # BÍBLIA §4: audível no celular
+        "musica_respira_db": ("pelo app" if app else round(respira, 1), app or respira >= 3 or pausa.sum() < 3),
         "efeitos_acao_audiveis": (f"{acao_ok}/{len(picos)}", not picos or acao_ok >= 0.7 * len(picos)),   # só os que existem
         "impacto_virada_db": ([round(x, 1) for x in imp], all(x >= -6 for x in imp)),
         "efeito_sobre_voz_db": (round(tapa, 1), tapa <= 0),
