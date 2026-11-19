@@ -106,6 +106,7 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
     pasta = RAIZ / "projetos" / projeto
     mp4 = RAIZ / "remotion" / "out" / f"{projeto}.mp4"
     plano = json.loads((mx.PUB / "plano.json").read_text(encoding="utf-8"))
+    MD = json.loads((RAIZ / "edicao" / "especificacao.json").read_text(encoding="utf-8"))["mix_db"]   # níveis MEDIDOS (35 Shorts)
     if limpo:
         plano = {**plano, "sfx": [e for e in plano.get("sfx", []) if False], "foley_mix": False}
     sr_antigo, mx.SR = mx.SR, SR                         # mesma reconstrução, em qualidade de entrega
@@ -152,17 +153,17 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
             mx.SR = sr_ant
         pico = env(seg[a0:a0 + int(e.get("dur", 60) * spf)]).max() if seg.any() else 0
         if pico > 0:
-            alvo = max(-8.0, min(-1.5, 20 * np.log10(max(e.get("vol", 0.5), 1e-3))))   # o nível pedido na cena, dentro do seguro
+            alvo = max(-8.0, min(MD["boom"], 20 * np.log10(max(e.get("vol", 0.5), 1e-3))))   # nível pedido na cena (padrão medido: hit −6)
             fx += seg * (vref * 10 ** (alvo / 20) / pico)
     def pico_para(x, alvo_db):
         p = env(x).max() if np.abs(x).max() > 1e-5 else 0
         return 0.0 if p == 0 else vref * 10 ** (alvo_db / 20) / p
-    fx += L["whoosh"][:n] * pico_para(L["whoosh"][:n], -8)
+    fx += L["whoosh"][:n] * pico_para(L["whoosh"][:n], MD["whoosh"])
     # DING do frame 0 = identidade (BÍBLIA §2): fora do abaixamento, no nível da voz. Os pops ficam nos efeitos.
     din = L["ding"][:n]
-    fx += L["marcas"][:n] * pico_para(L["marcas"][:n], -6)
+    fx += L["marcas"][:n] * pico_para(L["marcas"][:n], MD["pop"])
     din = din * pico_para(din, 0)
-    fx += L["virada"][:n] * pico_para(L["virada"][:n], -0.5)       # o boom da virada tem que bater
+    fx += L["virada"][:n] * pico_para(L["virada"][:n], MD["boom"])             # boom medido: no nível da voz
     st = pasta / "saida" / "stems"
     st.mkdir(parents=True, exist_ok=True)
     for nome, x in (("voz", voz), ("leito", leito), ("efeitos", fx), ("ding", din)):

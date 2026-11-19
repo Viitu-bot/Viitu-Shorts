@@ -8,7 +8,7 @@
   "ambiencia": -21,
   "foley_detalhe": -16,
   "som_original": -16,
-  "whoosh": -8,
+  "whoosh": -3,
   "pop": -5,
   "boom": 0,
   "riser": -6,
@@ -38,5 +38,6 @@
  "_formato_dono_17_11": "HISA 2.0 do dono: Tiro Curto 12–15 s (30–38 palavras, re-hook aos 6 s) e Bastidor 20–28 s (50–65 palavras); auto-cut de silêncios; legenda ouro no terço superior; sem fisheye.",
  "_hit_17_11": "hit de ênfase na palavra forte (não/número/dinheiro), máx. 3 — A vida é uma maravilha, 13 vídeos",
  "_mix_18_11": "foley baixou (ambiência −18→−21, detalhe −12→−16): medido no vd008, o foley cobria a voz em 207 de 669 quadros; agora há sidechain (viitu/mixagem.py) com margem mínima de 10 dB voz−fundo",
- "_ajuste_18_11": "Ouvido (Gemini) vd009: whoosh −3 mascarava palavras nos cortes → −8; música sem ducking perceptível → −17 na fala / −7 na pausa (contraste de 10 dB) e cresce ×2 depois da virada."
+ "_ajuste_18_11": "Ouvido (Gemini) vd009: whoosh −3 mascarava palavras nos cortes → −8; música sem ducking perceptível → −17 na fala / −7 na pausa (contraste de 10 dB) e cresce ×2 depois da virada.",
+ "_ajuste_19_11": "Auditoria 'sem achismo' (dono): whoosh volta ao MEDIDO (−3; o −8 de 18/11 veio da opinião do Gemini, juiz instável). Cada valor tem a base em edicao/fontes_das_regras.md."
 }

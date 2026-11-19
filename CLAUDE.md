@@ -10,6 +10,8 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 - **Toda etapa segue `edicao/BIBLIA.md` (regras do dono, NUNCA alterar sem ele autorizar), `edicao/formato.md` e começa por `edicao/reclamacoes.md`** (o que o dono já reprovou). As travas `viitu.montagem` (antes do
   render) e `viitu.entrega` (antes de mandar) são obrigatórias em TODO vídeo.
 - Técnica nova aprendida (referência, pedido do dono) vai para o lugar certo do mapa abaixo, não para cá.
+- **Sem achismo:** nenhum número/regra novo sem base (regra do dono ou medição com fonte e amostra) escrita em
+  `edicao/fontes_das_regras.md`. Opinião de IA (Gemini incluso) não é base. Nada automático escolhe sem conferência.
 
 ## Regras que nunca quebram
 1. **Números:** nunca inventar views/inscritos. Só YouTube Data API ou print do dono.
@@ -52,6 +54,7 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 | **BÍBLIA (regras do DONO — fonte única; o Claude não muda sem autorização)** | `edicao/BIBLIA.md` |
 | O FORMATO (planta técnica: B-roll, 3D, som por batida — obedece à BÍBLIA) | `edicao/formato.md` |
 | **Os 7 FORMATOS do canal + lógica da edição (acontecimento → visual + som)** | `edicao/formatos.md` · `edicao/formatos.json` |
+| **De onde vem cada regra (D dono · M medido · H hipótese — H nunca bloqueia; número novo só com base)** | `edicao/fontes_das_regras.md` |
 | **Reclamações recorrentes do dono → regras + trava da montagem** | `edicao/reclamacoes.md` · `viitu/montagem.py` |
 | Volumes de som e regras visuais (valores fixos) | `edicao/especificacao.json` |
 | Qual efeito em qual momento/cena, engenharia reversa dos canais | `edicao/logica_editor.md` |
