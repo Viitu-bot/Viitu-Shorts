@@ -11,8 +11,8 @@
 | ⚠️ | tt_key4kt_7607650082661469470.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ⚠️ | x_ralee85_1586330060180848640.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ⚠️ | x_osinttechnical_1842851539091689603.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
+| ⚠️ | tt_tankersofficial_7495114660790766890.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ⚠️ | x_osinttechnical_2090801951445303443.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
-| ⚠️ | tt_tankersofficial_7138635050261712174.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ⚠️ | tt_globalarsenal_7449538256900787461.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 
 **RESULTADO:** ✅ liberado (⚠️ = crédito na descrição + pedir permissão)
