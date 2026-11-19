@@ -1,0 +1,258 @@
+{
+ "_versao": "v1: motivo oculto, roteiro aprovado 19/11",
+ "formato": "motivo_oculto",
+ "impacto_em": [
+  "se apagam"
+ ],
+ "destaques": [
+  "navio",
+  "bola",
+  "gigante",
+  "nariz",
+  "onda",
+  "casco",
+  "combustível",
+  "outra",
+  "vale",
+  "crista",
+  "apagam",
+  "15%",
+  "eficiente",
+  "inscreve"
+ ],
+ "musica": "misterio_sombrio.mp3",
+ "cta": {
+  "em": "se inscreve",
+  "texto": "SE INSCREVE"
+ },
+ "creditos_descricao": "Imagens: @plutosdestiny, @ship_spotting_, @risma_sitanggang, @at_sea_, @captainkatemccue (TikTok); adege, Droelfzehn, angad305 (Pixabay). Animação 3D: Viitu Shorts.",
+ "cenas": [
+  {
+   "em": "Todo navio",
+   "clipe": "tt_plutosdestiny_7223432215865199878.mp4",
+   "inicio": 18.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "golfinho nadando junto do BULBO debaixo d'água (texto do vídeo cortado fora)",
+   "zoom": [
+    2.2,
+    2.3
+   ],
+   "alvo": [
+    0.5,
+    0.82
+   ],
+   "seta": [
+    540,
+    1500,
+    170
+   ],
+   "sfx_cena": [
+    {
+     "em": "Todo",
+     "arquivo": "assets/sfx/gen_underwater_muffled_rush_of_a_ship_moving_through_w.mp3",
+     "db": -5,
+     "dur": 1.6,
+     "no_clipe": 18.1
+    }
+   ]
+  },
+  {
+   "em": "uma bola gigante",
+   "clipe": "tt_ship_spotting__7426740806255496480.mp4",
+   "inicio": 11.4,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "o bulbo vermelho de frente, navio em doca seca",
+   "zoom": [
+    2.0,
+    2.1
+   ],
+   "alvo": [
+    0.5,
+    0.55
+   ],
+   "sfx_cena": []
+  },
+  {
+   "em": "Parece um nariz",
+   "clipe": "tt_risma_sitanggang_7369103209522007302.mp4",
+   "inicio": 17.2,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "o bulbo empurrando a água, visto do convés",
+   "zoom": [
+    1.15,
+    1.2
+   ],
+   "alvo": [
+    0.55,
+    0.45
+   ],
+   "sfx_cena": [
+    {
+     "em": "nariz",
+     "arquivo": "assets/sfx/gen_ship_bow_pushing_through_sea_water_rushing_water.mp3",
+     "db": -6,
+     "dur": 2.0,
+     "no_clipe": 17.3
+    }
+   ]
+  },
+  {
+   "em": "mas ela fabrica",
+   "clipe": "pixabay_118778.mp4",
+   "inicio": 5.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "a onda em V que o barco empurra, vista de cima"
+  },
+  {
+   "em": "O casco empurra",
+   "clipe": "pixabay_175352.mp4",
+   "inicio": 3.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "a onda correndo junto do casco"
+  },
+  {
+   "em": "e empurrar onda",
+   "clipe": "tt_at_sea__7462041816041262358.mp4",
+   "inicio": 45.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "o petroleiro mergulha a proa na onda: empurrar água custa força",
+   "sfx_cena": [
+    {
+     "em": "empurrar",
+     "arquivo": "assets/sfx/gen_big_ocean_wave_crashing_on_a_ship_bow.mp3",
+     "db": -4,
+     "dur": 1.6,
+     "no_clipe": 45.3
+    }
+   ]
+  },
+  {
+   "em": "A bola faz",
+   "clipe": "tt_plutosdestiny_7223432215865199878.mp4",
+   "inicio": 0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "animacao": {
+    "nome": "bulbo3d",
+    "fase": "completo",
+    "eventos": {
+     "onda2": "outra",
+     "vale": "vale",
+     "crista": "crista",
+     "apagam": "apagam"
+    },
+    "sfx": [
+     {
+      "busca": "wind gust whoosh",
+      "db": -6,
+      "dur": 1.0
+     },
+     {
+      "evento": "onda2",
+      "arquivo": "assets/sfx/gen_ocean_water_swell_rising_soft_wave.mp3",
+      "db": -3,
+      "dur": 1.4
+     },
+     {
+      "evento": "vale",
+      "arquivo": "assets/sfx/gen_ocean_water_swell_rising_soft_wave.mp3",
+      "db": -6,
+      "dur": 1.0
+     },
+     {
+      "evento": "crista",
+      "arquivo": "assets/sfx/gen_water_splash_of_a_wave_crest.mp3",
+      "db": -3,
+      "dur": 0.8
+     },
+     {
+      "evento": "apagam",
+      "arquivo": "assets/sfx/gen_calm_sea_water_settling_gentle_quiet_ripple.mp3",
+      "db": -3,
+      "dur": 1.6
+     }
+    ]
+   },
+   "_funcao": "3D de lado: onda do casco (vermelha) + onda do bulbo (azul); o vale cai na crista e a superfície fica lisa"
+  },
+  {
+   "em": "Por isso",
+   "clipe": "pixabay_63189.mp4",
+   "inicio": 0.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "a proa cortando o mar liso (tomada que prende) + -15%",
+   "contador": {
+    "ate": 15,
+    "prefixo": "-",
+    "sufixo": "%",
+    "em": "15%"
+   }
+  },
+  {
+   "em": "Eficiente igual",
+   "clipe": "tt_captainkatemccue_6911774558160997637.mp4",
+   "inicio": 28.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "CTA",
+   "_funcao": "o navio deslizando no mar: eficiente",
+   "zoom": [
+    1.85,
+    1.9
+   ],
+   "alvo": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "em": "se inscreve",
+   "clipe": "tt_ship_spotting__7426740806255496480.mp4",
+   "inicio": 15.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "CTA",
+   "_funcao": "a proa do navio em doca seca + botão",
+   "zoom": [
+    2.0,
+    2.05
+   ],
+   "alvo": [
+    0.5,
+    0.55
+   ]
+  },
+  {
+   "em": "porque",
+   "clipe": "tt_plutosdestiny_7223432215865199878.mp4",
+   "inicio": 18.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "LOOP",
+   "_funcao": "mesmo quadro do gancho",
+   "zoom": [
+    2.2,
+    2.2
+   ],
+   "alvo": [
+    0.5,
+    0.82
+   ]
+  }
+ ]
+}

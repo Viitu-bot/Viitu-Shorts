@@ -1,0 +1,382 @@
+[
+ {
+  "palavra": "Todo",
+  "inicio": 0.0,
+  "fim": 0.24
+ },
+ {
+  "palavra": "navio",
+  "inicio": 0.36,
+  "fim": 0.56
+ },
+ {
+  "palavra": "grande",
+  "inicio": 0.64,
+  "fim": 0.96
+ },
+ {
+  "palavra": "esconde",
+  "inicio": 1.04,
+  "fim": 1.36
+ },
+ {
+  "palavra": "uma",
+  "inicio": 1.44,
+  "fim": 1.52
+ },
+ {
+  "palavra": "bola",
+  "inicio": 1.6,
+  "fim": 1.76
+ },
+ {
+  "palavra": "gigante",
+  "inicio": 1.85,
+  "fim": 2.41
+ },
+ {
+  "palavra": "debaixo",
+  "inicio": 2.49,
+  "fim": 2.81
+ },
+ {
+  "palavra": "d'água.",
+  "inicio": 2.89,
+  "fim": 3.45
+ },
+ {
+  "palavra": "Parece",
+  "inicio": 3.503,
+  "fim": 3.77
+ },
+ {
+  "palavra": "um",
+  "inicio": 3.81,
+  "fim": 3.85
+ },
+ {
+  "palavra": "nariz",
+  "inicio": 3.94,
+  "fim": 4.3
+ },
+ {
+  "palavra": "pra",
+  "inicio": 4.34,
+  "fim": 4.38
+ },
+ {
+  "palavra": "furar",
+  "inicio": 4.46,
+  "fim": 4.7
+ },
+ {
+  "palavra": "o",
+  "inicio": 4.74,
+  "fim": 4.78
+ },
+ {
+  "palavra": "mar,",
+  "inicio": 4.86,
+  "fim": 5.26
+ },
+ {
+  "palavra": "mas",
+  "inicio": 5.34,
+  "fim": 5.42
+ },
+ {
+  "palavra": "ela",
+  "inicio": 5.5,
+  "fim": 5.58
+ },
+ {
+  "palavra": "fabrica",
+  "inicio": 5.66,
+  "fim": 6.1
+ },
+ {
+  "palavra": "uma",
+  "inicio": 6.14,
+  "fim": 6.3
+ },
+ {
+  "palavra": "onda.",
+  "inicio": 6.38,
+  "fim": 7.02
+ },
+ {
+  "palavra": "O",
+  "inicio": 7.1,
+  "fim": 7.18
+ },
+ {
+  "palavra": "casco",
+  "inicio": 7.27,
+  "fim": 7.55
+ },
+ {
+  "palavra": "empurra",
+  "inicio": 7.64,
+  "fim": 7.92
+ },
+ {
+  "palavra": "uma",
+  "inicio": 8.0,
+  "fim": 8.16
+ },
+ {
+  "palavra": "onda",
+  "inicio": 8.28,
+  "fim": 8.4
+ },
+ {
+  "palavra": "na",
+  "inicio": 8.48,
+  "fim": 8.56
+ },
+ {
+  "palavra": "frente,",
+  "inicio": 8.65,
+  "fim": 9.077
+ },
+ {
+  "palavra": "e",
+  "inicio": 9.117,
+  "fim": 9.157
+ },
+ {
+  "palavra": "empurrar",
+  "inicio": 9.247,
+  "fim": 9.607
+ },
+ {
+  "palavra": "onda",
+  "inicio": 9.687,
+  "fim": 9.927
+ },
+ {
+  "palavra": "gasta",
+  "inicio": 10.017,
+  "fim": 10.337
+ },
+ {
+  "palavra": "combustível.",
+  "inicio": 10.457,
+  "fim": 11.217
+ },
+ {
+  "palavra": "A",
+  "inicio": 11.257,
+  "fim": 11.297
+ },
+ {
+  "palavra": "bola",
+  "inicio": 11.377,
+  "fim": 11.617
+ },
+ {
+  "palavra": "faz",
+  "inicio": 11.697,
+  "fim": 12.017
+ },
+ {
+  "palavra": "outra",
+  "inicio": 12.097,
+  "fim": 12.337
+ },
+ {
+  "palavra": "onda",
+  "inicio": 12.417,
+  "fim": 12.657
+ },
+ {
+  "palavra": "logo",
+  "inicio": 12.747,
+  "fim": 12.907
+ },
+ {
+  "palavra": "antes:",
+  "inicio": 12.987,
+  "fim": 13.547
+ },
+ {
+  "palavra": "o",
+  "inicio": 13.627,
+  "fim": 13.707
+ },
+ {
+  "palavra": "vale",
+  "inicio": 13.797,
+  "fim": 13.957
+ },
+ {
+  "palavra": "de",
+  "inicio": 14.037,
+  "fim": 14.117
+ },
+ {
+  "palavra": "uma",
+  "inicio": 14.237,
+  "fim": 14.357
+ },
+ {
+  "palavra": "cai",
+  "inicio": 14.447,
+  "fim": 14.527
+ },
+ {
+  "palavra": "na",
+  "inicio": 14.607,
+  "fim": 14.767
+ },
+ {
+  "palavra": "crista",
+  "inicio": 14.847,
+  "fim": 15.167
+ },
+ {
+  "palavra": "da",
+  "inicio": 15.247,
+  "fim": 15.327
+ },
+ {
+  "palavra": "outra,",
+  "inicio": 15.407,
+  "fim": 15.887
+ },
+ {
+  "palavra": "e",
+  "inicio": 15.914,
+  "fim": 15.94
+ },
+ {
+  "palavra": "as",
+  "inicio": 15.967,
+  "fim": 16.127
+ },
+ {
+  "palavra": "duas",
+  "inicio": 16.167,
+  "fim": 16.367
+ },
+ {
+  "palavra": "se",
+  "inicio": 16.407,
+  "fim": 16.447
+ },
+ {
+  "palavra": "apagam.",
+  "inicio": 16.527,
+  "fim": 17.087
+ },
+ {
+  "palavra": "Por",
+  "inicio": 17.127,
+  "fim": 17.167
+ },
+ {
+  "palavra": "isso",
+  "inicio": 17.247,
+  "fim": 17.434
+ },
+ {
+  "palavra": "o",
+  "inicio": 17.46,
+  "fim": 17.487
+ },
+ {
+  "palavra": "navio",
+  "inicio": 17.567,
+  "fim": 17.887
+ },
+ {
+  "palavra": "gasta",
+  "inicio": 17.927,
+  "fim": 18.207
+ },
+ {
+  "palavra": "até",
+  "inicio": 18.247,
+  "fim": 18.527
+ },
+ {
+  "palavra": "15%",
+  "inicio": 18.617,
+  "fim": 19.497
+ },
+ {
+  "palavra": "menos",
+  "inicio": 19.587,
+  "fim": 19.827
+ },
+ {
+  "palavra": "combustível.",
+  "inicio": 19.917,
+  "fim": 20.677
+ },
+ {
+  "palavra": "Eficiente",
+  "inicio": 20.757,
+  "fim": 21.237
+ },
+ {
+  "palavra": "igual",
+  "inicio": 21.317,
+  "fim": 21.637
+ },
+ {
+  "palavra": "esse",
+  "inicio": 21.717,
+  "fim": 21.797
+ },
+ {
+  "palavra": "navio",
+  "inicio": 21.877,
+  "fim": 22.357
+ },
+ {
+  "palavra": "é",
+  "inicio": 22.437,
+  "fim": 22.517
+ },
+ {
+  "palavra": "você,",
+  "inicio": 22.557,
+  "fim": 22.997
+ },
+ {
+  "palavra": "inscrito;",
+  "inicio": 23.077,
+  "fim": 23.717
+ },
+ {
+  "palavra": "se",
+  "inicio": 23.757,
+  "fim": 23.797
+ },
+ {
+  "palavra": "não",
+  "inicio": 23.877,
+  "fim": 24.037
+ },
+ {
+  "palavra": "é,",
+  "inicio": 24.117,
+  "fim": 24.357
+ },
+ {
+  "palavra": "se",
+  "inicio": 24.437,
+  "fim": 24.517
+ },
+ {
+  "palavra": "inscreve,",
+  "inicio": 24.637,
+  "fim": 25.317
+ },
+ {
+  "palavra": "porque",
+  "inicio": 25.437,
+  "fim": 26.197
+ }
+]

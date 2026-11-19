@@ -6,7 +6,7 @@ https://youtu.be/sLII1NAvYog
 Lacuna PT: "bulbo na frente do navio" / "navio por que tem bico embaixo" / "por que navio tem uma bola na frente" — nenhum
 Short em PT com 100k+ (maiores: 10k e 5k).
 
-## PROPOSTA (aguarda o ok do dono)
+## Partes (aprovadas pelo dono 19/11)
 [GANCHO] Todo navio grande esconde uma bola gigante debaixo d'água.
 [INÍCIO] Parece um nariz pra furar o mar, mas ela fabrica uma onda.
 [MEIO] O casco empurra uma onda na frente, e empurrar onda gasta combustível.
@@ -14,6 +14,14 @@ A bola faz outra onda logo antes: o vale de uma cai na crista da outra, e as dua
 [FINAL] Por isso o navio gasta até 15% menos combustível.
 [CTA] Eficiente igual esse navio é você, inscrito; se não é, se inscreve, porque
 (~74 palavras, ~27 s)
+
+## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs)
+Todo navio grande esconde uma bola gigante debaixo d'água.
+Parece um nariz pra furar o mar, mas ela fabrica uma onda.
+O casco empurra uma onda na frente, e empurrar onda gasta combustível.
+A bola faz outra onda logo antes: o vale de uma cai na crista da outra, e as duas se apagam.
+Por isso o navio gasta até 15% menos combustível.
+Eficiente igual esse navio é você, inscrito; se não é, se inscreve, porque
 
 ## Imagem por frase
 - GANCHO: golfinho nadando junto do bulbo debaixo d'água (@plutosdestiny) → bulbo vermelho em doca seca (@captainkatemccue)

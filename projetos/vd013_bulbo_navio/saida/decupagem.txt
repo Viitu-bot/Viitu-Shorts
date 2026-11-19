@@ -1,0 +1,12 @@
+# Decupagem vd013_bulbo_navio — formato motivo_oculto — música misterio_sombrio.mp3
+1. 0.0-1.4s [GANCHO] "Todo navio" — tt_plutosdestiny_72234322158 @18.0s — golfinho nadando junto do BULBO debaixo d'água (texto do vídeo cortado fora) — sons: ['gen_underwater_muffled_rush_of_a_ship_moving_through_w.mp3 @18.1s']
+2. 1.4-3.5s [GANCHO] "uma bola gigante" — tt_ship_spotting__7426740806 @11.4s — o bulbo vermelho de frente, navio em doca seca — sons: []
+3. 3.5-5.3s [INÍCIO] "Parece um nariz" — tt_risma_sitanggang_73691032 @17.2s — o bulbo empurrando a água, visto do convés — sons: ['gen_ship_bow_pushing_through_sea_water_rushing_water.mp3 @17.3s']
+4. 5.3-7.1s [INÍCIO] "mas ela fabrica" — pixabay_118778.mp4 @5.0s — a onda em V que o barco empurra, vista de cima — sons: []
+5. 7.1-9.1s [MEIO] "O casco empurra" — pixabay_175352.mp4 @3.0s — a onda correndo junto do casco — sons: []
+6. 9.1-11.3s [MEIO] "e empurrar onda" — tt_at_sea__74620418160412623 @45.0s — o petroleiro mergulha a proa na onda: empurrar água custa força — sons: ['gen_big_ocean_wave_crashing_on_a_ship_bow.mp3 @45.3s']
+7. 11.3-17.1s [MEIO] "A bola faz" — 3D bulbo3d — 3D de lado: onda do casco (vermelha) + onda do bulbo (azul); o vale cai na crista e a superfície fica lisa — sons: ['wind gust whoosh', 'assets/sfx/gen_ocean_water_swell_rising_soft_wave.mp3', 'assets/sfx/gen_ocean_water_swell_rising_soft_wave.mp3', 'assets/sfx/gen_water_splash_of_a_wave_crest.mp3', 'assets/sfx/gen_calm_sea_water_settling_gentle_quiet_ripple.mp3']
+8. 17.1-20.8s [FINAL] "Por isso" — pixabay_63189.mp4 @0.0s — a proa cortando o mar liso (tomada que prende) + -15% — sons: []
+9. 20.8-24.4s [CTA] "Eficiente igual" — tt_captainkatemccue_69117745 @28.0s — o navio deslizando no mar: eficiente — sons: []
+10. 24.4-25.4s [CTA] "se inscreve" — tt_ship_spotting__7426740806 @15.0s — a proa do navio em doca seca + botão — sons: []
+11. 25.4-26.2s [LOOP] "porque" — tt_plutosdestiny_72234322158 @18.0s — mesmo quadro do gancho — sons: []
