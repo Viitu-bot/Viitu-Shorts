@@ -1,33 +1,33 @@
 {
- "voz_db": -15.2,
- "leito_db": -35.5,
+ "voz_db": -15.1,
+ "leito_db": -18.6,
  "efeitos_db": -24.9,
  "mp4": "remotion/out/vd011_bola_tenis.mp4",
  "medidas": {
   "musica_sob_voz_db": {
-   "valor": "pelo app",
+   "valor": -11.7,
    "ok": true
   },
   "musica_respira_db": {
-   "valor": "pelo app",
+   "valor": 6.9,
    "ok": true
   },
   "efeitos_acao_audiveis": {
-   "valor": "9/9",
+   "valor": "7/9",
    "ok": true
   },
   "impacto_virada_db": {
    "valor": [
-    -4.4
+    -3.8
    ],
    "ok": true
   },
   "efeito_sobre_voz_db": {
-   "valor": -4.0,
+   "valor": -2.5,
    "ok": true
   },
   "ding_frame0_db": {
-   "valor": 1.5,
+   "valor": 1.3,
    "ok": true
   }
  }
