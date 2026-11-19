@@ -60,7 +60,7 @@ def decupar(projeto: str) -> Path:
             z = c.get("zoom", [1.0, 1.0])
             tiles = [_quadro(arq, c.get("inicio", 0) + f * usado, z[0], c.get("alvo", (0.5, 0.5)), c.get("layout") == "inteiro")
                      for f in (0.05, 0.5, 0.95)]
-            sons = [e.get("arquivo") or e.get("busca") for e in c.get("sfx_cena", [])]
+            sons = [f'{Path(str(e.get("arquivo") or e.get("busca"))).name} @{e.get("no_clipe", "SEM INSTANTE")}s' for e in c.get("sfx_cena", [])]
             ident = f"{c['clipe'][:28]} @{c.get('inicio', 0)}s"
         info = np.full((H, 330, 3), 18, np.uint8)
         y = 24
@@ -73,7 +73,7 @@ def decupar(projeto: str) -> Path:
         cv2.putText(info, "SONS:", (8, y + 10), cv2.FONT_HERSHEY_SIMPLEX, 0.45, (120, 200, 255), 1)
         for s in sons[:5] or ["(nenhum)"]:
             y += 24
-            cv2.putText(info, Path(str(s)).name[:44], (8, y + 10), cv2.FONT_HERSHEY_SIMPLEX, 0.38, (200, 200, 255), 1)
+            cv2.putText(info, Path(str(s)).name[-44:], (8, y + 10), cv2.FONT_HERSHEY_SIMPLEX, 0.38, (200, 200, 255), 1)
         linhas.append(np.hstack(tiles + [info]))
         txt.append(f"{k + 1}. {t0:.1f}-{t1:.1f}s [{c.get('_parte', '')}] \"{c['em']}\" — {ident} — {c.get('_funcao', '')} — sons: {sons}")
     folha = np.vstack(linhas)

@@ -203,8 +203,15 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
                          + " (animacao.sfx: entrada + 1 por evento).")
     reais_idx = [k for k in range(len(cenas)) if not eh_3d[k] and not (k == ultima and loop_ok)]
     com_acao = [k for k in reais_idx if cenas[k].get("sfx_cena")]
-    if reais_idx and 0 not in com_acao:
-        erros.append("R8 GANCHO SEM SOM DE AÇÃO: a 1ª cena precisa de sfx_cena (o som do que aparece).")
+    tempos_r8 = _tempos(RAIZ / "projetos" / projeto, cenas)
+    if reais_idx and not any(k in com_acao and tempos_r8[k][0] < 3.0 for k in reais_idx):
+        erros.append("R8 GANCHO SEM SOM DE AÇÃO: alguma cena dos 3 primeiros segundos precisa de sfx_cena (o som do que aparece).")
+    # SOM NA AÇÃO (dono, vd011: "os efeitos não encaixam"): som de clipe real cai no instante da ação NA IMAGEM
+    for k in com_acao:
+        sem = [e.get("em") for e in cenas[k]["sfx_cena"] if "no_clipe" not in e]
+        if sem:
+            erros.append(f"R8 SOM FORA DA AÇÃO: cena {k + 1} tem som sem \"no_clipe\" {sem} — ver na prancha o segundo do clipe "
+                         "em que a ação acontece (encaixe, estalo, golpe) e marcar no_clipe.")
     if reais_idx and len(com_acao) < math.ceil(0.4 * len(reais_idx)):
         avisos.append(f"R8 pouco som de ação: {len(com_acao)}/{len(reais_idx)} cenas reais com sfx_cena (conferir se falta som que EXISTE na cena). "
                      f"Sem som: cenas {[k + 1 for k in reais_idx if k not in com_acao]}.")

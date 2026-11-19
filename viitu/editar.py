@@ -707,6 +707,16 @@ def _hits(cfg: dict, palavras: list[dict], impactos: list[int], pub: Path) -> li
             for i in alvos]
 
 
+def _ataque(arq: Path) -> float:
+    """Segundo em que o som "acontece" no arquivo: 1º ponto a 30% do pico (−10 dB), menos 30 ms de respiro."""
+    bruto = subprocess.run(["ffmpeg", "-v", "error", "-i", str(arq), "-t", "3", "-ac", "1", "-ar", "8000", "-f", "s16le", "-"],
+                           capture_output=True, check=True).stdout
+    x = np.abs(np.frombuffer(bruto, np.int16).astype(np.float32))
+    if not len(x) or x.max() == 0:
+        return 0.0
+    return max(int(np.argmax(x >= 0.3 * x.max())) / 8000 - 0.03, 0.0)
+
+
 def _sons_da_cena(segs: list[dict], palavras: list[dict], pub: Path) -> list[dict]:
     """Foley de AÇÃO em cena de clipe real (não é som de função): toca NA palavra, não na pausa.
     "sfx_cena": [{"em": "pegou", "arquivo": "assets/sfx/x.mp3" | "busca": "<som em inglês>", "db": -4, "dur": 2, "desloc": 0}]"""
@@ -727,12 +737,22 @@ def _sons_da_cena(segs: list[dict], palavras: list[dict], pub: Path) -> list[dic
                     print(f"  ⚠️ som de cena não achado: {e['busca']}")
                     continue
                 e = {**e, "arquivo": str(Path(arq).relative_to(RAIZ)) if str(arq).startswith(str(RAIZ)) else arq}
-            # a palavra é procurada a partir do começo DESTA cena (vd010: "tripulação" caía na 1ª ocorrência do vídeo)
-            f = round(palavras[achar_palavra(palavras, e["em"], i0)]["inicio"] * FPS) + int(e.get("desloc", 0) * FPS)
+            # SOM NA AÇÃO DA IMAGEM (dono, vd011: "os efeitos não encaixam"): o som caía na PALAVRA, não no instante
+            # em que a coisa acontece no clipe. "no_clipe": segundo do CLIPE onde a ação acontece (visto na prancha).
+            if "no_clipe" in e:
+                t_cena = (float(e["no_clipe"]) - float(s.get("inicio", 0))) / float(s.get("velocidade", 1.0))
+                f = s["f0"] + round(t_cena * FPS)
+                if not s["f0"] <= f < s["f1"]:
+                    sys.exit(f"❌ som '{e['em']}': no_clipe {e['no_clipe']}s cai fora da cena {s.get('em')!r} — conferir a prancha")
+            else:   # palavra procurada a partir do começo DESTA cena (vd010: "tripulação" caía na 1ª ocorrência)
+                f = round(palavras[achar_palavra(palavras, e["em"], i0)]["inicio"] * FPS) + int(e.get("desloc", 0) * FPS)
             nome = f"cena_sfx_{s['f0']}_{k}.mp3"
             dur = e.get("dur", 3)
             corte = pub / f"_tmpc_{k}.mp3"
-            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{e.get('ini', 0):.2f}", "-i", str(RAIZ / e["arquivo"]), "-t", f"{dur:.2f}",
+            # o "pico" do arquivo (batida, estalo) cai no quadro da ação, não o começo do arquivo (sons gerados têm
+            # silêncio/ataque antes do golpe — o efeito soava atrasado)
+            ini = e["ini"] if "ini" in e else _ataque(RAIZ / e["arquivo"])
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{ini:.2f}", "-i", str(RAIZ / e["arquivo"]), "-t", f"{dur:.2f}",
                             "-af", f"afade=t=out:st={max(dur - 0.4, 0):.2f}:d=0.4", str(corte)], check=True)
             normalizar(corte, pub / nome, "pontual")
             corte.unlink(missing_ok=True)

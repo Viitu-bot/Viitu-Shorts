@@ -48,14 +48,8 @@
    ],
    "_parte": "GANCHO",
    "_funcao": "tomada 0: metades na forma",
-   "sfx_cena": [
-    {
-     "em": "Toda bola",
-     "arquivo": "assets/sonniss/cache/5924.mp3",
-     "db": -4,
-     "dur": 1.6
-    }
-   ]
+   "sfx_cena": [],
+   "_som": "sem efeito: a imagem é o bastão mexendo na forma; não há som certo na biblioteca (antes tocava prensa aqui — errado)"
   },
   {
    "em": "partida ao meio",
@@ -72,7 +66,16 @@
     0.42
    ],
    "_parte": "GANCHO",
-   "_funcao": "tomada 3: prensa com as metades"
+   "_funcao": "tomada 3: prensa com as metades",
+   "sfx_cena": [
+    {
+     "em": "partida",
+     "arquivo": "assets/sonniss/cache/5924.mp3",
+     "db": -4,
+     "dur": 1.0,
+     "no_clipe": 6.95
+    }
+   ]
   },
   {
    "em": "A maioria acha",
@@ -146,7 +149,8 @@
      "em": "coladas",
      "arquivo": "assets/sfx/gen_two_rubber_halves_pressed_together_with_a_squeak.mp3",
      "db": -4,
-     "dur": 1.4
+     "dur": 1.4,
+     "no_clipe": 27.95
     }
    ]
   },
@@ -196,7 +200,7 @@
   {
    "em": "Depois, dois feltros",
    "clipe": "tt_smartestworkers_7522122396917189901.mp4",
-   "inicio": 44.5,
+   "inicio": 47.6,
    "som_original": false,
    "revisao": "manual",
    "zoom": [
@@ -208,32 +212,17 @@
     0.42
    ],
    "_parte": "MEIO",
-   "_funcao": "tomada 12: feltro + bola",
+   "_funcao": "tomadas 12-14 SEM CORTE: o feltro em oito do começo ao fim (dono: mostrar a ação)",
    "sfx_cena": [
     {
      "em": "feltros",
      "arquivo": "assets/sfx/gen_felt_fabric_rubbed_and_pressed_onto_a_rubber_ball_.mp3",
      "db": -4,
-     "dur": 1.6
+     "dur": 1.6,
+     "no_clipe": 49.0
     }
-   ]
-  },
-  {
-   "em": "em forma de oito",
-   "clipe": "tt_smartestworkers_7522122396917189901.mp4",
-   "inicio": 49.2,
-   "som_original": false,
-   "revisao": "manual",
-   "zoom": [
-    1.4,
-    1.45
    ],
-   "alvo": [
-    0.5,
-    0.42
-   ],
-   "_parte": "MEIO",
-   "_funcao": "tomada 14: feltro envolvendo a bola"
+   "velocidade": 1.15
   },
   {
    "em": "e ela vai",
@@ -246,15 +235,8 @@
     1.15
    ],
    "_parte": "FINAL",
-   "_funcao": "EUREKA: lata abrindo",
-   "sfx_cena": [
-    {
-     "em": "lata",
-     "arquivo": "assets/sfx/gen_opening_a_pressurized_tennis_ball_can_loud_pop_and.mp3",
-     "db": -1,
-     "dur": 1.8
-    }
-   ]
+   "_funcao": "EUREKA: tira a tampa da lata (trecho nítido; 3.6+ reprova na nitidez), emenda na abertura em câmera lenta",
+   "sfx_cena": []
   },
   {
    "em": "onde o ar",
@@ -268,7 +250,16 @@
    ],
    "_parte": "FINAL",
    "_funcao": "lata aberta em câmera lenta (único trecho nítido)",
-   "velocidade": 0.5
+   "velocidade": 0.5,
+   "sfx_cena": [
+    {
+     "em": "onde o ar",
+     "arquivo": "assets/sfx/gen_opening_a_pressurized_tennis_ball_can_loud_pop_and.mp3",
+     "db": -1,
+     "dur": 1.8,
+     "no_clipe": 6.3
+    }
+   ]
   },
   {
    "em": "E se você",
