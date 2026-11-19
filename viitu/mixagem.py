@@ -98,6 +98,9 @@ def _camadas(plano: dict) -> tuple[np.ndarray, dict[str, np.ndarray]]:
     for k, m in enumerate(plano.get("marcas", [])):
         po = kit.get("pop_marca") or ["pop.mp3"]
         _por(le(po[k % len(po)]), L["marcas"], fr(m["f0"]), fr(30), M("pop"))
+    if plano.get("cta"):                                         # botão SE INSCREVE: pop + clique (igual ao Short.tsx)
+        _por(le("pop.mp3"), L["marcas"], fr(plano["cta"]["f0"]), fr(30), M("pop"))
+        _por(le("clique.mp3"), L["marcas"], fr(plano["cta"]["f0"] + 14), fr(20), M("clique"))
     _por(le("ding.mp3"), L["ding"], 0, fr(30), M("ding"))          # identidade (BÍBLIA §2): camada própria
     return voz, L | {"_falando": falando.astype(np.float32)}
 

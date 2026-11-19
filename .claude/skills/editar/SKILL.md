@@ -6,6 +6,7 @@ description: Edita o Short do Viitu do roteiro aprovado até o mp4 final (voz, c
 # /editar: do roteiro aprovado ao mp4 conferido
 
 > **Regras do dono:** `edicao/BIBLIA.md` (manda em tudo; não alterar sem autorização) · planta técnica: `edicao/formato.md`.
+> **Formato:** `"formato": "<chave>"` no cenas.json (trava RF). Elementos por acontecimento (formatos.md §2): `"marca_erro": "x"|"certo"` (+ `"marca_em"`), `"contador": {"ate": N, "sufixo": " mil", "em": "palavra"}`, `"cta": {"em": "se inscreve"}`, `impacto_em`, `destaques`, seta/círculo.
 
 Valores fixos (volumes, ritmo, cor): `edicao/especificacao.json` — nunca número solto no código.
 Quando usar cada efeito: `edicao/logica_editor.md`. Técnicas: `edicao/manual_edicao.md`. Sons: `edicao/biblioteca_sons.md`.

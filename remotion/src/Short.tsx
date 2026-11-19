@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  AbsoluteFill, Audio, Sequence, interpolate, spring, staticFile,
+  AbsoluteFill, Audio, Easing, Sequence, interpolate, spring, staticFile,
   useCurrentFrame, useVideoConfig,
 } from 'remotion';
 import {loadFont} from '@remotion/fonts';
@@ -29,6 +29,7 @@ export type Plano = {
   cortes: number[]; impactos: number[]; duck?: number[]; duck_fx?: number[]; duck_assado?: boolean; foley?: {f0: number; f1: number; som: string; vol: number}[]; foley_mix?: boolean;
   kit?: Record<string, string[]>; mix?: Record<string, number>; visual?: Record<string, number | boolean>; sfx?: {f: number; som: string; vol?: number; dur?: number}[];
   animacoes?: {nome: string; fase: string; f0: number; f1: number; eventos: Record<string, number>}[]; cta: {f0: number; texto: string} | null;
+  marcas_erro?: {f: number; tipo: string}[]; contadores?: {f0: number; f1: number; de: number; ate: number; prefixo: string; sufixo: string}[];
 };
 
 const AMARELO = '#FFD400';
@@ -144,6 +145,45 @@ const PalavraNaTela: React.FC<{p: Palavra}> = ({p}) => {
 };
 
 // ---------- chamada para se inscrever (final) ----------
+
+// X VERMELHO / ✔ VERDE (formatos.md §2): desenha em 6 quadros, dá um "pulo" e some em 1,5 s
+const MarcaErro: React.FC<{tipo: string}> = ({tipo}) => {
+  const f = useCurrentFrame();
+  const t = interpolate(f, [0, 6], [0, 1], {extrapolateRight: 'clamp'});
+  const pulo = interpolate(f, [6, 10, 14], [1, 1.12, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const some = interpolate(f, [36, 45], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const x = tipo === 'x';
+  const cor = x ? '#ff2a2a' : '#2bd94f';
+  return (
+    <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', opacity: some}}>
+      <svg width={520} height={520} viewBox="0 0 100 100" style={{transform: `scale(${pulo})`, filter: 'drop-shadow(0 0 10px rgba(0,0,0,0.8))'}}>
+        {x ? (<>
+          <line x1="18" y1="18" x2={18 + 64 * t} y2={18 + 64 * t} stroke={cor} strokeWidth="13" strokeLinecap="round" />
+          <line x1="82" y1="18" x2={82 - 64 * Math.max(0, t * 1.6 - 0.6)} y2={18 + 64 * Math.max(0, t * 1.6 - 0.6)} stroke={cor} strokeWidth="13" strokeLinecap="round" />
+        </>) : (
+          <polyline points="16,54 40,78 86,26" fill="none" stroke={cor} strokeWidth="13" strokeLinecap="round" strokeLinejoin="round"
+            strokeDasharray="120" strokeDashoffset={120 * (1 - t)} />
+        )}
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+// CONTADOR (número/dinheiro/escala): sobe até o valor em 24 quadros, amarelo da legenda, contorno preto
+const Contador: React.FC<{de: number; ate: number; prefixo: string; sufixo: string}> = ({de, ate, prefixo, sufixo}) => {
+  const f = useCurrentFrame();
+  const v = interpolate(f, [0, 24], [de, ate], {extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
+  const pulo = interpolate(f, [24, 28, 32], [1, 1.1, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', paddingBottom: 220}}>
+      <div style={{fontFamily: 'Anton, Impact, sans-serif', fontSize: 150, color: '#FFD700', WebkitTextStroke: '10px black',
+        paintOrder: 'stroke fill', transform: `scale(${pulo})`, letterSpacing: 2}}>
+        {prefixo}{Math.round(v).toLocaleString('pt-BR')}{sufixo}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 const BotaoInscrever: React.FC<{texto: string}> = ({texto}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
@@ -299,6 +339,12 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
         </React.Fragment>
       ))}
 
+      {(plano.marcas_erro ?? []).map((m, k) => (
+        <Sequence key={`me${k}`} from={m.f} durationInFrames={45}><MarcaErro tipo={m.tipo} /></Sequence>
+      ))}
+      {(plano.contadores ?? []).map((c, k) => (
+        <Sequence key={`ct${k}`} from={c.f0} durationInFrames={Math.max(c.f1 - c.f0, 30)}><Contador de={c.de} ate={c.ate} prefixo={c.prefixo} sufixo={c.sufixo} /></Sequence>
+      ))}
       {plano.cta && (
         <Sequence from={plano.cta.f0} durationInFrames={75}>
           <BotaoInscrever texto={plano.cta.texto} />

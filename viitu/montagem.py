@@ -81,6 +81,16 @@ def _tempos(pasta: Path, cenas: list[dict]) -> list[tuple[float, float]]:
     return [(a, (ini[k + 1] if k + 1 < len(ini) else fim)) for k, a in enumerate(ini)]
 
 
+def hash_cenas(cfg: dict) -> str:
+    """Impressão digital do que MUDA O VÍDEO (cenas, música, CTA, destaques…); ignora anotações (formato, _funcao,
+    créditos). A entrega compara com a impressão guardada no plano na hora do editar."""
+    import hashlib
+    ign = {"formato", "creditos_descricao", "permissoes"}
+    limpo = {k: v for k, v in cfg.items() if not k.startswith("_") and k not in ign}
+    limpo["cenas"] = [{k: v for k, v in c.items() if not k.startswith("_")} for c in cfg.get("cenas", [])]
+    return hashlib.sha1(json.dumps(limpo, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:16]
+
+
 def checar(projeto: str) -> tuple[list[str], list[str]]:
     pasta = RAIZ / "projetos" / projeto
     cfg = json.loads((pasta / "cenas.json").read_text(encoding="utf-8"))
@@ -93,6 +103,26 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
     ultima = len(cenas) - 1
     loop_ok = cenas[ultima]["clipe"] == cenas[0]["clipe"]
 
+    # RF formato (edicao/formatos.json): declarado e com as exigências do formato
+    fmts = json.loads((RAIZ / "edicao" / "formatos.json").read_text(encoding="utf-8"))
+    fmt = cfg.get("formato")
+    if fmt not in fmts or fmt.startswith("_"):
+        erros.append(f"RF FORMATO: declare \"formato\" no cenas.json ({', '.join(k for k in fmts if not k.startswith('_'))}).")
+    else:
+        F = fmts[fmt]
+        dmin, dmax = F["duracao_s"]
+        if not dmin - 1 <= total <= dmax + 2:
+            avisos.append(f"RF {fmt}: duração {total:.1f} s fora de {dmin}–{dmax} s.")
+        for ex in F.get("exige", []):
+            if ex == "bruto_cronologico" and not cfg.get("bruto_cronologico"):
+                erros.append(f"RF {fmt}: exige \"bruto_cronologico\" (um bruto em ordem).")
+            if ex == "marca_erro" and not any(c.get("marca_erro") == "x" for c in cenas):
+                erros.append(f"RF {fmt}: exige o X vermelho no jeito errado (\"marca_erro\": \"x\").")
+            if ex == "numero_na_tela" and not any(c.get("contador") for c in cenas):
+                erros.append(f"RF {fmt}: exige o contador no número principal (\"contador\").")
+            if ex == "rehook_6s" and not any(4.5 <= tempos[k][0] <= 7.5 for k, c in enumerate(cenas)
+                                            if any(i in c["em"] for i in cfg.get("impacto_em", []))):
+                erros.append(f"RF {fmt}: exige re-hook (impacto_em) entre 4,5 e 7,5 s.")
     # R0 roteiro em partes (BÍBLIA §1): [GANCHO] [INÍCIO] [MEIO] [FINAL] [CTA] e loop sem ponto final
     rot = pasta / "roteiro.md"
     if rot.exists():
@@ -140,8 +170,9 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
         dur3d = sum(tempos[k][1] - tempos[k][0] for k in idx3d)
         if dur3d < 4:
             erros.append(f"R2 3D CURTO: {dur3d:.1f} s de 3D; a explicação precisa de ≥ 4 s para ser entendida.")
-        if dur3d > 0.45 * total and not cfg.get("bloco_3d_longo"):     # só quando o dono pediu o 3D longo
-            erros.append(f"R2 3D DEMAIS: {dur3d:.1f} s ({dur3d / total:.0%}); máximo 45% do vídeo.")
+        lim3d = json.loads((RAIZ / "edicao" / "formatos.json").read_text(encoding="utf-8")).get(cfg.get("formato", ""), {}).get("max_3d_pct", 0.45)
+        if dur3d > lim3d * total and not cfg.get("bloco_3d_longo"):     # só quando o dono pediu o 3D longo
+            erros.append(f"R2 3D DEMAIS: {dur3d:.1f} s ({dur3d / total:.0%}); máximo {lim3d:.0%} neste formato.")
         ini3d = tempos[idx3d[0]][0] / total
         if not 0.25 <= ini3d <= 0.6 and 0 not in idx3d:
             erros.append(f"R2 3D FORA DO MEIO: o bloco 3D começa em {ini3d:.0%} do vídeo; a explicação fica entre 25% e 60% "

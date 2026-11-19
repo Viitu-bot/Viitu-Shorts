@@ -858,9 +858,32 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
                            "texto": c.get("texto", "💬 COMENTA")} if isinstance(c, dict)
                 else ({"f0": segs[-1]["f0"] + 6, "texto": "INSCREVA-SE"} if c else None))(cfg.get("cta", False)),   # canais: sem CTA explícito na maioria
     }
+    # X VERMELHO / ✔ VERDE ("marca_erro": "x"|"certo", opcional "marca_em": palavra) e CONTADOR ("contador": {"ate": N,
+    # "de": 0, "prefixo": "", "sufixo": "", "em": palavra}) — formatos.md §2; o som do kit entra como sfx
+    vistos_g = set()
+    plano["marcas_erro"], plano["contadores"] = [], []
+    for s in segs:
+        i0 = s.get("palavra_i", 0)
+        if s.get("marca_erro") and ("me", s["em"]) not in vistos_g:
+            vistos_g.add(("me", s["em"]))
+            f = round(palavras[achar_palavra(palavras, s.get("marca_em", s["em"]), i0)]["inicio"] * FPS) + 3
+            plano["marcas_erro"].append({"f": f, "tipo": s["marca_erro"]})
+            som = "kit_errado_mito_0.mp3" if s["marca_erro"] == "x" else "kit_certo_resposta_0.mp3"
+            if (pub / som).exists():
+                plano["sfx"].append({"f": f, "som": som, "vol": 0.5, "dur": 30})
+        c = s.get("contador")
+        if c and ("ct", s["em"]) not in vistos_g:
+            vistos_g.add(("ct", s["em"]))
+            f = round(palavras[achar_palavra(palavras, c.get("em", s["em"]), i0)]["inicio"] * FPS)
+            plano["contadores"].append({"f0": f, "f1": s["f1"], "de": c.get("de", 0), "ate": c["ate"],
+                                        "prefixo": c.get("prefixo", ""), "sufixo": c.get("sufixo", "")})
+            if (pub / "kit_ding_fato_0.mp3").exists():
+                plano["sfx"].append({"f": f + 24, "som": "kit_ding_fato_0.mp3", "vol": 0.4, "dur": 30})
     plano["sfx"] += _sons_da_animacao(segs, plano["animacoes"], pub)
     plano["sfx"] += _sons_da_cena(segs, palavras, pub)
     plano["sfx"] += _hits(cfg, palavras, plano["impactos"], pub)
+    from viitu.montagem import hash_cenas
+    plano["_cenas_hash"] = hash_cenas(cfg)            # a entrega confere se o vídeo saiu DESTE cenas.json
     (pub / "plano.json").write_text(json.dumps(plano, ensure_ascii=False), encoding="utf-8")
     print(f"Plano Remotion exportado: {pub.relative_to(RAIZ)}/plano.json")
     from viitu.mixagem import aplicar as _mix

@@ -40,8 +40,13 @@ def entregar(projeto: str) -> bool:
     # VÍDEO DESATUALIZADO (vd010, 19/11): o editor falhou em silêncio, o render usou o plano antigo e a trava liberou
     plano_pub = RAIZ / "remotion" / "public" / "plano.json"
     cen = pasta / "cenas.json"
-    velho = [n for n, arq in (("plano de som/cenas (editar)", plano_pub), ("vídeo final (render)", mp4))
-             if not arq.exists() or arq.stat().st_mtime < cen.stat().st_mtime]
+    from viitu.montagem import hash_cenas
+    pl = json.loads(plano_pub.read_text(encoding="utf-8")) if plano_pub.exists() else {}
+    if pl.get("_cenas_hash"):          # compara o CONTEÚDO que muda o vídeo (anotar formato/créditos não exige render)
+        velho = [] if pl["_cenas_hash"] == hash_cenas(json.loads(cen.read_text(encoding="utf-8"))) else ["cenas.json mudou depois do editar"]
+    else:
+        velho = [n for n, arq in (("plano de som/cenas (editar)", plano_pub), ("vídeo final (render)", mp4))
+                 if not arq.exists() or arq.stat().st_mtime < cen.stat().st_mtime]
     if mp4.exists() and plano_pub.exists() and mp4.stat().st_mtime < plano_pub.stat().st_mtime:
         velho.append("vídeo final mais velho que o plano (renderizar de novo)")
     res["atualizado"] = not velho

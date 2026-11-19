@@ -51,6 +51,7 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 |---|---|
 | **BÍBLIA (regras do DONO — fonte única; o Claude não muda sem autorização)** | `edicao/BIBLIA.md` |
 | O FORMATO (planta técnica: B-roll, 3D, som por batida — obedece à BÍBLIA) | `edicao/formato.md` |
+| **Os 7 FORMATOS do canal + lógica da edição (acontecimento → visual + som)** | `edicao/formatos.md` · `edicao/formatos.json` |
 | **Reclamações recorrentes do dono → regras + trava da montagem** | `edicao/reclamacoes.md` · `viitu/montagem.py` |
 | Volumes de som e regras visuais (valores fixos) | `edicao/especificacao.json` |
 | Qual efeito em qual momento/cena, engenharia reversa dos canais | `edicao/logica_editor.md` |

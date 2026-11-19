@@ -1,0 +1,79 @@
+{
+ "_doc": "Presets dos FORMATOS do canal (edicao/formatos.md explica). O cenas.json declara \"formato\": \"<chave>\" e a trava viitu.montagem confere as regras do formato. Valores derivados de 33 Shorts dos canais de referência (pesquisa/reverso) + Hall da Fama + BÍBLIA.",
+ "processo": {
+  "nome": "Como é feito (processo de um bruto cronológico)",
+  "ref": "A vida é uma maravilha — 'Como fazem o buraco da agulha?' (1,4 mi)",
+  "duracao_s": [22, 45], "palavras": [55, 110],
+  "exige": ["bruto_cronologico"], "max_3d_pct": 0.3, "min_fontes_reais": 1,
+  "musica": ["phonk_processo.mp3", "curioso_documentario.mp3"],
+  "graficos": ["seta no frame 0", "círculo no detalhe da etapa"],
+  "som": "ASMR/barulho real da máquina em cada etapa (sobe no clímax) + whoosh nos cortes + pop no círculo",
+  "transicao": "corte seco a cada etapa; câmera lenta no momento satisfatório"
+ },
+ "motivo_oculto": {
+  "nome": "Por que é assim? (motivo oculto de objeto/engenharia)",
+  "ref": "A vida — 'Chineses enterram tronco por motivo genial'; KSO — 'Essas portas não são pequenas à toa'",
+  "duracao_s": [20, 30], "palavras": [50, 75],
+  "exige": [], "max_3d_pct": 0.45, "min_fontes_reais": 5,
+  "musica": ["tensao_documentario.mp3", "misterio_sombrio.mp3", "synthwave_aviacao.mp3"],
+  "graficos": ["seta no frame 0", "círculo no detalhe escondido", "punch-in na palavra do motivo"],
+  "som": "whoosh nos cortes + pop no círculo + riser/boom na virada + som da ação principal",
+  "transicao": "corte seco; 3D em 1 bloco no MEIO"
+ },
+ "por_dentro": {
+  "nome": "Como funciona por dentro (3D dominante, estilo Zack D. Films)",
+  "ref": "Zack D. Films — 'How Electrical Outlets Work', 'How Cookiecutter Sharks Bite Whales'",
+  "duracao_s": [20, 35], "palavras": [50, 85],
+  "exige": [], "max_3d_pct": 0.7, "min_fontes_reais": 2,
+  "musica": ["curioso_documentario.mp3", "misterio_sombrio.mp3"],
+  "graficos": ["corte/raio-X no 3D", "setas de força dentro do 3D"],
+  "som": "cada evento do 3D com som próprio (clique, fluxo, impacto) + whoosh na entrada do 3D",
+  "transicao": "real no gancho → 3D contínuo → real como prova no fim"
+ },
+ "erro_perigo": {
+  "nome": "O erro que todo mundo comete / Nunca faça isso",
+  "ref": "GeneralTV — 'O erro GRAVE ao salvar um passarinho', 'O erro que todo mundo comete ao comer favo de mel'",
+  "duracao_s": [20, 30], "palavras": [50, 75],
+  "exige": ["marca_erro"], "max_3d_pct": 0.45, "min_fontes_reais": 5,
+  "musica": ["tensao_documentario.mp3"],
+  "graficos": ["X VERMELHO no jeito errado", "CERTO verde no jeito certo", "seta no frame 0"],
+  "som": "buzzer curto SÓ com o X na tela e na pausa; acerto SÓ com o certo; batida de tensão leve sob a voz",
+  "transicao": "corte seco; errado → certo lado a lado no tempo"
+ },
+ "invencao": {
+  "nome": "A invenção genial (produto/engenharia que resolve um problema)",
+  "ref": "Polaco sem Polônia — 'O motor portátil que transforma qualquer bike em elétrica', 'A película que transforma vidro em TV'",
+  "duracao_s": [15, 28], "palavras": [40, 70],
+  "exige": [], "max_3d_pct": 0.3, "min_fontes_reais": 4,
+  "musica": ["phonk_processo.mp3", "upbeat_brincalhao.mp3"],
+  "graficos": ["seta no frame 0", "círculo na peça-chave", "punch-in na demonstração"],
+  "som": "som real da invenção funcionando (clique, motor, encaixe) + whoosh + pop",
+  "transicao": "problema → invenção → demonstração (antes/depois)"
+ },
+ "recorde_historia": {
+  "nome": "Recorde / escala / história real (o maior, o mais caro, o homem que…)",
+  "ref": "A vida — 'O homem que pulou de avião sem paraquedas'; KSO — teste militar da Índia",
+  "duracao_s": [20, 35], "palavras": [50, 85],
+  "exige": ["numero_na_tela"], "max_3d_pct": 0.35, "min_fontes_reais": 5,
+  "musica": ["epico_engenharia.mp3", "tensao_documentario.mp3", "emocional_piano.mp3"],
+  "graficos": ["CONTADOR animado no número", "seta no frame 0", "comparação de escala em 3D se ajudar"],
+  "som": "ding no número (só com o contador) + riser/boom na revelação",
+  "transicao": "corte seco; câmera lenta no clímax"
+ },
+ "tiro_curto": {
+  "nome": "Tiro Curto (física bizarra, susto, gambiarra) — HISA 2.0",
+  "ref": "formato do dono",
+  "duracao_s": [12, 15], "palavras": [30, 38],
+  "exige": ["rehook_6s"], "max_3d_pct": 0.35, "min_fontes_reais": 2,
+  "musica": ["phonk_processo.mp3", "tensao_documentario.mp3"],
+  "graficos": ["seta no frame 0", "punch-in no re-hook"],
+  "som": "hit curto no re-hook (~6 s) + whoosh + som da ação",
+  "transicao": "corte brusco no re-hook"
+ },
+ "_rodizio_semana": {
+  "_doc": "Para o canal não parecer engessado: cada semana passa por formatos diferentes; nunca o mesmo formato 2 dias seguidos.",
+  "segunda": "processo", "terca": "motivo_oculto", "quarta": "por_dentro", "quinta": "erro_perigo",
+  "sexta": "invencao", "sabado": "motivo_oculto", "domingo": "recorde_historia",
+  "coringa": "tiro_curto (qualquer dia em que o melhor tema for rápido)"
+ }
+}

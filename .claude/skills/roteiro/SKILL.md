@@ -6,6 +6,7 @@ description: Escreve o roteiro do Viitu Shorts (protocolo HISA) a partir do tema
 # /roteiro: roteiro HISA que já nasce editável
 
 > **Regras do dono:** `edicao/BIBLIA.md` (manda em tudo; não alterar sem autorização) · planta técnica: `edicao/formato.md`.
+> **Formato:** as 5 partes da BÍBLIA viram as batidas do formato escolhido (`edicao/formatos.md` §1). Marque no roteiro.md: `Formato: <chave>`.
 
 Pré-requisito: tema validado por `/tema` (prova ≥ 1M, lacuna PT-BR, categoria/gatilho fortes).
 

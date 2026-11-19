@@ -6,6 +6,7 @@ description: Escolhe e baixa os VÍDEOS que representam cada frase do roteiro do
 # /clipes: escolher cenas como um editor
 
 > **Regras do dono:** `edicao/BIBLIA.md` (manda em tudo; não alterar sem autorização) · planta técnica: `edicao/formato.md`.
+> **Formato:** `processo` = 1 bruto cronológico (`"bruto_cronologico"`); demais = mínimo de fontes do formato (`formatos.json`).
 
 **ANTES DE TUDO: `edicao/reclamacoes.md`** (padrões de reclamação do dono e a estrutura de montagem padrão).
 A trava `python3 -m viitu.montagem <p>` barra: clipe em > 2 cenas, < 60% de fontes diferentes, 3D picotado,
