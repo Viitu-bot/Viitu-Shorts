@@ -241,7 +241,7 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
             avisos.append(f"R4 PARADO: cena {k + 1} ({c['clipe']}) quase sem movimento ({mov:.1f}); parece foto.")
         lim_cena = 6.0 if cfg.get("formato") == "processo" else 4.0           # processo: deixar a ação satisfatória rodar
         if dur >= lim_cena:
-            avisos.append(f"R7 CENA LONGA: cena {k + 1} dura {dur:.1f} s com um clipe só (limite {lim_cena:.0f} s); trocar de etapa/clipe.")
+            avisos.append(f"R7 cena longa: cena {k + 1} dura {dur:.1f} s com um clipe só — ok SE a ação prende (BÍBLIA §3); senão, trocar.")
     return erros, avisos
 
 

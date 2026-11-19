@@ -23,7 +23,10 @@ O roteiro.md marca cada parte com o rótulo `[GANCHO]`, `[INÍCIO]`, `[MEIO]`, `
 - Voz do Otto no máximo, silêncios cortados (auto-cut), começando no 0,0 s.
 
 ## 3. Edição (o que os canais analisados fazem — logica_editor.md)
-- Corte seco a cada 1,5–3 s; a imagem mostra EXATAMENTE o que a voz diz naquele segundo (sincronia semântica).
+- A imagem mostra EXATAMENTE o que a voz diz naquele segundo (sincronia semântica).
+- **Tomada que prende fica** (dono, 19/11): se a ação é satisfatória/hipnotizante (processo, máquina, ASMR), NÃO trocar a
+  imagem só por tempo — ela é o que segura a pessoa. Corte seco quando a ideia ou a etapa muda; a média de 1,5–2 s dos
+  canais é descrição, não obrigação por tomada.
 - **Whoosh na maioria dos cortes** (29/30 nos canais) — não tirar.
 - Punch-in nas palavras-chave; pop nos círculos/setas; riser → vácuo → boom na virada.
 - 3D no trecho explicativo (um bloco); clipe real no gancho e como prova.

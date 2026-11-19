@@ -14,7 +14,7 @@ Número novo só entra no projeto com a base escrita aqui.
 ## Imagem
 | Regra | Valor | Base | Fonte |
 |---|---|---|---|
-| Troca de cena | ~1,5–2 s com clipes/etapas DIFERENTES | M | 35 Shorts (resumo_edicao.json): 1,5 s/cena, máx. 2,0 |
+| Troca de cena | quando a ideia/etapa muda; tomada que prende FICA | D + M | dono 19/11 ("aquilo dali já é o que está prendendo"); a média de 1,5 s/cena dos 35 Shorts é descrição, não obrigação |
 | Não picotar a mesma ação em cortes do mesmo clipe | — | D | dono 19/11 |
 | Clipe em ≤ 2 cenas (exceto bruto cronológico em ordem) | 2 | D | reclamações de repetição (6x) |
 | Fontes diferentes ≥ 60% das cenas | 60% | **H** | aviso; testar |
