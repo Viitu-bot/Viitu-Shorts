@@ -1,7 +1,7 @@
 {
  "voz_db": -15.1,
  "leito_db": -24.2,
- "efeitos_db": -24.9,
+ "efeitos_db": -25.2,
  "mp4": "remotion/out/vd010_tanque_explode.mp4",
  "medidas": {
   "musica_sob_voz_db": {
@@ -13,7 +13,7 @@
    "ok": true
   },
   "efeitos_acao_audiveis": {
-   "valor": "10/11",
+   "valor": "9/10",
    "ok": true
   },
   "impacto_virada_db": {

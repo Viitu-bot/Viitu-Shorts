@@ -13,8 +13,7 @@
 | ⚠️ | x_osinttechnical_1842851539091689603.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ⚠️ | tt_tankersofficial_7495114660790766890.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ⚠️ | x_osinttechnical_2090801951445303443.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
-| ⚠️ | tt_globalarsenal_7449538256900787461.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 
 **RESULTADO:** ✅ liberado (⚠️ = crédito na descrição + pedir permissão)
 
-**Créditos para a descrição:** Imagens: @key4kt_, @tankersofficial e @global.arsenal (TikTok); @RALee85 e @Osinttechnical (X). Modelo 3D: M1A1 Abrams (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts.
+**Créditos para a descrição:** Imagens: @key4kt_ e @tankersofficial (TikTok); @RALee85 e @Osinttechnical (X). Modelo 3D: M1A1 Abrams (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts.

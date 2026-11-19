@@ -6,7 +6,7 @@
 - ✅ Sons de função em cima de palavra: nenhum
 - ✅ Quadros muito escuros: 0 (em )
 - ✅ Movimento nos 2 primeiros segundos: 67.3 (gancho precisa de ação)
-- ⚠️ Cenas curtas demais (<0,9 s, piscam): [0.77, 0.5]
+- ⚠️ Cenas curtas demais (<0,9 s, piscam): [0.5]
 - ⚠️ Cenas longas (>3,5 s, risco de tédio): [8.63]
 - ✅ Palavras que ficam < 0,17 s na tela (ilegíveis): 0 []
 - ✅ Folga depois da última palavra: 0.00s (loop pede ≤ 0,2 s)
