@@ -11,4 +11,4 @@ Formato: `AAAA-MM-DD (postagem) | família | tema | link do vídeo publicado (qu
 2026-11-21 (sáb) | Motivo oculto/perigo | 🔥 Por que o caminhão-tanque meio cheio é o perigoso (quebra-ondas) — vd008 | (radar 18/11: YouTube+TikTok, PT vazio)
 (substituído) | Motivo oculto/engenharia | Por que o Air Force One não precisa pousar — vd009 (dono pediu outro tema p/ domingo; projeto guardado)
 (substituído) | Perigo/motivo oculto | O tanque feito para explodir — vd010 (dono pediu troca: imagem de guerra limitou a qualidade; projeto guardado)
-2026-11-22 (dom) | Processo (bruto cronológico) | Toda bola de tênis nasce partida ao meio (ar sob pressão, lata pressurizada) — vd011 | (prova 15,7 mi; PT vazio, maior 9k)
+2026-11-22 06:00 | Processo (bruto cronológico) | "A bola de tênis nasce partida ao meio 🎾" — BASTIDOR 24,6 s, 3D prensa real, trilha no arquivo, vd011 v4 | (pronto para agendar; teste de horário: 06h)
