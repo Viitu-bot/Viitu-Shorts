@@ -71,6 +71,11 @@ aval do dono). Não renderizar planta reprovada.
 - Regras embutidas: boom termina antes da próxima palavra; sem whoosh na emenda do loop; música só sobe depois da
   última fala. Medir sem mudar nada: `python3 -m viitu.mixagem --medir`.
 
+## 2d. Encadear SEMPRE com falha que para (vd010, 19/11)
+`set -o pipefail; montagem && editar && render && entrega` — nunca `;` nem filtrar a saída do editor só por ❌:
+o editor falhou em silêncio, o render usou o plano antigo. A entrega agora bloqueia vídeo mais velho que o cenas.json.
+Cena 3D: o clipe "base" escondido precisa ter trecho aprovado ≥ duração do bloco 3D (use o clipe mais longo).
+
 ## 3. TRAVA DE ENTREGA (obrigatória, um comando só)
 `python3 -m viitu.entrega <p>` → roda montagem R1–R8, revisar, direitos, auditoria, a **PÓS-PRODUÇÃO DE SOM**
 (`viitu.som_final`: o áudio do mp4 é refeito depois do render — voz/leito/efeitos com sidechain real, −14 LUFS) e o
