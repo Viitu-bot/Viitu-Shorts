@@ -278,5 +278,35 @@
   "id": 3188,
   "nome": "Airborne Sound - Attack Aircraft Maneuvers/Jet,Fighter,FA-18C,Hornet,Medium Distant,Climb,Right to High,Crest and Hold,Kill Engine,191.mp3",
   "nota": 0.3
+ },
+ "big explosion debris metal": {
+  "id": 2283,
+  "nome": "Bluezone Corporation - Metal Debris/Bluezone_BC0236_metal_debris_055.mp3",
+  "nota": 0.576
+ },
+ "heavy tracked vehicle driving tank engine": {
+  "id": 1675,
+  "nome": "Hammer & Spark Audio Production - Warrior IFV Custom Vehicle Recording/WR_ONBD_Const_Int_Driver Posn_POV_Slow_Stereo.mp3",
+  "nota": 0.359
+ },
+ "large explosion distant": {
+  "id": 5357,
+  "nome": "Stefano Cremona - Explosions/FarExplosion03.mp3",
+  "nota": 0.218
+ },
+ "metal latch clunk": {
+  "id": 4168,
+  "nome": "344 Audio - Practical Doors/Exterior Metal Door Gate Bolt Latch 7.mp3",
+  "nota": 0.622
+ },
+ "fire roaring flames burning": {
+  "id": 2737,
+  "nome": "Pole Position - The Burning House Library/Burning_House_t2_Fire_high_intensity_with_sizzling_and_some_debris_RE50_1.mp3",
+  "nota": 0.294
+ },
+ "tank interior hum radio": {
+  "id": 4941,
+  "nome": "Pole Position - SOMUA S35 1942/SOMUA Tank, t9, Onbrd, Start, Fast, Drive, Gearshifts Down, Stop, Off, Interior, Driver, MKH8020.mp3",
+  "nota": 0.901
  }
 }
