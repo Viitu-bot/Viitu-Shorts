@@ -191,31 +191,6 @@
    "_funcao": "virada: tanquista real dentro da torre"
   },
   {
-   "em": "e é por isso",
-   "clipe": "tt_globalarsenal_7449538256900787461.mp4",
-   "inicio": 6.4,
-   "som_original": false,
-   "revisao": "manual",
-   "sfx_cena": [
-    {
-     "em": "e é por isso",
-     "busca": "heavy tracked vehicle driving tank engine",
-     "db": -5,
-     "dur": 1.2
-    }
-   ],
-   "zoom": [
-    2.1,
-    2.15
-   ],
-   "alvo": [
-    0.7,
-    0.28
-   ],
-   "foley": "motor",
-   "_funcao": "fecho: Abrams passando (público ao fundo)"
-  },
-  {
    "em": "que",
    "clipe": "tt_key4kt_7607650082661469470.mp4",
    "inicio": 14.0,
@@ -229,5 +204,5 @@
    "_funcao": "loop"
   }
  ],
- "creditos_descricao": "Imagens: @key4kt_, @tankersofficial e @global.arsenal (TikTok); @RALee85 e @Osinttechnical (X). Modelo 3D: M1A1 Abrams (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts."
+ "creditos_descricao": "Imagens: @key4kt_ e @tankersofficial (TikTok); @RALee85 e @Osinttechnical (X). Modelo 3D: M1A1 Abrams (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts."
 }
