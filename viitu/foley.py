@@ -9,6 +9,7 @@ Uso interno: chamado por viitu.editar no modo --remotion.
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import cv2
@@ -156,18 +157,75 @@ EXIGIR = {"fogo_rugido": FOGO, "fogo_crepitando": FOGO, "fumaca_brasa": r"ember|
 ESCOLHAS = RAIZ / "assets" / "sonniss" / "escolhas.json"     # mesma descrição → mesmo som (rápido e consistente)
 
 
+# SOM CERTO (vd011, 19/11 — dono: "os sons não encaixam"): o buscador pegava "golfe embaixo d'água" para "bola quicando",
+# "passos de inseto" para "ar vazando", "ronco espacial" para "borracha caindo". Agora o NOME do arquivo precisa ter uma
+# palavra-chave do pedido e não pode ser de um contexto que o pedido não tem; senão busca de novo ou GERA o som.
+_PARADAS = {"close", "soft", "distant", "large", "small", "heavy", "sound", "inside", "with", "from", "into", "loud",
+            "short", "long", "quick", "slow", "pieces", "outdoors", "indoors", "light", "deep", "big", "high", "level"}
+_CONTEXTO_ERRADO = ["underwater", "insect", "animal", "space", "sci-?fi", "cartoon", "footstep", "magic", "game",
+                    "weapon", "gun", "monster", "creature", "horror", "laser", "spell", "voice", "vocal", "music"]
+
+
+def _chaves(desc: str) -> list[str]:
+    return [w for w in re.findall(r"[a-z]{4,}", desc.lower()) if w not in _PARADAS]
+
+
+_SINONIMOS = {"airplane": "plane|aircraft|airliner|jet|aviation", "airliner": "plane|aircraft|jet|boeing",
+              "flyby": "fly.?by|pass.?by|pass", "car": "vehicle|traffic|auto", "cars": "vehicle|traffic",
+              "engine": "motor|jet|turbine", "tires": "tire|tyre|wheel", "geese": "goose|gooses", "birds": "bird",
+              "wings": "wing|flap|flutter", "rubber": "rubber|ball", "soda": "can|soda|beer can|tin", "ball": "ball",
+              "flames": "fire|flame", "embers": "ember|fire|crackl", "tank": "tank|tracked|armou?r", "fabric": "cloth|fabric|felt"}
+
+
+def som_combina(desc: str, nome: str) -> bool:
+    n = nome.lower()
+    if not any(w in n or w.rstrip("s") in n or (w in _SINONIMOS and re.search(_SINONIMOS[w], n)) for w in _chaves(desc)):
+        return False
+    return not any(re.search(c, n) and not re.search(c, desc.lower()) for c in _CONTEXTO_ERRADO)
+
+
+def _gerar_elevenlabs(desc: str, dur: float) -> str | None:
+    """Reserva quando a biblioteca não tem o som certo: ElevenLabs sound-generation (plano pago do dono)."""
+    import requests
+    slug = re.sub(r"[^a-z0-9]+", "_", desc.lower()).strip("_")[:50]
+    arq = RAIZ / "assets" / "sfx" / f"gen_{slug}.mp3"
+    if arq.exists():
+        return str(arq)
+    try:
+        r = requests.post("https://api.elevenlabs.io/v1/sound-generation", headers={"xi-api-key": "proxy-injected"},
+                          json={"text": f"{desc}, realistic foley, no music", "duration_seconds": max(1.0, min(dur, 6.0))},
+                          timeout=120)
+        if r.status_code == 200 and len(r.content) > 2000:
+            arq.parent.mkdir(parents=True, exist_ok=True)
+            arq.write_bytes(r.content)
+            print(f"    som GERADO (ElevenLabs): {arq.name}")
+            return str(arq)
+        print(f"    ElevenLabs sound-generation falhou: HTTP {r.status_code}")
+    except Exception as e:
+        print(f"    ElevenLabs sound-generation falhou: {str(e)[:80]}")
+    return None
+
+
 def _som_sonniss(desc: str, dur_min: float, exigir: str | None = None) -> str | None:
     import json
     esc = json.loads(ESCOLHAS.read_text(encoding="utf-8")) if ESCOLHAS.exists() else {}
+    if desc in esc and not som_combina(desc, esc[desc]["nome"]):
+        print(f"    ❌ escolha antiga não combina: '{desc}' → {esc[desc]['nome'][:60]} (refazendo)")
+        esc.pop(desc)
     if desc not in esc:
         try:
             from viitu.sons import buscar
-            r = buscar(desc, dur_min=dur_min, n=1, exigir=exigir)[0]
+            rx = exigir or "|".join(_chaves(desc)) or None
+            cands = [r for r in buscar(desc, dur_min=dur_min, n=6, exigir=rx) if som_combina(desc, r["nome"])]
+            if not cands:
+                raise LookupError("nenhum candidato com nome compatível")
+            r = cands[0]
             esc[desc] = {"id": r["id"], "nome": r["nome"], "nota": r["nota"]}
             ESCOLHAS.write_text(json.dumps(esc, ensure_ascii=False, indent=1), encoding="utf-8")
-        except Exception as e:          # sem rede/CLAP: fica o foley próprio
-            print(f"    sonniss indisponível para '{desc}': {str(e)[:80]}")
-            return None
+            print(f"    som: '{desc}' → {r['nome'][:70]}")
+        except Exception as e:          # biblioteca não tem o som certo: gera
+            print(f"    biblioteca sem '{desc}' ({str(e)[:60]}) → gerando")
+            return _gerar_elevenlabs(desc, max(dur_min, 1.5))
     from viitu.sons import baixar, _catalogo
     return str(baixar(_catalogo()[esc[desc]["id"]]))
 

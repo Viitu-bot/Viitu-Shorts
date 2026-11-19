@@ -51,7 +51,7 @@
    "sfx_cena": [
     {
      "em": "Toda bola",
-     "busca": "hydraulic press machine clunk",
+     "arquivo": "assets/sonniss/cache/5924.mp3",
      "db": -4,
      "dur": 1.6
     }
@@ -72,15 +72,7 @@
     0.42
    ],
    "_parte": "INÍCIO",
-   "_funcao": "pilha de metades",
-   "sfx_cena": [
-    {
-     "em": "maciça",
-     "busca": "rubber pieces dropping",
-     "db": -6,
-     "dur": 1.2
-    }
-   ]
+   "_funcao": "pilha de metades"
   },
   {
    "em": "mas na verdade",
@@ -97,15 +89,7 @@
     0.42
    ],
    "_parte": "INÍCIO",
-   "_funcao": "cola nas metades / juntando",
-   "sfx_cena": [
-    {
-     "em": "conchas",
-     "busca": "sticky glue squelch",
-     "db": -6,
-     "dur": 1.5
-    }
-   ]
+   "_funcao": "cola nas metades / juntando"
   },
   {
    "em": "coladas uma",
@@ -126,9 +110,9 @@
    "sfx_cena": [
     {
      "em": "coladas",
-     "busca": "rubber squeeze press",
-     "db": -6,
-     "dur": 1.2
+     "arquivo": "assets/sfx/gen_two_rubber_halves_pressed_together_with_a_squeak.mp3",
+     "db": -4,
+     "dur": 1.4
     }
    ]
   },
@@ -155,21 +139,21 @@
      },
      {
       "evento": "ar",
-      "busca": "air compressor hiss",
-      "db": -6,
-      "dur": 1.4
+      "arquivo": "assets/sonniss/cache/3232.mp3",
+      "db": -4,
+      "dur": 1.6
      },
      {
       "evento": "quica",
-      "busca": "rubber ball bounce",
-      "db": -3,
-      "dur": 0.8
+      "arquivo": "assets/sfx/gen_tennis_ball_bouncing_twice_on_a_hard_floor_close.mp3",
+      "db": -2,
+      "dur": 1.2
      },
      {
       "evento": "escapa",
-      "busca": "air leak hiss soft",
-      "db": -8,
-      "dur": 1.6
+      "arquivo": "assets/sfx/gen_slow_soft_air_leaking_hiss_from_a_small_hole.mp3",
+      "db": -5,
+      "dur": 2.0
      }
     ]
    },
@@ -194,9 +178,9 @@
    "sfx_cena": [
     {
      "em": "feltros",
-     "busca": "fabric rustle close",
-     "db": -6,
-     "dur": 1.5
+     "arquivo": "assets/sfx/gen_felt_fabric_rubbed_and_pressed_onto_a_rubber_ball_.mp3",
+     "db": -4,
+     "dur": 1.8
     }
    ]
   },
@@ -215,9 +199,9 @@
    "sfx_cena": [
     {
      "em": "lata",
-     "busca": "soda can opening pressure release",
-     "db": -2,
-     "dur": 1.4
+     "arquivo": "assets/sfx/gen_opening_a_pressurized_tennis_ball_can_loud_pop_and.mp3",
+     "db": -1,
+     "dur": 1.8
     }
    ]
   },

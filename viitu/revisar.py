@@ -103,6 +103,7 @@ def revisar(projeto: str) -> bool:
         if c.get("animacao") or (j == len(cenas) - 1 and c["clipe"] == cenas[0]["clipe"]):
             continue
         usos[c["clipe"]].append(c.get("inicio", 0))
+    usos.pop(cfg.get("bruto_cronologico"), None)      # bruto cronológico: cada cena é uma etapa nova (montagem R1 confere a ordem)
     for cl, ts in usos.items():
         arq = pasta / "clipes" / cl
         dur_cl = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",

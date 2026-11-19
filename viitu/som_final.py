@@ -73,7 +73,9 @@ def medir(projeto: str, plano: dict) -> dict:
     t = lambda q: min(int(q / mx.FPS * 10), len(V) - 1)              # quadro → janela
     sob = float(np.median(Lj[fala] - vref))
     respira = float(np.median(Lj[pausa]) - np.median(Lj[fala])) if pausa.sum() >= 3 else 0.0
-    picos = [float(F[max(t(e["f"]) - 1, 0):t(e["f"]) + 6].max() - vref) for e in plano.get("sfx", [])]
+    # o efeito inteiro (o pico de som gerado/gravado pode vir depois de 1 s; antes olhava só 0,7 s)
+    picos = [float(F[max(t(e["f"]) - 1, 0):max(t(e["f"]) + int(e.get("dur", 30) / mx.FPS * 10), t(e["f"]) + 6)].max() - vref)
+             for e in plano.get("sfx", [])]
     acao_ok = sum(p >= -12 for p in picos)
     imp = [float(F[t(i):t(i) + 6].max() - vref) for i in plano.get("impactos", [])]
     tapa = float(np.percentile((F - V)[fala], 98))
@@ -82,7 +84,7 @@ def medir(projeto: str, plano: dict) -> dict:
     r = {
         "musica_sob_voz_db": (round(sob, 1), -14 <= sob <= -8),       # BÍBLIA §4: audível no celular
         "musica_respira_db": (round(respira, 1), respira >= 3 or pausa.sum() < 3),
-        "efeitos_acao_audiveis": (f"{acao_ok}/{len(picos)}", not picos or acao_ok >= 0.7 * len(picos)),
+        "efeitos_acao_audiveis": (f"{acao_ok}/{len(picos)}", not picos or acao_ok >= 0.7 * len(picos)),   # só os que existem
         "impacto_virada_db": ([round(x, 1) for x in imp], all(x >= -6 for x in imp)),
         "efeito_sobre_voz_db": (round(tapa, 1), tapa <= 0),
         "ding_frame0_db": (round(dpk, 1), dpk >= -3),                   # BÍBLIA §2: o ding tem que ser OUVIDO
@@ -145,7 +147,8 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
             mx.SR = sr_ant
         pico = env(seg[a0:a0 + int(e.get("dur", 60) * spf)]).max() if seg.any() else 0
         if pico > 0:
-            fx += seg * (vref * 10 ** (-6 / 20) / pico)
+            alvo = max(-8.0, min(-1.5, 20 * np.log10(max(e.get("vol", 0.5), 1e-3))))   # o nível pedido na cena, dentro do seguro
+            fx += seg * (vref * 10 ** (alvo / 20) / pico)
     def pico_para(x, alvo_db):
         p = env(x).max() if np.abs(x).max() > 1e-5 else 0
         return 0.0 if p == 0 else vref * 10 ** (alvo_db / 20) / p

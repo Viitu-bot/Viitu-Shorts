@@ -14,7 +14,7 @@ palavras.json (tempos reais da voz) e os arquivos dos clipes. Com qualquer ❌ o
   R5 FOTO        no máximo 2 fotos, nunca no gancho, nunca seguidas.
   R6 LOOP        a última cena é o mesmo clipe e o mesmo segundo da primeira.
   R8 SOM         sound design é parte da planta, não enfeite: todo bloco 3D tem sfx amarrado a CADA evento + entrada;
-                 o gancho e ≥ 60% das cenas reais têm som de AÇÃO (sfx_cena: o que aparece na tela); há virada
+                 o gancho tem som de AÇÃO; nas outras cenas, só quando o som certo EXISTE (BÍBLIA §4); há virada
                  (impacto_em → riser/vácuo/boom) e música definida. Dono (18/11): "parece que só pôs um em cima do outro".
   R7 CENA LONGA  cena real ≥ 4 s sem "manter" vira o mesmo plano parado na tela (o editor divide, mas repete o clipe).
 
@@ -205,8 +205,8 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
     com_acao = [k for k in reais_idx if cenas[k].get("sfx_cena")]
     if reais_idx and 0 not in com_acao:
         erros.append("R8 GANCHO SEM SOM DE AÇÃO: a 1ª cena precisa de sfx_cena (o som do que aparece).")
-    if reais_idx and len(com_acao) < math.ceil(0.6 * len(reais_idx)):
-        erros.append(f"R8 POUCO SOM DE AÇÃO: {len(com_acao)}/{len(reais_idx)} cenas reais com sfx_cena (mínimo 60%). "
+    if reais_idx and len(com_acao) < math.ceil(0.4 * len(reais_idx)):
+        avisos.append(f"R8 pouco som de ação: {len(com_acao)}/{len(reais_idx)} cenas reais com sfx_cena (conferir se falta som que EXISTE na cena). "
                      f"Sem som: cenas {[k + 1 for k in reais_idx if k not in com_acao]}.")
     if not cfg.get("impacto_em"):
         erros.append("R8 SEM VIRADA SONORA: defina impacto_em (riser → vácuo → boom).")

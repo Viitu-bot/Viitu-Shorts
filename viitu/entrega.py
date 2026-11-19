@@ -47,8 +47,8 @@ def entregar(projeto: str) -> bool:
     else:
         velho = [n for n, arq in (("plano de som/cenas (editar)", plano_pub), ("vídeo final (render)", mp4))
                  if not arq.exists() or arq.stat().st_mtime < cen.stat().st_mtime]
-    if mp4.exists() and plano_pub.exists() and mp4.stat().st_mtime < plano_pub.stat().st_mtime:
-        velho.append("vídeo final mais velho que o plano (renderizar de novo)")
+    if not pl.get("_cenas_hash") and mp4.exists() and plano_pub.exists() and mp4.stat().st_mtime < plano_pub.stat().st_mtime:
+        velho.append("vídeo final mais velho que o plano (renderizar de novo)")   # com impressão: só o SOM mudou, a imagem é a mesma
     res["atualizado"] = not velho
     print(("✅" if not velho else "❌"), "0. Vídeo gerado a partir do cenas.json atual" + (f" — desatualizado: {velho}" if velho else ""))
     from viitu.montagem import checar

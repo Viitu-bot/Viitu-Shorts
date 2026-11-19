@@ -44,11 +44,6 @@
   "nome": "Coll Anderson - Gentle Wind/EFX SD Fire in Metal Stove 03.mp3",
   "nota": 0.276
  },
- "embers hissing and crackling close": {
-  "id": 1890,
-  "nome": "RedSonic - Frying Water/water_dropped_on_electric_stove_02.mp3",
-  "nota": 0.862
- },
  "strong wind blowing through trees": {
   "id": 4584,
   "nome": "Ivo Vicic - Wind/07 Wind_cypress tree canopy_near field.mp3",
@@ -64,11 +59,6 @@
   "nome": "MatiasMacSD - Minacious/Whoosh_Hydraulic bomb-01.mp3",
   "nota": 0.717
  },
- "jet engine power down": {
-  "id": 265,
-  "nome": "Mechanical Wave - Sci-Fi-Invaders/Shut Off Engine_SI 03.mp3",
-  "nota": 0.362
- },
  "heavy body impact thud": {
   "id": 5070,
   "nome": "SmartSoundFX - Impacts, Hits & Whooshes/IMPACT DARK Epic Punch_01.mp3",
@@ -78,11 +68,6 @@
   "id": 374,
   "nome": "RDGSFX008 - The Metal Shelf/Metal Shelf Low Movement 02.mp3",
   "nota": 0.265
- },
- "metal grinding and scraping inside a machine": {
-  "id": 151,
-  "nome": "Eiravaein Works - Ilmarinen/Ilmarinen,blacksmith,forge,handgrinder,blade,gritty,scrape,slow,shudder,buzz,wide.mp3",
-  "nota": 0.403
  },
  "engine explosion bang": {
   "id": 4337,
@@ -98,11 +83,6 @@
   "id": 5574,
   "nome": "344 Audio - Epic Impacts Vol. 1/Impact 045.mp3",
   "nota": 0.258
- },
- "geese honking flock flying": {
-  "id": 1164,
-  "nome": "Sound Ex Machina -  Animal Farm/Gooses honking and moving around the yard.mp3",
-  "nota": 0.638
  },
  "jet engine spool down": {
   "id": 4546,
@@ -123,11 +103,6 @@
   "id": 2286,
   "nome": "Bluezone Corporation - Metal Debris/Bluezone_BC0236_metal_whoosh_037.mp3",
   "nota": 0.418
- },
- "turbine engine shutdown wind down": {
-  "id": 265,
-  "nome": "Mechanical Wave - Sci-Fi-Invaders/Shut Off Engine_SI 03.mp3",
-  "nota": 0.469
  },
  "large heavy water splash close": {
   "id": 4329,
@@ -179,11 +154,6 @@
   "nome": "Fox Audio Post-Production - Countryside – Nature & Field/Amb_Countryside_Day_Rooster_Birds.mp3",
   "nota": 0.466
  },
- "birds wings flapping close": {
-  "id": 6652,
-  "nome": "Mechanical Wave - Farm Animals/BIRDFowl_Chick Squawks-02_MWSFX_FA.mp3",
-  "nota": 0.481
- },
  "airliner jet engine whine": {
   "id": 4194,
   "nome": "Articulated Sounds - Boeing 737 Airplane Cockpit/AMBIENCE Aircraft In Flight Taking Altitude, LOOP.mp3",
@@ -199,35 +169,15 @@
   "nome": "Hzandbits - Urban Winds/Wind,Ext,Urban,Plastic,Thin,Flutter,Violent.Mono.mp3",
   "nota": 0.821
  },
- "car driving by on asphalt": {
-  "id": 5142,
-  "nome": "Sound Sower - Vehicles Pass-by/22 MKH8040 Cars, Vehicles, traffic, road, rural, wave, moderate speed.mp3",
-  "nota": 0.257
- },
- "car tires rolling on asphalt": {
-  "id": 5142,
-  "nome": "Sound Sower - Vehicles Pass-by/22 MKH8040 Cars, Vehicles, traffic, road, rural, wave, moderate speed.mp3",
-  "nota": 0.234
- },
  "car engine idling in a garage": {
   "id": 4773,
   "nome": "Pole Position - Car Destruction/Car_Destruction_Damaged_Engine_t22_Ext_Heavy_Damage_No_Oil_Water_Hiss_XY_RSM191.mp3",
   "nota": 0.388
  },
- "mechanical gears whirring": {
-  "id": 3150,
-  "nome": "3maze - Electric Motors/motor_long_006.mp3",
-  "nota": 0.476
- },
  "car wheel spinning in mud": {
   "id": 3897,
   "nome": "Rzpost - Ride on Bike/Bicycle,Wheel,Perspective,Gravel,Uphill,Slow,Speed,Skid_V2.mp3",
   "nota": 0.814
- },
- "mud splash squelch": {
-  "id": 5481,
-  "nome": "Wav Junction Sound Effects - Footsteps/0014_Footsteps_water_puddle_single_splashes.mp3",
-  "nota": 0.73
  },
  "metal gear clunk": {
   "id": 3156,
@@ -239,25 +189,10 @@
   "nome": "3maze - High Impact/long_metal_005.mp3",
   "nota": 0.385
  },
- "engine revving off road truck": {
-  "id": 3449,
-  "nome": "Fox Audio Post-Production - Old Cars – Short Passby/Old_Car_Short_Passby_04.mp3",
-  "nota": 0.267
- },
- "car tire wheelspin burnout": {
-  "id": 3894,
-  "nome": "Rzpost - Ride on Bike/Bicycle,Approach,Gravel,Fast,Speed,Super,Skid_V4.mp3",
-  "nota": 0.512
- },
  "car engine revving": {
   "id": 6772,
   "nome": "Pole Position - Pvpjbv 2062 1982/Pvpjbv 2062 - t9 - ONBRD - FAST - Drive Various - ENGINE - VP88.mp3",
   "nota": 0.289
- },
- "workshop room tone with distant tools": {
-  "id": 5479,
-  "nome": "Wav Junction Sound Effects - Doors/0016_Garage_Door_Following_Door_Interior.mp3",
-  "nota": 0.812
  },
  "car tyre screech skid": {
   "id": 5366,
@@ -313,5 +248,80 @@
   "id": 4339,
   "nome": "Bluezone - Tank - Explosion Sound Effects/Bluezone_BC0271_tank_artillery_cannon_shot_012.mp3",
   "nota": 0.417
+ },
+ "water hose spraying": {
+  "id": 1154,
+  "nome": "ShapingWaves - PIPING SYSTEMS/SW015_Piping_Systems_Waterworks_Tunnel_Surface_Water_Flow_Contact_Mic.mp3",
+  "nota": 0.333
+ },
+ "water splashing close": {
+  "id": 1502,
+  "nome": "Double Trouble Audio - Flowing Water/FLWA 07 - Creek, water, flowing, splashing.mp3",
+  "nota": 0.222
+ },
+ "egg sizzling in frying pan": {
+  "id": 503,
+  "nome": "Soundopolis - Foley Plus_Full/Sizzle_Frying Pan_Fienup_001.mp3",
+  "nota": 0.647
+ },
+ "oil sizzling close": {
+  "id": 5630,
+  "nome": "344 Audio - The Burger Kitchen/Pressing Down Sizzling Burger.mp3",
+  "nota": 0.466
+ },
+ "chickens clucking on a farm": {
+  "id": 1418,
+  "nome": "Charlie Atanasyan - Philippines sound library by Faunethic/Village quiet chicken hen symphony early the morning_140306_01.mp3",
+  "nota": 0.646
+ },
+ "chicken clucking close": {
+  "id": 1418,
+  "nome": "Charlie Atanasyan - Philippines sound library by Faunethic/Village quiet chicken hen symphony early the morning_140306_01.mp3",
+  "nota": 0.602
+ },
+ "air compressor hiss": {
+  "id": 3232,
+  "nome": "Airborne Sound - Tools/Air Compressor,Omega,5 hp,20 Gallon,Twin Cylinder,Air Release,x2.mp3",
+  "nota": 0.682
+ },
+ "hydraulic press machine clunk": {
+  "id": 5025,
+  "nome": "Rock The Speakerbox - Gearbox/GEARBOX - DESIGNED - LARGE - Original Helmsworth Cylinder Press 01.mp3",
+  "nota": 0.561
+ },
+ "fabric rustle close": {
+  "id": 1721,
+  "nome": "Joshua Reinhardt - Ultimate Cloth and Prop Collection/PR PURSE LEATHER_SCRAPE 2_416.L.mp3",
+  "nota": 0.964
+ },
+ "rubber ball bounce": {
+  "id": 1706,
+  "nome": "JC Audio - Tennis Balls And Ambience/Ball Hit Net.mp3",
+  "nota": 0.151
+ },
+ "air leak hiss soft": {
+  "id": 5125,
+  "nome": "Sonik Sound Library - Spatial Roomtones & Interiors/Ambience, Roomtone, Quite Room, Air Conditioning Hum & Hiss-Surround.mp3",
+  "nota": 0.082
+ },
+ "rubber pieces dropping": {
+  "id": 837,
+  "nome": "Eiravaein Sound - Grit/Grit,course,hardsurface,dropping,scatter,alt1.mp3",
+  "nota": 0.372
+ },
+ "sticky glue squelch": {
+  "id": 152,
+  "nome": "Eiravaein Works - Ilmarinen/Ilmarinen,blacksmith,forge,hotiron,water,squelch,sizzle,rough,popping.M.mp3",
+  "nota": 0.357
+ },
+ "rubber squeeze press": {
+  "id": 755,
+  "nome": "Bombay Sonic - Heidelberg Printing Press/Printing Press,Fast,Grinding,Hydraulics,Whirring.mp3",
+  "nota": 0.918
+ },
+ "soda can opening pressure release": {
+  "id": 2222,
+  "nome": "Articulated Sounds - Essential Kitchen/KITCHEN soda can opening pouring.mp3",
+  "nota": 0.438
  }
 }
