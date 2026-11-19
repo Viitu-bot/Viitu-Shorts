@@ -166,13 +166,13 @@
      {
       "evento": "fio",
       "arquivo": "assets/sfx/gen_molten_glass_pouring_thick_glowing_liquid_sizzling.mp3",
-      "db": -5,
+      "db": -2,
       "dur": 1.6
      },
      {
       "evento": "meio",
       "arquivo": "assets/sfx/gen_molten_glass_pouring_thick_glowing_liquid_sizzling.mp3",
-      "db": -9,
+      "db": -4,
       "dur": 1.2
      },
      {
@@ -281,7 +281,7 @@
     {
      "em": "Obra",
      "arquivo": "assets/sfx/gen_many_glass_marbles_pouring_into_a_metal_bucket.mp3",
-     "db": -6,
+     "db": -2,
      "dur": 1.8,
      "no_clipe": 171.3
     }
