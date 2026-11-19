@@ -2,7 +2,7 @@
 1. 0.0-1.6s [GANCHO] "Toda bola" — tt_smartestworkers_752212239 @0.0s — tomada 0: metades na forma — sons: []
 2. 1.6-2.7s [GANCHO] "partida ao meio" — tt_smartestworkers_752212239 @6.8s — tomada 3: prensa com as metades — sons: ['5924.mp3 @6.95s']
 3. 2.7-3.6s [INÍCIO] "A maioria acha" — tt_smartestworkers_752212239 @11.5s — tomada 4: a máquina — sons: []
-4. 3.6-4.7s [INÍCIO] "que ela é maciça" — tt_smartestworkers_752212239 @13.1s — tomada 5: close das metades — sons: []
+4. 3.6-4.7s [INÍCIO] "que ela é maciça" — tt_smartestworkers_752212239 @14.45s — metades OCAS caindo no cesto: desmente o 'maciça' (antes repetia o quadro do gancho) — sons: []
 5. 4.7-5.8s [INÍCIO] "mas na verdade" — tt_smartestworkers_752212239 @20.8s — tomada 6: a cola — sons: []
 6. 5.8-8.7s [INÍCIO] "duas conchas" — tt_smartestworkers_752212239 @25.2s — tomada 7: metades sendo unidas (contínua) — sons: ['gen_two_rubber_halves_pressed_together_with_a_squeak.mp3 @27.95s']
 7. 8.7-14.2s [MEIO] "Antes de fechar" — 3D bola3d — 3D: ar sob pressão entra, fecha, quica, o ar escapa aos poucos — sons: ['wind gust whoosh', 'assets/sonniss/cache/3232.mp3', 'assets/sfx/gen_tennis_ball_bouncing_twice_on_a_hard_floor_close.mp3', 'assets/sfx/gen_slow_soft_air_leaking_hiss_from_a_small_hole.mp3']
