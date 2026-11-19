@@ -233,7 +233,8 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
                 erros.append(msg + " — proibido no gancho.")
             elif not c.get("baixa_res_ok"):
                 erros.append(msg + " — trocar ou justificar com \"baixa_res_ok\".")
-        nit, mov = _nitidez_movimento(arq, float(c.get("inicio", 0)), max(dur, 0.5))
+        usado = max(dur * float(c.get("velocidade", 1.0)), 0.5)          # trecho do CLIPE realmente usado (câmera lenta usa menos)
+        nit, mov = _nitidez_movimento(arq, float(c.get("inicio", 0)), usado)
         if nit < 40:
             erros.append(f"R4 DESFOCADO: cena {k + 1} ({c['clipe']}@{c.get('inicio', 0)}s) nitidez {nit:.0f}.")
         if mov < 1.0 and not c.get("parado_ok"):

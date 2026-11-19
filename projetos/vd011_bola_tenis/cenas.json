@@ -238,7 +238,7 @@
   {
    "em": "e ela vai",
    "clipe": "tt_thetennis101_7476930115079802134.mp4",
-   "inicio": 2.8,
+   "inicio": 3.2,
    "som_original": false,
    "revisao": "manual",
    "zoom": [
@@ -255,6 +255,20 @@
      "dur": 1.8
     }
    ]
+  },
+  {
+   "em": "onde o ar",
+   "clipe": "tt_thetennis101_7476930115079802134.mp4",
+   "inicio": 6.25,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.08,
+    1.15
+   ],
+   "_parte": "FINAL",
+   "_funcao": "lata aberta em câmera lenta (único trecho nítido)",
+   "velocidade": 0.5
   },
   {
    "em": "E se você",
