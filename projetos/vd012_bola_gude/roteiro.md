@@ -8,7 +8,7 @@ fortes são outro assunto (bola de gude que explode, brincadeira). "como colocam
 Brutos: TikTok @avtcartoon 7332765991107169578 (720x1280, 181 s: vidro quebrado → forno → vidro AMARELO derretido em
 forno à parte → filete → corte → rolos → bolinhas) e 7300819634553474347 (195 s, mesma fábrica, cor rosa).
 
-## PROPOSTA (aguarda o ok do dono)
+## Partes (aprovadas pelo dono 19/11)
 [GANCHO] A cor da bola de gude entra antes da bola existir.
 [INÍCIO] Parece pintada, mas ela nasce de vidro quebrado, derretido a mais de mil graus.
 [MEIO] O vidro colorido derrete num forno à parte e entra como um fio no meio do vidro transparente.
@@ -16,6 +16,14 @@ Uma lâmina corta uma gota, e dois rolos em espiral giram ela até virar esfera,
 [FINAL] Por isso a cor nunca sai: ela já estava lá dentro.
 [CTA] Obra de arte igual você, inscrito; se não é, se inscreve, porque
 (~74 palavras, ~26 s)
+
+## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs)
+A cor da bola de gude entra antes da bola existir.
+Parece pintada, mas ela nasce de vidro quebrado, derretido a mais de mil graus.
+O vidro colorido derrete num forno à parte e entra como um fio no meio do vidro transparente.
+Uma lâmina corta uma gota, e dois rolos em espiral giram ela até virar esfera, enquanto esfria.
+Por isso a cor nunca sai: ela já estava lá dentro.
+Obra de arte igual você, inscrito; se não é, se inscreve, porque
 
 ## Imagem por frase (ordem do bruto)
 - GANCHO: gotas em brasa rolando nos rolos (bruto 2 ~62 s) → bolinhas coloridas no balde (bruto 1 ~170 s)

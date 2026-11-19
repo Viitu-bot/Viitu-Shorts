@@ -1,0 +1,417 @@
+[
+ {
+  "palavra": "A",
+  "inicio": 0.0,
+  "fim": 0.08
+ },
+ {
+  "palavra": "cor",
+  "inicio": 0.16,
+  "fim": 0.32
+ },
+ {
+  "palavra": "da",
+  "inicio": 0.36,
+  "fim": 0.4
+ },
+ {
+  "palavra": "bola",
+  "inicio": 0.48,
+  "fim": 0.64
+ },
+ {
+  "palavra": "de",
+  "inicio": 0.72,
+  "fim": 0.88
+ },
+ {
+  "palavra": "gude",
+  "inicio": 0.92,
+  "fim": 1.28
+ },
+ {
+  "palavra": "entra",
+  "inicio": 1.36,
+  "fim": 1.76
+ },
+ {
+  "palavra": "antes",
+  "inicio": 1.84,
+  "fim": 2.24
+ },
+ {
+  "palavra": "da",
+  "inicio": 2.32,
+  "fim": 2.4
+ },
+ {
+  "palavra": "bola",
+  "inicio": 2.48,
+  "fim": 2.64
+ },
+ {
+  "palavra": "existir.",
+  "inicio": 2.73,
+  "fim": 3.41
+ },
+ {
+  "palavra": "Parece",
+  "inicio": 3.463,
+  "fim": 3.73
+ },
+ {
+  "palavra": "pintada,",
+  "inicio": 3.77,
+  "fim": 4.53
+ },
+ {
+  "palavra": "mas",
+  "inicio": 4.61,
+  "fim": 4.69
+ },
+ {
+  "palavra": "ela",
+  "inicio": 4.77,
+  "fim": 4.85
+ },
+ {
+  "palavra": "nasce",
+  "inicio": 4.93,
+  "fim": 5.25
+ },
+ {
+  "palavra": "de",
+  "inicio": 5.33,
+  "fim": 5.49
+ },
+ {
+  "palavra": "vidro",
+  "inicio": 5.58,
+  "fim": 5.78
+ },
+ {
+  "palavra": "quebrado,",
+  "inicio": 5.86,
+  "fim": 6.5
+ },
+ {
+  "palavra": "derretido",
+  "inicio": 6.58,
+  "fim": 6.98
+ },
+ {
+  "palavra": "a",
+  "inicio": 7.06,
+  "fim": 7.14
+ },
+ {
+  "palavra": "mais",
+  "inicio": 7.18,
+  "fim": 7.38
+ },
+ {
+  "palavra": "de",
+  "inicio": 7.46,
+  "fim": 7.54
+ },
+ {
+  "palavra": "mil",
+  "inicio": 7.63,
+  "fim": 7.87
+ },
+ {
+  "palavra": "graus.",
+  "inicio": 7.95,
+  "fim": 8.67
+ },
+ {
+  "palavra": "O",
+  "inicio": 8.71,
+  "fim": 8.75
+ },
+ {
+  "palavra": "vidro",
+  "inicio": 8.83,
+  "fim": 9.07
+ },
+ {
+  "palavra": "colorido",
+  "inicio": 9.16,
+  "fim": 9.52
+ },
+ {
+  "palavra": "derrete",
+  "inicio": 9.6,
+  "fim": 10.0
+ },
+ {
+  "palavra": "num",
+  "inicio": 10.08,
+  "fim": 10.16
+ },
+ {
+  "palavra": "forno",
+  "inicio": 10.24,
+  "fim": 10.48
+ },
+ {
+  "palavra": "à",
+  "inicio": 10.56,
+  "fim": 10.64
+ },
+ {
+  "palavra": "parte",
+  "inicio": 10.73,
+  "fim": 10.97
+ },
+ {
+  "palavra": "e",
+  "inicio": 11.06,
+  "fim": 11.14
+ },
+ {
+  "palavra": "entra",
+  "inicio": 11.23,
+  "fim": 11.43
+ },
+ {
+  "palavra": "como",
+  "inicio": 11.51,
+  "fim": 11.67
+ },
+ {
+  "palavra": "um",
+  "inicio": 11.79,
+  "fim": 11.91
+ },
+ {
+  "palavra": "fio",
+  "inicio": 11.95,
+  "fim": 12.23
+ },
+ {
+  "palavra": "no",
+  "inicio": 12.35,
+  "fim": 12.47
+ },
+ {
+  "palavra": "meio",
+  "inicio": 12.55,
+  "fim": 12.71
+ },
+ {
+  "palavra": "do",
+  "inicio": 12.79,
+  "fim": 12.87
+ },
+ {
+  "palavra": "vidro",
+  "inicio": 12.95,
+  "fim": 13.19
+ },
+ {
+  "palavra": "transparente.",
+  "inicio": 13.27,
+  "fim": 14.15
+ },
+ {
+  "palavra": "Uma",
+  "inicio": 14.19,
+  "fim": 14.39
+ },
+ {
+  "palavra": "lâmina",
+  "inicio": 14.47,
+  "fim": 14.79
+ },
+ {
+  "palavra": "corta",
+  "inicio": 14.87,
+  "fim": 15.19
+ },
+ {
+  "palavra": "uma",
+  "inicio": 15.27,
+  "fim": 15.35
+ },
+ {
+  "palavra": "gota,",
+  "inicio": 15.43,
+  "fim": 15.91
+ },
+ {
+  "palavra": "e",
+  "inicio": 15.95,
+  "fim": 15.99
+ },
+ {
+  "palavra": "dois",
+  "inicio": 16.08,
+  "fim": 16.32
+ },
+ {
+  "palavra": "rolos",
+  "inicio": 16.4,
+  "fim": 16.64
+ },
+ {
+  "palavra": "em",
+  "inicio": 16.72,
+  "fim": 16.8
+ },
+ {
+  "palavra": "espiral",
+  "inicio": 16.88,
+  "fim": 17.36
+ },
+ {
+  "palavra": "giram",
+  "inicio": 17.45,
+  "fim": 17.77
+ },
+ {
+  "palavra": "ela",
+  "inicio": 17.85,
+  "fim": 18.09
+ },
+ {
+  "palavra": "até",
+  "inicio": 18.17,
+  "fim": 18.57
+ },
+ {
+  "palavra": "virar",
+  "inicio": 18.65,
+  "fim": 18.81
+ },
+ {
+  "palavra": "esfera,",
+  "inicio": 18.89,
+  "fim": 19.45
+ },
+ {
+  "palavra": "enquanto",
+  "inicio": 19.53,
+  "fim": 19.77
+ },
+ {
+  "palavra": "esfria.",
+  "inicio": 19.85,
+  "fim": 20.49
+ },
+ {
+  "palavra": "Por",
+  "inicio": 20.53,
+  "fim": 20.57
+ },
+ {
+  "palavra": "isso",
+  "inicio": 20.65,
+  "fim": 20.89
+ },
+ {
+  "palavra": "a",
+  "inicio": 20.93,
+  "fim": 20.97
+ },
+ {
+  "palavra": "cor",
+  "inicio": 21.05,
+  "fim": 21.29
+ },
+ {
+  "palavra": "nunca",
+  "inicio": 21.37,
+  "fim": 21.61
+ },
+ {
+  "palavra": "sai:",
+  "inicio": 21.7,
+  "fim": 22.18
+ },
+ {
+  "palavra": "ela",
+  "inicio": 22.26,
+  "fim": 22.34
+ },
+ {
+  "palavra": "já",
+  "inicio": 22.42,
+  "fim": 22.5
+ },
+ {
+  "palavra": "estava",
+  "inicio": 22.62,
+  "fim": 22.98
+ },
+ {
+  "palavra": "lá",
+  "inicio": 23.06,
+  "fim": 23.14
+ },
+ {
+  "palavra": "dentro.",
+  "inicio": 23.26,
+  "fim": 23.78
+ },
+ {
+  "palavra": "Obra",
+  "inicio": 23.86,
+  "fim": 24.02
+ },
+ {
+  "palavra": "de",
+  "inicio": 24.1,
+  "fim": 24.18
+ },
+ {
+  "palavra": "arte",
+  "inicio": 24.26,
+  "fim": 24.5
+ },
+ {
+  "palavra": "igual",
+  "inicio": 24.58,
+  "fim": 24.74
+ },
+ {
+  "palavra": "você,",
+  "inicio": 24.82,
+  "fim": 25.3
+ },
+ {
+  "palavra": "inscrito;",
+  "inicio": 25.38,
+  "fim": 26.02
+ },
+ {
+  "palavra": "se",
+  "inicio": 26.06,
+  "fim": 26.1
+ },
+ {
+  "palavra": "não",
+  "inicio": 26.18,
+  "fim": 26.26
+ },
+ {
+  "palavra": "é,",
+  "inicio": 26.34,
+  "fim": 26.66
+ },
+ {
+  "palavra": "se",
+  "inicio": 26.7,
+  "fim": 26.74
+ },
+ {
+  "palavra": "inscreve,",
+  "inicio": 26.83,
+  "fim": 27.43
+ },
+ {
+  "palavra": "porque",
+  "inicio": 27.52,
+  "fim": 28.12
+ }
+]

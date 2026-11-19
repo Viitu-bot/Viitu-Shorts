@@ -1,0 +1,318 @@
+{
+ "_versao": "v1: processo (bruto cronológico), roteiro aprovado 19/11",
+ "formato": "processo",
+ "bruto_cronologico": "tt_avtcartoon_7332765991107169578.mp4",
+ "impacto_em": [
+  "já estava lá dentro"
+ ],
+ "destaques": [
+  "cor",
+  "gude",
+  "pintada",
+  "quebrado",
+  "mil",
+  "graus",
+  "colorido",
+  "forno",
+  "fio",
+  "meio",
+  "lâmina",
+  "gota",
+  "rolos",
+  "espiral",
+  "esfera",
+  "nunca",
+  "dentro",
+  "arte",
+  "inscreve"
+ ],
+ "musica": "phonk_processo.mp3",
+ "cta": {
+  "em": "se inscreve",
+  "texto": "SE INSCREVE"
+ },
+ "creditos_descricao": "Imagens: @avtcartoon (TikTok). Animação 3D: Viitu Shorts.",
+ "cenas": [
+  {
+   "em": "A cor",
+   "clipe": "tt_avtcartoon_7300819634553474347.mp4",
+   "inicio": 128.5,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "GANCHO",
+   "_funcao": "bolinhas vermelhas prontas no balde: a cor (resultado final)",
+   "seta": [
+    540,
+    1300,
+    170
+   ],
+   "baixa_res_ok": "718 px de largura, vertical nativo: 718 úteis (R4 pede 600)"
+  },
+  {
+   "em": "entra antes",
+   "clipe": "tt_avtcartoon_7332765991107169578.mp4",
+   "inicio": 0.0,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "GANCHO",
+   "_funcao": "a gota em brasa caindo nos rolos: antes da bola existir",
+   "sfx_cena": [
+    {
+     "em": "entra",
+     "arquivo": "assets/sfx/gen_glass_marbles_rolling_on_spinning_metal_rollers_ra.mp3",
+     "db": -6,
+     "dur": 2.0,
+     "no_clipe": 0.2
+    }
+   ]
+  },
+  {
+   "em": "Parece pintada",
+   "clipe": "tt_avtcartoon_7300819634553474347.mp4",
+   "inicio": 171.0,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "INÍCIO",
+   "_funcao": "bolinhas coloridas de perto: parece pintura",
+   "baixa_res_ok": "718 px de largura, vertical nativo"
+  },
+  {
+   "em": "mas ela nasce",
+   "clipe": "tt_avtcartoon_7332765991107169578.mp4",
+   "inicio": 13.9,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "INÍCIO",
+   "_funcao": "vidro quebrado na bacia (reciclado)"
+  },
+  {
+   "em": "derretido",
+   "clipe": "tt_avtcartoon_7332765991107169578.mp4",
+   "inicio": 30.5,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "INÍCIO",
+   "_funcao": "a porta do forno abre e aparece o fogo (câmera lenta): mais de mil graus",
+   "velocidade": 0.56
+  },
+  {
+   "em": "O vidro colorido",
+   "clipe": "tt_avtcartoon_7332765991107169578.mp4",
+   "inicio": 44.0,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "MEIO",
+   "_funcao": "pedaços de vidro AMARELO"
+  },
+  {
+   "em": "derrete num forno",
+   "clipe": "tt_avtcartoon_7332765991107169578.mp4",
+   "inicio": 69.6,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "MEIO",
+   "_funcao": "o forno pequeno à parte com o vidro amarelo"
+  },
+  {
+   "em": "e entra como",
+   "clipe": "tt_avtcartoon_7332765991107169578.mp4",
+   "inicio": 0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "animacao": {
+    "nome": "gude3d",
+    "fase": "completo",
+    "eventos": {
+     "fio": "fio",
+     "meio": "transparente",
+     "corta": "corta",
+     "dentro": "gota"
+    },
+    "sfx": [
+     {
+      "busca": "wind gust whoosh",
+      "db": -6,
+      "dur": 1.0
+     },
+     {
+      "evento": "fio",
+      "arquivo": "assets/sfx/gen_molten_glass_pouring_thick_glowing_liquid_sizzling.mp3",
+      "db": -5,
+      "dur": 1.6
+     },
+     {
+      "evento": "meio",
+      "arquivo": "assets/sfx/gen_molten_glass_pouring_thick_glowing_liquid_sizzling.mp3",
+      "db": -9,
+      "dur": 1.2
+     },
+     {
+      "evento": "corta",
+      "arquivo": "assets/sfx/gen_metal_shears_snipping_hot_glass_sharp_cut.mp3",
+      "db": -3,
+      "dur": 0.8
+     },
+     {
+      "evento": "dentro",
+      "arquivo": "assets/sfx/gen_single_glass_marble_clink.mp3",
+      "db": -4,
+      "dur": 0.6
+     }
+    ]
+   },
+   "_funcao": "3D: o fio amarelo do forno à parte entra no MEIO do filete; a lâmina corta a gota; a gota abre e mostra a cor dentro"
+  },
+  {
+   "em": "e dois rolos",
+   "clipe": "tt_avtcartoon_7332765991107169578.mp4",
+   "inicio": 112.5,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "MEIO",
+   "_funcao": "o filete descendo nos dois rolos em espiral"
+  },
+  {
+   "em": "giram ela",
+   "clipe": "tt_avtcartoon_7332765991107169578.mp4",
+   "inicio": 117.4,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "MEIO",
+   "_funcao": "as gotas em brasa girando nos rolos (tomada que prende)",
+   "sfx_cena": [
+    {
+     "em": "giram",
+     "arquivo": "assets/sfx/gen_glass_marbles_rolling_on_spinning_metal_rollers_ra.mp3",
+     "db": -7,
+     "dur": 2.0,
+     "no_clipe": 117.5
+    }
+   ]
+  },
+  {
+   "em": "enquanto esfria",
+   "clipe": "tt_avtcartoon_7332765991107169578.mp4",
+   "inicio": 128.5,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "MEIO",
+   "_funcao": "as bolinhas descendo a calha, esfriando"
+  },
+  {
+   "em": "Por isso",
+   "clipe": "tt_avtcartoon_7332765991107169578.mp4",
+   "inicio": 146.5,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "FINAL",
+   "_funcao": "balde de bolinhas vermelhas de perto: a cor não sai"
+  },
+  {
+   "em": "ela já estava",
+   "clipe": "tt_avtcartoon_7332765991107169578.mp4",
+   "inicio": 148.8,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "FINAL",
+   "_funcao": "bolinhas douradas no balde: a cor lá dentro"
+  },
+  {
+   "em": "Obra de arte",
+   "clipe": "tt_avtcartoon_7332765991107169578.mp4",
+   "inicio": 171.0,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "CTA",
+   "_funcao": "bolinhas verdes despejadas: obra de arte",
+   "sfx_cena": [
+    {
+     "em": "Obra",
+     "arquivo": "assets/sfx/gen_many_glass_marbles_pouring_into_a_metal_bucket.mp3",
+     "db": -6,
+     "dur": 1.8,
+     "no_clipe": 171.3
+    }
+   ]
+  },
+  {
+   "em": "se inscreve",
+   "clipe": "tt_avtcartoon_7332765991107169578.mp4",
+   "inicio": 175.0,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "CTA",
+   "_funcao": "mão nas bolinhas + botão"
+  },
+  {
+   "em": "porque",
+   "clipe": "tt_avtcartoon_7300819634553474347.mp4",
+   "inicio": 128.5,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "_parte": "LOOP",
+   "_funcao": "mesmo quadro do gancho",
+   "baixa_res_ok": "718 px de largura, vertical nativo"
+  }
+ ]
+}
