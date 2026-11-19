@@ -154,7 +154,7 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
     din = L["ding"][:n]
     fx += L["marcas"][:n] * pico_para(L["marcas"][:n], -6)
     din = din * pico_para(din, 0)
-    fx += L["virada"][:n] * pico_para(L["virada"][:n], -2)
+    fx += L["virada"][:n] * pico_para(L["virada"][:n], -0.5)       # o boom da virada tem que bater
     st = pasta / "saida" / "stems"
     st.mkdir(parents=True, exist_ok=True)
     for nome, x in (("voz", voz), ("leito", leito), ("efeitos", fx), ("ding", din)):
