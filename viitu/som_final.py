@@ -103,10 +103,47 @@ def montar(projeto: str) -> dict:
     n = int(plano["duracao_frames"] / mx.FPS * SR)
     voz = voz[:n]
     vac = _vacuo(plano, n)
-    AMB = 2.0                                           # ambiência/foley +6 dB (ouvido: "ambiência tímida")
-    leito = (L["musica"][:n] + AMB * (L["foley"][:n] + L["ambiente"][:n])) * vac
-    BOOM = 2.2                                          # riser/boom da virada +7 dB: o "ponto de exclamação" precisa bater
-    fx = L["whoosh"][:n] + L["sfx"][:n] + L["marcas"][:n] + BOOM * L["virada"][:n]
+    # AUTONIVELAMENTO (vd010, 18/11): cada trilha/efeito da biblioteca tem um volume; nível fixo enterrava a música de um
+    # vídeo e deixava a explosão 12 dB acima da voz no outro. Aqui tudo é medido contra a VOZ e levado ao alvo.
+    rms = lambda x: float(np.sqrt(np.mean(x.astype(np.float64) ** 2)) + 1e-9)
+    win = int(SR * 0.1)
+    def env(x):                                         # nível por janela de 0,1 s
+        m = len(x) // win
+        return np.sqrt(np.mean(x[: m * win].reshape(m, win).astype(np.float64) ** 2, axis=1) + 1e-12)
+    ev = env(voz)
+    vref = float(np.median(ev[ev > np.percentile(ev, 40)]))                 # nível típico da fala
+    fala_m = np.repeat(ev > vref * 0.3, win)[:n]
+    fala_m = np.pad(fala_m, (0, n - len(fala_m)))
+    def para(x, alvo_db, mascara=None):                 # ganho para o nível (onde há som) ficar alvo_db sob a voz
+        sel = x if mascara is None else x[mascara]
+        sel = sel[np.abs(sel) > 1e-5]
+        return 0.0 if len(sel) == 0 else vref * 10 ** (alvo_db / 20) / rms(sel)
+    mus = L["musica"][:n] * para(L["musica"][:n], -11, fala_m)               # trilha −11 antes do sidechain (~−15 depois)
+    amb = L["foley"][:n] + L["ambiente"][:n]
+    amb = amb * para(amb, -15, fala_m)                                         # ambiência presente, abaixo da música
+    leito = (mus + amb) * vac
+    # efeitos curtos: cada evento normalizado pelo PICO de 0,1 s → −6 dB da voz (claro, sem passar por cima);
+    # a virada (riser/boom) até o nível da voz
+    spf = SR / mx.FPS
+    fx = np.zeros(n, np.float32)
+    for e in plano.get("sfx", []):
+        a0 = int(e["f"] * spf)
+        if a0 >= n:
+            continue
+        seg = np.zeros(n, np.float32)
+        sr_ant, mx.SR = mx.SR, SR
+        try:
+            mx._por(mx._ler(mx.PUB / e["som"]), seg, a0, int(e.get("dur", 60) * spf))
+        finally:
+            mx.SR = sr_ant
+        pico = env(seg[a0:a0 + int(e.get("dur", 60) * spf)]).max() if seg.any() else 0
+        if pico > 0:
+            fx += seg * (vref * 10 ** (-6 / 20) / pico)
+    def pico_para(x, alvo_db):
+        p = env(x).max() if np.abs(x).max() > 1e-5 else 0
+        return 0.0 if p == 0 else vref * 10 ** (alvo_db / 20) / p
+    fx += L["whoosh"][:n] * pico_para(L["whoosh"][:n], -8) + L["marcas"][:n] * pico_para(L["marcas"][:n], -6)
+    fx += L["virada"][:n] * pico_para(L["virada"][:n], -2)
     st = pasta / "saida" / "stems"
     st.mkdir(parents=True, exist_ok=True)
     for nome, x in (("voz", voz), ("leito", leito), ("efeitos", fx)):
@@ -118,7 +155,7 @@ def montar(projeto: str) -> dict:
         # leito: sidechain real pela voz — abaixa ~10 dB quando a voz fala, sobe nas pausas (soltura 250 ms: sem bombear)
         "[1:a][vk1]sidechaincompress=threshold=0.05:ratio=4:attack=15:release=250:knee=4[l];"
         # efeitos curtos: só encostam (ratio baixo), continuam claros
-        "[2:a][vk2]sidechaincompress=threshold=0.08:ratio=2:attack=5:release=150[f];"
+        "[2:a][vk2]sidechaincompress=threshold=0.05:ratio=3:attack=5:release=150[f];"
         "[l]asplit=2[l1][l2];[f]asplit=2[f1][f2];[v]asplit=2[v1][v2];"
         "[v1][l1][f1]amix=inputs=3:normalize=0,alimiter=limit=0.89:level=false,"
         "loudnorm=I=-14:TP=-1.5:LRA=9,aresample=48000[out]"

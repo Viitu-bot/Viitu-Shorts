@@ -84,8 +84,8 @@
   },
   {
    "em": "No Abrams americano",
-   "clipe": "tt_key4kt_7607650082661469470.mp4",
-   "inicio": 0.3,
+   "clipe": "tt_tankersofficial_7495114660790766890.mp4",
+   "inicio": 0.5,
    "som_original": false,
    "revisao": "manual",
    "sfx_cena": [
@@ -101,11 +101,12 @@
     1.12
    ],
    "foley": "motor",
-   "_funcao": "real: os projéteis no compartimento atrás da torre"
+   "_funcao": "real: dentro da torre do Abrams (onde a munição é carregada)",
+   "manter": true
   },
   {
    "em": "separada da tripulação",
-   "clipe": "tt_key4kt_7607650082661469470.mp4",
+   "clipe": "tt_tankersofficial_7495114660790766890.mp4",
    "inicio": 0.3,
    "manter": true,
    "revisao": "manual",
@@ -170,8 +171,8 @@
   },
   {
    "em": "mas a tripulação",
-   "clipe": "tt_tankersofficial_7138635050261712174.mp4",
-   "inicio": 33.4,
+   "clipe": "tt_key4kt_7607650082661469470.mp4",
+   "inicio": 45.3,
    "som_original": false,
    "revisao": "manual",
    "sfx_cena": [
@@ -187,7 +188,7 @@
     1.12
    ],
    "foley": "motor",
-   "_funcao": "virada: a tripulação real dentro da torre"
+   "_funcao": "virada: tanquista real dentro da torre"
   },
   {
    "em": "e é por isso",
@@ -204,12 +205,12 @@
     }
    ],
    "zoom": [
-    2.0,
-    2.05
+    2.1,
+    2.15
    ],
    "alvo": [
-    0.55,
-    0.25
+    0.7,
+    0.28
    ],
    "foley": "motor",
    "_funcao": "fecho: Abrams passando (público ao fundo)"

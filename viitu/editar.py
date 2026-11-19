@@ -704,15 +704,22 @@ def _sons_da_cena(segs: list[dict], palavras: list[dict], pub: Path) -> list[dic
     from viitu.mix import normalizar
     from viitu.foley import _som_sonniss
     out = []
+    vistos = set()                  # cena longa dividida em vários cortes repetia o efeito (vd010: +6 dB em 4 cenas)
     for s in segs:
+        i0 = next((i for i, p in enumerate(palavras) if p["inicio"] >= s.get("t0", 0) - 0.05), 0)
         for k, e in enumerate(s.get("sfx_cena", [])):
+            chave = (e["em"], e.get("busca") or e.get("arquivo"), s.get("em"))
+            if chave in vistos:
+                continue
+            vistos.add(chave)
             if not e.get("arquivo"):                     # "busca": som em inglês → biblioteca Sonniss (CLAP escolhe)
                 arq = _som_sonniss(e["busca"], e.get("min", 0.5), e.get("exigir"))
                 if not arq:
                     print(f"  ⚠️ som de cena não achado: {e['busca']}")
                     continue
                 e = {**e, "arquivo": str(Path(arq).relative_to(RAIZ)) if str(arq).startswith(str(RAIZ)) else arq}
-            f = round(palavras[achar_palavra(palavras, e["em"], 0)]["inicio"] * FPS) + int(e.get("desloc", 0) * FPS)
+            # a palavra é procurada a partir do começo DESTA cena (vd010: "tripulação" caía na 1ª ocorrência do vídeo)
+            f = round(palavras[achar_palavra(palavras, e["em"], i0)]["inicio"] * FPS) + int(e.get("desloc", 0) * FPS)
             nome = f"cena_sfx_{s['f0']}_{k}.mp3"
             dur = e.get("dur", 3)
             corte = pub / f"_tmpc_{k}.mp3"
