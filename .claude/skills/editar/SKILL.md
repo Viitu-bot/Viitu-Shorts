@@ -28,7 +28,13 @@ aval do dono). Não renderizar planta reprovada.
    inteira (começo→fim, nada pulado entre duas cenas)? cada som tem `"no_clipe"` = o segundo do clipe em que a ação
    acontece (prancha fina de 0,1 s), e não a palavra? Errou → corrige o cenas.json e
    gera de novo. A entrega reprova se a decupagem não existir ou for mais velha que o cenas.json.
-5. `python3 -m viitu.editar <p> --remotion` → `cd remotion && npm run render` →
+5. **PARTE POR PARTE (dono, 20/11):** `python3 -m viitu.editar <p> --remotion` → `python3 -m viitu.partes <p> GANCHO`
+   (~20 s, baixa resolução, com voz e efeitos) → o Claude ABRE `saida/partes/1_GANCHO.jpg` (0,2 em 0,2 s, palavra
+   falada, corte em vermelho, SOM no instante) e confere: imagem = palavra? ação inteira? som na ação? nada repetido?
+   Errou → corrige o cenas.json → `editar` → `partes <p> GANCHO` de novo. Só passa para INÍCIO, MEIO, FINAL, CTA e LOOP
+   com a anterior certa. Tomada curta que a triagem não lista e foi olhada quadro a quadro: `"trecho_conferido": "<motivo>"`.
+   A entrega reprova se alguma parte faltar ou for mais velha que o cenas.json.
+6. Render completo: `cd remotion && npm run render` →
    `cp out/short_remotion.mp4 out/<p>.mp4`. Antes do render completo, confira quadros soltos de animações novas
    (`npx remotion still src/index.ts Short <arq>.png --frame=N --scale=0.3`).
 

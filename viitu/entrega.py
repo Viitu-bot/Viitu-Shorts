@@ -56,6 +56,15 @@ def entregar(projeto: str) -> bool:
     res["decupagem"] = dec.exists() and dec.stat().st_mtime >= cen.stat().st_mtime
     print(("✅" if res["decupagem"] else "❌"), "0b. Decupagem conferida antes do render"
           + ("" if res["decupagem"] else f" — rode: python3 -m viitu.decupagem {projeto} e CONFIRA a folha"))
+    # PARTE POR PARTE (dono, 20/11): cada parte do roteiro renderizada e conferida antes do render completo
+    from viitu.partes import _partes
+    cfg_e = json.loads(cen.read_text(encoding="utf-8"))
+    esperadas = [f"{n}_{nome}.jpg" for n, (nome, *_r) in enumerate(_partes(pasta, cfg_e["cenas"]), 1)]
+    dir_p = pasta / "saida" / "partes"
+    faltam_p = [e for e in esperadas if not (dir_p / e).exists() or (dir_p / e).stat().st_mtime < cen.stat().st_mtime]
+    res["partes"] = not faltam_p
+    print(("✅" if not faltam_p else "❌"), "0c. Partes conferidas uma a uma (viitu.partes)"
+          + (f" — faltam/antigas: {faltam_p}" if faltam_p else ""))
     from viitu.montagem import checar
     erros, avisos = checar(projeto)
     res["montagem"] = not erros

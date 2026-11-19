@@ -453,6 +453,10 @@ def renderizar_cena(s: dict, pasta: Path, idx: int) -> Path:
                 dentro = [(a, b) for a, b in tr if b > ini0 and a < ini0 + uso]
                 lacunas = [b2[0] - b1[1] for b1, b2 in zip(dentro, dentro[1:])]
                 cabe = bool(dentro) and dentro[0][0] <= ini0 + 0.3 and dentro[-1][1] + 0.3 >= ini0 + uso and all(g <= 0.6 for g in lacunas)
+            if t and not cabe and s.get("trecho_conferido"):
+                # tomada curta que a triagem não lista, mas que o Claude OLHOU quadro a quadro (motivo escrito)
+                print(f"  👁 cena '{s['em']}': trecho conferido à mão — {s['trecho_conferido']}")
+                cabe = True
             if t and not cabe:
                 # SEM ESCOLHA AUTOMÁTICA (vd011, 19/11): antes a cena era MOVIDA em silêncio para outro trecho (o gancho
                 # virou o operário). Agora para e mostra as opções para o Claude decidir conferindo a imagem.
@@ -883,7 +887,9 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
                        "eventos": {k: round(palavras[achar_palavra(palavras, w, s["palavra_i"])]["inicio"] * FPS) - s["f0"]
                                    for k, w in s["animacao"].get("eventos", {}).items()}}
                       for s in segs if s.get("animacao")],
+        # o botão some ANTES do loop (vd011: o botão ficava sobre o último quadro e quebrava a emenda com o frame 0)
         "cta": (lambda c: {"f0": round(palavras[achar_palavra(palavras, c["em"], 0)]["inicio"] * FPS),
+                           "f1": segs[-1]["f0"] if cfg.get("loop", True) and len(segs) > 1 else None,
                            "texto": c.get("texto", "💬 COMENTA")} if isinstance(c, dict)
                 else ({"f0": segs[-1]["f0"] + 6, "texto": "INSCREVA-SE"} if c else None))(cfg.get("cta", False)),   # canais: sem CTA explícito na maioria
     }

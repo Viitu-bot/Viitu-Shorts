@@ -29,7 +29,7 @@ export type Plano = {
   fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
   cortes: number[]; impactos: number[]; duck?: number[]; duck_fx?: number[]; duck_assado?: boolean; foley?: {f0: number; f1: number; som: string; vol: number}[]; foley_mix?: boolean;
   kit?: Record<string, string[]>; mix?: Record<string, number>; visual?: Record<string, number | boolean>; sfx?: {f: number; som: string; vol?: number; dur?: number}[];
-  animacoes?: {nome: string; fase: string; f0: number; f1: number; eventos: Record<string, number>}[]; cta: {f0: number; texto: string} | null;
+  animacoes?: {nome: string; fase: string; f0: number; f1: number; eventos: Record<string, number>}[]; cta: {f0: number; f1?: number | null; texto: string} | null;
   marcas_erro?: {f: number; tipo: string}[]; contadores?: {f0: number; f1: number; de: number; ate: number; prefixo: string; sufixo: string}[];
 };
 
@@ -348,7 +348,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
         <Sequence key={`ct${k}`} from={c.f0} durationInFrames={Math.max(c.f1 - c.f0, 30)}><Contador de={c.de} ate={c.ate} prefixo={c.prefixo} sufixo={c.sufixo} /></Sequence>
       ))}
       {plano.cta && (
-        <Sequence from={plano.cta.f0} durationInFrames={75}>
+        <Sequence from={plano.cta.f0} durationInFrames={Math.max(1, Math.min(75, (plano.cta.f1 ?? plano.cta.f0 + 75) - plano.cta.f0))}>
           <BotaoInscrever texto={plano.cta.texto} />
           <Audio src={staticFile('pop.mp3')} volume={M(plano,'pop')} />
           <Sequence from={14} durationInFrames={20}><Audio src={staticFile('clique.mp3')} volume={M(plano,'clique')} /></Sequence>

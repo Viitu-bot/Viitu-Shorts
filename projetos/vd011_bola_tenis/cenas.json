@@ -97,7 +97,7 @@
   {
    "em": "que ela é maciça",
    "clipe": "tt_smartestworkers_7522122396917189901.mp4",
-   "inicio": 13.1,
+   "inicio": 14.45,
    "som_original": false,
    "revisao": "manual",
    "zoom": [
@@ -109,7 +109,9 @@
     0.42
    ],
    "_parte": "INÍCIO",
-   "_funcao": "tomada 5: close das metades"
+   "_funcao": "metades OCAS caindo no cesto: desmente o 'maciça' (antes repetia o quadro do gancho)",
+   "velocidade": 0.85,
+   "trecho_conferido": "cesto de metades ocas 14,45–15,4 s, sem corte interno (prancha 0,5 s)"
   },
   {
    "em": "mas na verdade",
