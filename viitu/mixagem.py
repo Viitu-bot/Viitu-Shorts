@@ -65,7 +65,7 @@ def _camadas(plano: dict) -> tuple[np.ndarray, dict[str, np.ndarray]]:
         falando[fr(p["f0"] - 2):fr(p["f1"] + 2)] = True
     voz = np.zeros(n, np.float32)
     _por(_ler(PUB / "audio.m4a"), voz, 0, ganho=M("voz"))
-    L = {k: np.zeros(n, np.float32) for k in ("musica", "foley", "ambiente", "whoosh", "sfx", "virada", "marcas")}
+    L = {k: np.zeros(n, np.float32) for k in ("musica", "foley", "ambiente", "whoosh", "sfx", "virada", "marcas", "ding")}
     g_mus = np.where(falando, M("musica_fala"), M("musica_pausa")).astype(np.float32)
     ult = plano["palavras"][-1]["f1"] if plano["palavras"] else plano["duracao_frames"]
     fim = fr(max(plano["duracao_frames"] - 45, ult))           # igual ao Short.tsx
@@ -85,10 +85,6 @@ def _camadas(plano: dict) -> tuple[np.ndarray, dict[str, np.ndarray]]:
     le = lambda s: cache.setdefault(s, _ler(PUB / s))
     cortes = [c for i, c in enumerate(plano.get("cortes", [])) if c not in plano.get("impactos", []) and i < len(plano.get("cortes", [])) - 1]
     for k, c in enumerate(cortes):
-        # sem whoosh onde já entra um som de ação (avião passando, caça, metal): os dois juntos soam como whoosh em todo
-        # corte (ouvido 18/11). Assim fica ~metade dos cortes, como nos canais de referência.
-        if any(abs(e["f"] - c) <= 8 for e in plano.get("sfx", [])):
-            continue
         lst = kit.get("whoosh_corte") or WOOSHES
         _por(le(lst[k % len(lst)]), L["whoosh"], fr(c - 4), fr(24), M("whoosh"))
     for e in plano.get("sfx", []):
@@ -102,7 +98,7 @@ def _camadas(plano: dict) -> tuple[np.ndarray, dict[str, np.ndarray]]:
     for k, m in enumerate(plano.get("marcas", [])):
         po = kit.get("pop_marca") or ["pop.mp3"]
         _por(le(po[k % len(po)]), L["marcas"], fr(m["f0"]), fr(30), M("pop"))
-    _por(le("ding.mp3"), L["marcas"], 0, fr(30), M("ding"))
+    _por(le("ding.mp3"), L["ding"], 0, fr(30), M("ding"))          # identidade (BÍBLIA §2): camada própria
     return voz, L | {"_falando": falando.astype(np.float32)}
 
 

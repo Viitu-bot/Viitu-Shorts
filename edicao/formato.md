@@ -1,4 +1,4 @@
-# A PLANTA DO VÍDEO VIITU (formato oficial — 18/11/2026)
+# A PLANTA DO VÍDEO VIITU (formato técnico — obedece a edicao/BIBLIA.md)
 Um arquivo só que diz, batida por batida, o que o ROTEIRO fala, o que a IMAGEM mostra (B-roll ou 3D) e o que o SOM faz.
 Todas as skills seguem esta planta; as travas `viitu.montagem` e `viitu.entrega` cobram o que dá para medir.
 Base: HISA 2.0 do dono + engenharia reversa de A vida é uma maravilha, Zack D. Films, KSO, GeneralTV (logica_editor.md)
@@ -13,7 +13,7 @@ Base: HISA 2.0 do dono + engenharia reversa de A vida é uma maravilha, Zack D. 
 | **4. PROVA** | logo após o 3D, 1–3 s | ~6 | "e é assim de verdade": a mesma coisa do 3D acontecendo | **clipe real** do mecanismo explicado (fonte nova) | som de ação forte e sincronizado (clique, clunk, jato) |
 | **5. VIRADA / EUREKA** | ~75% do vídeo | ~12 | "Só que…" / "Mas…": o detalhe que ninguém sabe, a consequência, o novo fato | **clipe real impactante**; zoom blur + flash | riser → vácuo 0,3 s → boom; a MÚSICA CRESCE 2,5 s depois |
 | **6. LOOP** | últimos 1–2 s | ~5 | frase suspensa que emenda na 1ª palavra ("…e ninguém percebeu que" → "o antigo avião…") | **o mesmo quadro do frame 0** | música sobe para o loop; sem silêncio no fim |
-CTA: não é batida fixa. Só um elogio natural ao tema, quando couber, e nunca igual ao do vídeo anterior.
+**CTA INTERATIVO é OBRIGATÓRIO** (BÍBLIA §1): antes do loop, ligado a um acontecimento do vídeo, frase nunca repetida; botão SE INSCREVE na tela (`"cta": {"em": "se inscreve"}`).
 
 ## 2. Tiro Curto (12–15 s, 30–38 palavras) — curiosidade rápida, física bizarra, susto, gambiarra
 | Batida | Tempo | ROTEIRO | IMAGEM | SOM |
@@ -48,12 +48,12 @@ CTA: não é batida fixa. Só um elogio natural ao tema, quando couber, e nunca 
 ## 5. Som (camadas fixas — biblioteca_sons.md)
 | Camada | Nível sob a voz | Quando |
 |---|---|---|
-| Música da categoria (tabela da pesquisa: aviação = `synthwave_aviacao`, perigo = tensão, processo = phonk…) | −10 dB na fala, sobe nas pausas, cresce na virada e no fim | o vídeo todo, desde o frame 0 |
+| Música da categoria (tabela da pesquisa: aviação = `synthwave_aviacao`, perigo = tensão, processo = phonk…) | −10 a −12 dB na fala (audível no celular), sobe nas pausas, cresce na virada e no fim | o vídeo todo, desde o frame 0 |
 | Foley/ambiência contínua (o lugar) | −10 dB | toda cena, emenda em J/L |
 | Som de ação (`sfx_cena`) | −2 a −6 dB | o que aparece na tela, na palavra |
-| Whoosh | quase na voz | cortes (não em todos) |
+| Whoosh | quase na voz | na MAIORIA dos cortes (29/30 nos canais) |
 | Riser → vácuo → boom | alto | só na virada (1–2 por vídeo) |
-| Ding + flash | — | frame 0 (identidade) |
+| Ding + flash | DING no nível da voz, fora do abaixamento | frame 0 (identidade; medido na entrega) |
 Mixagem em 2 grupos (leito −10 dB / efeitos −3 dB). Nota do OUVIDO (Gemini) ≥ 8 na trava de entrega.
 
 ## 6. Ordem de produção (cada etapa confere a planta)

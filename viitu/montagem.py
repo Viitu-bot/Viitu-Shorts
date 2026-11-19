@@ -93,6 +93,20 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
     ultima = len(cenas) - 1
     loop_ok = cenas[ultima]["clipe"] == cenas[0]["clipe"]
 
+    # R0 roteiro em partes (BÍBLIA §1): [GANCHO] [INÍCIO] [MEIO] [FINAL] [CTA] e loop sem ponto final
+    rot = pasta / "roteiro.md"
+    if rot.exists():
+        txt = rot.read_text(encoding="utf-8")
+        faltam = [p for p in ("[GANCHO]", "[INÍCIO]", "[MEIO]", "[FINAL]", "[CTA]") if p not in txt]
+        if faltam:
+            erros.append(f"R0 ROTEIRO SEM AS PARTES DO DONO: faltam {faltam} (edicao/BIBLIA.md §1; CTA interativo é obrigatório).")
+        try:
+            voz_txt = txt.split("TEXTO FINAL PARA A VOZ")[1].split("##")[0].strip()
+            if voz_txt.rstrip().endswith("."):
+                erros.append("R0 LOOP: o texto da voz termina em ponto final; tem que fechar em conjunção suspensa.")
+        except IndexError:
+            pass
+
     # R1 repetição
     usos = defaultdict(list)
     for k, c in enumerate(cenas):

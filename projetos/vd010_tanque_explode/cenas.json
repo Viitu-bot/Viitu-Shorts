@@ -1,20 +1,26 @@
 {
- "_versao": "v1: planta oficial (formato.md) — gancho real, contexto real, real do compartimento, 3D em 1 bloco, prova real, tripulação, loop",
+ "_versao": "v2: roteiro nas partes do dono (BÍBLIA) + CTA interativo; ding audível; música −11 dB; whoosh nos cortes",
  "impacto_em": [
-  "mas a tripulação"
+  "e a tripulação"
  ],
  "destaques": [
   "explodir",
+  "tanque",
   "munição",
   "torre",
   "Abrams",
   "porta",
   "propósito",
   "cima",
-  "viva"
+  "viva",
+  "você",
+  "inscreve"
  ],
  "musica": "tensao_documentario.mp3",
- "cta": false,
+ "cta": {
+  "em": "se inscreve",
+  "texto": "SE INSCREVE"
+ },
  "cenas": [
   {
    "em": "Esse tanque",
@@ -22,57 +28,73 @@
    "inicio": 14.0,
    "som_original": false,
    "revisao": "manual",
-   "sfx_cena": [
-    {
-     "em": "Esse tanque",
-     "busca": "heavy tracked vehicle driving tank engine",
-     "db": -3,
-     "dur": 1.8
-    }
-   ],
    "zoom": [
     1.05,
     1.15
    ],
    "foley": "motor",
-   "_funcao": "gancho: Abrams real andando (visão da escotilha, canhão à frente)"
-  },
-  {
-   "em": "Quando a munição",
-   "clipe": "x_ralee85_1586330060180848640.mp4",
-   "inicio": 0.4,
-   "som_original": false,
-   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "Abrams real andando, 1 sujeito",
    "sfx_cena": [
     {
-     "em": "Quando",
-     "busca": "large explosion distant",
+     "em": "Esse tanque",
+     "busca": "heavy tracked vehicle driving tank engine",
+     "db": -3,
+     "dur": 2.0
+    }
+   ]
+  },
+  {
+   "em": "A maioria acha",
+   "clipe": "tt_tankersofficial_7495114660790766890.mp4",
+   "inicio": 0.5,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.05,
+    1.12
+   ],
+   "foley": "motor",
+   "_parte": "INÍCIO",
+   "_funcao": "dentro da torre: o canhão dispara (\"aguentar tudo\")",
+   "sfx_cena": [
+    {
+     "em": "aguentar",
+     "busca": "tank cannon firing close",
      "db": -3,
      "dur": 1.5
     }
-   ],
+   ]
+  },
+  {
+   "em": "mas se a munição",
+   "clipe": "x_osinttechnical_2090801951445303443.mp4",
+   "inicio": 15.0,
+   "som_original": false,
+   "revisao": "manual",
    "layout": "inteiro",
    "zoom": [
     1.0,
     1.08
    ],
    "foley": "motor",
-   "_funcao": "contexto: munição pegando fogo (drone, sem vítimas visíveis)"
+   "_parte": "INÍCIO",
+   "_funcao": "munição pegando fogo num Abrams real",
+   "sfx_cena": [
+    {
+     "em": "munição",
+     "busca": "large explosion distant",
+     "db": -3,
+     "dur": 1.5
+    }
+   ]
   },
   {
-   "em": "a explosão pode",
+   "em": "a torre voa",
    "clipe": "x_osinttechnical_1842851539091689603.mp4",
    "inicio": 0.3,
    "som_original": false,
    "revisao": "manual",
-   "sfx_cena": [
-    {
-     "em": "arrancar",
-     "busca": "big explosion debris metal",
-     "db": -3,
-     "dur": 2.0
-    }
-   ],
    "layout": "inteiro",
    "zoom": [
     1.0,
@@ -80,44 +102,32 @@
    ],
    "baixa_res_ok": "única tomada da torre voando (jack-in-the-box), longe, sem vítimas",
    "foley": "motor",
-   "_funcao": "a torre inteira voando"
-  },
-  {
-   "em": "No Abrams americano",
-   "clipe": "tt_tankersofficial_7495114660790766890.mp4",
-   "inicio": 0.5,
-   "som_original": false,
-   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "a torre voando longe",
    "sfx_cena": [
     {
-     "em": "Abrams",
-     "busca": "metal latch clunk",
-     "db": -5,
-     "dur": 1.2
+     "em": "torre",
+     "busca": "big explosion debris metal",
+     "db": -3,
+     "dur": 1.6
     }
-   ],
-   "zoom": [
-    1.05,
-    1.12
-   ],
-   "foley": "motor",
-   "_funcao": "real: dentro da torre do Abrams (onde a munição é carregada)",
-   "manter": true
+   ]
   },
   {
-   "em": "separada da tripulação",
+   "em": "No Abrams",
    "clipe": "tt_key4kt_7607650082661469470.mp4",
    "inicio": 0.3,
    "manter": true,
    "revisao": "manual",
    "foley": "motor",
+   "_parte": "MEIO + FINAL",
    "animacao": {
     "nome": "abrams3d",
     "fase": "completo",
     "eventos": {
      "porta": "porta blindada",
      "teto": "teto ali",
-     "explode": "explode"
+     "explode": "estoura"
     },
     "sfx": [
      {
@@ -145,36 +155,21 @@
      }
     ]
    },
-   "_funcao": "EXPLICAÇÃO 3D (1 bloco): raio-X → porta fecha → teto fraco pulsa → explode → fogo para cima, tripulação verde"
+   "_funcao": "3D em 1 bloco: raio-X → munição atrás da torre → porta fecha → teto pulsa → estoura → fogo pra cima"
   },
   {
-   "em": "O tanque se perde",
-   "clipe": "x_osinttechnical_2090801951445303443.mp4",
-   "inicio": 16.2,
-   "som_original": false,
-   "revisao": "manual",
-   "sfx_cena": [
-    {
-     "em": "O tanque",
-     "busca": "fire roaring flames burning",
-     "db": -3,
-     "dur": 1.4
-    }
-   ],
-   "layout": "inteiro",
-   "zoom": [
-    1.05,
-    1.15
-   ],
-   "foley": "motor",
-   "_funcao": "PROVA real: Abrams saudita queimando depois da detonação (painéis traseiros abriram, segundo a análise OSINT)"
-  },
-  {
-   "em": "mas a tripulação",
+   "em": "e a tripulação",
    "clipe": "tt_key4kt_7607650082661469470.mp4",
    "inicio": 45.3,
    "som_original": false,
    "revisao": "manual",
+   "zoom": [
+    1.05,
+    1.12
+   ],
+   "foley": "motor",
+   "_parte": "FINAL",
+   "_funcao": "eureka: tanquista real dentro da torre",
    "sfx_cena": [
     {
      "em": "tripulação",
@@ -182,16 +177,39 @@
      "db": -8,
      "dur": 1.8
     }
-   ],
+   ]
+  },
+  {
+   "em": "Sobrevivente",
+   "clipe": "tt_eltiosam_7471841403832651013.mp4",
+   "inicio": 0.2,
+   "som_original": false,
+   "revisao": "manual",
    "zoom": [
     1.05,
     1.12
    ],
    "foley": "motor",
-   "_funcao": "virada: tanquista real dentro da torre"
+   "_parte": "CTA",
+   "_funcao": "CTA: o elogio nasce do acontecimento (sobreviveu)",
+   "baixa_res_ok": "Abrams de frente, nítido (576p, 192 de nitidez): único close frontal do tanque inteiro"
   },
   {
-   "em": "que",
+   "em": "se ainda não",
+   "clipe": "tt_tankersofficial_7495114660790766890.mp4",
+   "inicio": 3.0,
+   "som_original": false,
+   "revisao": "manual",
+   "zoom": [
+    1.1,
+    1.2
+   ],
+   "foley": "motor",
+   "_parte": "CTA",
+   "_funcao": "CTA: botão SE INSCREVE na tela"
+  },
+  {
+   "em": "porque",
    "clipe": "tt_key4kt_7607650082661469470.mp4",
    "inicio": 14.0,
    "som_original": false,
@@ -201,8 +219,9 @@
     1.05
    ],
    "foley": "motor",
-   "_funcao": "loop"
+   "_parte": "LOOP",
+   "_funcao": "loop: mesmo quadro do gancho"
   }
  ],
- "creditos_descricao": "Imagens: @key4kt_ e @tankersofficial (TikTok); @RALee85 e @Osinttechnical (X). Modelo 3D: M1A1 Abrams (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts."
+ "creditos_descricao": "Imagens: @key4kt_, @tankersofficial e @el_tio_sam04 (TikTok); @Osinttechnical (X). Modelo 3D: M1A1 Abrams (MirzaArrafiERV_45), Sketchfab, CC BY 4.0. Animação: Viitu Shorts."
 }

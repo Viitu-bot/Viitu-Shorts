@@ -5,7 +5,7 @@ description: Pesquisa e recomenda 3 temas de vídeo para o Viitu Shorts com núm
 
 # /tema <dia>
 
-> **Planta oficial:** `edicao/formato.md` (batidas, tempos, B-roll, quando usar 3D, som). Siga-a.
+> **Regras do dono:** `edicao/BIBLIA.md` (manda em tudo; não alterar sem autorização) · planta técnica: `edicao/formato.md`.
 
 > Tema bom também precisa de IMAGEM: antes de recomendar, confira que existem ≥ 7 fontes reais prováveis
 > (busca web TikTok/X/Instagram, contas oficiais) e que o fato ainda vale hoje. Ver `edicao/reclamacoes.md`.

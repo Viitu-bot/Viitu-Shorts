@@ -7,7 +7,7 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 - **Tutorial:** um passo por vez, sem dar várias opções. Decida e explique o porquê em uma linha.
 - Passos manuais do dono: numerados, curtos, com links diretos.
 - Antes de entregar qualquer coisa, confira você mesmo (prancha, revisão). Nunca entregue sem olhar.
-- **Toda etapa segue `edicao/formato.md` (a planta) e começa por `edicao/reclamacoes.md`** (o que o dono já reprovou). As travas `viitu.montagem` (antes do
+- **Toda etapa segue `edicao/BIBLIA.md` (regras do dono, NUNCA alterar sem ele autorizar), `edicao/formato.md` e começa por `edicao/reclamacoes.md`** (o que o dono já reprovou). As travas `viitu.montagem` (antes do
   render) e `viitu.entrega` (antes de mandar) são obrigatórias em TODO vídeo.
 - Técnica nova aprendida (referência, pedido do dono) vai para o lugar certo do mapa abaixo, não para cá.
 
@@ -36,7 +36,7 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
   **re-hook aos 6 s**) ou **Bastidor** 20–28 s (50–65 palavras; engenharia, processo industrial, máquina, trabalho
   manual: risco/problema → macete técnico → "momento eureka").
 - **Estrutura:** gancho ≤ 3 s quebrando a expectativa → **ouro parcelado** (a explicação vem aos poucos enquanto a ação
-  acontece) → eureka/virada → CTA-elogio (se couber) → **loop**: nunca termina em ponto final; fecha com conjunção
+  acontece) → eureka/virada → **CTA interativo (obrigatório, ligado a um acontecimento do vídeo)** → **loop**: nunca termina em ponto final; fecha com conjunção
   suspensa ("...vendo que", "...porque quando") que emenda na 1ª palavra.
 - **Áudio:** "ding" no 00:00; voz do Otto no máximo com silêncios cortados (auto-cut); som original de clipe LIVRE
   sobe no clímax (de terceiro fica desligado: Content ID).
@@ -49,7 +49,8 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 ## Mapa do conhecimento (onde cada coisa mora)
 | Assunto | Arquivo |
 |---|---|
-| **O FORMATO (planta: roteiro + B-roll + 3D + som, batida por batida)** | `edicao/formato.md` |
+| **BÍBLIA (regras do DONO — fonte única; o Claude não muda sem autorização)** | `edicao/BIBLIA.md` |
+| O FORMATO (planta técnica: B-roll, 3D, som por batida — obedece à BÍBLIA) | `edicao/formato.md` |
 | **Reclamações recorrentes do dono → regras + trava da montagem** | `edicao/reclamacoes.md` · `viitu/montagem.py` |
 | Volumes de som e regras visuais (valores fixos) | `edicao/especificacao.json` |
 | Qual efeito em qual momento/cena, engenharia reversa dos canais | `edicao/logica_editor.md` |

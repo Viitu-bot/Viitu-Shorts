@@ -308,7 +308,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       )}
 
       {/* efeitos sonoros: woosh variado em cada corte (começa um pouco antes) */}
-      {plano.cortes.filter((c, i) => !plano.impactos.includes(c) && i < plano.cortes.length - 1).filter((c) => !(plano.sfx ?? []).some((e) => Math.abs(e.f - c) <= 8)).map((c, k) => (   /* sem whoosh onde já há som de ação */   /* sem whoosh na emenda do loop */
+      {plano.cortes.filter((c, i) => !plano.impactos.includes(c) && i < plano.cortes.length - 1).map((c, k) => (   /* whoosh na maioria dos cortes (BÍBLIA §3) */   /* sem whoosh na emenda do loop */
         <Sequence key={k} from={Math.max(c - 4, 0)} durationInFrames={24}>
           <Audio src={staticFile(plano.kit?.whoosh_corte ? plano.kit.whoosh_corte[k % plano.kit.whoosh_corte.length] : WOOSHES[k % WOOSHES.length])} volume={(x) => Q(M(plano,'whoosh') * DF(plano, Math.max(c - 4, 0) + x))} />
         </Sequence>

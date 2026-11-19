@@ -6,10 +6,18 @@ afirmação impossível.
 
 ## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs)
 Esse tanque foi projetado pra explodir.
-Quando a munição pega fogo, a explosão pode arrancar a torre inteira.
-No Abrams americano, ela fica atrás da torre, separada da tripulação por uma porta blindada.
-E o teto ali é fraco de propósito: se a munição explode, ele estoura e joga o fogo pra cima.
-O tanque se perde, mas a tripulação costuma sair viva, e é por isso que
+A maioria acha que tanque é feito pra aguentar tudo, mas se a munição pega fogo, a torre voa longe.
+No Abrams, ela fica atrás da torre, isolada por uma porta blindada, e o teto ali é fraco de propósito.
+Ele estoura, joga o fogo pra cima, e a tripulação costuma sair viva.
+Sobrevivente igual você, que chegou até o fim: se ainda não é inscrito, se inscreve, porque
+
+## Partes (BÍBLIA §1) — 75 palavras ≈ 28 s
+- [GANCHO] "Esse tanque foi projetado pra explodir." — afirmação impossível
+- [INÍCIO] "A maioria acha que tanque é feito pra aguentar tudo, mas se a munição pega fogo, a torre voa longe." — desmistificação
+- [MEIO] "No Abrams, ela fica atrás da torre, isolada por uma porta blindada, e o teto ali é fraco de propósito." — ouro parcelado (3D)
+- [FINAL] "Ele estoura, joga o fogo pra cima, e a tripulação costuma sair viva." — eureka
+- [CTA] "Sobrevivente igual você, que chegou até o fim: se ainda não é inscrito, se inscreve, porque" — interativo: o elogio nasce do acontecimento (a tripulação sobreviveu → você "sobreviveu" até o fim)
+- LOOP: "…se inscreve, porque" → "esse tanque foi projetado pra explodir"
 
 ## Planta (edicao/formato.md) — 66 palavras ≈ 25 s
 | Batida | Texto | Imagem | Som |

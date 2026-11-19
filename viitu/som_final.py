@@ -76,13 +76,16 @@ def medir(projeto: str, plano: dict) -> dict:
     picos = [float(F[max(t(e["f"]) - 1, 0):t(e["f"]) + 6].max() - vref) for e in plano.get("sfx", [])]
     acao_ok = sum(p >= -12 for p in picos)
     imp = [float(F[t(i):t(i) + 6].max() - vref) for i in plano.get("impactos", [])]
-    tapa = float(np.percentile((F - V)[fala], 98))                 # efeito acima da voz em plena fala
+    tapa = float(np.percentile((F - V)[fala], 98))
+    dg = _ler(st / "ding.wav") if (st / "ding.wav").exists() else np.zeros(1600, np.float32)
+    dpk = float(max(db(dg[i:i + w]) for i in range(0, 4 * w, w // 2)) - vref)                 # efeito acima da voz em plena fala
     r = {
-        "musica_sob_voz_db": (round(sob, 1), -20 <= sob <= -8),
+        "musica_sob_voz_db": (round(sob, 1), -14 <= sob <= -8),       # BÍBLIA §4: audível no celular
         "musica_respira_db": (round(respira, 1), respira >= 3 or pausa.sum() < 3),
         "efeitos_acao_audiveis": (f"{acao_ok}/{len(picos)}", not picos or acao_ok >= 0.7 * len(picos)),
         "impacto_virada_db": ([round(x, 1) for x in imp], all(x >= -6 for x in imp)),
         "efeito_sobre_voz_db": (round(tapa, 1), tapa <= 0),
+        "ding_frame0_db": (round(dpk, 1), dpk >= -3),                   # BÍBLIA §2: o ding tem que ser OUVIDO
     }
     print("SOM MEDIDO:")
     for k, (val, ok) in r.items():
@@ -122,7 +125,7 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
         sel = x if mascara is None else x[mascara]
         sel = sel[np.abs(sel) > 1e-5]
         return 0.0 if len(sel) == 0 else vref * 10 ** (alvo_db / 20) / rms(sel)
-    mus = L["musica"][:n] * para(L["musica"][:n], -11, fala_m)               # trilha −11 antes do sidechain (~−15 depois)
+    mus = L["musica"][:n] * para(L["musica"][:n], -5, fala_m)                # trilha −5 antes do sidechain (~−11 depois; BÍBLIA §4)
     amb = L["foley"][:n] + L["ambiente"][:n]
     amb = amb * para(amb, -15, fala_m)                                         # ambiência presente, abaixo da música
     leito = (mus + (0 if limpo else amb)) * vac
@@ -146,11 +149,15 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
     def pico_para(x, alvo_db):
         p = env(x).max() if np.abs(x).max() > 1e-5 else 0
         return 0.0 if p == 0 else vref * 10 ** (alvo_db / 20) / p
-    fx += L["whoosh"][:n] * pico_para(L["whoosh"][:n], -8) + L["marcas"][:n] * pico_para(L["marcas"][:n], -6)
+    fx += L["whoosh"][:n] * pico_para(L["whoosh"][:n], -8)
+    # DING do frame 0 = identidade (BÍBLIA §2): fora do abaixamento, no nível da voz. Os pops ficam nos efeitos.
+    din = L["ding"][:n]
+    fx += L["marcas"][:n] * pico_para(L["marcas"][:n], -6)
+    din = din * pico_para(din, 0)
     fx += L["virada"][:n] * pico_para(L["virada"][:n], -2)
     st = pasta / "saida" / "stems"
     st.mkdir(parents=True, exist_ok=True)
-    for nome, x in (("voz", voz), ("leito", leito), ("efeitos", fx)):
+    for nome, x in (("voz", voz), ("leito", leito), ("efeitos", fx), ("ding", din)):
         _wav(x, st / f"{nome}.wav")
 
     mix = st / "mix.wav"
@@ -161,11 +168,11 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
         # efeitos curtos: só encostam (ratio baixo), continuam claros
         "[2:a][vk2]sidechaincompress=threshold=0.05:ratio=3:attack=5:release=150[f];"
         "[l]asplit=2[l1][l2];[f]asplit=2[f1][f2];[v]asplit=2[v1][v2];"
-        "[v1][l1][f1]amix=inputs=3:normalize=0,alimiter=limit=0.89:level=false,"
+        "[v1][l1][f1][3:a]amix=inputs=4:normalize=0,alimiter=limit=0.89:level=false,"
         "loudnorm=I=-14:TP=-1.5:LRA=9,aresample=48000[out]"
     )
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(st / "voz.wav"), "-i", str(st / "leito.wav"),
-                    "-i", str(st / "efeitos.wav"), "-filter_complex", grafo, "-map", "[out]", "-c:a", "pcm_s16le",
+                    "-i", str(st / "efeitos.wav"), "-i", str(st / "ding.wav"), "-filter_complex", grafo, "-map", "[out]", "-c:a", "pcm_s16le",
                     str(mix), "-map", "[v2]", str(st / "voz_m.wav"), "-map", "[l2]", str(st / "leito_m.wav"),
                     "-map", "[f2]", str(st / "efeitos_m.wav")], check=True)
     medidas = medir(projeto, plano)
