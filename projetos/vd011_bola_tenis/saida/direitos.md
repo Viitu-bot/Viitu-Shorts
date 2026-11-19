@@ -3,7 +3,7 @@
 | status | elemento | origem |
 |---|---|---|
 | ✅ | Voz (narração) | ElevenLabs, plano Starter com licença comercial |
-| ✅ | Trilha: phonk_processo.mp3 | gerada no ElevenLabs Music (própria) |
+| ✅ | Trilha: Montagem - PR Funk (S3BZS) | fora do arquivo; adicionada pelo dono no app do YouTube (licenciada para Shorts) |
 | ✅ | Efeitos sonoros e foley | assets/sfx e assets/foley, gerados no ElevenLabs (próprios) |
 | ✅ | Sons profissionais (camadas de foley) | Sonniss GDC Game Audio Bundle: royalty-free, YouTube monetizado, sem crédito |
 | ✅ | Fonte da legenda | Anton, licença SIL Open Font License |
