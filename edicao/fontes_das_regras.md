@@ -57,6 +57,11 @@ Número novo só entra no projeto com a base escrita aqui.
 | Rodízio semanal de formatos | — | **H** | testar |
 | Mínimo de fontes por formato (7, 5, 4…) | — | **H** | aviso |
 
+## Ferramenta de medição (20/11)
+`rea-video decompose` (github.com/JuneYaooo/rea-video, Apache-2.0) mede tomadas, cortes, BPM, voz e instante dos
+efeitos de um vídeo de referência sem IA paga. Validado no vd013: 10/10 cortes exatos; efeitos 7/10 no instante (o
+rótulo do tipo erra). Medição de referência feita com ela pode virar regra **M** (escrever a amostra aqui).
+
 ## Plano de teste das hipóteses (com dados do SEU canal, não de opinião)
 1. Depois de cada vídeo postado: views em 48 h, % que não deslizou, retenção média (print do Studio ou vidIQ
    channel analytics) → `dados/desempenho.md`, junto com formato, duração, % de 3D e nota do radar.
