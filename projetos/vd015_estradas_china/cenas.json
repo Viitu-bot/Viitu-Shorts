@@ -66,11 +66,11 @@
   {
    "em": "passa a",
    "clipe": "tiktok_aljazeeraenglish_7555147460931341598.mp4",
-   "inicio": 30.0,
+   "inicio": 29.78,
    "som_original": false,
    "revisao": "manual",
    "_parte": "GANCHO",
-   "_funcao": "o wingsuit salta da ponte e cai no cânion: a altura",
+   "_funcao": "o wingsuit despencando ao lado da ponte (câmera lenta): a altura",
    "zoom": [
     1.1,
     1.15
@@ -84,6 +84,7 @@
     "sufixo": " m",
     "em": "625"
    },
+   "velocidade": 0.6,
    "sfx_cena": [
     {
      "em": "625",
@@ -91,7 +92,7 @@
      "desc": "cloth whipping through the air",
      "db": -4,
      "dur": 1.4,
-     "no_clipe": 30.6
+     "no_clipe": 30.0
     }
    ]
   },
@@ -149,11 +150,11 @@
   {
    "em": "Guizhou",
    "clipe": "x_globaltimesnews_1772475027612635136.mp4",
-   "inicio": 8.0,
+   "inicio": 4.5,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
-   "_funcao": "o mar de morros e cânions de Guizhou, a estrada nos pilares",
+   "_funcao": "ponte acima das nuvens e a estrada curvando sobre pilares: o relevo de Guizhou",
    "zoom": [
     1.45,
     1.5
@@ -228,7 +229,7 @@
   {
    "em": "E a Huajiang",
    "clipe": "x_China_Fact_1963854478177931264.mp4",
-   "inicio": 6.0,
+   "inicio": 6.27,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
@@ -248,14 +249,15 @@
      "desc": "a car passing by",
      "db": -6,
      "dur": 1.4,
-     "no_clipe": 6.2
+     "no_clipe": 6.5
     }
-   ]
+   ],
+   "velocidade": 0.95
   },
   {
    "em": "faz a travessia",
    "clipe": "tiktok_aljazeeraenglish_7555147460931341598.mp4",
-   "inicio": 15.0,
+   "inicio": 12.5,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
