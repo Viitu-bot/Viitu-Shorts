@@ -1,0 +1,105 @@
+{
+ "video": "lv_0_20261018185322.mp4",
+ "duracao_s": 13.4,
+ "tomadas": 5,
+ "s_por_tomada": 2.68,
+ "cortes": [
+  1.47,
+  5.93,
+  7.12,
+  12.57
+ ],
+ "musica_bpm": null,
+ "musica_tom": null,
+ "musica_nome": [
+  {
+   "de": 0,
+   "ate": 8,
+   "musica": "Spaceglider (Slowed + Reverb)",
+   "artista": "Nippa",
+   "link": "https://www.shazam.com/track/873226046/spaceglider-slowed-reverb"
+  },
+  {
+   "de": 2.7104990000000004,
+   "ate": 10.710499,
+   "musica": "Spaceglider (Slowed + Reverb)",
+   "artista": "Nippa",
+   "link": "https://www.shazam.com/track/873226046/spaceglider-slowed-reverb"
+  },
+  {
+   "de": 5.420998000000001,
+   "ate": 13.420998,
+   "musica": "Spaceglider (Slowed + Reverb)",
+   "artista": "Nippa",
+   "link": "https://www.shazam.com/track/873226046/spaceglider-slowed-reverb"
+  }
+ ],
+ "efeitos_timeline": "effects.wav: 0:00.00-0:13.42 (13.4 s). Loudness -14.3 LUFS integrated, true peak 0.1 dBTP, LRA 13.4 LU; loudest 0:00.00-0:03.00 (-17.2 LUFS short-term). CLIPPING: 28 runs of clipped samples (first at 0:03.62). 6 stop-down(s)/gap(s): 0:00.75 0.7 s drop, 0:01.55 2.0 s drop, 0:03.70 2.1 s drop, 0:05.85 1.4 s drop, 0:07.30 2.6 s drop. Quiet tail 1.8 s (drop). No steady beat grid (pulse clarity 0.00 < 0.15). 2 section(s): 0:00.00-0:06.35 also: plop, ding (AST); 0:06.35-0:13.42 also: plop (AST). 9 events (0.7/s); 9 tagged (4 foley, 3 whoosh, 1 note, 1 step; tags are hints). Strongest accents over a running bed: 0:05.94 +0 dB (small soft footstep). Sync to 14 cuts: 14% have an onset within 1 frame (chance 2%), 29% within 100 ms, median |offset| 49 ms; 0% land on a strong accent (>= 79 dB over the bed) within 1 frame (chance 0%); 1 only by a level peak (soft whoosh / swell?); 9 without a hit: 0:01.17, 0:01.87, 0:03.47, 0:04.03, 0:06.93, 0:11.33.",
+ "efeitos_eventos": [
+  {
+   "t": 0.15,
+   "tipo": "NOTE",
+   "som": "glockenspiel note",
+   "destaque_db": 78.0,
+   "no_corte": true
+  },
+  {
+   "t": 1.48,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 71.2,
+   "no_corte": true
+  },
+  {
+   "t": 3.62,
+   "tipo": "FOLEY",
+   "som": "bubble pop",
+   "destaque_db": 81.1,
+   "no_corte": true
+  },
+  {
+   "t": 5.78,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 59.8,
+   "no_corte": false
+  },
+  {
+   "t": 5.83,
+   "tipo": "FOLEY",
+   "som": "wooden block hit",
+   "destaque_db": 49.0,
+   "no_corte": true
+  },
+  {
+   "t": 5.94,
+   "tipo": "STEP",
+   "som": "small soft footstep",
+   "destaque_db": 0.0,
+   "no_corte": true
+  },
+  {
+   "t": 7.24,
+   "tipo": "FOLEY",
+   "som": "bubble pop",
+   "destaque_db": 79.0,
+   "no_corte": false
+  },
+  {
+   "t": 9.9,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 66.0,
+   "no_corte": false
+  },
+  {
+   "t": 11.55,
+   "tipo": "FOLEY",
+   "som": "bubble pop",
+   "destaque_db": 80.0,
+   "no_corte": false
+  }
+ ],
+ "cortes_earshot": 14,
+ "abertura": "1.50 s busy, 8.7 onsets/s (attack 52 ms). Sounds most like: a notification ding (z +2.7), a success chime (z +2.6), an enter key press (z +2.1) [plausible reading]. Other readings: a magic sparkle chime (chimes, z +1.9). Character: satisfying. AudioSet: Ding 0.62, Speech 0.37, Music 0.29. peak -0.1 dBFS, -14.9 LUFS, brightness 2.6 kHz, bandwidth 16.3 kHz, noise floor -34 dBFS, side/mid -10 dB."
+}

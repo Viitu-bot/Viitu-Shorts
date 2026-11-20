@@ -1,0 +1,183 @@
+{
+ "video": "lv_0_20261021103232.mp4",
+ "duracao_s": 12.5,
+ "tomadas": 6,
+ "s_por_tomada": 2.08,
+ "cortes": [
+  2.95,
+  3.68,
+  6.53,
+  10.67,
+  11.67
+ ],
+ "musica_bpm": null,
+ "musica_tom": null,
+ "musica_nome": [
+  {
+   "de": 0,
+   "ate": 8,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  },
+  {
+   "de": 2.234501,
+   "ate": 10.234501,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  },
+  {
+   "de": 4.469002,
+   "ate": 12.469002,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  }
+ ],
+ "efeitos_timeline": "effects.wav: 0:00.00-0:12.47 (12.5 s). Loudness -20.5 LUFS integrated, true peak 0.4 dBTP, LRA 14.7 LU; loudest 0:01.00-0:04.00 (-21.2 LUFS short-term). CLIPPING: 8 runs of clipped samples (first at 0:01.42). 5 stop-down(s)/gap(s): 0:00.20 1.2 s drop, 0:01.55 0.4 s drop, 0:02.10 1.0 s drop, 0:03.15 0.5 s drop, 0:03.70 2.0 s drop. Beat grid: ~100 BPM (weak pulse, clarity 0.22, 19 beats). 2 section(s): 0:00.00-0:06.50 also: plop, vehicle, bow-wow (AST) | voice: person coughing; 0:06.50-0:12.47 also: plop (AST) | voice: person breathing. 38 events (3.0/s); 20 tagged (13 whoosh, 3 key, 2 ui, 1 riser, 1 foley; tags are hints). Strongest accents over a running bed: 0:01.40 +57 dB (whip pan whoosh transition), 0:06.80 +34 dB, 0:03.63 +32 dB (short swish). Sync to 13 cuts: 15% have an onset within 1 frame (chance 9%), 69% within 100 ms, median |offset| 53 ms; 0% land on a strong accent (>= 32 dB over the bed) within 1 frame (chance 2%); 8% on the beat grid (chance 17%); 3 only by a level peak (soft whoosh / swell?); 1 without a hit: 0:01.70.",
+ "efeitos_eventos": [
+  {
+   "t": 0.13,
+   "tipo": "RISER",
+   "som": "reverse cymbal swell",
+   "destaque_db": 59.6,
+   "no_corte": true
+  },
+  {
+   "t": 1.23,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 32.9,
+   "no_corte": false
+  },
+  {
+   "t": 1.4,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 56.7,
+   "no_corte": false
+  },
+  {
+   "t": 1.99,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 77.4,
+   "no_corte": false
+  },
+  {
+   "t": 2.93,
+   "tipo": "UI",
+   "som": "toggle switch click",
+   "destaque_db": 32.2,
+   "no_corte": true
+  },
+  {
+   "t": 3.02,
+   "tipo": "KEY",
+   "som": "mechanical keyboard key press",
+   "destaque_db": 27.9,
+   "no_corte": true
+  },
+  {
+   "t": 3.12,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 52.4,
+   "no_corte": false
+  },
+  {
+   "t": 3.63,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 32.2,
+   "no_corte": true
+  },
+  {
+   "t": 3.98,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 18.6,
+   "no_corte": false
+  },
+  {
+   "t": 5.19,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 8.1,
+   "no_corte": true
+  },
+  {
+   "t": 5.73,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 7.1,
+   "no_corte": false
+  },
+  {
+   "t": 6.38,
+   "tipo": "UI",
+   "som": "chat message pop",
+   "destaque_db": 33.5,
+   "no_corte": false
+  },
+  {
+   "t": 6.48,
+   "tipo": "FOLEY",
+   "som": "cork pop",
+   "destaque_db": 2.9,
+   "no_corte": true
+  },
+  {
+   "t": 7.26,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 3.1,
+   "no_corte": false
+  },
+  {
+   "t": 8.13,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 1.4,
+   "no_corte": false
+  },
+  {
+   "t": 8.9,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 3.6,
+   "no_corte": false
+  },
+  {
+   "t": 9.67,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 3.6,
+   "no_corte": false
+  },
+  {
+   "t": 10.69,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 5.1,
+   "no_corte": true
+  },
+  {
+   "t": 11.66,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 12.8,
+   "no_corte": true
+  },
+  {
+   "t": 11.92,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 18.8,
+   "no_corte": false
+  }
+ ],
+ "cortes_earshot": 13,
+ "abertura": "1.50 s busy, 2.7 onsets/s (attack 105 ms). Sounds most like: a squishy wet squelch (z +3.4), a quick swipe (z +2.6), a finger squeaking on glass (z +2.4) [clear reading]. Unvalidated hint: funk music (z +3.1). AudioSet: Speech 0.88, Music 0.07. peak -0.7 dBFS, -15.8 LUFS, brightness 2.7 kHz, bandwidth 16.3 kHz, noise floor -25 dBFS, side/mid -11 dB."
+}

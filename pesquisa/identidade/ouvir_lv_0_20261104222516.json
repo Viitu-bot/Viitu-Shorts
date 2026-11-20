@@ -1,0 +1,66 @@
+{
+ "video": "lv_0_20261104222516.mp4",
+ "duracao_s": 21.6,
+ "tomadas": 15,
+ "s_por_tomada": 1.44,
+ "cortes": [
+  0.47,
+  2.67,
+  4.07,
+  4.8,
+  7.2,
+  9.13,
+  9.67,
+  11.43,
+  12.2,
+  14.03,
+  16.2,
+  18.33,
+  18.97,
+  20.92
+ ],
+ "musica_bpm": 127.6,
+ "musica_tom": "F",
+ "musica_nome": [
+  {
+   "de": 0,
+   "ate": 8,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  },
+  {
+   "de": 6.820499,
+   "ate": 14.820499,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  },
+  {
+   "de": 13.640998,
+   "ate": 21.640998,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  }
+ ],
+ "efeitos_timeline": "effects.wav: 0:00.00-0:21.64 (21.6 s). Loudness -12.0 LUFS integrated, true peak 0.7 dBTP, LRA 23.5 LU; loudest 0:00.00-0:03.00 (-16.0 LUFS short-term). True peak 0.7 dBTP is above -1 dBTP (risk of overs after encoding). Quiet tail 20.6 s (drop). No steady beat grid (pulse clarity 0.01 < 0.15). 2 section(s): 0:00.00-0:14.00 unclear (no confident music / ambience / voice tag); 0:14.00-0:21.64 near silence. 2 events (0.1/s); 2 tagged (1 note, 1 step; tags are hints). Sync to 17 cuts: 0% have an onset within 1 frame (chance 0%), 6% within 100 ms, median |offset| 56 ms; 0% land on a strong accent (>= 68 dB over the bed) within 1 frame (chance 0%); 16 without a hit: 0:02.50, 0:02.68, 0:04.07, 0:04.80, 0:07.20, 0:08.93.",
+ "efeitos_eventos": [
+  {
+   "t": 0.11,
+   "tipo": "NOTE",
+   "som": "glockenspiel note",
+   "destaque_db": 80.0,
+   "no_corte": true
+  },
+  {
+   "t": 10.3,
+   "tipo": "STEP",
+   "som": "small soft footstep",
+   "destaque_db": 18.2,
+   "no_corte": false
+  }
+ ],
+ "cortes_earshot": 17,
+ "abertura": "1.50 s busy, 5.3 onsets/s (attack 12 ms). Music (AudioSet Music 0.51). Unvalidated hints - genre: hip hop beat with heavy bass (z +2.0), funk music (z +1.8); mood (wrong for ~1 in 5 tracks in a test): . Sounds most like: a notification ding (z +3.2), coins dropping (z +2.8), a success chime (z +2.8) [clear reading]. Other readings: a glass ting (chimes, z +2.5). Character: satisfying. AudioSet: Music 0.51, Ding 0.34, Speech 0.19. peak 0.3 dBFS, -13.6 LUFS, brightness 2.4 kHz, bandwidth 16.3 kHz, noise floor -32 dBFS, side/mid -24 dB."
+}

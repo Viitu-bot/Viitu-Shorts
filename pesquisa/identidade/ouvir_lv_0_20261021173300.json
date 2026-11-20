@@ -1,0 +1,184 @@
+{
+ "video": "lv_0_20261021173300.mp4",
+ "duracao_s": 13.6,
+ "tomadas": 7,
+ "s_por_tomada": 1.95,
+ "cortes": [
+  3.27,
+  5.5,
+  8.1,
+  9.52,
+  11.22,
+  11.75
+ ],
+ "musica_bpm": null,
+ "musica_tom": null,
+ "musica_nome": [
+  {
+   "de": 0,
+   "ate": 8,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  },
+  {
+   "de": 2.8150000000000004,
+   "ate": 10.815000000000001,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  },
+  {
+   "de": 5.630000000000001,
+   "ate": 13.63,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  }
+ ],
+ "efeitos_timeline": "effects.wav: 0:00.00-0:13.63 (13.6 s). Loudness -22.4 LUFS integrated, true peak 0.5 dBTP, LRA 17.9 LU; loudest 0:06.50-0:09.50 (-22.9 LUFS short-term). CLIPPING: 4 runs of clipped samples (first at 0:07.96). 3 stop-down(s)/gap(s): 0:06.70 0.6 s drop, 0:07.35 0.3 s drop, 0:09.90 0.8 s drop. Quiet lead-in 6.7 s (drop) and tail 2.4 s (drop). Beat grid: ~128 BPM (weak pulse, clarity 0.24, 29 beats). 2 section(s): 0:00.00-0:05.95 near silence; 0:05.95-0:13.63 also: shuffling cards, scissors (AST). 33 events (2.4/s); 20 tagged (9 drum, 5 whoosh, 3 foley, 2 ui, 1 voice; tags are hints). Strongest accents over a running bed: 0:08.10 +39 dB (hi-hat), 0:10.95 +34 dB (lego bricks clicking), 0:09.38 +30 dB (short swish). Sync to 8 cuts: 12% have an onset within 1 frame (chance 8%), 62% within 100 ms, median |offset| 78 ms; 12% land on a strong accent (>= 35 dB over the bed) within 1 frame (chance 2%); 0% on the beat grid (chance 21%); 1 only by a level peak (soft whoosh / swell?); 2 without a hit: 0:00.10, 0:11.45.",
+ "efeitos_eventos": [
+  {
+   "t": 3.18,
+   "tipo": "DRUM",
+   "som": "hi-hat",
+   "destaque_db": 16.1,
+   "no_corte": true
+  },
+  {
+   "t": 4.04,
+   "tipo": "DRUM",
+   "som": "hi-hat",
+   "destaque_db": 20.4,
+   "no_corte": false
+  },
+  {
+   "t": 4.5,
+   "tipo": "DRUM",
+   "som": "hi-hat",
+   "destaque_db": 30.9,
+   "no_corte": false
+  },
+  {
+   "t": 5.48,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 23.3,
+   "no_corte": false
+  },
+  {
+   "t": 5.95,
+   "tipo": "VOICE",
+   "som": "breath",
+   "destaque_db": 29.4,
+   "no_corte": false
+  },
+  {
+   "t": 6.68,
+   "tipo": "UI",
+   "som": "soft UI button tap",
+   "destaque_db": 50.8,
+   "no_corte": false
+  },
+  {
+   "t": 6.91,
+   "tipo": "FOLEY",
+   "som": "leaves rustling",
+   "destaque_db": 32.4,
+   "no_corte": false
+  },
+  {
+   "t": 7.26,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 56.3,
+   "no_corte": false
+  },
+  {
+   "t": 7.46,
+   "tipo": "DRUM",
+   "som": "hi-hat",
+   "destaque_db": 29.2,
+   "no_corte": false
+  },
+  {
+   "t": 8.1,
+   "tipo": "DRUM",
+   "som": "hi-hat",
+   "destaque_db": 39.2,
+   "no_corte": true
+  },
+  {
+   "t": 8.18,
+   "tipo": "DRUM",
+   "som": "hi-hat",
+   "destaque_db": 17.5,
+   "no_corte": true
+  },
+  {
+   "t": 8.85,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 8.7,
+   "no_corte": false
+  },
+  {
+   "t": 9.01,
+   "tipo": "DRUM",
+   "som": "snare drum hit",
+   "destaque_db": 23.9,
+   "no_corte": false
+  },
+  {
+   "t": 9.38,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 29.5,
+   "no_corte": false
+  },
+  {
+   "t": 9.89,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 32.7,
+   "no_corte": false
+  },
+  {
+   "t": 10.46,
+   "tipo": "FOLEY",
+   "som": "paper rustling",
+   "destaque_db": 35.3,
+   "no_corte": false
+  },
+  {
+   "t": 10.95,
+   "tipo": "FOLEY",
+   "som": "lego bricks clicking",
+   "destaque_db": 34.3,
+   "no_corte": false
+  },
+  {
+   "t": 11.03,
+   "tipo": "UI",
+   "som": "camera shutter click",
+   "destaque_db": 32.7,
+   "no_corte": false
+  },
+  {
+   "t": 11.17,
+   "tipo": "DRUM",
+   "som": "hi-hat",
+   "destaque_db": 1.7,
+   "no_corte": true
+  },
+  {
+   "t": 11.7,
+   "tipo": "DRUM",
+   "som": "hi-hat",
+   "destaque_db": 37.2,
+   "no_corte": true
+  }
+ ],
+ "cortes_earshot": 8,
+ "abertura": "1.50 s short swell (attack 268 ms). Music (AudioSet Music 0.52). Unvalidated hints - genre: hip hop beat with heavy bass (z +2.5); mood (wrong for ~1 in 5 tracks in a test): . Sounds most like: cloth whipping through the air (z +2.3), a stick swung fast through the air (z +2.0), a punchy impact hit (z +1.9) [weak reading]. Other readings: footsteps on gravel (foley, z +1.8). AudioSet: Speech 0.69, Music 0.52, Boing 0.24. peak -0.9 dBFS, -14.3 LUFS, brightness 2.9 kHz, bandwidth 20.5 kHz, noise floor -30 dBFS, side/mid -13 dB."
+}

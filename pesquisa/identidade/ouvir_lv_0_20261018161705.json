@@ -1,0 +1,185 @@
+{
+ "video": "lv_0_20261018161705.mp4",
+ "duracao_s": 17.6,
+ "tomadas": 8,
+ "s_por_tomada": 2.2,
+ "cortes": [
+  1.03,
+  2.93,
+  7.43,
+  10.75,
+  11.82,
+  15.92,
+  16.52
+ ],
+ "musica_bpm": null,
+ "musica_tom": null,
+ "musica_nome": [
+  {
+   "de": 0,
+   "ate": 8,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  },
+  {
+   "de": 4.791667,
+   "ate": 12.791667,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  },
+  {
+   "de": 9.583334,
+   "ate": 17.583334,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  }
+ ],
+ "efeitos_timeline": "effects.wav: 0:00.00-0:17.58 (17.6 s). Loudness -16.4 LUFS integrated, true peak 0.2 dBTP, LRA 5.9 LU; loudest 0:00.00-0:03.00 (-18.4 LUFS short-term). CLIPPING: 3 runs of clipped samples (first at 0:06.68). 9 stop-down(s)/gap(s): 0:00.75 4.1 s drop, 0:05.45 1.2 s drop, 0:06.85 0.5 s drop, 0:07.45 0.6 s drop, 0:08.25 0.9 s drop. Quiet tail 2.4 s (drop). No steady beat grid (pulse clarity 0.12 < 0.15). 2 section(s): 0:00.00-0:04.90 also: ding, clang (AST); 0:04.90-0:17.58 also: knock, thunk (AST). 25 events (1.4/s); 20 tagged (5 ui, 5 whoosh, 2 foley, 2 drum, 2 key, 2 hit, 1 note, 1 step; tags are hints). Strongest accents over a running bed: 0:15.03 +41 dB (punchy impact hit), 0:13.91 +37 dB, 0:09.33 +33 dB (whip pan whoosh transition). Sync to 22 cuts: 0% have an onset within 1 frame (chance 4%), 41% within 100 ms, median |offset| 53 ms; 0% land on a strong accent (>= 71 dB over the bed) within 1 frame (chance 1%); 1 only by a level peak (soft whoosh / swell?); 12 without a hit: 0:02.93, 0:03.73, 0:09.02, 0:09.87, 0:10.00, 0:12.58.",
+ "efeitos_eventos": [
+  {
+   "t": 0.15,
+   "tipo": "NOTE",
+   "som": "glockenspiel note",
+   "destaque_db": 76.2,
+   "no_corte": true
+  },
+  {
+   "t": 0.25,
+   "tipo": "UI",
+   "som": "notification ding",
+   "destaque_db": 65.1,
+   "no_corte": false
+  },
+  {
+   "t": 1.12,
+   "tipo": "FOLEY",
+   "som": "glass clinking",
+   "destaque_db": 18.3,
+   "no_corte": true
+  },
+  {
+   "t": 4.91,
+   "tipo": "UI",
+   "som": "chat message pop",
+   "destaque_db": 64.1,
+   "no_corte": false
+  },
+  {
+   "t": 5.09,
+   "tipo": "UI",
+   "som": "chat message pop",
+   "destaque_db": 10.4,
+   "no_corte": false
+  },
+  {
+   "t": 5.22,
+   "tipo": "UI",
+   "som": "chat message pop",
+   "destaque_db": 8.6,
+   "no_corte": false
+  },
+  {
+   "t": 6.67,
+   "tipo": "DRUM",
+   "som": "snare drum hit",
+   "destaque_db": 75.3,
+   "no_corte": false
+  },
+  {
+   "t": 6.74,
+   "tipo": "FOLEY",
+   "som": "wooden block hit",
+   "destaque_db": 45.2,
+   "no_corte": false
+  },
+  {
+   "t": 7.37,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 66.6,
+   "no_corte": true
+  },
+  {
+   "t": 7.49,
+   "tipo": "STEP",
+   "som": "small soft footstep",
+   "destaque_db": 32.1,
+   "no_corte": true
+  },
+  {
+   "t": 8.08,
+   "tipo": "DRUM",
+   "som": "snare drum hit",
+   "destaque_db": 71.4,
+   "no_corte": false
+  },
+  {
+   "t": 9.19,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 58.9,
+   "no_corte": true
+  },
+  {
+   "t": 9.33,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 33.4,
+   "no_corte": true
+  },
+  {
+   "t": 10.64,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 78.7,
+   "no_corte": false
+  },
+  {
+   "t": 11.74,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 71.6,
+   "no_corte": true
+  },
+  {
+   "t": 13.72,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 58.7,
+   "no_corte": false
+  },
+  {
+   "t": 13.85,
+   "tipo": "UI",
+   "som": "toggle switch click",
+   "destaque_db": 67.5,
+   "no_corte": false
+  },
+  {
+   "t": 14.83,
+   "tipo": "HIT",
+   "som": "heavy thud",
+   "destaque_db": 57.7,
+   "no_corte": true
+  },
+  {
+   "t": 14.97,
+   "tipo": "KEY",
+   "som": "mechanical keyboard key press",
+   "destaque_db": 76.1,
+   "no_corte": true
+  },
+  {
+   "t": 15.03,
+   "tipo": "HIT",
+   "som": "punchy impact hit",
+   "destaque_db": 40.7,
+   "no_corte": true
+  }
+ ],
+ "cortes_earshot": 22,
+ "abertura": "1.50 s busy, 4.0 onsets/s (attack 53 ms, decays in 662 ms). Sounds most like: a notification ding (z +2.8), a success chime (z +2.5), a doorbell (z +2.3) [plausible reading]. Other readings: a microwave beep (everyday, z +2.2). Character: satisfying. AudioSet: Ding 0.47, Speech 0.43, Music 0.28. peak 0.0 dBFS, -14.1 LUFS, brightness 2.2 kHz, bandwidth 16.3 kHz, noise floor -42 dBFS, side/mid -11 dB."
+}

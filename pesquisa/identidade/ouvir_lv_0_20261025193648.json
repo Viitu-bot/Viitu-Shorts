@@ -1,0 +1,175 @@
+{
+ "video": "lv_0_20261025193648.mp4",
+ "duracao_s": 18.0,
+ "tomadas": 5,
+ "s_por_tomada": 3.6,
+ "cortes": [
+  4.1,
+  7.1,
+  12.1,
+  17.12
+ ],
+ "musica_bpm": null,
+ "musica_tom": null,
+ "musica_nome": [
+  {
+   "de": 0,
+   "ate": 8,
+   "musica": "Pretty little baby",
+   "artista": "Neagley Brown",
+   "link": "https://www.shazam.com/track/884051281/pretty-little-baby"
+  },
+  {
+   "de": 5.009501,
+   "ate": 13.009501,
+   "musica": "Pretty little baby",
+   "artista": "Neagley Brown",
+   "link": "https://www.shazam.com/track/884051281/pretty-little-baby"
+  }
+ ],
+ "efeitos_timeline": "effects.wav: 0:00.00-0:18.02 (18.0 s). Loudness -19.3 LUFS integrated, true peak 0.7 dBTP, LRA 10.8 LU; loudest 0:00.00-0:03.00 (-14.9 LUFS short-term). CLIPPING: 18 runs of clipped samples (first at 0:11.52). Quiet tail 0.7 s (drop). No steady beat grid (pulse clarity 0.07 < 0.15). 3 section(s): 0:00.00-0:06.10 also: ding, scrape, clang (AST); 0:06.10-0:12.05 also: crunch, scrape (AST); 0:12.05-0:18.02 also: scrape (AST). 72 events (4.0/s); 20 tagged (6 whoosh, 5 hit, 3 foley, 2 step, 1 note, 1 voice, 1 ui, 1 drum; tags are hints). Strongest accents over a running bed: 0:11.53 +26 dB (punchy impact hit), 0:08.36 +19 dB (whip pan whoosh transition), 0:06.26 +18 dB (fast air whoosh). Sync to 6 cuts: 33% have an onset within 1 frame (chance 12%), 50% within 100 ms, median |offset| 29 ms; 17% land on a strong accent (>= 15 dB over the bed) within 1 frame (chance 3%); 1 only by a level peak (soft whoosh / swell?); 2 without a hit: 0:04.23, 0:17.95.",
+ "efeitos_eventos": [
+  {
+   "t": 0.1,
+   "tipo": "NOTE",
+   "som": "glockenspiel note",
+   "destaque_db": 71.8,
+   "no_corte": true
+  },
+  {
+   "t": 0.23,
+   "tipo": "FOLEY",
+   "som": "glass clinking",
+   "destaque_db": 16.2,
+   "no_corte": false
+  },
+  {
+   "t": 0.99,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 8.9,
+   "no_corte": false
+  },
+  {
+   "t": 1.52,
+   "tipo": "VOICE",
+   "som": "breath",
+   "destaque_db": 15.1,
+   "no_corte": false
+  },
+  {
+   "t": 2.68,
+   "tipo": "FOLEY",
+   "som": "paper rustling",
+   "destaque_db": 12.1,
+   "no_corte": false
+  },
+  {
+   "t": 3.59,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 30.1,
+   "no_corte": false
+  },
+  {
+   "t": 4.82,
+   "tipo": "STEP",
+   "som": "footsteps on grass",
+   "destaque_db": 11.1,
+   "no_corte": false
+  },
+  {
+   "t": 6.16,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 15.8,
+   "no_corte": false
+  },
+  {
+   "t": 6.26,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 18.5,
+   "no_corte": false
+  },
+  {
+   "t": 7.03,
+   "tipo": "FOLEY",
+   "som": "small object dropping on a table",
+   "destaque_db": 9.9,
+   "no_corte": true
+  },
+  {
+   "t": 8.36,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 19.3,
+   "no_corte": false
+  },
+  {
+   "t": 9.28,
+   "tipo": "UI",
+   "som": "toggle switch click",
+   "destaque_db": 14.5,
+   "no_corte": false
+  },
+  {
+   "t": 10.04,
+   "tipo": "STEP",
+   "som": "small soft footstep",
+   "destaque_db": 12.0,
+   "no_corte": false
+  },
+  {
+   "t": 11.17,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 10.5,
+   "no_corte": false
+  },
+  {
+   "t": 11.53,
+   "tipo": "HIT",
+   "som": "punchy impact hit",
+   "destaque_db": 25.7,
+   "no_corte": false
+  },
+  {
+   "t": 12.11,
+   "tipo": "HIT",
+   "som": "sub bass drop",
+   "destaque_db": 6.4,
+   "no_corte": true
+  },
+  {
+   "t": 13.24,
+   "tipo": "HIT",
+   "som": "sub bass drop",
+   "destaque_db": 10.0,
+   "no_corte": false
+  },
+  {
+   "t": 14.33,
+   "tipo": "HIT",
+   "som": "sub bass drop",
+   "destaque_db": 9.0,
+   "no_corte": false
+  },
+  {
+   "t": 15.76,
+   "tipo": "HIT",
+   "som": "sub bass drop",
+   "destaque_db": 9.0,
+   "no_corte": false
+  },
+  {
+   "t": 17.28,
+   "tipo": "DRUM",
+   "som": "drum hit",
+   "destaque_db": 0.2,
+   "no_corte": false
+  }
+ ],
+ "cortes_earshot": 6,
+ "abertura": "1.50 s busy, 4.7 onsets/s (attack 145 ms). Sounds most like: a glass ting (z +2.5), an enter key press (z +2.5), a finger squeaking on glass (z +2.5) [plausible reading]. AudioSet: Ding 0.68, Speech 0.51, Clang 0.09. peak 0.5 dBFS, -7.2 LUFS, brightness 2.9 kHz, bandwidth 16.3 kHz, noise floor -21 dBFS, side/mid -15 dB."
+}

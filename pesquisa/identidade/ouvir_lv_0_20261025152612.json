@@ -1,0 +1,182 @@
+{
+ "video": "lv_0_20261025152612.mp4",
+ "duracao_s": 19.7,
+ "tomadas": 5,
+ "s_por_tomada": 3.94,
+ "cortes": [
+  7.02,
+  12.35,
+  16.55,
+  18.62
+ ],
+ "musica_bpm": null,
+ "musica_tom": null,
+ "musica_nome": [
+  {
+   "de": 0,
+   "ate": 8,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  },
+  {
+   "de": 5.85,
+   "ate": 13.85,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  },
+  {
+   "de": 11.7,
+   "ate": 19.7,
+   "musica": "sans.",
+   "artista": "Toby Fox",
+   "link": "https://www.shazam.com/track/320621891/sans"
+  }
+ ],
+ "efeitos_timeline": "effects.wav: 0:00.00-0:19.69 (19.7 s). Loudness -18.0 LUFS integrated, true peak 0.1 dBTP, LRA 16.1 LU; loudest 0:15.50-0:18.50 (-15.6 LUFS short-term). CLIPPING: 11 runs of clipped samples (first at 0:03.60). 7 stop-down(s)/gap(s): 0:01.00 2.1 s drop, 0:03.20 0.4 s drop, 0:03.70 0.3 s drop, 0:04.10 4.2 s drop, 0:09.95 3.6 s drop. Quiet tail 1.4 s (drop). Beat grid: ~135 BPM (weak pulse, clarity 0.30, 45 beats). 2 section(s): 0:00.00-0:14.15 also: keys jangling (AST); 0:14.15-0:19.69 amb: airplane flying overhead. 90 events (4.6/s); 20 tagged (7 whoosh, 6 foley, 3 ui, 2 voice, 1 riser, 1 step; tags are hints). Strongest accents over a running bed: 0:00.23 +41 dB (reverse cymbal swell), 0:09.79 +36 dB, 0:17.03 +35 dB (fast air whoosh). Sync to 9 cuts: 22% have an onset within 1 frame (chance 14%), 78% within 100 ms, median |offset| 70 ms; 11% land on a strong accent (>= 31 dB over the bed) within 1 frame (chance 3%); 33% on the beat grid (chance 23%); 1 met by a whoosh / riser peak; 1 without a hit: 0:16.55.",
+ "efeitos_eventos": [
+  {
+   "t": 0.1,
+   "tipo": "UI",
+   "som": "chat message pop",
+   "destaque_db": 71.5,
+   "no_corte": true
+  },
+  {
+   "t": 0.23,
+   "tipo": "RISER",
+   "som": "reverse cymbal swell",
+   "destaque_db": 41.0,
+   "no_corte": false
+  },
+  {
+   "t": 3.24,
+   "tipo": "STEP",
+   "som": "small soft footstep",
+   "destaque_db": 47.4,
+   "no_corte": false
+  },
+  {
+   "t": 3.6,
+   "tipo": "FOLEY",
+   "som": "wooden block hit",
+   "destaque_db": 73.4,
+   "no_corte": false
+  },
+  {
+   "t": 5.77,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 37.5,
+   "no_corte": false
+  },
+  {
+   "t": 6.29,
+   "tipo": "UI",
+   "som": "camera shutter click",
+   "destaque_db": 44.1,
+   "no_corte": false
+  },
+  {
+   "t": 6.36,
+   "tipo": "UI",
+   "som": "camera shutter click",
+   "destaque_db": 35.8,
+   "no_corte": false
+  },
+  {
+   "t": 7.0,
+   "tipo": "FOLEY",
+   "som": "paper rustling",
+   "destaque_db": 23.1,
+   "no_corte": true
+  },
+  {
+   "t": 7.12,
+   "tipo": "FOLEY",
+   "som": "paper rustling",
+   "destaque_db": 7.6,
+   "no_corte": true
+  },
+  {
+   "t": 7.67,
+   "tipo": "FOLEY",
+   "som": "paper rustling",
+   "destaque_db": 51.0,
+   "no_corte": false
+  },
+  {
+   "t": 8.42,
+   "tipo": "FOLEY",
+   "som": "paper rustling",
+   "destaque_db": 49.0,
+   "no_corte": false
+  },
+  {
+   "t": 8.57,
+   "tipo": "FOLEY",
+   "som": "paper rustling",
+   "destaque_db": 51.3,
+   "no_corte": false
+  },
+  {
+   "t": 10.8,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 12.4,
+   "no_corte": false
+  },
+  {
+   "t": 12.25,
+   "tipo": "VOICE",
+   "som": "breath",
+   "destaque_db": 13.6,
+   "no_corte": true
+  },
+  {
+   "t": 13.91,
+   "tipo": "VOICE",
+   "som": "breath",
+   "destaque_db": 51.0,
+   "no_corte": false
+  },
+  {
+   "t": 17.03,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 35.3,
+   "no_corte": false
+  },
+  {
+   "t": 18.54,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 20.2,
+   "no_corte": true
+  },
+  {
+   "t": 18.87,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 10.2,
+   "no_corte": true
+  },
+  {
+   "t": 19.2,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 12.2,
+   "no_corte": true
+  },
+  {
+   "t": 19.49,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 3.4,
+   "no_corte": true
+  }
+ ],
+ "cortes_earshot": 9,
+ "abertura": "1.50 s busy, 6.0 onsets/s (attack 121 ms). Sounds most like: a punchy impact hit (z +2.2), a squishy wet squelch (z +1.9), an enter key press (z +1.9) [weak reading]. Other readings: a chat message pop (ui, z +1.9). AudioSet: Speech 0.70, Ding 0.34, Clang 0.07. peak 0.7 dBFS, -6.9 LUFS, brightness 3.1 kHz, bandwidth 16.3 kHz, noise floor -21 dBFS, side/mid -21 dB."
+}

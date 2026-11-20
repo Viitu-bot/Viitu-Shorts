@@ -1,0 +1,175 @@
+{
+ "video": "lv_0_20261108195302.mp4",
+ "duracao_s": 39.2,
+ "tomadas": 12,
+ "s_por_tomada": 3.27,
+ "cortes": [
+  3.1,
+  6.1,
+  9.1,
+  13.1,
+  15.42,
+  20.4,
+  23.4,
+  26.4,
+  30.4,
+  33.4,
+  37.18
+ ],
+ "musica_bpm": null,
+ "musica_tom": null,
+ "musica_nome": [
+  {
+   "de": 15.620997500000001,
+   "ate": 23.6209975,
+   "musica": "Sea sound X (havet ljud,umsindo wolwandle,Sonido del mar, Son de la mer,relaxing, satisfaying, sleeping, yoga)",
+   "artista": "Nur.foryou",
+   "link": "https://www.shazam.com/track/701751538/sea-sound-x-havet-ljud-umsindo-wolwandle-sonido-del"
+  }
+ ],
+ "efeitos_timeline": "effects.wav: 0:00.00-0:39.24 (39.2 s). Loudness -24.3 LUFS integrated, true peak -0.0 dBTP, LRA 7.7 LU; loudest 0:12.50-0:15.50 (-19.2 LUFS short-term). True peak -0.0 dBTP is above -1 dBTP (risk of overs after encoding). 1 stop-down(s)/gap(s): 0:01.00 0.3 s drop. No steady beat grid (pulse clarity 0.03 < 0.15). 4 section(s): 0:00.00-0:26.15 also: gasp (AST); 0:26.15-0:28.60 glitch hop music?; 0:28.60-0:34.90 also: gasp, rub (AST); 0:34.90-0:39.24 also: scrape, rub (AST). 126 events (3.2/s); 20 tagged (10 whoosh, 6 voice, 2 riser, 1 note, 1 foley; tags are hints). Strongest accents over a running bed: 0:04.03 +24 dB (whip pan whoosh transition), 0:36.60 +24 dB (fast air whoosh), 0:11.26 +23 dB (breath). Sync to 14 cuts: 14% have an onset within 1 frame (chance 10%), 86% within 100 ms, median |offset| 67 ms; 0% land on a strong accent (>= 12 dB over the bed) within 1 frame (chance 2%); 2 only by a level peak (soft whoosh / swell?).",
+ "efeitos_eventos": [
+  {
+   "t": 0.21,
+   "tipo": "NOTE",
+   "som": "bell chime",
+   "destaque_db": 76.0,
+   "no_corte": true
+  },
+  {
+   "t": 3.19,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 3.4,
+   "no_corte": true
+  },
+  {
+   "t": 4.03,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 24.4,
+   "no_corte": false
+  },
+  {
+   "t": 6.08,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 10.8,
+   "no_corte": true
+  },
+  {
+   "t": 11.26,
+   "tipo": "VOICE",
+   "som": "breath",
+   "destaque_db": 23.4,
+   "no_corte": false
+  },
+  {
+   "t": 13.04,
+   "tipo": "VOICE",
+   "som": "breath",
+   "destaque_db": 3.3,
+   "no_corte": true
+  },
+  {
+   "t": 15.36,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 20.0,
+   "no_corte": true
+  },
+  {
+   "t": 16.84,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 20.6,
+   "no_corte": false
+  },
+  {
+   "t": 20.34,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 2.5,
+   "no_corte": true
+  },
+  {
+   "t": 20.49,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 0.6,
+   "no_corte": true
+  },
+  {
+   "t": 23.41,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 6.0,
+   "no_corte": true
+  },
+  {
+   "t": 26.32,
+   "tipo": "VOICE",
+   "som": "breath",
+   "destaque_db": 5.6,
+   "no_corte": true
+  },
+  {
+   "t": 28.89,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 27.0,
+   "no_corte": false
+  },
+  {
+   "t": 29.87,
+   "tipo": "FOLEY",
+   "som": "paper rustling",
+   "destaque_db": 29.3,
+   "no_corte": false
+  },
+  {
+   "t": 30.33,
+   "tipo": "VOICE",
+   "som": "breath",
+   "destaque_db": 7.7,
+   "no_corte": true
+  },
+  {
+   "t": 33.32,
+   "tipo": "VOICE",
+   "som": "breath",
+   "destaque_db": 7.2,
+   "no_corte": true
+  },
+  {
+   "t": 36.6,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 24.3,
+   "no_corte": false
+  },
+  {
+   "t": 37.17,
+   "tipo": "RISER",
+   "som": "reverse cymbal swell",
+   "destaque_db": 11.2,
+   "no_corte": true
+  },
+  {
+   "t": 38.76,
+   "tipo": "RISER",
+   "som": "reverse cymbal swell",
+   "destaque_db": 2.8,
+   "no_corte": true
+  },
+  {
+   "t": 38.9,
+   "tipo": "VOICE",
+   "som": "breath",
+   "destaque_db": 4.4,
+   "no_corte": true
+  }
+ ],
+ "cortes_earshot": 14,
+ "abertura": "1.50 s busy, 6.7 onsets/s (attack 52 ms). Sounds most like: a notification ding (z +2.6), a success chime (z +2.5), a magic sparkle chime (z +2.4) [plausible reading]. AudioSet: Ding 0.49, Speech 0.41, Bicycle bell 0.18. peak 0.8 dBFS, -6.7 LUFS, brightness 2.6 kHz, bandwidth 16.3 kHz, noise floor -36 dBFS, side/mid -30 dB."
+}

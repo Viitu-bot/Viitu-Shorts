@@ -1,0 +1,179 @@
+{
+ "video": "lv_0_20261018095217.mp4",
+ "duracao_s": 27.1,
+ "tomadas": 24,
+ "s_por_tomada": 1.13,
+ "cortes": [
+  2.07,
+  2.77,
+  5.87,
+  7.2,
+  7.9,
+  9.23,
+  10.25,
+  11.42,
+  12.52,
+  13.82,
+  14.72,
+  15.33,
+  16.28,
+  17.62,
+  18.68,
+  19.95,
+  20.98,
+  22.38,
+  23.78,
+  24.2,
+  24.97,
+  25.37,
+  26.27
+ ],
+ "musica_bpm": null,
+ "musica_tom": null,
+ "musica_nome": [],
+ "efeitos_timeline": "effects.wav: 0:00.00-0:27.05 (27.1 s). Loudness -20.4 LUFS integrated, true peak 0.7 dBTP, LRA 12.7 LU; loudest 0:15.00-0:18.00 (-17.0 LUFS short-term). CLIPPING: 19 runs of clipped samples (first at 0:11.42). 3 stop-down(s)/gap(s): 0:10.20 1.2 s drop, 0:11.50 1.0 s drop, 0:12.60 0.6 s drop. Quiet tail 0.8 s (drop). Beat grid: ~136 BPM (weak pulse, clarity 0.26, 61 beats). 3 section(s): 0:00.00-0:10.20 also: vehicle (AST); 0:10.20-0:12.50 also: single-lens reflex camera (AST); 0:12.50-0:27.05 also: vehicle, engine, car (AST). 137 events (5.1/s); 20 tagged (12 key, 3 foley, 2 voice, 1 riser, 1 ui, 1 whoosh; tags are hints). Strongest accents over a running bed: 0:12.54 +56 dB (spacebar press), 0:13.82 +31 dB (spacebar press), 0:14.59 +25 dB (spacebar press). Sync to 32 cuts: 19% have an onset within 1 frame (chance 16%), 62% within 100 ms, median |offset| 36 ms; 9% land on a strong accent (>= 16 dB over the bed) within 1 frame (chance 3%); 38% on the beat grid (chance 23%); 2 met by a whoosh / riser peak; 5 only by a level peak (soft whoosh / swell?); 5 without a hit: 0:02.37, 0:09.23, 0:10.25, 0:24.20, 0:26.27.",
+ "efeitos_eventos": [
+  {
+   "t": 0.13,
+   "tipo": "RISER",
+   "som": "reverse cymbal swell",
+   "destaque_db": 67.2,
+   "no_corte": true
+  },
+  {
+   "t": 5.83,
+   "tipo": "FOLEY",
+   "som": "cork pop",
+   "destaque_db": 9.2,
+   "no_corte": true
+  },
+  {
+   "t": 10.0,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 4.4,
+   "no_corte": true
+  },
+  {
+   "t": 11.42,
+   "tipo": "UI",
+   "som": "toggle switch click",
+   "destaque_db": 57.3,
+   "no_corte": true
+  },
+  {
+   "t": 12.54,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 55.5,
+   "no_corte": true
+  },
+  {
+   "t": 13.82,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 31.1,
+   "no_corte": true
+  },
+  {
+   "t": 14.59,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 24.6,
+   "no_corte": false
+  },
+  {
+   "t": 15.33,
+   "tipo": "FOLEY",
+   "som": "bubble pop",
+   "destaque_db": 14.0,
+   "no_corte": true
+  },
+  {
+   "t": 16.24,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 12.5,
+   "no_corte": true
+  },
+  {
+   "t": 17.56,
+   "tipo": "FOLEY",
+   "som": "bubble pop",
+   "destaque_db": 8.0,
+   "no_corte": true
+  },
+  {
+   "t": 18.72,
+   "tipo": "KEY",
+   "som": "typing on a computer keyboard",
+   "destaque_db": 11.4,
+   "no_corte": true
+  },
+  {
+   "t": 19.98,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 7.7,
+   "no_corte": true
+  },
+  {
+   "t": 21.01,
+   "tipo": "KEY",
+   "som": "typing on a computer keyboard",
+   "destaque_db": 15.7,
+   "no_corte": true
+  },
+  {
+   "t": 22.46,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 14.6,
+   "no_corte": true
+  },
+  {
+   "t": 23.05,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 17.0,
+   "no_corte": true
+  },
+  {
+   "t": 23.57,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 16.8,
+   "no_corte": true
+  },
+  {
+   "t": 25.43,
+   "tipo": "KEY",
+   "som": "typing on a computer keyboard",
+   "destaque_db": 5.7,
+   "no_corte": true
+  },
+  {
+   "t": 25.59,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 4.9,
+   "no_corte": true
+  },
+  {
+   "t": 26.52,
+   "tipo": "VOICE",
+   "som": "breath",
+   "destaque_db": 12.6,
+   "no_corte": true
+  },
+  {
+   "t": 26.71,
+   "tipo": "VOICE",
+   "som": "breath",
+   "destaque_db": 7.7,
+   "no_corte": true
+  }
+ ],
+ "cortes_earshot": 32,
+ "abertura": "1.50 s busy, 4.0 onsets/s (attack 73 ms). Sounds most like: a squishy wet squelch (z +2.1), a glass ting (z +2.1), keys jingling (z +2.1) [weak reading]. AudioSet: Speech 0.67, Ding 0.06. peak -9.0 dBFS, -20.2 LUFS, brightness 3.5 kHz, bandwidth 20.5 kHz, noise floor -36 dBFS, side/mid -26 dB."
+}
