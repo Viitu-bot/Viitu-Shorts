@@ -182,5 +182,13 @@
    "a can opening",
    "a toggle switch click"
   ]
+ },
+ "5354.mp3|1795168951223144227|scissors cutting": {
+  "verdict": "strong",
+  "z": 3.6,
+  "parece": [
+   "scissors cutting",
+   "a squishy wet squelch"
+  ]
  }
 }
