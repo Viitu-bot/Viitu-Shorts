@@ -43,6 +43,7 @@ Número novo só entra no projeto com a base escrita aqui.
 | Som de ação no instante da ação NA IMAGEM (`no_clipe`), não na palavra | — | D | dono 19/11, vd011: "os efeitos não encaixam" |
 | Ação descrita na frase aparece inteira (sem pular o meio) | — | D | dono 19/11, vd011: feltro em 8 |
 | Montagem parte por parte, conferida antes da próxima | — | D | dono 20/11 |
+| Efeito precisa SOAR como o pedido (earshot strong/plausible) | — | M | earshot (CLAP+AST): teste 20/11, som certo em 1º em 5/6 pedidos e 'galo' = nenhum; autor: 'strong' certo 98% em teste separado |
 | Leito ≥ 10 dB abaixo da voz | 10 dB | M | pesquisa de 43 Shorts: trilha 12–18 dB abaixo da voz |
 | Efeitos curtos até 4 dB da voz | 4 dB | M (derivado) | whoosh medido a −3 dB |
 | Música cresce depois da virada (×2) | ×2 | **H** | M diz que sobe na virada, mas a quantidade não foi medida |

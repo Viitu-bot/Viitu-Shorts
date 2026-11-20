@@ -177,9 +177,10 @@
      },
      {
       "evento": "corta",
-      "arquivo": "assets/sfx/gen_metal_shears_snipping_hot_glass_sharp_cut.mp3",
+      "arquivo": "assets/sonniss/cache/5354.mp3",
       "db": -3,
-      "dur": 0.8
+      "dur": 0.8,
+      "desc": "scissors cutting"
      },
      {
       "evento": "dentro",

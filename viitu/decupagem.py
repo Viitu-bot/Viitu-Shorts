@@ -76,6 +76,15 @@ def decupar(projeto: str) -> Path:
             cv2.putText(info, Path(str(s)).name[-44:], (8, y + 10), cv2.FONT_HERSHEY_SIMPLEX, 0.38, (200, 200, 255), 1)
         linhas.append(np.hstack(tiles + [info]))
         txt.append(f"{k + 1}. {t0:.1f}-{t1:.1f}s [{c.get('_parte', '')}] \"{c['em']}\" — {ident} — {c.get('_funcao', '')} — sons: {sons}")
+    # OUVIDO (earshot, 20/11): cada efeito é ESCUTADO; som que não soa como o pedido barra a decupagem (sem folha =
+    # sem render: a entrega exige a decupagem atualizada)
+    from viitu.ouvir import ouvir
+    erros_som, avisos_som, linhas_som = ouvir(projeto)
+    txt += ["", "## OUVIDO (earshot)"] + (linhas_som or avisos_som or ["(nenhum efeito com arquivo)"])
+    if erros_som:
+        print("\n".join(txt))
+        sys.exit("❌ DECUPAGEM BARRADA: efeito que não soa como o pedido (trocar: gerar candidatos e escolher com "
+                 "earshot rank):\n  " + "\n  ".join(erros_som))
     folha = np.vstack(linhas)
     saida = pasta / "saida" / "decupagem.jpg"
     saida.parent.mkdir(parents=True, exist_ok=True)

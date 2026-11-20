@@ -1,0 +1,170 @@
+{
+ "gen_underwater_muffled_rush_of_a_ship_moving_through_w.mp3|1795111916661754687|underwater muffled rush of a ship moving through w": {
+  "verdict": "plausible",
+  "z": 2.8,
+  "parece": [
+   "{'term': 'bubbles underwater', 'category': 'water', 'z': 5.41, 'cosine': 0.502}",
+   "{'term': 'being underwater', 'category': 'water', 'z': 3.99, 'cosine': 0.367}"
+  ]
+ },
+ "gen_ship_bow_pushing_through_sea_water_rushing_water.mp3|1795111831341549252|ship bow pushing through sea water rushing water": {
+  "verdict": "strong",
+  "z": 4.1,
+  "parece": [
+   "{'term': 'water splashing', 'category': 'water', 'z': 3.81, 'cosine': 0.234}",
+   "{'term': 'an object plunging into water', 'category': 'water', 'z': 3.47, 'cosine': 0.234}"
+  ]
+ },
+ "gen_big_ocean_wave_crashing_on_a_ship_bow.mp3|1795111833526404970|big ocean wave crashing on a ship bow": {
+  "verdict": "strong",
+  "z": 3.2,
+  "parece": [
+   "{'term': 'bubbles underwater', 'category': 'water', 'z': 4.17, 'cosine': 0.344}",
+   "{'term': 'a waterfall', 'category': 'water', 'z': 2.96, 'cosine': 0.264}"
+  ]
+ },
+ "gen_ocean_water_swell_rising_soft_wave.mp3|1795111835339696583|ocean water swell rising soft wave": {
+  "verdict": "no match",
+  "z": 2.0,
+  "parece": [
+   "{'term': 'a snare hit', 'category': 'impacts', 'z': 3.55, 'cosine': 0.232}",
+   "{'term': 'an object plunging into water', 'category': 'water', 'z': 3.4, 'cosine': 0.284}"
+  ]
+ },
+ "gen_water_splash_of_a_wave_crest.mp3|1795111837173694769|water splash of a wave crest": {
+  "verdict": "no match",
+  "z": 1.5,
+  "parece": [
+   "{'term': 'an object plunging into water', 'category': 'water', 'z': 2.78, 'cosine': 0.191}",
+   "{'term': 'a squishy wet squelch', 'category': 'foley', 'z': 2.74, 'cosine': 0.134}"
+  ]
+ },
+ "gen_calm_sea_water_settling_gentle_quiet_ripple.mp3|1795111839315860525|calm sea water settling gentle quiet ripple": {
+  "verdict": "plausible",
+  "z": 2.9,
+  "parece": [
+   "{'term': 'water splashing', 'category': 'water', 'z': 3.86, 'cosine': 0.266}",
+   "{'term': 'an object plunging into water', 'category': 'water', 'z': 3.86, 'cosine': 0.296}"
+  ]
+ },
+ "gen_underwater_muffled_rush_of_a_ship_moving_through_w.mp3|1795111916661754687|being underwater": {
+  "verdict": "strong",
+  "z": 4.0,
+  "parece": [
+   "bubbles underwater",
+   "being underwater"
+  ]
+ },
+ "gen_sea_wave_swell_deep_water_surge.mp3|1795168706734354579|a sea wave rising and swelling": {
+  "verdict": "strong",
+  "z": 3.5,
+  "parece": [
+   "bubbles underwater",
+   "ocean waves"
+  ]
+ },
+ "gen_wave_crest_breaking_with_a_water_splash.mp3|1795168708336766511|water splashing": {
+  "verdict": "strong",
+  "z": 3.4,
+  "parece": [
+   "water splashing",
+   "an object plunging into water"
+  ]
+ },
+ "gen_calm_sea_water_settling_gentle_quiet_ripple.mp3|1795111839315860525|calm water, gentle ripple": {
+  "verdict": "strong",
+  "z": 3.5,
+  "parece": [
+   "water splashing",
+   "an object plunging into water"
+  ]
+ },
+ "5924.mp3|1795084492862021764|MECHHydr Hydraulic Pressure Releasing JSE IR 01 Stereo": {
+  "verdict": "strong",
+  "z": 4.8,
+  "parece": [
+   "a sword being drawn",
+   "a reverse cymbal swell"
+  ]
+ },
+ "3232.mp3|1795083795785996834|Air Compressor,Omega,5 hp,20 Gallon,Twin Cylinder,Air Release,x2": {
+  "verdict": "strong",
+  "z": 7.1,
+  "parece": [
+   "a spray can hissing",
+   "a snare roll"
+  ]
+ },
+ "gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3|1795095051734093701|heavy hydraulic press closing deep metal clunk": {
+  "verdict": "strong",
+  "z": 3.9,
+  "parece": [
+   "a door slam",
+   "a latch clicking shut"
+  ]
+ },
+ "gen_heated_metal_press_sizzling_soft_hiss_of_hot_rubbe.mp3|1795095049360874906|heated metal press sizzling soft hiss of hot rubbe": {
+  "verdict": "strong",
+  "z": 3.3,
+  "parece": [
+   "a spray can hissing",
+   "crisp hi-hats"
+  ]
+ },
+ "gen_slow_soft_air_leaking_hiss_from_a_small_hole.mp3|1795084497038215238|slow soft air leaking hiss from a small hole": {
+  "verdict": "plausible",
+  "z": 2.8,
+  "parece": [
+   "a spray can hissing",
+   "crisp hi-hats"
+  ]
+ },
+ "gen_opening_a_pressurized_tennis_ball_can_loud_pop_and.mp3|1795084500453552325|opening a pressurized tennis ball can loud pop and": {
+  "verdict": "weak",
+  "z": 2.3,
+  "parece": [
+   "a mouth pop",
+   "a plastic toy snapping together"
+  ]
+ },
+ "gen_glass_marbles_rolling_on_spinning_metal_rollers_ra.mp3|1795099653165127779|glass marbles rolling on spinning metal rollers ra": {
+  "verdict": "strong",
+  "z": 4.8,
+  "parece": [
+   "coins dropping",
+   "dominoes falling"
+  ]
+ },
+ "gen_molten_glass_pouring_thick_glowing_liquid_sizzling.mp3|1795099646238798040|molten glass pouring thick glowing liquid sizzling": {
+  "verdict": "strong",
+  "z": 3.3,
+  "parece": [
+   "a squishy wet squelch",
+   "pouring water"
+  ]
+ },
+ "gen_metal_shears_snipping_hot_glass_sharp_cut.mp3|1795099648097769046|metal shears snipping hot glass sharp cut": {
+  "verdict": "weak",
+  "z": 2.2,
+  "parece": [
+   "coins dropping",
+   "crisp hi-hats"
+  ]
+ },
+ "gen_single_glass_marble_clink.mp3|1795099649537408137|single glass marble clink": {
+  "verdict": "strong",
+  "z": 3.5,
+  "parece": [
+   "a triangle hit",
+   "ice cubes in a glass"
+  ]
+ },
+ "gen_many_glass_marbles_pouring_into_a_metal_bucket.mp3|1795099651554560293|many glass marbles pouring into a metal bucket": {
+  "verdict": "strong",
+  "z": 5.5,
+  "parece": [
+   "coins dropping",
+   "dominoes falling"
+  ]
+ }
+}

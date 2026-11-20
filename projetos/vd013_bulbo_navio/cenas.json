@@ -54,7 +54,8 @@
      "arquivo": "assets/sfx/gen_underwater_muffled_rush_of_a_ship_moving_through_w.mp3",
      "db": -5,
      "dur": 1.6,
-     "no_clipe": 18.1
+     "no_clipe": 18.1,
+     "desc": "being underwater"
     }
    ]
   },
@@ -162,27 +163,31 @@
      },
      {
       "evento": "onda2",
-      "arquivo": "assets/sfx/gen_ocean_water_swell_rising_soft_wave.mp3",
+      "arquivo": "assets/sfx/gen_sea_wave_swell_deep_water_surge.mp3",
       "db": -3,
-      "dur": 1.4
+      "dur": 1.4,
+      "desc": "a sea wave rising and swelling"
      },
      {
       "evento": "vale",
-      "arquivo": "assets/sfx/gen_ocean_water_swell_rising_soft_wave.mp3",
+      "arquivo": "assets/sfx/gen_sea_wave_swell_deep_water_surge.mp3",
       "db": -6,
-      "dur": 1.0
+      "dur": 1.0,
+      "desc": "a sea wave rising and swelling"
      },
      {
       "evento": "crista",
-      "arquivo": "assets/sfx/gen_water_splash_of_a_wave_crest.mp3",
+      "arquivo": "assets/sfx/gen_wave_crest_breaking_with_a_water_splash.mp3",
       "db": -3,
-      "dur": 0.8
+      "dur": 0.8,
+      "desc": "water splashing"
      },
      {
       "evento": "apagam",
       "arquivo": "assets/sfx/gen_calm_sea_water_settling_gentle_quiet_ripple.mp3",
       "db": -3,
-      "dur": 1.6
+      "dur": 1.6,
+      "desc": "calm water, gentle ripple"
      }
     ]
    },

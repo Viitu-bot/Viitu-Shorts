@@ -28,6 +28,10 @@ aval do dono). Não renderizar planta reprovada.
    inteira (começo→fim, nada pulado entre duas cenas)? cada som tem `"no_clipe"` = o segundo do clipe em que a ação
    acontece (prancha fina de 0,1 s), e não a palavra? Errou → corrige o cenas.json e
    gera de novo. A entrega reprova se a decupagem não existir ou for mais velha que o cenas.json.
+   A decupagem ESCUTA cada efeito (`viitu.ouvir`, earshot): som que não soa como o pedido barra. Para trocar: gerar 2–4
+   candidatos (`foley._gerar_elevenlabs` / Sonniss) e escolher com `earshot rank "<o que deve soar>" <arquivos>`;
+   marcar `"desc"` no efeito com a descrição do que ele deve soar. Instalação (1x por sessão):
+   `uv tool install "earshot[mcp] @ git+https://github.com/Leonxlnx/earshot" && earshot doctor --fetch`.
 5. **PARTE POR PARTE (dono, 20/11):** `python3 -m viitu.editar <p> --remotion` → `python3 -m viitu.partes <p> GANCHO`
    (~20 s, baixa resolução, com voz e efeitos) → o Claude ABRE `saida/partes/1_GANCHO.jpg` (0,2 em 0,2 s, palavra
    falada, corte em vermelho, SOM no instante) e confere: imagem = palavra? ação inteira? som na ação? nada repetido?

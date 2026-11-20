@@ -186,7 +186,8 @@
       "evento": "vaza",
       "arquivo": "assets/sfx/gen_slow_soft_air_leaking_hiss_from_a_small_hole.mp3",
       "db": -5,
-      "dur": 2.0
+      "dur": 2.0,
+      "desc": "a spray can hissing"
      }
     ]
    },
@@ -222,10 +223,11 @@
    "sfx_cena": [
     {
      "em": "onde o ar",
-     "arquivo": "assets/sfx/gen_opening_a_pressurized_tennis_ball_can_loud_pop_and.mp3",
+     "arquivo": "assets/sfx/gen_can_opening_with_a_loud_pressurized_pop_and_hiss.mp3",
      "db": -1,
      "dur": 1.8,
-     "no_clipe": 6.3
+     "no_clipe": 6.3,
+     "desc": "a can opening"
     }
    ]
   },
