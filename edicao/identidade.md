@@ -30,6 +30,11 @@ earshot nos primeiros 1,5 s: "notification ding / success chime" em 4 vídeos, "
 "A vida é uma maravilha"): testar variações DA MESMA FAMÍLIA (ding com eco/reverb, ding duplo, sininho/guizo) para não
 romper a identidade — próxima etapa.
 
+## 2b. Abertura nova (dono, 20/11)
+Medido na gravação de tela do dono (Shorts da A vida é uma maravilha): dois toques, ~0,25 s entre eles, cauda curta,
+voz logo depois. Adaptado ao ding do canal e ajustado pelo dono: toques mais colados (0,12 s) e eco que fica mais
+(~1,3 s, esquerda/direita). Arquivo: `assets/sfx/abertura_viitu.wav`. Vale a partir do próximo vídeo (não refazer os prontos).
+
 ## 3. Edição (o que os efeitos do dono eram)
 - **Ritmo:** 2–3 s por tomada na maioria (1,1–1,4 s nos mais acelerados; até 3,9 s quando a ação prende).
 - **Transição:** "whip pan whoosh / short swish / fast air whoosh" = o efeito mais usado (73 de 186 eventos marcados).

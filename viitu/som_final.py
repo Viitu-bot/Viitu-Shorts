@@ -166,8 +166,21 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
     fx += L["virada"][:n] * pico_para(L["virada"][:n], MD["boom"])             # boom medido: no nível da voz
     st = pasta / "saida" / "stems"
     st.mkdir(parents=True, exist_ok=True)
-    for nome, x in (("voz", voz), ("leito", leito), ("efeitos", fx), ("ding", din)):
+    for nome, x in (("voz", voz), ("leito", leito), ("efeitos", fx)):
         _wav(x, st / f"{nome}.wav")
+    # ABERTURA DO CANAL (dono, 20/11 — opção D): o ding em DOIS toques colados (0,12 s) + eco estéreo que atravessa
+    # a cabeça e some em ~1,3 s. Estéreo de verdade (o resto do mix continua igual nos dois lados). No nível da voz.
+    ab_arq = RAIZ / "assets" / "sfx" / "abertura_viitu.wav"
+    if ab_arq.exists():
+        r = subprocess.run(["ffmpeg", "-v", "error", "-i", str(ab_arq), "-ac", "2", "-ar", str(SR), "-f", "f32le", "-"],
+                           capture_output=True, check=True).stdout
+        ab = np.frombuffer(r, np.float32).reshape(-1, 2)[:n]
+        ab2 = np.zeros((n, 2), np.float32); ab2[: len(ab)] = ab
+        ab2 *= pico_para(ab2.mean(1), 0)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "2", "-i", "-", "-c:a",
+                        "pcm_f32le", str(st / "ding.wav")], input=np.clip(ab2, -4, 4).astype(np.float32).tobytes(), check=True)
+    else:
+        _wav(din, st / "ding.wav")
 
     mix = st / "mix.wav"
     grafo = (
@@ -177,7 +190,10 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
         # efeitos curtos: só encostam (ratio baixo), continuam claros
         "[2:a][vk2]sidechaincompress=threshold=0.05:ratio=3:attack=5:release=150[f];"
         "[l]asplit=2[l1][l2];[f]asplit=2[f1][f2];[v]asplit=2[v1][v2];"
-        "[v1][l1][f1][3:a]amix=inputs=4:normalize=0,alimiter=limit=0.89:level=false,"
+        # saída ESTÉREO (a abertura tem eco esquerda/direita); voz, leito e efeitos iguais nos dois lados
+        "[v1]aformat=channel_layouts=stereo[vs];[l1]aformat=channel_layouts=stereo[ls];[f1]aformat=channel_layouts=stereo[fs];"
+        "[3:a]aformat=channel_layouts=stereo[ds];"
+        "[vs][ls][fs][ds]amix=inputs=4:normalize=0,alimiter=limit=0.89:level=false,"
         "loudnorm=I=-14:TP=-1.5:LRA=9,aresample=48000[out]"
     )
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(st / "voz.wav"), "-i", str(st / "leito.wav"),

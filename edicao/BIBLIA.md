@@ -18,6 +18,8 @@ O roteiro.md marca cada parte com o rótulo `[GANCHO]`, `[INÍCIO]`, `[MEIO]`, `
 
 ## 2. Identidade (o que faz reconhecer o canal) — sempre, em todo vídeo
 - **Frame 0: FLASH branco→amarelo (0,2 s) + DING** — o ding tem que ser OUVIDO (nível da voz, fora do abaixamento).
+  **Desde 20/11 (escolha do dono, opção D):** o ding toca em DOIS toques colados (0,12 s) com eco estéreo que atravessa
+  a cabeça e some em ~1,3 s (`assets/sfx/abertura_viitu.wav`; o áudio final sai em estéreo). Só em vídeos NOVOS.
   É a nossa marca, como o estalo de dedos + piscar branco da "A vida é uma maravilha".
 - Legenda 1 palavra, amarelo ouro #FFD700, contorno preto forte, terço superior. Zero fisheye. Seta no frame 0.
 - Voz do Otto no máximo, silêncios cortados (auto-cut), começando no 0,0 s.
