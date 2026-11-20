@@ -1,0 +1,190 @@
+{
+ "video": "avidamaravilha_7652672412080753928.mp4",
+ "duracao_s": 35.2,
+ "tomadas": 20,
+ "s_por_tomada": 1.76,
+ "cortes": [
+  1.83,
+  3.9,
+  5.6,
+  10.7,
+  14.43,
+  16.9,
+  20.53,
+  23.93,
+  26.3,
+  27.47,
+  29.13,
+  30.1,
+  30.47,
+  31.0,
+  31.57,
+  32.13,
+  32.53,
+  33.1,
+  33.9
+ ],
+ "musica_bpm": 129.2,
+ "musica_tom": "C",
+ "musica_nome": [
+  {
+   "de": 13.577505500000001,
+   "ate": 21.5775055,
+   "musica": "Everything In Its Right Place",
+   "artista": "Radiohead",
+   "link": "https://www.shazam.com/track/46709819/everything-in-its-right-place"
+  },
+  {
+   "de": 27.155011000000002,
+   "ate": 35.155011,
+   "musica": "Everything In Its Right Place",
+   "artista": "Radiohead",
+   "link": "https://www.shazam.com/track/46709819/everything-in-its-right-place"
+  }
+ ],
+ "efeitos_timeline": "effects.wav: 0:00.00-0:35.18 (35.2 s). Loudness -31.9 LUFS integrated, true peak -5.0 dBTP, LRA 17.4 LU; loudest 0:20.50-0:23.50 (-30.5 LUFS short-term). 10 stop-down(s)/gap(s): 0:05.95 2.6 s drop, 0:08.70 1.3 s drop, 0:10.10 0.4 s drop, 0:11.05 0.5 s drop, 0:11.90 0.3 s drop. Quiet lead-in 4.8 s (drop) and tail 8.2 s (drop). No steady beat grid (pulse clarity 0.14 < 0.15). 4 section(s): 0:00.00-0:09.35 unclear (no confident music / ambience / voice tag); 0:09.35-0:14.50 unclear (no confident music / ambience / voice tag); 0:14.50-0:27.05 unclear (no confident music / ambience / voice tag); 0:27.05-0:35.18 near silence. 113 events (3.2/s); 20 tagged (11 whoosh, 3 step, 3 ui, 1 foley, 1 key, 1 drum; tags are hints). Strongest accents over a running bed: 0:10.69 +39 dB (camera shutter click), 0:05.54 +29 dB (whip pan whoosh transition), 0:21.82 +28 dB. Sync to 24 cuts: 29% have an onset within 1 frame (chance 20%), 54% within 100 ms, median |offset| 61 ms; 4% land on a strong accent (>= 29 dB over the bed) within 1 frame (chance 4%); 2 only by a level peak (soft whoosh / swell?); 9 without a hit: 0:07.00, 0:20.53, 0:23.93, 0:26.30, 0:30.53, 0:31.00.",
+ "efeitos_eventos": [
+  {
+   "t": 0.07,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 3.9,
+   "no_corte": true
+  },
+  {
+   "t": 1.85,
+   "tipo": "FOLEY",
+   "som": "leaves rustling",
+   "destaque_db": 22.6,
+   "no_corte": true
+  },
+  {
+   "t": 3.96,
+   "tipo": "STEP",
+   "som": "footsteps on grass",
+   "destaque_db": 20.4,
+   "no_corte": true
+  },
+  {
+   "t": 5.54,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 29.2,
+   "no_corte": true
+  },
+  {
+   "t": 8.65,
+   "tipo": "UI",
+   "som": "soft UI button tap",
+   "destaque_db": 52.4,
+   "no_corte": false
+  },
+  {
+   "t": 10.64,
+   "tipo": "UI",
+   "som": "camera shutter click",
+   "destaque_db": 46.6,
+   "no_corte": true
+  },
+  {
+   "t": 10.69,
+   "tipo": "UI",
+   "som": "camera shutter click",
+   "destaque_db": 38.6,
+   "no_corte": true
+  },
+  {
+   "t": 11.73,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 49.0,
+   "no_corte": false
+  },
+  {
+   "t": 12.29,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 37.5,
+   "no_corte": false
+  },
+  {
+   "t": 14.43,
+   "tipo": "STEP",
+   "som": "small soft footstep",
+   "destaque_db": 11.0,
+   "no_corte": true
+  },
+  {
+   "t": 16.93,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 9.7,
+   "no_corte": true
+  },
+  {
+   "t": 20.76,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 59.9,
+   "no_corte": false
+  },
+  {
+   "t": 22.74,
+   "tipo": "DRUM",
+   "som": "hi-hat",
+   "destaque_db": 51.4,
+   "no_corte": false
+  },
+  {
+   "t": 23.7,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 57.2,
+   "no_corte": false
+  },
+  {
+   "t": 25.68,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 15.2,
+   "no_corte": true
+  },
+  {
+   "t": 26.67,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 27.8,
+   "no_corte": true
+  },
+  {
+   "t": 28.41,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 19.7,
+   "no_corte": true
+  },
+  {
+   "t": 29.05,
+   "tipo": "STEP",
+   "som": "small soft footstep",
+   "destaque_db": 18.0,
+   "no_corte": true
+  },
+  {
+   "t": 32.14,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 0.6,
+   "no_corte": true
+  },
+  {
+   "t": 34.17,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 4.6,
+   "no_corte": true
+  }
+ ],
+ "cortes_earshot": 24,
+ "abertura": "1.50 s busy, 3.3 onsets/s (attack 28 ms). Music (AudioSet Music 0.79). Unvalidated hints - genre: ; mood (wrong for ~1 in 5 tracks in a test): aggressive music (z +2.3). Sounds most like: a punchy impact hit (z +2.6), a cinematic hit with a long tail (z +1.9), a busy cafe (z +1.8) [plausible reading]. Other readings: a chat message pop (ui, z +1.6). AudioSet: Music 0.79, Speech 0.75, Television 0.06. peak -0.5 dBFS, -15.7 LUFS, brightness 1.9 kHz, bandwidth 16.3 kHz, noise floor -25 dBFS, side/mid -11 dB."
+}

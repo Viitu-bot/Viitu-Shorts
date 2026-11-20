@@ -1,0 +1,190 @@
+{
+ "video": "ivangeneraltv_7681282717119794452.mp4",
+ "duracao_s": 23.9,
+ "tomadas": 13,
+ "s_por_tomada": 1.84,
+ "cortes": [
+  1.9,
+  2.57,
+  3.37,
+  4.13,
+  5.3,
+  9.97,
+  13.8,
+  14.6,
+  16.77,
+  18.13,
+  20.5,
+  22.57
+ ],
+ "musica_bpm": 94.0,
+ "musica_tom": "A",
+ "musica_nome": [
+  {
+   "de": 0,
+   "ate": 8,
+   "musica": "Blade Runner 2049",
+   "artista": "Synthwave Goose",
+   "link": "https://www.shazam.com/track/420248694/blade-runner-2049"
+  },
+  {
+   "de": 7.9690025,
+   "ate": 15.9690025,
+   "musica": "Blade Runner 2049",
+   "artista": "Synthwave Goose",
+   "link": "https://www.shazam.com/track/420248694/blade-runner-2049"
+  },
+  {
+   "de": 15.938005,
+   "ate": 23.938005,
+   "musica": "Blade Runner 2049",
+   "artista": "Synthwave Goose",
+   "link": "https://www.shazam.com/track/420248694/blade-runner-2049"
+  }
+ ],
+ "efeitos_timeline": "effects.wav: 0:00.00-0:23.94 (23.9 s). Loudness -20.1 LUFS integrated, true peak 1.6 dBTP, LRA 7.6 LU; loudest 0:14.00-0:17.00 (-23.3 LUFS short-term). True peak 1.6 dBTP is above -1 dBTP (risk of overs after encoding). 7 stop-down(s)/gap(s): 0:00.45 1.4 s drop, 0:01.95 5.8 s drop, 0:07.85 0.8 s drop, 0:08.85 1.1 s drop, 0:10.00 4.5 s drop. Quiet tail 3.4 s (drop). No steady beat grid (pulse clarity 0.00 < 0.15). 3 section(s): 0:00.00-0:05.30 also: whoosh, swoosh, swish (AST); 0:05.30-0:09.75 unclear (no confident music / ambience / voice tag); 0:09.75-0:23.94 also: single-lens reflex camera (AST). 33 events (1.4/s); 20 tagged (4 whoosh, 4 drum, 3 key, 3 foley, 3 step, 2 ui, 1 hit; tags are hints). Strongest accents over a running bed: 0:02.71 +21 dB, 0:05.17 +14 dB (short swish), 0:00.57 +2 dB (whip pan whoosh transition). Sync to 20 cuts: 45% have an onset within 1 frame (chance 8%), 60% within 100 ms, median |offset| 32 ms; 25% land on a strong accent (>= 71 dB over the bed) within 1 frame (chance 2%); 1 only by a level peak (soft whoosh / swell?); 7 without a hit: 0:03.37, 0:10.30, 0:12.40, 0:17.93, 0:18.13, 0:22.57.",
+ "efeitos_eventos": [
+  {
+   "t": 0.01,
+   "tipo": "HIT",
+   "som": "punchy impact hit",
+   "destaque_db": 74.1,
+   "no_corte": false
+  },
+  {
+   "t": 0.57,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 1.6,
+   "no_corte": false
+  },
+  {
+   "t": 1.84,
+   "tipo": "KEY",
+   "som": "mechanical keyboard key press",
+   "destaque_db": 69.6,
+   "no_corte": true
+  },
+  {
+   "t": 2.41,
+   "tipo": "DRUM",
+   "som": "hi-hat",
+   "destaque_db": 21.1,
+   "no_corte": false
+  },
+  {
+   "t": 2.57,
+   "tipo": "DRUM",
+   "som": "hi-hat",
+   "destaque_db": 39.3,
+   "no_corte": true
+  },
+  {
+   "t": 4.12,
+   "tipo": "FOLEY",
+   "som": "paper rustling",
+   "destaque_db": 32.9,
+   "no_corte": true
+  },
+  {
+   "t": 4.19,
+   "tipo": "STEP",
+   "som": "footsteps on grass",
+   "destaque_db": 21.7,
+   "no_corte": true
+  },
+  {
+   "t": 4.63,
+   "tipo": "STEP",
+   "som": "small soft footstep",
+   "destaque_db": 0.5,
+   "no_corte": false
+  },
+  {
+   "t": 4.98,
+   "tipo": "FOLEY",
+   "som": "glass clinking",
+   "destaque_db": 10.7,
+   "no_corte": false
+  },
+  {
+   "t": 5.17,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 13.9,
+   "no_corte": true
+  },
+  {
+   "t": 7.74,
+   "tipo": "KEY",
+   "som": "mechanical keyboard key press",
+   "destaque_db": 70.2,
+   "no_corte": false
+  },
+  {
+   "t": 8.74,
+   "tipo": "KEY",
+   "som": "mechanical keyboard key press",
+   "destaque_db": 69.3,
+   "no_corte": false
+  },
+  {
+   "t": 9.9,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 71.5,
+   "no_corte": true
+  },
+  {
+   "t": 13.72,
+   "tipo": "STEP",
+   "som": "footsteps on grass",
+   "destaque_db": 26.4,
+   "no_corte": true
+  },
+  {
+   "t": 13.88,
+   "tipo": "DRUM",
+   "som": "hi-hat",
+   "destaque_db": 16.3,
+   "no_corte": true
+  },
+  {
+   "t": 13.95,
+   "tipo": "DRUM",
+   "som": "hi-hat",
+   "destaque_db": 0.0,
+   "no_corte": false
+  },
+  {
+   "t": 14.46,
+   "tipo": "UI",
+   "som": "camera shutter click",
+   "destaque_db": 76.0,
+   "no_corte": true
+  },
+  {
+   "t": 16.67,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 71.4,
+   "no_corte": true
+  },
+  {
+   "t": 16.77,
+   "tipo": "FOLEY",
+   "som": "wooden block hit",
+   "destaque_db": 54.8,
+   "no_corte": true
+  },
+  {
+   "t": 20.36,
+   "tipo": "UI",
+   "som": "camera shutter click",
+   "destaque_db": 76.1,
+   "no_corte": true
+  }
+ ],
+ "cortes_earshot": 20,
+ "abertura": "1.50 s busy, 4.7 onsets/s (attack 39 ms). Music (AudioSet Music 0.74). Unvalidated hints - genre: ; mood (wrong for ~1 in 5 tracks in a test): aggressive music (z +1.5). Sounds most like: a punchy impact hit (z +3.2), a body falling on the ground (z +2.7), a squishy wet squelch (z +2.6) [clear reading]. AudioSet: Speech 0.83, Music 0.74, Spray 0.08. peak -2.9 dBFS, -12.9 LUFS, brightness 1.5 kHz, bandwidth 16.3 kHz, noise floor -27 dBFS, side/mid -26 dB."
+}

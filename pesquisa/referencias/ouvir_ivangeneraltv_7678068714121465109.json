@@ -1,0 +1,172 @@
+{
+ "video": "ivangeneraltv_7678068714121465109.mp4",
+ "duracao_s": 21.8,
+ "tomadas": 16,
+ "s_por_tomada": 1.36,
+ "cortes": [
+  1.3,
+  2.27,
+  3.43,
+  5.0,
+  6.7,
+  7.83,
+  9.0,
+  10.17,
+  12.37,
+  14.4,
+  15.53,
+  16.87,
+  17.93,
+  19.37,
+  20.4
+ ],
+ "musica_bpm": 139.7,
+ "musica_tom": "A",
+ "musica_nome": [
+  {
+   "de": 0,
+   "ate": 8,
+   "musica": "Ureshi Tanoshi",
+   "artista": "ko-ko-ya",
+   "link": "https://www.shazam.com/track/559072724/ureshi-tanoshi"
+  },
+  {
+   "de": 6.900997500000001,
+   "ate": 14.9009975,
+   "musica": "Ureshi Tanoshi",
+   "artista": "ko-ko-ya",
+   "link": "https://www.shazam.com/track/559072724/ureshi-tanoshi"
+  },
+  {
+   "de": 13.801995000000002,
+   "ate": 21.801995,
+   "musica": "Ureshi Tanoshi",
+   "artista": "ko-ko-ya",
+   "link": "https://www.shazam.com/track/559072724/ureshi-tanoshi"
+  }
+ ],
+ "efeitos_timeline": "effects.wav: 0:00.00-0:21.80 (21.8 s). Loudness -20.5 LUFS integrated, true peak 1.3 dBTP, LRA 14.7 LU; loudest 0:00.00-0:03.00 (-21.4 LUFS short-term). CLIPPING: 5 runs of clipped samples (first at 0:00.03). 5 stop-down(s)/gap(s): 0:00.70 1.0 s drop, 0:03.45 3.1 s drop, 0:06.70 3.5 s drop, 0:10.35 4.0 s drop, 0:14.40 4.4 s drop. Quiet tail 2.9 s (near silence). No steady beat grid (pulse clarity 0.07 < 0.15). 2 section(s): 0:00.00-0:03.45 unclear (no confident music / ambience / voice tag); 0:03.45-0:21.80 also: single-lens reflex camera, camera (AST). 17 events (0.8/s); 17 tagged (10 whoosh, 1 hit, 1 step, 1 voice, 1 riser, 1 drum, 1 ui, 1 foley; tags are hints). Strongest accents over a running bed: 0:00.60 +14 dB (whip pan whoosh transition), 0:03.29 +13 dB (hi-hat), 0:02.34 +9 dB (reverse cymbal swell). Sync to 18 cuts: 17% have an onset within 1 frame (chance 4%), 39% within 100 ms, median |offset| 70 ms; 11% land on a strong accent (>= 70 dB over the bed) within 1 frame (chance 1%); 1 only by a level peak (soft whoosh / swell?); 10 without a hit: 0:05.00, 0:07.83, 0:09.00, 0:12.37, 0:14.73, 0:15.53.",
+ "efeitos_eventos": [
+  {
+   "t": 0.0,
+   "tipo": "HIT",
+   "som": "punchy impact hit",
+   "destaque_db": 74.6,
+   "no_corte": false
+  },
+  {
+   "t": 0.07,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 0.0,
+   "no_corte": false
+  },
+  {
+   "t": 0.19,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 0.0,
+   "no_corte": false
+  },
+  {
+   "t": 0.32,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 1.3,
+   "no_corte": false
+  },
+  {
+   "t": 0.48,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 9.2,
+   "no_corte": false
+  },
+  {
+   "t": 0.6,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 14.4,
+   "no_corte": false
+  },
+  {
+   "t": 0.81,
+   "tipo": "STEP",
+   "som": "footsteps on grass",
+   "destaque_db": 1.5,
+   "no_corte": false
+  },
+  {
+   "t": 1.22,
+   "tipo": "VOICE",
+   "som": "breath",
+   "destaque_db": 7.2,
+   "no_corte": true
+  },
+  {
+   "t": 1.74,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 65.9,
+   "no_corte": false
+  },
+  {
+   "t": 2.34,
+   "tipo": "RISER",
+   "som": "reverse cymbal swell",
+   "destaque_db": 8.7,
+   "no_corte": true
+  },
+  {
+   "t": 3.29,
+   "tipo": "DRUM",
+   "som": "hi-hat",
+   "destaque_db": 13.0,
+   "no_corte": true
+  },
+  {
+   "t": 6.6,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 71.1,
+   "no_corte": true
+  },
+  {
+   "t": 10.2,
+   "tipo": "UI",
+   "som": "camera shutter click",
+   "destaque_db": 76.1,
+   "no_corte": true
+  },
+  {
+   "t": 10.27,
+   "tipo": "FOLEY",
+   "som": "lego bricks clicking",
+   "destaque_db": 74.1,
+   "no_corte": true
+  },
+  {
+   "t": 14.3,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 66.0,
+   "no_corte": true
+  },
+  {
+   "t": 18.77,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 65.7,
+   "no_corte": false
+  },
+  {
+   "t": 18.83,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 65.7,
+   "no_corte": false
+  }
+ ],
+ "cortes_earshot": 18,
+ "abertura": "1.50 s busy, 7.3 onsets/s (attack 31 ms, decays in 742 ms). Sounds most like: a tape stop slowing down (z +2.4), a whip pan transition (z +2.2), a punchy impact hit (z +2.0) [weak reading]. Other readings: a power drill (everyday, z +2.0). AudioSet: Speech 0.69, Music 0.17, Boing 0.06. peak -0.1 dBFS, -14.1 LUFS, brightness 1.9 kHz, bandwidth 16.3 kHz, noise floor -33 dBFS, side/mid -24 dB."
+}

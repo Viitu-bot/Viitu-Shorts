@@ -55,6 +55,7 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
 |---|---|
 | **BÍBLIA (regras do DONO — fonte única; o Claude não muda sem autorização)** | `edicao/BIBLIA.md` |
 | **IDENTIDADE MEDIDA do canal (música "sans." Toby Fox, ding, whoosh, ritmo — não perder)** | `edicao/identidade.md` |
+| **BIBLIOTECA DO NICHO medida (música-assinatura de cada canal, efeitos comuns com o nome para buscar)** | `edicao/biblioteca_nicho.md` |
 | O FORMATO (planta técnica: B-roll, 3D, som por batida — obedece à BÍBLIA) | `edicao/formato.md` |
 | **Os 7 FORMATOS do canal + lógica da edição (acontecimento → visual + som)** | `edicao/formatos.md` · `edicao/formatos.json` |
 | **De onde vem cada regra (D dono · M medido · H hipótese — H nunca bloqueia; número novo só com base)** | `edicao/fontes_das_regras.md` |

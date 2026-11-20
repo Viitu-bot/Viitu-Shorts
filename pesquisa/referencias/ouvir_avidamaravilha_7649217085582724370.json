@@ -1,0 +1,175 @@
+{
+ "video": "avidamaravilha_7649217085582724370.mp4",
+ "duracao_s": 43.4,
+ "tomadas": 20,
+ "s_por_tomada": 2.17,
+ "cortes": [
+  1.17,
+  3.2,
+  4.4,
+  5.83,
+  8.33,
+  10.07,
+  11.23,
+  13.5,
+  17.23,
+  18.3,
+  20.67,
+  22.73,
+  26.4,
+  28.27,
+  29.63,
+  34.1,
+  35.77,
+  37.6,
+  39.47
+ ],
+ "musica_bpm": null,
+ "musica_tom": null,
+ "musica_nome": [],
+ "efeitos_timeline": "effects.wav: 0:00.00-0:43.45 (43.4 s). Loudness -26.2 LUFS integrated, true peak -1.2 dBTP, LRA 12.0 LU; loudest 0:17.00-0:20.00 (-22.7 LUFS short-term). 2 stop-down(s)/gap(s): 0:41.05 0.3 s drop, 0:42.15 0.6 s drop. Quiet lead-in 4.8 s (drop) and tail 0.4 s (near silence). No steady beat grid (pulse clarity 0.04 < 0.15). 3 section(s): 0:00.00-0:04.50 near silence; 0:04.50-0:39.65 also: keys jangling (AST); 0:39.65-0:43.45 also: fowl, turkey (AST). 181 events (4.2/s); 20 tagged (14 whoosh, 3 key, 1 voice, 1 note, 1 ui; tags are hints). Strongest accents over a running bed: 0:17.20 +26 dB (whip pan whoosh transition), 0:06.23 +22 dB, 0:04.86 +21 dB. Sync to 18 cuts: 39% have an onset within 1 frame (chance 28%), 78% within 100 ms, median |offset| 38 ms; 11% land on a strong accent (>= 17 dB over the bed) within 1 frame (chance 5%); 1 only by a level peak (soft whoosh / swell?); 3 without a hit: 0:17.57, 0:28.27, 0:39.47.",
+ "efeitos_eventos": [
+  {
+   "t": 2.52,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 23.5,
+   "no_corte": false
+  },
+  {
+   "t": 4.39,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 11.8,
+   "no_corte": true
+  },
+  {
+   "t": 5.89,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 4.9,
+   "no_corte": true
+  },
+  {
+   "t": 7.26,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 41.1,
+   "no_corte": false
+  },
+  {
+   "t": 8.41,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 4.2,
+   "no_corte": true
+  },
+  {
+   "t": 10.07,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 9.2,
+   "no_corte": true
+  },
+  {
+   "t": 11.15,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 17.9,
+   "no_corte": true
+  },
+  {
+   "t": 13.49,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 0.7,
+   "no_corte": true
+  },
+  {
+   "t": 14.91,
+   "tipo": "VOICE",
+   "som": "breath",
+   "destaque_db": 37.4,
+   "no_corte": false
+  },
+  {
+   "t": 17.2,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 26.3,
+   "no_corte": true
+  },
+  {
+   "t": 18.28,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 8.4,
+   "no_corte": true
+  },
+  {
+   "t": 20.64,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 7.8,
+   "no_corte": true
+  },
+  {
+   "t": 22.7,
+   "tipo": "NOTE",
+   "som": "glockenspiel note",
+   "destaque_db": 19.6,
+   "no_corte": true
+  },
+  {
+   "t": 26.37,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 17.9,
+   "no_corte": true
+  },
+  {
+   "t": 29.53,
+   "tipo": "KEY",
+   "som": "spacebar press",
+   "destaque_db": 7.8,
+   "no_corte": true
+  },
+  {
+   "t": 34.0,
+   "tipo": "WHOOSH",
+   "som": "short swish",
+   "destaque_db": 4.0,
+   "no_corte": true
+  },
+  {
+   "t": 37.55,
+   "tipo": "UI",
+   "som": "chat message pop",
+   "destaque_db": 19.5,
+   "no_corte": true
+  },
+  {
+   "t": 37.65,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 17.3,
+   "no_corte": true
+  },
+  {
+   "t": 37.7,
+   "tipo": "WHOOSH",
+   "som": "fast air whoosh",
+   "destaque_db": 5.1,
+   "no_corte": true
+  },
+  {
+   "t": 42.73,
+   "tipo": "WHOOSH",
+   "som": "whip pan whoosh transition",
+   "destaque_db": 46.0,
+   "no_corte": false
+  }
+ ],
+ "cortes_earshot": 18,
+ "abertura": "1.50 s busy, 4.7 onsets/s (attack 74 ms). Music (AudioSet Music 0.78). Unvalidated hints - genre: hip hop beat with heavy bass (z +3.1); mood (wrong for ~1 in 5 tracks in a test): aggressive music (z +2.6). Sounds most like: a punchy impact hit (z +2.4), a box lid closing (z +1.8), a cinematic hit with a long tail (z +1.6) [weak reading]. Other readings: a busy cafe (ambience, z +1.4). AudioSet: Speech 0.83, Music 0.78, Television 0.06. peak -0.9 dBFS, -13.3 LUFS, brightness 2.1 kHz, bandwidth 16.3 kHz, noise floor -24 dBFS, side/mid -12 dB."
+}
