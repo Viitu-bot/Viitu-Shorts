@@ -217,6 +217,9 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
                      f"Sem som: cenas {[k + 1 for k in reais_idx if k not in com_acao]}.")
     if not cfg.get("impacto_em"):
         erros.append("R8 SEM VIRADA SONORA: defina impacto_em (riser → vácuo → boom).")
+    if str(cfg.get("musica", "")).startswith("app:"):
+        erros.append("R8 MÚSICA FORA DO ARQUIVO: o dono reprovou 2x vídeo sem trilha (reclamação #18). Use trilha própria "
+                     "licenciada em \"musica\" (assets/musica/); a música conhecida vai só como sugestão no /publicar.")
     if not cfg.get("musica"):
         erros.append("R8 SEM MÚSICA: defina musica (biblioteca própria ou app:<faixa>).")
 
