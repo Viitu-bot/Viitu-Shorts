@@ -6,7 +6,16 @@
 5. 5.6-6.8s [INÍCIO] "com cola na borda" — tt_smartestworkers_752212239 @23.05s — a cola sendo passada na borda — a ação da frase — sons: []
 6. 6.8-15.7s [MEIO] "Elas fecham" — 3D prensa3d — 3D do processo real: câmara enche de ar comprimido → prensa fecha e prende o ar → calor funde a borda → peça só → ar atravessa a borracha devagar — sons: ['wind gust whoosh', 'assets/sonniss/cache/3232.mp3', 'assets/sfx/gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3', 'assets/sfx/gen_heated_metal_press_sizzling_soft_hiss_of_hot_rubbe.mp3', 'assets/sonniss/cache/5924.mp3', 'assets/sfx/gen_slow_soft_air_leaking_hiss_from_a_small_hole.mp3']
 7. 15.7-17.7s [FINAL] "Por isso" — tt_thetennis101_747693011507 @3.2s — lata: tira a tampa (trecho nítido) — sons: []
-8. 17.7-20.8s [FINAL] "com a mesma pressão" — tt_thetennis101_747693011507 @6.25s — lata abre em câmera lenta: o tsss prova que tem pressão lá dentro — sons: ['gen_opening_a_pressurized_tennis_ball_can_loud_pop_and.mp3 @6.3s']
+8. 17.7-20.8s [FINAL] "com a mesma pressão" — tt_thetennis101_747693011507 @6.25s — lata abre em câmera lenta: o tsss prova que tem pressão lá dentro — sons: ['gen_can_opening_with_a_loud_pressurized_pop_and_hiss.mp3 @6.3s']
 9. 20.8-23.1s [CTA] "Se você" — tt_smartestworkers_752212239 @60.8s — tomada 18: bolas prontas — sons: []
 10. 23.1-24.0s [CTA] "se inscreve" — tt_smartestworkers_752212239 @64.0s — tomada 19: mão com a bola + botão — sons: []
 11. 24.0-24.6s [LOOP] "porque" — tt_smartestworkers_752212239 @0.0s — mesmo quadro do gancho — sons: []
+
+## OUVIDO (earshot)
+✅ cena 2: 5924.mp3 — pedido "MECHHydr Hydraulic Pressure Releasing JSE IR 01 Stereo" → strong (z 4.8)
+✅ cena 6: 3232.mp3 — pedido "Air Compressor,Omega,5 hp,20 Gallon,Twin Cylinder,Air Release,x2" → strong (z 7.1)
+✅ cena 6: gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3 — pedido "heavy hydraulic press closing deep metal clunk" → strong (z 3.9)
+✅ cena 6: gen_heated_metal_press_sizzling_soft_hiss_of_hot_rubbe.mp3 — pedido "heated metal press sizzling soft hiss of hot rubbe" → strong (z 3.3)
+✅ cena 6: 5924.mp3 — pedido "MECHHydr Hydraulic Pressure Releasing JSE IR 01 Stereo" → strong (z 4.8)
+✅ cena 6: gen_slow_soft_air_leaking_hiss_from_a_small_hole.mp3 — pedido "a spray can hissing" → strong (z 5.1)
+✅ cena 8: gen_can_opening_with_a_loud_pressurized_pop_and_hiss.mp3 — pedido "a can opening" → strong (z 4.4)

@@ -166,5 +166,21 @@
    "coins dropping",
    "dominoes falling"
   ]
+ },
+ "gen_slow_soft_air_leaking_hiss_from_a_small_hole.mp3|1795084497038215238|a spray can hissing": {
+  "verdict": "strong",
+  "z": 5.1,
+  "parece": [
+   "a spray can hissing",
+   "crisp hi-hats"
+  ]
+ },
+ "gen_can_opening_with_a_loud_pressurized_pop_and_hiss.mp3|1795168845032712002|a can opening": {
+  "verdict": "strong",
+  "z": 4.4,
+  "parece": [
+   "a can opening",
+   "a toggle switch click"
+  ]
  }
 }
