@@ -5,7 +5,7 @@ Prova: ✅ PROVA DO TEMA | "How Did China Build Roads This High?" (Mystiqo) | 7,
 https://youtube.com/shorts/T1yHrixXzFc
 Lacuna PT: "por que as estradas da china são tão altas" / "estrada elevada china" = nada ≥100k.
 
-## PROPOSTA (aguarda o ok do dono)
+## Partes (aprovadas pelo dono 20/11)
 [GANCHO] Essa estrada passa a 625 metros do chão.
 [INÍCIO] Parece exagero, mas lá embaixo tem um cânion que levava duas horas pra contornar.
 [MEIO] Guizhou, na China, é um mar de morros e cânions.
@@ -13,6 +13,14 @@ Em vez de descer e subir cada vale, a estrada segue reta, em pontes e túneis.
 [FINAL] E a Huajiang, a ponte mais alta do mundo, faz a travessia em dois minutos.
 [CTA] Você atravessaria olhando pra baixo? Comenta e se inscreve, porque
 (~73 palavras, ~26 s)
+
+## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs)
+Essa estrada passa a 625 metros do chão.
+Parece exagero, mas lá embaixo tem um cânion que levava duas horas pra contornar.
+Guizhou, na China, é um mar de morros e cânions.
+Em vez de descer e subir cada vale, a estrada segue reta, em pontes e túneis.
+E a Huajiang, a ponte mais alta do mundo, faz a travessia em dois minutos.
+Você atravessaria olhando pra baixo? Comenta e se inscreve, porque
 
 ## Evidências
 - Ponte do Grande Cânion de Huajiang (Guizhou): tabuleiro a 625 m do rio, a mais alta do mundo, aberta em 28/09/2025;

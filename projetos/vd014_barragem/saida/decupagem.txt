@@ -1,0 +1,21 @@
+# Decupagem vd014_barragem — formato por_dentro — música app:sans. (Toby Fox)
+1. 0.0-0.9s [GANCHO] "Essa barragem" — tiktok_weather.weather0_7412 @12.0s — os jatos saindo dos tubos da barragem (começam na palavra) — sons: ['gen_massive_roaring_dam_spillway_water_rushing.mp3 @12.1s']
+2. 0.9-3.0s [GANCHO] "joga água" — tiktok_weather.weather0_7412 @15.0s — os jatos já abertos, enormes, sendo lançados para fora — sons: []
+3. 3.0-4.4s [INÍCIO] "Parece desperdício" — pixabay_156301.mp4 @2.0s — muita água despejando pelas comportas — sons: []
+4. 4.4-5.6s [INÍCIO] "mas é pra se proteger" — pixabay_185510.mp4 @3.0s — a barragem inteira com o vertedouro — sons: []
+5. 5.6-7.3s [MEIO] "A água desce" — tiktok_weather.weather0_7475 @10.0s — a frente de água descendo a calha do vertedouro (a ação da frase) — sons: []
+6. 7.3-10.8s [MEIO] "batendo direto" — tiktok_weather.weather0_7484 @25.6s — a água explode no pé da barragem e arranca terra — sons: ['gen_heavy_water_slamming_into_ground_deep_rumble_and_c.mp3 @26.05s']
+7. 10.8-17.2s [MEIO] "Então uma rampa" — 3D vertedouro3d — 3D: sem rampa a água cava o pé (vermelho); a rampa nasce, o jato sobe em arco, vira gotas e cai longe, no poço — sons: ['wind gust whoosh', 'assets/sfx/gen_heavy_water_slamming_into_ground_deep_rumble_and_c.mp3', 'assets/sfx/gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3', 'assets/sfx/gen_powerful_water_jet_launching_into_the_air_with_a_w.mp3', 'assets/sfx/gen_wave_crest_breaking_with_a_water_splash.mp3', 'assets/sfx/gen_water_jet_splashing_down_into_a_pool.mp3']
+8. 17.2-19.8s [FINAL] "já fraco" — pixabay_279589.mp4 @0.5s — o poço lá embaixo da barragem, a água já mansa — sons: []
+9. 19.8-21.7s [CTA] "Você ficaria" — tiktok_weather.weather0_7475 @26.5s — a multidão na ponte bem ao lado da água: você ficaria embaixo? — sons: []
+10. 21.7-23.3s [CTA] "Comenta" — pixabay_136821.mp4 @12.0s — drone chegando nas comportas, a água passando por baixo — sons: []
+11. 23.3-23.9s [LOOP] "porque" — tiktok_weather.weather0_7412 @12.0s — mesmo quadro do gancho — sons: []
+
+## OUVIDO (earshot)
+⚠️ cena 1: gen_massive_roaring_dam_spillway_water_rushing.mp3 — pedido "a waterfall" → plausible (z 2.8); soa como: a waterfall, a digital glitch
+✅ cena 6: gen_heavy_water_slamming_into_ground_deep_rumble_and_c.mp3 — pedido "a punchy impact hit" → strong (z 3.1)
+✅ cena 7: gen_heavy_water_slamming_into_ground_deep_rumble_and_c.mp3 — pedido "a punchy impact hit" → strong (z 3.1)
+✅ cena 7: gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3 — pedido "heavy hydraulic press closing deep metal clunk" → strong (z 3.9)
+⚠️ cena 7: gen_powerful_water_jet_launching_into_the_air_with_a_w.mp3 — pedido "a water jet whoosh" → plausible (z 2.9); soa como: an object plunging into water, pouring water
+✅ cena 7: gen_wave_crest_breaking_with_a_water_splash.mp3 — pedido "water splashing" → strong (z 3.4)
+✅ cena 7: gen_water_jet_splashing_down_into_a_pool.mp3 — pedido "a splash into a pool" → strong (z 3.2)

@@ -1,0 +1,324 @@
+{
+ "_versao": "v1: por dentro/recorde, roteiro aprovado 20/11; abertura nova + estéreo + sans. pelo app",
+ "formato": "por_dentro",
+ "impacto_em": [
+  "Huajiang"
+ ],
+ "destaques": [
+  "625",
+  "metros",
+  "chão",
+  "exagero",
+  "cânion",
+  "horas",
+  "Guizhou",
+  "morros",
+  "descer",
+  "subir",
+  "reta",
+  "pontes",
+  "túneis",
+  "Huajiang",
+  "alta",
+  "dois",
+  "minutos",
+  "inscreve"
+ ],
+ "musica": "app:sans. (Toby Fox)",
+ "cta": {
+  "em": "se inscreve",
+  "texto": "SE INSCREVE"
+ },
+ "creditos_descricao": "Imagens: Shenzhen Channel, Global Times e China Perspective (X); Al Jazeera English, People's Daily e SAYS (TikTok). Animação 3D: Viitu Shorts.",
+ "cenas": [
+  {
+   "em": "Essa estrada",
+   "clipe": "x_sz_mediagroup_1971543615584493568.mp4",
+   "inicio": 1.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "olhando direto pra baixo da ponte: o abismo",
+   "zoom": [
+    1.15,
+    1.2
+   ],
+   "alvo": [
+    0.5,
+    0.55
+   ],
+   "seta": [
+    540,
+    1300,
+    170
+   ],
+   "sfx_cena": [
+    {
+     "em": "Essa",
+     "arquivo": "assets/sonniss/cache/4362.mp3",
+     "desc": "wind blowing",
+     "db": -5,
+     "dur": 2.0,
+     "no_clipe": 1.6
+    }
+   ]
+  },
+  {
+   "em": "passa a",
+   "clipe": "tiktok_aljazeeraenglish_7555147460931341598.mp4",
+   "inicio": 30.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "o wingsuit salta da ponte e cai no cânion: a altura",
+   "zoom": [
+    1.1,
+    1.15
+   ],
+   "alvo": [
+    0.5,
+    0.5
+   ],
+   "contador": {
+    "ate": 625,
+    "sufixo": " m",
+    "em": "625"
+   },
+   "sfx_cena": [
+    {
+     "em": "625",
+     "arquivo": "assets/sfx/gen_wingsuit_flyer_diving_past_with_a_loud_fabric_flut.mp3",
+     "desc": "cloth whipping through the air",
+     "db": -4,
+     "dur": 1.4,
+     "no_clipe": 30.6
+    }
+   ]
+  },
+  {
+   "em": "Parece exagero",
+   "clipe": "x_China_Fact_1963854478177931264.mp4",
+   "inicio": 12.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "a ponte vista de cima, torres e cabos",
+   "zoom": [
+    1.3,
+    1.35
+   ],
+   "alvo": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "em": "mas lá embaixo",
+   "clipe": "tiktok_peoplesdaily_renminribao_7346588549644356906.mp4",
+   "inicio": 9.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "o cânion fundo atravessado pela ponte",
+   "zoom": [
+    1.2,
+    1.25
+   ],
+   "alvo": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "em": "que levava",
+   "clipe": "tiktok_saysdotcom_7535419995099008264.mp4",
+   "inicio": 12.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "a estrada sinuosa contornando os morros (o caminho antigo, longo)",
+   "zoom": [
+    1.3,
+    1.35
+   ],
+   "alvo": [
+    0.5,
+    0.58
+   ]
+  },
+  {
+   "em": "Guizhou",
+   "clipe": "x_globaltimesnews_1772475027612635136.mp4",
+   "inicio": 8.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "o mar de morros e cânions de Guizhou, a estrada nos pilares",
+   "zoom": [
+    1.45,
+    1.5
+   ],
+   "alvo": [
+    0.5,
+    0.6
+   ]
+  },
+  {
+   "em": "Em vez",
+   "clipe": "x_sz_mediagroup_1971543615584493568.mp4",
+   "inicio": 0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "animacao": {
+    "nome": "estrada3d",
+    "fase": "completo",
+    "eventos": {
+     "desce": "descer",
+     "sobe": "subir",
+     "reta": "reta",
+     "pontes": "pontes",
+     "tuneis": "túneis"
+    },
+    "sfx": [
+     {
+      "busca": "wind gust whoosh",
+      "db": -6,
+      "dur": 1.0
+     },
+     {
+      "evento": "desce",
+      "arquivo": "assets/sfx/gen_car_engine_slowing_down_while_descending_a_steep_r.mp3",
+      "desc": "a car engine starting",
+      "db": -6,
+      "dur": 1.2
+     },
+     {
+      "evento": "sobe",
+      "arquivo": "assets/sonniss/cache/2826.mp3",
+      "desc": "a car engine",
+      "db": -6,
+      "dur": 1.2
+     },
+     {
+      "evento": "reta",
+      "arquivo": "assets/sonniss/cache/5144.mp3",
+      "desc": "a car passing by",
+      "db": -4,
+      "dur": 1.4
+     },
+     {
+      "evento": "pontes",
+      "arquivo": "assets/sfx/gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3",
+      "desc": "heavy hydraulic press closing deep metal clunk",
+      "db": -7,
+      "dur": 0.9
+     },
+     {
+      "evento": "tuneis",
+      "arquivo": "assets/sonniss/cache/5144.mp3",
+      "desc": "a car passing by",
+      "db": -6,
+      "dur": 1.2
+     }
+    ]
+   },
+   "_funcao": "3D: a estrada antiga desce e sobe cada vale; a nova vai reta, com pontes sobre o cânion e túneis pelos morros"
+  },
+  {
+   "em": "E a Huajiang",
+   "clipe": "x_China_Fact_1963854478177931264.mp4",
+   "inicio": 6.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "os caminhões cruzando a Huajiang vista de cima",
+   "zoom": [
+    1.55,
+    1.6
+   ],
+   "alvo": [
+    0.5,
+    0.4
+   ],
+   "sfx_cena": [
+    {
+     "em": "Huajiang",
+     "arquivo": "assets/sonniss/cache/5144.mp3",
+     "desc": "a car passing by",
+     "db": -6,
+     "dur": 1.4,
+     "no_clipe": 6.2
+    }
+   ]
+  },
+  {
+   "em": "faz a travessia",
+   "clipe": "tiktok_aljazeeraenglish_7555147460931341598.mp4",
+   "inicio": 15.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "atravessando a ponte de carro (dois minutos)",
+   "zoom": [
+    1.4,
+    1.45
+   ],
+   "alvo": [
+    0.55,
+    0.6
+   ]
+  },
+  {
+   "em": "Você atravessaria",
+   "clipe": "x_sz_mediagroup_1971543615584493568.mp4",
+   "inicio": 9.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "CTA",
+   "_funcao": "a borda da ponte olhando a cachoeira cair no abismo: atravessaria olhando pra baixo?",
+   "zoom": [
+    1.35,
+    1.4
+   ],
+   "alvo": [
+    0.55,
+    0.6
+   ]
+  },
+  {
+   "em": "Comenta",
+   "clipe": "tiktok_peoplesdaily_renminribao_7346588549644356906.mp4",
+   "inicio": 12.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "CTA",
+   "_funcao": "as torres da ponte no cânion",
+   "zoom": [
+    1.2,
+    1.25
+   ],
+   "alvo": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "em": "porque",
+   "clipe": "x_sz_mediagroup_1971543615584493568.mp4",
+   "inicio": 1.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "LOOP",
+   "_funcao": "mesmo quadro do gancho",
+   "zoom": [
+    1.15,
+    1.15
+   ],
+   "alvo": [
+    0.5,
+    0.55
+   ]
+  }
+ ]
+}

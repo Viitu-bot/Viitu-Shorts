@@ -190,5 +190,77 @@
    "scissors cutting",
    "a squishy wet squelch"
   ]
+ },
+ "gen_massive_roaring_dam_spillway_water_rushing.mp3|1795185145370799605|a waterfall": {
+  "verdict": "plausible",
+  "z": 2.8,
+  "parece": [
+   "a waterfall",
+   "a digital glitch"
+  ]
+ },
+ "gen_heavy_water_slamming_into_ground_deep_rumble_and_c.mp3|1795185147046022765|a punchy impact hit": {
+  "verdict": "strong",
+  "z": 3.1,
+  "parece": [
+   "bubbles underwater",
+   "a punchy impact hit"
+  ]
+ },
+ "gen_powerful_water_jet_launching_into_the_air_with_a_w.mp3|1795185149077713186|a water jet whoosh": {
+  "verdict": "plausible",
+  "z": 2.9,
+  "parece": [
+   "an object plunging into water",
+   "pouring water"
+  ]
+ },
+ "gen_water_jet_splashing_down_into_a_pool.mp3|1795185152629933085|a splash into a pool": {
+  "verdict": "strong",
+  "z": 3.2,
+  "parece": [
+   "an object plunging into water",
+   "a squishy wet squelch"
+  ]
+ },
+ "4362.mp3|1795186405128262441|wind blowing": {
+  "verdict": "plausible",
+  "z": 2.7,
+  "parece": [
+   "wind in pine trees",
+   "a gust of wind rushing past"
+  ]
+ },
+ "gen_wingsuit_flyer_diving_past_with_a_loud_fabric_flut.mp3|1795186216977423179|cloth whipping through the air": {
+  "verdict": "strong",
+  "z": 3.1,
+  "parece": [
+   "a body falling on the ground",
+   "cloth whipping through the air"
+  ]
+ },
+ "gen_car_engine_slowing_down_while_descending_a_steep_r.mp3|1795186219187610932|a car engine starting": {
+  "verdict": "strong",
+  "z": 3.1,
+  "parece": [
+   "a car engine starting",
+   "a phone vibration buzz"
+  ]
+ },
+ "2826.mp3|1795044559244363935|a car engine": {
+  "verdict": "plausible",
+  "z": 2.8,
+  "parece": [
+   "a big braam",
+   "a helicopter flying overhead"
+  ]
+ },
+ "5144.mp3|1795186362736259921|a car passing by": {
+  "verdict": "strong",
+  "z": 3.9,
+  "parece": [
+   "a swoosh passing by",
+   "a car driving past"
+  ]
  }
 }

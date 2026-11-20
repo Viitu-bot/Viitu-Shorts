@@ -328,5 +328,25 @@
   "id": 5354,
   "nome": "SpillAudio - Paper/paper_scissors_cutting_004.mp3",
   "nota": 0.873
+ },
+ "car pass by highway": {
+  "id": 5144,
+  "nome": "Sound Sower - Vehicles Pass-by/4 MKH8020, Vehicles, traffic, cars, road, rural, single, moderate speed, MKH8020 4.mp3",
+  "nota": 0.296
+ },
+ "strong wind gust": {
+  "id": 4362,
+  "nome": "Coll Anderson - Gentle Wind/EFX SD Wind Soft Whistling Gusts 04.mp3",
+  "nota": 0.312
+ },
+ "car tunnel pass": {
+  "id": 5144,
+  "nome": "Sound Sower - Vehicles Pass-by/4 MKH8020, Vehicles, traffic, cars, road, rural, single, moderate speed, MKH8020 4.mp3",
+  "nota": 0.321
+ },
+ "car engine uphill": {
+  "id": 2826,
+  "nome": "SoundHolder - Cars In Motion/excavator MF 860 exterior engine braking sound stop and drive away with gas pressing mono 8040.mp3",
+  "nota": 0.256
  }
 }
