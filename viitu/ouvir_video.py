@@ -80,9 +80,11 @@ def ouvir_video(video: Path, rea: Path) -> dict:
         "musica_bpm": mus.get("tempo_bpm"), "musica_tom": (mus.get("key") or {}).get("tonic"),
         "musica_nome": musica,
         "efeitos_timeline": tl.get("summary") or tl.get("erro"),
-        "efeitos_eventos": [{"t": e.get("t") or e.get("start"), "som": e.get("tag") or e.get("label"),
-                             "nivel_db": e.get("level_db") or e.get("db"), "no_corte": e.get("cut") or e.get("on_cut")}
-                            for e in (tl.get("events") or [])][:40],
+        "efeitos_eventos": [{"t": round(e["t"], 2), "tipo": e.get("kind"), "som": e.get("label"),
+                             "destaque_db": e.get("prominence_db"),
+                             "no_corte": any(abs(e["t"] - c) <= 0.1 for c in (tl.get("cuts") or []))}
+                            for e in (tl.get("events") or []) if e.get("label")][:40],
+        "cortes_earshot": len(tl.get("cuts") or []),
         "abertura": abertura.get("summary") or abertura.get("erro"),
     }
 
