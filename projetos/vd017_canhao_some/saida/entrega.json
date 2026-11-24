@@ -1,10 +1,11 @@
 {
- "atualizado": false,
+ "atualizado": true,
  "decupagem": true,
- "partes": false,
- "tarja": true,
+ "partes": true,
+ "tarja": false,
  "montagem": true,
- "revisar": false,
+ "revisar": true,
  "direitos": true,
- "auditoria": false
+ "som_medido": true,
+ "auditoria": true
 }

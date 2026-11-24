@@ -349,13 +349,15 @@
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "dois canhões grandes lado a lado",
+   "_funcao": "o quadro inteiro: dois canhões grandes lado a lado (o \"2\" na tela)",
    "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
    "contador": {
     "ate": 2,
     "em": "dois",
     "ate_palavra": "tamanho"
-   }
+   },
+   "layout": "inteiro",
+   "seguir": false
   },
   {
    "em": "e ninguém",

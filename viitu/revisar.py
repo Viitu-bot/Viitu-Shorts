@@ -91,7 +91,10 @@ def revisar(projeto: str) -> bool:
                 problemas.append(f"REPETIÇÃO: cena '{c['em']}' repete o mesmo enquadramento de {c['clipe']}")
             vistos.append((c["clipe"], t))
             continue
-        if c["clipe"] in ((lambda b: [b] if isinstance(b, str) else (b or []))(cfg.get("bruto_cronologico")) + list(cfg.get("bruto_livre", []))):
+        if c["clipe"] in cfg.get("bruto_livre", []):
+            # arquivo livre (vd017): fora de ordem vale; repetição = trecho a menos de 2,5 s de outro já usado
+            rep = [k for k, (cl, tt) in enumerate(vistos) if cl == c["clipe"] and abs(tt - t) < 2.5]
+        elif c["clipe"] in ((lambda b: [b] if isinstance(b, str) else (b or []))(cfg.get("bruto_cronologico"))):
             # bruto cronológico: repetição = voltar/sobrepor trecho já usado (a ordem crescente é conferida na montagem R1)
             ant = [tt for cl, tt in vistos if cl == c["clipe"]]
             rep = [0] if ant and t < max(ant) + 0.5 and not (j == len(cenas) - 1) else []

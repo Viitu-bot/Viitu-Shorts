@@ -99,7 +99,7 @@ def medir(projeto: str, plano: dict) -> dict:
         "musica_sob_voz_db": ("pelo app" if app else round(sob, 1), app or -23 <= sob <= -17),   # dono 24/11: escolheu B (voz na frente, música −20 e sobe nas pausas)       # BÍBLIA §4: audível no celular
         "musica_respira_db": ("pelo app" if app else round(respira, 1), app or respira >= 3 or pausa.sum() < 3),
         "efeitos_acao_audiveis": (f"{acao_ok}/{len(picos)}", not picos or acao_ok >= 0.7 * len(picos)),   # só os que existem
-        "impacto_virada_db": ([round(x, 1) for x in imp], all(x >= -6 for x in imp)),
+        "impacto_virada_db": ([round(x, 1) for x in imp], all(x >= -8 for x in imp)),   # som B (dono 24/11): virada entre −8 e 0 da voz
         "efeito_sobre_voz_db": (round(tapa, 1), tapa <= 0),
         "ding_frame0_db": (round(dpk, 1), dpk >= -3),                   # BÍBLIA §2: o ding tem que ser OUVIDO
     }
