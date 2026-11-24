@@ -1,0 +1,302 @@
+{
+ "_doc": "INVENTÁRIO ÚNICO (24/11): todo número da edição + formatos + mídia aprovada. O código lê SÓ daqui (viitu/mix.py: espec()). dB relativos à voz (0 = volume da voz). Regras em texto: edicao/REGRAS.md. Mudar valor = mudar aqui, com o motivo em REGRAS.md.",
+ "mix_db": {
+  "voz": 0,
+  "musica_fala": -16,
+  "musica_pausa": -10,
+  "ambiencia": -20,
+  "foley_detalhe": -16,
+  "som_original": -16,
+  "whoosh": -14,
+  "pop": -11,
+  "boom": -4,
+  "riser": -7,
+  "ding": -8,
+  "clique": -11,
+  "hit": -7,
+  "sfx_min": -10,
+  "sfx_max": -5,
+  "ambiente_continuo": -30
+ },
+ "visual": {
+  "seg_por_cena_alvo": 1.5,
+  "max_cena": 2.0,
+  "corte": "seco + som de transição em TODA troca (whoosh; clique quando há outro efeito a < 1 s)",
+  "glitch_no_corte": false,
+  "punch_em_palavra_chave": true,
+  "zoom_lento": true,
+  "camera_lenta_no_momento_satisfatorio": true,
+  "tremida": "em todo som de impacto (tiro, explosão, batida)",
+  "saturacao": 1.2,
+  "contraste": 1.07,
+  "seta_frame0": "vermelha (80% usam seta no frame 0)",
+  "legenda": "1 palavra, amarelo ouro #FFD700, contorno preto forte, terço superior (formato do dono)",
+  "cta": "nenhum explícito na maioria (19/35); loop no lugar",
+  "legenda_cor": "#FFD700",
+  "legenda_y": 560,
+  "legenda_y_alternativa": 1250,
+  "zoom_min": 1.12,
+  "deriva_lateral": 0.04
+ },
+ "corte_final_s": 0.3,
+ "voz_cadeia": "suave",
+ "duck_ratio": 2.5,
+ "whoosh_longe_de_efeito_s": 1.0,
+ "whoosh_intervalo_s": 1.4,
+ "formatos": {
+  "processo": {
+   "nome": "Como é feito (processo de um bruto cronológico)",
+   "ref": "A vida é uma maravilha — 'Como fazem o buraco da agulha?' (1,4 mi)",
+   "duracao_s": [
+    35,
+    45
+   ],
+   "palavras": [
+    100,
+    130
+   ],
+   "exige": [
+    "bruto_cronologico"
+   ],
+   "max_3d_pct": 0.3,
+   "min_fontes_reais": 1,
+   "musica": [
+    "phonk_processo.mp3",
+    "curioso_documentario.mp3"
+   ],
+   "graficos": [
+    "seta no frame 0",
+    "círculo no detalhe da etapa"
+   ],
+   "som": "ASMR/barulho real da máquina em cada etapa (sobe no clímax) + whoosh nos cortes + pop no círculo",
+   "transicao": "corte seco a cada etapa; câmera lenta no momento satisfatório"
+  },
+  "motivo_oculto": {
+   "nome": "Por que é assim? (motivo oculto de objeto/engenharia)",
+   "ref": "A vida — 'Chineses enterram tronco por motivo genial'; KSO — 'Essas portas não são pequenas à toa'",
+   "duracao_s": [
+    35,
+    45
+   ],
+   "palavras": [
+    100,
+    130
+   ],
+   "exige": [],
+   "max_3d_pct": 0.45,
+   "min_fontes_reais": 5,
+   "musica": [
+    "tensao_documentario.mp3",
+    "misterio_sombrio.mp3",
+    "synthwave_aviacao.mp3"
+   ],
+   "graficos": [
+    "seta no frame 0",
+    "círculo no detalhe escondido",
+    "punch-in na palavra do motivo"
+   ],
+   "som": "whoosh nos cortes + pop no círculo + riser/boom na virada + som da ação principal",
+   "transicao": "corte seco; 3D em 1 bloco no MEIO"
+  },
+  "por_dentro": {
+   "nome": "Como funciona por dentro (3D dominante, estilo Zack D. Films)",
+   "ref": "Zack D. Films — 'How Electrical Outlets Work', 'How Cookiecutter Sharks Bite Whales'",
+   "duracao_s": [
+    35,
+    45
+   ],
+   "palavras": [
+    100,
+    130
+   ],
+   "exige": [],
+   "max_3d_pct": 0.7,
+   "min_fontes_reais": 2,
+   "musica": [
+    "curioso_documentario.mp3",
+    "misterio_sombrio.mp3"
+   ],
+   "graficos": [
+    "corte/raio-X no 3D",
+    "setas de força dentro do 3D"
+   ],
+   "som": "cada evento do 3D com som próprio (clique, fluxo, impacto) + whoosh na entrada do 3D",
+   "transicao": "real no gancho → 3D contínuo → real como prova no fim"
+  },
+  "erro_perigo": {
+   "nome": "O erro que todo mundo comete / Nunca faça isso",
+   "ref": "GeneralTV — 'O erro GRAVE ao salvar um passarinho', 'O erro que todo mundo comete ao comer favo de mel'",
+   "duracao_s": [
+    35,
+    45
+   ],
+   "palavras": [
+    100,
+    130
+   ],
+   "exige": [
+    "marca_erro"
+   ],
+   "max_3d_pct": 0.45,
+   "min_fontes_reais": 5,
+   "musica": [
+    "tensao_documentario.mp3"
+   ],
+   "graficos": [
+    "X VERMELHO no jeito errado",
+    "CERTO verde no jeito certo",
+    "seta no frame 0"
+   ],
+   "som": "buzzer curto SÓ com o X na tela e na pausa; acerto SÓ com o certo; batida de tensão leve sob a voz",
+   "transicao": "corte seco; errado → certo lado a lado no tempo"
+  },
+  "invencao": {
+   "nome": "A invenção genial (produto/engenharia que resolve um problema)",
+   "ref": "Polaco sem Polônia — 'O motor portátil que transforma qualquer bike em elétrica', 'A película que transforma vidro em TV'",
+   "duracao_s": [
+    35,
+    45
+   ],
+   "palavras": [
+    100,
+    130
+   ],
+   "exige": [],
+   "max_3d_pct": 0.3,
+   "min_fontes_reais": 4,
+   "musica": [
+    "phonk_processo.mp3",
+    "upbeat_brincalhao.mp3"
+   ],
+   "graficos": [
+    "seta no frame 0",
+    "círculo na peça-chave",
+    "punch-in na demonstração"
+   ],
+   "som": "som real da invenção funcionando (clique, motor, encaixe) + whoosh + pop",
+   "transicao": "problema → invenção → demonstração (antes/depois)"
+  },
+  "recorde_historia": {
+   "nome": "Recorde / escala / história real (o maior, o mais caro, o homem que…)",
+   "ref": "A vida — 'O homem que pulou de avião sem paraquedas'; KSO — teste militar da Índia",
+   "duracao_s": [
+    35,
+    45
+   ],
+   "palavras": [
+    100,
+    130
+   ],
+   "exige": [
+    "numero_na_tela"
+   ],
+   "max_3d_pct": 0.35,
+   "min_fontes_reais": 5,
+   "musica": [
+    "epico_engenharia.mp3",
+    "tensao_documentario.mp3",
+    "emocional_piano.mp3"
+   ],
+   "graficos": [
+    "CONTADOR animado no número",
+    "seta no frame 0",
+    "comparação de escala em 3D se ajudar"
+   ],
+   "som": "ding no número (só com o contador) + riser/boom na revelação",
+   "transicao": "corte seco; câmera lenta no clímax"
+  },
+  "tiro_curto": {
+   "nome": "Tiro Curto (física bizarra, susto, gambiarra) — HISA 2.0",
+   "ref": "formato do dono",
+   "duracao_s": [
+    12,
+    15
+   ],
+   "palavras": [
+    30,
+    38
+   ],
+   "exige": [
+    "rehook_6s"
+   ],
+   "max_3d_pct": 0.35,
+   "min_fontes_reais": 2,
+   "musica": [
+    "phonk_processo.mp3",
+    "tensao_documentario.mp3"
+   ],
+   "graficos": [
+    "seta no frame 0",
+    "punch-in no re-hook"
+   ],
+   "som": "hit curto no re-hook (~6 s) + whoosh + som da ação",
+   "transicao": "corte brusco no re-hook"
+  },
+  "_rodizio_semana": {
+   "_doc": "Para o canal não parecer engessado: cada semana passa por formatos diferentes; nunca o mesmo formato 2 dias seguidos.",
+   "segunda": "processo",
+   "terca": "motivo_oculto",
+   "quarta": "por_dentro",
+   "quinta": "erro_perigo",
+   "sexta": "invencao",
+   "sabado": "motivo_oculto",
+   "domingo": "recorde_historia",
+   "coringa": "tiro_curto (qualquer dia em que o melhor tema for rápido)"
+  }
+ },
+ "midia": {
+  "voz": {
+   "padrao": "Minha voz (clone do dono, ElevenLabs) — viitu/voz.py VOZ_DONO",
+   "ritmo_min_pal_s": 3.0,
+   "ritmo_alvo_pal_s": 3.15
+  },
+  "abertura": "assets/sfx/abertura_viitu.wav (ding em 2 toques + eco estéreo, nível da voz)",
+  "transicao": {
+   "whoosh": [
+    "biblioteca_sfx/02_transicoes_sutis/woosh.mp3",
+    "biblioteca_sfx/02_transicoes_sutis/whip.mp3",
+    "biblioteca_sfx/02_transicoes_sutis/woosh2.mp3",
+    "biblioteca_sfx/02_transicoes_sutis/woosh3.mp3"
+   ],
+   "clique": "biblioteca_sfx/03_foley_textura/clique.mp3",
+   "kit": "assets/kit/kit.json (whoosh_corte)"
+  },
+  "virada": {
+   "riser": "biblioteca_sfx/01_gancho_impacto/tensao.mp3",
+   "boom": "biblioteca_sfx/01_gancho_impacto/boom.mp3",
+   "hit": "biblioteca_sfx/01_gancho_impacto/hit_enfase.mp3"
+  },
+  "efeitos_de_acao": "biblioteca_sfx/03_foley_textura/ + Sonniss (assets/sonniss/catalogo.json, escolha pelo CLAP em escolhas.json); todo efeito passa no earshot (viitu.ouvir)",
+  "ambiente": {
+   "continuo": "busca Sonniss do lugar (vento/mar/casamata…), conferido no earshot",
+   "por_cena": "viitu/foley.py CAMADAS"
+  },
+  "proibidos": "biblioteca_sfx/_proibidos/ (desenho, meme, boing, buzina, risada, pop agudo)",
+  "trilhas": {
+   "tensao_documentario.mp3": "perigo, erro, segurança, militar",
+   "misterio_sombrio.mp3": "segredo, fenômeno estranho",
+   "curioso_documentario.mp3": "geral, neutro",
+   "descoberta_leve.mp3": "objeto do dia a dia, motivo oculto leve",
+   "epico_engenharia.mp3": "recorde, escala, engenharia monumental",
+   "natureza_calma.mp3": "animais, natureza",
+   "emocional_piano.mp3": "virada humana/emocional",
+   "phonk_processo.mp3": "processo satisfatório, máquina",
+   "synthwave_aviacao.mp3": "avião, alta tecnologia",
+   "lofi_curioso.mp3": "explicação calma, truque",
+   "upbeat_brincalhao.mp3": "humor, bicho, comida",
+   "bit_shift_kevin_macleod.mp3": "8-bit rápido, tecnologia (CC BY 4.0, crédito)",
+   "itty_bitty_8bit_kevin_macleod.mp3": "8-bit leve, humor (CC BY 4.0, crédito)",
+   "brincalhao_kevin_monkeys.mp3": "curiosidade leve (CC BY, crédito)"
+  },
+  "trilhas_pasta": "assets/musica/ (licenças em assets/musica/LICENCAS.txt)",
+  "musica_conhecida": "\"sans.\" (Toby Fox) e faixas do nicho NUNCA no arquivo (Content ID): só sugestão extra no /publicar",
+  "licencas_aceitas": [
+   "CC0",
+   "Mixkit Free",
+   "Pixabay",
+   "CC BY (com crédito)",
+   "Sonniss GDC",
+   "ElevenLabs (nosso)"
+  ]
+ }
+}

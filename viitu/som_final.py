@@ -24,7 +24,7 @@ import numpy as np
 
 from viitu import mixagem as mx
 
-# cadeias de tratamento da voz (dono escolhe pelo ouvido; edicao/especificacao.json "voz_cadeia")
+# cadeias de tratamento da voz (dono escolhe pelo ouvido; edicao/inventario.json "voz_cadeia")
 CADEIA_VOZ = {
     "tratada": "highpass=f=90,equalizer=f=250:t=q:w=1:g=-3,equalizer=f=3200:t=q:w=1.2:g=3,equalizer=f=9000:t=h:w=2000:g=2,"
                "deesser=i=0.4,acompressor=threshold=0.1:ratio=3:attack=5:release=80:makeup=1.6",
@@ -110,12 +110,12 @@ def medir(projeto: str, plano: dict) -> dict:
 
 
 def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict:
-    """limpo=True: a RECEITA DOS CANAIS ANALISADOS (logica_editor.md) — trilha constante + whoosh nos cortes + riser/boom
+    """limpo=True: a RECEITA DOS CANAIS ANALISADOS (REGRAS.md) — trilha constante + whoosh nos cortes + riser/boom
     na virada + ding; sem efeito de ação por cena e sem ambiência (os efeitos escolhidos por CLAP "não encaixavam")."""
     pasta = RAIZ / "projetos" / projeto
     mp4 = RAIZ / "remotion" / "out" / f"{projeto}.mp4"
     plano = json.loads((mx.PUB / "plano.json").read_text(encoding="utf-8"))
-    ESP = json.loads((RAIZ / "edicao" / "especificacao.json").read_text(encoding="utf-8"))
+    ESP = json.loads((RAIZ / "edicao" / "inventario.json").read_text(encoding="utf-8"))
     MD = ESP["mix_db"]   # níveis MEDIDOS (35 Shorts)
     if limpo:
         plano = {**plano, "sfx": [e for e in plano.get("sfx", []) if False], "foley_mix": False}

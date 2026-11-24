@@ -37,7 +37,7 @@ import numpy as np
 
 RAIZ = Path(__file__).resolve().parent.parent
 W, H, FPS = 1080, 1920, 30
-MAX_CENA = __import__("json").loads((Path(__file__).resolve().parent.parent / "edicao" / "especificacao.json").read_text(encoding="utf-8"))["visual"]["max_cena"]   # da engenharia reversa (1,5 s/cena nos canais)
+MAX_CENA = __import__("json").loads((Path(__file__).resolve().parent.parent / "edicao" / "inventario.json").read_text(encoding="utf-8"))["visual"]["max_cena"]   # da engenharia reversa (1,5 s/cena nos canais)
 MODO_REMOTION = False   # True: não queima legenda/marcas; exporta plano para o Remotion      # cena maior que isso é dividida (regra dos 2–3 s)
 FONTES = RAIZ / "assets" / "fontes"
 SFX = RAIZ / "assets" / "sfx"
@@ -880,8 +880,8 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
         "foley_mix": True,
         "kit": kit_plano,
         "visual": {k: v for k, v in espec()["visual"].items() if isinstance(v, (bool, int, float))},
-        # volume da trilha: sob a fala / nas pausas (cfg "mix" sobrescreve) — ver logica_editor.md
-        # MIXAGEM POR REGRA: ganhos tirados de edicao/especificacao.json (dB relativos à voz; viitu/mix.py)
+        # volume da trilha: sob a fala / nas pausas (cfg "mix" sobrescreve) — ver edicao/REGRAS.md
+        # MIXAGEM POR REGRA: ganhos tirados de edicao/inventario.json (dB relativos à voz; viitu/mix.py)
         "mix": {k: round(10 ** (v / 20), 4) for k, v in {**espec()["mix_db"], **cfg.get("mix_db", {})}.items()},
         "sfx": sfx_plano,
         # animação explicativa própria: {"animacao": {"nome", "fase", "eventos": {evento: "palavra"}}} na cena
@@ -948,7 +948,7 @@ def editar(projeto: str) -> None:
     for a in avisos:
         print("  ⚠️", a)
     if erros and "--forcar" not in sys.argv:
-        print("PLANTA DA MONTAGEM REPROVADA — corrigir o cenas.json (edicao/reclamacoes.md):")
+        print("PLANTA DA MONTAGEM REPROVADA — corrigir o cenas.json (edicao/REGRAS.md):")
         for e in erros:
             print("  ❌", e)
         sys.exit(1)
@@ -959,7 +959,7 @@ def editar(projeto: str) -> None:
     # CORTE FINAL SECO (dono, 24/11: queda de retenção nos últimos 5 s do vd004): o vídeo termina no ÚLTIMO SOM da voz,
     # medido no áudio (o alinhamento deixava ~0,2 s de sobra), menos a margem "corte_final_s" (0,3 s), sem cortar a palavra
     # antes do seu som real − 0,08 s. Nenhum silêncio depois da última palavra.
-    _esp = json.loads((RAIZ / "edicao" / "especificacao.json").read_text(encoding="utf-8"))
+    _esp = json.loads((RAIZ / "edicao" / "inventario.json").read_text(encoding="utf-8"))
     _margem = float(_esp.get("corte_final_s", 0.3))
     _bruto = subprocess.run(["ffmpeg", "-v", "error", "-i", str(pasta / "voz.mp3"), "-ac", "1", "-ar", "16000", "-f", "f32le", "-"],
                             capture_output=True).stdout

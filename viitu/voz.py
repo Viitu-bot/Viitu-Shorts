@@ -98,7 +98,7 @@ def auto_cut(arq: Path, palavras: list[dict], max_pausa: float = 0.12) -> list[d
     return novos
 
 
-RITMO_ALVO = 3.15   # pal/s — mediana 3,07 nos 12 vídeos do dono contando a abertura (fontes_das_regras, 24/11)
+RITMO_ALVO = 3.15   # pal/s — mediana 3,07 nos 12 vídeos do dono contando a abertura (REGRAS.md, 24/11)
 
 
 def ritmo(arq: Path, palavras: list[dict], alvo: float = RITMO_ALVO) -> list[dict]:

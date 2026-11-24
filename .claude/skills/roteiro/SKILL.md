@@ -16,28 +16,25 @@ description: Escreve o roteiro do Viitu Shorts (protocolo HISA) a partir do tema
 
 # /roteiro: roteiro HISA que já nasce editável
 
-> **Regras do dono:** `edicao/BIBLIA.md` (manda em tudo; não alterar sem autorização) · planta técnica: `edicao/formato.md`.
-> **Formato:** as 5 partes da BÍBLIA viram as batidas do formato escolhido (`edicao/formatos.md` §1). Marque no roteiro.md: `Formato: <chave>`.
+> **Regras:** `edicao/REGRAS.md` (manual único; manda em tudo) · formatos: `edicao/inventario.json → formatos`.
+> Marque no roteiro.md: `Formato: <chave>`.
 
 Pré-requisito: tema validado por `/tema` (prova ≥ 1M, lacuna PT-BR, categoria/gatilho fortes).
 
-## 0. Antes de escrever (reclamações do dono — `edicao/reclamacoes.md`)
+## 0. Antes de escrever (`edicao/REGRAS.md` §2)
 - **Explicação que dá para entender:** 1 ideia por frase; o trecho do mecanismo precisa caber num bloco 3D de 6–10 s
-  (Bastidor). Ler em voz alta: se a explicação "acaba antes de começar", cortar informação, não acelerar.
+  Ler em voz alta: se a explicação "acaba antes de começar", cortar informação, não acelerar.
 - **Fato vivo:** o que o roteiro afirma no presente ainda é verdade HOJE? Buscar notícia recente do assunto
   (vd009: o avião "atual" já tinha sido trocado em julho; o texto teve de virar "o antigo avião conseguia").
 - **Cada frase pede uma imagem que existe:** quem é citado (presidente, piloto, operário) aparece de verdade;
   marque `[PESSOA: ...]` para o /clipes buscar.
-- **CTA INTERATIVO OBRIGATÓRIO (BÍBLIA §1):** ligado a um acontecimento do vídeo (o elogio/comparação nasce do que
-  acabou de acontecer) e nunca igual ao de outro vídeo. "Engessado" = frase de carimbo, NÃO "sem CTA".
-- **Roteiro marcado por partes:** `[GANCHO]`, `[INÍCIO]`, `[MEIO]`, `[FINAL]`, `[CTA]` no roteiro.md (a trava R0 confere).
+- **Sem CTA no fim** (dono 24/11): nada de inscrição/like, resumo ou moral; termina na revelação ou emenda no gancho.
+- **Roteiro marcado por partes:** `[GANCHO]`, `[INÍCIO]`, `[MEIO]`, `[FINAL]` no roteiro.md (a trava R0 confere; `[CTA]` reprova).
 
-## 1. Formato (HISA 2.0 do dono — escolha pelo bruto/tema)
-- **Tiro Curto 12–15 s = 30–38 palavras.** Curiosidade rápida, física bizarra, susto, gambiarra instantânea.
-  **Re-hook cravado aos ~6 s** (palavra ~15): uma nova pergunta rápida ou virada de expectativa.
-- **Bastidor 20–28 s = 50–65 palavras.** Engenharia, processo industrial, máquina pesada, trabalho manual:
-  risco/problema → macete técnico real → **momento eureka** no fim.
-- Voz: palavras ÷ 2,6 ≈ segundos (Otto, eleven_v4, com auto-cut). Contar antes de entregar.
+## 1. Formato (escolha pelo bruto/tema — `inventario.json → formatos`)
+- **Padrão: 35–45 s = 100–130 palavras** (vd004). Risco/problema → macete técnico real → virada → emenda no gancho.
+- **tiro_curto 12–15 s = 30–38 palavras** só na faixa de teste (10%): re-hook cravado aos ~6 s.
+- Voz: palavras ÷ 3,15 ≈ segundos ("Minha voz", clone do dono; trava R11 ≥ 3,0 pal/s). Contar antes de entregar.
 - Tom adulto (25+), sem linguagem infantil; duplo sentido só se a cena entregar a oportunidade.
 
 ## 2. Estrutura (HISA)
@@ -48,11 +45,7 @@ Pré-requisito: tema validado por `/tema` (prova ≥ 1M, lacuna PT-BR, categoria
    (cada frase = um passo que dá para desenhar).
 4. **Virada:** "Mas tem um porém…" ou o re-hook → `impacto_em`.
 5. **Conexão/consequência** (Brasil, vida de quem assiste) — opcional, só se for forte.
-6. **CTA interativo (sempre) + loop** (BÍBLIA §1). Adaptar ao acontecimento do vídeo e variar a frase de vídeo para vídeo (referência do martim-pescador, ~200 inscritos em 10 mil views):
-   "[sujeito] é [qualidade rara/admirável]… **igual você, inscrito do canal. Se não é, já se inscreve** pra [ver/saber]…"
-   — o elogio liga o espectador ao tema e a frase suspensa emenda no gancho (loop). Ex.: "…uma engenharia genial,
-   igual você, inscrito do canal. Se não é, já se inscreve pra ver se…". Na tela: "SE INSCREVE" + rosto/gesto positivo.
-   (Dado do dono vale mais que a média dos canais de referência, que quase não usam CTA.)
+6. **Loop (sem CTA):** a última frase fica suspensa ("…quando", "…vendo que") e emenda na 1ª palavra do gancho.
 
 ## 2b. Fórmulas que funcionam (Hall da Fama — conferidas em 2+ vídeos de canais grandes)
 **Gancho (escolha 1):**

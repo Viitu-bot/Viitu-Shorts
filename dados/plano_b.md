@@ -26,7 +26,7 @@ Começo de sessão: `python3 -m viitu.saude` (testa tudo em ~1 min) + `vidiq_bal
 | Views (trava) | `viitu.provar` (videos.list, quase nunca acaba) | print do dono | — | — |
 | Clipes reais | busca web TikTok/X/IG + yt-dlp | Pixabay / Pexels | Internet Archive / NASA (480p: só prova) | vidIQ (se houver crédito) → dono manda link |
 | 3D | modelos Sketchfab / Poly Haven | modelo em código | — | — |
-| Voz | ElevenLabs (Otto) | esperar e repetir | — | — |
+| Voz | ElevenLabs ("Minha voz", clone do dono) | esperar e repetir | — | — |
 | Música | biblioteca própria (`assets/musica`) | `app:` música do app do YouTube | Kevin MacLeod (CC BY) | — |
 | Efeitos | Sonniss (cache) | Mixkit kit | ElevenLabs sound-generation | — |
 | Análise de vídeo | medições próprias + o Claude olha a prancha | Gemini só com --gemini (2ª opinião) | — | — |

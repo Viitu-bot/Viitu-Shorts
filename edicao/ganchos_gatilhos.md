@@ -1,8 +1,8 @@
 # Ganchos por gatilho psicológico (adaptado ao DNA do Viitu)
 Base: 10 gatilhos do `rediumvex/viral-hooks-skill` (MIT, hooks-database.md) filtrados para curiosidade/engenharia,
-reescritos na fala do dono (`identidade.md` §0). Regras do gancho continuam as da BÍBLIA §0: sem introdução, loop
+reescritos na fala do dono (`REGRAS.md` §1). Regras do gancho: `REGRAS.md` §2: sem introdução, loop
 aberto em 1,5–2 s, em cima do quadro mais estranho. Use 1 gatilho por vídeo e varie (matriz 70/20/10).
-Referência: `referencias/skills_externas/` (lista do que foi avaliado).
+Referência: listas externas avaliadas em 24/11 (yt-agent, rediumvex), já removidas do projeto.
 
 | # | Gatilho | Por que prende | Molde PT-BR (voz do dono) | Exemplo do canal |
 |---|---|---|---|---|

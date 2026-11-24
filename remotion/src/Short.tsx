@@ -235,7 +235,7 @@ const usePunch = (palavras: Palavra[]) => {
 
 const WOOSHES = ['woosh.mp3', 'whip.mp3', 'woosh2.mp3', 'woosh3.mp3'];
 // kit de identidade (assets/kit): alterna as 3 variações de cada função; cai no som próprio se faltar
-// MIXAGEM POR REGRA: ganho de cada camada vem do plano (edicao/especificacao.json); reserva = valores antigos
+// MIXAGEM POR REGRA: ganho de cada camada vem do plano (edicao/inventario.json); reserva = valores antigos
 const RESERVA: Record<string, number> = {voz: 1, musica_fala: 0.11, musica_pausa: 0.2, som_original: 0.35, whoosh: 0.32,
   pop: 0.55, boom: 0.8, riser: 0.32, ding: 0.85, clique: 0.6};
 const M = (plano: Plano, camada: string) => plano.mix?.[camada] ?? RESERVA[camada] ?? 0.5;

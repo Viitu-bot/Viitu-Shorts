@@ -15,13 +15,13 @@ Todo link enviado pelo dono vira conhecimento do projeto. Não responda "de cabe
 3. Se for um vídeo montado de um bruto: `python3 -m viitu.tema brutos "<tema em inglês>"` para achar a origem.
 3b. **MEDIÇÃO TOMADA POR TOMADA (rea-video, sem Gemini, sem chave)** quando houver o ARQUIVO do vídeo (o dono manda
    no chat/Drive, ou a versão do mesmo vídeo no TikTok/X baixada com `yt-dlp`; a nuvem não baixa do YouTube):
-   `rea-video decompose <ref.mp4> -o pesquisa/rea/<id>` (instalação, 1x por sessão:
+   `rea-video decompose <ref.mp4> -o hall_da_fama/rea/<id>` (instalação, 1x por sessão:
    `pip install "rea-video[ocr] @ git+https://github.com/JuneYaooo/rea-video"`). Ler `breakdown.json`:
    `shots` (início/fim de cada tomada), `audio.music` (BPM, onde a música entra/some), `audio.voice`,
    `audio.sfx.events` (instante de cada efeito e se cai num corte ou num texto). Teste no nosso vd013 (20/11):
    **10/10 cortes no décimo de segundo**; efeitos: 7/10 no instante certo, mas o NOME do tipo ("ding", "pop") erra —
    o instante vale, o rótulo não. A classificação "filmado/IA/3D" sem VLM não serve (deu "IA" num clipe real).
-   Os números medidos (s/tomada, efeitos por corte, BPM) entram em `edicao/fontes_das_regras.md` como **M** com a
+   Os números medidos (s/tomada, efeitos por corte, BPM) entram em `edicao/REGRAS.md` como **M** (só com autorização do dono) com a
    amostra. Os sons de `sfx/` e `stems/` do vídeo de terceiro servem SÓ para ouvir/medir — nunca entram no nosso vídeo.
 4. Responda curto, para celular:
    - números (views, likes/view, duração, canal, data)

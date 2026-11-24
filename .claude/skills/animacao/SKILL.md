@@ -5,11 +5,11 @@ description: Cria a animação 3D explicativa do Short (Three.js no Remotion) pa
 
 # /animacao: o mecanismo em 3D
 
-> **Regras do dono:** `edicao/BIBLIA.md` (manda em tudo; não alterar sem autorização) · planta técnica: `edicao/formato.md`.
+> **Regras:** `edicao/REGRAS.md` (manual único; manda em tudo) · números, formatos e mídia: `edicao/inventario.json`.
 
 **Regra do canal:** toda parte explicativa que não tem vídeo bom (mecanismo invisível, dentro de algo, forças,
 "o que acontece se", algo raro ou impossível de filmar) vira 3D. Clipe real fica no gancho e como prova.
-Base: 40–53% dos vídeos dos canais do nicho têm animação; inserções de 1–10 s (`edicao/logica_editor.md`).
+Base: 40–53% dos vídeos dos canais do nicho têm animação; inserções de 1–10 s (`edicao/REGRAS.md` §3).
 
 **Sempre 3D, nunca 2D** (dono: a animação 2D do mapa ficou simples; o 3D é o padrão do canal).
 
@@ -17,7 +17,7 @@ Base: 40–53% dos vídeos dos canais do nicho têm animação; inserções de 1
 - Narrativa: clipe real (gancho/contexto) → **3D explica em UM bloco contínuo** → clipe real como prova/virada.
   NUNCA intercalar clipe real dentro da explicação (dono, vd009 18/11: "o 3D foi cortado pelas imagens reais no meio
   da explicação, não faz sentido"). Várias fases do mecanismo = várias cenas 3D SEGUIDAS (a câmera continua).
-- Bloco de 6–10 s no Bastidor (3–5 s no Tiro Curto), máximo 45% do vídeo; eventos nas palavras
+- Bloco de 6–10 s (3–5 s no tiro_curto), máximo 45% do vídeo; eventos nas palavras
   (`"eventos": {"puxa": "puxa o ar"}`). Trava: `viitu.montagem` regra R2.
 - Estilo: maquete low-poly vista de cima, câmera inclinada que se aproxima e gira um pouco, cores fortes,
   setas para forças invisíveis (vento, calor, pressão). Formato vertical: TUDO que importa precisa caber no quadro.
@@ -75,4 +75,4 @@ se movem, batida de asa lenta, tamanho que não domina a tela.
 5. `python3 -m viitu.editar <p> --remotion` e confira 3–4 quadros soltos de cada fase
    (`npx remotion still ... --frame=N --scale=0.3`) ANTES do render completo. Ajuste câmera/legibilidade.
 6. O 3D renderiza sem GPU (software): mais lento, funciona. Modelos/texturas extras: Poly Haven (CC0).
-7. Técnica nova que der certo → `edicao/manual_edicao.md` (seção animação).
+7. Técnica nova que der certo → `edicao/REGRAS.md` §3 (com autorização do dono).

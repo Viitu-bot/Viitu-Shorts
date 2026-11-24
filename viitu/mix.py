@@ -4,7 +4,7 @@
    - leitos (voz, trilha, ambiência, foley): pela loudness INTEGRADA;
    - efeitos curtos (whoosh, pop, boom, riser, ding...): pela loudness MOMENTÂNEA MÁXIMA (o "pico percebido").
    Ou seja: depois de normalizado, todo som no seu ponto mais alto soa tão alto quanto a voz.
-2. A tabela `edicao/especificacao.json` → "mix_db" diz quantos dB cada camada fica abaixo (−) da voz.
+2. A tabela `edicao/inventario.json` → "mix_db" diz quantos dB cada camada fica abaixo (−) da voz.
    ganho linear = 10^(dB/20). Ex.: música −12 dB → 0,25.
 """
 
@@ -17,7 +17,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 REF = -14.0
-ESPEC = RAIZ / "edicao" / "especificacao.json"
+ESPEC = RAIZ / "edicao" / "inventario.json"
 
 
 def espec() -> dict:

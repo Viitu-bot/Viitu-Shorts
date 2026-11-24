@@ -5,18 +5,17 @@ description: Edita o Short do Viitu do roteiro aprovado até o mp4 final (voz, c
 
 # /editar: do roteiro aprovado ao mp4 conferido
 
-> **Regras do dono:** `edicao/BIBLIA.md` (manda em tudo; não alterar sem autorização) · planta técnica: `edicao/formato.md`.
+> **Regras:** `edicao/REGRAS.md` (manual único; manda em tudo) · números, formatos e mídia: `edicao/inventario.json`.
 > **Formato:** `"formato": "<chave>"` no cenas.json (trava RF). Elementos por acontecimento (formatos.md §2): `"marca_erro": "x"|"certo"` (+ `"marca_em"`), `"contador": {"ate": N, "sufixo": " mil", "em": "palavra"}`, `"cta": {"em": "se inscreve"}`, `impacto_em`, `destaques`, seta/círculo.
 
-Valores fixos (volumes, ritmo, cor): `edicao/especificacao.json` — nunca número solto no código.
-Quando usar cada efeito: `edicao/logica_editor.md`. Técnicas: `edicao/manual_edicao.md`. Sons: `edicao/biblioteca_sons.md`.
+Valores fixos (volumes, ritmo, zoom, cor): `edicao/inventario.json` — nunca número solto no código.
 
 ## 0. Antes de montar
-`edicao/reclamacoes.md` + `python3 -m viitu.montagem <p>` (o editor também roda e PARA se houver ❌; `--forcar` só com
+`edicao/REGRAS.md` + `python3 -m viitu.montagem <p>` (o editor também roda e PARA se houver ❌; `--forcar` só com
 aval do dono). Não renderizar planta reprovada.
 
 ## 1. Montagem
-1. Voz: `python3 -m viitu.voz <p>` (Otto, eleven_v4; lê o "TEXTO FINAL PARA A VOZ" do roteiro.md) →
+1. Voz: `python3 -m viitu.voz <p>` ("Minha voz", clone do dono; lê o "TEXTO FINAL PARA A VOZ" do roteiro.md) →
    `voz.mp3` + `palavras.json`. Antes de refazer, guarde a anterior (`voz_vNN.mp3`).
 2. Triagem dos clipes novos: `python3 -m viitu.triagem <p>`.
 3. `cenas.json`: `"em"` (trecho onde a cena começa), `"clipe"`, `"inicio"`; animação 3D com
@@ -25,8 +24,8 @@ aval do dono). Não renderizar planta reprovada.
 4. **DECUPAGEM (cérebro de editor, obrigatória):** `python3 -m viitu.decupagem <p>` → `saida/decupagem.jpg`. O Claude
    ABRE a folha e confere linha por linha ANTES do render: a imagem mostra o que a frase diz? a tomada é a certa? o som
    listado é do contexto (nada de galo, inseto, golfe)? alguma cena repetida/fraca? a AÇÃO que a frase descreve aparece
-   inteira (começo→fim, nada pulado entre duas cenas)? cada som tem `"no_clipe"` = o segundo do clipe em que a ação
-   acontece (prancha fina de 0,1 s), e não a palavra? Errou → corrige o cenas.json e
+   inteira (começo→fim, nada pulado entre duas cenas)? cada efeito de ação cai NA palavra-chave, com a ação da imagem no mesmo instante
+   (ajustar o `inicio` do clipe)? toda troca tem som de transição? algum take parado? Errou → corrige o cenas.json e
    gera de novo. A entrega reprova se a decupagem não existir ou for mais velha que o cenas.json.
    A decupagem ESCUTA cada efeito (`viitu.ouvir`, earshot): som que não soa como o pedido barra. Para trocar: gerar 2–4
    candidatos (`foley._gerar_elevenlabs` / Sonniss) e escolher com `earshot rank "<o que deve soar>" <arquivos>`;
@@ -51,7 +50,7 @@ aval do dono). Não renderizar planta reprovada.
 | Momento | Visual | Som |
 |---|---|---|
 | Frame 0 | flash branco→amarelo 0,2 s + seta vermelha | ding próprio |
-| Corte | corte SECO | kit `whoosh_corte` (alterna 3) |
+| Corte | corte seco + zoom contínuo em todo take (nenhum parado) | whoosh em TODA troca (clique se houver efeito a < 1 s) |
 | Virada (`impacto_em`) | zoom blur + RGB + flash + tremida | riser → vácuo → boom |
 | Palavra-chave (`destaques`) | punch 4,5% + legenda amarela maior | — |
 | Detalhe | círculo vermelho que se desenha e segue o objeto | pop |
@@ -63,7 +62,7 @@ aval do dono). Não renderizar planta reprovada.
 
 ## 2b. Regras de montagem (cobradas pelo dono)
 - **Loop perfeito:** a última cena é o MESMO quadro do frame 0 (copie a cena 1 com `"em": "<última palavra>"`,
-  `"zoom": [1.0, 1.0]`). O flash do frame 0 esconde a emenda.
+  `"zoom": [1.12, 1.0]`: afasta e termina igual ao frame 0). O flash do frame 0 esconde a emenda.
 - **No máximo 2 cenas por arquivo de clipe, curto ou longo** (trava R1). Faltou imagem? Buscar outra fonte (/clipes 0b).
 - **Clipe reaproveitado** (mesmo clipe em 2 cenas): na 2ª vez `"reverso": true` (toca ao contrário = continuação).
 - **Cena longa que o editor divide** (> 2 s) com movimento cíclico (hélice, roda, água): `"bumerangue": true` — a 2ª
@@ -83,15 +82,10 @@ aval do dono). Não renderizar planta reprovada.
   (o editor acha na Sonniss pelo CLAP). Gancho obrigatório; ≥ 60% das cenas reais.
 - Sem isso o `viitu.montagem` reprova e o editor não monta.
 
-## 2c. Sound design à prova de voz (desde 18/11 — dono: "efeito por cima da voz não pode acontecer")
-- `viitu/mixagem.py` roda sozinho no fim do `editar --remotion`: simula a mixagem inteira, aplica SIDECHAIN em TODAS
-  as camadas não-voz (`plano.duck`; música/foley/ambiente recebem o duck GRAVADO no arquivo `*_d.m4a`, sons curtos
-  multiplicam por `D(plano, f)` no Short.tsx — volume por quadro em faixa longa estoura o ffmpeg) para o fundo ficar ≥ 10 dB
-  abaixo da voz, e recorta 2–4 kHz da música/foley/ambiente (espaço da inteligibilidade).
-- Ler as 2 linhas que ele imprime: **DEPOIS** precisa de pior ≥ 0 dB e quase nada abaixo de 10 dB. Se a culpa for
-  sempre a mesma camada, baixar o nível base dela em `edicao/especificacao.json` (não só confiar no ducking).
-- Regras embutidas: boom termina antes da próxima palavra; sem whoosh na emenda do loop; música só sobe depois da
-  última fala. Medir sem mudar nada: `python3 -m viitu.mixagem --medir`.
+## 2c. Som: camadas e níveis em `edicao/REGRAS.md` §4
+- A mixagem final é a do `viitu.som_final` (sidechain real, −14 LUFS). ⚠️ Até a unificação, a prévia por partes toca
+  o som do `Short.tsx`, que NÃO é o som final: conferir o som pelos stems do `som_final` (`saida/stems/`).
+- Medir sem mudar nada: `python3 -m viitu.mixagem --medir`.
 
 ## 2d. Encadear SEMPRE com falha que para (vd010, 19/11)
 `set -o pipefail; montagem && editar && render && entrega` — nunca `;` nem filtrar a saída do editor só por ❌:
@@ -101,7 +95,7 @@ Cena 3D: o clipe "base" escondido precisa ter trecho aprovado ≥ duração do b
 ## 3. TRAVA DE ENTREGA (obrigatória, um comando só)
 `python3 -m viitu.entrega <p>` → roda montagem R1–R8, revisar, direitos, auditoria, a **PÓS-PRODUÇÃO DE SOM**
 (`viitu.som_final`: o áudio do mp4 é refeito depois do render — voz/leito/efeitos com sidechain real, −14 LUFS) e o
-**SOM MEDIDO** (música −8 a −20 dB sob a voz, respira ≥ 3 dB nas pausas, ≥ 70% dos efeitos audíveis, impacto da virada
+**SOM MEDIDO** (música −19 a −12 dB sob a voz, respira ≥ 3 dB nas pausas, ≥ 70% dos efeitos audíveis, impacto da virada
 ≥ −6 dB, nada acima da voz), e gera `saida/prancha.jpg`. Ajuste de som = mexer em `viitu/som_final.py` e rodar de
 novo (segundos, sem novo render). Gemini fora do fluxo: só com `--gemini` (2ª opinião, não bloqueia).
 **BLOQUEADA = não mandar ao dono.** LIBERADA = olhar a prancha com a lista de conferência e só então enviar.

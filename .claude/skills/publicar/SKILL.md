@@ -29,7 +29,7 @@ Referência: A vida é uma maravilha posta 12h/18h; GeneralTV 17h–20h (19h com
 
 ## 4. Antes de liberar
 - `python3 -m viitu.direitos <p>` sem ❌.
-- Clipe de terceiro sem permissão: mandar ao dono o texto de DM (`pesquisa/permissao_clipes.md`) com os @;
+- Clipe de terceiro sem permissão: mandar ao dono o texto de DM (`dados/permissao_clipes.md`) com os @;
   quando autorizarem, registrar em `"permissoes"` no cenas.json.
 - **Comentário fixado (formato Viitu, sempre):** conferido em 18/11 que A vida é uma maravilha e KSO NÃO fixam comentário
   (0 comentários do dono em 200 recentes) — não existe formato externo validado; este é o nosso, medir no Studio

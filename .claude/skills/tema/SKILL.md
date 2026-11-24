@@ -5,11 +5,11 @@ description: Pesquisa e recomenda 3 temas de vídeo para o Viitu Shorts com núm
 
 # /tema <dia>
 
-> **Regras do dono:** `edicao/BIBLIA.md` (manda em tudo; não alterar sem autorização) · planta técnica: `edicao/formato.md`.
-> **Formato do dia:** cada tema recomendado vem com o FORMATO (`edicao/formatos.md`: processo, motivo_oculto, por_dentro, erro_perigo, invencao, recorde_historia, tiro_curto). Siga o rodízio de `formatos.json` (nunca o mesmo formato 2 dias seguidos; processo de bruto cronológico tem prioridade).
+> **Regras:** `edicao/REGRAS.md` (manual único; manda em tudo) · números, formatos e mídia: `edicao/inventario.json`.
+> **Formato do dia:** cada tema recomendado vem com o FORMATO (`edicao/inventario.json → formatos`: processo, motivo_oculto, por_dentro, erro_perigo, invencao, recorde_historia, tiro_curto). Siga o rodízio de `formatos.json` (nunca o mesmo formato 2 dias seguidos; processo de bruto cronológico tem prioridade).
 
 > Tema bom também precisa de IMAGEM: antes de recomendar, confira que existem ≥ 7 fontes reais prováveis
-> (busca web TikTok/X/Instagram, contas oficiais) e que o fato ainda vale hoje. Ver `edicao/reclamacoes.md`.
+> (busca web TikTok/X/Instagram, contas oficiais) e que o fato ainda vale hoje. Ver `edicao/REGRAS.md`.
 
 Objetivo: entregar **3 temas** verificados com números reais, curtos de ler no celular.
 O usuário escolhe um e seguimos para `/clipes` e `/roteiro`.

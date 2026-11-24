@@ -9,7 +9,7 @@ comando só (antes eram 4 soltas e dependiam de lembrar):
   Nada aqui depende do Gemini: todas as travas são medições próprias.
   4. auditoria técnica do mp4 (viitu.auditoria: loudness, efeito sobre a fala, cenas escuras, ritmo, loop;
      com Gemini se houver cota, sem ele se não houver)
-  5. prancha 1 quadro/s em saida/prancha.jpg + a lista de conferência visual de edicao/reclamacoes.md
+  5. prancha 1 quadro/s em saida/prancha.jpg + a lista de conferência visual de edicao/REGRAS.md
 
 Resultado em saida/entrega.json. Código 1 = NÃO entregar.
 Uso: python3 -m viitu.entrega <projeto>   (mp4 esperado em remotion/out/<projeto>.mp4)
@@ -140,7 +140,7 @@ def entregar(projeto: str) -> bool:
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(mp4), "-vf", "fps=1,scale=180:-1,tile=9x4",
                         "-frames:v", "1", str(prancha)], check=False)
         print(f"👁 5. Prancha para OLHAR: {prancha.relative_to(RAIZ)}")
-        print("     Conferir (edicao/reclamacoes.md): cena entendida em 1 s · ação na palavra · pessoa real quando a "
+        print("     Conferir (edicao/REGRAS.md): cena entendida em 1 s · ação na palavra · pessoa real quando a "
               "frase fala de alguém · 3D com física certa · sem logo/legenda de terceiro · legenda sem cobrir o sujeito")
 
     tudo = all(res.values())

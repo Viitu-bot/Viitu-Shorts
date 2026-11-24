@@ -86,7 +86,7 @@ def _camadas(plano: dict) -> tuple[np.ndarray, dict[str, np.ndarray]]:
     cortes = [c for i, c in enumerate(plano.get("cortes", [])) if c not in plano.get("impactos", []) and i < len(plano.get("cortes", [])) - 1]
     # ANTI-POLUIÇÃO (dono 24/11): no máximo 1 efeito a cada 3 s — o whoosh do corte só entra se não houver outro efeito
     # (sfx, virada, outro whoosh) a menos de 3 s
-    esp = json.loads((Path(__file__).resolve().parent.parent / "edicao" / "especificacao.json").read_text(encoding="utf-8"))
+    esp = json.loads((Path(__file__).resolve().parent.parent / "edicao" / "inventario.json").read_text(encoding="utf-8"))
     # dono 24/11 (vd017: "os cortes acontecem no seco"): whoosh SUAVE em toda troca (identidade: o efeito mais usado nos
     # vídeos dele), só respeitando distância de outro efeito (1 s) e de outro whoosh (1,4 s)
     gap_fx = esp.get("whoosh_longe_de_efeito_s", 1.0) * FPS

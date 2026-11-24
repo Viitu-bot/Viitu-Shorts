@@ -1,6 +1,6 @@
 """PLANTA DA MONTAGEM: trava automática ANTES do render, feita das reclamações recorrentes do dono.
 
-Cada regra aqui nasceu de uma reclamação real (catálogo completo: edicao/reclamacoes.md). Roda sobre o cenas.json +
+Cada regra aqui nasceu de uma reclamação real (histórico: arquivo/edicao/reclamacoes.md). Roda sobre o cenas.json +
 palavras.json (tempos reais da voz) e os arquivos dos clipes. Com qualquer ❌ o editor NÃO monta o vídeo.
 
   R1 REPETIÇÃO   cada arquivo de clipe entra em no máximo 2 cenas (curto ou longo, tanto faz: o dono vê o mesmo
@@ -110,8 +110,8 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
     ultima = len(cenas) - 1
     loop_ok = cenas[ultima]["clipe"] == cenas[0]["clipe"]
 
-    # RF formato (edicao/formatos.json): declarado e com as exigências do formato
-    fmts = json.loads((RAIZ / "edicao" / "formatos.json").read_text(encoding="utf-8"))
+    # RF formato (edicao/inventario.json → formatos): declarado e com as exigências do formato
+    fmts = json.loads((RAIZ / "edicao" / "inventario.json").read_text(encoding="utf-8"))["formatos"]
     fmt = cfg.get("formato")
     if fmt not in fmts or fmt.startswith("_"):
         erros.append(f"RF FORMATO: declare \"formato\" no cenas.json ({', '.join(k for k in fmts if not k.startswith('_'))}).")
@@ -140,7 +140,7 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
         partes = ("[GANCHO]", "[INÍCIO]", "[MEIO]", "[FINAL]") + (() if regras_24_11 else ("[CTA]",))
         faltam = [p for p in partes if p not in txt]
         if faltam:
-            erros.append(f"R0 ROTEIRO SEM AS PARTES DO DONO: faltam {faltam} (edicao/BIBLIA.md §1).")
+            erros.append(f"R0 ROTEIRO SEM AS PARTES DO DONO: faltam {faltam} (edicao/REGRAS.md).")
         if regras_24_11:
             # FINAL SEM ENCERRAMENTO (dono 24/11, queda nos últimos 5 s do vd004): termina na revelação ou emenda no gancho;
             # proibido resumo, moral, "da próxima vez", CTA pedindo inscrição/like no fim
@@ -208,13 +208,13 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
         dur3d = sum(tempos[k][1] - tempos[k][0] for k in idx3d)
         if dur3d < 4:
             erros.append(f"R2 3D CURTO: {dur3d:.1f} s de 3D; a explicação precisa de ≥ 4 s para ser entendida.")
-        lim3d = json.loads((RAIZ / "edicao" / "formatos.json").read_text(encoding="utf-8")).get(cfg.get("formato", ""), {}).get("max_3d_pct", 0.45)
+        lim3d = json.loads((RAIZ / "edicao" / "inventario.json").read_text(encoding="utf-8"))["formatos"].get(cfg.get("formato", ""), {}).get("max_3d_pct", 0.45)
         if dur3d > lim3d * total and not cfg.get("bloco_3d_longo"):     # só quando o dono pediu o 3D longo
             avisos.append(f"R2 3D DEMAIS (hipótese, não bloqueia): {dur3d:.1f} s ({dur3d / total:.0%}); máximo {lim3d:.0%} neste formato.")
         ini3d = tempos[idx3d[0]][0] / total
         if not 0.25 <= ini3d <= 0.6 and 0 not in idx3d:
             avisos.append(f"R2 3D FORA DO MEIO (hipótese, não bloqueia): o bloco 3D começa em {ini3d:.0%} do vídeo; a explicação fica entre 25% e 60% "
-                         "(edicao/formato.md).")
+                         "(edicao/REGRAS.md).")
         if 0 in idx3d:
             erros.append("R3 GANCHO EM 3D: o gancho é sempre clipe real.")
 

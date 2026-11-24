@@ -5,7 +5,7 @@ import {ThreeCanvas} from '@remotion/three';
 import {Ambiente, Camera, Liberar, useModelo, useTexturas} from './comum3d';
 
 // vd010: por que o Abrams é "feito para explodir". Modelo pronto (Sketchfab, CC BY 4.0, MirzaArrafiERV_45).
-// UMA tomada contínua (formato.md §3): o casco fica translúcido (raio-X) → a munição aparece no compartimento atrás
+// UMA tomada contínua (REGRAS.md): o casco fica translúcido (raio-X) → a munição aparece no compartimento atrás
 // da torre → a porta blindada fecha (tripulação protegida, verde) → os painéis do teto pulsam ("fracos de
 // propósito") → a munição explode → os painéis voam e o fogo sai reto para CIMA; a tripulação continua verde.
 // Eventos (quadros desde o início da cena): porta, teto, explode. Frente do modelo = +z, traseira = −z.
