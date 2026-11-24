@@ -1,0 +1,562 @@
+[
+ {
+  "palavra": "Olha",
+  "inicio": 0.0,
+  "fim": 0.24
+ },
+ {
+  "palavra": "pra",
+  "inicio": 0.32,
+  "fim": 0.4
+ },
+ {
+  "palavra": "baixo:",
+  "inicio": 0.48,
+  "fim": 1.2
+ },
+ {
+  "palavra": "esse",
+  "inicio": 1.29,
+  "fim": 1.41
+ },
+ {
+  "palavra": "buraco",
+  "inicio": 1.5,
+  "fim": 1.86
+ },
+ {
+  "palavra": "no",
+  "inicio": 1.94,
+  "fim": 2.02
+ },
+ {
+  "palavra": "banheiro",
+  "inicio": 2.1,
+  "fim": 2.34
+ },
+ {
+  "palavra": "do",
+  "inicio": 2.42,
+  "fim": 2.5
+ },
+ {
+  "palavra": "trem",
+  "inicio": 2.58,
+  "fim": 2.82
+ },
+ {
+  "palavra": "dá",
+  "inicio": 2.86,
+  "fim": 3.06
+ },
+ {
+  "palavra": "direto",
+  "inicio": 3.15,
+  "fim": 3.51
+ },
+ {
+  "palavra": "nos",
+  "inicio": 3.63,
+  "fim": 3.75
+ },
+ {
+  "palavra": "trilhos.",
+  "inicio": 3.83,
+  "fim": 4.55
+ },
+ {
+  "palavra": "Parece",
+  "inicio": 4.64,
+  "fim": 4.96
+ },
+ {
+  "palavra": "piada,",
+  "inicio": 5.04,
+  "fim": 5.68
+ },
+ {
+  "palavra": "mas",
+  "inicio": 5.77,
+  "fim": 5.89
+ },
+ {
+  "palavra": "por",
+  "inicio": 5.98,
+  "fim": 6.1
+ },
+ {
+  "palavra": "décadas",
+  "inicio": 6.14,
+  "fim": 6.66
+ },
+ {
+  "palavra": "foi",
+  "inicio": 6.7,
+  "fim": 6.82
+ },
+ {
+  "palavra": "assim:",
+  "inicio": 6.9,
+  "fim": 7.62
+ },
+ {
+  "palavra": "você",
+  "inicio": 7.7,
+  "fim": 7.86
+ },
+ {
+  "palavra": "puxava",
+  "inicio": 7.94,
+  "fim": 8.26
+ },
+ {
+  "palavra": "a",
+  "inicio": 8.3,
+  "fim": 8.34
+ },
+ {
+  "palavra": "descarga",
+  "inicio": 8.43,
+  "fim": 8.91
+ },
+ {
+  "palavra": "e",
+  "inicio": 8.99,
+  "fim": 9.07
+ },
+ {
+  "palavra": "o",
+  "inicio": 9.11,
+  "fim": 9.15
+ },
+ {
+  "palavra": "presente",
+  "inicio": 9.24,
+  "fim": 9.533
+ },
+ {
+  "palavra": "ia",
+  "inicio": 9.587,
+  "fim": 9.64
+ },
+ {
+  "palavra": "parar",
+  "inicio": 9.72,
+  "fim": 9.96
+ },
+ {
+  "palavra": "no",
+  "inicio": 10.04,
+  "fim": 10.12
+ },
+ {
+  "palavra": "chão.",
+  "inicio": 10.21,
+  "fim": 10.93
+ },
+ {
+  "palavra": "Por",
+  "inicio": 11.01,
+  "fim": 11.09
+ },
+ {
+  "palavra": "isso",
+  "inicio": 11.17,
+  "fim": 11.33
+ },
+ {
+  "palavra": "tinha",
+  "inicio": 11.41,
+  "fim": 11.65
+ },
+ {
+  "palavra": "placa",
+  "inicio": 11.73,
+  "fim": 12.05
+ },
+ {
+  "palavra": "proibindo",
+  "inicio": 12.13,
+  "fim": 12.69
+ },
+ {
+  "palavra": "descarga",
+  "inicio": 12.77,
+  "fim": 13.33
+ },
+ {
+  "palavra": "com",
+  "inicio": 13.41,
+  "fim": 13.57
+ },
+ {
+  "palavra": "o",
+  "inicio": 13.597,
+  "fim": 13.623
+ },
+ {
+  "palavra": "trem",
+  "inicio": 13.65,
+  "fim": 13.89
+ },
+ {
+  "palavra": "parado",
+  "inicio": 13.97,
+  "fim": 14.21
+ },
+ {
+  "palavra": "na",
+  "inicio": 14.29,
+  "fim": 14.37
+ },
+ {
+  "palavra": "estação.",
+  "inicio": 14.45,
+  "fim": 15.21
+ },
+ {
+  "palavra": "Andando,",
+  "inicio": 15.3,
+  "fim": 15.94
+ },
+ {
+  "palavra": "a",
+  "inicio": 15.98,
+  "fim": 16.02
+ },
+ {
+  "palavra": "sujeira",
+  "inicio": 16.1,
+  "fim": 16.42
+ },
+ {
+  "palavra": "se",
+  "inicio": 16.5,
+  "fim": 16.58
+ },
+ {
+  "palavra": "espalhava;",
+  "inicio": 16.62,
+  "fim": 17.54
+ },
+ {
+  "palavra": "parado,",
+  "inicio": 17.62,
+  "fim": 18.18
+ },
+ {
+  "palavra": "caía",
+  "inicio": 18.26,
+  "fim": 18.58
+ },
+ {
+  "palavra": "inteirinha",
+  "inicio": 18.66,
+  "fim": 19.38
+ },
+ {
+  "palavra": "do",
+  "inicio": 19.46,
+  "fim": 19.54
+ },
+ {
+  "palavra": "lado",
+  "inicio": 19.62,
+  "fim": 19.86
+ },
+ {
+  "palavra": "da",
+  "inicio": 19.94,
+  "fim": 19.98
+ },
+ {
+  "palavra": "plataforma.",
+  "inicio": 20.02,
+  "fim": 20.82
+ },
+ {
+  "palavra": "Só",
+  "inicio": 20.91,
+  "fim": 21.07
+ },
+ {
+  "palavra": "na",
+  "inicio": 21.15,
+  "fim": 21.23
+ },
+ {
+  "palavra": "Índia,",
+  "inicio": 21.31,
+  "fim": 21.67
+ },
+ {
+  "palavra": "eram",
+  "inicio": 21.71,
+  "fim": 21.95
+ },
+ {
+  "palavra": "quase",
+  "inicio": 21.99,
+  "fim": 22.27
+ },
+ {
+  "palavra": "quatro",
+  "inicio": 22.36,
+  "fim": 22.68
+ },
+ {
+  "palavra": "mil",
+  "inicio": 22.77,
+  "fim": 22.93
+ },
+ {
+  "palavra": "toneladas",
+  "inicio": 23.01,
+  "fim": 23.57
+ },
+ {
+  "palavra": "por",
+  "inicio": 23.66,
+  "fim": 23.82
+ },
+ {
+  "palavra": "dia",
+  "inicio": 23.9,
+  "fim": 24.14
+ },
+ {
+  "palavra": "nos",
+  "inicio": 24.22,
+  "fim": 24.38
+ },
+ {
+  "palavra": "trilhos.",
+  "inicio": 24.46,
+  "fim": 24.94
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 25.03,
+  "fim": 25.19
+ },
+ {
+  "palavra": "tem",
+  "inicio": 25.27,
+  "fim": 25.35
+ },
+ {
+  "palavra": "um",
+  "inicio": 25.39,
+  "fim": 25.43
+ },
+ {
+  "palavra": "porém:",
+  "inicio": 25.52,
+  "fim": 26.2
+ },
+ {
+  "palavra": "os",
+  "inicio": 26.28,
+  "fim": 26.36
+ },
+ {
+  "palavra": "trens",
+  "inicio": 26.44,
+  "fim": 26.68
+ },
+ {
+  "palavra": "novos",
+  "inicio": 26.76,
+  "fim": 27.16
+ },
+ {
+  "palavra": "copiaram",
+  "inicio": 27.28,
+  "fim": 27.72
+ },
+ {
+  "palavra": "o",
+  "inicio": 27.76,
+  "fim": 27.8
+ },
+ {
+  "palavra": "avião.",
+  "inicio": 27.88,
+  "fim": 28.36
+ },
+ {
+  "palavra": "Um",
+  "inicio": 28.45,
+  "fim": 28.53
+ },
+ {
+  "palavra": "vácuo",
+  "inicio": 28.61,
+  "fim": 29.01
+ },
+ {
+  "palavra": "suga",
+  "inicio": 29.09,
+  "fim": 29.33
+ },
+ {
+  "palavra": "tudo",
+  "inicio": 29.42,
+  "fim": 29.66
+ },
+ {
+  "palavra": "com",
+  "inicio": 29.74,
+  "fim": 29.82
+ },
+ {
+  "palavra": "só",
+  "inicio": 29.9,
+  "fim": 30.06
+ },
+ {
+  "palavra": "dois",
+  "inicio": 30.14,
+  "fim": 30.38
+ },
+ {
+  "palavra": "litros",
+  "inicio": 30.46,
+  "fim": 30.78
+ },
+ {
+  "palavra": "de",
+  "inicio": 30.86,
+  "fim": 30.94
+ },
+ {
+  "palavra": "água",
+  "inicio": 31.02,
+  "fim": 31.26
+ },
+ {
+  "palavra": "e",
+  "inicio": 31.35,
+  "fim": 31.43
+ },
+ {
+  "palavra": "guarda",
+  "inicio": 31.51,
+  "fim": 31.83
+ },
+ {
+  "palavra": "num",
+  "inicio": 31.91,
+  "fim": 31.99
+ },
+ {
+  "palavra": "tanque",
+  "inicio": 32.07,
+  "fim": 32.31
+ },
+ {
+  "palavra": "embaixo",
+  "inicio": 32.43,
+  "fim": 32.79
+ },
+ {
+  "palavra": "do",
+  "inicio": 32.87,
+  "fim": 32.95
+ },
+ {
+  "palavra": "vagão.",
+  "inicio": 32.99,
+  "fim": 33.43
+ },
+ {
+  "palavra": "Só",
+  "inicio": 33.52,
+  "fim": 33.64
+ },
+ {
+  "palavra": "que",
+  "inicio": 33.68,
+  "fim": 33.76
+ },
+ {
+  "palavra": "na",
+  "inicio": 33.8,
+  "fim": 33.84
+ },
+ {
+  "palavra": "Inglaterra",
+  "inicio": 33.92,
+  "fim": 34.48
+ },
+ {
+  "palavra": "ainda",
+  "inicio": 34.56,
+  "fim": 34.88
+ },
+ {
+  "palavra": "tinha",
+  "inicio": 34.96,
+  "fim": 35.12
+ },
+ {
+  "palavra": "trem",
+  "inicio": 35.2,
+  "fim": 35.44
+ },
+ {
+  "palavra": "velho",
+  "inicio": 35.52,
+  "fim": 35.84
+ },
+ {
+  "palavra": "fazendo",
+  "inicio": 35.88,
+  "fim": 36.24
+ },
+ {
+  "palavra": "isso",
+  "inicio": 36.32,
+  "fim": 36.48
+ },
+ {
+  "palavra": "em",
+  "inicio": 36.56,
+  "fim": 36.64
+ },
+ {
+  "palavra": "2018.",
+  "inicio": 36.68,
+  "fim": 38.32
+ },
+ {
+  "palavra": "Então,",
+  "inicio": 38.44,
+  "fim": 39.04
+ },
+ {
+  "palavra": "antes",
+  "inicio": 39.12,
+  "fim": 39.44
+ },
+ {
+  "palavra": "de",
+  "inicio": 39.48,
+  "fim": 39.52
+ },
+ {
+  "palavra": "apertar",
+  "inicio": 39.6,
+  "fim": 39.92
+ },
+ {
+  "palavra": "a",
+  "inicio": 39.96,
+  "fim": 40.0
+ },
+ {
+  "palavra": "descarga,",
+  "inicio": 40.12,
+  "fim": 40.88
+ }
+]

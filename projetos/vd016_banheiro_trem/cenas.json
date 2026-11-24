@@ -1,0 +1,252 @@
+{
+ "_versao": "v1: regras 24/11 (35–45 s, final sem CTA, voz do dono), faixa 70% B1",
+ "formato": "motivo_oculto",
+ "impacto_em": [
+  "porém"
+ ],
+ "destaques": [
+  "baixo",
+  "buraco",
+  "trilhos",
+  "piada",
+  "descarga",
+  "presente",
+  "placa",
+  "parado",
+  "estação",
+  "espalhava",
+  "plataforma",
+  "Índia",
+  "mil",
+  "toneladas",
+  "porém",
+  "avião",
+  "vácuo",
+  "litros",
+  "tanque",
+  "2018",
+  "descarga"
+ ],
+ "musica": "curioso_documentario.mp3",
+ "cta": false,
+ "creditos_descricao": "Imagens: @realraywilliam (TikTok); MEISTERvideo, KlausHausmann, yandyproject, conolan, svetjekolem (Pixabay). Animação 3D: Viitu Shorts.",
+ "cenas": [
+  {
+   "em": "Olha",
+   "clipe": "tt_realraywilliam_7208630035622890798.mp4",
+   "inicio": 29.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "o vaso de aço com o furo e os trilhos passando lá embaixo",
+   "zoom": [
+    1.45,
+    1.5
+   ],
+   "alvo": [
+    0.5,
+    0.65
+   ],
+   "seta": [
+    540,
+    1250,
+    170
+   ],
+   "sfx_cena": [
+    {
+     "em": "Olha",
+     "arquivo": "assets/sonniss/cache/4081.mp3",
+     "desc": "a train passing on tracks",
+     "db": -6,
+     "dur": 1.6,
+     "no_clipe": 29.1
+    }
+   ]
+  },
+  {
+   "em": "esse buraco",
+   "clipe": "tt_realraywilliam_7208630035622890798.mp4",
+   "inicio": 4.55,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "o vaso de louça do trem velho com o buraco direto pro chão",
+   "velocidade": 0.85,
+   "zoom": [
+    1.2,
+    1.25
+   ],
+   "alvo": [
+    0.5,
+    0.55
+   ]
+  },
+  {
+   "em": "Parece piada",
+   "clipe": "pixabay_7809.mp4",
+   "inicio": 0.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "ferrovia antiga em preto e branco: por décadas"
+  },
+  {
+   "em": "você puxava",
+   "clipe": "pixabay_6772.mp4",
+   "inicio": 17.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "a descarga sendo puxada",
+   "sfx_cena": [
+    {
+     "em": "descarga",
+     "arquivo": "assets/sonniss/cache/6258.mp3",
+     "desc": "a toilet flushing",
+     "db": -6,
+     "dur": 1.4,
+     "no_clipe": 17.4
+    }
+   ]
+  },
+  {
+   "em": "e o presente",
+   "clipe": "pixabay_1354.mp4",
+   "inicio": 19.6,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "os trilhos passando rápido debaixo do trem"
+  },
+  {
+   "em": "Por isso",
+   "clipe": "pixabay_32159.mp4",
+   "inicio": 1.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "trem parado na plataforma da estação"
+  },
+  {
+   "em": "com o trem",
+   "clipe": "pixabay_50458.mp4",
+   "inicio": 20.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "o trem parado na estação, gente na plataforma"
+  },
+  {
+   "em": "Andando",
+   "clipe": "pixabay_1354.mp4",
+   "inicio": 15.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "andando: os trilhos passando, tudo se espalha"
+  },
+  {
+   "em": "parado",
+   "clipe": "pixabay_32159.mp4",
+   "inicio": 7.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "parado: o vagão ao lado da plataforma"
+  },
+  {
+   "em": "Só na Índia",
+   "clipe": "pixabay_50458.mp4",
+   "inicio": 5.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "os trilhos e o trem: quase 4 mil toneladas por dia",
+   "contador": {
+    "ate": 4000,
+    "sufixo": " t/dia",
+    "em": "quatro"
+   }
+  },
+  {
+   "em": "Mas tem",
+   "clipe": "pixabay_6772.mp4",
+   "inicio": 0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "animacao": {
+    "nome": "banheiro3d",
+    "fase": "completo",
+    "eventos": {
+     "novo": "copiaram",
+     "vacuo": "vácuo",
+     "agua": "litros",
+     "tanque": "tanque"
+    },
+    "sfx": [
+     {
+      "busca": "wind gust whoosh",
+      "db": -6,
+      "dur": 1.0
+     },
+     {
+      "evento": "novo",
+      "arquivo": "assets/sfx/gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3",
+      "desc": "heavy hydraulic press closing deep metal clunk",
+      "db": -8,
+      "dur": 0.9
+     },
+     {
+      "evento": "vacuo",
+      "arquivo": "assets/sonniss/cache/7228.mp3",
+      "desc": "a toilet flushing",
+      "db": -4,
+      "dur": 1.6
+     },
+     {
+      "evento": "agua",
+      "arquivo": "assets/sonniss/cache/2103.mp3",
+      "desc": "water dripping",
+      "db": -6,
+      "dur": 0.8
+     },
+     {
+      "evento": "tanque",
+      "arquivo": "assets/sfx/gen_heavy_water_slamming_into_ground_deep_rumble_and_c.mp3",
+      "desc": "a punchy impact hit",
+      "db": -8,
+      "dur": 1.0
+     }
+    ]
+   },
+   "_funcao": "3D: o cano antigo despeja nos trilhos; o novo, a vácuo, puxa tudo pro tanque embaixo do vagão"
+  },
+  {
+   "em": "Só que na",
+   "clipe": "pixabay_7809.mp4",
+   "inicio": 6.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "ferrovia antiga: os trens velhos ainda rodando"
+  },
+  {
+   "em": "Então",
+   "clipe": "tt_realraywilliam_7208630035622890798.mp4",
+   "inicio": 29.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "LOOP",
+   "_funcao": "o mesmo furo do gancho: olha pra baixo",
+   "zoom": [
+    1.45,
+    1.45
+   ],
+   "alvo": [
+    0.5,
+    0.65
+   ]
+  }
+ ]
+}
