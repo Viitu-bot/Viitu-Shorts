@@ -33,6 +33,10 @@ sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
    cada cena, frase e som — o "cérebro de editor"), **montagem parte por parte** (`python3 -m viitu.partes <p> <PARTE>`:
    cada parte do roteiro renderizada e conferida antes da próxima), som, Remotion e **`python3 -m viitu.entrega <p>` LIBERADA** (sem isso não se entrega)
 6. `/publicar` → título, descrição, créditos, horário; o dono agenda no app do YouTube Studio
+7. **KIT DE PUBLICAÇÃO (obrigatório em TODO vídeo finalizado, dono 24/11):** gerar `projetos/<p>/kit_publicacao.txt` e
+   mostrar no chat: (1) título + descrição curta alinhados ao gancho dos 2 primeiros segundos; (2) comentário fixado =
+   1 frase provocativa ou pergunta simples que gere debate enquanto o Short roda em loop; (3) post de TRIVIA para a aba
+   Comunidade = enquete de quiz ligada ao tema, 4 opções, indicando a correta. Fato do quiz com fonte.
 - `/analisar <link>`: todo vídeo/canal que o dono mandar vira conhecimento (Hall da Fama).
 
 ## O formato do canal: HISA 2.0 do dono (público adulto 25+, 100% faceless)

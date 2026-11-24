@@ -1,4 +1,4 @@
-# Decupagem vd015_estradas_china — formato por_dentro — música app:sans. (Toby Fox)
+# Decupagem vd015_estradas_china — formato por_dentro — música epico_engenharia.mp3
 1. 0.0-0.8s [GANCHO] "Essa estrada" — x_sz_mediagroup_197154361558 @1.5s — olhando direto pra baixo da ponte: o abismo — sons: ['4362.mp3 @1.6s']
 2. 0.8-3.6s [GANCHO] "passa a" — tiktok_aljazeeraenglish_7555 @29.78s — o wingsuit despencando ao lado da ponte (câmera lenta): a altura — sons: ['gen_wingsuit_flyer_diving_past_with_a_loud_fabric_flut.mp3 @30.0s']
 3. 3.6-4.7s [INÍCIO] "Parece exagero" — x_China_Fact_196385447817793 @12.5s — a ponte vista de cima, torres e cabos — sons: []

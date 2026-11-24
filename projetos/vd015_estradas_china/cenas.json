@@ -2,7 +2,7 @@
  "_versao": "v1: por dentro/recorde, roteiro aprovado 20/11; abertura nova + estéreo + sans. pelo app",
  "formato": "por_dentro",
  "impacto_em": [
-  "Huajiang"
+  "alta"
  ],
  "destaques": [
   "625",
@@ -24,7 +24,7 @@
   "minutos",
   "inscreve"
  ],
- "musica": "app:sans. (Toby Fox)",
+ "musica": "epico_engenharia.mp3",
  "cta": {
   "em": "se inscreve",
   "texto": "SE INSCREVE"
