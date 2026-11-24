@@ -3,8 +3,8 @@
  "_regra": "dB relativos à voz (0 = mesmo volume da voz). Todo som é normalizado à referência da voz antes (viitu/mix.py): leitos pela loudness integrada, efeitos curtos pelo pico percebido.",
  "mix_db": {
   "voz": 0,
-  "musica_fala": -20,
-  "musica_pausa": -11,
+  "musica_fala": -16,
+  "musica_pausa": -10,
   "ambiencia": -20,
   "foley_detalhe": -16,
   "som_original": -16,
@@ -47,6 +47,7 @@
  "sfx_intervalo_min_s": 3.0,
  "_mix_24_11b": "dono 24/11 (vd016): 'efeitos baixos, não tem música de fundo'. Medido com rea-video (stems) nos vídeos editados pelo dono: música 0,5–10 dB sob a voz (mediana −4,7), efeitos com pico −3 a +9 dB da voz; o vd016 tinha música −20 (mesmo método). Novo alvo: música −14 sob a voz na medição interna (≈ −9 nos stems), efeitos −8 a −3, virada no nível da voz. Calibrado no vd016: alvo −17 na mixagem dá −13,8 medido; boom 0 dava +3,8 sobre a voz → −3.",
  "voz_cadeia": "suave",
- "duck_ratio": 4,
- "_mix_24_11c": "dono 24/11 (vd016, teste A/B/C ouvido no celular): escolheu B 'voz na frente' — voz com tratamento leve, música abaixa mais quando ele fala (ratio 4) e volta nas pausas; medido: música −20 sob a voz, efeitos 11/13 audíveis."
+ "duck_ratio": 2.5,
+ "_mix_24_11c": "dono 24/11 (vd016, teste A/B/C ouvido no celular): escolheu B 'voz na frente' — voz com tratamento leve, música abaixa mais quando ele fala (ratio 4) e volta nas pausas; medido: música −20 sob a voz, efeitos 11/13 audíveis.",
+ "_mix_24_11d": "dono 24/11 (vd017): 'a música não deu nem pra ouvir' com narração contínua o abaixamento (ratio 4) nunca soltava. Sem teste A/B (dono: '3 demora muito, gasta muito'): música −16 na mixagem, abaixamento 2,5; voz continua 'suave' na frente."
 }

@@ -96,7 +96,7 @@ def medir(projeto: str, plano: dict) -> dict:
     dpk = float(max(db(dg[i:i + w]) for i in range(0, 4 * w, w // 2)) - vref)                 # efeito acima da voz em plena fala
     app = str(json.loads((pasta_proj(projeto) / "cenas.json").read_text(encoding="utf-8")).get("musica", "")).startswith("app:")
     r = {
-        "musica_sob_voz_db": ("pelo app" if app else round(sob, 1), app or -23 <= sob <= -17),   # dono 24/11: escolheu B (voz na frente, música −20 e sobe nas pausas)       # BÍBLIA §4: audível no celular
+        "musica_sob_voz_db": ("pelo app" if app else round(sob, 1), app or -19 <= sob <= -12),   # dono 24/11: música AUDÍVEL sob a voz (vd017: −17 não dava pra ouvir)       # BÍBLIA §4: audível no celular
         "musica_respira_db": ("pelo app" if app else round(respira, 1), app or respira >= 3 or pausa.sum() < 3),
         "efeitos_acao_audiveis": (f"{acao_ok}/{len(picos)}", not picos or acao_ok >= 0.7 * len(picos)),   # só os que existem
         "impacto_virada_db": ([round(x, 1) for x in imp], all(x >= -8 for x in imp)),   # som B (dono 24/11): virada entre −8 e 0 da voz

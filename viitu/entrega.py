@@ -43,8 +43,13 @@ def _tarjas(mp4: Path) -> list[float]:
             break
         g = cv2.cvtColor(cv2.resize(im, (108, 192)), cv2.COLOR_BGR2GRAY).astype(float)
         meio = g[60:130].mean()
-        borda = [g[:10], g[-10:]]                                   # tarja = preto PURO (a vinheta/chão escuro fica em 4–6)
-        if meio > 30 and any(x.mean() < 1.5 and x.std() < 1.5 for x in borda):
+        # tarja = preto PURO com BORDA RETA logo depois (sombra/corredor escuro vão escurecendo aos poucos)
+        def faixa(linhas):                                   # linhas a partir da borda, para dentro
+            n = 0
+            while n < len(linhas) and linhas[n].mean() < 1.5 and linhas[n].std() < 1.5:
+                n += 1
+            return n >= 8 and n + 2 < len(linhas) and linhas[n + 1].mean() > 6     # preto puro e corte seco para a imagem
+        if meio > 30 and (faixa(g[:60]) or faixa(g[::-1][:60])):
             ruins.append(round(t, 2))
         t += 0.25
     cap.release()

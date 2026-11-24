@@ -200,7 +200,16 @@
    "_funcao": "COR: a galeria de concreto lá embaixo, escondida",
    "foley": "casamata",
    "_parte": "MEIO",
-   "velocidade": 0.9
+   "velocidade": 0.9,
+   "zoom": [
+    1.45,
+    1.5
+   ],
+   "alvo": [
+    0.5,
+    0.5
+   ],
+   "seguir": false
   },
   {
    "em": "o pessoal recarregava",
