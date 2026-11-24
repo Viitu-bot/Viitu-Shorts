@@ -1,22 +1,27 @@
 # Decupagem vd016_banheiro_trem — formato motivo_oculto — música curioso_documentario.mp3
-1. 0.0-1.3s [GANCHO] "Olha" — tt_realraywilliam_7208630035 @29.0s — o vaso de aço com o furo e os trilhos passando lá embaixo — sons: ['4081.mp3 @29.1s']
-2. 1.3-4.6s [GANCHO] "esse buraco" — tt_realraywilliam_7208630035 @4.55s — o vaso de louça do trem velho com o buraco direto pro chão — sons: []
-3. 4.6-7.7s [INÍCIO] "Parece piada" — pixabay_7809.mp4 @0.5s — ferrovia antiga em preto e branco: por décadas — sons: []
-4. 7.7-9.0s [INÍCIO] "você puxava" — pixabay_6772.mp4 @17.0s — a descarga sendo puxada — sons: ['6258.mp3 @17.4s']
-5. 9.0-11.0s [INÍCIO] "e o presente" — pixabay_1354.mp4 @19.6s — os trilhos passando rápido debaixo do trem — sons: []
-6. 11.0-13.4s [MEIO] "Por isso" — pixabay_32159.mp4 @1.0s — trem parado na plataforma da estação — sons: []
-7. 13.4-15.3s [MEIO] "com o trem" — pixabay_50458.mp4 @20.0s — o trem parado na estação, gente na plataforma — sons: []
-8. 15.3-17.6s [MEIO] "Andando" — pixabay_1354.mp4 @15.0s — andando: os trilhos passando, tudo se espalha — sons: []
-9. 17.6-20.9s [MEIO] "parado" — pixabay_32159.mp4 @7.0s — parado: o vagão ao lado da plataforma — sons: []
-10. 20.9-25.0s [MEIO] "Só na Índia" — pixabay_50458.mp4 @5.0s — os trilhos e o trem: quase 4 mil toneladas por dia — sons: []
-11. 25.0-33.5s [MEIO] "Mas tem" — 3D banheiro3d — 3D: o cano antigo despeja nos trilhos; o novo, a vácuo, puxa tudo pro tanque embaixo do vagão — sons: ['wind gust whoosh', 'assets/sfx/gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3', 'assets/sonniss/cache/7228.mp3', 'assets/sonniss/cache/2103.mp3', 'assets/sfx/gen_heavy_water_slamming_into_ground_deep_rumble_and_c.mp3']
-12. 33.5-38.4s [FINAL] "Só que na" — pixabay_7809.mp4 @6.0s — ferrovia antiga: os trens velhos ainda rodando — sons: []
-13. 38.4-40.9s [LOOP] "Então" — tt_realraywilliam_7208630035 @29.0s — o mesmo furo do gancho: olha pra baixo — sons: []
+1. 0.0-2.4s [GANCHO] "Olha" — tt_realraywilliam_7208630035 @28.8s — o furo do vaso e os trilhos passando lá embaixo (o quadro mais estranho) — sons: ['4081.mp3 @29.1s']
+2. 2.4-4.0s [GANCHO] "dá direto" — pixabay_1354.mp4 @14.8s — perto: os dormentes passando rápido logo abaixo — sons: []
+3. 4.0-6.7s [INÍCIO] "Parece piada" — pixabay_14953.mp4 @19.3s — longe: maria-fumaça chegando na estação (por décadas) — sons: []
+4. 6.7-7.9s [INÍCIO] "você puxava" — pixabay_6772.mp4 @17.0s — perto: a descarga — sons: ['6258.mp3 @17.4s']
+5. 7.9-9.4s [INÍCIO] "e o presente" — pixabay_3639.mp4 @0.9s — perto: o trilho passando colado (é ali que caía) — sons: []
+6. 9.4-11.4s [MEIO] "Por isso" — pixabay_7809.mp4 @5.8s — estação antiga em preto e branco (a placa da época) — sons: []
+7. 11.4-12.9s [MEIO] "com o trem" — pixabay_32159.mp4 @9.3s — de cima: trem parado na plataforma, gente esperando — sons: []
+8. 12.9-15.1s [MEIO] "Andando" — pixabay_22686.mp4 @6.0s — longe: trem passando voando (a sujeira se espalha) — sons: ['4081.mp3 @6.3s']
+9. 15.1-17.8s [MEIO] "parado" — pixabay_3178.mp4 @4.9s — de cima: trens parados colados na plataforma cheia — sons: []
+10. 17.8-19.2s [MEIO] "Só na Índia" — pixabay_89604.mp4 @17.0s — perto: vagão indiano de segunda classe — sons: []
+11. 19.2-21.6s [MEIO] "quatro mil" — pixabay_139303.mp4 @10.8s — longe: estação indiana com o trem passando — contador — sons: []
+12. 21.6-22.7s [MEIO] "Mas tem" — pixabay_142647.mp4 @3.0s — virada: asa de avião (antecipa "copiaram o avião") — sons: []
+13. 22.7-25.9s [MEIO] "os trens novos" — 3D banheiro3d — 3D lado: o cano antigo despeja nos trilhos → vira cano a vácuo + tanque — sons: ['wind gust whoosh', 'assets/sfx/gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3', 'assets/sonniss/cache/7228.mp3']
+14. 25.9-29.3s [MEIO] "com só" — 3D banheiro3d — 3D perto: 2 litros de água e o tanque enchendo embaixo do vagão — sons: ['assets/sonniss/cache/2103.mp3', 'assets/sfx/gen_heavy_water_slamming_into_ground_deep_rumble_and_c.mp3']
+15. 29.3-31.4s [FINAL] "Só que na" — pixabay_125556.mp4 @10.2s — perto: janela do trem velho passando pelo campo inglês — sons: []
+16. 31.4-33.5s [FINAL] "fazendo isso" — pixabay_50458.mp4 @17.5s — longe: trem na curva visto do alto (ainda rodando em 2018) — sons: []
+17. 33.5-35.6s [LOOP] "Então" — tt_realraywilliam_7208630035 @28.8s — o mesmo furo do gancho: olha pra baixo — sons: []
 
 ## OUVIDO (earshot)
 ✅ cena 1: 4081.mp3 — pedido "a train passing on tracks" → strong (z 5.1)
 ✅ cena 4: 6258.mp3 — pedido "a toilet flushing" → strong (z 6.0)
-✅ cena 11: gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3 — pedido "heavy hydraulic press closing deep metal clunk" → strong (z 3.9)
-✅ cena 11: 7228.mp3 — pedido "a toilet flushing" → strong (z 5.7)
-⚠️ cena 11: 2103.mp3 — pedido "water dripping" → plausible (z 2.5); soa como: a toilet flushing, pouring water
-✅ cena 11: gen_heavy_water_slamming_into_ground_deep_rumble_and_c.mp3 — pedido "a punchy impact hit" → strong (z 3.1)
+✅ cena 8: 4081.mp3 — pedido "a train passing on tracks" → strong (z 5.1)
+✅ cena 13: gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3 — pedido "heavy hydraulic press closing deep metal clunk" → strong (z 3.9)
+✅ cena 13: 7228.mp3 — pedido "a toilet flushing" → strong (z 5.7)
+⚠️ cena 14: 2103.mp3 — pedido "water dripping" → plausible (z 2.5); soa como: a toilet flushing, pouring water
+✅ cena 14: gen_heavy_water_slamming_into_ground_deep_rumble_and_c.mp3 — pedido "a punchy impact hit" → strong (z 3.1)
