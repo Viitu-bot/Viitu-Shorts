@@ -18,7 +18,7 @@
 17. 33.8-35.0s [FINAL] "O avião" — pixabay_953.mp4 @7.6s — biplano subindo, fumaça — sons: ['4814.mp3 @7.8s']
 18. 35.0-36.3s [FINAL] "lá de cima" — nara_training_coast_artiller @690.0s — a vista de cima do forte, de balão: tudo à mostra — sons: []
 19. 36.3-37.8s [FINAL] "o buraco" — commons_12-inch_Disappearing @0s — o fosso do canhão de 12 polegadas: o buraco onde ele se escondia — sons: []
-20. 37.8-40.7s [FINAL] "Hoje sobraram" — nara_training_coast_artiller @1120.0s — dois canhões grandes lado a lado — sons: []
+20. 37.8-40.7s [FINAL] "Hoje sobraram" — nara_training_coast_artiller @1120.0s — o quadro inteiro: dois canhões grandes lado a lado (o "2" na tela) — sons: []
 21. 40.7-42.5s [LOOP] "e ninguém" — tt_interestingengineering_72 @15.2s — o mesmo quadro do gancho — sons: []
 
 ## OUVIDO (earshot)
