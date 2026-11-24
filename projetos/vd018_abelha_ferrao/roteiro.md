@@ -18,7 +18,7 @@ Mas tem um porém: junto com o ferrão fica um cheiro de banana. É o alarme da 
 (132 palavras ≈ 42 s com a voz do dono a 3,15 pal/s; a última frase emenda no gancho: "…cada segundo parado é mais
 veneno, porque essa abelha já foi embora, e o ferrão continua te picando")
 
-## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs)
+## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs) — APROVADO pelo dono em 24/11
 Essa abelha já foi embora, e o ferrão continua te picando.
 Parece filme de terror, mas é engenharia. O ferrão tem farpa, igual anzol: entrou na tua pele, não sai mais. Ela puxa, arranca um pedaço da própria barriga e morre logo depois.
 Só que fica o kit: ferrão, veneno e músculo, trabalhando sozinho. A câmera lenta mostrou duas lâminas serrando, uma de cada vez, igual pistão, bombeando veneno por até setenta segundos.
