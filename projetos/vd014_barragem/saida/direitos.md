@@ -12,10 +12,11 @@
 | ✅ | pixabay_185510.mp4 | Pixabay (licença livre) |
 | ✅ | pixabay_156301.mp4 | Pixabay (licença livre) |
 | ✅ | pixabay_279589.mp4 | Pixabay (licença livre) |
-| ⚠️ | tiktok_weather.weather0_7475741716381945134.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
+| ✅ | pixabay_24515.mp4 | Pixabay (licença livre) |
 | ⚠️ | tiktok_weather.weather0_7484642094024510766.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
+| ⚠️ | tiktok_weather.weather0_7475741716381945134.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ✅ | pixabay_136821.mp4 | Pixabay (licença livre) |
 
 **RESULTADO:** ✅ liberado (⚠️ = crédito na descrição + pedir permissão)
 
-**Créditos para a descrição:** Imagens: @weather.weather0 (TikTok); XXXXXYXXXXX, silas267, InspiredImages, Positive_Hedgehog (Pixabay). Animação 3D: Viitu Shorts.
+**Créditos para a descrição:** Imagens: @weather.weather0 (TikTok); XXXXXYXXXXX, silas267, InspiredImages, Positive_Hedgehog, Engin_Akyurt (Pixabay). Animação 3D: Viitu Shorts.

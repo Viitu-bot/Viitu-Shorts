@@ -31,6 +31,26 @@ def _rodar(nome: str, cmd: list[str]) -> tuple[bool, str]:
     return p.returncode == 0, "\n".join(linhas[-12:])
 
 
+def _tarjas(mp4: Path) -> list[float]:
+    """Segundos (a cada 0,25 s) em que o topo ou o pé da tela (12%) fica preto enquanto o meio tem imagem."""
+    import cv2
+    cap, ruins, t = cv2.VideoCapture(str(mp4)), [], 0.3
+    dur = cap.get(cv2.CAP_PROP_FRAME_COUNT) / (cap.get(cv2.CAP_PROP_FPS) or 30)
+    while t < dur - 0.2:
+        cap.set(cv2.CAP_PROP_POS_MSEC, t * 1000)
+        ok, im = cap.read()
+        if not ok:
+            break
+        g = cv2.cvtColor(cv2.resize(im, (108, 192)), cv2.COLOR_BGR2GRAY).astype(float)
+        meio = g[60:130].mean()
+        borda = [g[:10], g[-10:]]                                   # tarja = preto PURO (a vinheta/chão escuro fica em 4–6)
+        if meio > 30 and any(x.mean() < 1.5 and x.std() < 1.5 for x in borda):
+            ruins.append(round(t, 2))
+        t += 0.25
+    cap.release()
+    return ruins
+
+
 def entregar(projeto: str) -> bool:
     pasta = RAIZ / "projetos" / projeto
     mp4 = RAIZ / "remotion" / "out" / f"{projeto}.mp4"
@@ -65,6 +85,10 @@ def entregar(projeto: str) -> bool:
     res["partes"] = not faltam_p
     print(("✅" if not faltam_p else "❌"), "0c. Partes conferidas uma a uma (viitu.partes)"
           + (f" — faltam/antigas: {faltam_p}" if faltam_p else ""))
+    # TARJA PRETA (vd014 v2, 24/11): zoom/alvo empurrou o recorte para a borda preta do vídeo de origem
+    tarjas = _tarjas(mp4) if mp4.exists() else []
+    res["tarja"] = not tarjas
+    print(("✅" if not tarjas else "❌"), "0d. Sem faixa preta na tela" + (f" — em {tarjas} s (ajustar zoom/alvo da cena)" if tarjas else ""))
     from viitu.montagem import checar
     erros, avisos = checar(projeto)
     res["montagem"] = not erros

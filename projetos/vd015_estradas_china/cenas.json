@@ -268,16 +268,6 @@
    "alvo": [
     0.5,
     0.55
-   ],
-   "sfx_cena": [
-    {
-     "em": "Huajiang",
-     "arquivo": "assets/sonniss/cache/5144.mp3",
-     "desc": "a car passing by",
-     "db": -6,
-     "dur": 1.4,
-     "no_clipe": 6.5
-    }
    ]
   },
   {
