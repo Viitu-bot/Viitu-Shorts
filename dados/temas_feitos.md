@@ -16,3 +16,4 @@ Formato: `AAAA-MM-DD (postagem) | família | tema | link do vídeo publicado (qu
 2026-11-24 06:00 | Motivo oculto | "A bola escondida na frente do navio 🚢" — BASTIDOR 26,2 s, 3D das duas ondas, trilha no arquivo, vd013 | (pronto para agendar; teste de horário: 06h)
 2026-11-25 (qua) | Por dentro/motivo oculto | Por que a barragem joga a água pro alto (vertedouro salto de esqui) — vd014 | (prova 24,9 mi; PT vazio no ângulo)
 2026-11-26 (qui) | Por dentro/recorde | A estrada chinesa que voa sobre as montanhas (viadutos/pontes altíssimas) — vd015 | (prova 7,1 mi; PT vazio)
+2026-11-28 (sáb) | Motivo oculto (faixa 70%, molde B1) | Pra onde vai o que você deixa no trem (banheiro do trem) — vd016 | (prova 63,2 mi; PT vazio)
