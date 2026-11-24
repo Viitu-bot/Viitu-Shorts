@@ -345,7 +345,8 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
         </React.Fragment>
       ))}
 
-      {plano.palavras.filter((p) => p.texto).map((p, k) => (
+      {/* com o número grande na tela, a legenda some (dono 24/11: "aparece 625 e 625 m ao mesmo tempo") */}
+      {plano.palavras.filter((p) => p.texto && !(plano.contadores ?? []).some((c) => p.f0 >= c.f0 - 2 && p.f0 < c.f1)).map((p, k) => (
         <Sequence key={k} from={p.f0} durationInFrames={Math.max(p.f1 - p.f0, 1)}>
           <PalavraNaTela p={p} />
         </Sequence>

@@ -82,7 +82,8 @@
    "contador": {
     "ate": 625,
     "sufixo": " m",
-    "em": "625"
+    "em": "625",
+    "ate_palavra": "metros"
    },
    "velocidade": 0.6,
    "sfx_cena": [
@@ -145,7 +146,13 @@
    "alvo": [
     0.5,
     0.58
-   ]
+   ],
+   "contador": {
+    "ate": 2,
+    "sufixo": " HORAS",
+    "em": "duas",
+    "ate_palavra": "horas"
+   }
   },
   {
    "em": "Guizhou",
@@ -285,7 +292,13 @@
    "alvo": [
     0.5,
     0.55
-   ]
+   ],
+   "contador": {
+    "ate": 2,
+    "sufixo": " MIN",
+    "em": "dois",
+    "ate_palavra": "minutos"
+   }
   },
   {
    "em": "Você atravessaria",

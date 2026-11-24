@@ -913,8 +913,12 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
         c = s.get("contador")
         if c and ("ct", s["em"]) not in vistos_g:
             vistos_g.add(("ct", s["em"]))
-            f = round(palavras[achar_palavra(palavras, c.get("em", s["em"]), i0)]["inicio"] * FPS)
-            plano["contadores"].append({"f0": f, "f1": s["f1"], "de": c.get("de", 0), "ate": c["ate"],
+            i_num = achar_palavra(palavras, c.get("em", s["em"]), i0)
+            f = round(palavras[i_num]["inicio"] * FPS)
+            # dura as palavras do número/unidade ("até": "metros", senão 2 palavras) + 0,5 s, no máximo até o fim da cena
+            i_fim = achar_palavra(palavras, c["ate_palavra"], i_num) if c.get("ate_palavra") else min(i_num + 1, len(palavras) - 1)
+            f1 = min(s["f1"], round((palavras[i_fim]["fim"] + 0.5) * FPS)) if not c.get("cena_toda") else s["f1"]
+            plano["contadores"].append({"f0": f, "f1": max(f1, f + 30), "de": c.get("de", 0), "ate": c["ate"],
                                         "prefixo": c.get("prefixo", ""), "sufixo": c.get("sufixo", "")})
             if (pub / "kit_ding_fato_0.mp3").exists():
                 plano["sfx"].append({"f": f + 24, "som": "kit_ding_fato_0.mp3", "vol": 0.4, "dur": 30})

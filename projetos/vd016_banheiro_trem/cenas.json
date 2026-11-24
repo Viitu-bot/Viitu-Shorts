@@ -175,7 +175,8 @@
    "contador": {
     "ate": 4000,
     "sufixo": " t/dia",
-    "em": "quatro"
+    "em": "quatro",
+    "ate_palavra": "dia"
    }
   },
   {
@@ -256,7 +257,13 @@
      }
     ]
    },
-   "_funcao": "3D perto: 2 litros de água e o tanque enchendo embaixo do vagão"
+   "_funcao": "3D perto: 2 litros de água e o tanque enchendo embaixo do vagão",
+   "contador": {
+    "ate": 2,
+    "sufixo": " LITROS",
+    "em": "dois",
+    "ate_palavra": "litros"
+   }
   },
   {
    "em": "Só que na",
@@ -274,7 +281,12 @@
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "longe: trem na curva visto do alto (ainda rodando em 2018)"
+   "_funcao": "longe: trem na curva visto do alto (ainda rodando em 2018)",
+   "contador": {
+    "de": 1950,
+    "ate": 2018,
+    "em": "2018"
+   }
   },
   {
    "em": "Então",

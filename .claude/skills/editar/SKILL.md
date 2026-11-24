@@ -38,6 +38,8 @@ aval do dono). Não renderizar planta reprovada.
    Errou → corrige o cenas.json → `editar` → `partes <p> GANCHO` de novo. Só passa para INÍCIO, MEIO, FINAL, CTA e LOOP
    com a anterior certa. Tomada curta que a triagem não lista e foi olhada quadro a quadro: `"trecho_conferido": "<motivo>"`.
    A entrega reprova se alguma parte faltar ou for mais velha que o cenas.json.
+   **Números na tela (dono 24/11):** 2–4 por vídeo nos fatos-chave — `"contador": {"ate": N, "sufixo": " m", "em":
+   "<palavra do número>", "ate_palavra": "<unidade>"}` (ano: `"de": 1950`). Com o número na tela a legenda some sozinha.
    **Seta/círculo:** `"seta": [x, y, r]` = centro e RAIO do alvo na tela 1080x1920, MEDIDO no quadro (nunca no chute);
    na prancha a mira verde tem que cair em cima do objeto e a ponta da seta encostar nela (reclamação 22).
 6. Render completo: `cd remotion && npm run render` →
