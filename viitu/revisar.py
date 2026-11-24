@@ -93,7 +93,12 @@ def revisar(projeto: str) -> bool:
             continue
         if c["clipe"] in cfg.get("bruto_livre", []):
             # arquivo livre (vd017): fora de ordem vale; repetição = trecho a menos de 2,5 s de outro já usado
-            rep = [k for k, (cl, tt) in enumerate(vistos) if cl == c["clipe"] and abs(tt - t) < 2.5]
+            try:
+                _tr = json.loads((pasta / "clipes" / "triagem.json").read_text(encoding="utf-8"))[c["clipe"]]["trechos_utilizaveis"]
+            except (OSError, KeyError, ValueError):
+                _tr = []
+            _mesmo = lambda x, y: any(a0 <= x < a1 and a0 <= y < a1 for a0, a1 in _tr) if _tr else True
+            rep = [k for k, (cl, tt) in enumerate(vistos) if cl == c["clipe"] and abs(tt - t) < 2.5 and _mesmo(tt, t)]
         elif c["clipe"] in ((lambda b: [b] if isinstance(b, str) else (b or []))(cfg.get("bruto_cronologico"))):
             # bruto cronológico: repetição = voltar/sobrepor trecho já usado (a ordem crescente é conferida na montagem R1)
             ant = [tt for cl, tt in vistos if cl == c["clipe"]]

@@ -173,7 +173,12 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
     for livre in cfg.get("bruto_livre", []):
         if livre in usos:
             ts = sorted(cenas[k - 1].get("inicio", 0) for k in usos[livre])
-            if any(b2 - a2 < 2.5 for a2, b2 in zip(ts, ts[1:])):
+            try:                                       # tomadas diferentes (cortes internos do vídeo) = momentos diferentes
+                tr = json.loads((pasta / "clipes" / "triagem.json").read_text(encoding="utf-8"))[livre]["trechos_utilizaveis"]
+            except (OSError, KeyError, ValueError):
+                tr = []
+            mesmo = lambda x, y: any(a0 <= x < a1 and a0 <= y < a1 for a0, a1 in tr) if tr else True
+            if any(b2 - a2 < 2.5 and mesmo(a2, b2) for a2, b2 in zip(ts, ts[1:])):
                 erros.append(f"R1 ARQUIVO REPETIDO: {livre} usa trechos colados (inícios {ts}); cada cena = outro momento do filme.")
             usos.pop(livre)
     brutos = cfg.get("bruto_cronologico") or []

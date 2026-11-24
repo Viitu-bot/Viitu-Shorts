@@ -23,27 +23,20 @@
  "cta": false,
  "bruto_livre": [
   "nara_training_coast_artillery_1918.mp4",
-  "tt_interestingengineering_7289583193949261062.mp4"
+  "tt_interestingengineering_7289583193949261062.mp4",
+  "tt_alexboverehere_7303382541921291563.mp4"
  ],
- "creditos_descricao": "Imagens: Arquivo Nacional dos EUA (filme 111-H-1171, 1918, domínio público); @interestingengineering (TikTok); Vimeo-Free-Videos (Pixabay); fotos: :-Adam (CC BY-SA 2.5) e Mlanni98 (CC BY-SA 4.0), Wikimedia Commons. Animação 3D: Viitu Shorts.",
+ "creditos_descricao": "Imagens: @alexboverehere e @interestingengineering (TikTok); Arquivo Nacional dos EUA (filme 111-H-1171, 1918, domínio público); Vimeo-Free-Videos (Pixabay); fotos: :-Adam (CC BY-SA 2.5) e Mlanni98 (CC BY-SA 4.0), Wikimedia Commons. Animação 3D: Viitu Shorts.",
  "cenas": [
   {
    "em": "Esse canhão",
-   "clipe": "tt_interestingengineering_7289583193949261062.mp4",
-   "inicio": 15.2,
+   "clipe": "tt_alexboverehere_7303382541921291563.mp4",
+   "inicio": 51.76,
    "som_original": false,
    "revisao": "manual",
+   "_funcao": "COR, perto: o canhão de verdade no forte, de pé (gancho)",
+   "foley": "artilharia_longe",
    "_parte": "GANCHO",
-   "_funcao": "a bateria do forte disparando: o canhão atirava",
-   "zoom": [
-    1.9,
-    1.95
-   ],
-   "alvo": [
-    0.5,
-    0.47
-   ],
-   "baixa_res_ok": "filme de época dentro do TikTok; recorte só na faixa do filme (sem a legenda queimada)",
    "sfx_cena": [
     {
      "em": "atirava",
@@ -51,10 +44,9 @@
      "desc": "a large cannon firing boom",
      "db": -4,
      "dur": 1.6,
-     "no_clipe": 15.5
+     "no_clipe": 51.9
     }
-   ],
-   "foley": "artilharia_longe"
+   ]
   },
   {
    "em": "e sumia",
@@ -80,14 +72,13 @@
   },
   {
    "em": "Era esconde-esconde",
-   "clipe": "nara_training_coast_artillery_1918.mp4",
-   "inicio": 588.0,
+   "clipe": "tt_alexboverehere_7303382541921291563.mp4",
+   "inicio": 54.3,
    "som_original": false,
    "revisao": "manual",
-   "_parte": "INÍCIO",
-   "_funcao": "o fosso do canhão na beira do mar: o esconderijo",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
-   "foley": "tropa_forte"
+   "_funcao": "COR: gente grande escalando o muro verde do canhão (esconde-esconde)",
+   "foley": "tropa_forte",
+   "_parte": "INÍCIO"
   },
   {
    "em": "o navio inimigo",
@@ -134,27 +125,6 @@
   {
    "em": "O segredo",
    "clipe": "nara_training_coast_artillery_1918.mp4",
-   "inicio": 1018.8,
-   "som_original": false,
-   "revisao": "manual",
-   "_parte": "MEIO",
-   "_funcao": "canhão grande disparando, fumaça: o coice",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
-   "sfx_cena": [
-    {
-     "em": "coice",
-     "arquivo": "assets/sonniss/cache/3191.mp3",
-     "desc": "a heavy artillery cannon firing",
-     "db": -4,
-     "dur": 1.4,
-     "no_clipe": 1018.9
-    }
-   ],
-   "foley": "artilharia_longe"
-  },
-  {
-   "em": "O tiro empurrava",
-   "clipe": "nara_training_coast_artillery_1918.mp4",
    "inicio": 1030.0,
    "manter": true,
    "revisao": "manual",
@@ -168,6 +138,14 @@
      "contrapeso": "levantava"
     },
     "cortes": [
+     {
+      "em": "O tiro",
+      "zoom": 1.3,
+      "foco": [
+       0.6,
+       0.45
+      ]
+     },
      {
       "em": "num braço",
       "zoom": 1.5,
@@ -210,19 +188,19 @@
      }
     ]
    },
-   "_funcao": "3D em corte: o tiro, o coice joga o canhão para trás e para baixo do muro nos braços, o contrapeso sobe",
+   "_funcao": "3D colorido: o segredo é o coice — tiro, canhão desce atrás do muro, contrapeso sobe",
    "foley": "mar_costa"
   },
   {
    "em": "Lá embaixo",
-   "clipe": "nara_training_coast_artillery_1918.mp4",
-   "inicio": 940.0,
+   "clipe": "tt_alexboverehere_7303382541921291563.mp4",
+   "inicio": 70.02,
    "som_original": false,
    "revisao": "manual",
+   "_funcao": "COR: a galeria de concreto lá embaixo, escondida",
+   "foley": "casamata",
    "_parte": "MEIO",
-   "_funcao": "lá embaixo: a turma empurrando a bala no corredor de concreto",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
-   "foley": "casamata"
+   "velocidade": 0.9
   },
   {
    "em": "o pessoal recarregava",
@@ -277,14 +255,14 @@
   },
   {
    "em": "igual um",
-   "clipe": "nara_training_coast_artillery_1918.mp4",
-   "inicio": 1008.5,
+   "clipe": "tt_alexboverehere_7303382541921291563.mp4",
+   "inicio": 50.27,
    "som_original": false,
    "revisao": "manual",
+   "_funcao": "COR, longe: o canhão verde inteiro contra o céu (joão-bobo de aço)",
+   "foley": "tropa_forte",
    "_parte": "MEIO",
-   "_funcao": "o cano subindo de novo, inteiro (joão-bobo de aço)",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
-   "foley": "tropa_forte"
+   "velocidade": 0.7
   },
   {
    "em": "Tenta acertar",
@@ -310,14 +288,23 @@
   },
   {
    "em": "o truque",
-   "clipe": "nara_training_coast_artillery_1918.mp4",
-   "inicio": 1133.0,
+   "clipe": "tt_interestingengineering_7289583193949261062.mp4",
+   "inicio": 15.05,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "a bateria de frente disparando: só enganava quem olhava de frente",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
-   "foley": "artilharia_longe"
+   "_funcao": "a bateria disparando de frente",
+   "baixa_res_ok": "filme de época dentro do TikTok; recorte só na faixa do filme",
+   "foley": "artilharia_longe",
+   "zoom": [
+    1.9,
+    1.95
+   ],
+   "alvo": [
+    0.5,
+    0.47
+   ],
+   "velocidade": 0.9
   },
   {
    "em": "O avião",
@@ -342,14 +329,13 @@
   },
   {
    "em": "lá de cima",
-   "clipe": "nara_training_coast_artillery_1918.mp4",
-   "inicio": 690.0,
+   "clipe": "tt_alexboverehere_7303382541921291563.mp4",
+   "inicio": 30.0,
    "som_original": false,
    "revisao": "manual",
-   "_parte": "FINAL",
-   "_funcao": "a vista de cima do forte, de balão: tudo à mostra",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
-   "foley": "vento"
+   "_funcao": "COR, de cima: a bateria do forte vista do alto",
+   "foley": "vento",
+   "_parte": "FINAL"
   },
   {
    "em": "o buraco",
@@ -358,8 +344,8 @@
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "o fosso do canhão de 12 polegadas: o buraco onde ele se escondia",
-   "foley": "vento"
+   "foley": "vento",
+   "_funcao": "COR: o fosso do canhão de 12 polegadas — o buraco onde ele se escondia"
   },
   {
    "em": "Hoje sobraram",
@@ -368,35 +354,27 @@
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "o quadro inteiro: dois canhões grandes lado a lado (o \"2\" na tela)",
+   "foley": "mar_costa",
+   "layout": "inteiro",
+   "seguir": false,
    "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
    "contador": {
     "ate": 2,
     "em": "dois",
     "ate_palavra": "tamanho"
    },
-   "layout": "inteiro",
-   "seguir": false,
-   "foley": "mar_costa"
+   "_funcao": "quadro inteiro: dois canhões grandes lado a lado"
   },
   {
    "em": "e ninguém",
-   "clipe": "tt_interestingengineering_7289583193949261062.mp4",
-   "inicio": 15.2,
+   "clipe": "tt_alexboverehere_7303382541921291563.mp4",
+   "inicio": 51.76,
    "som_original": false,
    "revisao": "manual",
-   "_parte": "LOOP",
    "_funcao": "o mesmo quadro do gancho",
-   "zoom": [
-    1.9,
-    1.95
-   ],
-   "alvo": [
-    0.5,
-    0.47
-   ],
-   "baixa_res_ok": "filme de época dentro do TikTok; recorte só na faixa do filme (sem a legenda queimada)",
-   "foley": "artilharia_longe"
+   "foley": "artilharia_longe",
+   "_parte": "LOOP",
+   "velocidade": 0.8
   }
  ]
 }

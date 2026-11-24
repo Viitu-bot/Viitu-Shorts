@@ -92,6 +92,8 @@ A nuvem não baixa do YouTube: o usuário baixa/grava a tela das cenas e envia n
 Material de terceiros entra com narração transformadora + crédito na descrição.
 
 ## 1c. Contraste entre cenas vizinhas (planejar ANTES de baixar)
+**Cor e nitidez primeiro (dono 24/11, vd017):** tema histórico também abre com imagem COLORIDA e HD do lugar/objeto real
+(vídeo de visitante no TikTok/Instagram, conta oficial do museu/forte); filme antigo P&B só como PROVA, nunca a maioria.
 **Mapa de retenção (dono 24/11, trava R1/R9/R10):** 1 cena por frase/ideia, ≤ 3 s, CADA FONTE UMA VEZ (só o loop repete o
 gancho) → baixar ≥ 1 clipe por cena (~15). Ordem psicológica: gancho = o quadro mais estranho · perto ↔ longe alternados ·
 a virada ("porém") mostra um quadro que ANTECIPA a revelação (vd016: asa de avião antes de "copiaram o avião") · 3D em

@@ -403,5 +403,45 @@
   "id": 3191,
   "nome": "Airborne Sound - Battlefield Howitzers/Howitzer,M101,C3,105 mm,Medium Distant,Right Side,Shot,Firm,Heavy,EQ Version,Soft Attack.mp3",
   "nota": 0.282
+ },
+ "distant artillery battle rumble with cannon booms": {
+  "id": 1849,
+  "nome": "Pole Position - The Warfare Library/warfare_t1b_cannon_firing_forest_distant_MKH8060_2.mp3",
+  "nota": 0.029
+ },
+ "distant cannon boom echo": {
+  "id": 4339,
+  "nome": "Bluezone - Tank - Explosion Sound Effects/Bluezone_BC0271_tank_artillery_cannon_shot_012.mp3",
+  "nota": 0.071
+ },
+ "ocean waves crashing on rocky coast with wind": {
+  "id": 2580,
+  "nome": "Ivo Vicic - Sirocco Sea Storm - Mediterranean sea/17 Heavy waves_on rocks_near field_rain 3.mp3",
+  "nota": 0.333
+ },
+ "sea waves breaking on rocks close": {
+  "id": 2580,
+  "nome": "Ivo Vicic - Sirocco Sea Storm - Mediterranean sea/17 Heavy waves_on rocks_near field_rain 3.mp3",
+  "nota": 0.216
+ },
+ "soldiers outdoors crowd murmur with wind": {
+  "id": 5107,
+  "nome": "Sonic Bat - Soccer Stadium Ambience/SBssa_Crowd Chanting 019.mp3",
+  "nota": 0.321
+ },
+ "people talking nearby": {
+  "id": 1931,
+  "nome": "SoundBits - Collected Ambiences/CA4_Ambience_SmallTrainstation_PeopleTalking_TrainArriveDepart_Announcement.mp3",
+  "nota": 0.239
+ },
+ "concrete bunker interior room tone with echo": {
+  "id": 4559,
+  "nome": "Ivo Vicic - Industrial hall/39 Room tone_cargo elevator_up_down.mp3",
+  "nota": 0.232
+ },
+ "metal cart wheels rolling on concrete": {
+  "id": 4628,
+  "nome": "Matt Script - Electric Lawn Mower/Electric_Mower_moving_over_concrete_dragging_scrape_scraping_rolling_metal_plastic_02.mp3",
+  "nota": 0.689
  }
 }
