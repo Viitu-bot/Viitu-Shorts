@@ -368,5 +368,40 @@
   "id": 2103,
   "nome": "West Wolf - WATER/W 04 Water_05_Cave, Ambience, Water Drops, River_T05.mp3",
   "nota": 0.427
+ },
+ "a large cannon firing boom": {
+  "id": 4339,
+  "nome": "Bluezone - Tank - Explosion Sound Effects/Bluezone_BC0271_tank_artillery_cannon_shot_012.mp3",
+  "nota": 0.629
+ },
+ "an artillery shell splashing into the sea": {
+  "id": 4339,
+  "nome": "Bluezone - Tank - Explosion Sound Effects/Bluezone_BC0271_tank_artillery_cannon_shot_012.mp3",
+  "nota": 0.075
+ },
+ "an old propeller airplane flying by": {
+  "id": 4814,
+  "nome": "Pole Position - Extra 330LX/Extra, 330LX, t10, Ext, Fly, Bys, Acrobatic Flying, Beginning of Airstrip, D50.mp3",
+  "nota": 0.696
+ },
+ "heavy metal gears clanking machinery": {
+  "id": 1779,
+  "nome": "Mindful Audio - Elements - Gears/large gear 03 metal slow 8040.mp3",
+  "nota": 0.313
+ },
+ "a heavy artillery shell sliding into a breech metal clank": {
+  "id": 6683,
+  "nome": "Pole Position - Artillery Vehicle Bandkanon 1C/Bandkanon 1C - t10 - VAR SFX - Simulated Shell Ejection 1 - MS Decoded - RSM191.mp3",
+  "nota": 0.368
+ },
+ "distant artillery gun shot with echo": {
+  "id": 3189,
+  "nome": "Airborne Sound - Battlefield Howitzers/Howitzer,M101,C1,105 mm,Distant,Right Side,Shot,Pound,Thick.mp3",
+  "nota": 0.195
+ },
+ "howitzer cannon shot boom": {
+  "id": 3191,
+  "nome": "Airborne Sound - Battlefield Howitzers/Howitzer,M101,C3,105 mm,Medium Distant,Right Side,Shot,Firm,Heavy,EQ Version,Soft Attack.mp3",
+  "nota": 0.282
  }
 }

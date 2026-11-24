@@ -294,5 +294,61 @@
    "a toilet flushing",
    "pouring water"
   ]
+ },
+ "4339.mp3|1794911525159859157|a large cannon firing boom": {
+  "verdict": "strong",
+  "z": 5.2,
+  "parece": [
+   "an explosion",
+   "a gunshot"
+  ]
+ },
+ "gen_water_jet_splashing_down_into_a_pool.mp3|1795185152629933085|water splashing": {
+  "verdict": "plausible",
+  "z": 2.8,
+  "parece": [
+   "an object plunging into water",
+   "a squishy wet squelch"
+  ]
+ },
+ "6683.mp3|1795519028145351568|a heavy artillery cannon firing": {
+  "verdict": "weak",
+  "z": 2.3,
+  "parece": [
+   "a metallic clang",
+   "a metal scrape"
+  ]
+ },
+ "1779.mp3|1795519047313352707|heavy metal gears clanking machinery": {
+  "verdict": "strong",
+  "z": 4.0,
+  "parece": [
+   "a ratchet clicking",
+   "an old typewriter"
+  ]
+ },
+ "6683.mp3|1795519028145351568|a heavy metal clank": {
+  "verdict": "strong",
+  "z": 4.0,
+  "parece": [
+   "a metallic clang",
+   "a metal scrape"
+  ]
+ },
+ "4814.mp3|1795519036433352061|an old propeller airplane flying by": {
+  "verdict": "strong",
+  "z": 4.8,
+  "parece": [
+   "an airplane flying overhead",
+   "a helicopter flying overhead"
+  ]
+ },
+ "3191.mp3|1795057544838635890|a heavy artillery cannon firing": {
+  "verdict": "strong",
+  "z": 4.7,
+  "parece": [
+   "an explosion",
+   "a big drum hit"
+  ]
  }
 }
