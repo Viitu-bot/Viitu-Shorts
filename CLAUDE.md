@@ -52,7 +52,7 @@ em `edicao/identidade.md`.
 
 ## Fluxo (cada etapa é uma skill)
 `/tema` → `/roteiro` → `/clipes` → `/animacao` → `/editar` (decupagem + ouvido → partes conferidas → render →
-`viitu.entrega` LIBERADA) → `/publicar` + **kit obrigatório** `projetos/<p>/kit_publicacao.txt` mostrado no chat
+`viitu.entrega` LIBERADA) → `/publicar` + **kit obrigatório** `projetos/<p>/kit_publicacao.txt` mostrado no chat + **capa** `projetos/<p>/capa.jpg` (`viitu.capa`)
 (título/descrição do gancho · comentário fixado provocativo · trivia da Comunidade com 4 opções e a correta).
 `/analisar <link>` e `/espiar` (concorrência → `analises_concorrencia/`) viram conhecimento.
 

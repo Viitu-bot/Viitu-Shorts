@@ -53,3 +53,5 @@ Salvar `projetos/<p>/kit_publicacao.txt` E mostrar no chat, nesta ordem:
 2. COMENTÁRIO FIXADO — 1 frase curta e provocativa ou pergunta simples, para debate rápido enquanto o Short roda em loop.
 3. POST DE TRIVIA (aba Comunidade) — enquete de quiz: pergunta curiosa ligada ao tema + 4 opções, marcando a correta
    (fato conferido, com fonte no arquivo).
+4. CAPA (dono 24/11) — `python3 -m viitu.capa <p> "LINHA 1|LINHA 2"` → `projetos/<p>/capa.jpg` (quadro forte do gancho,
+   sem legenda, seta no alvo medido, título de 2–5 palavras no terço de cima). Abrir e conferir; mandar junto com o vídeo.
