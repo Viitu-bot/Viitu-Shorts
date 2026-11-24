@@ -15,6 +15,9 @@ UA = {"User-Agent": "ViituBot/1.0 (educational research)"}
 
 
 def _env(nome: str) -> str:
+    import os
+    if os.environ.get(nome):
+        return os.environ[nome]
     arq = RAIZ / ".env"
     if arq.exists():
         for l in arq.read_text().splitlines():
@@ -31,21 +34,27 @@ def _t(fn):
     return ok, info
 
 
+def _yt_h() -> dict:
+    # sem chave no .env/ambiente o proxy da nuvem injeta X-Goog-Api-Key (segredo de rede, 24/11)
+    k = _env("YOUTUBE_API_KEY")
+    return {"X-Goog-Api-Key": k} if k else {}
+
+
 def yt_videos():
     r = requests.get("https://www.googleapis.com/youtube/v3/videos", timeout=20,
-                     params={"part": "id", "id": "dQw4w9WgXcQ", "key": _env("YOUTUBE_API_KEY")}).json()
+                     params={"part": "id", "id": "dQw4w9WgXcQ"}, headers=_yt_h()).json()
     return ("items" in r), r.get("error", {}).get("message", "ok")[:90]
 
 
 def yt_busca():
     r = requests.get("https://www.googleapis.com/youtube/v3/search", timeout=20,
-                     params={"part": "id", "q": "teste", "maxResults": 1, "type": "video", "key": _env("YOUTUBE_API_KEY")}).json()
+                     params={"part": "id", "q": "teste", "maxResults": 1, "type": "video"}, headers=_yt_h()).json()
     return ("items" in r), r.get("error", {}).get("message", "ok (gastou 100 da cota)")[:90]
 
 
 def gemini():
     r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent",
-                      params={"key": _env("GEMINI_API_KEY")}, timeout=40,
+                      headers=({"x-goog-api-key": _env("GEMINI_API_KEY")} if _env("GEMINI_API_KEY") else {}), timeout=40,
                       json={"contents": [{"parts": [{"text": "responda só: ok"}]}]}).json()
     return ("candidates" in r), r.get("error", {}).get("message", "ok")[:90]
 
@@ -86,7 +95,12 @@ def sketchfab():
 def ytdlp_tiktok():
     p = subprocess.run(["yt-dlp", "--simulate", "--quiet", "--no-warnings",
                         "https://www.tiktok.com/@usa.navy.seal1/video/7677460421040803102"], capture_output=True, text=True, timeout=90)
-    return p.returncode == 0, (p.stderr.strip()[:90] or "ok")
+    if p.returncode == 0:
+        return True, "ok (yt-dlp)"
+    # TikTok esconde o vídeo da nuvem (24/11): o viitu.baixar cai no ssstik
+    from viitu.baixar import ssstik_link
+    ssstik_link("https://www.tiktok.com/@usa.navy.seal1/video/7677460421040803102")
+    return True, "ok pelo ssstik (yt-dlp bloqueado no TikTok) — use python3 -m viitu.baixar"
 
 
 def disco():

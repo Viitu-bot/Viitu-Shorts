@@ -30,7 +30,8 @@ FORA = re.compile(r" x |vs\.?| fc|futebol|jogo|mega.?sena|lotof|quina|resultado|
 
 
 def _chave() -> str:
-    for l in (RAIZ / ".env").read_text().splitlines():
+    arq = RAIZ / ".env"
+    for l in (arq.read_text().splitlines() if arq.exists() else []):
         if l.startswith("YOUTUBE_API_KEY="):
             return l.split("=", 1)[1].strip()
     return os.environ.get("YOUTUBE_API_KEY", "")
@@ -44,13 +45,13 @@ def shorts_recentes(dias: int = 7, minimo: int = 300_000) -> list[dict]:
         for q in qs:
             r = requests.get("https://www.googleapis.com/youtube/v3/search", timeout=30, params={
                 "part": "id", "q": q + " #shorts", "type": "video", "videoDuration": "short", "order": "viewCount",
-                "publishedAfter": desde, "maxResults": 25, "relevanceLanguage": lang, "key": k}).json()
+                "publishedAfter": desde, "maxResults": 25, "relevanceLanguage": lang, **({"key": k} if k else {})}).json()
             for it in r.get("items", []):
                 ids[it["id"]["videoId"]] = lang
     out, lista = [], list(ids)
     for i in range(0, len(lista), 50):
         r = requests.get("https://www.googleapis.com/youtube/v3/videos", timeout=30, params={
-            "part": "snippet,statistics,contentDetails", "id": ",".join(lista[i:i + 50]), "key": k}).json()
+            "part": "snippet,statistics,contentDetails", "id": ",".join(lista[i:i + 50]), **({"key": k} if k else {})}).json()
         for v in r.get("items", []):
             views = int(v["statistics"].get("viewCount", 0))
             if views < minimo:
