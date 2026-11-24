@@ -23,7 +23,7 @@
   "jato",
   "inscreve"
  ],
- "musica": "app:sans. (Toby Fox)",
+ "musica": "epico_engenharia.mp3",
  "cta": {
   "em": "se inscreve",
   "texto": "SE INSCREVE"
@@ -64,20 +64,12 @@
   },
   {
    "em": "joga água",
-   "clipe": "tiktok_weather.weather0_7412284682127068447.mp4",
-   "inicio": 15.0,
+   "clipe": "pixabay_185510.mp4",
+   "inicio": 14.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "GANCHO",
-   "_funcao": "os jatos já abertos, enormes, sendo lançados para fora",
-   "zoom": [
-    1.8,
-    1.85
-   ],
-   "alvo": [
-    0.55,
-    0.49
-   ]
+   "_funcao": "a água descendo a barragem e explodindo em espuma lá embaixo"
   },
   {
    "em": "Parece desperdício",
@@ -90,12 +82,12 @@
   },
   {
    "em": "mas é pra se proteger",
-   "clipe": "pixabay_185510.mp4",
-   "inicio": 3.0,
+   "clipe": "pixabay_279589.mp4",
+   "inicio": 0.5,
    "som_original": false,
    "revisao": "manual",
    "_parte": "INÍCIO",
-   "_funcao": "a barragem inteira com o vertedouro"
+   "_funcao": "a barragem no cânion: a estrutura que precisa se proteger"
   },
   {
    "em": "A água desce",
@@ -205,12 +197,20 @@
   },
   {
    "em": "já fraco",
-   "clipe": "pixabay_279589.mp4",
-   "inicio": 0.5,
+   "clipe": "tiktok_weather.weather0_7412284682127068447.mp4",
+   "inicio": 37.5,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "o poço lá embaixo da barragem, a água já mansa"
+   "_funcao": "onde o jato cai: a água se espalha numa nuvem e chega mansa ao poço",
+   "zoom": [
+    1.8,
+    1.85
+   ],
+   "alvo": [
+    0.55,
+    0.49
+   ]
   },
   {
    "em": "Você ficaria",
