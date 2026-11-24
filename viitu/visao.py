@@ -133,10 +133,15 @@ def prancha(an: dict, rotulo: str, destino: Path) -> None:
 
 
 def _pixabay_chave() -> str:
-    for l in (RAIZ / ".env").read_text(encoding="utf-8").splitlines():
-        if l.startswith("PIXABAY_API_KEY="):
-            return l.split("=", 1)[1].strip()
-    raise SystemExit("Falta PIXABAY_API_KEY no .env")
+    import os
+    if os.environ.get("PIXABAY_API_KEY"):  # variável do ambiente da nuvem (configurações)
+        return os.environ["PIXABAY_API_KEY"]
+    env = RAIZ / ".env"
+    if env.exists():
+        for l in env.read_text(encoding="utf-8").splitlines():
+            if l.startswith("PIXABAY_API_KEY="):
+                return l.split("=", 1)[1].strip()
+    raise SystemExit("Falta PIXABAY_API_KEY (variável do ambiente ou .env)")
 
 
 def candidatos(termos: list[str], n: int, saida: Path) -> None:

@@ -4,6 +4,7 @@ Plano B completo: dados/plano_b.md. O vidIQ é conferido pelo Claude com `vidiq_
 """
 from __future__ import annotations
 
+import os
 import shutil
 import subprocess
 from pathlib import Path
@@ -15,6 +16,8 @@ UA = {"User-Agent": "ViituBot/1.0 (educational research)"}
 
 
 def _env(nome: str) -> str:
+    if os.environ.get(nome):  # variável do ambiente da nuvem (configurações) vale tanto quanto o .env
+        return os.environ[nome]
     arq = RAIZ / ".env"
     if arq.exists():
         for l in arq.read_text().splitlines():
@@ -62,9 +65,10 @@ def pixabay():
 
 
 def pexels():
+    # PEXELS_API_KEY (variável do ambiente) vai pura no cabeçalho; sem ela, conta com a chave injetada pela rede
     r = requests.get("https://api.pexels.com/videos/search", timeout=20, params={"query": "plane", "per_page": 1},
-                     headers={"Authorization": "proxy-injected"})
-    return r.status_code == 200, f"HTTP {r.status_code}" + (" (chave salva errada: precisa ser a chave pura, sem 'Bearer')" if r.status_code == 401 else "")
+                     headers={"Authorization": _env("PEXELS_API_KEY") or "proxy-injected"})
+    return r.status_code == 200, f"HTTP {r.status_code}" + (" (o Pexels quer a chave pura; o segredo de rede põe 'Bearer' → usar a variável PEXELS_API_KEY e apagar o segredo de rede do Pexels)" if r.status_code == 401 else "")
 
 
 def commons():
