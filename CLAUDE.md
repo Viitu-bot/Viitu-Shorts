@@ -9,6 +9,7 @@ em `edicao/identidade.md`.
 - **Humor:** malandro e adulto, com duplo sentido pontual quando a cena entrega ("antes que ele corte a tua…", "quem não
   der like vai cair no cone"); comparação pop exagerada ("falha na Matrix", "mini Godzilla", "dinossauro aposentado",
   "transformou a moto num caça de guerra", "míssil teleguiado"). Nunca infantil.
+- **Voz:** a do próprio dono — clone "Minha voz" na ElevenLabs (`viitu/voz.py`, padrão desde 24/11).
 - **Fala:** narrador que conversa com o espectador ("Olha o nó que esse cara deu…", "Esquece…", "Meu cachorro tá
   diferente"); gírias leves (maluco, tiozinho, caboclo, paradão, cara de sonso, a parada, todo santo dia); frases curtas,
   ritmo rápido; pergunta direta ao espectador ("Você pegou o truque de primeira ou também bugou?").
