@@ -1,5 +1,5 @@
 {
- "_versao": "v1: motivo oculto, roteiro aprovado 19/11",
+ "_versao": "v1: motivo oculto, roteiro aprovado 19/11 | v2 24/11: voz do dono, 1 fonte por cena, corte ≤3 s, 3D com cortes de câmera",
  "formato": "motivo_oculto",
  "impacto_em": [
   "se apagam"
@@ -25,7 +25,7 @@
   "em": "se inscreve",
   "texto": "SE INSCREVE"
  },
- "creditos_descricao": "Imagens: @plutosdestiny, @ship_spotting_, @risma_sitanggang, @at_sea_, @captainkatemccue (TikTok); adege, Droelfzehn, angad305 (Pixabay). Animação 3D: Viitu Shorts.",
+ "creditos_descricao": "Imagens: @plutosdestiny, @ship_spotting_, @risma_sitanggang, @at_sea_, @captainkatemccue (TikTok); adege, Droelfzehn, angad305, zephylwer0, wastedgeneration, MLTD (Pixabay). Animação 3D: Viitu Shorts.",
  "cenas": [
   {
    "em": "Todo navio",
@@ -189,6 +189,20 @@
       "dur": 1.6,
       "desc": "calm water, gentle ripple"
      }
+    ],
+    "cortes": [
+     {
+      "em": "o vale",
+      "zoom": 1.55,
+      "foco": [
+       0.5,
+       0.55
+      ]
+     },
+     {
+      "em": "e as duas",
+      "zoom": 1.0
+     }
     ]
    },
    "_funcao": "3D de lado: onda do casco (vermelha) + onda do bulbo (azul); o vale cai na crista e a superfície fica lisa"
@@ -200,7 +214,16 @@
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "a proa cortando o mar liso (tomada que prende) + -15%",
+   "_funcao": "a proa cortando o mar liso (tomada que prende) + -15%"
+  },
+  {
+   "em": "15%",
+   "clipe": "pixabay_133079.mp4",
+   "inicio": 10.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "longe: porta-contêiner no mar aberto (15% menos combustível)",
    "contador": {
     "ate": 15,
     "prefixo": "-",
@@ -226,21 +249,22 @@
    ]
   },
   {
-   "em": "se inscreve",
-   "clipe": "tt_ship_spotting__7426740806255496480.mp4",
-   "inicio": 15.0,
+   "em": "você",
+   "clipe": "pixabay_141044.mp4",
+   "inicio": 8.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "CTA",
-   "_funcao": "a proa do navio em doca seca + botão",
-   "zoom": [
-    2.0,
-    2.05
-   ],
-   "alvo": [
-    0.5,
-    0.55
-   ]
+   "_funcao": "de cima: porto cheio de navios"
+  },
+  {
+   "em": "se inscreve",
+   "clipe": "pixabay_7338.mp4",
+   "inicio": 6.7,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "CTA",
+   "_funcao": "o barquinho e o petroleiro no fim de tarde"
   },
   {
    "em": "porque",

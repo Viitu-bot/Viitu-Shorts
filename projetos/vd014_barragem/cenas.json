@@ -1,5 +1,5 @@
 {
- "_versao": "v1: por dentro, roteiro aprovado 20/11; abertura nova + estéreo + sans. pelo app",
+ "_versao": "v1: por dentro, roteiro aprovado 20/11; abertura nova + estéreo + sans. pelo app | v2 24/11: voz do dono, 1 fonte por cena, corte ≤3 s, 3D com cortes de câmera",
  "formato": "por_dentro",
  "impacto_em": [
   "rampa"
@@ -28,7 +28,7 @@
   "em": "se inscreve",
   "texto": "SE INSCREVE"
  },
- "creditos_descricao": "Imagens: @weather.weather0 (TikTok); XXXXXYXXXXX, silas267, InspiredImages, Positive_Hedgehog (Pixabay). Animação 3D: Viitu Shorts.",
+ "creditos_descricao": "Imagens: @weather.weather0 (TikTok); XXXXXYXXXXX, silas267, InspiredImages, Positive_Hedgehog, Engin_Akyurt (Pixabay). Animação 3D: Viitu Shorts.",
  "cenas": [
   {
    "em": "Essa barragem",
@@ -91,20 +91,12 @@
   },
   {
    "em": "A água desce",
-   "clipe": "tiktok_weather.weather0_7475741716381945134.mp4",
-   "inicio": 10.0,
+   "clipe": "pixabay_24515.mp4",
+   "inicio": 8.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
-   "_funcao": "a frente de água descendo a calha do vertedouro (a ação da frase)",
-   "zoom": [
-    1.62,
-    1.65
-   ],
-   "alvo": [
-    0.5,
-    0.52
-   ]
+   "_funcao": "a água despencando com força (tão rápido)"
   },
   {
    "em": "batendo direto",
@@ -131,6 +123,23 @@
      "dur": 1.4,
      "no_clipe": 26.05
     }
+   ]
+  },
+  {
+   "em": "cavaria",
+   "clipe": "tiktok_weather.weather0_7484642094024510766.mp4",
+   "inicio": 54.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "longe: o leito arrancado e a terra levada pela água",
+   "zoom": [
+    1.45,
+    1.5
+   ],
+   "alvo": [
+    0.5,
+    0.62
    ]
   },
   {
@@ -190,6 +199,20 @@
       "desc": "a splash into a pool",
       "db": -4,
       "dur": 1.2
+     }
+    ],
+    "cortes": [
+     {
+      "em": "onde ele",
+      "zoom": 1.5,
+      "foco": [
+       0.55,
+       0.45
+      ]
+     },
+     {
+      "em": "e perde",
+      "zoom": 1.0
      }
     ]
    },
@@ -255,5 +278,9 @@
     0.49
    ]
   }
+ ],
+ "bruto_cronologico": [
+  "tiktok_weather.weather0_7412284682127068447.mp4",
+  "tiktok_weather.weather0_7484642094024510766.mp4"
  ]
 }

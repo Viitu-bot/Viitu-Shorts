@@ -2,361 +2,361 @@
  {
   "palavra": "Essa",
   "inicio": 0.0,
-  "fim": 0.24
+  "fim": 0.224
  },
  {
   "palavra": "barragem",
-  "inicio": 0.28,
-  "fim": 0.8
+  "inicio": 0.261,
+  "fim": 0.746
  },
  {
   "palavra": "joga",
-  "inicio": 0.88,
-  "fim": 1.12
+  "inicio": 0.82,
+  "fim": 1.119
  },
  {
   "palavra": "água",
-  "inicio": 1.2,
-  "fim": 1.36
+  "inicio": 1.193,
+  "fim": 1.342
  },
  {
   "palavra": "pro",
-  "inicio": 1.44,
-  "fim": 1.6
+  "inicio": 1.417,
+  "fim": 1.491
  },
  {
   "palavra": "alto",
-  "inicio": 1.68,
-  "fim": 1.92
+  "inicio": 1.566,
+  "fim": 1.79
  },
  {
   "palavra": "de",
-  "inicio": 1.96,
-  "fim": 2.0
+  "inicio": 1.827,
+  "fim": 1.864
  },
  {
   "palavra": "propósito.",
-  "inicio": 2.08,
-  "fim": 2.96
+  "inicio": 1.939,
+  "fim": 2.759
  },
  {
   "palavra": "Parece",
-  "inicio": 3.04,
-  "fim": 3.36
+  "inicio": 2.843,
+  "fim": 3.141
  },
  {
   "palavra": "desperdício,",
-  "inicio": 3.45,
-  "fim": 4.29
+  "inicio": 3.225,
+  "fim": 4.083
  },
  {
   "palavra": "mas",
-  "inicio": 4.37,
-  "fim": 4.45
+  "inicio": 4.158,
+  "fim": 4.232
  },
  {
   "palavra": "é",
-  "inicio": 4.49,
-  "fim": 4.53
+  "inicio": 4.307,
+  "fim": 4.344
  },
  {
   "palavra": "pra",
-  "inicio": 4.61,
-  "fim": 4.69
+  "inicio": 4.381,
+  "fim": 4.456
  },
  {
   "palavra": "se",
-  "inicio": 4.77,
-  "fim": 4.85
+  "inicio": 4.53,
+  "fim": 4.605
  },
  {
   "palavra": "proteger.",
-  "inicio": 4.93,
-  "fim": 5.53
+  "inicio": 4.68,
+  "fim": 5.425
  },
  {
   "palavra": "A",
-  "inicio": 5.62,
-  "fim": 5.7
+  "inicio": 5.509,
+  "fim": 5.584
  },
  {
   "palavra": "água",
-  "inicio": 5.78,
-  "fim": 5.94
+  "inicio": 5.658,
+  "fim": 5.808
  },
  {
   "palavra": "desce",
-  "inicio": 6.02,
-  "fim": 6.26
+  "inicio": 5.891,
+  "fim": 6.078
  },
  {
   "palavra": "tão",
-  "inicio": 6.34,
-  "fim": 6.58
+  "inicio": 6.162,
+  "fim": 6.311
  },
  {
   "palavra": "rápido",
-  "inicio": 6.66,
-  "fim": 7.06
+  "inicio": 6.385,
+  "fim": 6.833
  },
  {
   "palavra": "que,",
-  "inicio": 7.15,
-  "fim": 7.283
+  "inicio": 6.907,
+  "fim": 7.131
  },
  {
   "palavra": "batendo",
-  "inicio": 7.337,
-  "fim": 7.63
+  "inicio": 7.206,
+  "fim": 7.504
  },
  {
   "palavra": "direto",
-  "inicio": 7.72,
-  "fim": 8.04
+  "inicio": 7.588,
+  "fim": 7.886
  },
  {
   "palavra": "no",
-  "inicio": 8.08,
-  "fim": 8.12
+  "inicio": 7.961,
+  "fim": 8.035
  },
  {
   "palavra": "chão,",
-  "inicio": 8.2,
-  "fim": 8.6
+  "inicio": 8.11,
+  "fim": 8.557
  },
  {
   "palavra": "cavaria",
-  "inicio": 8.64,
-  "fim": 9.0
+  "inicio": 8.595,
+  "fim": 8.93
  },
  {
   "palavra": "um",
-  "inicio": 9.04,
-  "fim": 9.08
+  "inicio": 8.968,
+  "fim": 9.005
  },
  {
   "palavra": "buraco",
-  "inicio": 9.16,
-  "fim": 9.64
+  "inicio": 9.079,
+  "fim": 9.452
  },
  {
   "palavra": "no",
-  "inicio": 9.68,
-  "fim": 9.72
+  "inicio": 9.527,
+  "fim": 9.601
  },
  {
   "palavra": "pé",
-  "inicio": 9.8,
-  "fim": 9.88
+  "inicio": 9.639,
+  "fim": 9.676
  },
  {
   "palavra": "da",
-  "inicio": 9.92,
-  "fim": 9.96
+  "inicio": 9.751,
+  "fim": 9.825
  },
  {
   "palavra": "barragem.",
-  "inicio": 10.04,
-  "fim": 10.68
+  "inicio": 9.863,
+  "fim": 10.534
  },
  {
   "palavra": "Então",
-  "inicio": 10.8,
-  "fim": 11.0
+  "inicio": 10.618,
+  "fim": 10.916
  },
  {
   "palavra": "uma",
-  "inicio": 11.09,
-  "fim": 11.21
+  "inicio": 11.0,
+  "fim": 11.223
  },
  {
   "palavra": "rampa",
-  "inicio": 11.29,
-  "fim": 11.61
+  "inicio": 11.298,
+  "fim": 11.596
  },
  {
   "palavra": "no",
-  "inicio": 11.69,
-  "fim": 11.77
+  "inicio": 11.634,
+  "fim": 11.671
  },
  {
   "palavra": "fim",
-  "inicio": 11.81,
-  "fim": 12.09
+  "inicio": 11.755,
+  "fim": 11.979
  },
  {
   "palavra": "lança",
-  "inicio": 12.17,
-  "fim": 12.49
+  "inicio": 12.053,
+  "fim": 12.351
  },
  {
   "palavra": "o",
-  "inicio": 12.53,
-  "fim": 12.57
+  "inicio": 12.389,
+  "fim": 12.426
  },
  {
   "palavra": "jato",
-  "inicio": 12.61,
-  "fim": 12.89
+  "inicio": 12.501,
+  "fim": 12.724
  },
  {
   "palavra": "pro",
-  "inicio": 12.97,
-  "fim": 13.05
+  "inicio": 12.836,
+  "fim": 12.948
  },
  {
   "palavra": "ar,",
-  "inicio": 13.13,
-  "fim": 13.45
+  "inicio": 13.023,
+  "fim": 13.395
  },
  {
   "palavra": "onde",
-  "inicio": 13.53,
-  "fim": 13.61
+  "inicio": 13.47,
+  "fim": 13.545
  },
  {
   "palavra": "ele",
-  "inicio": 13.69,
-  "fim": 13.77
+  "inicio": 13.619,
+  "fim": 13.694
  },
  {
   "palavra": "se",
-  "inicio": 13.81,
-  "fim": 13.85
+  "inicio": 13.768,
+  "fim": 13.843
  },
  {
   "palavra": "espalha",
-  "inicio": 13.93,
-  "fim": 14.33
+  "inicio": 13.918,
+  "fim": 14.191
  },
  {
   "palavra": "em",
-  "inicio": 14.37,
-  "fim": 14.41
+  "inicio": 14.241,
+  "fim": 14.29
  },
  {
   "palavra": "gotas",
-  "inicio": 14.49,
-  "fim": 14.89
+  "inicio": 14.374,
+  "fim": 14.71
  },
  {
   "palavra": "e",
-  "inicio": 14.98,
-  "fim": 15.06
+  "inicio": 14.784,
+  "fim": 14.859
  },
  {
   "palavra": "perde",
-  "inicio": 15.14,
-  "fim": 15.38
+  "inicio": 14.934,
+  "fim": 15.083
  },
  {
   "palavra": "a",
-  "inicio": 15.42,
-  "fim": 15.46
+  "inicio": 15.157,
+  "fim": 15.195
  },
  {
   "palavra": "força.",
-  "inicio": 15.54,
-  "fim": 16.1
+  "inicio": 15.232,
+  "fim": 15.679
  },
  {
   "palavra": "E",
-  "inicio": 16.14,
-  "fim": 16.18
+  "inicio": 15.763,
+  "fim": 15.838
  },
  {
   "palavra": "cai",
-  "inicio": 16.26,
-  "fim": 16.42
+  "inicio": 15.922,
+  "fim": 16.034
  },
  {
   "palavra": "longe,",
-  "inicio": 16.5,
-  "fim": 17.14
+  "inicio": 16.108,
+  "fim": 16.63
  },
  {
   "palavra": "já",
-  "inicio": 17.22,
-  "fim": 17.38
+  "inicio": 16.667,
+  "fim": 16.779
  },
  {
   "palavra": "fraco,",
-  "inicio": 17.46,
-  "fim": 18.02
+  "inicio": 16.854,
+  "fim": 17.45
  },
  {
   "palavra": "num",
-  "inicio": 18.1,
-  "fim": 18.18
+  "inicio": 17.525,
+  "fim": 17.6
  },
  {
   "palavra": "poço",
-  "inicio": 18.27,
-  "fim": 18.59
+  "inicio": 17.674,
+  "fim": 17.973
  },
  {
   "palavra": "feito",
-  "inicio": 18.68,
-  "fim": 19.0
+  "inicio": 18.056,
+  "fim": 18.28
  },
  {
   "palavra": "pra",
-  "inicio": 19.08,
-  "fim": 19.16
+  "inicio": 18.355,
+  "fim": 18.429
  },
  {
   "palavra": "isso.",
-  "inicio": 19.28,
-  "fim": 19.72
+  "inicio": 18.504,
+  "fim": 18.877
  },
  {
   "palavra": "Você",
-  "inicio": 19.81,
-  "fim": 19.93
+  "inicio": 18.961,
+  "fim": 19.184
  },
  {
   "palavra": "ficaria",
-  "inicio": 20.01,
-  "fim": 20.33
+  "inicio": 19.259,
+  "fim": 19.557
  },
  {
   "palavra": "embaixo",
-  "inicio": 20.42,
-  "fim": 20.78
+  "inicio": 19.632,
+  "fim": 19.93
  },
  {
   "palavra": "desse",
-  "inicio": 20.86,
-  "fim": 21.02
+  "inicio": 20.005,
+  "fim": 20.154
  },
  {
   "palavra": "jato?",
-  "inicio": 21.1,
-  "fim": 21.66
+  "inicio": 20.228,
+  "fim": 20.601
  },
  {
   "palavra": "Comenta",
-  "inicio": 21.74,
-  "fim": 22.14
+  "inicio": 20.685,
+  "fim": 21.133
  },
  {
   "palavra": "e",
-  "inicio": 22.23,
-  "fim": 22.31
+  "inicio": 21.216,
+  "fim": 21.254
  },
  {
   "palavra": "se",
-  "inicio": 22.35,
-  "fim": 22.39
+  "inicio": 21.291,
+  "fim": 21.366
  },
  {
   "palavra": "inscreve,",
-  "inicio": 22.47,
-  "fim": 23.19
+  "inicio": 21.44,
+  "fim": 22.111
  },
  {
   "palavra": "porque",
-  "inicio": 23.27,
-  "fim": 23.91
+  "inicio": 22.223,
+  "fim": 22.857
  }
 ]

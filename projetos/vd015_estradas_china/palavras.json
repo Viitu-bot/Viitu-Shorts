@@ -2,366 +2,366 @@
  {
   "palavra": "Essa",
   "inicio": 0.0,
-  "fim": 0.2
+  "fim": 0.204
  },
  {
   "palavra": "estrada",
-  "inicio": 0.24,
-  "fim": 0.72
+  "inicio": 0.238,
+  "fim": 0.611
  },
  {
   "palavra": "passa",
-  "inicio": 0.8,
-  "fim": 1.04
+  "inicio": 0.679,
+  "fim": 0.95
  },
  {
   "palavra": "a",
-  "inicio": 1.08,
-  "fim": 1.12
+  "inicio": 0.995,
+  "fim": 1.041
  },
  {
   "palavra": "625",
-  "inicio": 1.16,
-  "fim": 2.48
+  "inicio": 1.086,
+  "fim": 2.172
  },
  {
   "palavra": "metros",
-  "inicio": 2.57,
-  "fim": 2.97
+  "inicio": 2.249,
+  "fim": 2.588
  },
  {
   "palavra": "do",
-  "inicio": 3.01,
-  "fim": 3.05
+  "inicio": 2.656,
+  "fim": 2.724
  },
  {
   "palavra": "chão.",
-  "inicio": 3.13,
-  "fim": 3.53
+  "inicio": 2.792,
+  "fim": 3.165
  },
  {
   "palavra": "Parece",
-  "inicio": 3.57,
-  "fim": 3.85
+  "inicio": 3.242,
+  "fim": 3.513
  },
  {
   "palavra": "exagero,",
-  "inicio": 3.93,
-  "fim": 4.65
+  "inicio": 3.581,
+  "fim": 4.26
  },
  {
   "palavra": "mas",
-  "inicio": 4.74,
-  "fim": 4.86
+  "inicio": 4.336,
+  "fim": 4.438
  },
  {
   "palavra": "lá",
-  "inicio": 4.94,
-  "fim": 5.02
+  "inicio": 4.506,
+  "fim": 4.574
  },
  {
   "palavra": "embaixo",
-  "inicio": 5.1,
-  "fim": 5.5
+  "inicio": 4.642,
+  "fim": 4.981
  },
  {
   "palavra": "tem",
-  "inicio": 5.58,
-  "fim": 5.66
+  "inicio": 5.049,
+  "fim": 5.117
  },
  {
   "palavra": "um",
-  "inicio": 5.74,
-  "fim": 5.9
+  "inicio": 5.185,
+  "fim": 5.321
  },
  {
   "palavra": "cânion",
-  "inicio": 5.94,
-  "fim": 6.3
+  "inicio": 5.355,
+  "fim": 5.592
  },
  {
   "palavra": "que",
-  "inicio": 6.34,
-  "fim": 6.38
+  "inicio": 5.66,
+  "fim": 5.728
  },
  {
   "palavra": "levava",
-  "inicio": 6.46,
-  "fim": 6.94
+  "inicio": 5.796,
+  "fim": 6.135
  },
  {
   "palavra": "duas",
-  "inicio": 7.02,
-  "fim": 7.34
+  "inicio": 6.203,
+  "fim": 6.543
  },
  {
   "palavra": "horas",
-  "inicio": 7.42,
-  "fim": 7.66
+  "inicio": 6.61,
+  "fim": 6.814
  },
  {
   "palavra": "pra",
-  "inicio": 7.74,
-  "fim": 7.82
+  "inicio": 6.882,
+  "fim": 6.95
  },
  {
   "palavra": "contornar.",
-  "inicio": 7.94,
-  "fim": 8.62
+  "inicio": 7.052,
+  "fim": 7.629
  },
  {
   "palavra": "Guizhou,",
-  "inicio": 8.7,
-  "fim": 9.22
+  "inicio": 7.705,
+  "fim": 8.248
  },
  {
   "palavra": "na",
-  "inicio": 9.26,
-  "fim": 9.34
+  "inicio": 8.316,
+  "fim": 8.384
  },
  {
   "palavra": "China,",
-  "inicio": 9.42,
-  "fim": 9.9
+  "inicio": 8.452,
+  "fim": 8.927
  },
  {
   "palavra": "é",
-  "inicio": 9.98,
-  "fim": 10.02
+  "inicio": 8.961,
+  "fim": 8.995
  },
  {
   "palavra": "um",
-  "inicio": 10.06,
-  "fim": 10.22
+  "inicio": 9.063,
+  "fim": 9.131
  },
  {
   "palavra": "mar",
-  "inicio": 10.34,
-  "fim": 10.46
+  "inicio": 9.199,
+  "fim": 9.402
  },
  {
   "palavra": "de",
-  "inicio": 10.54,
-  "fim": 10.7
+  "inicio": 9.479,
+  "fim": 9.58
  },
  {
   "palavra": "morros",
-  "inicio": 10.78,
-  "fim": 11.1
+  "inicio": 9.657,
+  "fim": 9.894
  },
  {
   "palavra": "e",
-  "inicio": 11.18,
-  "fim": 11.26
+  "inicio": 9.928,
+  "fim": 9.962
  },
  {
   "palavra": "cânions.",
-  "inicio": 11.3,
-  "fim": 11.9
+  "inicio": 10.03,
+  "fim": 10.777
  },
  {
   "palavra": "Em",
-  "inicio": 11.98,
-  "fim": 12.06
+  "inicio": 10.845,
+  "fim": 10.913
  },
  {
   "palavra": "vez",
-  "inicio": 12.14,
-  "fim": 12.22
+  "inicio": 10.981,
+  "fim": 11.048
  },
  {
   "palavra": "de",
-  "inicio": 12.3,
-  "fim": 12.38
+  "inicio": 11.116,
+  "fim": 11.184
  },
  {
   "palavra": "descer",
-  "inicio": 12.47,
-  "fim": 12.79
+  "inicio": 11.261,
+  "fim": 11.464
  },
  {
   "palavra": "e",
-  "inicio": 12.83,
-  "fim": 12.87
+  "inicio": 11.532,
+  "fim": 11.6
  },
  {
   "palavra": "subir",
-  "inicio": 12.95,
-  "fim": 13.19
+  "inicio": 11.702,
+  "fim": 11.939
  },
  {
   "palavra": "cada",
-  "inicio": 13.28,
-  "fim": 13.52
+  "inicio": 12.03,
+  "fim": 12.211
  },
  {
   "palavra": "vale,",
-  "inicio": 13.6,
-  "fim": 14.08
+  "inicio": 12.287,
+  "fim": 12.695
  },
  {
   "palavra": "a",
-  "inicio": 14.12,
-  "fim": 14.16
+  "inicio": 12.729,
+  "fim": 12.763
  },
  {
   "palavra": "estrada",
-  "inicio": 14.25,
-  "fim": 14.57
+  "inicio": 12.839,
+  "fim": 13.11
  },
  {
   "palavra": "segue",
-  "inicio": 14.66,
-  "fim": 14.82
+  "inicio": 13.187,
+  "fim": 13.323
  },
  {
   "palavra": "reta,",
-  "inicio": 14.91,
-  "fim": 15.27
+  "inicio": 13.399,
+  "fim": 13.704
  },
  {
   "palavra": "em",
-  "inicio": 15.36,
-  "fim": 15.48
+  "inicio": 13.806,
+  "fim": 13.908
  },
  {
   "palavra": "pontes",
-  "inicio": 15.52,
-  "fim": 16.04
+  "inicio": 13.976,
+  "fim": 14.315
  },
  {
   "palavra": "e",
-  "inicio": 16.08,
-  "fim": 16.12
+  "inicio": 14.383,
+  "fim": 14.451
  },
  {
   "palavra": "túneis.",
-  "inicio": 16.21,
-  "fim": 16.85
+  "inicio": 14.519,
+  "fim": 15.266
  },
  {
   "palavra": "E",
-  "inicio": 16.89,
-  "fim": 16.93
+  "inicio": 15.3,
+  "fim": 15.334
  },
  {
   "palavra": "a",
-  "inicio": 16.97,
-  "fim": 17.01
+  "inicio": 15.368,
+  "fim": 15.402
  },
  {
   "palavra": "Huajiang,",
-  "inicio": 17.09,
-  "fim": 17.89
+  "inicio": 15.47,
+  "fim": 16.148
  },
  {
   "palavra": "a",
-  "inicio": 17.93,
-  "fim": 17.97
+  "inicio": 16.193,
+  "fim": 16.239
  },
  {
   "palavra": "ponte",
-  "inicio": 18.05,
-  "fim": 18.37
+  "inicio": 16.284,
+  "fim": 16.556
  },
  {
   "palavra": "mais",
-  "inicio": 18.45,
-  "fim": 18.77
+  "inicio": 16.624,
+  "fim": 16.827
  },
  {
   "palavra": "alta",
-  "inicio": 18.85,
-  "fim": 19.01
+  "inicio": 16.895,
+  "fim": 17.099
  },
  {
   "palavra": "do",
-  "inicio": 19.09,
-  "fim": 19.17
+  "inicio": 17.133,
+  "fim": 17.167
  },
  {
   "palavra": "mundo,",
-  "inicio": 19.25,
-  "fim": 19.65
+  "inicio": 17.235,
+  "fim": 17.642
  },
  {
   "palavra": "faz",
-  "inicio": 19.69,
-  "fim": 19.81
+  "inicio": 17.71,
+  "fim": 17.846
  },
  {
   "palavra": "a",
-  "inicio": 19.89,
-  "fim": 19.93
+  "inicio": 17.879,
+  "fim": 17.913
  },
  {
   "palavra": "travessia",
-  "inicio": 19.97,
-  "fim": 20.61
+  "inicio": 17.947,
+  "fim": 18.389
  },
  {
   "palavra": "em",
-  "inicio": 20.7,
-  "fim": 20.82
+  "inicio": 18.465,
+  "fim": 18.567
  },
  {
   "palavra": "dois",
-  "inicio": 20.9,
-  "fim": 21.14
+  "inicio": 18.601,
+  "fim": 18.77
  },
  {
   "palavra": "minutos.",
-  "inicio": 21.22,
-  "fim": 21.94
+  "inicio": 18.838,
+  "fim": 19.653
  },
  {
   "palavra": "Você",
-  "inicio": 22.03,
-  "fim": 22.15
+  "inicio": 19.721,
+  "fim": 19.789
  },
  {
   "palavra": "atravessaria",
-  "inicio": 22.23,
-  "fim": 22.79
+  "inicio": 19.857,
+  "fim": 20.4
  },
  {
   "palavra": "olhando",
-  "inicio": 22.87,
-  "fim": 23.11
+  "inicio": 20.434,
+  "fim": 20.671
  },
  {
   "palavra": "pra",
-  "inicio": 23.19,
-  "fim": 23.27
+  "inicio": 20.739,
+  "fim": 20.807
  },
  {
   "palavra": "baixo?",
-  "inicio": 23.35,
-  "fim": 23.83
+  "inicio": 20.841,
+  "fim": 21.418
  },
  {
   "palavra": "Comenta",
-  "inicio": 23.91,
-  "fim": 24.39
+  "inicio": 21.494,
+  "fim": 21.8
  },
  {
   "palavra": "e",
-  "inicio": 24.43,
-  "fim": 24.47
+  "inicio": 21.834,
+  "fim": 21.868
  },
  {
   "palavra": "se",
-  "inicio": 24.55,
-  "fim": 24.59
+  "inicio": 21.902,
+  "fim": 21.936
  },
  {
   "palavra": "inscreve,",
-  "inicio": 24.63,
-  "fim": 25.27
+  "inicio": 22.012,
+  "fim": 22.589
  },
  {
   "palavra": "porque",
-  "inicio": 25.39,
-  "fim": 25.91
+  "inicio": 22.665,
+  "fim": 23.175
  }
 ]

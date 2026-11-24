@@ -1,0 +1,362 @@
+[
+ {
+  "palavra": "Essa",
+  "inicio": 0.0,
+  "fim": 0.24
+ },
+ {
+  "palavra": "barragem",
+  "inicio": 0.28,
+  "fim": 0.8
+ },
+ {
+  "palavra": "joga",
+  "inicio": 0.88,
+  "fim": 1.12
+ },
+ {
+  "palavra": "água",
+  "inicio": 1.2,
+  "fim": 1.36
+ },
+ {
+  "palavra": "pro",
+  "inicio": 1.44,
+  "fim": 1.6
+ },
+ {
+  "palavra": "alto",
+  "inicio": 1.68,
+  "fim": 1.92
+ },
+ {
+  "palavra": "de",
+  "inicio": 1.96,
+  "fim": 2.0
+ },
+ {
+  "palavra": "propósito.",
+  "inicio": 2.08,
+  "fim": 2.96
+ },
+ {
+  "palavra": "Parece",
+  "inicio": 3.04,
+  "fim": 3.36
+ },
+ {
+  "palavra": "desperdício,",
+  "inicio": 3.45,
+  "fim": 4.29
+ },
+ {
+  "palavra": "mas",
+  "inicio": 4.37,
+  "fim": 4.45
+ },
+ {
+  "palavra": "é",
+  "inicio": 4.49,
+  "fim": 4.53
+ },
+ {
+  "palavra": "pra",
+  "inicio": 4.61,
+  "fim": 4.69
+ },
+ {
+  "palavra": "se",
+  "inicio": 4.77,
+  "fim": 4.85
+ },
+ {
+  "palavra": "proteger.",
+  "inicio": 4.93,
+  "fim": 5.53
+ },
+ {
+  "palavra": "A",
+  "inicio": 5.62,
+  "fim": 5.7
+ },
+ {
+  "palavra": "água",
+  "inicio": 5.78,
+  "fim": 5.94
+ },
+ {
+  "palavra": "desce",
+  "inicio": 6.02,
+  "fim": 6.26
+ },
+ {
+  "palavra": "tão",
+  "inicio": 6.34,
+  "fim": 6.58
+ },
+ {
+  "palavra": "rápido",
+  "inicio": 6.66,
+  "fim": 7.06
+ },
+ {
+  "palavra": "que,",
+  "inicio": 7.15,
+  "fim": 7.283
+ },
+ {
+  "palavra": "batendo",
+  "inicio": 7.337,
+  "fim": 7.63
+ },
+ {
+  "palavra": "direto",
+  "inicio": 7.72,
+  "fim": 8.04
+ },
+ {
+  "palavra": "no",
+  "inicio": 8.08,
+  "fim": 8.12
+ },
+ {
+  "palavra": "chão,",
+  "inicio": 8.2,
+  "fim": 8.6
+ },
+ {
+  "palavra": "cavaria",
+  "inicio": 8.64,
+  "fim": 9.0
+ },
+ {
+  "palavra": "um",
+  "inicio": 9.04,
+  "fim": 9.08
+ },
+ {
+  "palavra": "buraco",
+  "inicio": 9.16,
+  "fim": 9.64
+ },
+ {
+  "palavra": "no",
+  "inicio": 9.68,
+  "fim": 9.72
+ },
+ {
+  "palavra": "pé",
+  "inicio": 9.8,
+  "fim": 9.88
+ },
+ {
+  "palavra": "da",
+  "inicio": 9.92,
+  "fim": 9.96
+ },
+ {
+  "palavra": "barragem.",
+  "inicio": 10.04,
+  "fim": 10.68
+ },
+ {
+  "palavra": "Então",
+  "inicio": 10.8,
+  "fim": 11.0
+ },
+ {
+  "palavra": "uma",
+  "inicio": 11.09,
+  "fim": 11.21
+ },
+ {
+  "palavra": "rampa",
+  "inicio": 11.29,
+  "fim": 11.61
+ },
+ {
+  "palavra": "no",
+  "inicio": 11.69,
+  "fim": 11.77
+ },
+ {
+  "palavra": "fim",
+  "inicio": 11.81,
+  "fim": 12.09
+ },
+ {
+  "palavra": "lança",
+  "inicio": 12.17,
+  "fim": 12.49
+ },
+ {
+  "palavra": "o",
+  "inicio": 12.53,
+  "fim": 12.57
+ },
+ {
+  "palavra": "jato",
+  "inicio": 12.61,
+  "fim": 12.89
+ },
+ {
+  "palavra": "pro",
+  "inicio": 12.97,
+  "fim": 13.05
+ },
+ {
+  "palavra": "ar,",
+  "inicio": 13.13,
+  "fim": 13.45
+ },
+ {
+  "palavra": "onde",
+  "inicio": 13.53,
+  "fim": 13.61
+ },
+ {
+  "palavra": "ele",
+  "inicio": 13.69,
+  "fim": 13.77
+ },
+ {
+  "palavra": "se",
+  "inicio": 13.81,
+  "fim": 13.85
+ },
+ {
+  "palavra": "espalha",
+  "inicio": 13.93,
+  "fim": 14.33
+ },
+ {
+  "palavra": "em",
+  "inicio": 14.37,
+  "fim": 14.41
+ },
+ {
+  "palavra": "gotas",
+  "inicio": 14.49,
+  "fim": 14.89
+ },
+ {
+  "palavra": "e",
+  "inicio": 14.98,
+  "fim": 15.06
+ },
+ {
+  "palavra": "perde",
+  "inicio": 15.14,
+  "fim": 15.38
+ },
+ {
+  "palavra": "a",
+  "inicio": 15.42,
+  "fim": 15.46
+ },
+ {
+  "palavra": "força.",
+  "inicio": 15.54,
+  "fim": 16.1
+ },
+ {
+  "palavra": "E",
+  "inicio": 16.14,
+  "fim": 16.18
+ },
+ {
+  "palavra": "cai",
+  "inicio": 16.26,
+  "fim": 16.42
+ },
+ {
+  "palavra": "longe,",
+  "inicio": 16.5,
+  "fim": 17.14
+ },
+ {
+  "palavra": "já",
+  "inicio": 17.22,
+  "fim": 17.38
+ },
+ {
+  "palavra": "fraco,",
+  "inicio": 17.46,
+  "fim": 18.02
+ },
+ {
+  "palavra": "num",
+  "inicio": 18.1,
+  "fim": 18.18
+ },
+ {
+  "palavra": "poço",
+  "inicio": 18.27,
+  "fim": 18.59
+ },
+ {
+  "palavra": "feito",
+  "inicio": 18.68,
+  "fim": 19.0
+ },
+ {
+  "palavra": "pra",
+  "inicio": 19.08,
+  "fim": 19.16
+ },
+ {
+  "palavra": "isso.",
+  "inicio": 19.28,
+  "fim": 19.72
+ },
+ {
+  "palavra": "Você",
+  "inicio": 19.81,
+  "fim": 19.93
+ },
+ {
+  "palavra": "ficaria",
+  "inicio": 20.01,
+  "fim": 20.33
+ },
+ {
+  "palavra": "embaixo",
+  "inicio": 20.42,
+  "fim": 20.78
+ },
+ {
+  "palavra": "desse",
+  "inicio": 20.86,
+  "fim": 21.02
+ },
+ {
+  "palavra": "jato?",
+  "inicio": 21.1,
+  "fim": 21.66
+ },
+ {
+  "palavra": "Comenta",
+  "inicio": 21.74,
+  "fim": 22.14
+ },
+ {
+  "palavra": "e",
+  "inicio": 22.23,
+  "fim": 22.31
+ },
+ {
+  "palavra": "se",
+  "inicio": 22.35,
+  "fim": 22.39
+ },
+ {
+  "palavra": "inscreve,",
+  "inicio": 22.47,
+  "fim": 23.19
+ },
+ {
+  "palavra": "porque",
+  "inicio": 23.27,
+  "fim": 23.91
+ }
+]

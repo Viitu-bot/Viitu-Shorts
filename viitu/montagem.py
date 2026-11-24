@@ -168,8 +168,10 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
         usos[c["clipe"]].append(k + 1)
     # BRUTO CRONOLÓGICO (BÍBLIA §5): o arquivo marcado pode estar em muitas cenas SE cada uma for uma etapa nova:
     # inícios sempre crescentes e ≥ 1,5 s de distância (nada de voltar ao mesmo trecho)
-    bruto = cfg.get("bruto_cronologico")
-    if bruto and bruto in usos:
+    brutos = cfg.get("bruto_cronologico") or []
+    for bruto in ([brutos] if isinstance(brutos, str) else brutos):     # um arquivo ou uma lista de vídeos longos
+        if bruto not in usos:
+            continue
         ts = [cenas[k - 1].get("inicio", 0) for k in usos[bruto]]
         if any(b2 - a2 < 1.5 for a2, b2 in zip(ts, ts[1:])):
             erros.append(f"R1 BRUTO FORA DE ORDEM: {bruto} volta ou repete trecho (inícios {ts}); cada cena = etapa NOVA, em ordem.")
@@ -278,10 +280,21 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
         if dur > CORTE_MAX and not c.get("acao_continua") and not (k == ultima and loop_ok):
             erros.append(f"R9 RITMO: cena {k + 1} dura {dur:.1f} s; corte a cada ≤ {CORTE_MAX} s (vd004: 1,76 s). Dividir com OUTRA fonte.")
     # R9 ritmo no 3D: o bloco é um só (R2), mas troca de câmera (fase) a cada ≤ 3,5 s
+    _pal = json.loads((pasta / "palavras.json").read_text(encoding="utf-8"))
+    _pal = _pal if isinstance(_pal, list) else _pal["palavras"]
     for k in [k for k, v in enumerate(eh_3d) if v]:
-        d = tempos[k][1] - tempos[k][0]
+        a0, a1 = tempos[k]
+        marcas = [a0]                                   # cortes de câmera ("cortes": [{"em": palavra, "zoom", "foco"}])
+        for c in cenas[k]["animacao"].get("cortes", []):
+            alvo = [w for w in c["em"].lower().split()]
+            for i in range(len(_pal) - len(alvo) + 1):
+                if a0 <= _pal[i]["inicio"] < a1 and [p["palavra"].lower().strip('.,:;!?') for p in _pal[i:i + len(alvo)]] == alvo:
+                    marcas.append(_pal[i]["inicio"]); break
+        marcas = sorted(marcas) + [a1]
+        d = max(b - a for a, b in zip(marcas, marcas[1:]))
         if d > CORTE_MAX_3D and not cfg.get("bloco_3d_longo"):
-            erros.append(f"R9 RITMO 3D: cena 3D {k + 1} dura {d:.1f} s; dividir em vistas (fase) de ≤ {CORTE_MAX_3D} s.")
+            erros.append(f"R9 RITMO 3D: cena 3D {k + 1} fica {d:.1f} s no mesmo enquadramento; dividir com \"cortes\" "
+                         f"(zoom/foco) ou vistas (fase) de ≤ {CORTE_MAX_3D} s.")
     # R10 IMAGENS PARECIDAS: duas cenas seguidas com o mesmo quadro (cor/forma) = o olho não sente o corte
     quadros = {}
     for k in range(len(cenas) - 1):

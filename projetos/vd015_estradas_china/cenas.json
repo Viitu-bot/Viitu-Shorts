@@ -1,5 +1,5 @@
 {
- "_versao": "v1: por dentro/recorde, roteiro aprovado 20/11; abertura nova + estéreo + sans. pelo app",
+ "_versao": "v1: por dentro/recorde, roteiro aprovado 20/11; abertura nova + estéreo + sans. pelo app | v2 24/11: voz do dono, 1 fonte por cena, corte ≤3 s, 3D com cortes de câmera",
  "formato": "por_dentro",
  "impacto_em": [
   "alta"
@@ -165,6 +165,23 @@
    ]
   },
   {
+   "em": "mar de morros",
+   "clipe": "x_globaltimesnews_1950759577945030656.mp4",
+   "inicio": 5.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "longe: viaduto em curva no meio do mar de morros",
+   "zoom": [
+    1.55,
+    1.6
+   ],
+   "alvo": [
+    0.5,
+    0.68
+   ]
+  },
+  {
    "em": "Em vez",
    "clipe": "x_sz_mediagroup_1971543615584493568.mp4",
    "inicio": 0,
@@ -222,25 +239,35 @@
       "db": -6,
       "dur": 1.2
      }
+    ],
+    "cortes": [
+     {
+      "em": "a estrada segue",
+      "zoom": 1.5,
+      "foco": [
+       0.5,
+       0.5
+      ]
+     }
     ]
    },
    "_funcao": "3D: a estrada antiga desce e sobe cada vale; a nova vai reta, com pontes sobre o cânion e túneis pelos morros"
   },
   {
    "em": "E a Huajiang",
-   "clipe": "x_China_Fact_1963854478177931264.mp4",
-   "inicio": 6.27,
+   "clipe": "tiktok_saysdotcom_7535419995099008264.mp4",
+   "inicio": 14.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "os caminhões cruzando a Huajiang vista de cima",
+   "_funcao": "a ponte gigante atravessando o cânion entre os morros",
    "zoom": [
-    1.55,
-    1.6
+    1.4,
+    1.45
    ],
    "alvo": [
     0.5,
-    0.4
+    0.55
    ],
    "sfx_cena": [
     {
@@ -251,24 +278,23 @@
      "dur": 1.4,
      "no_clipe": 6.5
     }
-   ],
-   "velocidade": 0.95
+   ]
   },
   {
    "em": "faz a travessia",
-   "clipe": "tiktok_aljazeeraenglish_7555147460931341598.mp4",
-   "inicio": 12.5,
+   "clipe": "x_globaltimesnews_1772475027612635136.mp4",
+   "inicio": 9.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "atravessando a ponte de carro (dois minutos)",
+   "_funcao": "o caminhão na estrada colada no paredão (a travessia rápida)",
    "zoom": [
-    1.4,
-    1.45
+    1.2,
+    1.25
    ],
    "alvo": [
-    0.55,
-    0.6
+    0.5,
+    0.55
    ]
   },
   {
@@ -322,5 +348,11 @@
     0.55
    ]
   }
+ ],
+ "bruto_cronologico": [
+  "x_sz_mediagroup_1971543615584493568.mp4",
+  "tiktok_peoplesdaily_renminribao_7346588549644356906.mp4",
+  "tiktok_saysdotcom_7535419995099008264.mp4",
+  "x_globaltimesnews_1772475027612635136.mp4"
  ]
 }

@@ -91,7 +91,7 @@ def revisar(projeto: str) -> bool:
                 problemas.append(f"REPETIÇÃO: cena '{c['em']}' repete o mesmo enquadramento de {c['clipe']}")
             vistos.append((c["clipe"], t))
             continue
-        if c["clipe"] == cfg.get("bruto_cronologico"):
+        if c["clipe"] in ((lambda b: [b] if isinstance(b, str) else (b or []))(cfg.get("bruto_cronologico"))):
             # bruto cronológico: repetição = voltar/sobrepor trecho já usado (a ordem crescente é conferida na montagem R1)
             ant = [tt for cl, tt in vistos if cl == c["clipe"]]
             rep = [0] if ant and t < max(ant) + 0.5 and not (j == len(cenas) - 1) else []
@@ -108,7 +108,8 @@ def revisar(projeto: str) -> bool:
         if c.get("animacao") or (j == len(cenas) - 1 and c["clipe"] == cenas[0]["clipe"]):
             continue
         usos[c["clipe"]].append(c.get("inicio", 0))
-    usos.pop(cfg.get("bruto_cronologico"), None)      # bruto cronológico: cada cena é uma etapa nova (montagem R1 confere a ordem)
+    for _b in (lambda b: [b] if isinstance(b, str) else (b or []))(cfg.get("bruto_cronologico")):
+        usos.pop(_b, None)      # bruto cronológico: cada cena é uma etapa nova (montagem R1 confere a ordem)
     for cl, ts in usos.items():
         arq = pasta / "clipes" / cl
         dur_cl = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",

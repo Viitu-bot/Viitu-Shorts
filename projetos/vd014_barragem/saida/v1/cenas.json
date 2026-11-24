@@ -1,0 +1,259 @@
+{
+ "_versao": "v1: por dentro, roteiro aprovado 20/11; abertura nova + estéreo + sans. pelo app",
+ "formato": "por_dentro",
+ "impacto_em": [
+  "rampa"
+ ],
+ "destaques": [
+  "barragem",
+  "alto",
+  "propósito",
+  "desperdício",
+  "proteger",
+  "rápido",
+  "buraco",
+  "rampa",
+  "jato",
+  "ar",
+  "gotas",
+  "força",
+  "longe",
+  "fraco",
+  "poço",
+  "jato",
+  "inscreve"
+ ],
+ "musica": "epico_engenharia.mp3",
+ "cta": {
+  "em": "se inscreve",
+  "texto": "SE INSCREVE"
+ },
+ "creditos_descricao": "Imagens: @weather.weather0 (TikTok); XXXXXYXXXXX, silas267, InspiredImages, Positive_Hedgehog (Pixabay). Animação 3D: Viitu Shorts.",
+ "cenas": [
+  {
+   "em": "Essa barragem",
+   "clipe": "tiktok_weather.weather0_7412284682127068447.mp4",
+   "inicio": 12.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "os jatos saindo dos tubos da barragem (começam na palavra)",
+   "zoom": [
+    1.8,
+    1.85
+   ],
+   "alvo": [
+    0.55,
+    0.49
+   ],
+   "seta": [
+    540,
+    1000,
+    170
+   ],
+   "sfx_cena": [
+    {
+     "em": "Essa",
+     "arquivo": "assets/sfx/gen_massive_roaring_dam_spillway_water_rushing.mp3",
+     "desc": "a waterfall",
+     "db": -4,
+     "dur": 2.0,
+     "no_clipe": 12.1
+    }
+   ]
+  },
+  {
+   "em": "joga água",
+   "clipe": "pixabay_185510.mp4",
+   "inicio": 14.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "a água descendo a barragem e explodindo em espuma lá embaixo"
+  },
+  {
+   "em": "Parece desperdício",
+   "clipe": "pixabay_156301.mp4",
+   "inicio": 2.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "muita água despejando pelas comportas"
+  },
+  {
+   "em": "mas é pra se proteger",
+   "clipe": "pixabay_279589.mp4",
+   "inicio": 0.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "a barragem no cânion: a estrutura que precisa se proteger"
+  },
+  {
+   "em": "A água desce",
+   "clipe": "tiktok_weather.weather0_7475741716381945134.mp4",
+   "inicio": 10.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "a frente de água descendo a calha do vertedouro (a ação da frase)",
+   "zoom": [
+    1.62,
+    1.65
+   ],
+   "alvo": [
+    0.5,
+    0.52
+   ]
+  },
+  {
+   "em": "batendo direto",
+   "clipe": "tiktok_weather.weather0_7484642094024510766.mp4",
+   "inicio": 25.6,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "a água explode no pé da barragem e arranca terra",
+   "zoom": [
+    1.9,
+    1.95
+   ],
+   "alvo": [
+    0.5,
+    0.5
+   ],
+   "sfx_cena": [
+    {
+     "em": "batendo",
+     "arquivo": "assets/sfx/gen_heavy_water_slamming_into_ground_deep_rumble_and_c.mp3",
+     "desc": "a punchy impact hit",
+     "db": -3,
+     "dur": 1.4,
+     "no_clipe": 26.05
+    }
+   ]
+  },
+  {
+   "em": "Então uma rampa",
+   "clipe": "tiktok_weather.weather0_7412284682127068447.mp4",
+   "inicio": 0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "animacao": {
+    "nome": "vertedouro3d",
+    "fase": "completo",
+    "eventos": {
+     "buraco": "Então",
+     "rampa": "rampa",
+     "jato": "ar",
+     "gotas": "gotas",
+     "cai": "longe"
+    },
+    "sfx": [
+     {
+      "busca": "wind gust whoosh",
+      "db": -6,
+      "dur": 1.0
+     },
+     {
+      "evento": "buraco",
+      "arquivo": "assets/sfx/gen_heavy_water_slamming_into_ground_deep_rumble_and_c.mp3",
+      "desc": "a punchy impact hit",
+      "db": -8,
+      "dur": 1.0
+     },
+     {
+      "evento": "rampa",
+      "arquivo": "assets/sfx/gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3",
+      "desc": "heavy hydraulic press closing deep metal clunk",
+      "db": -6,
+      "dur": 1.0
+     },
+     {
+      "evento": "jato",
+      "arquivo": "assets/sfx/gen_powerful_water_jet_launching_into_the_air_with_a_w.mp3",
+      "desc": "a water jet whoosh",
+      "db": -3,
+      "dur": 1.4
+     },
+     {
+      "evento": "gotas",
+      "arquivo": "assets/sfx/gen_wave_crest_breaking_with_a_water_splash.mp3",
+      "desc": "water splashing",
+      "db": -5,
+      "dur": 0.9
+     },
+     {
+      "evento": "cai",
+      "arquivo": "assets/sfx/gen_water_jet_splashing_down_into_a_pool.mp3",
+      "desc": "a splash into a pool",
+      "db": -4,
+      "dur": 1.2
+     }
+    ]
+   },
+   "_funcao": "3D: sem rampa a água cava o pé (vermelho); a rampa nasce, o jato sobe em arco, vira gotas e cai longe, no poço"
+  },
+  {
+   "em": "já fraco",
+   "clipe": "tiktok_weather.weather0_7412284682127068447.mp4",
+   "inicio": 37.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "onde o jato cai: a água se espalha numa nuvem e chega mansa ao poço",
+   "zoom": [
+    1.8,
+    1.85
+   ],
+   "alvo": [
+    0.55,
+    0.49
+   ]
+  },
+  {
+   "em": "Você ficaria",
+   "clipe": "tiktok_weather.weather0_7475741716381945134.mp4",
+   "inicio": 26.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "CTA",
+   "_funcao": "a multidão na ponte bem ao lado da água: você ficaria embaixo?",
+   "zoom": [
+    1.62,
+    1.65
+   ],
+   "alvo": [
+    0.5,
+    0.52
+   ]
+  },
+  {
+   "em": "Comenta",
+   "clipe": "pixabay_136821.mp4",
+   "inicio": 12.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "CTA",
+   "_funcao": "drone chegando nas comportas, a água passando por baixo"
+  },
+  {
+   "em": "porque",
+   "clipe": "tiktok_weather.weather0_7412284682127068447.mp4",
+   "inicio": 12.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "LOOP",
+   "_funcao": "mesmo quadro do gancho",
+   "zoom": [
+    1.8,
+    1.8
+   ],
+   "alvo": [
+    0.55,
+    0.49
+   ]
+  }
+ ]
+}

@@ -29,13 +29,22 @@ import {Reabastece3D} from './animacoes/Reabastece3D';
 const fontFamily = 'Anton';
 loadFont({family: fontFamily, url: staticFile('Anton-Regular.ttf')});
 
+// Corte seco de enquadramento dentro do 3D (perto/longe), sem reiniciar a animação — montagem R9.
+const CorteCamera: React.FC<{cortes?: {f: number; zoom: number; foco: number[]}[]; children: React.ReactNode}> = ({cortes, children}) => {
+  const f = useCurrentFrame();
+  const ativo = (cortes ?? []).filter((c) => c.f <= f).pop();
+  if (!ativo || ativo.zoom === 1) return <AbsoluteFill>{children}</AbsoluteFill>;
+  const [fx, fy] = ativo.foco;
+  return <AbsoluteFill style={{transform: `scale(${ativo.zoom})`, transformOrigin: `${fx * 100}% ${fy * 100}%`}}>{children}</AbsoluteFill>;
+};
+
 export type Palavra = {texto: string; f0: number; f1: number; destaque: boolean; y: number};
 export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, number, number][]; tipo?: 'circulo' | 'seta'};
 export type Plano = {
   fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
   cortes: number[]; impactos: number[]; duck?: number[]; duck_fx?: number[]; duck_assado?: boolean; foley?: {f0: number; f1: number; som: string; vol: number}[]; foley_mix?: boolean;
   kit?: Record<string, string[]>; mix?: Record<string, number>; visual?: Record<string, number | boolean>; sfx?: {f: number; som: string; vol?: number; dur?: number}[];
-  animacoes?: {nome: string; fase: string; f0: number; f1: number; eventos: Record<string, number>}[]; cta: {f0: number; f1?: number | null; texto: string} | null;
+  animacoes?: {nome: string; fase: string; f0: number; f1: number; eventos: Record<string, number>; cortes?: {f: number; zoom: number; foco: number[]}[]}[]; cta: {f0: number; f1?: number | null; texto: string} | null;
   marcas_erro?: {f: number; tipo: string}[]; contadores?: {f0: number; f1: number; de: number; ate: number; prefixo: string; sufixo: string}[];
 };
 
@@ -306,6 +315,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
       {/* animações explicativas próprias (motion graphics) cobrem a cena inteira */}
       {(plano.animacoes ?? []).map((a, k) => (
         <Sequence key={`an${k}`} from={a.f0} durationInFrames={Math.max(a.f1 - a.f0, 1)}>
+         <CorteCamera cortes={a.cortes}>
           {a.nome === 'contrafogo' && <Contrafogo fase={a.fase as 'faixa' | 'apaga'} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'diferencial3d' && a.fase === 'lama' && <Lama3D dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'diferencial3d' && a.fase !== 'lama' && <Diferencial3D fase={a.fase as 'dentro' | 'lama'} dur={a.f1 - a.f0} eventos={a.eventos} />}
@@ -323,6 +333,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
           {a.nome === 'tanque3d' && <Tanque3D fase={a.fase as FaseTanque} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'starship3d' && <Starship3D fase={a.fase as FaseStarship} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'contrafogo3d' && <Contrafogo3D fase={a.fase as 'ar' | 'encontro'} dur={a.f1 - a.f0} eventos={a.eventos} />}
+         </CorteCamera>
         </Sequence>
       ))}
       <Acabamento />

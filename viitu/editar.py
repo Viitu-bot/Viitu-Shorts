@@ -885,7 +885,11 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
         # animação explicativa própria: {"animacao": {"nome", "fase", "eventos": {evento: "palavra"}}} na cena
         "animacoes": [{"nome": s["animacao"]["nome"], "fase": s["animacao"].get("fase", ""), "f0": s["f0"], "f1": s["f1"],
                        "eventos": {k: round(palavras[achar_palavra(palavras, w, s["palavra_i"])]["inicio"] * FPS) - s["f0"]
-                                   for k, w in s["animacao"].get("eventos", {}).items()}}
+                                   for k, w in s["animacao"].get("eventos", {}).items()},
+                       # CORTES DE CÂMERA no 3D (R9, dono 24/11): troca seca de enquadramento sem reiniciar a animação
+                       "cortes": [{"f": round(palavras[achar_palavra(palavras, c["em"], s["palavra_i"])]["inicio"] * FPS) - s["f0"],
+                                   "zoom": c.get("zoom", 1.0), "foco": c.get("foco", [0.5, 0.5])}
+                                  for c in s["animacao"].get("cortes", [])]}
                       for s in segs if s.get("animacao")],
         # o botão some ANTES do loop (vd011: o botão ficava sobre o último quadro e quebrava a emenda com o frame 0)
         "cta": (lambda c: {"f0": round(palavras[achar_palavra(palavras, c["em"], 0)]["inicio"] * FPS),
@@ -961,7 +965,8 @@ def editar(projeto: str) -> None:
     print(f"{len(segs)} cortes em {dur:.2f} s (média {dur / len(segs):.2f} s por cena)")
 
     for s in segs:                                     # bruto cronológico pode atravessar os cortes internos dele
-        s["_bruto"] = s.get("clipe") == cfg.get("bruto_cronologico")
+        _br = cfg.get("bruto_cronologico") or []
+        s["_bruto"] = s.get("clipe") in ([_br] if isinstance(_br, str) else _br)
     arquivos = []
     for i, s in enumerate(segs):
         arquivos.append(renderizar_cena(s, pasta, i))

@@ -15,8 +15,11 @@
 | ✅ | pixabay_175352.mp4 | Pixabay (licença livre) |
 | ⚠️ | tt_at_sea__7462041816041262358.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ✅ | pixabay_63189.mp4 | Pixabay (licença livre) |
+| ✅ | pixabay_133079.mp4 | Pixabay (licença livre) |
 | ⚠️ | tt_captainkatemccue_6911774558160997637.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
+| ✅ | pixabay_141044.mp4 | Pixabay (licença livre) |
+| ✅ | pixabay_7338.mp4 | Pixabay (licença livre) |
 
 **RESULTADO:** ✅ liberado (⚠️ = crédito na descrição + pedir permissão)
 
-**Créditos para a descrição:** Imagens: @plutosdestiny, @ship_spotting_, @risma_sitanggang, @at_sea_, @captainkatemccue (TikTok); adege, Droelfzehn, angad305 (Pixabay). Animação 3D: Viitu Shorts.
+**Créditos para a descrição:** Imagens: @plutosdestiny, @ship_spotting_, @risma_sitanggang, @at_sea_, @captainkatemccue (TikTok); adege, Droelfzehn, angad305, zephylwer0, wastedgeneration, MLTD (Pixabay). Animação 3D: Viitu Shorts.
