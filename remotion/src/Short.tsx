@@ -188,13 +188,15 @@ const MarcaErro: React.FC<{tipo: string}> = ({tipo}) => {
 // CONTADOR (número/dinheiro/escala): sobe até o valor em 24 quadros, amarelo da legenda, contorno preto
 const Contador: React.FC<{de: number; ate: number; prefixo: string; sufixo: string}> = ({de, ate, prefixo, sufixo}) => {
   const f = useCurrentFrame();
-  const v = interpolate(f, [0, 24], [de, ate], {extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
+  // número pequeno (2 litros) entra pronto (sem "1 LITROS"); ano (1900–2100) sem ponto de milhar
+  const v = ate < 10 ? ate : interpolate(f, [0, 24], [de, ate], {extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
+  const ano = ate >= 1900 && ate <= 2100 && de >= 1000;
   const pulo = interpolate(f, [24, 28, 32], [1, 1.1, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
     <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', paddingBottom: 220}}>
       <div style={{fontFamily: 'Anton, Impact, sans-serif', fontSize: 150, color: '#FFD700', WebkitTextStroke: '10px black',
         paintOrder: 'stroke fill', transform: `scale(${pulo})`, letterSpacing: 2}}>
-        {prefixo}{Math.round(v).toLocaleString('pt-BR')}{sufixo}
+        {prefixo}{ano ? String(Math.round(v)) : Math.round(v).toLocaleString('pt-BR')}{sufixo}
       </div>
     </AbsoluteFill>
   );
