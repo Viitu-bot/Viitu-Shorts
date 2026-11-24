@@ -1,15 +1,15 @@
 {
  "voz_db": -16.1,
- "leito_db": -25.7,
+ "leito_db": -23.2,
  "efeitos_db": -34.1,
  "mp4": "remotion/out/vd017_canhao_some.mp4",
  "medidas": {
   "musica_sob_voz_db": {
-   "valor": -17.2,
+   "valor": -12.8,
    "ok": true
   },
   "musica_respira_db": {
-   "valor": 10.8,
+   "valor": 8.6,
    "ok": true
   },
   "efeitos_acao_audiveis": {
