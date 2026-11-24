@@ -26,3 +26,9 @@ Faltam principalmente sons de gancho limpos e trilhas sem batida.
 - **04_trilhas_fundo:** `documentary curiosity ambient` · `investigation suspense underscore` · `mystery ambient pad` ·
   `light tension background no drums` · `minimal piano curious` · `science documentary background`
 Filtro ao baixar: duração curta (efeito ≤ 2 s), sem voz, sem logo de marca d'água sonora.
+
+## Sons CC0 (24/11) — `cc0_*`
+45 sons CC0 do pacote do Barty-Bart/motion-graphics (Freesound/Kenney, CC0 = uso livre, sem crédito) em `assets/sfx/cc0/`;
+só os 16 aprovados no ouvido (earshot "strong") entraram aqui com prefixo `cc0_`. Autor/fonte de cada um em
+`assets/sfx/cc0/catalogo.json`. Licenças aceitas no canal: CC0 e Mixkit Free (nunca CC-BY-NC).
+Timing (mesmo pacote): whoosh começa 2 quadros ANTES do corte; o riser TERMINA no impacto da revelação.

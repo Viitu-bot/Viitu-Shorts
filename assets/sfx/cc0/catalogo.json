@@ -1,0 +1,407 @@
+[
+ {
+  "arquivo": "assets/sfx/cc0/whoosh_fs-264777-swoosh.ogg",
+  "categoria": "whoosh",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/Shinplaster/sounds/264777/",
+  "earshot": "no match",
+  "z": 0.84
+ },
+ {
+  "arquivo": "assets/sfx/cc0/whoosh_fs-169867-swoosh.ogg",
+  "categoria": "whoosh",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/Halgrimm/sounds/169867/",
+  "earshot": "no match",
+  "z": 1.76
+ },
+ {
+  "arquivo": "assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg",
+  "categoria": "whoosh",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/dave.des/sounds/127197/",
+  "earshot": "strong",
+  "z": 5.52
+ },
+ {
+  "arquivo": "assets/sfx/cc0/whoosh_fs-683101-quick-woosh.ogg",
+  "categoria": "whoosh",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/florianreichelt/sounds/683101/",
+  "earshot": "strong",
+  "z": 4.55
+ },
+ {
+  "arquivo": "assets/sfx/cc0/riser_fs-685256-riser-sound-effect-short-wav.ogg",
+  "categoria": "riser",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/syntheffects/sounds/685256/",
+  "earshot": "no match",
+  "z": 1.54
+ },
+ {
+  "arquivo": "assets/sfx/cc0/riser_fs-396161-scary-hits-risers-001.ogg",
+  "categoria": "riser",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/Xinematix/sounds/396161/",
+  "earshot": "strong",
+  "z": 3.65
+ },
+ {
+  "arquivo": "assets/sfx/cc0/riser_fs-396160-scary-hits-risers-002.ogg",
+  "categoria": "riser",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/Xinematix/sounds/396160/",
+  "earshot": "strong",
+  "z": 4.36
+ },
+ {
+  "arquivo": "assets/sfx/cc0/riser_fs-174363-rewind.ogg",
+  "categoria": "riser",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/kasa90/sounds/174363/",
+  "earshot": "plausible",
+  "z": 2.81
+ },
+ {
+  "arquivo": "assets/sfx/cc0/riser_fs-464250-echo-chromatic-riser-wav.ogg",
+  "categoria": "riser",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/DylanTheFish/sounds/464250/",
+  "earshot": "strong",
+  "z": 4.34
+ },
+ {
+  "arquivo": "assets/sfx/cc0/impact_fs-177242-cinematic-impact.ogg",
+  "categoria": "impact",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/deleted_user_3277771/sounds/177242/",
+  "earshot": "plausible",
+  "z": 2.75
+ },
+ {
+  "arquivo": "assets/sfx/cc0/impact_fs-222517-dramatic-hit.ogg",
+  "categoria": "impact",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/qubodup/sounds/222517/",
+  "earshot": "strong",
+  "z": 5.0
+ },
+ {
+  "arquivo": "assets/sfx/cc0/impact_fs-347561-micheal-bay-hit.ogg",
+  "categoria": "impact",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/Kinoton/sounds/347561/",
+  "earshot": "weak",
+  "z": 2.23
+ },
+ {
+  "arquivo": "assets/sfx/cc0/transition_fs-702773-swipe-wav.ogg",
+  "categoria": "transition",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/LilMati/sounds/702773/",
+  "earshot": "no match",
+  "z": 0.2
+ },
+ {
+  "arquivo": "assets/sfx/cc0/transition_fs-786514-swoosh-v2.ogg",
+  "categoria": "transition",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/migoreng1/sounds/786514/",
+  "earshot": "no match",
+  "z": 1.41
+ },
+ {
+  "arquivo": "assets/sfx/cc0/transition_fs-856168-cyberpunk-glitch-hologram-tran.ogg",
+  "categoria": "transition",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/brktkrgll/sounds/856168/",
+  "earshot": "no match",
+  "z": 0.52
+ },
+ {
+  "arquivo": "assets/sfx/cc0/transition_fs-816262-broomstick-whoosh-3-quiet-okm1.ogg",
+  "categoria": "transition",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/Sadiquecat/sounds/816262/",
+  "earshot": "no match",
+  "z": 1.79
+ },
+ {
+  "arquivo": "assets/sfx/cc0/transition_fs-850347-swipe-various.ogg",
+  "categoria": "transition",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/Gravy42/sounds/850347/",
+  "earshot": "strong",
+  "z": 4.58
+ },
+ {
+  "arquivo": "assets/sfx/cc0/transition_fs-683096-woosh.ogg",
+  "categoria": "transition",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/florianreichelt/sounds/683096/",
+  "earshot": "strong",
+  "z": 3.95
+ },
+ {
+  "arquivo": "assets/sfx/cc0/ambience_fs-329533-room-tone-in-an-apartment-livi.ogg",
+  "categoria": "ambience",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/leonelmail/sounds/329533/",
+  "earshot": "strong",
+  "z": 3.55
+ },
+ {
+  "arquivo": "assets/sfx/cc0/ambience_fs-426767-apartment-room-tone-wav.ogg",
+  "categoria": "ambience",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/cMilan/sounds/426767/",
+  "earshot": "strong",
+  "z": 3.71
+ },
+ {
+  "arquivo": "assets/sfx/cc0/ambience_fs-329569-roomtone-bedroom-yew.ogg",
+  "categoria": "ambience",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/leonelmail/sounds/329569/",
+  "earshot": "plausible",
+  "z": 2.72
+ },
+ {
+  "arquivo": "assets/sfx/cc0/impact_kenney-impact-impactpunch-heavy-000.ogg",
+  "categoria": "impact",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/impact-sounds",
+  "earshot": "plausible",
+  "z": 2.57
+ },
+ {
+  "arquivo": "assets/sfx/cc0/impact_kenney-impact-impactpunch-heavy-001.ogg",
+  "categoria": "impact",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/impact-sounds",
+  "earshot": "plausible",
+  "z": 2.93
+ },
+ {
+  "arquivo": "assets/sfx/cc0/impact_kenney-impact-impactsoft-heavy-000.ogg",
+  "categoria": "impact",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/impact-sounds",
+  "earshot": "plausible",
+  "z": 2.5
+ },
+ {
+  "arquivo": "assets/sfx/cc0/impact_kenney-impact-impactsoft-heavy-001.ogg",
+  "categoria": "impact",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/impact-sounds",
+  "earshot": "weak",
+  "z": 2.47
+ },
+ {
+  "arquivo": "assets/sfx/cc0/impact_kenney-sci-lowfrequency-explosion-000.ogg",
+  "categoria": "impact",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/sci-fi-sounds",
+  "earshot": "strong",
+  "z": 4.21
+ },
+ {
+  "arquivo": "assets/sfx/cc0/impact_kenney-sci-lowfrequency-explosion-001.ogg",
+  "categoria": "impact",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/sci-fi-sounds",
+  "earshot": "strong",
+  "z": 3.96
+ },
+ {
+  "arquivo": "assets/sfx/cc0/transition_kenney-interface-maximize-005.ogg",
+  "categoria": "transition",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/interface-sounds",
+  "earshot": "no match",
+  "z": 1.93
+ },
+ {
+  "arquivo": "assets/sfx/cc0/transition_kenney-interface-maximize-006.ogg",
+  "categoria": "transition",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/interface-sounds",
+  "earshot": "no match",
+  "z": 0.57
+ },
+ {
+  "arquivo": "assets/sfx/cc0/transition_kenney-interface-minimize-001.ogg",
+  "categoria": "transition",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/interface-sounds",
+  "earshot": "no match",
+  "z": 1.49
+ },
+ {
+  "arquivo": "assets/sfx/cc0/transition_kenney-interface-minimize-002.ogg",
+  "categoria": "transition",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/interface-sounds",
+  "earshot": "weak",
+  "z": 2.26
+ },
+ {
+  "arquivo": "assets/sfx/cc0/transition_kenney-interface-scroll-001.ogg",
+  "categoria": "transition",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/interface-sounds",
+  "earshot": "no match",
+  "z": 1.5
+ },
+ {
+  "arquivo": "assets/sfx/cc0/transition_kenney-interface-scroll-002.ogg",
+  "categoria": "transition",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/interface-sounds",
+  "earshot": "no match",
+  "z": 1.47
+ },
+ {
+  "arquivo": "assets/sfx/cc0/riser_kenney-digital-phaserup1.ogg",
+  "categoria": "riser",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/digital-audio",
+  "earshot": "no match",
+  "z": 0.32
+ },
+ {
+  "arquivo": "assets/sfx/cc0/riser_kenney-digital-phaserup2.ogg",
+  "categoria": "riser",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/digital-audio",
+  "earshot": "no match",
+  "z": 0.06
+ },
+ {
+  "arquivo": "assets/sfx/cc0/riser_kenney-digital-phaserup3.ogg",
+  "categoria": "riser",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/digital-audio",
+  "earshot": "no match",
+  "z": -0.27
+ },
+ {
+  "arquivo": "assets/sfx/cc0/riser_kenney-digital-powerup1.ogg",
+  "categoria": "riser",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/digital-audio",
+  "earshot": "no match",
+  "z": -0.05
+ },
+ {
+  "arquivo": "assets/sfx/cc0/riser_kenney-digital-powerup2.ogg",
+  "categoria": "riser",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/digital-audio",
+  "earshot": "no match",
+  "z": -1.51
+ },
+ {
+  "arquivo": "assets/sfx/cc0/riser_kenney-digital-powerup3.ogg",
+  "categoria": "riser",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://kenney.nl/assets/digital-audio",
+  "earshot": "no match",
+  "z": -0.58
+ },
+ {
+  "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+  "categoria": "whoosh",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/MeanRaccoon/sounds/830856/",
+  "earshot": "strong",
+  "z": 3.66
+ },
+ {
+  "arquivo": "assets/sfx/cc0/whoosh_fs810485.ogg",
+  "categoria": "whoosh",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/CVLTIV8R/sounds/810485/",
+  "earshot": "no match",
+  "z": -0.67
+ },
+ {
+  "arquivo": "assets/sfx/cc0/whoosh_fs393811.ogg",
+  "categoria": "whoosh",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/deleted_user_6479820/sounds/393811/",
+  "earshot": "strong",
+  "z": 4.05
+ },
+ {
+  "arquivo": "assets/sfx/cc0/riser_fs867126.ogg",
+  "categoria": "riser",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/Diim_1/sounds/867126/",
+  "earshot": "strong",
+  "z": 3.26
+ },
+ {
+  "arquivo": "assets/sfx/cc0/impact_fs524817.ogg",
+  "categoria": "impact",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/DeVern/sounds/524817/",
+  "earshot": "strong",
+  "z": 3.65
+ },
+ {
+  "arquivo": "assets/sfx/cc0/impact_fs745291.ogg",
+  "categoria": "impact",
+  "licenca": "CC0 1.0",
+  "autor": null,
+  "fonte": "https://freesound.org/people/SamsterBirdies/sounds/745291/",
+  "earshot": "no match",
+  "z": 1.69
+ }
+]

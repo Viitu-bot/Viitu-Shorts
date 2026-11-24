@@ -101,6 +101,8 @@ Para cada cena, anote também o contraste com a anterior: escala, quantidade (1 
 Depois de montar o cenas.json: `python3 -m viitu.contraste <proj> --aplicar`.
 
 ## 2. Buscar e ANALISAR candidatos (nunca escolher por miniatura)
+Busca sempre em INGLÊS, OBJETO FÍSICO + AÇÃO + câmera, 3 variações por cena (ex.: "train toilet hole tracks", "rails
+close up fast", "train passing aerial") — nunca conceito abstrato ("segredo", "curiosidade").
 ```
 python3 -m viitu.visao candidatos "goat eating" "cat stalking" ... -n 6 --saida <scratchpad>/cand
 ```

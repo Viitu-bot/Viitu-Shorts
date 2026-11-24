@@ -46,7 +46,8 @@ O usuário escolhe um e seguimos para `/clipes` e `/roteiro`.
 
 3. **O que está quente AGORA (primeiro passo, sempre — dono: "vídeo que até minha avó já viu não serve"):**
    `python3 -m viitu.quente` → Shorts do nicho publicados nos últimos 7 dias ordenados por views/hora (API do YouTube,
-   EN e PT) + Google Trends em alta no BR/EUA. Tema fresco com porquê forte entra como 🔥 (vale mais que o validado antigo).
+   EN e PT) + Google Trends em alta no BR/EUA. Depois de ter os 3 candidatos: `python3 -m viitu.tendencias "<tema 1>" "<tema 2>"
+   "<tema 3>"` (interesse de busca no YouTube BR, 0–100, mesma escala) — desempate, não prova. Tema fresco com porquê forte entra como 🔥 (vale mais que o validado antigo).
 
 3a. **vidIQ (preferência do dono, sempre):**
    - **Base = gringo validado sem versão no Brasil:** `vidiq_outliers` com `contentType: short`,

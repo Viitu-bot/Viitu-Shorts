@@ -57,7 +57,7 @@ em `edicao/identidade.md`.
 `/analisar <link>` e `/espiar` (concorrência → `analises_concorrencia/`) viram conhecimento.
 
 ## Mapa
-BÍBLIA `edicao/BIBLIA.md` · identidade `edicao/identidade.md` · nicho `edicao/biblioteca_nicho.md` · formatos
+BÍBLIA `edicao/BIBLIA.md` · identidade `edicao/identidade.md` · ganchos `edicao/ganchos_gatilhos.md` · nicho `edicao/biblioteca_nicho.md` · formatos
 `edicao/formatos.json` · reclamações `edicao/reclamacoes.md` · base das regras `edicao/fontes_das_regras.md` · sons
 `biblioteca_sfx/` · projetos `projetos/<vdNNN>/` · código `viitu/` e `remotion/src/`.
 

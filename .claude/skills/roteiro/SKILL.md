@@ -7,7 +7,8 @@ description: Escreve o roteiro do Viitu Shorts (protocolo HISA) a partir do tema
 - **Padrão-ouro vd004 bombeiros:** 35–45 s, ~100–130 palavras (2,85/s), narração adulta, DNA do `CLAUDE.md` (humor
   malandro, comparação pop, gíria leve, pergunta direta ao espectador).
 - **Gancho:** 1ª frase abre o loop de curiosidade em 1,5–2 s, sem introdução/contexto, casada com o quadro mais estranho.
-  Modelos: "Piscou o olho, perdeu…", "Como sumir do mapa…", "Por que esses…", "Olha o que esse cara…".
+  Modelos: "Piscou o olho, perdeu…", "Como sumir do mapa…", "Por que esses…", "Olha o que esse cara…". Escolher 1 dos 10
+  gatilhos de `edicao/ganchos_gatilhos.md` e escrever qual no roteiro.md (variar entre vídeos).
 - **Final:** termina na última palavra da revelação ou emenda no gancho (loop). PROIBIDO: CTA de inscrição/like no fim,
   resumo, moral, "da próxima vez…". Partes no roteiro.md: [GANCHO] [INÍCIO] [MEIO] [FINAL] (sem [CTA]).
 - Pergunta ao espectador, se houver, vai no MEIO/FINAL como parte da história, nunca como encerramento.
