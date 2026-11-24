@@ -29,9 +29,9 @@ export const BanheiroTrem3D: React.FC<{fase: string; dur: number; eventos: Recor
   const k = interpolate(f, [0, dur], [0, 1], suave);
   // vistas (fase): troca de câmera a cada ≤ 3,5 s dentro do bloco 3D (montagem R9) — "lado" = corte inteiro,
   // "perto" = vaso → cano → tanque de perto (a água e o tanque enchendo)
-  const cam: [number, number, number] = perto ? [interpolate(k, [0, 1], [-0.2, 1.4]), 0.5, interpolate(k, [0, 1], [5.2, 4.6])]
-    : [0.7, 0.4, interpolate(k, [0, 1], [10.6, 10.0])];
-  const alvo: [number, number, number] = perto ? [interpolate(k, [0, 1], [-0.3, 1.5]), 0.1, 0] : [0.7, 0.0, 0];
+  const cam: [number, number, number] = perto ? [interpolate(k, [0, 1], [-0.3, 1.4]), 0.25, interpolate(k, [0, 1], [5.4, 4.8])]
+    : [0.55, 0.3, interpolate(k, [0, 1], [8.4, 7.8])];
+  const alvo: [number, number, number] = perto ? [interpolate(k, [0, 1], [-0.4, 1.5]), -0.15, 0] : [0.55, -0.05, 0];
 
   const bolinhas = useMemo(() => Array.from({length: 40}, (_, i) => ({fase: random(`b${i}`), dx: (random(`x${i}`) - 0.5) * 0.4})), []);
 
@@ -40,12 +40,12 @@ export const BanheiroTrem3D: React.FC<{fase: string; dur: number; eventos: Recor
       <Camera pos={cam} alvo={alvo} />
       <Liberar pronto={pronto} h={h} />
       <Ambiente tex={tex.ceu_nuvens_hdri} fundo={false} forca={0.7} />
-      <color attach="background" args={['#cfd8e3']} />
+      <color attach="background" args={['#1d2630']} />
       <hemisphereLight args={['#ffffff', '#333333', 0.8]} />
       <directionalLight position={[3, 5, 6]} intensity={1.6} />
 
       {/* vagão em corte: paredes, piso */}
-      <mesh position={[0, 2.2, -0.6]}><boxGeometry args={[6, 3.4, 0.1]} /><meshStandardMaterial color="#e9e4da" roughness={0.9} /></mesh>
+      <mesh position={[0, 2.2, -0.6]}><boxGeometry args={[6, 3.4, 0.1]} /><meshStandardMaterial color="#d8d2c6" roughness={0.9} /></mesh>
       <mesh position={[0, 0.45, 0]}><boxGeometry args={[6, 0.18, 1.4]} /><meshStandardMaterial color="#5d646b" metalness={0.5} roughness={0.5} /></mesh>
       {/* vaso sanitário */}
       <group position={[-0.6, 1.0, 0]}>
