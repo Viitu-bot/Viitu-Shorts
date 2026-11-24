@@ -18,3 +18,4 @@ Formato: `AAAA-MM-DD (postagem) | família | tema | link do vídeo publicado (qu
 2026-11-26 (qui) | Por dentro/recorde | A estrada chinesa que voa sobre as montanhas (viadutos/pontes altíssimas) — vd015 | (prova 7,1 mi; PT vazio)
 2026-11-24 (ter, postado) | Motivo oculto (faixa 70%, molde B1) | Pra onde vai o que você deixa no trem (banheiro do trem) — vd016 | (prova 63,2 mi; PT vazio) — POSTADO 24/11 (terça)
 2026-11-28 (sáb) | Motivo oculto (faixa 70%) | O canhão que se escondia depois do tiro (canhão de desaparecimento) — vd017 | (prova 1,31 mi em 2 dias, 32,6x; PT fraco 43k)
+2026-11-29 (dom) | Erro/perigo (faixa 20%, molde V1) | Nunca esmague uma abelha: ferrão que segue bombeando + feromônio de alarme que chama o enxame — vd018 | (prova 15,99 mi Fact Nation 351x + 15,1 mi Ant Lab 330x; views da coleta de 15 e 24/11, sem reconferência; PT vazio na busca web; conferir "cheiro de banana" na fonte científica)
