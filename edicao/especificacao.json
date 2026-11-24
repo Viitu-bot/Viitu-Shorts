@@ -8,7 +8,7 @@
   "ambiencia": -20,
   "foley_detalhe": -16,
   "som_original": -16,
-  "whoosh": -9,
+  "whoosh": -14,
   "pop": -11,
   "boom": -4,
   "riser": -7,
@@ -49,5 +49,8 @@
  "voz_cadeia": "suave",
  "duck_ratio": 2.5,
  "_mix_24_11c": "dono 24/11 (vd016, teste A/B/C ouvido no celular): escolheu B 'voz na frente' — voz com tratamento leve, música abaixa mais quando ele fala (ratio 4) e volta nas pausas; medido: música −20 sob a voz, efeitos 11/13 audíveis.",
- "_mix_24_11d": "dono 24/11 (vd017): 'a música não deu nem pra ouvir' com narração contínua o abaixamento (ratio 4) nunca soltava. Sem teste A/B (dono: '3 demora muito, gasta muito'): música −16 na mixagem, abaixamento 2,5; voz continua 'suave' na frente."
+ "_mix_24_11d": "dono 24/11 (vd017): 'a música não deu nem pra ouvir' com narração contínua o abaixamento (ratio 4) nunca soltava. Sem teste A/B (dono: '3 demora muito, gasta muito'): música −16 na mixagem, abaixamento 2,5; voz continua 'suave' na frente.",
+ "whoosh_longe_de_efeito_s": 1.0,
+ "whoosh_intervalo_s": 1.4,
+ "_whoosh_24_11": "dono 24/11 (vd017): cortes no seco → whoosh suave (−14) em toda troca; efeitos de AÇÃO continuam 1 a cada 3 s"
 }

@@ -43,7 +43,7 @@ export type Palavra = {texto: string; f0: number; f1: number; destaque: boolean;
 export type Marca = {f0: number; f1: number; cena_f0: number; pos: [number, number, number][]; tipo?: 'circulo' | 'seta'};
 export type Plano = {
   fps: number; duracao_frames: number; palavras: Palavra[]; marcas: Marca[];
-  cortes: number[]; impactos: number[]; duck?: number[]; duck_fx?: number[]; duck_assado?: boolean; foley?: {f0: number; f1: number; som: string; vol: number}[]; foley_mix?: boolean;
+  cortes: number[]; impactos: number[]; tremidas?: number[]; duck?: number[]; duck_fx?: number[]; duck_assado?: boolean; foley?: {f0: number; f1: number; som: string; vol: number}[]; foley_mix?: boolean;
   kit?: Record<string, string[]>; mix?: Record<string, number>; visual?: Record<string, number | boolean>; sfx?: {f: number; som: string; vol?: number; dur?: number}[];
   animacoes?: {nome: string; fase: string; f0: number; f1: number; eventos: Record<string, number>; cortes?: {f: number; zoom: number; foco: number[]}[]}[]; cta: {f0: number; f1?: number | null; texto: string} | null;
   marcas_erro?: {f: number; tipo: string}[]; contadores?: {f0: number; f1: number; de: number; ate: number; prefixo: string; sufixo: string}[];
@@ -298,7 +298,7 @@ const Acabamento: React.FC = () => {
 export const Short: React.FC<{plano: Plano}> = ({plano}) => {
   const {durationInFrames} = useVideoConfig();
   const z = usePunch(plano.palavras);
-  const t = useTremida(plano.impactos);
+  const t = useTremida([...plano.impactos, ...(plano.tremidas ?? [])]);
   const falando = (f: number) => plano.palavras.some((p) => f >= p.f0 - 2 && f <= p.f1 + 2);
   // VÁCUO SONORO: o mundo "prende a respiração" 10 quadros antes do impacto e volta com mais força depois
   const vacuo = (f: number) => {

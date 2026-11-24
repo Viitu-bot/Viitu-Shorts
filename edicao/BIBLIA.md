@@ -11,7 +11,7 @@
 - **Gancho:** sem introdução; a 1ª frase abre o loop de curiosidade em 1,5–2 s, no quadro mais chamativo.
 - **Final:** termina na última palavra da revelação ou emenda no gancho. **O CTA de inscrição/like no fim sai** (substitui
   o "CTA obrigatório" do §1); proibido resumo/moral. Corte seco no último som da voz.
-- **Som:** sem efeito de desenho/meme/boing/buzina/risada/pop agudo; máx. 1 efeito a cada 3 s; efeitos −10 a −5 dB e
+- **Som:** sem efeito de desenho/meme/boing/buzina/risada/pop agudo; máx. 1 efeito de AÇÃO a cada 3 s + whoosh suave em toda troca (dono 24/11, vd017: "cortes no seco"); efeitos −10 a −5 dB e
   música −16 na mixagem, audível sob a voz (dono 24/11: B de ouvido; vd017 "não deu nem pra ouvir"); trilha sempre
   dentro do arquivo. Voz na frente, tratamento leve e ≥ 3,0 palavras/s. Cada imagem UMA vez, corte ≤ 3 s.
 

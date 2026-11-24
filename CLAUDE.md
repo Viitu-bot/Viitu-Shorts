@@ -33,7 +33,7 @@ em `edicao/identidade.md`.
 
 ## Som (regras fixas — `biblioteca_sfx/LEIA.md`)
 - Só sons de `biblioteca_sfx/` (4 pastas). PROIBIDO desenho animado, meme, "boing", buzina, risada, "pop" agudo.
-- Máx. 1 efeito a cada 3 s (o código pula o whoosh se houver outro efeito perto). O som apoia, não aparece mais que a história.
+- Máx. 1 efeito de AÇÃO a cada 3 s; whoosh suave (−14) em TODA troca, a ≥ 1 s de outro efeito; tremida leve nos impactos (tiro/explosão). O som apoia, não aparece mais que a história.
 - Mixagem automática (`viitu/som_final.py`, `edicao/especificacao.json`): voz NA FRENTE com tratamento leve · música −16 na mixagem (audível sob a voz contínua) · efeitos −10 a −5 dB
   (dono 24/11: voz B escolhida de ouvido; música subiu no vd017; teste A/B só se ele pedir) · voz ≥ 3,0 palavras/s · abertura no nível da voz (identidade). Música SEMPRE dentro do arquivo (trilha própria licenciada).
 - Todo efeito passa pelo OUVIDO (`viitu.ouvir`, earshot) na decupagem: som que não soa como o pedido barra o render.

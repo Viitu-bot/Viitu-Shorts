@@ -760,7 +760,8 @@ def _sons_da_cena(segs: list[dict], palavras: list[dict], pub: Path) -> list[dic
                             "-af", f"afade=t=out:st={max(dur - 0.4, 0):.2f}:d=0.4", str(corte)], check=True)
             normalizar(corte, pub / nome, "pontual")
             corte.unlink(missing_ok=True)
-            out.append({"f": max(f, 0), "som": nome, "vol": round(10 ** (e.get("db", -6) / 20), 4), "dur": int(dur * FPS) + 10})
+            out.append({"f": max(f, 0), "som": nome, "vol": round(10 ** (e.get("db", -6) / 20), 4), "dur": int(dur * FPS) + 10,
+                        "desc": e.get("desc", e.get("busca", ""))})
     return out
 
 
@@ -788,7 +789,7 @@ def _sons_da_animacao(segs: list[dict], animacoes: list[dict], pub: Path) -> lis
             normalizar(corte, pub / nome, "pontual")
             corte.unlink(missing_ok=True)
             out.append({"f": max(f, 0), "som": nome, "vol": round(10 ** (e.get("db", -6) / 20), 4),
-                        "dur": int(dur * FPS) + 10})
+                        "dur": int(dur * FPS) + 10, "desc": e.get("desc", e.get("busca", ""))})
             n += 1
     if out:
         print("Sons do 3D:", ", ".join(f"{o['som']}@{o['f'] / FPS:.1f}s" for o in out))
@@ -872,6 +873,7 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
                   + [{"f0": s["f0"] + int(s.get("seta_auto", {}).get("atraso", 0.0) * FPS), "cena_f0": s["f0"], "f1": s["f1"],
                       "pos": s["_seta_pos"], "tipo": "seta"} for s in segs if s.get("_seta_pos")],
         "cortes": [s["f0"] for s in segs[1:]],
+        "tremidas": [],
         "impactos": [round(palavras[achar_palavra(palavras, t, 0)]["inicio"] * FPS)
                      for t in cfg.get("impacto_em", [])],
         "foley": [{"f0": f["f0"], "f1": f["f1"], "som": f["som"], "vol": f["vol"]} for f in faixas_foley],
@@ -923,7 +925,12 @@ def exportar_remotion(pasta: Path, segs: list[dict], palavras: list[dict], cfg: 
             if (pub / "kit_ding_fato_0.mp3").exists():
                 plano["sfx"].append({"f": f + 24, "som": "kit_ding_fato_0.mp3", "vol": 0.4, "dur": 30})
     plano["sfx"] += _sons_da_animacao(segs, plano["animacoes"], pub)
-    plano["sfx"] += _sons_da_cena(segs, palavras, pub)
+    _cena = _sons_da_cena(segs, palavras, pub)
+    plano["sfx"] += _cena
+    # TREMIDA nos efeitos de impacto (tiro, explosão, batida) — dono 24/11: "leve tremor nos momentos de impacto"
+    import re as _re
+    _imp = _re.compile(r"boom|firing|fire|explos|impact|blast|crash|slam|cannon|artiller", _re.I)
+    plano["tremidas"] = sorted({e["f"] for e in _cena + plano.get("sfx", []) if _imp.search(str(e.get("desc", "")) + " " + str(e.get("som", "")))})
     plano["sfx"] += _hits(cfg, palavras, plano["impactos"], pub)
     from viitu.montagem import hash_cenas
     plano["_cenas_hash"] = hash_cenas(cfg)            # a entrega confere se o vídeo saiu DESTE cenas.json
