@@ -96,7 +96,7 @@ def medir(projeto: str, plano: dict) -> dict:
     dpk = float(max(db(dg[i:i + w]) for i in range(0, 4 * w, w // 2)) - vref)                 # efeito acima da voz em plena fala
     app = str(json.loads((pasta_proj(projeto) / "cenas.json").read_text(encoding="utf-8")).get("musica", "")).startswith("app:")
     r = {
-        "musica_sob_voz_db": ("pelo app" if app else round(sob, 1), app or -17 <= sob <= -11),   # dono 24/11 (vd016): música tem que ser OUVIDA       # BÍBLIA §4: audível no celular
+        "musica_sob_voz_db": ("pelo app" if app else round(sob, 1), app or -23 <= sob <= -17),   # dono 24/11: escolheu B (voz na frente, música −20 e sobe nas pausas)       # BÍBLIA §4: audível no celular
         "musica_respira_db": ("pelo app" if app else round(respira, 1), app or respira >= 3 or pausa.sum() < 3),
         "efeitos_acao_audiveis": (f"{acao_ok}/{len(picos)}", not picos or acao_ok >= 0.7 * len(picos)),   # só os que existem
         "impacto_virada_db": ([round(x, 1) for x in imp], all(x >= -6 for x in imp)),
@@ -195,7 +195,7 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
     mix = st / "mix.wav"
     grafo = (
         # VOZ TRATADA (dono 24/11, vd016): tira grave/embolado, dá presença e brilho, segura o "s" e comprime para ficar na frente
-        f"[0:a]{CADEIA_VOZ[ESP.get('voz_cadeia', 'tratada')]},asplit=3[v][vk1][vk2];"
+        f"[0:a]{CADEIA_VOZ[ESP.get('voz_cadeia', 'suave')]},asplit=3[v][vk1][vk2];"
         # leito: sidechain real pela voz — abaixa ~10 dB quando a voz fala, sobe nas pausas (soltura 250 ms: sem bombear)
         f"[1:a][vk1]sidechaincompress=threshold=0.05:ratio={ESP.get('duck_ratio', 2)}:attack=15:release=250:knee=4[l];"
         # efeitos curtos: só encostam (ratio baixo), continuam claros

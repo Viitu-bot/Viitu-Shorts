@@ -11,9 +11,9 @@
 - **Gancho:** sem introdução; a 1ª frase abre o loop de curiosidade em 1,5–2 s, no quadro mais chamativo.
 - **Final:** termina na última palavra da revelação ou emenda no gancho. **O CTA de inscrição/like no fim sai** (substitui
   o "CTA obrigatório" do §1); proibido resumo/moral. Corte seco no último som da voz.
-- **Som:** sem efeito de desenho/meme/boing/buzina/risada/pop agudo; máx. 1 efeito a cada 3 s; efeitos −8 a −3 dB e
-  trilha −14 dB sob a voz (dono 24/11, vd016: "efeitos baixos, sem música" — antes −12/−18 e −22/−26); trilha sempre
-  dentro do arquivo. Voz tratada (EQ, de-esser, compressor) e ≥ 3,0 palavras/s. Cada imagem UMA vez, corte ≤ 3 s.
+- **Som:** sem efeito de desenho/meme/boing/buzina/risada/pop agudo; máx. 1 efeito a cada 3 s; efeitos −10 a −5 dB e
+  música −20 dB sob a voz, subindo nas pausas (dono 24/11: escolheu a versão B no teste de ouvido); trilha sempre
+  dentro do arquivo. Voz na frente, tratamento leve e ≥ 3,0 palavras/s. Cada imagem UMA vez, corte ≤ 3 s.
 
 ## 1. Roteiro — em partes, sempre nesta ordem (dono: "eu montava parte por parte")
 | Parte | O que faz | Regra |

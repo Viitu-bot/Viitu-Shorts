@@ -18,7 +18,7 @@ Número novo só entra no projeto com a base escrita aqui.
 | Gancho sem introdução, loop em 1,5–2 s | — | D | dono 24/11 (meta 73% → 78% continuaram assistindo) |
 | Final sem CTA/moral; corte no último som | margem −0,3 s | D + M | dono 24/11; medido: 0,20–0,26 s de sobra depois do último som (vd013–vd015) |
 | ~~Efeitos / trilha sob a voz~~ | ~~−12 a −18 / −22 a −26 dB~~ | D | dono 24/11 — SUBSTITUÍDA no mesmo dia (abaixo) |
-| Trilha / efeitos (v2) | trilha −14 dB sob a voz; efeitos −8 a −3; virada 0 | D + M | dono 24/11 (vd016: "efeitos baixos, não tem música"); medido (rea-video stems) em 4 vídeos editados pelo dono: música −0,5 a −10,3 dB sob a voz (mediana −4,7), efeitos p98 −2,8 a +8,7; vd016 v1: música −20,4 (mesmo método) |
+| ~~Trilha / efeitos (v2)~~ (substituída pela v3) | trilha −14 dB sob a voz; efeitos −8 a −3; virada 0 | D + M | dono 24/11 (vd016: "efeitos baixos, não tem música"); medido (rea-video stems) em 4 vídeos editados pelo dono: música −0,5 a −10,3 dB sob a voz (mediana −4,7), efeitos p98 −2,8 a +8,7; vd016 v1: música −20,4 (mesmo método) |
 | Ritmo da voz | ≥ 3,0 pal/s (alvo 3,15) | D + M | dono 24/11 ("ficou lento"); medido nos 12 vídeos do dono: 2,70–3,50 pal/s, mediana 3,07 (transcrição/duração); vd016 v1: 2,74 |
 | 1 fonte por cena; corte ≤ 3 s; vizinhas diferentes | R1/R9/R10 | D + M | dono 24/11 ("imagens muito próximas"); vd004 26 cenas/45,7 s; R10 medido: mesmo clipe 0,95, cenas boas 0,22–0,66 → limite 0,85 |
 | Máx. 1 efeito a cada 3 s | 3 s | D | dono 24/11 |
@@ -81,3 +81,5 @@ rótulo do tipo erra). Medição de referência feita com ela pode virar regra *
 2. Com 3 vídeos por formato: comparar. O formato que performa sobe no rodízio; os pesos do radar são recalibrados
    pelo que de fato viralizou.
 3. Só então uma **H** vira **M** (com a amostra escrita aqui) ou sai do projeto.
+
+| Trilha / efeitos / voz (v3) | música −20 sob a voz (sobe nas pausas, abaixamento ratio 4); efeitos −10 a −5; voz "suave" | D | dono 24/11: "o áudio ficou ruim, a voz não foi mixada corretamente" → ouviu A/B/C no celular e escolheu B |

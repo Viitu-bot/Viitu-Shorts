@@ -1,7 +1,7 @@
 # Auditoria — vd016_banheiro_trem
 
 ## Medições
-- ✅ Loudness -14.3 LUFS (alvo −14)
+- ✅ Loudness -14.4 LUFS (alvo −14)
 - ℹ️ Música 16 dB abaixo da voz sob a fala (definido pela especificação, não por esta medição)
 - ⚠️ Sons de função em cima de palavra: ['kit_ding_fato_0.mp3', 'kit_ding_fato_0.mp3', 'cena_sfx_202_0.mp3', 'cena_sfx_388_0.mp3']
 - ✅ Quadros muito escuros: 0 (em )
