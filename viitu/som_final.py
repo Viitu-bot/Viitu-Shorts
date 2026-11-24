@@ -24,6 +24,15 @@ import numpy as np
 
 from viitu import mixagem as mx
 
+# cadeias de tratamento da voz (dono escolhe pelo ouvido; edicao/especificacao.json "voz_cadeia")
+CADEIA_VOZ = {
+    "tratada": "highpass=f=90,equalizer=f=250:t=q:w=1:g=-3,equalizer=f=3200:t=q:w=1.2:g=3,equalizer=f=9000:t=h:w=2000:g=2,"
+               "deesser=i=0.4,acompressor=threshold=0.1:ratio=3:attack=5:release=80:makeup=1.6",
+    "suave": "highpass=f=80,equalizer=f=300:t=q:w=1:g=-1.5,equalizer=f=2500:t=q:w=1.5:g=1.5,"
+             "acompressor=threshold=0.125:ratio=2:attack=10:release=150:makeup=1.2",
+    "natural": "highpass=f=70",
+}
+
 RAIZ = Path(__file__).resolve().parent.parent
 SR = 48000
 LEITO, FX = mx.LEITO, mx.FX
@@ -106,7 +115,8 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
     pasta = RAIZ / "projetos" / projeto
     mp4 = RAIZ / "remotion" / "out" / f"{projeto}.mp4"
     plano = json.loads((mx.PUB / "plano.json").read_text(encoding="utf-8"))
-    MD = json.loads((RAIZ / "edicao" / "especificacao.json").read_text(encoding="utf-8"))["mix_db"]   # níveis MEDIDOS (35 Shorts)
+    ESP = json.loads((RAIZ / "edicao" / "especificacao.json").read_text(encoding="utf-8"))
+    MD = ESP["mix_db"]   # níveis MEDIDOS (35 Shorts)
     if limpo:
         plano = {**plano, "sfx": [e for e in plano.get("sfx", []) if False], "foley_mix": False}
     sr_antigo, mx.SR = mx.SR, SR                         # mesma reconstrução, em qualidade de entrega
@@ -185,10 +195,9 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
     mix = st / "mix.wav"
     grafo = (
         # VOZ TRATADA (dono 24/11, vd016): tira grave/embolado, dá presença e brilho, segura o "s" e comprime para ficar na frente
-        "[0:a]highpass=f=90,equalizer=f=250:t=q:w=1:g=-3,equalizer=f=3200:t=q:w=1.2:g=3,equalizer=f=9000:t=h:w=2000:g=2,"
-        "deesser=i=0.4,acompressor=threshold=0.1:ratio=3:attack=5:release=80:makeup=1.6,asplit=3[v][vk1][vk2];"
+        f"[0:a]{CADEIA_VOZ[ESP.get('voz_cadeia', 'tratada')]},asplit=3[v][vk1][vk2];"
         # leito: sidechain real pela voz — abaixa ~10 dB quando a voz fala, sobe nas pausas (soltura 250 ms: sem bombear)
-        "[1:a][vk1]sidechaincompress=threshold=0.05:ratio=2:attack=15:release=250:knee=4[l];"
+        f"[1:a][vk1]sidechaincompress=threshold=0.05:ratio={ESP.get('duck_ratio', 2)}:attack=15:release=250:knee=4[l];"
         # efeitos curtos: só encostam (ratio baixo), continuam claros
         "[2:a][vk2]sidechaincompress=threshold=0.05:ratio=1.5:attack=5:release=150[f];"
         "[l]asplit=2[l1][l2];[f]asplit=2[f1][f2];[v]asplit=2[v1][v2];"
