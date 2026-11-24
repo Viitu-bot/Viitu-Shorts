@@ -11,6 +11,15 @@ Número novo só entra no projeto com a base escrita aqui.
 | Gancho ≤ 3 s, desmistificação, "mas tem um porém" | — | D + M | dono; 11 raio-X do Hall (funções: explicação 18, gancho 11, virada 10, desmistificação 8) |
 | Fato com fonte, nada [INCERTO] | — | D | protocolo do dono |
 
+## Atualização do dono 24/11 (D)
+| Regra | Valor | Base | Fonte |
+|---|---|---|---|
+| Duração alvo / ritmo | 35–45 s; ~1,8 s por cena; 2,85 palavras/s | D + M | dono 24/11 (vd004: 90,8% retenção, print); medido no vd004 (rea-video: 26 cenas em 45,7 s) |
+| Gancho sem introdução, loop em 1,5–2 s | — | D | dono 24/11 (meta 73% → 78% continuaram assistindo) |
+| Final sem CTA/moral; corte no último som | margem −0,3 s | D + M | dono 24/11; medido: 0,20–0,26 s de sobra depois do último som (vd013–vd015) |
+| Efeitos / trilha sob a voz | −12 a −18 / −22 a −26 dB | D | dono 24/11 |
+| Máx. 1 efeito a cada 3 s | 3 s | D | dono 24/11 |
+
 ## Imagem
 | Regra | Valor | Base | Fonte |
 |---|---|---|---|

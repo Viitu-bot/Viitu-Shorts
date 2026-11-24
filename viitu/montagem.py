@@ -127,9 +127,25 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
     rot = pasta / "roteiro.md"
     if rot.exists():
         txt = rot.read_text(encoding="utf-8")
-        faltam = [p for p in ("[GANCHO]", "[INÍCIO]", "[MEIO]", "[FINAL]", "[CTA]") if p not in txt]
+        import re as _re
+        _num = _re.match(r"vd(\d+)", projeto)
+        regras_24_11 = bool(_num) and int(_num.group(1)) >= 16          # regras do dono de 24/11 valem do vd016 em diante
+        partes = ("[GANCHO]", "[INÍCIO]", "[MEIO]", "[FINAL]") + (() if regras_24_11 else ("[CTA]",))
+        faltam = [p for p in partes if p not in txt]
         if faltam:
-            erros.append(f"R0 ROTEIRO SEM AS PARTES DO DONO: faltam {faltam} (edicao/BIBLIA.md §1; CTA interativo é obrigatório).")
+            erros.append(f"R0 ROTEIRO SEM AS PARTES DO DONO: faltam {faltam} (edicao/BIBLIA.md §1).")
+        if regras_24_11:
+            # FINAL SEM ENCERRAMENTO (dono 24/11, queda nos últimos 5 s do vd004): termina na revelação ou emenda no gancho;
+            # proibido resumo, moral, "da próxima vez", CTA pedindo inscrição/like no fim
+            try:
+                fim_voz = txt.split("TEXTO FINAL PARA A VOZ")[1].split("##")[0].strip().splitlines()[-1].lower()
+            except IndexError:
+                fim_voz = ""
+            proib = [w for w in ("inscrev", "like", "curt", "segue", "comenta", "da próxima vez", "lembra", "moral", "resumindo")
+                     if w in fim_voz]
+            if proib or "[CTA]" in txt:
+                erros.append(f"R0 FINAL COM ENCERRAMENTO: a última frase tem {proib or ['[CTA]']} — o vídeo termina na última palavra "
+                             "da revelação ou emenda no gancho (dono 24/11).")
         try:
             voz_txt = txt.split("TEXTO FINAL PARA A VOZ")[1].split("##")[0].strip()
             if voz_txt.rstrip().endswith("."):

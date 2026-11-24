@@ -3,18 +3,20 @@
  "_regra": "dB relativos à voz (0 = mesmo volume da voz). Todo som é normalizado à referência da voz antes (viitu/mix.py): leitos pela loudness integrada, efeitos curtos pelo pico percebido.",
  "mix_db": {
   "voz": 0,
-  "musica_fala": -17,
-  "musica_pausa": -7,
-  "ambiencia": -21,
+  "musica_fala": -24,
+  "musica_pausa": -22,
+  "ambiencia": -26,
   "foley_detalhe": -16,
   "som_original": -16,
-  "whoosh": -3,
-  "pop": -5,
-  "boom": 0,
-  "riser": -6,
+  "whoosh": -15,
+  "pop": -16,
+  "boom": -12,
+  "riser": -14,
   "ding": -8,
-  "clique": -8,
-  "hit": -6
+  "clique": -15,
+  "hit": -14,
+  "sfx_min": -18,
+  "sfx_max": -12
  },
  "visual": {
   "seg_por_cena_alvo": 1.5,
@@ -39,5 +41,8 @@
  "_hit_17_11": "hit de ênfase na palavra forte (não/número/dinheiro), máx. 3 — A vida é uma maravilha, 13 vídeos",
  "_mix_18_11": "foley baixou (ambiência −18→−21, detalhe −12→−16): medido no vd008, o foley cobria a voz em 207 de 669 quadros; agora há sidechain (viitu/mixagem.py) com margem mínima de 10 dB voz−fundo",
  "_ajuste_18_11": "Ouvido (Gemini) vd009: whoosh −3 mascarava palavras nos cortes → −8; música sem ducking perceptível → −17 na fala / −7 na pausa (contraste de 10 dB) e cresce ×2 depois da virada.",
- "_ajuste_19_11": "Auditoria 'sem achismo' (dono): whoosh volta ao MEDIDO (−3; o −8 de 18/11 veio da opinião do Gemini, juiz instável). Cada valor tem a base em edicao/fontes_das_regras.md."
+ "_ajuste_19_11": "Auditoria 'sem achismo' (dono): whoosh volta ao MEDIDO (−3; o −8 de 18/11 veio da opinião do Gemini, juiz instável). Cada valor tem a base em edicao/fontes_das_regras.md.",
+ "_ajuste_24_11": "Dono 24/11: SFX −12 a −18 dB sob a voz, trilha −22 a −26 dB (textura, pensando em quem assiste na TV); máx. 1 efeito a cada 3 s; abertura (ding em 2 toques) segue no nível da voz (identidade).",
+ "corte_final_s": 0.3,
+ "sfx_intervalo_min_s": 3.0
 }

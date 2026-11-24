@@ -80,17 +80,17 @@ def medir(projeto: str, plano: dict) -> dict:
     # o efeito inteiro (o pico de som gerado/gravado pode vir depois de 1 s; antes olhava só 0,7 s)
     picos = [float(F[max(t(e["f"]) - 1, 0):max(t(e["f"]) + int(e.get("dur", 30) / mx.FPS * 10), t(e["f"]) + 6)].max() - vref)
              for e in plano.get("sfx", [])]
-    acao_ok = sum(p >= -12 for p in picos)
+    acao_ok = sum(p >= -22 for p in picos)
     imp = [float(F[t(i):t(i) + 6].max() - vref) for i in plano.get("impactos", [])]
     tapa = float(np.percentile((F - V)[fala], 98))
     dg = _ler(st / "ding.wav") if (st / "ding.wav").exists() else np.zeros(1600, np.float32)
     dpk = float(max(db(dg[i:i + w]) for i in range(0, 4 * w, w // 2)) - vref)                 # efeito acima da voz em plena fala
     app = str(json.loads((pasta_proj(projeto) / "cenas.json").read_text(encoding="utf-8")).get("musica", "")).startswith("app:")
     r = {
-        "musica_sob_voz_db": ("pelo app" if app else round(sob, 1), app or -14 <= sob <= -8),       # BÍBLIA §4: audível no celular
+        "musica_sob_voz_db": ("pelo app" if app else round(sob, 1), app or -27 <= sob <= -20),   # dono 24/11: −22 a −26       # BÍBLIA §4: audível no celular
         "musica_respira_db": ("pelo app" if app else round(respira, 1), app or respira >= 3 or pausa.sum() < 3),
         "efeitos_acao_audiveis": (f"{acao_ok}/{len(picos)}", not picos or acao_ok >= 0.7 * len(picos)),   # só os que existem
-        "impacto_virada_db": ([round(x, 1) for x in imp], all(x >= -6 for x in imp)),
+        "impacto_virada_db": ([round(x, 1) for x in imp], all(x >= -16 for x in imp)),
         "efeito_sobre_voz_db": (round(tapa, 1), tapa <= 0),
         "ding_frame0_db": (round(dpk, 1), dpk >= -3),                   # BÍBLIA §2: o ding tem que ser OUVIDO
     }
@@ -133,9 +133,9 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
         sel = x if mascara is None else x[mascara]
         sel = sel[np.abs(sel) > 1e-5]
         return 0.0 if len(sel) == 0 else vref * 10 ** (alvo_db / 20) / rms(sel)
-    mus = L["musica"][:n] * para(L["musica"][:n], -5, fala_m)                # trilha −5 antes do sidechain (~−11 depois; BÍBLIA §4)
+    mus = L["musica"][:n] * para(L["musica"][:n], MD["musica_fala"] + 6, fala_m)   # o sidechain tira ~6 dB → trilha em musica_fala (−24) sob a voz
     amb = L["foley"][:n] + L["ambiente"][:n]
-    amb = amb * para(amb, -15, fala_m)                                         # ambiência presente, abaixo da música
+    amb = amb * para(amb, MD["ambiencia"] + 6, fala_m)                                         # ambiência presente, abaixo da música
     leito = (mus + (0 if limpo else amb)) * vac
     # efeitos curtos: cada evento normalizado pelo PICO de 0,1 s → −6 dB da voz (claro, sem passar por cima);
     # a virada (riser/boom) até o nível da voz
@@ -153,7 +153,7 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
             mx.SR = sr_ant
         pico = env(seg[a0:a0 + int(e.get("dur", 60) * spf)]).max() if seg.any() else 0
         if pico > 0:
-            alvo = max(-8.0, min(MD["boom"], 20 * np.log10(max(e.get("vol", 0.5), 1e-3))))   # nível pedido na cena (padrão medido: hit −6)
+            alvo = max(MD["sfx_min"], min(MD["sfx_max"], 20 * np.log10(max(e.get("vol", 0.5), 1e-3)) - 6))   # dono 24/11: −12 a −18 sob a voz
             fx += seg * (vref * 10 ** (alvo / 20) / pico)
     def pico_para(x, alvo_db):
         p = env(x).max() if np.abs(x).max() > 1e-5 else 0

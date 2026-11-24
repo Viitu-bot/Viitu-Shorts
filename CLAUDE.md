@@ -1,89 +1,66 @@
 # Viitu Shorts — instruções para o Claude
 
-Canal de YouTube Shorts de curiosidades em PT-BR (@viitushorts). O dono opera **pelo celular**, nesta
-sessão cloud. Fale sempre em **português do Brasil**, simples e direto.
+Canal de Shorts de curiosidades em PT-BR (@viitushorts). O dono opera **pelo celular**. Fale em **português do Brasil**,
+simples e direto, um passo por vez, sem termos técnicos.
 
-## Como trabalhar
-- **Tutorial:** um passo por vez, sem dar várias opções. Decida e explique o porquê em uma linha.
-- Passos manuais do dono: numerados, curtos, com links diretos.
-- Antes de entregar qualquer coisa, confira você mesmo (prancha, revisão). Nunca entregue sem olhar.
-- **Toda etapa segue `edicao/BIBLIA.md` (regras do dono, NUNCA alterar sem ele autorizar), `edicao/formato.md` e começa por `edicao/reclamacoes.md`** (o que o dono já reprovou). As travas `viitu.montagem` (antes do
-  render) e `viitu.entrega` (antes de mandar) são obrigatórias em TODO vídeo.
-- Técnica nova aprendida (referência, pedido do dono) vai para o lugar certo do mapa abaixo, não para cá.
-- **Sem achismo:** nenhum número/regra novo sem base (regra do dono ou medição com fonte e amostra) escrita em
-  `edicao/fontes_das_regras.md`. Opinião de IA (Gemini incluso) não é base. Nada automático escolhe sem conferência.
+## DNA e Identidade do Canal (INEGOCIÁVEL — nenhuma automação apaga ou contraria)
+Medido em 24/11 nos 12 vídeos que o dono editou antes da pausa (Drive "Minha edição", transcritos e ouvidos) — detalhe
+em `edicao/identidade.md`.
+- **Humor:** malandro e adulto, com duplo sentido pontual quando a cena entrega ("antes que ele corte a tua…", "quem não
+  der like vai cair no cone"); comparação pop exagerada ("falha na Matrix", "mini Godzilla", "dinossauro aposentado",
+  "transformou a moto num caça de guerra", "míssil teleguiado"). Nunca infantil.
+- **Fala:** narrador que conversa com o espectador ("Olha o nó que esse cara deu…", "Esquece…", "Meu cachorro tá
+  diferente"); gírias leves (maluco, tiozinho, caboclo, paradão, cara de sonso, a parada, todo santo dia); frases curtas,
+  ritmo rápido; pergunta direta ao espectador ("Você pegou o truque de primeira ou também bugou?").
+- **Estrutura:** gancho que joga você na cena → explicação técnica em linguagem de rua ("o segredo é…", "isso aqui é
+  atrito extremo") → virada → fecho que emenda no começo (loop: "…vendo que", "…porque").
+- **Som:** música "sans." (Toby Fox) em 7/12 (só pelo app; no arquivo, trilha própria) · abertura = DING (hoje em 2 toques
+  com eco estéreo) · whoosh nas trocas · riser antes da revelação.
+- **Visual:** legenda de 1 palavra, amarela (às vezes branca), contorno preto forte, grande (30% assiste na TV);
+  círculo/seta vermelha no detalhe; corte a cada 2–3 s; clipe real em movimento.
+
+## Padrão-ouro: vd004 bombeiros (90,8% de retenção média, linha reta até 40 s — print do dono)
+45,7 s · 130 palavras (2,85/s) · 26 cenas (1,76 s cada) · gancho "de propósito" → "a maioria acha" → mecanismo →
+"mas tem um porém" → risco. **Duração alvo 35–45 s.** Público adulto 25+.
+- **Gancho (meta 78%+ continuaram assistindo):** sem introdução nem contexto; a 1ª frase abre o loop de curiosidade em
+  1,5–2 s, em cima do quadro mais estranho/forte do vídeo. Modelos: "Piscou o olho, perdeu…", "Como sumir do mapa…",
+  "Por que esses…".
+- **Final (o vd004 caiu nos últimos 5 s):** termina na última palavra da revelação ou emenda no gancho. PROIBIDO resumo,
+  moral, "da próxima vez…", CTA de inscrição/like no fim (trava `viitu.montagem` R0, do vd016 em diante). O vídeo corta
+  no último som da voz, 0,3 s antes da margem antiga (`viitu/editar.py`).
+
+## Som (regras fixas — `biblioteca_sfx/LEIA.md`)
+- Só sons de `biblioteca_sfx/` (4 pastas). PROIBIDO desenho animado, meme, "boing", buzina, risada, "pop" agudo.
+- Máx. 1 efeito a cada 3 s (o código pula o whoosh se houver outro efeito perto). O som apoia, não aparece mais que a história.
+- Mixagem automática (`viitu/som_final.py`, `edicao/especificacao.json`): voz na frente · efeitos −12 a −18 dB · trilha
+  −22 a −26 dB · abertura no nível da voz (identidade). Música SEMPRE dentro do arquivo (trilha própria licenciada).
+- Todo efeito passa pelo OUVIDO (`viitu.ouvir`, earshot) na decupagem: som que não soa como o pedido barra o render.
+
+## Aleatoriedade programada 70/20/10 (`edicao/matriz_702010.md`)
+- **70%** base provada no canal (100% DNA) · **20%** variação vinda do `/espiar`, no estilo do dono · **10%** teste puro.
+- Todo vídeo novo: ler os últimos 5 em `dados/temas_feitos.md`, não repetir o mesmo molde seguido e sugerir a faixa do dia.
+- Todo `/espiar`: atualizar as opções de 20% e 10% da matriz.
 
 ## Regras que nunca quebram
-1. **Números:** nunca inventar views/inscritos. Só YouTube Data API ou print do dono.
-2. **Trava de números:** todo vídeo citado ao dono passa por
-   `python3 -m viitu.provar <link> --papel validacao|bruto|referencia` NA MESMA RESPOSTA e aparece com o
-   rótulo do papel + link exato. Validação e bruto só com ≥ 1M de views.
-3. **Chaves:** nunca pedir chave/senha no chat. Ficam no `.env` (fora do git) ou nos secrets do ambiente.
-4. **Direitos e monetização:** roteiro próprio que EXPLICA, edição substancial, fatos com fonte. Áudio
-   original de terceiro desligado; crédito dos @ na descrição; trilhas/sons só das bibliotecas liberadas
-   (`edicao/biblioteca_sons.md`). `viitu.direitos` sem ❌ antes de entregar.
-5. **Dados pessoais do dono** nunca vão para serviços externos.
+1. Números só da YouTube Data API ou print do dono; todo vídeo citado passa por `python3 -m viitu.provar <link> --papel …`.
+2. Chaves nunca no chat (`.env` / secrets). Dados pessoais do dono nunca vão para fora.
+3. Direitos: roteiro próprio, áudio de terceiro desligado, crédito dos @, `viitu.direitos` sem ❌.
+4. `edicao/BIBLIA.md` = regras do dono; só muda com autorização dele no chat. Sem achismo: número novo só com base em
+   `edicao/fontes_das_regras.md`. Começar toda etapa por `edicao/reclamacoes.md`.
 
-## Fluxo de produção (cada etapa é uma skill)
-1. `/tema <dia>` → 3 temas validados com números reais e lacuna em PT-BR
-2. `/roteiro` → texto HISA + marcações de edição
-3. `/clipes` (+ `/brutos` se o dono enviar arquivos) → cenas reais escolhidas e triadas
-4. `/animacao` → o trecho explicativo em 3D (o que não existe em vídeo, é difícil de achar ou impossível de filmar)
-5. `/editar` → voz, montagem, **decupagem conferida antes do render** (`python3 -m viitu.decupagem <p>`: folha com
-   cada cena, frase e som — o "cérebro de editor"), **montagem parte por parte** (`python3 -m viitu.partes <p> <PARTE>`:
-   cada parte do roteiro renderizada e conferida antes da próxima), som, Remotion e **`python3 -m viitu.entrega <p>` LIBERADA** (sem isso não se entrega)
-6. `/publicar` → título, descrição, créditos, horário; o dono agenda no app do YouTube Studio
-7. **KIT DE PUBLICAÇÃO (obrigatório em TODO vídeo finalizado, dono 24/11):** gerar `projetos/<p>/kit_publicacao.txt` e
-   mostrar no chat: (1) título + descrição curta alinhados ao gancho dos 2 primeiros segundos; (2) comentário fixado =
-   1 frase provocativa ou pergunta simples que gere debate enquanto o Short roda em loop; (3) post de TRIVIA para a aba
-   Comunidade = enquete de quiz ligada ao tema, 4 opções, indicando a correta. Fato do quiz com fonte.
-- `/analisar <link>`: todo vídeo/canal que o dono mandar vira conhecimento (Hall da Fama).
+## Fluxo (cada etapa é uma skill)
+`/tema` → `/roteiro` → `/clipes` → `/animacao` → `/editar` (decupagem + ouvido → partes conferidas → render →
+`viitu.entrega` LIBERADA) → `/publicar` + **kit obrigatório** `projetos/<p>/kit_publicacao.txt` mostrado no chat
+(título/descrição do gancho · comentário fixado provocativo · trivia da Comunidade com 4 opções e a correta).
+`/analisar <link>` e `/espiar` (concorrência → `analises_concorrencia/`) viram conhecimento.
 
-## O formato do canal: HISA 2.0 do dono (público adulto 25+, 100% faceless)
-- **Só 2 formatos:** **Tiro Curto** 12–15 s (30–38 palavras; curiosidade rápida, física bizarra, susto, gambiarra;
-  **re-hook aos 6 s**) ou **Bastidor** 20–28 s (50–65 palavras; engenharia, processo industrial, máquina, trabalho
-  manual: risco/problema → macete técnico → "momento eureka").
-- **Estrutura:** gancho ≤ 3 s quebrando a expectativa → **ouro parcelado** (a explicação vem aos poucos enquanto a ação
-  acontece) → eureka/virada → **CTA interativo (obrigatório, ligado a um acontecimento do vídeo)** → **loop**: nunca termina em ponto final; fecha com conjunção
-  suspensa ("...vendo que", "...porque quando") que emenda na 1ª palavra.
-- **Áudio:** "ding" no 00:00; voz do Otto no máximo com silêncios cortados (auto-cut); som original de clipe LIVRE
-  sobe no clímax (de terceiro fica desligado: Content ID).
-- **Visual:** zero fisheye; legenda 1 palavra, amarelo ouro #FFD700, contorno preto forte, terço superior; 3D no
-  trecho explicativo; clipe real no gancho e como prova.
-- **Tom:** curiosidade técnica narrada com maturidade; duplo sentido ("lá ele") só pontual, quando a cena entregar.
-- **Temas que funcionam:** motivo oculto de objeto > recorde/"mais caro" > perigo/erro (`/tema`).
-- Comparar no Studio os vídeos de 45 s (vd005, vd006) com os do formato do dono antes de mudar qualquer regra.
-
-## Mapa do conhecimento (onde cada coisa mora)
-| Assunto | Arquivo |
-|---|---|
-| **BÍBLIA (regras do DONO — fonte única; o Claude não muda sem autorização)** | `edicao/BIBLIA.md` |
-| **IDENTIDADE MEDIDA do canal (música "sans." Toby Fox, ding, whoosh, ritmo — não perder)** | `edicao/identidade.md` |
-| **BIBLIOTECA DO NICHO medida (música-assinatura de cada canal, efeitos comuns com o nome para buscar)** | `edicao/biblioteca_nicho.md` |
-| O FORMATO (planta técnica: B-roll, 3D, som por batida — obedece à BÍBLIA) | `edicao/formato.md` |
-| **Os 7 FORMATOS do canal + lógica da edição (acontecimento → visual + som)** | `edicao/formatos.md` · `edicao/formatos.json` |
-| **De onde vem cada regra (D dono · M medido · H hipótese — H nunca bloqueia; número novo só com base)** | `edicao/fontes_das_regras.md` |
-| **Reclamações recorrentes do dono → regras + trava da montagem** | `edicao/reclamacoes.md` · `viitu/montagem.py` |
-| Volumes de som e regras visuais (valores fixos) | `edicao/especificacao.json` |
-| Qual efeito em qual momento/cena, engenharia reversa dos canais | `edicao/logica_editor.md` |
-| Técnicas de edição (som em camadas, corte J/L, 3D, cor) | `edicao/manual_edicao.md` |
-| Sons e trilhas: de onde vêm, para que servem | `edicao/biblioteca_sons.md` |
-| Lógica de temas (625 vídeos de 3 canais BR) | `hall_da_fama/logica_temas.md` |
-| Vídeos/canais de referência analisados | `hall_da_fama/` e `pesquisa/reverso/` |
-| Projetos de vídeo (roteiro, cenas, saída) | `projetos/<vdNNN_nome>/` |
-| Código | `viitu/` (Python) e `remotion/src/` (acabamento e animações) |
-
-## Limpeza (sempre)
-- Depois de publicar um vídeo: apagar `projetos/<p>/clipes`, `saida/cenas` e vozes antigas (`voz_v*.mp3`); manter
-  roteiro, cenas.json, créditos e o mp4 final em `remotion/out/` só até o dono confirmar que postou.
-- Cache Sonniss: manter só os sons de `assets/sonniss/escolhas.json`. Versões antigas de arquivos não ficam no repositório.
+## Mapa
+BÍBLIA `edicao/BIBLIA.md` · identidade `edicao/identidade.md` · nicho `edicao/biblioteca_nicho.md` · formatos
+`edicao/formatos.json` · reclamações `edicao/reclamacoes.md` · base das regras `edicao/fontes_das_regras.md` · sons
+`biblioteca_sfx/` · projetos `projetos/<vdNNN>/` · código `viitu/` e `remotion/src/`.
 
 ## Ambiente
-- **Começo de toda sessão:** `python3 -m viitu.saude` + `vidiq_balance`. Se algo falhar, seguir a reserva em `dados/plano_b.md`
-  (o processo nunca para por uma cota ou serviço fora do ar).
-- Nuvem não baixa do YouTube/Reddit: o dono envia clipes no chat ou na pasta Drive `brutos` (`/brutos`).
-  **X (Twitter) baixa direto:** `yt-dlp <link do post>` (vd007: vídeo 4K oficial da SpaceX). Peça o link do post.
-- **Gemini é opcional** (dono 18/11: "não dependa tanto do Gemini"): nenhuma trava nem etapa de produção depende dele.
-  Classificar temas e julgar roteiro/cenas = o próprio Claude; som e imagem = medições próprias. Gemini só com `--gemini`
-  (ex.: dissecar vídeo de referência no /analisar, onde é o único que assiste YouTube pelo link).
-- Sem GPU: 3D renderiza em software (mais lento, funciona). Veo/IA de vídeo pela API é paga.
+Início de sessão: `python3 -m viitu.saude` (+ `vidiq_balance`; reserva em `dados/plano_b.md`). A nuvem não baixa nem
+transcreve do YouTube: TikTok/X pelo `yt-dlp`, arquivos do dono pelo Drive. Ouvido: `uv tool install "earshot[mcp] @
+git+https://github.com/Leonxlnx/earshot"` + `earshot doctor --fetch`. Gemini é opcional. Depois de publicar: apagar
+`projetos/<p>/clipes`.

@@ -84,6 +84,16 @@ def _camadas(plano: dict) -> tuple[np.ndarray, dict[str, np.ndarray]]:
     cache: dict[str, np.ndarray] = {}
     le = lambda s: cache.setdefault(s, _ler(PUB / s))
     cortes = [c for i, c in enumerate(plano.get("cortes", [])) if c not in plano.get("impactos", []) and i < len(plano.get("cortes", [])) - 1]
+    # ANTI-POLUIÇÃO (dono 24/11): no máximo 1 efeito a cada 3 s — o whoosh do corte só entra se não houver outro efeito
+    # (sfx, virada, outro whoosh) a menos de 3 s
+    esp = json.loads((Path(__file__).resolve().parent.parent / "edicao" / "especificacao.json").read_text(encoding="utf-8"))
+    gap = esp.get("sfx_intervalo_min_s", 3.0) * FPS
+    ocupados = [e["f"] for e in plano.get("sfx", [])] + list(plano.get("impactos", []))
+    escolhidos = []
+    for c in cortes:
+        if all(abs(c - o) >= gap for o in ocupados + escolhidos):
+            escolhidos.append(c)
+    cortes = escolhidos
     for k, c in enumerate(cortes):
         lst = kit.get("whoosh_corte") or WOOSHES
         _por(le(lst[k % len(lst)]), L["whoosh"], fr(c - 4), fr(24), M("whoosh"))
@@ -96,10 +106,10 @@ def _camadas(plano: dict) -> tuple[np.ndarray, dict[str, np.ndarray]]:
         dur_b = max(prox - f - 1, 3)
         _por(le(bo[k % len(bo)]), L["virada"], fr(f), fr(min(60, dur_b)), M("boom"))   # igual ao Short.tsx
     for k, m in enumerate(plano.get("marcas", [])):
-        po = kit.get("pop_marca") or ["pop.mp3"]
+        po = ["clique.mp3"]   # dono 24/11: sem "pop" agudo/infantil; clique seco nas setas/marcas
         _por(le(po[k % len(po)]), L["marcas"], fr(m["f0"]), fr(30), M("pop"))
     if plano.get("cta"):                                         # botão SE INSCREVE: pop + clique (igual ao Short.tsx)
-        _por(le("pop.mp3"), L["marcas"], fr(plano["cta"]["f0"]), fr(30), M("pop"))
+        _por(le("clique.mp3"), L["marcas"], fr(plano["cta"]["f0"]), fr(30), M("pop"))
         _por(le("clique.mp3"), L["marcas"], fr(plano["cta"]["f0"] + 14), fr(20), M("clique"))
     _por(le("ding.mp3"), L["ding"], 0, fr(30), M("ding"))          # identidade (BÍBLIA §2): camada própria
     return voz, L | {"_falando": falando.astype(np.float32)}

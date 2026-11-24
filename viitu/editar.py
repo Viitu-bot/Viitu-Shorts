@@ -941,7 +941,21 @@ def editar(projeto: str) -> None:
     cfg = json.loads((pasta / "cenas.json").read_text(encoding="utf-8"))
     (pasta / "saida" / "cenas").mkdir(parents=True, exist_ok=True)
 
-    fim_audio = palavras[-1]["fim"] + 0.02           # corta o silêncio final (loop perfeito)
+    # CORTE FINAL SECO (dono, 24/11: queda de retenção nos últimos 5 s do vd004): o vídeo termina no ÚLTIMO SOM da voz,
+    # medido no áudio (o alinhamento deixava ~0,2 s de sobra), menos a margem "corte_final_s" (0,3 s), sem cortar a palavra
+    # antes do seu som real − 0,08 s. Nenhum silêncio depois da última palavra.
+    _esp = json.loads((RAIZ / "edicao" / "especificacao.json").read_text(encoding="utf-8"))
+    _margem = float(_esp.get("corte_final_s", 0.3))
+    _bruto = subprocess.run(["ffmpeg", "-v", "error", "-i", str(pasta / "voz.mp3"), "-ac", "1", "-ar", "16000", "-f", "f32le", "-"],
+                            capture_output=True).stdout
+    _x = np.frombuffer(_bruto, np.float32)
+    _e = np.array([np.sqrt(np.mean(_x[i:i + 160] ** 2)) for i in range(0, max(len(_x) - 160, 0), 160)]) if len(_x) else np.zeros(1)
+    _ref = np.percentile(_e[_e > 0], 90) if (_e > 0).any() else 1.0
+    _i0 = int(palavras[-1]["inicio"] * 100)
+    _acima = np.where(_e[_i0:] > _ref * 10 ** (-30 / 20))[0]
+    _som_real = (_i0 + _acima[-1] + 1) / 100 if len(_acima) else palavras[-1]["fim"]
+    fim_audio = max(min(palavras[-1]["fim"] + 0.02 - _margem, _som_real), _som_real - 0.08, palavras[-1]["inicio"] + 0.15)
+    print(f"Corte final: {palavras[-1]['fim'] + 0.02:.2f}s → {fim_audio:.2f}s (último som da voz em {_som_real:.2f}s)")
     segs = montar_linha_do_tempo(palavras, cfg, fim_audio)
     dur = segs[-1]["f1"] / FPS
     print(f"{len(segs)} cortes em {dur:.2f} s (média {dur / len(segs):.2f} s por cena)")

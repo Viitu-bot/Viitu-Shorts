@@ -4,6 +4,21 @@ tela. Ferramentas: rea-video (tomadas/cortes), Shazam/shazamio (NOME da música)
 abertura). Views: YouTube Data API. Os 8 vídeos mais vistos do canal são desta fase (11k–28k); a fase do projeto
 (nov) ficou em 865–11k. **Esta é a base do que não se perde.** Amostra pequena → números são M (medidos) com n=12.
 
+## 0. Como o dono narra (transcrição dos 12 vídeos, ElevenLabs scribe, 24/11)
+- Ganchos: "Olha o nó que esse cara deu na cabeça do tiozinho" · "Esquece perder tempo fatiando carne na faca" ·
+  "Meu cachorro tá diferente" · "Esse cara arriscou tudo por três segundos de vídeo" · "Maluco jurava que ia gabaritar…"
+  · "Por que esse monstro jurássico não foi extinto?" · "Parece vidro derretido saindo de um cano enferrujado, mas…".
+- Comparações pop: falha na Matrix · mini Godzilla · dinossauro aposentado · caça de guerra · míssil teleguiado ·
+  filhote de brasa · coreografia.
+- Gírias/registro: maluco, tiozinho, caboclo, paradão, cara de sonso, a parada, todo santo dia, bater pauzinho, sem dó.
+- Duplo sentido pontual (adulto): "arrancar a mandioca", "antes que ele corte a tua", "vai cair no cone".
+- Explicação técnica simples: "o segredo é…", "isso aqui é atrito extremo", "a força bruta destrói as fibras…".
+- Pergunta direta ao espectador: "Você pegou o truque de primeira ou também bugou?", "Você sobreviveria na selva só com
+  um graveto?", "Você conseguiria trabalhar desse jeito vendo que…".
+- Fecho: loop por conjunção ("…vendo que", "…porque"); vários tinham CTA de inscrição (desde 24/11 o CTA no fim sai).
+- Visual: legenda 1 palavra amarela/branca, contorno preto, centro-baixo; círculo e seta vermelhos no detalhe;
+  figurinha/meme visual pontual (gato "?" no vídeo do tiozinho).
+
 ## 1. Música = "sans." — Toby Fox (trilha de Undertale) — A MARCA SONORA DO CANAL
 | arquivo (export) | vídeo publicado (provável) | views | música (Shazam) |
 |---|---|---|---|

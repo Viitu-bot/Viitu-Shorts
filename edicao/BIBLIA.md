@@ -4,6 +4,16 @@
 > Todo outro arquivo (formato.md, skills, logica_editor.md) obedece a este. Em conflito, vale ESTE.
 > Origem: protocolo HISA escrito pelo dono (início do projeto) + HISA 2.0 + correções do dono até 19/11/2026.
 
+
+## 0. ATUALIZAÇÃO DO DONO — 24/11/2026 (autorizada por ele no chat; vale sobre o que conflitar abaixo)
+- **Padrão-ouro = vd004 bombeiros** (90,8% de retenção média): duração 35–45 s, ritmo de ~1,8 s por cena, narração
+  adulta (25+), legenda grande (30% assiste na TV).
+- **Gancho:** sem introdução; a 1ª frase abre o loop de curiosidade em 1,5–2 s, no quadro mais chamativo.
+- **Final:** termina na última palavra da revelação ou emenda no gancho. **O CTA de inscrição/like no fim sai** (substitui
+  o "CTA obrigatório" do §1); proibido resumo/moral. Corte seco no último som da voz.
+- **Som:** sem efeito de desenho/meme/boing/buzina/risada/pop agudo; máx. 1 efeito a cada 3 s; efeitos −12 a −18 dB e
+  trilha −22 a −26 dB sob a voz; trilha sempre dentro do arquivo.
+
 ## 1. Roteiro — em partes, sempre nesta ordem (dono: "eu montava parte por parte")
 | Parte | O que faz | Regra |
 |---|---|---|

@@ -3,6 +3,16 @@ name: roteiro
 description: Escreve o roteiro do Viitu Shorts (protocolo HISA) a partir do tema validado, com fatos verificados, gancho, virada e loop, já marcando onde entram animação, sons de função e impacto. Use quando o usuário digitar /roteiro ou pedir o texto/roteiro de um tema.
 ---
 
+## REGRAS DO DONO 24/11 (valem sobre qualquer instrução abaixo que conflite)
+- **Padrão-ouro vd004 bombeiros:** 35–45 s, ~100–130 palavras (2,85/s), narração adulta, DNA do `CLAUDE.md` (humor
+  malandro, comparação pop, gíria leve, pergunta direta ao espectador).
+- **Gancho:** 1ª frase abre o loop de curiosidade em 1,5–2 s, sem introdução/contexto, casada com o quadro mais estranho.
+  Modelos: "Piscou o olho, perdeu…", "Como sumir do mapa…", "Por que esses…", "Olha o que esse cara…".
+- **Final:** termina na última palavra da revelação ou emenda no gancho (loop). PROIBIDO: CTA de inscrição/like no fim,
+  resumo, moral, "da próxima vez…". Partes no roteiro.md: [GANCHO] [INÍCIO] [MEIO] [FINAL] (sem [CTA]).
+- Pergunta ao espectador, se houver, vai no MEIO/FINAL como parte da história, nunca como encerramento.
+- Antes de escrever: escolher a faixa da matriz 70/20/10 (`edicao/matriz_702010.md`) sem repetir o molde do vídeo anterior.
+
 # /roteiro: roteiro HISA que já nasce editável
 
 > **Regras do dono:** `edicao/BIBLIA.md` (manda em tudo; não alterar sem autorização) · planta técnica: `edicao/formato.md`.
