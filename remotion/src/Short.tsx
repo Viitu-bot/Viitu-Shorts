@@ -105,7 +105,7 @@ const SetaMarca: React.FC<{marca: Marca}> = ({marca}) => {
   const ang = lado === -1 ? 225 : 315;                   // graus: aponta para baixo, na direção do alvo
   const entra = spring({frame: local, fps, config: {damping: 13, stiffness: 160}});
   const cutuca = local > 10 ? Math.sin(((local - 10) / fps) * Math.PI * 4) * 12 : 0;
-  const dist = r * 0.6 + 30 + interpolate(entra, [0, 1], [260, 0]) + cutuca;
+  const dist = r + 12 + interpolate(entra, [0, 1], [260, 0]) + Math.abs(cutuca);   // ponta na BORDA do alvo (dono 24/11, vd016)
   const rad = (ang * Math.PI) / 180;
   const px = x - Math.cos(rad) * dist;
   const py = y + Math.sin(rad) * dist;

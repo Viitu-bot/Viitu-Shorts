@@ -55,6 +55,13 @@ def _prancha(mp4: Path, t0: float, plano: dict, saida: Path) -> None:
         cv2.putText(im, pal[:14], (4, 312), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
         if any(abs(ta - c) < 0.1 for c in cortes):
             cv2.rectangle(im, (0, 0), (179, 319), (0, 0, 255), 3)          # vermelho = corte aqui
+        for m in plano.get("marcas", []):                                # mira verde = onde a seta/círculo aponta
+            q = round(ta * FPS)
+            if m["f0"] <= q < m["f1"] and m.get("pos"):
+                x, yy, r = m["pos"][min(max(q - m["cena_f0"], 0), len(m["pos"]) - 1)]
+                c, rr = (int(x / 6), int(yy / 6)), max(int(r / 6), 3)
+                cv2.circle(im, c, rr, (0, 255, 0), 1); cv2.line(im, (c[0] - 6, c[1]), (c[0] + 6, c[1]), (0, 255, 0), 1)
+                cv2.line(im, (c[0], c[1] - 6), (c[0], c[1] + 6), (0, 255, 0), 1)
         y = 40
         for ts, nome in sons:
             if ta - 0.1 <= ts < ta + 0.1:
