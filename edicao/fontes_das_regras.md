@@ -17,7 +17,10 @@ Número novo só entra no projeto com a base escrita aqui.
 | Duração alvo / ritmo | 35–45 s; ~1,8 s por cena; 2,85 palavras/s | D + M | dono 24/11 (vd004: 90,8% retenção, print); medido no vd004 (rea-video: 26 cenas em 45,7 s) |
 | Gancho sem introdução, loop em 1,5–2 s | — | D | dono 24/11 (meta 73% → 78% continuaram assistindo) |
 | Final sem CTA/moral; corte no último som | margem −0,3 s | D + M | dono 24/11; medido: 0,20–0,26 s de sobra depois do último som (vd013–vd015) |
-| Efeitos / trilha sob a voz | −12 a −18 / −22 a −26 dB | D | dono 24/11 |
+| ~~Efeitos / trilha sob a voz~~ | ~~−12 a −18 / −22 a −26 dB~~ | D | dono 24/11 — SUBSTITUÍDA no mesmo dia (abaixo) |
+| Trilha / efeitos (v2) | trilha −14 dB sob a voz; efeitos −8 a −3; virada 0 | D + M | dono 24/11 (vd016: "efeitos baixos, não tem música"); medido (rea-video stems) em 4 vídeos editados pelo dono: música −0,5 a −10,3 dB sob a voz (mediana −4,7), efeitos p98 −2,8 a +8,7; vd016 v1: música −20,4 (mesmo método) |
+| Ritmo da voz | ≥ 3,0 pal/s (alvo 3,15) | D + M | dono 24/11 ("ficou lento"); medido nos 12 vídeos do dono: 2,70–3,50 pal/s, mediana 3,07 (transcrição/duração); vd016 v1: 2,74 |
+| 1 fonte por cena; corte ≤ 3 s; vizinhas diferentes | R1/R9/R10 | D + M | dono 24/11 ("imagens muito próximas"); vd004 26 cenas/45,7 s; R10 medido: mesmo clipe 0,95, cenas boas 0,22–0,66 → limite 0,85 |
 | Máx. 1 efeito a cada 3 s | 3 s | D | dono 24/11 |
 
 ## Imagem

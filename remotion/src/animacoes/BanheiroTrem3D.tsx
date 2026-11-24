@@ -11,23 +11,27 @@ const cl = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const suave = {...cl, easing: Easing.inOut(Easing.cubic)};
 const MARROM = '#7a4a22';
 
-export const BanheiroTrem3D: React.FC<{fase: string; dur: number; eventos: Record<string, number>}> = ({dur, eventos}) => {
+export const BanheiroTrem3D: React.FC<{fase: string; dur: number; eventos: Record<string, number>}> = ({fase, dur, eventos}) => {
   const f = useCurrentFrame();
   const {width, height} = useVideoConfig();
   const {tex, pronto, h} = useTexturas(['ceu_nuvens_hdri']);
   const tNovo = eventos.novo ?? 40, tVacuo = Math.max(eventos.vacuo ?? 70, tNovo + 8), tAgua = Math.max(eventos.agua ?? 110, tVacuo + 8);
   const tTanque = Math.max(eventos.tanque ?? 140, tAgua + 8);
 
-  const novo = interpolate(f, [tNovo - 6, tNovo + 12], [0, 1], suave);         // o cano reto vira cano + tanque
-  const suga = interpolate(f, [tVacuo - 2, tVacuo + 6], [0, 1], cl);
-  const enche = interpolate(f, [tVacuo, tTanque + 20], [0.05, 0.75], cl);
+  const perto = fase === 'perto';                                            // 2ª vista: o sistema novo já instalado
+  const novo = perto ? 1 : interpolate(f, [tNovo - 6, tNovo + 12], [0, 1], suave);         // o cano reto vira cano + tanque
+  const suga = perto ? 1 : interpolate(f, [tVacuo - 2, tVacuo + 6], [0, 1], cl);
+  const enche = perto ? interpolate(f, [0, tTanque + 20], [0.3, 0.8], cl) : interpolate(f, [tVacuo, dur], [0.05, 0.3], cl);
   const gota = interpolate(f, [tAgua - 4, tAgua + 4, tAgua + 24], [0, 1, 0], cl);
   const brilhoTanque = interpolate(f, [tTanque - 4, tTanque + 4, tTanque + 30], [0, 1, 0.3], cl);
   const trilhoX = -(f * 0.22) % 1.2;                                         // dormentes passando (trem andando)
 
   const k = interpolate(f, [0, dur], [0, 1], suave);
-  const cam: [number, number, number] = [0.7, 0.4, interpolate(k, [0, 1], [10.6, 10.0])];
-  const alvo: [number, number, number] = [0.7, 0.0, 0];
+  // vistas (fase): troca de câmera a cada ≤ 3,5 s dentro do bloco 3D (montagem R9) — "lado" = corte inteiro,
+  // "perto" = vaso → cano → tanque de perto (a água e o tanque enchendo)
+  const cam: [number, number, number] = perto ? [interpolate(k, [0, 1], [-0.2, 1.4]), 0.5, interpolate(k, [0, 1], [5.2, 4.6])]
+    : [0.7, 0.4, interpolate(k, [0, 1], [10.6, 10.0])];
+  const alvo: [number, number, number] = perto ? [interpolate(k, [0, 1], [-0.3, 1.5]), 0.1, 0] : [0.7, 0.0, 0];
 
   const bolinhas = useMemo(() => Array.from({length: 40}, (_, i) => ({fase: random(`b${i}`), dx: (random(`x${i}`) - 0.5) * 0.4})), []);
 

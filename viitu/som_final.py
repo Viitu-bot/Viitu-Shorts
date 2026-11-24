@@ -80,17 +80,17 @@ def medir(projeto: str, plano: dict) -> dict:
     # o efeito inteiro (o pico de som gerado/gravado pode vir depois de 1 s; antes olhava só 0,7 s)
     picos = [float(F[max(t(e["f"]) - 1, 0):max(t(e["f"]) + int(e.get("dur", 30) / mx.FPS * 10), t(e["f"]) + 6)].max() - vref)
              for e in plano.get("sfx", [])]
-    acao_ok = sum(p >= -22 for p in picos)
+    acao_ok = sum(p >= -12 for p in picos)
     imp = [float(F[t(i):t(i) + 6].max() - vref) for i in plano.get("impactos", [])]
     tapa = float(np.percentile((F - V)[fala], 98))
     dg = _ler(st / "ding.wav") if (st / "ding.wav").exists() else np.zeros(1600, np.float32)
     dpk = float(max(db(dg[i:i + w]) for i in range(0, 4 * w, w // 2)) - vref)                 # efeito acima da voz em plena fala
     app = str(json.loads((pasta_proj(projeto) / "cenas.json").read_text(encoding="utf-8")).get("musica", "")).startswith("app:")
     r = {
-        "musica_sob_voz_db": ("pelo app" if app else round(sob, 1), app or -27 <= sob <= -20),   # dono 24/11: −22 a −26       # BÍBLIA §4: audível no celular
+        "musica_sob_voz_db": ("pelo app" if app else round(sob, 1), app or -17 <= sob <= -11),   # dono 24/11 (vd016): música tem que ser OUVIDA       # BÍBLIA §4: audível no celular
         "musica_respira_db": ("pelo app" if app else round(respira, 1), app or respira >= 3 or pausa.sum() < 3),
         "efeitos_acao_audiveis": (f"{acao_ok}/{len(picos)}", not picos or acao_ok >= 0.7 * len(picos)),   # só os que existem
-        "impacto_virada_db": ([round(x, 1) for x in imp], all(x >= -16 for x in imp)),
+        "impacto_virada_db": ([round(x, 1) for x in imp], all(x >= -6 for x in imp)),
         "efeito_sobre_voz_db": (round(tapa, 1), tapa <= 0),
         "ding_frame0_db": (round(dpk, 1), dpk >= -3),                   # BÍBLIA §2: o ding tem que ser OUVIDO
     }
@@ -153,7 +153,7 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
             mx.SR = sr_ant
         pico = env(seg[a0:a0 + int(e.get("dur", 60) * spf)]).max() if seg.any() else 0
         if pico > 0:
-            alvo = max(MD["sfx_min"], min(MD["sfx_max"], 20 * np.log10(max(e.get("vol", 0.5), 1e-3)) - 6))   # dono 24/11: −12 a −18 sob a voz
+            alvo = max(MD["sfx_min"], min(MD["sfx_max"], 20 * np.log10(max(e.get("vol", 0.5), 1e-3)) - 6))   # dono 24/11 (vd016): −8 a −3 da voz
             fx += seg * (vref * 10 ** (alvo / 20) / pico)
     def pico_para(x, alvo_db):
         p = env(x).max() if np.abs(x).max() > 1e-5 else 0
@@ -184,11 +184,13 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
 
     mix = st / "mix.wav"
     grafo = (
-        "[0:a]highpass=f=80,acompressor=threshold=0.125:ratio=2.5:attack=8:release=120:makeup=1.3,asplit=3[v][vk1][vk2];"
+        # VOZ TRATADA (dono 24/11, vd016): tira grave/embolado, dá presença e brilho, segura o "s" e comprime para ficar na frente
+        "[0:a]highpass=f=90,equalizer=f=250:t=q:w=1:g=-3,equalizer=f=3200:t=q:w=1.2:g=3,equalizer=f=9000:t=h:w=2000:g=2,"
+        "deesser=i=0.4,acompressor=threshold=0.1:ratio=3:attack=5:release=80:makeup=1.6,asplit=3[v][vk1][vk2];"
         # leito: sidechain real pela voz — abaixa ~10 dB quando a voz fala, sobe nas pausas (soltura 250 ms: sem bombear)
-        "[1:a][vk1]sidechaincompress=threshold=0.05:ratio=4:attack=15:release=250:knee=4[l];"
+        "[1:a][vk1]sidechaincompress=threshold=0.05:ratio=2:attack=15:release=250:knee=4[l];"
         # efeitos curtos: só encostam (ratio baixo), continuam claros
-        "[2:a][vk2]sidechaincompress=threshold=0.05:ratio=3:attack=5:release=150[f];"
+        "[2:a][vk2]sidechaincompress=threshold=0.05:ratio=1.5:attack=5:release=150[f];"
         "[l]asplit=2[l1][l2];[f]asplit=2[f1][f2];[v]asplit=2[v1][v2];"
         # saída ESTÉREO (a abertura tem eco esquerda/direita); voz, leito e efeitos iguais nos dois lados
         "[v1]aformat=channel_layouts=stereo[vs];[l1]aformat=channel_layouts=stereo[ls];[f1]aformat=channel_layouts=stereo[fs];"

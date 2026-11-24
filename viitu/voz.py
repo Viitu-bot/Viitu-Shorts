@@ -98,6 +98,24 @@ def auto_cut(arq: Path, palavras: list[dict], max_pausa: float = 0.12) -> list[d
     return novos
 
 
+RITMO_ALVO = 3.15   # pal/s — mediana 3,07 nos 12 vídeos do dono contando a abertura (fontes_das_regras, 24/11)
+
+
+def ritmo(arq: Path, palavras: list[dict], alvo: float = RITMO_ALVO) -> list[dict]:
+    """Voz lenta (reclamação 21): acelera com atempo (tom preservado) até `alvo` pal/s; teto 1,25×."""
+    import subprocess
+    atual = len(palavras) / palavras[-1]["fim"]
+    if atual >= alvo - 0.02:
+        return palavras
+    f = min(alvo / atual, 1.25)
+    tmp = arq.with_suffix(".tmp.mp3")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(arq), "-af", f"atempo={f:.4f}", "-b:a", "192k", str(tmp)],
+                   check=True)
+    tmp.replace(arq)
+    print(f"Ritmo: {atual:.2f} → {atual * f:.2f} pal/s (×{f:.3f})")
+    return [{**p, "inicio": round(p["inicio"] / f, 3), "fim": round(p["fim"] / f, 3)} for p in palavras]
+
+
 def gerar(projeto: str, voz: str, estabilidade: float, velocidade: float, modelo: str = MODELO) -> None:
     texto = texto_do_roteiro(projeto, com_tags=(modelo == "eleven_v3"))
     r = requests.post(
@@ -121,6 +139,7 @@ def gerar(projeto: str, voz: str, estabilidade: float, velocidade: float, modelo
     (pasta / "voz.mp3").write_bytes(base64.b64decode(d["audio_base64"]))
     palavras = caracteres_para_palavras(d.get("normalized_alignment") or d["alignment"])
     palavras = auto_cut(pasta / "voz.mp3", palavras)
+    palavras = ritmo(pasta / "voz.mp3", palavras)
     (pasta / "palavras.json").write_text(json.dumps(palavras, ensure_ascii=False, indent=1), encoding="utf-8")
     dur = palavras[-1]["fim"] if palavras else 0
     print(f"Voz gerada: {len(texto)} caracteres, {len(palavras)} palavras, {dur:.1f} s")

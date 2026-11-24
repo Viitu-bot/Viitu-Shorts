@@ -16,6 +16,9 @@ palavras.json (tempos reais da voz) e os arquivos dos clipes. Com qualquer ❌ o
   R8 SOM         sound design é parte da planta, não enfeite: todo bloco 3D tem sfx amarrado a CADA evento + entrada;
                  o gancho tem som de AÇÃO; nas outras cenas, só quando o som certo EXISTE (BÍBLIA §4); há virada
                  (impacto_em → riser/vácuo/boom) e música definida. Dono (18/11): "parece que só pôs um em cima do outro".
+  R9 RITMO      cena real > 3 s (sem "acao_continua") e vista 3D > 3,5 s barram: corte a cada 2–3 s (vd004).
+  R10 PARECIDAS duas cenas seguidas com quadro parecido (forma+cor ≥ 0,85) barram — intercalar perto/longe (dono 24/11).
+  R11 VOZ LENTA < 3,0 palavras/s barra (dono 24/11, mediana 3,07 nos vídeos dele).
   R7 CENA LONGA  cena real ≥ 4 s sem "manter" vira o mesmo plano parado na tela (o editor divide, mas repete o clipe).
 
 Exceção registrada: "bloco_3d_longo": "<pedido do dono>" no cenas.json (vd008: o dono pediu o tanque aberto em 3D).
@@ -36,8 +39,12 @@ import numpy as np
 
 RAIZ = Path(__file__).resolve().parent.parent
 FOTO = (".jpg", ".jpeg", ".png", ".webp")
-MAX_USOS = 2
+MAX_USOS = 1          # dono 24/11 (vd016): "imagens muito próximas" — cada fonte entra UMA vez (loop/bruto à parte)
 MIN_VARIEDADE = 0.6
+CORTE_MAX = 3.0       # BÍBLIA/CLAUDE.md: corte a cada 2–3 s
+CORTE_MAX_3D = 3.5
+PARECIDO_MAX = 0.85
+RITMO_MIN = 3.0
 MIN_RES = 600          # px úteis no lado menor da tela vertical (horizontal 1080p recortado = 607)
 
 
@@ -172,7 +179,7 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
             erros.append(f"R1 REPETIÇÃO: {cl} aparece em {len(ks)} cenas ({ks}); máximo {MAX_USOS}. Buscar outra fonte.")
     reais = sum(len(v) for v in usos.values())          # (o bruto cronológico não entra na conta de variedade)
     if reais and len(usos) < math.ceil(reais * MIN_VARIEDADE):
-        avisos.append(f"R1 VARIEDADE (hipótese, não bloqueia): {len(usos)} fontes para {reais} cenas reais (mínimo {math.ceil(reais * MIN_VARIEDADE)}).")
+        erros.append(f"R1 VARIEDADE: {len(usos)} fontes para {reais} cenas reais (mínimo {math.ceil(reais * MIN_VARIEDADE)}).")
 
     # R2 3D em bloco único
     idx3d = [k for k, v in enumerate(eh_3d) if v]
@@ -268,7 +275,57 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
         lim_cena = 6.0 if cfg.get("formato") == "processo" else 4.0           # processo: deixar a ação satisfatória rodar
         if dur >= lim_cena:
             avisos.append(f"R7 cena longa: cena {k + 1} dura {dur:.1f} s com um clipe só — ok SE a ação prende (BÍBLIA §3); senão, trocar.")
+        if dur > CORTE_MAX and not c.get("acao_continua") and not (k == ultima and loop_ok):
+            erros.append(f"R9 RITMO: cena {k + 1} dura {dur:.1f} s; corte a cada ≤ {CORTE_MAX} s (vd004: 1,76 s). Dividir com OUTRA fonte.")
+    # R9 ritmo no 3D: o bloco é um só (R2), mas troca de câmera (fase) a cada ≤ 3,5 s
+    for k in [k for k, v in enumerate(eh_3d) if v]:
+        d = tempos[k][1] - tempos[k][0]
+        if d > CORTE_MAX_3D and not cfg.get("bloco_3d_longo"):
+            erros.append(f"R9 RITMO 3D: cena 3D {k + 1} dura {d:.1f} s; dividir em vistas (fase) de ≤ {CORTE_MAX_3D} s.")
+    # R10 IMAGENS PARECIDAS: duas cenas seguidas com o mesmo quadro (cor/forma) = o olho não sente o corte
+    quadros = {}
+    for k in range(len(cenas) - 1):
+        a, b = cenas[k], cenas[k + 1]
+        if eh_3d[k] or eh_3d[k + 1] or eh_foto[k] or eh_foto[k + 1]:
+            continue
+        qa = quadros.setdefault(k, _quadro(pasta / "clipes" / a["clipe"], float(a.get("inicio", 0)) + 0.4))
+        qb = quadros.setdefault(k + 1, _quadro(pasta / "clipes" / b["clipe"], float(b.get("inicio", 0)) + 0.4))
+        if qa is not None and qb is not None:
+            sim = _parecido(qa, qb)
+            if sim >= PARECIDO_MAX:
+                erros.append(f"R10 IMAGENS PARECIDAS: cenas {k + 1} e {k + 2} ({sim:.2f}); intercalar plano (perto/longe), cor ou movimento.")
+    # R11 VOZ LENTA (dono 24/11): ritmo mínimo medido nos 12 vídeos editados pelo dono
+    try:
+        pal = json.loads((pasta / "palavras.json").read_text(encoding="utf-8"))
+        pal = pal if isinstance(pal, list) else pal["palavras"]
+        rps = len(pal) / pal[-1]["fim"]
+        if rps < RITMO_MIN:
+            erros.append(f"R11 VOZ LENTA: {rps:.2f} palavras/s; mínimo {RITMO_MIN} (dono: mediana 3,07). Rodar viitu.voz (ajusta sozinho).")
+    except (OSError, KeyError, IndexError, ZeroDivisionError):
+        pass
     return erros, avisos
+
+
+def _quadro(arq: Path, t: float):
+    """Quadro 48x85 (vertical) em cinza + cor média, para comparar cenas vizinhas."""
+    import numpy as np
+    if not arq.exists():
+        return None
+    r = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{t:.2f}", "-i", str(arq), "-frames:v", "1",
+                        "-vf", "crop=ih*9/16:ih,scale=48:85", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
+                       capture_output=True)
+    if len(r.stdout) < 48 * 85 * 3:
+        return None
+    return np.frombuffer(r.stdout[:48 * 85 * 3], dtype=np.uint8).reshape(85, 48, 3).astype(float)
+
+
+def _parecido(a, b) -> float:
+    """0..1: média de (forma: correlação do cinza) e (cor: 1 − distância das médias de cor)."""
+    import numpy as np
+    ga, gb = a.mean(2).ravel(), b.mean(2).ravel()
+    forma = float(np.corrcoef(ga, gb)[0, 1]) if ga.std() > 1 and gb.std() > 1 else 1.0
+    cor = 1 - float(np.abs(a.mean((0, 1)) - b.mean((0, 1))).mean()) / 128
+    return max(0.0, (forma + cor) / 2)
 
 
 def main() -> None:

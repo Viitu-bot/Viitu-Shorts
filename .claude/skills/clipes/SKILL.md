@@ -92,6 +92,10 @@ A nuvem não baixa do YouTube: o usuário baixa/grava a tela das cenas e envia n
 Material de terceiros entra com narração transformadora + crédito na descrição.
 
 ## 1c. Contraste entre cenas vizinhas (planejar ANTES de baixar)
+**Mapa de retenção (dono 24/11, trava R1/R9/R10):** 1 cena por frase/ideia, ≤ 3 s, CADA FONTE UMA VEZ (só o loop repete o
+gancho) → baixar ≥ 1 clipe por cena (~15). Ordem psicológica: gancho = o quadro mais estranho · perto ↔ longe alternados ·
+a virada ("porém") mostra um quadro que ANTECIPA a revelação (vd016: asa de avião antes de "copiaram o avião") · 3D em
+vistas de ≤ 3,5 s (fase) · o fim volta ao quadro do gancho.
 Para cada cena, anote também o contraste com a anterior: escala, quantidade (1 ↔ muitos), direção
 (← ↔ →) e energia (parado ↔ ação). Ex.: galo em close → um monte de galinhas → um galo inteiro.
 Depois de montar o cenas.json: `python3 -m viitu.contraste <proj> --aplicar`.
