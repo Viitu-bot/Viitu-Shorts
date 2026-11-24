@@ -104,3 +104,13 @@ Dados: `pesquisa/musicas_nicho.json`.
 o editor gera o vídeo SEM trilha; na hora de enviar, o dono toca em **Adicionar som** no app do YouTube, escolhe a faixa
 (é licenciada para Shorts) e baixa o volume dela para ~10–15% (o nosso sidechain não alcança a trilha do app).
 Nunca embutir música com direitos no arquivo: o Content ID reivindica a receita ou bloqueia.
+
+## Trilhas chiptune (dono 24/11 — combinam com a marca "sans."/8-bit)
+| arquivo | clima | quando usar | licença |
+|---|---|---|---|
+| bit_shift_kevin_macleod | 8-bit rápido, sintetizador limpo | máquina, tecnologia, invenção, processo rápido | CC BY 4.0 — crédito na descrição (LICENCAS.txt) |
+| itty_bitty_8bit_kevin_macleod | 8-bit leve e brincalhão | curiosidade leve, humor, "olha isso" (linha do "sans.") | CC BY 4.0 — crédito na descrição |
+Pendentes (o dono baixa e sobe no Drive, a nuvem não acessa): YouTube Audio Library — "Destiny" (GalaxyTones),
+"Nostalgia Neuralgia" (Joshua Moses), "Good Old Times" (HolFix); Pixabay Music — Reganati (Chill Chiptune Loop),
+echoes_of_lumen (Pixel Art Game Soundtrack), NickPanek (Chiptune Sherlock Holmes Anthem). Kubbi "Ember" e ko0x
+"Galaxy Guppy": licença não confirmada → não usar até conferir.

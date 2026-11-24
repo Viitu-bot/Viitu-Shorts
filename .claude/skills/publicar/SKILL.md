@@ -49,7 +49,8 @@ Mensagem ao dono: título, descrição pronta para copiar, horário — numerado
 
 ## 6. KIT DE PUBLICAÇÃO (obrigatório, dono 24/11)
 Salvar `projetos/<p>/kit_publicacao.txt` E mostrar no chat, nesta ordem:
-1. TÍTULO E DESCRIÇÃO CURTA — alinhados ao gancho dos 2 primeiros segundos (+ créditos e fontes).
+1. TÍTULO E DESCRIÇÃO CURTA — alinhados ao gancho dos 2 primeiros segundos (+ créditos e fontes). Se a trilha tiver licença CC BY
+   (`assets/musica/LICENCAS.txt`), a linha de crédito da música entra OBRIGATÓRIA na descrição.
 2. COMENTÁRIO FIXADO — 1 frase curta e provocativa ou pergunta simples, para debate rápido enquanto o Short roda em loop.
 3. POST DE TRIVIA (aba Comunidade) — enquete de quiz: pergunta curiosa ligada ao tema + 4 opções, marcando a correta
    (fato conferido, com fonte no arquivo).
