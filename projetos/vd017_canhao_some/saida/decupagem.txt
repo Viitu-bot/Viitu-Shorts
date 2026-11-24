@@ -5,7 +5,7 @@
 4. 6.1-7.7s [INÍCIO] "o navio inimigo" — nara_training_coast_artiller @743.2s — navio no mar, ao longe: o inimigo mirando — sons: []
 5. 7.7-8.8s [INÍCIO] "atirava de volta" — nara_training_coast_artiller @1112.6s — a bala caindo no mar — sons: ['gen_water_jet_splashing_down_into_a_pool.mp3 @1112.9s']
 6. 8.8-10.2s [INÍCIO] "e não tinha" — commons_Disappearing_gun_emp @0s — o fosso vazio: não tinha mais nada lá — sons: []
-7. 10.2-11.9s [MEIO] "O segredo" — nara_training_coast_artiller @1017.0s — canhão grande disparando, fumaça: o coice — sons: ['3191.mp3 @1017.6s']
+7. 10.2-11.9s [MEIO] "O segredo" — nara_training_coast_artiller @1018.8s — canhão grande disparando, fumaça: o coice — sons: ['3191.mp3 @1018.9s']
 8. 11.9-18.2s [MEIO] "O tiro empurrava" — 3D canhao3d — 3D em corte: o tiro, o coice joga o canhão para trás e para baixo do muro nos braços, o contrapeso sobe — sons: ['wind gust whoosh', 'assets/sonniss/cache/4339.mp3', 'assets/sonniss/cache/1779.mp3', 'assets/sfx/gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3']
 9. 18.2-19.8s [MEIO] "Lá embaixo" — nara_training_coast_artiller @940.0s — lá embaixo: a turma empurrando a bala no corredor de concreto — sons: []
 10. 19.8-22.0s [MEIO] "o pessoal recarregava" — nara_training_coast_artiller @955.0s — enfiando a bala na culatra — sons: ['6683.mp3 @957.0s']
