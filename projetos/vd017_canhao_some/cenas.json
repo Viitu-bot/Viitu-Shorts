@@ -53,7 +53,8 @@
      "dur": 1.6,
      "no_clipe": 15.5
     }
-   ]
+   ],
+   "foley": "artilharia_longe"
   },
   {
    "em": "e sumia",
@@ -74,7 +75,8 @@
     0.5,
     0.47
    ],
-   "baixa_res_ok": "filme de época dentro do TikTok; recorte só na faixa do filme (sem a legenda queimada)"
+   "baixa_res_ok": "filme de época dentro do TikTok; recorte só na faixa do filme (sem a legenda queimada)",
+   "foley": "mar_costa"
   },
   {
    "em": "Era esconde-esconde",
@@ -84,7 +86,8 @@
    "revisao": "manual",
    "_parte": "INÍCIO",
    "_funcao": "o fosso do canhão na beira do mar: o esconderijo",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
+   "foley": "tropa_forte"
   },
   {
    "em": "o navio inimigo",
@@ -94,7 +97,8 @@
    "revisao": "manual",
    "_parte": "INÍCIO",
    "_funcao": "navio no mar, ao longe: o inimigo mirando",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
+   "foley": "mar_costa"
   },
   {
    "em": "atirava de volta",
@@ -114,7 +118,8 @@
      "dur": 1.2,
      "no_clipe": 1112.9
     }
-   ]
+   ],
+   "foley": "mar_costa"
   },
   {
    "em": "e não tinha",
@@ -123,7 +128,8 @@
    "som_original": false,
    "revisao": "manual",
    "_parte": "INÍCIO",
-   "_funcao": "o fosso vazio: não tinha mais nada lá"
+   "_funcao": "o fosso vazio: não tinha mais nada lá",
+   "foley": "mar_costa"
   },
   {
    "em": "O segredo",
@@ -143,7 +149,8 @@
      "dur": 1.4,
      "no_clipe": 1018.9
     }
-   ]
+   ],
+   "foley": "artilharia_longe"
   },
   {
    "em": "O tiro empurrava",
@@ -203,7 +210,8 @@
      }
     ]
    },
-   "_funcao": "3D em corte: o tiro, o coice joga o canhão para trás e para baixo do muro nos braços, o contrapeso sobe"
+   "_funcao": "3D em corte: o tiro, o coice joga o canhão para trás e para baixo do muro nos braços, o contrapeso sobe",
+   "foley": "mar_costa"
   },
   {
    "em": "Lá embaixo",
@@ -213,7 +221,8 @@
    "revisao": "manual",
    "_parte": "MEIO",
    "_funcao": "lá embaixo: a turma empurrando a bala no corredor de concreto",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
+   "foley": "casamata"
   },
   {
    "em": "o pessoal recarregava",
@@ -233,7 +242,8 @@
      "dur": 1.0,
      "no_clipe": 957.0
     }
-   ]
+   ],
+   "foley": "casamata"
   },
   {
    "em": "Soltou a trava",
@@ -243,7 +253,8 @@
    "revisao": "manual",
    "_parte": "MEIO",
    "_funcao": "o cano gigante subindo",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
+   "foley": "tropa_forte"
   },
   {
    "em": "o monstro sobe",
@@ -261,7 +272,8 @@
     0.5,
     0.47
    ],
-   "baixa_res_ok": "filme de época dentro do TikTok; recorte só na faixa do filme (sem a legenda queimada)"
+   "baixa_res_ok": "filme de época dentro do TikTok; recorte só na faixa do filme (sem a legenda queimada)",
+   "foley": "tropa_forte"
   },
   {
    "em": "igual um",
@@ -271,7 +283,8 @@
    "revisao": "manual",
    "_parte": "MEIO",
    "_funcao": "o cano subindo de novo, inteiro (joão-bobo de aço)",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
+   "foley": "tropa_forte"
   },
   {
    "em": "Tenta acertar",
@@ -281,7 +294,8 @@
    "revisao": "manual",
    "_parte": "MEIO",
    "_funcao": "a balsa-alvo no mar (treino de tiro)",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
+   "foley": "mar_costa"
   },
   {
    "em": "Mas tem",
@@ -291,7 +305,8 @@
    "revisao": "manual",
    "_parte": "MEIO",
    "_funcao": "virada: o balão de observação subindo (antecipa a vista de cima)",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
+   "foley": "vento"
   },
   {
    "em": "o truque",
@@ -301,7 +316,8 @@
    "revisao": "manual",
    "_parte": "FINAL",
    "_funcao": "a bateria de frente disparando: só enganava quem olhava de frente",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
+   "foley": "artilharia_longe"
   },
   {
    "em": "O avião",
@@ -321,7 +337,8 @@
      "dur": 1.6,
      "no_clipe": 7.8
     }
-   ]
+   ],
+   "foley": "aviao"
   },
   {
    "em": "lá de cima",
@@ -331,7 +348,8 @@
    "revisao": "manual",
    "_parte": "FINAL",
    "_funcao": "a vista de cima do forte, de balão: tudo à mostra",
-   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
+   "foley": "vento"
   },
   {
    "em": "o buraco",
@@ -340,7 +358,8 @@
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "o fosso do canhão de 12 polegadas: o buraco onde ele se escondia"
+   "_funcao": "o fosso do canhão de 12 polegadas: o buraco onde ele se escondia",
+   "foley": "vento"
   },
   {
    "em": "Hoje sobraram",
@@ -357,7 +376,8 @@
     "ate_palavra": "tamanho"
    },
    "layout": "inteiro",
-   "seguir": false
+   "seguir": false,
+   "foley": "mar_costa"
   },
   {
    "em": "e ninguém",
@@ -375,7 +395,8 @@
     0.5,
     0.47
    ],
-   "baixa_res_ok": "filme de época dentro do TikTok; recorte só na faixa do filme (sem a legenda queimada)"
+   "baixa_res_ok": "filme de época dentro do TikTok; recorte só na faixa do filme (sem a legenda queimada)",
+   "foley": "artilharia_longe"
   }
  ]
 }

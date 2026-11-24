@@ -255,6 +255,12 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
                      "licenciada em \"musica\" (assets/musica/); a música conhecida vai só como sugestão no /publicar.")
     if not cfg.get("musica"):
         erros.append("R8 SEM MÚSICA: defina musica (biblioteca própria ou app:<faixa>).")
+    # R8 AMBIÊNCIA (dono 24/11, vd017: "parece filme mudo narrado"): o lugar tem que SOAR — fundo ("foley") ou som
+    # original na maior parte do vídeo, não só efeitos soltos
+    com_amb = sum(tempos[k][1] - tempos[k][0] for k, c in enumerate(cenas) if c.get("foley") or c.get("som_original"))
+    if total and com_amb < 0.7 * total:
+        erros.append(f"R8 SEM AMBIÊNCIA: só {com_amb / total:.0%} do vídeo tem som de lugar; marcar \"foley\" (mar_costa, vento, "
+                     f"casamata, tropa_forte, artilharia_longe, aviao, oficina, multidao…) em ≥ 70% das cenas.")
 
     # R4 qualidade + R7 cena longa (por cena real)
     medidos = {}

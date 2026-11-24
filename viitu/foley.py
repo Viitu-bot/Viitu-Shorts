@@ -146,6 +146,11 @@ CAMADAS = {
     "carro": ("car driving by on asphalt", "car tires rolling on asphalt"),
     "lama": ("car wheel spinning in mud", "mud splash squelch"),
     "passaros": ("flock of seagulls flying overhead", "flock of seagulls flying overhead"),
+    # vd017 (dono: "parece filme mudo narrado"): ambientes de forte/costa/guerra antiga
+    "mar_costa": ("ocean waves crashing on rocky coast with wind", "sea waves breaking on rocks close"),
+    "artilharia_longe": ("distant artillery battle rumble with cannon booms", "distant cannon boom echo"),
+    "tropa_forte": ("soldiers outdoors crowd murmur with wind", "people talking nearby"),
+    "casamata": ("concrete bunker interior room tone with echo", "metal cart wheels rolling on concrete"),
 }
 FOGO = r"fire|flame|burn|campfire|ember|blaze|bonfire|fireplace|wood ?stove"
 EXIGIR = {"fogo_rugido": FOGO, "fogo_crepitando": FOGO, "fumaca_brasa": r"ember|smolder|campfire|fireplace|stove|small fire|fire gentle|fire calm", "vento": r"wind|gust",
@@ -157,7 +162,9 @@ EXIGIR = {"fogo_rugido": FOGO, "fogo_crepitando": FOGO, "fumaca_brasa": r"ember|
           "voo": r"plane|aircraft|airliner|jet|wind", "cabine": r"cabin|interior|airplane|plane",
           "oficina": r"workshop|garage|tool|gear|mechan|machine", "carro": r"car|tire|tyre|vehicle|drive",
           "lama": r"mud|squelch|splash|wheel|tire|tyre",
-          "passaros": r"flock|seagull|gull|starling|flap|flutter|wings"}
+          "passaros": r"flock|seagull|gull|starling|flap|flutter|wings",
+          "mar_costa": r"ocean|sea|wave|surf|shore|coast", "artilharia_longe": r"artiller|cannon|battle|war|explosion|boom|howitzer",
+          "tropa_forte": r"crowd|people|walla|soldier|murmur", "casamata": r"bunker|concrete|tunnel|room tone|cellar|interior|cart|wheel"}
 ESCOLHAS = RAIZ / "assets" / "sonniss" / "escolhas.json"     # mesma descrição → mesmo som (rápido e consistente)
 
 
