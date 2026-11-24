@@ -1,0 +1,652 @@
+{
+ "itens": [
+  {
+   "i": 0,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 1,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 2,
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "tema_pt": "por que enterram a tatuzão depois do túnel",
+   "buscas_pt": [
+    "tatuzão máquina de túnel",
+    "por que enterram a máquina de túnel",
+    "por que a tatuzão fica enterrada"
+   ],
+   "porque": 2,
+   "cara_do_canal": 2,
+   "descartar": false
+  },
+  {
+   "i": 3,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 4,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 5,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 6,
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "tema_pt": "janela de 10 cm da prisão mais segura",
+   "buscas_pt": [
+    "janela de prisão",
+    "por que a janela da prisão é tão estreita",
+    "por que a prisão de segurança máxima tem janela fina"
+   ],
+   "porque": 2,
+   "cara_do_canal": 1,
+   "descartar": false
+  },
+  {
+   "i": 7,
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "tema_pt": "bomba do avião que não podia acertar a hélice",
+   "buscas_pt": [
+    "bomba avião de mergulho",
+    "por que a bomba tinha um braço que a jogava",
+    "como o avião soltava a bomba sem acertar a hélice"
+   ],
+   "porque": 2,
+   "cara_do_canal": 2,
+   "descartar": false
+  },
+  {
+   "i": 8,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 9,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 10,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 11,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 12,
+   "categoria": "invenção/tecnologia",
+   "gatilho": "processo revelado (como fazem)",
+   "tema_pt": "como o submarino afunda e sobe",
+   "buscas_pt": [
+    "submarino",
+    "por que o submarino afunda e volta",
+    "como o submarino sobe e desce"
+   ],
+   "porque": 2,
+   "cara_do_canal": 2,
+   "descartar": false
+  },
+  {
+   "i": 13,
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "tema_pt": "avião presidencial reabastece no ar",
+   "buscas_pt": [
+    "avião presidencial",
+    "por que o air force one não precisa pousar",
+    "como o avião do presidente reabastece no ar"
+   ],
+   "porque": 1,
+   "cara_do_canal": 2,
+   "descartar": false
+  },
+  {
+   "i": 14,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 15,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 16,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 17,
+   "categoria": "como é feito (processo/fábrica)",
+   "gatilho": "processo revelado (como fazem)",
+   "tema_pt": "como uma vala vira trincheira",
+   "buscas_pt": [
+    "trincheira",
+    "por que trincheira tem zigue-zague",
+    "como se cava uma trincheira"
+   ],
+   "porque": 1,
+   "cara_do_canal": 1,
+   "descartar": false
+  },
+  {
+   "i": 18,
+   "categoria": "motivo oculto de objeto/design",
+   "gatilho": "motivo oculto (por que é assim)",
+   "tema_pt": "canhão que se escondia depois de atirar",
+   "buscas_pt": [
+    "canhão que desaparece",
+    "por que o canhão se escondia depois do tiro",
+    "como funcionava o canhão que some"
+   ],
+   "porque": 2,
+   "cara_do_canal": 2,
+   "descartar": false
+  },
+  {
+   "i": 19,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 20,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 21,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 22,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 23,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 24,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 25,
+   "categoria": "natureza/fenômeno",
+   "gatilho": "motivo oculto (por que é assim)",
+   "tema_pt": "por que o raio parece vivo",
+   "buscas_pt": [
+    "raio em câmera lenta",
+    "por que o raio faz zigue-zague",
+    "como o raio escolhe o caminho"
+   ],
+   "porque": 2,
+   "cara_do_canal": 2,
+   "descartar": false
+  },
+  {
+   "i": 26,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 27,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 28,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 29,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 30,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 31,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 32,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 33,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 34,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 35,
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "motivo oculto (por que é assim)",
+   "tema_pt": "roupa de metal para trabalhar na alta tensão",
+   "buscas_pt": [
+    "roupa de metal alta tensão",
+    "por que eletricista usa roupa de metal",
+    "como trabalhar em fio de alta tensão ligado"
+   ],
+   "porque": 2,
+   "cara_do_canal": 2,
+   "descartar": false
+  },
+  {
+   "i": 36,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 37,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 38,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 39,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 40,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 41,
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "tema_pt": "o pão assado do jeito mais perigoso",
+   "buscas_pt": [
+    "pão assado no forno de barro",
+    "por que assam pão na parede do forno",
+    "como fazem pão tandoor"
+   ],
+   "porque": 1,
+   "cara_do_canal": 1,
+   "descartar": false
+  },
+  {
+   "i": 42,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 43,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 44,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 45,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 46,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 47,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 48,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 49,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 50,
+   "categoria": "perigo/erro/segurança",
+   "gatilho": "perigo/medo",
+   "tema_pt": "granada dentro do cano do tanque",
+   "buscas_pt": [
+    "cano do tanque de guerra",
+    "por que o tanque aguenta granada no cano",
+    "o que acontece se cair granada no canhão do tanque"
+   ],
+   "porque": 1,
+   "cara_do_canal": 1,
+   "descartar": false
+  },
+  {
+   "i": 51,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 52,
+   "categoria": "invenção/tecnologia",
+   "gatilho": "motivo oculto (por que é assim)",
+   "tema_pt": "física da construção mais maluca",
+   "buscas_pt": [
+    "construção maluca",
+    "por que a construção não cai",
+    "como a física segura essa obra"
+   ],
+   "porque": 1,
+   "cara_do_canal": 1,
+   "descartar": false
+  },
+  {
+   "i": 53,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 54,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 55,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 56,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 57,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 58,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  },
+  {
+   "i": 59,
+   "categoria": "outro",
+   "gatilho": "surpresa visual (olha isso)",
+   "tema_pt": "",
+   "buscas_pt": [],
+   "porque": 0,
+   "cara_do_canal": 0,
+   "descartar": true
+  }
+ ]
+}
