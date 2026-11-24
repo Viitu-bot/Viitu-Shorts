@@ -23,6 +23,7 @@ import {Bulbo3D} from './animacoes/Bulbo3D';
 import {Vertedouro3D} from './animacoes/Vertedouro3D';
 import {Estrada3D} from './animacoes/Estrada3D';
 import {BanheiroTrem3D} from './animacoes/BanheiroTrem3D';
+import {Canhao3D} from './animacoes/Canhao3D';
 import {Reabastece3D} from './animacoes/Reabastece3D';
 
 // fonte local (o navegador do render não baixa do Google Fonts atrás do proxy)
@@ -332,6 +333,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
           {a.nome === 'vertedouro3d' && <Vertedouro3D fase={a.fase} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'estrada3d' && <Estrada3D fase={a.fase} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'banheiro3d' && <BanheiroTrem3D fase={a.fase} dur={a.f1 - a.f0} eventos={a.eventos} />}
+          {a.nome === 'canhao3d' && <Canhao3D fase={a.fase} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'tanque3d' && <Tanque3D fase={a.fase as FaseTanque} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'starship3d' && <Starship3D fase={a.fase as FaseStarship} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'contrafogo3d' && <Contrafogo3D fase={a.fase as 'ar' | 'encontro'} dur={a.f1 - a.f0} eventos={a.eventos} />}

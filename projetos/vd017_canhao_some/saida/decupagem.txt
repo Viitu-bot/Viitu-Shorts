@@ -1,0 +1,32 @@
+# Decupagem vd017_canhao_some — formato motivo_oculto — música tensao_documentario.mp3
+1. 0.0-1.4s [GANCHO] "Esse canhão" — tt_interestingengineering_72 @15.2s — a bateria do forte disparando: o canhão atirava — sons: ['4339.mp3 @15.5s']
+2. 1.4-3.9s [GANCHO] "e sumia" — tt_interestingengineering_72 @3.5s — o canhão afundando atrás do muro (filme de época tocado ao contrário) — sons: []
+3. 3.9-6.1s [INÍCIO] "Era esconde-esconde" — nara_training_coast_artiller @588.0s — o fosso do canhão na beira do mar: o esconderijo — sons: []
+4. 6.1-7.7s [INÍCIO] "o navio inimigo" — nara_training_coast_artiller @742.0s — navio no mar, ao longe: o inimigo mirando — sons: []
+5. 7.7-8.8s [INÍCIO] "atirava de volta" — nara_training_coast_artiller @1112.0s — a bala caindo no mar — sons: ['gen_water_jet_splashing_down_into_a_pool.mp3 @1112.3s']
+6. 8.8-10.2s [INÍCIO] "e não tinha" — nara_training_coast_artiller @596.0s — o mar vazio: não tinha mais nada lá — sons: []
+7. 10.2-11.9s [MEIO] "O segredo" — nara_training_coast_artiller @1017.0s — canhão grande disparando, fumaça: o coice — sons: ['3191.mp3 @1017.6s']
+8. 11.9-18.2s [MEIO] "O tiro empurrava" — 3D canhao3d — 3D em corte: o tiro, o coice joga o canhão para trás e para baixo do muro nos braços, o contrapeso sobe — sons: ['wind gust whoosh', 'assets/sonniss/cache/4339.mp3', 'assets/sonniss/cache/1779.mp3', 'assets/sfx/gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3']
+9. 18.2-19.8s [MEIO] "Lá embaixo" — nara_training_coast_artiller @940.0s — lá embaixo: a turma empurrando a bala no corredor de concreto — sons: []
+10. 19.8-22.0s [MEIO] "o pessoal recarregava" — nara_training_coast_artiller @955.0s — enfiando a bala na culatra — sons: ['6683.mp3 @957.0s']
+11. 22.0-24.3s [MEIO] "Soltou a trava" — nara_training_coast_artiller @1004.0s — o cano gigante subindo — sons: []
+12. 24.3-25.9s [MEIO] "o monstro sobe" — tt_interestingengineering_72 @9.6s — de frente: o canhão subindo de trás do muro e encarando a câmera — sons: []
+13. 25.9-27.4s [MEIO] "igual um" — nara_training_coast_artiller @1008.5s — o cano subindo de novo, inteiro (joão-bobo de aço) — sons: []
+14. 27.4-30.1s [MEIO] "Tenta acertar" — nara_training_coast_artiller @1000.6s — a balsa-alvo no mar (treino de tiro) — sons: []
+15. 30.1-31.3s [MEIO] "Mas tem" — pixabay_20617.mp4 @3.0s — virada: hélice de avião antigo (antecipa o avião) — sons: ['4814.mp3 @3.2s']
+16. 31.3-33.8s [FINAL] "o truque" — nara_training_coast_artiller @1133.0s — a bateria de frente disparando: só enganava quem olhava de frente — sons: []
+17. 33.8-35.0s [FINAL] "O avião" — pixabay_953.mp4 @7.6s — biplano antigo voando — sons: []
+18. 35.0-36.3s [FINAL] "lá de cima" — nara_training_coast_artiller @690.0s — a vista de cima do forte, de balão: tudo à mostra — sons: []
+19. 36.3-37.8s [FINAL] "o buraco" — commons_Disappearing_gun_emp @0s — o fosso visto de cima: o buraco onde ele se escondia — sons: []
+20. 37.8-40.7s [FINAL] "Hoje sobraram" — nara_training_coast_artiller @1120.0s — dois canhões grandes lado a lado — sons: []
+21. 40.7-42.5s [LOOP] "e ninguém" — tt_interestingengineering_72 @15.2s — o mesmo quadro do gancho — sons: []
+
+## OUVIDO (earshot)
+✅ cena 1: 4339.mp3 — pedido "a large cannon firing boom" → strong (z 5.2)
+⚠️ cena 5: gen_water_jet_splashing_down_into_a_pool.mp3 — pedido "water splashing" → plausible (z 2.8); soa como: an object plunging into water, a squishy wet squelch
+✅ cena 7: 3191.mp3 — pedido "a heavy artillery cannon firing" → strong (z 4.7)
+✅ cena 8: 4339.mp3 — pedido "a large cannon firing boom" → strong (z 5.2)
+✅ cena 8: 1779.mp3 — pedido "heavy metal gears clanking machinery" → strong (z 4.0)
+✅ cena 8: gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3 — pedido "heavy hydraulic press closing deep metal clunk" → strong (z 3.9)
+✅ cena 10: 6683.mp3 — pedido "a heavy metal clank" → strong (z 4.0)
+✅ cena 15: 4814.mp3 — pedido "an old propeller airplane flying by" → strong (z 4.8)

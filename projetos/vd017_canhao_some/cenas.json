@@ -1,0 +1,379 @@
+{
+ "_versao": "v1: regras 24/11 (voz do dono, som B, 1 fonte por momento, corte ≤ 3 s, número só onde há número)",
+ "formato": "motivo_oculto",
+ "impacto_em": [
+  "porém"
+ ],
+ "destaques": [
+  "muro",
+  "propósito",
+  "navio",
+  "coice",
+  "braço",
+  "contrapeso",
+  "recarregava",
+  "sobe",
+  "pisca",
+  "porém",
+  "avião",
+  "cima",
+  "dois"
+ ],
+ "musica": "tensao_documentario.mp3",
+ "cta": false,
+ "bruto_livre": [
+  "nara_training_coast_artillery_1918.mp4",
+  "tt_interestingengineering_7289583193949261062.mp4"
+ ],
+ "creditos_descricao": "Imagens: Arquivo Nacional dos EUA (filme 111-H-1171, 1918, domínio público); @interestingengineering (TikTok); Vimeo-Free-Videos (Pixabay); fotos: :-Adam (CC BY-SA 2.5) e Mlanni98 (CC BY-SA 4.0), Wikimedia Commons. Animação 3D: Viitu Shorts.",
+ "cenas": [
+  {
+   "em": "Esse canhão",
+   "clipe": "tt_interestingengineering_7289583193949261062.mp4",
+   "inicio": 15.2,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "a bateria do forte disparando: o canhão atirava",
+   "zoom": [
+    1.9,
+    1.95
+   ],
+   "alvo": [
+    0.5,
+    0.47
+   ],
+   "baixa_res_ok": "filme de época dentro do TikTok; recorte só na faixa do filme (sem a legenda queimada)",
+   "sfx_cena": [
+    {
+     "em": "atirava",
+     "arquivo": "assets/sonniss/cache/4339.mp3",
+     "desc": "a large cannon firing boom",
+     "db": -4,
+     "dur": 1.6,
+     "no_clipe": 15.5
+    }
+   ]
+  },
+  {
+   "em": "e sumia",
+   "clipe": "tt_interestingengineering_7289583193949261062.mp4",
+   "inicio": 3.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "o canhão afundando atrás do muro (filme de época tocado ao contrário)",
+   "reverso": true,
+   "velocidade": 1.4,
+   "manter": true,
+   "zoom": [
+    2.0,
+    2.05
+   ],
+   "alvo": [
+    0.5,
+    0.47
+   ],
+   "baixa_res_ok": "filme de época dentro do TikTok; recorte só na faixa do filme (sem a legenda queimada)"
+  },
+  {
+   "em": "Era esconde-esconde",
+   "clipe": "nara_training_coast_artillery_1918.mp4",
+   "inicio": 588.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "o fosso do canhão na beira do mar: o esconderijo",
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+  },
+  {
+   "em": "o navio inimigo",
+   "clipe": "nara_training_coast_artillery_1918.mp4",
+   "inicio": 743.2,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "navio no mar, ao longe: o inimigo mirando",
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+  },
+  {
+   "em": "atirava de volta",
+   "clipe": "nara_training_coast_artillery_1918.mp4",
+   "inicio": 1112.6,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "a bala caindo no mar",
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
+   "sfx_cena": [
+    {
+     "em": "atirava",
+     "arquivo": "assets/sfx/gen_water_jet_splashing_down_into_a_pool.mp3",
+     "desc": "water splashing",
+     "db": -6,
+     "dur": 1.2,
+     "no_clipe": 1112.9
+    }
+   ]
+  },
+  {
+   "em": "e não tinha",
+   "clipe": "commons_Disappearing_gun_emplacement.jpg",
+   "inicio": 0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "o fosso vazio: não tinha mais nada lá"
+  },
+  {
+   "em": "O segredo",
+   "clipe": "nara_training_coast_artillery_1918.mp4",
+   "inicio": 1017.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "canhão grande disparando, fumaça: o coice",
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
+   "sfx_cena": [
+    {
+     "em": "coice",
+     "arquivo": "assets/sonniss/cache/3191.mp3",
+     "desc": "a heavy artillery cannon firing",
+     "db": -4,
+     "dur": 1.4,
+     "no_clipe": 1017.6
+    }
+   ]
+  },
+  {
+   "em": "O tiro empurrava",
+   "clipe": "tt_interestingengineering_7289583193949261062.mp4",
+   "inicio": 0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "animacao": {
+    "nome": "canhao3d",
+    "fase": "lado",
+    "eventos": {
+     "tiro": "tiro",
+     "baixo": "baixo",
+     "contrapeso": "levantava"
+    },
+    "cortes": [
+     {
+      "em": "num braço",
+      "zoom": 1.5,
+      "foco": [
+       0.45,
+       0.55
+      ]
+     },
+     {
+      "em": "e levantava",
+      "zoom": 1.0
+     }
+    ],
+    "sfx": [
+     {
+      "busca": "wind gust whoosh",
+      "db": -8,
+      "dur": 0.8
+     },
+     {
+      "evento": "tiro",
+      "arquivo": "assets/sonniss/cache/4339.mp3",
+      "desc": "a large cannon firing boom",
+      "db": -3,
+      "dur": 1.5
+     },
+     {
+      "evento": "baixo",
+      "arquivo": "assets/sonniss/cache/1779.mp3",
+      "desc": "heavy metal gears clanking machinery",
+      "db": -8,
+      "dur": 1.4
+     },
+     {
+      "evento": "contrapeso",
+      "arquivo": "assets/sfx/gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3",
+      "desc": "heavy hydraulic press closing deep metal clunk",
+      "db": -8,
+      "dur": 0.9
+     }
+    ]
+   },
+   "_funcao": "3D em corte: o tiro, o coice joga o canhão para trás e para baixo do muro nos braços, o contrapeso sobe"
+  },
+  {
+   "em": "Lá embaixo",
+   "clipe": "nara_training_coast_artillery_1918.mp4",
+   "inicio": 940.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "lá embaixo: a turma empurrando a bala no corredor de concreto",
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+  },
+  {
+   "em": "o pessoal recarregava",
+   "clipe": "nara_training_coast_artillery_1918.mp4",
+   "inicio": 955.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "enfiando a bala na culatra",
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
+   "sfx_cena": [
+    {
+     "em": "recarregava",
+     "arquivo": "assets/sonniss/cache/6683.mp3",
+     "desc": "a heavy metal clank",
+     "db": -8,
+     "dur": 1.0,
+     "no_clipe": 957.0
+    }
+   ]
+  },
+  {
+   "em": "Soltou a trava",
+   "clipe": "nara_training_coast_artillery_1918.mp4",
+   "inicio": 1004.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "o cano gigante subindo",
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+  },
+  {
+   "em": "o monstro sobe",
+   "clipe": "tt_interestingengineering_7289583193949261062.mp4",
+   "inicio": 9.6,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "de frente: o canhão subindo de trás do muro e encarando a câmera",
+   "zoom": [
+    2.0,
+    2.05
+   ],
+   "alvo": [
+    0.5,
+    0.47
+   ],
+   "baixa_res_ok": "filme de época dentro do TikTok; recorte só na faixa do filme (sem a legenda queimada)"
+  },
+  {
+   "em": "igual um",
+   "clipe": "nara_training_coast_artillery_1918.mp4",
+   "inicio": 1008.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "o cano subindo de novo, inteiro (joão-bobo de aço)",
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+  },
+  {
+   "em": "Tenta acertar",
+   "clipe": "nara_training_coast_artillery_1918.mp4",
+   "inicio": 1000.6,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "a balsa-alvo no mar (treino de tiro)",
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+  },
+  {
+   "em": "Mas tem",
+   "clipe": "nara_training_coast_artillery_1918.mp4",
+   "inicio": 735.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "virada: o balão de observação subindo (antecipa a vista de cima)",
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+  },
+  {
+   "em": "o truque",
+   "clipe": "nara_training_coast_artillery_1918.mp4",
+   "inicio": 1133.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "a bateria de frente disparando: só enganava quem olhava de frente",
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+  },
+  {
+   "em": "O avião",
+   "clipe": "pixabay_953.mp4",
+   "inicio": 7.6,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "biplano subindo, fumaça",
+   "baixa_res_ok": "biplano de época, só existe em 720p livre",
+   "sfx_cena": [
+    {
+     "em": "avião",
+     "arquivo": "assets/sonniss/cache/4814.mp3",
+     "desc": "an old propeller airplane flying by",
+     "db": -6,
+     "dur": 1.6,
+     "no_clipe": 7.8
+    }
+   ]
+  },
+  {
+   "em": "lá de cima",
+   "clipe": "nara_training_coast_artillery_1918.mp4",
+   "inicio": 690.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "a vista de cima do forte, de balão: tudo à mostra",
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD"
+  },
+  {
+   "em": "o buraco",
+   "clipe": "commons_12-inch_Disappearing_Gun_emplacement.jpg",
+   "inicio": 0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "o fosso do canhão de 12 polegadas: o buraco onde ele se escondia"
+  },
+  {
+   "em": "Hoje sobraram",
+   "clipe": "nara_training_coast_artillery_1918.mp4",
+   "inicio": 1120.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "dois canhões grandes lado a lado",
+   "baixa_res_ok": "arquivo histórico de 1918 (Arquivo Nacional dos EUA), não existe em HD",
+   "contador": {
+    "ate": 2,
+    "em": "dois",
+    "ate_palavra": "tamanho"
+   }
+  },
+  {
+   "em": "e ninguém",
+   "clipe": "tt_interestingengineering_7289583193949261062.mp4",
+   "inicio": 15.2,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "LOOP",
+   "_funcao": "o mesmo quadro do gancho",
+   "zoom": [
+    1.9,
+    1.95
+   ],
+   "alvo": [
+    0.5,
+    0.47
+   ],
+   "baixa_res_ok": "filme de época dentro do TikTok; recorte só na faixa do filme (sem a legenda queimada)"
+  }
+ ]
+}

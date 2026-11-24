@@ -1,0 +1,672 @@
+[
+ {
+  "palavra": "Esse",
+  "inicio": 0.0,
+  "fim": 0.226
+ },
+ {
+  "palavra": "canhão",
+  "inicio": 0.339,
+  "fim": 0.603
+ },
+ {
+  "palavra": "atirava",
+  "inicio": 0.716,
+  "fim": 1.282
+ },
+ {
+  "palavra": "e",
+  "inicio": 1.357,
+  "fim": 1.508
+ },
+ {
+  "palavra": "sumia",
+  "inicio": 1.593,
+  "fim": 1.894
+ },
+ {
+  "palavra": "atrás",
+  "inicio": 1.979,
+  "fim": 2.168
+ },
+ {
+  "palavra": "do",
+  "inicio": 2.243,
+  "fim": 2.318
+ },
+ {
+  "palavra": "muro.",
+  "inicio": 2.356,
+  "fim": 2.771
+ },
+ {
+  "palavra": "De",
+  "inicio": 2.855,
+  "fim": 2.931
+ },
+ {
+  "palavra": "propósito.",
+  "inicio": 3.006,
+  "fim": 3.836
+ },
+ {
+  "palavra": "Era",
+  "inicio": 3.92,
+  "fim": 4.071
+ },
+ {
+  "palavra": "esconde-esconde",
+  "inicio": 4.147,
+  "fim": 4.825
+ },
+ {
+  "palavra": "de",
+  "inicio": 4.9,
+  "fim": 4.976
+ },
+ {
+  "palavra": "gente",
+  "inicio": 5.014,
+  "fim": 5.277
+ },
+ {
+  "palavra": "grande:",
+  "inicio": 5.353,
+  "fim": 6.031
+ },
+ {
+  "palavra": "o",
+  "inicio": 6.107,
+  "fim": 6.182
+ },
+ {
+  "palavra": "navio",
+  "inicio": 6.267,
+  "fim": 6.455
+ },
+ {
+  "palavra": "inimigo",
+  "inicio": 6.531,
+  "fim": 6.832
+ },
+ {
+  "palavra": "mirava,",
+  "inicio": 6.908,
+  "fim": 7.586
+ },
+ {
+  "palavra": "atirava",
+  "inicio": 7.699,
+  "fim": 8.114
+ },
+ {
+  "palavra": "de",
+  "inicio": 8.152,
+  "fim": 8.189
+ },
+ {
+  "palavra": "volta,",
+  "inicio": 8.265,
+  "fim": 8.717
+ },
+ {
+  "palavra": "e",
+  "inicio": 8.802,
+  "fim": 8.877
+ },
+ {
+  "palavra": "não",
+  "inicio": 8.915,
+  "fim": 9.028
+ },
+ {
+  "palavra": "tinha",
+  "inicio": 9.104,
+  "fim": 9.254
+ },
+ {
+  "palavra": "mais",
+  "inicio": 9.33,
+  "fim": 9.556
+ },
+ {
+  "palavra": "nada",
+  "inicio": 9.631,
+  "fim": 9.857
+ },
+ {
+  "palavra": "lá.",
+  "inicio": 9.933,
+  "fim": 10.159
+ },
+ {
+  "palavra": "O",
+  "inicio": 10.244,
+  "fim": 10.319
+ },
+ {
+  "palavra": "segredo",
+  "inicio": 10.395,
+  "fim": 10.998
+ },
+ {
+  "palavra": "é",
+  "inicio": 11.035,
+  "fim": 11.073
+ },
+ {
+  "palavra": "o",
+  "inicio": 11.111,
+  "fim": 11.149
+ },
+ {
+  "palavra": "coice.",
+  "inicio": 11.233,
+  "fim": 11.836
+ },
+ {
+  "palavra": "O",
+  "inicio": 11.921,
+  "fim": 11.997
+ },
+ {
+  "palavra": "tiro",
+  "inicio": 12.072,
+  "fim": 12.223
+ },
+ {
+  "palavra": "empurrava",
+  "inicio": 12.336,
+  "fim": 12.751
+ },
+ {
+  "palavra": "o",
+  "inicio": 12.788,
+  "fim": 12.826
+ },
+ {
+  "palavra": "canhão",
+  "inicio": 12.901,
+  "fim": 13.128
+ },
+ {
+  "palavra": "pra",
+  "inicio": 13.203,
+  "fim": 13.278
+ },
+ {
+  "palavra": "trás",
+  "inicio": 13.363,
+  "fim": 13.589
+ },
+ {
+  "palavra": "e",
+  "inicio": 13.627,
+  "fim": 13.665
+ },
+ {
+  "palavra": "pra",
+  "inicio": 13.74,
+  "fim": 13.816
+ },
+ {
+  "palavra": "baixo,",
+  "inicio": 13.891,
+  "fim": 14.268
+ },
+ {
+  "palavra": "num",
+  "inicio": 14.343,
+  "fim": 14.419
+ },
+ {
+  "palavra": "braço",
+  "inicio": 14.494,
+  "fim": 14.72
+ },
+ {
+  "palavra": "gigante,",
+  "inicio": 14.796,
+  "fim": 15.625
+ },
+ {
+  "palavra": "e",
+  "inicio": 15.663,
+  "fim": 15.7
+ },
+ {
+  "palavra": "levantava",
+  "inicio": 15.785,
+  "fim": 16.124
+ },
+ {
+  "palavra": "um",
+  "inicio": 16.162,
+  "fim": 16.2
+ },
+ {
+  "palavra": "contrapeso",
+  "inicio": 16.275,
+  "fim": 16.803
+ },
+ {
+  "palavra": "pesadão",
+  "inicio": 16.888,
+  "fim": 17.415
+ },
+ {
+  "palavra": "do",
+  "inicio": 17.453,
+  "fim": 17.491
+ },
+ {
+  "palavra": "outro",
+  "inicio": 17.566,
+  "fim": 17.717
+ },
+ {
+  "palavra": "lado.",
+  "inicio": 17.792,
+  "fim": 18.094
+ },
+ {
+  "palavra": "Lá",
+  "inicio": 18.179,
+  "fim": 18.292
+ },
+ {
+  "palavra": "embaixo,",
+  "inicio": 18.33,
+  "fim": 18.857
+ },
+ {
+  "palavra": "escondido,",
+  "inicio": 18.933,
+  "fim": 19.762
+ },
+ {
+  "palavra": "o",
+  "inicio": 19.837,
+  "fim": 19.875
+ },
+ {
+  "palavra": "pessoal",
+  "inicio": 19.913,
+  "fim": 20.29
+ },
+ {
+  "palavra": "recarregava",
+  "inicio": 20.365,
+  "fim": 20.968
+ },
+ {
+  "palavra": "sem",
+  "inicio": 21.044,
+  "fim": 21.194
+ },
+ {
+  "palavra": "levar",
+  "inicio": 21.27,
+  "fim": 21.496
+ },
+ {
+  "palavra": "chumbo.",
+  "inicio": 21.571,
+  "fim": 21.948
+ },
+ {
+  "palavra": "Soltou",
+  "inicio": 22.033,
+  "fim": 22.335
+ },
+ {
+  "palavra": "a",
+  "inicio": 22.372,
+  "fim": 22.41
+ },
+ {
+  "palavra": "trava,",
+  "inicio": 22.486,
+  "fim": 23.013
+ },
+ {
+  "palavra": "o",
+  "inicio": 23.089,
+  "fim": 23.126
+ },
+ {
+  "palavra": "contrapeso",
+  "inicio": 23.164,
+  "fim": 23.767
+ },
+ {
+  "palavra": "desce",
+  "inicio": 23.852,
+  "fim": 24.154
+ },
+ {
+  "palavra": "e",
+  "inicio": 24.229,
+  "fim": 24.304
+ },
+ {
+  "palavra": "o",
+  "inicio": 24.342,
+  "fim": 24.38
+ },
+ {
+  "palavra": "monstro",
+  "inicio": 24.455,
+  "fim": 24.832
+ },
+ {
+  "palavra": "sobe",
+  "inicio": 24.917,
+  "fim": 25.143
+ },
+ {
+  "palavra": "de",
+  "inicio": 25.218,
+  "fim": 25.256
+ },
+ {
+  "palavra": "novo,",
+  "inicio": 25.294,
+  "fim": 25.822
+ },
+ {
+  "palavra": "igual",
+  "inicio": 25.906,
+  "fim": 26.095
+ },
+ {
+  "palavra": "um",
+  "inicio": 26.17,
+  "fim": 26.246
+ },
+ {
+  "palavra": "joão-bobo",
+  "inicio": 26.321,
+  "fim": 26.773
+ },
+ {
+  "palavra": "de",
+  "inicio": 26.811,
+  "fim": 26.849
+ },
+ {
+  "palavra": "aço.",
+  "inicio": 26.924,
+  "fim": 27.301
+ },
+ {
+  "palavra": "Tenta",
+  "inicio": 27.386,
+  "fim": 27.537
+ },
+ {
+  "palavra": "acertar",
+  "inicio": 27.612,
+  "fim": 27.914
+ },
+ {
+  "palavra": "um",
+  "inicio": 27.989,
+  "fim": 28.065
+ },
+ {
+  "palavra": "alvo",
+  "inicio": 28.14,
+  "fim": 28.291
+ },
+ {
+  "palavra": "que",
+  "inicio": 28.366,
+  "fim": 28.441
+ },
+ {
+  "palavra": "some",
+  "inicio": 28.526,
+  "fim": 28.677
+ },
+ {
+  "palavra": "toda",
+  "inicio": 28.752,
+  "fim": 28.979
+ },
+ {
+  "palavra": "vez",
+  "inicio": 29.054,
+  "fim": 29.205
+ },
+ {
+  "palavra": "que",
+  "inicio": 29.242,
+  "fim": 29.28
+ },
+ {
+  "palavra": "você",
+  "inicio": 29.356,
+  "fim": 29.506
+ },
+ {
+  "palavra": "pisca.",
+  "inicio": 29.591,
+  "fim": 29.968
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 30.053,
+  "fim": 30.204
+ },
+ {
+  "palavra": "tem",
+  "inicio": 30.279,
+  "fim": 30.355
+ },
+ {
+  "palavra": "um",
+  "inicio": 30.392,
+  "fim": 30.43
+ },
+ {
+  "palavra": "porém:",
+  "inicio": 30.543,
+  "fim": 31.259
+ },
+ {
+  "palavra": "o",
+  "inicio": 31.335,
+  "fim": 31.41
+ },
+ {
+  "palavra": "truque",
+  "inicio": 31.485,
+  "fim": 31.862
+ },
+ {
+  "palavra": "só",
+  "inicio": 31.938,
+  "fim": 32.089
+ },
+ {
+  "palavra": "enganava",
+  "inicio": 32.173,
+  "fim": 32.55
+ },
+ {
+  "palavra": "quem",
+  "inicio": 32.588,
+  "fim": 32.701
+ },
+ {
+  "palavra": "olhava",
+  "inicio": 32.776,
+  "fim": 33.003
+ },
+ {
+  "palavra": "de",
+  "inicio": 33.078,
+  "fim": 33.153
+ },
+ {
+  "palavra": "frente.",
+  "inicio": 33.229,
+  "fim": 33.681
+ },
+ {
+  "palavra": "O",
+  "inicio": 33.766,
+  "fim": 33.841
+ },
+ {
+  "palavra": "avião",
+  "inicio": 33.954,
+  "fim": 34.143
+ },
+ {
+  "palavra": "chegou,",
+  "inicio": 34.218,
+  "fim": 34.821
+ },
+ {
+  "palavra": "e",
+  "inicio": 34.897,
+  "fim": 34.972
+ },
+ {
+  "palavra": "lá",
+  "inicio": 35.048,
+  "fim": 35.123
+ },
+ {
+  "palavra": "de",
+  "inicio": 35.198,
+  "fim": 35.349
+ },
+ {
+  "palavra": "cima",
+  "inicio": 35.425,
+  "fim": 35.651
+ },
+ {
+  "palavra": "dava",
+  "inicio": 35.726,
+  "fim": 35.952
+ },
+ {
+  "palavra": "pra",
+  "inicio": 36.028,
+  "fim": 36.103
+ },
+ {
+  "palavra": "ver",
+  "inicio": 36.179,
+  "fim": 36.254
+ },
+ {
+  "palavra": "o",
+  "inicio": 36.292,
+  "fim": 36.329
+ },
+ {
+  "palavra": "buraco",
+  "inicio": 36.405,
+  "fim": 36.706
+ },
+ {
+  "palavra": "onde",
+  "inicio": 36.782,
+  "fim": 36.857
+ },
+ {
+  "palavra": "ele",
+  "inicio": 36.932,
+  "fim": 37.008
+ },
+ {
+  "palavra": "se",
+  "inicio": 37.046,
+  "fim": 37.083
+ },
+ {
+  "palavra": "escondia.",
+  "inicio": 37.159,
+  "fim": 37.686
+ },
+ {
+  "palavra": "Hoje",
+  "inicio": 37.771,
+  "fim": 38.073
+ },
+ {
+  "palavra": "sobraram",
+  "inicio": 38.11,
+  "fim": 38.6
+ },
+ {
+  "palavra": "só",
+  "inicio": 38.638,
+  "fim": 38.751
+ },
+ {
+  "palavra": "dois",
+  "inicio": 38.836,
+  "fim": 39.062
+ },
+ {
+  "palavra": "desse",
+  "inicio": 39.138,
+  "fim": 39.288
+ },
+ {
+  "palavra": "tamanho",
+  "inicio": 39.364,
+  "fim": 39.665
+ },
+ {
+  "palavra": "nos",
+  "inicio": 39.741,
+  "fim": 39.816
+ },
+ {
+  "palavra": "Estados",
+  "inicio": 39.892,
+  "fim": 40.193
+ },
+ {
+  "palavra": "Unidos,",
+  "inicio": 40.269,
+  "fim": 40.645
+ },
+ {
+  "palavra": "e",
+  "inicio": 40.73,
+  "fim": 40.806
+ },
+ {
+  "palavra": "ninguém",
+  "inicio": 40.919,
+  "fim": 41.183
+ },
+ {
+  "palavra": "mais",
+  "inicio": 41.258,
+  "fim": 41.333
+ },
+ {
+  "palavra": "se",
+  "inicio": 41.409,
+  "fim": 41.484
+ },
+ {
+  "palavra": "assusta",
+  "inicio": 41.56,
+  "fim": 41.861
+ },
+ {
+  "palavra": "quando",
+  "inicio": 41.937,
+  "fim": 42.54
+ }
+]

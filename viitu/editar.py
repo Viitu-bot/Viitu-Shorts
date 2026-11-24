@@ -970,7 +970,7 @@ def editar(projeto: str) -> None:
 
     for s in segs:                                     # bruto cronológico pode atravessar os cortes internos dele
         _br = cfg.get("bruto_cronologico") or []
-        s["_bruto"] = s.get("clipe") in ([_br] if isinstance(_br, str) else _br)
+        s["_bruto"] = s.get("clipe") in ([_br] if isinstance(_br, str) else _br) + list(cfg.get("bruto_livre", []))
     arquivos = []
     for i, s in enumerate(segs):
         arquivos.append(renderizar_cena(s, pasta, i))

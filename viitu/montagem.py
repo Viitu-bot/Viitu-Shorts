@@ -168,6 +168,14 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
         usos[c["clipe"]].append(k + 1)
     # BRUTO CRONOLÓGICO (BÍBLIA §5): o arquivo marcado pode estar em muitas cenas SE cada uma for uma etapa nova:
     # inícios sempre crescentes e ≥ 1,5 s de distância (nada de voltar ao mesmo trecho)
+    # ARQUIVO LIVRE (vd017): filme longo de arquivo usado fora de ordem — vale se cada trecho for OUTRO momento (≥ 2,5 s
+    # de distância entre os inícios; nada de repetir o mesmo plano)
+    for livre in cfg.get("bruto_livre", []):
+        if livre in usos:
+            ts = sorted(cenas[k - 1].get("inicio", 0) for k in usos[livre])
+            if any(b2 - a2 < 2.5 for a2, b2 in zip(ts, ts[1:])):
+                erros.append(f"R1 ARQUIVO REPETIDO: {livre} usa trechos colados (inícios {ts}); cada cena = outro momento do filme.")
+            usos.pop(livre)
     brutos = cfg.get("bruto_cronologico") or []
     for bruto in ([brutos] if isinstance(brutos, str) else brutos):     # um arquivo ou uma lista de vídeos longos
         if bruto not in usos:
