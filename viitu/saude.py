@@ -66,8 +66,8 @@ def pixabay():
 
 def pexels():
     r = requests.get("https://api.pexels.com/videos/search", timeout=20, params={"query": "plane", "per_page": 1},
-                     headers={"Authorization": "proxy-injected"})
-    return r.status_code == 200, f"HTTP {r.status_code}" + (" (chave salva errada: precisa ser a chave pura, sem 'Bearer')" if r.status_code == 401 else "")
+                     headers={"Authorization": _env("PEXELS_API_KEY") or "proxy-injected"})
+    return r.status_code == 200, f"HTTP {r.status_code}" + (" (chave recusada: apague o 'Network secret' api.pexels.com nas configurações; a variável PEXELS_API_KEY basta)" if r.status_code == 401 else "")
 
 
 def commons():
