@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
 import cv2
@@ -133,6 +134,8 @@ def prancha(an: dict, rotulo: str, destino: Path) -> None:
 
 
 def _pixabay_chave() -> str:
+    if os.environ.get("PIXABAY_API_KEY"):
+        return os.environ["PIXABAY_API_KEY"]
     for l in (RAIZ / ".env").read_text(encoding="utf-8").splitlines():
         if l.startswith("PIXABAY_API_KEY="):
             return l.split("=", 1)[1].strip()

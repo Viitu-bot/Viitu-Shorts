@@ -30,6 +30,10 @@ FORA = re.compile(r" x |vs\.?| fc|futebol|jogo|mega.?sena|lotof|quina|resultado|
 
 
 def _chave() -> str:
+    if os.environ.get("YOUTUBE_API_KEY"):
+        return os.environ["YOUTUBE_API_KEY"]
+    if not (RAIZ / ".env").exists():
+        return ""
     for l in (RAIZ / ".env").read_text().splitlines():
         if l.startswith("YOUTUBE_API_KEY="):
             return l.split("=", 1)[1].strip()

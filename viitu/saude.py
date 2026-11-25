@@ -8,6 +8,7 @@ import shutil
 import subprocess
 from pathlib import Path
 
+import os
 import requests
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -15,6 +16,8 @@ UA = {"User-Agent": "ViituBot/1.0 (educational research)"}
 
 
 def _env(nome: str) -> str:
+    if os.environ.get(nome):
+        return os.environ[nome]
     arq = RAIZ / ".env"
     if arq.exists():
         for l in arq.read_text().splitlines():
