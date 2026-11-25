@@ -93,13 +93,12 @@ export const Rato3D: React.FC<{fase: string; dur: number; eventos: Record<string
         mats.push(mat);
       }
     });
-    return {
-      cena, mixer, mats,
-      olhoL: achar(cena, 'Eyeball', 'L_0182') ?? achar(cena, 'EyeballL'),
-      olhoR: achar(cena, 'Eyeball', 'R_0185') ?? achar(cena, 'EyeballR'),
-      queixo: achar(cena, 'Mouth_Lower') ?? achar(cena, 'Jaw'),
-      cabeca: achar(cena, 'Head_Head'),
-    };
+    const olhoL = achar(cena, 'Eyeball', 'L_0182') ?? achar(cena, 'EyeballL');
+    const olhoR = achar(cena, 'Eyeball', 'R_0185') ?? achar(cena, 'EyeballR');
+    const queixo = achar(cena, 'Mouth_Lower') ?? achar(cena, 'Jaw');
+    // pose de descanso: cada quadro parte dela (senão o empurrão acumula e o olho sai da cabeça)
+    const descanso = [olhoL, olhoR, queixo].filter(Boolean).map((o) => ({o: o!, p: o!.position.clone(), r: o!.rotation.clone(), s: o!.scale.clone()}));
+    return {cena, mixer, mats, olhoL, olhoR, queixo, descanso, cabeca: achar(cena, 'Head_Head')};
   }, [rig]);
 
   // ritmo do ranger: lento na fase olho (dá para ver o olho sair e voltar), rápido no motor
@@ -122,13 +121,14 @@ export const Rato3D: React.FC<{fase: string; dur: number; eventos: Record<string
   // pose: animação de respiração do modelo + ossos do olho e da mandíbula
   let pos: {L?: THREE.Vector3; R?: THREE.Vector3; a?: THREE.Vector3; b?: THREE.Vector3; aR?: THREE.Vector3; bR?: THREE.Vector3; cab?: THREE.Vector3} = {};
   if (m) {
+    for (const d of m.descanso) { d.o.position.copy(d.p); d.o.rotation.copy(d.r); d.o.scale.copy(d.s); }
     m.mixer.setTime(f / fps);
     for (const mat of m.mats) {
       if (mat.userData.olho) continue;
       mat.opacity = interpolate(xray, [0, 1], [1, 0.22]);
       mat.depthWrite = xray < 0.5;
     }
-    if (m.queixo) m.queixo.rotation.x += 0.22 * ciclo;            // mandíbula fecha/abre (range)
+    if (m.queixo) m.queixo.rotation.x = m.descanso.find((d) => d.o === m.queixo)!.r.x + 0.22 * ciclo;            // mandíbula fecha/abre (range)
     m.cena.updateMatrixWorld(true);
     const centro = m.cabeca ? m.cabeca.getWorldPosition(new THREE.Vector3()) : new THREE.Vector3(0, 0.07, 0.07);
     const empurra = (o?: THREE.Object3D) => {

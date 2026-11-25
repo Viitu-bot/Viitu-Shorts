@@ -323,7 +323,11 @@
    "som_original": false,
    "_parte": "FINAL",
    "_funcao": "humor: rato com caneca de chope em miniatura (a 'festa')",
-   "foley": "casa"
+   "foley": "casa",
+   "alvo": [
+    0.5,
+    0.3
+   ]
   },
   {
    "em": "é esse olho",
