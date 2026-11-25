@@ -2,9 +2,9 @@
  "atualizado": true,
  "decupagem": true,
  "partes": true,
- "tarja": false,
+ "tarja": true,
  "montagem": true,
- "revisar": false,
+ "revisar": true,
  "direitos": true,
  "som_medido": true,
  "auditoria": true
