@@ -350,5 +350,37 @@
    "an explosion",
    "a big drum hit"
   ]
+ },
+ "gen_pet_rat_bruxing_tiny_rodent_incisors_grinding_toge.mp3|1795569200816335572|small rodent teeth grinding": {
+  "verdict": "strong",
+  "z": 3.6,
+  "parece": [
+   "a metal scrape",
+   "scissors cutting"
+  ]
+ },
+ "gen_cat_purring_close.mp3|1795569136948296998|a cat purring": {
+  "verdict": "strong",
+  "z": 4.6,
+  "parece": [
+   "a rubber stretch",
+   "a cat meowing"
+  ]
+ },
+ "gen_soft_rising_whoosh_sweep_gentle_cinematic.mp3|1795569209406315147|deep cinematic whoosh": {
+  "verdict": "strong",
+  "z": 3.6,
+  "parece": [
+   "a deep cinematic whoosh",
+   "a punchy impact hit"
+  ]
+ },
+ "gen_small_rodent_teeth_chattering_and_grinding_fast_cl.mp3|1795569202687038231|small rodent teeth grinding": {
+  "verdict": "strong",
+  "z": 3.1,
+  "parece": [
+   "ice cubes in a glass",
+   "a rubber stretch"
+  ]
  }
 }

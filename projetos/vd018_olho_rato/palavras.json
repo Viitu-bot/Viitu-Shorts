@@ -1,0 +1,597 @@
+[
+ {
+  "palavra": "Parece",
+  "inicio": 0.0,
+  "fim": 0.4
+ },
+ {
+  "palavra": "falha",
+  "inicio": 0.49,
+  "fim": 0.73
+ },
+ {
+  "palavra": "na",
+  "inicio": 0.77,
+  "fim": 0.81
+ },
+ {
+  "palavra": "Matrix,",
+  "inicio": 0.89,
+  "fim": 1.69
+ },
+ {
+  "palavra": "mas",
+  "inicio": 1.77,
+  "fim": 1.93
+ },
+ {
+  "palavra": "esse",
+  "inicio": 2.02,
+  "fim": 2.14
+ },
+ {
+  "palavra": "rato",
+  "inicio": 2.22,
+  "fim": 2.54
+ },
+ {
+  "palavra": "tá",
+  "inicio": 2.62,
+  "fim": 2.78
+ },
+ {
+  "palavra": "é",
+  "inicio": 2.86,
+  "fim": 2.94
+ },
+ {
+  "palavra": "feliz.",
+  "inicio": 3.03,
+  "fim": 3.79
+ },
+ {
+  "palavra": "Você",
+  "inicio": 3.88,
+  "fim": 4.12
+ },
+ {
+  "palavra": "ia",
+  "inicio": 4.2,
+  "fim": 4.28
+ },
+ {
+  "palavra": "jurar",
+  "inicio": 4.36,
+  "fim": 4.68
+ },
+ {
+  "palavra": "que",
+  "inicio": 4.76,
+  "fim": 4.8
+ },
+ {
+  "palavra": "ele",
+  "inicio": 4.84,
+  "fim": 4.92
+ },
+ {
+  "palavra": "tava",
+  "inicio": 4.96,
+  "fim": 5.16
+ },
+ {
+  "palavra": "passando",
+  "inicio": 5.24,
+  "fim": 5.56
+ },
+ {
+  "palavra": "mal,",
+  "inicio": 5.64,
+  "fim": 5.933
+ },
+ {
+  "palavra": "né?",
+  "inicio": 5.987,
+  "fim": 6.12
+ },
+ {
+  "palavra": "Que",
+  "inicio": 6.21,
+  "fim": 6.29
+ },
+ {
+  "palavra": "nada.",
+  "inicio": 6.38,
+  "fim": 6.86
+ },
+ {
+  "palavra": "Quando",
+  "inicio": 6.95,
+  "fim": 7.11
+ },
+ {
+  "palavra": "tá",
+  "inicio": 7.19,
+  "fim": 7.35
+ },
+ {
+  "palavra": "de",
+  "inicio": 7.43,
+  "fim": 7.51
+ },
+ {
+  "palavra": "boa,",
+  "inicio": 7.6,
+  "fim": 7.84
+ },
+ {
+  "palavra": "o",
+  "inicio": 7.88,
+  "fim": 7.92
+ },
+ {
+  "palavra": "caboclo",
+  "inicio": 8.04,
+  "fim": 8.4
+ },
+ {
+  "palavra": "range",
+  "inicio": 8.48,
+  "fim": 8.8
+ },
+ {
+  "palavra": "os",
+  "inicio": 8.88,
+  "fim": 8.96
+ },
+ {
+  "palavra": "dentes",
+  "inicio": 9.0,
+  "fim": 9.36
+ },
+ {
+  "palavra": "sem",
+  "inicio": 9.44,
+  "fim": 9.68
+ },
+ {
+  "palavra": "parar.",
+  "inicio": 9.8,
+  "fim": 10.16
+ },
+ {
+  "palavra": "É",
+  "inicio": 10.25,
+  "fim": 10.29
+ },
+ {
+  "palavra": "o",
+  "inicio": 10.33,
+  "fim": 10.37
+ },
+ {
+  "palavra": "ronronar",
+  "inicio": 10.41,
+  "fim": 10.81
+ },
+ {
+  "palavra": "do",
+  "inicio": 10.89,
+  "fim": 10.97
+ },
+ {
+  "palavra": "gato,",
+  "inicio": 11.05,
+  "fim": 11.45
+ },
+ {
+  "palavra": "versão",
+  "inicio": 11.57,
+  "fim": 11.85
+ },
+ {
+  "palavra": "rato.",
+  "inicio": 11.89,
+  "fim": 12.33
+ },
+ {
+  "palavra": "O",
+  "inicio": 12.42,
+  "fim": 12.5
+ },
+ {
+  "palavra": "segredo",
+  "inicio": 12.58,
+  "fim": 13.14
+ },
+ {
+  "palavra": "é",
+  "inicio": 13.18,
+  "fim": 13.22
+ },
+ {
+  "palavra": "o",
+  "inicio": 13.26,
+  "fim": 13.3
+ },
+ {
+  "palavra": "músculo",
+  "inicio": 13.38,
+  "fim": 13.78
+ },
+ {
+  "palavra": "da",
+  "inicio": 13.82,
+  "fim": 13.86
+ },
+ {
+  "palavra": "mandíbula,",
+  "inicio": 13.94,
+  "fim": 14.58
+ },
+ {
+  "palavra": "que",
+  "inicio": 14.66,
+  "fim": 14.74
+ },
+ {
+  "palavra": "passa",
+  "inicio": 14.82,
+  "fim": 15.06
+ },
+ {
+  "palavra": "bem",
+  "inicio": 15.15,
+  "fim": 15.31
+ },
+ {
+  "palavra": "atrás",
+  "inicio": 15.4,
+  "fim": 15.6
+ },
+ {
+  "palavra": "do",
+  "inicio": 15.68,
+  "fim": 15.76
+ },
+ {
+  "palavra": "olho.",
+  "inicio": 15.84,
+  "fim": 16.08
+ },
+ {
+  "palavra": "Cada",
+  "inicio": 16.17,
+  "fim": 16.41
+ },
+ {
+  "palavra": "rangida",
+  "inicio": 16.5,
+  "fim": 16.9
+ },
+ {
+  "palavra": "empurra",
+  "inicio": 16.98,
+  "fim": 17.46
+ },
+ {
+  "palavra": "o",
+  "inicio": 17.5,
+  "fim": 17.54
+ },
+ {
+  "palavra": "olho",
+  "inicio": 17.58,
+  "fim": 17.7
+ },
+ {
+  "palavra": "pra",
+  "inicio": 17.78,
+  "fim": 17.86
+ },
+ {
+  "palavra": "fora",
+  "inicio": 17.95,
+  "fim": 18.19
+ },
+ {
+  "palavra": "e",
+  "inicio": 18.27,
+  "fim": 18.35
+ },
+ {
+  "palavra": "puxa",
+  "inicio": 18.44,
+  "fim": 18.68
+ },
+ {
+  "palavra": "de",
+  "inicio": 18.72,
+  "fim": 18.76
+ },
+ {
+  "palavra": "volta.",
+  "inicio": 18.84,
+  "fim": 19.32
+ },
+ {
+  "palavra": "É",
+  "inicio": 19.41,
+  "fim": 19.49
+ },
+ {
+  "palavra": "um",
+  "inicio": 19.53,
+  "fim": 19.57
+ },
+ {
+  "palavra": "motorzinho",
+  "inicio": 19.66,
+  "fim": 20.02
+ },
+ {
+  "palavra": "na",
+  "inicio": 20.1,
+  "fim": 20.18
+ },
+ {
+  "palavra": "boca,",
+  "inicio": 20.26,
+  "fim": 20.66
+ },
+ {
+  "palavra": "e",
+  "inicio": 20.7,
+  "fim": 20.74
+ },
+ {
+  "palavra": "o",
+  "inicio": 20.78,
+  "fim": 20.82
+ },
+ {
+  "palavra": "olho",
+  "inicio": 20.9,
+  "fim": 21.06
+ },
+ {
+  "palavra": "vai",
+  "inicio": 21.1,
+  "fim": 21.3
+ },
+ {
+  "palavra": "junto",
+  "inicio": 21.34,
+  "fim": 21.54
+ },
+ {
+  "palavra": "no",
+  "inicio": 21.62,
+  "fim": 21.66
+ },
+ {
+  "palavra": "embalo.",
+  "inicio": 21.7,
+  "fim": 22.34
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 22.43,
+  "fim": 22.59
+ },
+ {
+  "palavra": "tem",
+  "inicio": 22.67,
+  "fim": 22.75
+ },
+ {
+  "palavra": "um",
+  "inicio": 22.79,
+  "fim": 22.83
+ },
+ {
+  "palavra": "porém:",
+  "inicio": 22.92,
+  "fim": 23.6
+ },
+ {
+  "palavra": "faz",
+  "inicio": 23.68,
+  "fim": 23.92
+ },
+ {
+  "palavra": "cócegas",
+  "inicio": 24.0,
+  "fim": 24.48
+ },
+ {
+  "palavra": "nele",
+  "inicio": 24.56,
+  "fim": 24.88
+ },
+ {
+  "palavra": "e",
+  "inicio": 24.92,
+  "fim": 24.96
+ },
+ {
+  "palavra": "o",
+  "inicio": 25.0,
+  "fim": 25.04
+ },
+ {
+  "palavra": "maluco",
+  "inicio": 25.16,
+  "fim": 25.44
+ },
+ {
+  "palavra": "dá",
+  "inicio": 25.48,
+  "fim": 25.56
+ },
+ {
+  "palavra": "risada.",
+  "inicio": 25.6,
+  "fim": 26.24
+ },
+ {
+  "palavra": "Só",
+  "inicio": 26.33,
+  "fim": 26.41
+ },
+ {
+  "palavra": "que",
+  "inicio": 26.49,
+  "fim": 26.57
+ },
+ {
+  "palavra": "tão",
+  "inicio": 26.65,
+  "fim": 26.89
+ },
+ {
+  "palavra": "aguda",
+  "inicio": 26.98,
+  "fim": 27.34
+ },
+ {
+  "palavra": "que",
+  "inicio": 27.38,
+  "fim": 27.42
+ },
+ {
+  "palavra": "teu",
+  "inicio": 27.5,
+  "fim": 27.633
+ },
+ {
+  "palavra": "ouvido",
+  "inicio": 27.687,
+  "fim": 27.98
+ },
+ {
+  "palavra": "nem",
+  "inicio": 28.033,
+  "fim": 28.14
+ },
+ {
+  "palavra": "pega.",
+  "inicio": 28.22,
+  "fim": 28.62
+ },
+ {
+  "palavra": "E",
+  "inicio": 28.71,
+  "fim": 28.79
+ },
+ {
+  "palavra": "ainda",
+  "inicio": 28.87,
+  "fim": 29.03
+ },
+ {
+  "palavra": "volta",
+  "inicio": 29.11,
+  "fim": 29.35
+ },
+ {
+  "palavra": "correndo",
+  "inicio": 29.43,
+  "fim": 29.79
+ },
+ {
+  "palavra": "atrás",
+  "inicio": 29.83,
+  "fim": 30.07
+ },
+ {
+  "palavra": "da",
+  "inicio": 30.11,
+  "fim": 30.15
+ },
+ {
+  "palavra": "tua",
+  "inicio": 30.23,
+  "fim": 30.31
+ },
+ {
+  "palavra": "mão,",
+  "inicio": 30.39,
+  "fim": 30.59
+ },
+ {
+  "palavra": "pedindo",
+  "inicio": 30.63,
+  "fim": 30.95
+ },
+ {
+  "palavra": "mais.",
+  "inicio": 31.03,
+  "fim": 31.43
+ },
+ {
+  "palavra": "Então",
+  "inicio": 31.52,
+  "fim": 31.8
+ },
+ {
+  "palavra": "o",
+  "inicio": 31.84,
+  "fim": 32.0
+ },
+ {
+  "palavra": "máximo",
+  "inicio": 32.04,
+  "fim": 32.4
+ },
+ {
+  "palavra": "que",
+  "inicio": 32.48,
+  "fim": 32.56
+ },
+ {
+  "palavra": "você",
+  "inicio": 32.6,
+  "fim": 32.8
+ },
+ {
+  "palavra": "vê",
+  "inicio": 32.88,
+  "fim": 32.96
+ },
+ {
+  "palavra": "dessa",
+  "inicio": 33.0,
+  "fim": 33.2
+ },
+ {
+  "palavra": "festa",
+  "inicio": 33.29,
+  "fim": 33.61
+ },
+ {
+  "palavra": "é",
+  "inicio": 33.7,
+  "fim": 33.78
+ },
+ {
+  "palavra": "esse",
+  "inicio": 33.87,
+  "fim": 33.99
+ },
+ {
+  "palavra": "olho",
+  "inicio": 34.03,
+  "fim": 34.23
+ },
+ {
+  "palavra": "pulando,",
+  "inicio": 34.27,
+  "fim": 34.79
+ },
+ {
+  "palavra": "que",
+  "inicio": 34.88,
+  "fim": 35.28
+ }
+]

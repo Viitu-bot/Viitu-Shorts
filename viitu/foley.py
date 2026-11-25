@@ -150,7 +150,7 @@ CAMADAS = {
     "mar_costa": ("ocean waves crashing on rocky coast with wind", "sea waves breaking on rocks close"),
     "artilharia_longe": ("distant artillery battle rumble with cannon booms", "distant cannon boom echo"),
     "tropa_forte": ("soldiers outdoors crowd murmur with wind", "people talking nearby"),
-    "casa": ("quiet apartment room tone at night", "small pet rustling in soft bedding close"),
+    "casa": ("quiet apartment room tone at night", "quiet apartment room tone at night"),
     "casamata": ("concrete bunker interior room tone with echo", "metal cart wheels rolling on concrete"),
 }
 FOGO = r"fire|flame|burn|campfire|ember|blaze|bonfire|fireplace|wood ?stove"

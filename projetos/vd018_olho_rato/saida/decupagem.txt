@@ -1,0 +1,24 @@
+# Decupagem vd018_olho_rato — formato por_dentro — música curioso_documentario.mp3
+1. 0.0-3.9s [GANCHO] "Parece falha" — tt_valze_rats_70030365256592 @0.0s — contato visual + quebra de padrão: rato de frente na rede, olho saltando (o quadro mais estranho); zoom corta a legenda queimada de baixo — sons: ['gen_pet_rat_bruxing_tiny_rodent_incisors_grinding_toge.mp3 @0.6s']
+2. 3.9-6.2s [INÍCIO] "Você ia jurar" — tt_theratstooges_71791198075 @1.0s — rato de olho meio fechado ganhando carinho (parece passando mal) — sons: []
+3. 6.2-7.9s [INÍCIO] "Que nada" — tt_good_rats_725616751907601 @10.0s — mão fazendo carinho na cabeça, rato relaxado (de boa) — sons: []
+4. 7.9-10.2s [INÍCIO] "o caboclo range" — tt_theratstooges_76454762590 @0.0s — perto: boca e dentes do rato mexendo (ranger) — sons: ['gen_pet_rat_bruxing_tiny_rodent_incisors_grinding_toge.mp3 @0.3s']
+5. 10.2-11.6s [INÍCIO] "É o ronronar" — tt_maxiecoon_728396502259682 @0.5s — comparação: gato de olho fechado ganhando carinho (ronronar) — sons: ['gen_cat_purring_close.mp3 @0.6s']
+6. 11.6-12.4s [INÍCIO] "versão rato" — tt_spicerack_rats_7323775705 @5.0s — longe: a turma de ratos de boa na gaiola (o ronronar deles) — sons: []
+7. 12.4-16.2s [MEIO] "O segredo é" — 3D rato3d — 3D: rato inteiro → pele fica transparente, músculo da mandíbula acende e a câmera fecha atrás do olho — sons: ['soft whoosh', 'assets/sfx/gen_soft_rising_whoosh_sweep_gentle_cinematic.mp3', 'assets/sfx/gen_soft_rising_whoosh_sweep_gentle_cinematic.mp3']
+8. 16.2-19.4s [MEIO] "Cada rangida" — 3D rato3d — 3D perfil fechado: o dente range, o músculo incha e o olho sai e volta — sons: ['soft whoosh', 'assets/sfx/gen_pet_rat_bruxing_tiny_rodent_incisors_grinding_toge.mp3']
+9. 19.4-22.4s [MEIO] "É um motorzinho" — 3D rato3d — 3D de frente: ritmo acelera, os dois olhos vibram junto (motorzinho) — sons: ['soft whoosh', 'assets/sfx/gen_small_rodent_teeth_chattering_and_grinding_fast_cl.mp3']
+10. 22.4-26.3s [MEIO] "Mas tem um porém" — tt_the1anonlytruestar_729352 @21.6s — virada/prova: a mão do Dr. Panksepp fazendo cócegas no rato no laboratório (até 'dá risada') — sons: []
+11. 26.3-28.7s [MEIO] "Só que tão aguda" — tt_dailymail_734255647059004 @36.0s — espelho: orelha + frequência subindo (17–19 mil Hz) — o teu ouvido para aí; a risada do rato é ~50 mil — sons: []
+12. 28.7-31.5s [MEIO] "E ainda volta" — tt_theratstooges_71688814402 @6.8s — rato brincando com a mão no tapete e voltando atrás dela — sons: []
+13. 31.5-33.7s [FINAL] "Então o máximo" — tt_theratstooges_76547858442 @16.0s — humor: rato com caneca de chope em miniatura (a 'festa') — sons: []
+14. 33.7-35.3s [FINAL] "é esse olho" — tt_valze_rats_70030365256592 @0.0s — loop: volta ao quadro do gancho (olho saltando) — sons: []
+
+## OUVIDO (earshot)
+✅ cena 1: gen_pet_rat_bruxing_tiny_rodent_incisors_grinding_toge.mp3 — pedido "small rodent teeth grinding" → strong (z 3.6)
+✅ cena 4: gen_pet_rat_bruxing_tiny_rodent_incisors_grinding_toge.mp3 — pedido "small rodent teeth grinding" → strong (z 3.6)
+✅ cena 5: gen_cat_purring_close.mp3 — pedido "a cat purring" → strong (z 4.6)
+✅ cena 7: gen_soft_rising_whoosh_sweep_gentle_cinematic.mp3 — pedido "deep cinematic whoosh" → strong (z 3.6)
+✅ cena 7: gen_soft_rising_whoosh_sweep_gentle_cinematic.mp3 — pedido "deep cinematic whoosh" → strong (z 3.6)
+✅ cena 8: gen_pet_rat_bruxing_tiny_rodent_incisors_grinding_toge.mp3 — pedido "small rodent teeth grinding" → strong (z 3.6)
+✅ cena 9: gen_small_rodent_teeth_chattering_and_grinding_fast_cl.mp3 — pedido "small rodent teeth grinding" → strong (z 3.1)

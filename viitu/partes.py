@@ -95,7 +95,7 @@ def renderizar_partes(projeto: str, so: str | None = None) -> list[Path]:
         mp4 = dest / f"{n}_{nome}.mp4"
         print(f"→ parte {n} {nome}: {t0:.1f}–{t1:.1f}s (cenas {[k + 1 for k in ks]})", flush=True)
         r = subprocess.run(["npx", "remotion", "render", "src/index.ts", "Short", str(mp4), f"--frames={a}-{b}",
-                            "--scale=0.4", "--concurrency=4", "--log=error"], cwd=RAIZ / "remotion", capture_output=True, text=True)
+                            "--scale=0.4", "--concurrency=2", "--timeout=240000", "--log=error"], cwd=RAIZ / "remotion", capture_output=True, text=True)
         if r.returncode:
             sys.exit(f"❌ render da parte {nome} falhou:\n{r.stderr[-1500:]}")
         _prancha(mp4, t0, plano, mp4.with_suffix(".jpg"))

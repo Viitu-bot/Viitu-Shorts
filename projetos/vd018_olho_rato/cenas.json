@@ -22,47 +22,79 @@
  ],
  "musica": "curioso_documentario.mp3",
  "cta": false,
- "creditos_descricao": "Imagens (TikTok): @good_rats, @spicerack_rats, @theratstooges, @maxiecoon, @dailymail; laboratório do Dr. Jaak Panksepp (via @the1anonlytruestar / FreeScienceLectures). Modelo 3D 'Black Rat' por Nestaeric (Sketchfab, CC BY 4.0). Animação 3D: Viitu Shorts.",
+ "creditos_descricao": "Imagens (TikTok): @valze_rats, @theratstooges, @good_rats, @spicerack_rats, @maxiecoon, @dailymail; laboratório do Dr. Jaak Panksepp (via @the1anonlytruestar). Modelo 3D 'Black Rat' por Nestaeric (Sketchfab, CC BY 4.0). Animação 3D: Viitu Shorts.",
  "cenas": [
   {
    "em": "Parece falha",
-   "clipe": "tt_good_rats_7258753197790186798.mp4",
-   "inicio": 2.9,
+   "clipe": "tt_valze_rats_7003036525659294981.mp4",
+   "inicio": 0.0,
    "som_original": false,
    "_parte": "GANCHO",
-   "_funcao": "contato visual + quebra de padrão: rato de frente, olhos saltando (o quadro mais estranho)",
-   "_emocao": "estranheza (bugou?)",
-   "sujeito": "the eyes of a rat",
-   "marca_auto": {
-    "texto": "olho"
-   }
+   "_funcao": "contato visual + quebra de padrão: rato de frente na rede, olho saltando (o quadro mais estranho); zoom corta a legenda queimada de baixo",
+   "foley": "casa",
+   "acao_continua": "gancho = 1 sujeito só na frase inteira (BÍBLIA); o olho pula o tempo todo",
+   "texto_na_imagem": true,
+   "zoom": [
+    1.7,
+    1.75
+   ],
+   "alvo": [
+    0.5,
+    0.36
+   ],
+   "seguir": false,
+   "sfx_cena": [
+    {
+     "em": "Matrix",
+     "busca": "rodent teeth grinding chattering close",
+     "exigir": "teeth|grind|chatter|gnaw",
+     "desc": "small rodent teeth grinding",
+     "db": -8,
+     "dur": 1.5,
+     "no_clipe": 0.6,
+     "arquivo": "assets/sfx/gen_pet_rat_bruxing_tiny_rodent_incisors_grinding_toge.mp3"
+    }
+   ]
   },
   {
    "em": "Você ia jurar",
-   "clipe": "tt_spicerack_rats_7323775705387371822.mp4",
-   "inicio": 6.6,
+   "clipe": "tt_theratstooges_7179119807567105322.mp4",
+   "inicio": 1.0,
    "som_original": false,
    "_parte": "INÍCIO",
-   "_funcao": "rato preto e branco encarando a câmera, olho saltando (parece passando mal)",
-   "_emocao": "preocupação falsa"
+   "_funcao": "rato de olho meio fechado ganhando carinho (parece passando mal)",
+   "foley": "casa",
+   "baixa_res_ok": "576p, único close nítido de olho meio fechado; fora do gancho"
   },
   {
    "em": "Que nada",
    "clipe": "tt_good_rats_7256167519076011307.mp4",
-   "inicio": 7.0,
+   "inicio": 10.0,
    "som_original": false,
    "_parte": "INÍCIO",
-   "_funcao": "longe/médio: mão fazendo carinho na cabeça, rato relaxado (de boa)",
-   "_emocao": "alívio"
+   "_funcao": "mão fazendo carinho na cabeça, rato relaxado (de boa)",
+   "foley": "casa"
   },
   {
    "em": "o caboclo range",
    "clipe": "tt_theratstooges_7645476259094400286.mp4",
-   "inicio": 2.5,
+   "inicio": 0.0,
    "som_original": false,
    "_parte": "INÍCIO",
    "_funcao": "perto: boca e dentes do rato mexendo (ranger)",
-   "sujeito": "the mouth of a rat"
+   "foley": "casa",
+   "sfx_cena": [
+    {
+     "em": "range",
+     "busca": "rodent teeth grinding chattering close",
+     "exigir": "teeth|grind|chatter|gnaw",
+     "desc": "small rodent teeth grinding",
+     "db": -7,
+     "dur": 1.4,
+     "no_clipe": 0.3,
+     "arquivo": "assets/sfx/gen_pet_rat_bruxing_tiny_rodent_incisors_grinding_toge.mp3"
+    }
+   ]
   },
   {
    "em": "É o ronronar",
@@ -71,15 +103,29 @@
    "som_original": false,
    "_parte": "INÍCIO",
    "_funcao": "comparação: gato de olho fechado ganhando carinho (ronronar)",
-   "texto_na_imagem": true
+   "foley": "casa",
+   "texto_na_imagem": true,
+   "sfx_cena": [
+    {
+     "em": "ronronar",
+     "busca": "cat purring close",
+     "exigir": "purr",
+     "desc": "a cat purring",
+     "db": -13,
+     "dur": 1.5,
+     "no_clipe": 0.6,
+     "arquivo": "assets/sfx/gen_cat_purring_close.mp3"
+    }
+   ]
   },
   {
    "em": "versão rato",
-   "clipe": "tt_spicerack_rats_7693988980118785293.mp4",
-   "inicio": 4.5,
+   "clipe": "tt_spicerack_rats_7323775705387371822.mp4",
+   "inicio": 5.0,
    "som_original": false,
    "_parte": "INÍCIO",
-   "_funcao": "rato na rede ganhando coceira e rangendo (o ronronar dele)"
+   "_funcao": "longe: a turma de ratos de boa na gaiola (o ronronar deles)",
+   "foley": "casa"
   },
   {
    "clipe": "tt_valze_rats_7003036525659294981.mp4",
@@ -109,11 +155,40 @@
       "evento": "mandibula",
       "busca": "soft x-ray scan sweep",
       "exigir": "sweep|scan|swell",
+      "desc": "deep cinematic whoosh",
       "db": -12,
-      "dur": 1.0
+      "dur": 1.0,
+      "arquivo": "assets/sfx/gen_soft_rising_whoosh_sweep_gentle_cinematic.mp3"
+     },
+     {
+      "evento": "atras",
+      "busca": "soft click",
+      "exigir": "click",
+      "desc": "deep cinematic whoosh",
+      "db": -16,
+      "dur": 0.4,
+      "arquivo": "assets/sfx/gen_soft_rising_whoosh_sweep_gentle_cinematic.mp3"
+     }
+    ],
+    "cortes": [
+     {
+      "em": "que passa",
+      "zoom": 1.2,
+      "foco": [
+       0.5,
+       0.42
+      ]
      }
     ]
-   }
+   },
+   "zoom": [
+    1.7,
+    1.75
+   ],
+   "alvo": [
+    0.5,
+    0.36
+   ]
   },
   {
    "clipe": "tt_valze_rats_7003036525659294981.mp4",
@@ -133,14 +208,30 @@
     },
     "sfx": [
      {
+      "busca": "soft whoosh",
+      "exigir": "whoosh|woosh",
+      "db": -14,
+      "dur": 0.8
+     },
+     {
       "evento": "fora",
       "busca": "rodent teeth grinding chattering close",
       "exigir": "teeth|grind|chatter|gnaw",
       "db": -8,
-      "dur": 2.4
+      "dur": 2.4,
+      "arquivo": "assets/sfx/gen_pet_rat_bruxing_tiny_rodent_incisors_grinding_toge.mp3",
+      "desc": "small rodent teeth grinding"
      }
     ]
-   }
+   },
+   "zoom": [
+    1.7,
+    1.75
+   ],
+   "alvo": [
+    0.5,
+    0.36
+   ]
   },
   {
    "clipe": "tt_valze_rats_7003036525659294981.mp4",
@@ -160,33 +251,51 @@
     },
     "sfx": [
      {
+      "busca": "soft whoosh",
+      "exigir": "whoosh|woosh",
+      "db": -14,
+      "dur": 0.8
+     },
+     {
       "evento": "motor",
       "busca": "fast teeth chattering close",
       "exigir": "teeth|chatter|grind",
       "db": -8,
-      "dur": 2.6
+      "dur": 2.6,
+      "arquivo": "assets/sfx/gen_small_rodent_teeth_chattering_and_grinding_fast_cl.mp3",
+      "desc": "small rodent teeth grinding"
      }
     ]
-   }
+   },
+   "zoom": [
+    1.7,
+    1.75
+   ],
+   "alvo": [
+    0.5,
+    0.36
+   ]
   },
   {
    "em": "Mas tem um porém",
    "clipe": "tt_the1anonlytruestar_7293525808218475818.mp4",
-   "inicio": 22.0,
+   "inicio": 21.6,
    "som_original": false,
    "_parte": "MEIO",
-   "_funcao": "virada/prova: a mão do pesquisador fazendo cócegas no rato (laboratório do Panksepp)",
-   "baixa_res_ok": "filmagem de laboratório dos anos 2000 dentro de um TikTok; recorte só na janela do vídeo (y ~600–1000), sem a legenda de cima",
-   "texto_na_imagem": true
-  },
-  {
-   "em": "e o maluco",
-   "clipe": "tt_good_rats_6788291018149170437.mp4",
-   "inicio": 3.0,
-   "som_original": false,
-   "_parte": "MEIO",
-   "_funcao": "perto: rato branco de boca aberta, cara de quem tá rindo",
-   "baixa_res_ok": "480p, único close de 'boca aberta rindo'; fora do gancho"
+   "_funcao": "virada/prova: a mão do Dr. Panksepp fazendo cócegas no rato no laboratório (até 'dá risada')",
+   "foley": "casa",
+   "baixa_res_ok": "filmagem de laboratório dentro de um TikTok; recorte só na janela do vídeo, sem a legenda de cima",
+   "texto_na_imagem": true,
+   "acao_continua": "as cócegas são uma ação só do 'faz cócegas' ao 'dá risada' (fonte única do laboratório)",
+   "zoom": [
+    2.2,
+    2.25
+   ],
+   "alvo": [
+    0.5,
+    0.5
+   ],
+   "seguir": false
   },
   {
    "em": "Só que tão aguda",
@@ -194,40 +303,51 @@
    "inicio": 36.0,
    "som_original": false,
    "_parte": "MEIO",
-   "_funcao": "espelho: orelha + número de frequência subindo (17–19 mil Hz) — o teu ouvido para aí; a risada do rato é ~50 mil",
+   "_funcao": "espelho: orelha + frequência subindo (17–19 mil Hz) — o teu ouvido para aí; a risada do rato é ~50 mil",
+   "foley": "casa",
    "texto_na_imagem": true
   },
   {
    "em": "E ainda volta",
-   "clipe": "tt_spicerack_rats_7398204602392333598.mp4",
-   "inicio": 0.0,
+   "clipe": "tt_theratstooges_7168881440279530795.mp4",
+   "inicio": 6.8,
    "som_original": false,
    "_parte": "MEIO",
-   "_funcao": "longe/ação: rato brincando de luta com a mão e voltando atrás dela"
+   "_funcao": "rato brincando com a mão no tapete e voltando atrás dela",
+   "foley": "casa"
   },
   {
    "em": "Então o máximo",
    "clipe": "tt_theratstooges_7654785844259097886.mp4",
-   "inicio": 0.5,
+   "inicio": 16.0,
    "som_original": false,
    "_parte": "FINAL",
-   "_funcao": "humor: rato com caneca de chope em miniatura (a 'festa')"
+   "_funcao": "humor: rato com caneca de chope em miniatura (a 'festa')",
+   "foley": "casa"
   },
   {
    "em": "é esse olho",
-   "clipe": "tt_good_rats_7258753197790186798.mp4",
-   "inicio": 5.0,
+   "clipe": "tt_valze_rats_7003036525659294981.mp4",
+   "inicio": 0.0,
    "som_original": false,
    "_parte": "FINAL",
-   "_funcao": "loop: volta ao quadro do gancho (olhos saltando)",
+   "_funcao": "loop: volta ao quadro do gancho (olho saltando)",
+   "foley": "casa",
+   "texto_na_imagem": true,
+   "zoom": [
+    1.7,
+    1.75
+   ],
+   "alvo": [
+    0.5,
+    0.36
+   ],
+   "seguir": false,
    "loop": true
   }
  ],
  "_reservas": [
-  "tt_valze_rats_7003036525659294981.mp4 (rato na rede, olho saltando; legenda queimada embaixo)",
-  "tt_davetheratking_6883979003271695622.mp4 (2 ratos ganhando carinho, rangendo)",
-  "tt_theratstooges_7179119807567105322.mp4 (rato de olho fechado ganhando carinho, 576p)",
-  "tt_theratstooges_7168881440279530795.mp4 (zoomies com a mão, 1080p)",
-  "tt_spicerack_rats_7689155332731391245.mp4 (rato empurrando a mão na rede)"
+  "tt_good_rats_7258753197790186798.mp4 (close lindo do olho saltando, mas nitidez < 40 na trava R4)",
+  "tt_spicerack_rats_7693988980118785293.mp4 / 7398204602392333598 / 7689155332731391245, tt_good_rats_6788291018149170437, tt_davetheratking (nitidez < 40)"
  ]
 }

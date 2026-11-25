@@ -27,7 +27,7 @@ const carregar = () => {
 
 const useRato = () => {
   const [rig, setRig] = useState<Rig | null>(null);
-  const [h] = useState(() => delayRender('rato3d'));
+  const [h] = useState(() => delayRender('rato3d', {timeoutInMilliseconds: 150000}));
   const [falhou, setFalhou] = useState(false);
   useEffect(() => { carregar().then((r) => setRig(r)).catch((e) => { console.error(e); setFalhou(true); continueRender(h); }); }, []);
   return {rig, h, falhou};
