@@ -2,6 +2,7 @@
  "_versao": "v1: regras 24/11 (voz do dono, som B, 1 fonte por momento, corte ≤ 3 s, número só onde há número)",
  "formato": "motivo_oculto",
  "impacto_em": [
+  "tiro",
   "porém"
  ],
  "destaques": [
@@ -19,7 +20,7 @@
   "cima",
   "dois"
  ],
- "musica": "tensao_documentario.mp3",
+ "musica": "bit_shift_kevin_macleod.mp3",
  "cta": false,
  "bruto_livre": [
   "nara_training_coast_artillery_1918.mp4",

@@ -28,7 +28,7 @@ from viitu import mixagem as mx
 CADEIA_VOZ = {
     "tratada": "highpass=f=90,equalizer=f=250:t=q:w=1:g=-3,equalizer=f=3200:t=q:w=1.2:g=3,equalizer=f=9000:t=h:w=2000:g=2,"
                "deesser=i=0.4,acompressor=threshold=0.1:ratio=3:attack=5:release=80:makeup=1.6",
-    "suave": "highpass=f=80,equalizer=f=300:t=q:w=1:g=-1.5,equalizer=f=2500:t=q:w=1.5:g=1.5,"
+    "suave": "afftdn=nr=8:nf=-50,highpass=f=80,equalizer=f=300:t=q:w=1:g=-1.5,equalizer=f=2500:t=q:w=1.5:g=1.5,"
              "acompressor=threshold=0.125:ratio=2:attack=10:release=150:makeup=1.2",
     "natural": "highpass=f=70",
 }
@@ -41,6 +41,14 @@ LEITO, FX = mx.LEITO, mx.FX
 def _wav(x: np.ndarray, arq: Path) -> None:
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-",
                     "-c:a", "pcm_f32le", str(arq)], input=np.clip(x, -4, 4).astype(np.float32).tobytes(), check=True)
+
+
+def _filtrar(x: np.ndarray, af: str) -> np.ndarray:
+    """Passa um array por um filtro do ffmpeg (mesmo tamanho na volta)."""
+    r = subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-", "-af", af,
+                        "-f", "f32le", "-"], input=x.astype(np.float32).tobytes(), capture_output=True, check=True).stdout
+    y = np.frombuffer(r, np.float32)
+    return np.pad(y, (0, max(len(x) - len(y), 0)))[: len(x)]
 
 
 def _vacuo(plano: dict, n: int) -> np.ndarray:
@@ -145,6 +153,10 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
         return 0.0 if len(sel) == 0 else vref * 10 ** (alvo_db / 20) / rms(sel)
     mus = L["musica"][:n] * para(L["musica"][:n], MD["musica_fala"] + 6, fala_m)   # o sidechain tira ~6 dB → trilha em musica_fala (−24) sob a voz
     amb = L["foley"][:n] + L["ambiente"][:n]
+    # CHIADO (dono 25/11, vd017): mar/vento/multidão têm ruído até 20 kHz e, sob a voz, soam como chiado/chuva.
+    # A ambiência fica só no corpo grave/médio (passa-baixa 3,5 kHz); o brilho é da voz e da música.
+    if np.abs(amb).max() > 1e-5:
+        amb = _filtrar(amb, "lowpass=f=3500:p=2,lowpass=f=3500:p=2")
     amb = amb * para(amb, MD["ambiencia"] + 6, fala_m)                                         # ambiência presente, abaixo da música
     leito = (mus + (0 if limpo else amb)) * vac
     # efeitos curtos: cada evento normalizado pelo PICO de 0,1 s → −6 dB da voz (claro, sem passar por cima);
