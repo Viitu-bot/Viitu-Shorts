@@ -30,10 +30,13 @@ FORA = re.compile(r" x |vs\.?| fc|futebol|jogo|mega.?sena|lotof|quina|resultado|
 
 
 def _chave() -> str:
-    for l in (RAIZ / ".env").read_text().splitlines():
+    if os.environ.get("YOUTUBE_API_KEY", "").strip():
+        return os.environ["YOUTUBE_API_KEY"].strip()
+    env = RAIZ / ".env"
+    for l in (env.read_text().splitlines() if env.exists() else []):
         if l.startswith("YOUTUBE_API_KEY="):
             return l.split("=", 1)[1].strip()
-    return os.environ.get("YOUTUBE_API_KEY", "")
+    return ""
 
 
 def shorts_recentes(dias: int = 7, minimo: int = 300_000) -> list[dict]:

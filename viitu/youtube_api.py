@@ -23,8 +23,8 @@ cota_usada = 0
 
 
 def _chave() -> str | None:
-    if os.environ.get("YOUTUBE_API_KEY"):
-        return os.environ["YOUTUBE_API_KEY"]
+    if os.environ.get("YOUTUBE_API_KEY", "").strip():
+        return os.environ["YOUTUBE_API_KEY"].strip()
     env = RAIZ / ".env"
     if env.exists():
         for linha in env.read_text(encoding="utf-8").splitlines():

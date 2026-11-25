@@ -15,6 +15,9 @@ UA = {"User-Agent": "ViituBot/1.0 (educational research)"}
 
 
 def _env(nome: str) -> str:
+    import os
+    if os.environ.get(nome, "").strip():  # na nuvem as chaves vêm do ambiente (às vezes com espaço colado)
+        return os.environ[nome].strip()
     arq = RAIZ / ".env"
     if arq.exists():
         for l in arq.read_text().splitlines():
@@ -63,7 +66,7 @@ def pixabay():
 
 def pexels():
     r = requests.get("https://api.pexels.com/videos/search", timeout=20, params={"query": "plane", "per_page": 1},
-                     headers={"Authorization": "proxy-injected"})
+                     headers={"Authorization": _env("PEXELS_API_KEY") or "proxy-injected"})
     return r.status_code == 200, f"HTTP {r.status_code}" + (" (chave salva errada: precisa ser a chave pura, sem 'Bearer')" if r.status_code == 401 else "")
 
 

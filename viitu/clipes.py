@@ -46,8 +46,8 @@ def _commons_api(**params) -> dict:
 
 
 def _env(nome: str) -> str | None:
-    if os.environ.get(nome):
-        return os.environ[nome]
+    if os.environ.get(nome, "").strip():
+        return os.environ[nome].strip()
     env = RAIZ / ".env"
     if env.exists():
         for linha in env.read_text(encoding="utf-8").splitlines():

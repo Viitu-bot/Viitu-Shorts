@@ -45,8 +45,8 @@ Seja preciso nos tempos. Se não acontecer, devolva lista vazia."""
 
 
 def _chave() -> str:
-    if os.environ.get("GEMINI_API_KEY"):
-        return os.environ["GEMINI_API_KEY"]
+    if os.environ.get("GEMINI_API_KEY", "").strip():
+        return os.environ["GEMINI_API_KEY"].strip()
     for l in (RAIZ / ".env").read_text(encoding="utf-8").splitlines():
         if l.startswith("GEMINI_API_KEY="):
             return l.split("=", 1)[1].strip()
