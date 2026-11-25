@@ -1,12 +1,28 @@
 {
  "_versao": "v1: regras 24/11 (voz do dono, som B, 1 fonte por momento, corte ≤ 3 s, sem CTA, loop no gancho)",
  "formato": "por_dentro",
- "impacto_em": ["porém"],
- "destaques": ["Matrix", "feliz", "mal", "dentes", "ronronar", "músculo", "olho", "fora", "motorzinho", "porém", "cócegas", "risada", "ouvido", "mais"],
+ "impacto_em": [
+  "porém"
+ ],
+ "destaques": [
+  "Matrix",
+  "feliz",
+  "mal",
+  "dentes",
+  "ronronar",
+  "músculo",
+  "olho",
+  "fora",
+  "motorzinho",
+  "porém",
+  "cócegas",
+  "risada",
+  "ouvido",
+  "mais"
+ ],
  "musica": "curioso_documentario.mp3",
  "cta": false,
- "creditos_descricao": "Imagens (TikTok): @good_rats, @spicerack_rats, @theratstooges, @maxiecoon, @dailymail; laboratório do Dr. Jaak Panksepp (via @the1anonlytruestar / FreeScienceLectures). Animação 3D: Viitu Shorts.",
- "_pendente": "bloco 3D do MEIO (músculo da mandíbula atrás do olho) sai no /animacao: 'O segredo é o músculo' até 'no embalo', ~9 s em 3 vistas",
+ "creditos_descricao": "Imagens (TikTok): @good_rats, @spicerack_rats, @theratstooges, @maxiecoon, @dailymail; laboratório do Dr. Jaak Panksepp (via @the1anonlytruestar / FreeScienceLectures). Modelo 3D 'Black Rat' por Nestaeric (Sketchfab, CC BY 4.0). Animação 3D: Viitu Shorts.",
  "cenas": [
   {
    "em": "Parece falha",
@@ -17,7 +33,9 @@
    "_funcao": "contato visual + quebra de padrão: rato de frente, olhos saltando (o quadro mais estranho)",
    "_emocao": "estranheza (bugou?)",
    "sujeito": "the eyes of a rat",
-   "marca_auto": {"texto": "olho"}
+   "marca_auto": {
+    "texto": "olho"
+   }
   },
   {
    "em": "Você ia jurar",
@@ -62,6 +80,94 @@
    "som_original": false,
    "_parte": "INÍCIO",
    "_funcao": "rato na rede ganhando coceira e rangendo (o ronronar dele)"
+  },
+  {
+   "clipe": "tt_valze_rats_7003036525659294981.mp4",
+   "inicio": 0,
+   "som_original": false,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "foley": "casa",
+   "em": "O segredo é",
+   "_funcao": "3D: rato inteiro → pele fica transparente, músculo da mandíbula acende e a câmera fecha atrás do olho",
+   "animacao": {
+    "nome": "rato3d",
+    "fase": "musculo",
+    "eventos": {
+     "mandibula": "mandíbula",
+     "atras": "atrás"
+    },
+    "sfx": [
+     {
+      "busca": "soft whoosh",
+      "exigir": "whoosh|woosh",
+      "db": -14,
+      "dur": 0.8
+     },
+     {
+      "evento": "mandibula",
+      "busca": "soft x-ray scan sweep",
+      "exigir": "sweep|scan|swell",
+      "db": -12,
+      "dur": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "clipe": "tt_valze_rats_7003036525659294981.mp4",
+   "inicio": 0,
+   "som_original": false,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "foley": "casa",
+   "em": "Cada rangida",
+   "_funcao": "3D perfil fechado: o dente range, o músculo incha e o olho sai e volta",
+   "animacao": {
+    "nome": "rato3d",
+    "fase": "olho",
+    "eventos": {
+     "fora": "rangida"
+    },
+    "sfx": [
+     {
+      "evento": "fora",
+      "busca": "rodent teeth grinding chattering close",
+      "exigir": "teeth|grind|chatter|gnaw",
+      "db": -8,
+      "dur": 2.4
+     }
+    ]
+   }
+  },
+  {
+   "clipe": "tt_valze_rats_7003036525659294981.mp4",
+   "inicio": 0,
+   "som_original": false,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "foley": "casa",
+   "em": "É um motorzinho",
+   "_funcao": "3D de frente: ritmo acelera, os dois olhos vibram junto (motorzinho)",
+   "animacao": {
+    "nome": "rato3d",
+    "fase": "motor",
+    "eventos": {
+     "motor": "motorzinho"
+    },
+    "sfx": [
+     {
+      "evento": "motor",
+      "busca": "fast teeth chattering close",
+      "exigir": "teeth|chatter|grind",
+      "db": -8,
+      "dur": 2.6
+     }
+    ]
+   }
   },
   {
    "em": "Mas tem um porém",

@@ -11,11 +11,12 @@ import {Vertedouro3D} from './animacoes/Vertedouro3D';
 import {Estrada3D} from './animacoes/Estrada3D';
 import {BanheiroTrem3D} from './animacoes/BanheiroTrem3D';
 import {Canhao3D} from './animacoes/Canhao3D';
+import {Rato3D} from './animacoes/Rato3D';
 
 // Teste3D: confere quadros soltos de uma animação sem montar o Short inteiro
 // npx remotion still src/index.ts Teste3D x.png --frame=N --props='{"fase":"completo","dur":180,"eventos":{"tanque":60,"lanca":110}}'
-const Teste3D: React.FC<{nome?: string; fase: string; dur: number; eventos: Record<string, number>; debug?: boolean}> = (p) =>
-  p.nome === 'abrams3d' ? <Abrams3D {...p} /> : p.nome === 'bola3d' ? <Bola3D {...p} /> : p.nome === 'prensa3d' ? <Prensa3D {...p} /> : p.nome === 'gude3d' ? <Gude3D {...p} /> : p.nome === 'bulbo3d' ? <Bulbo3D {...p} /> : p.nome === 'vertedouro3d' ? <Vertedouro3D {...p} /> : p.nome === 'estrada3d' ? <Estrada3D {...p} /> : p.nome === 'banheiro3d' ? <BanheiroTrem3D {...p} /> : p.nome === 'canhao3d' ? <Canhao3D {...p} /> : <Reabastece3D {...p} />;
+const Teste3D: React.FC<{nome?: string; fase: string; dur: number; eventos: Record<string, number>; debug?: boolean; dcam?: [number, number, number]; dalvo?: [number, number, number]}> = (p) =>
+  p.nome === 'abrams3d' ? <Abrams3D {...p} /> : p.nome === 'bola3d' ? <Bola3D {...p} /> : p.nome === 'prensa3d' ? <Prensa3D {...p} /> : p.nome === 'gude3d' ? <Gude3D {...p} /> : p.nome === 'bulbo3d' ? <Bulbo3D {...p} /> : p.nome === 'vertedouro3d' ? <Vertedouro3D {...p} /> : p.nome === 'estrada3d' ? <Estrada3D {...p} /> : p.nome === 'banheiro3d' ? <BanheiroTrem3D {...p} /> : p.nome === 'canhao3d' ? <Canhao3D {...p} /> : p.nome === 'rato3d' ? <Rato3D {...p} /> : <Reabastece3D {...p} />;
 
 export const RemotionRoot: React.FC = () => (
   <>
