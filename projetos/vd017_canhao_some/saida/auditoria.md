@@ -2,7 +2,7 @@
 
 ## Medições
 - ✅ Loudness -14.3 LUFS (alvo −14)
-- ℹ️ Música 15 dB abaixo da voz sob a fala (definido pela especificação, não por esta medição)
+- ℹ️ Música 16 dB abaixo da voz sob a fala (definido pela especificação, não por esta medição)
 - ⚠️ Sons de função em cima de palavra: ['cena_sfx_0_0.mp3', 'cena_sfx_226_0.mp3', 'cena_sfx_581_0.mp3']
 - ⚠️ Quadros muito escuros: 4 (em 27.5s, 28.0s, 29.0s, 29.5s)
 - ✅ Movimento nos 2 primeiros segundos: 68.9 (gancho precisa de ação)

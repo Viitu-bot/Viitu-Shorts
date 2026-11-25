@@ -1,4 +1,4 @@
-# Decupagem vd017_canhao_some — formato motivo_oculto — música tensao_documentario.mp3
+# Decupagem vd017_canhao_some — formato motivo_oculto — música bit_shift_kevin_macleod.mp3
 1. 0.0-1.3s [GANCHO] "Esse canhão" — tt_alexboverehere_7303382541 @51.76s — COR, perto: o canhão de verdade no forte, de pé (gancho) — sons: ['4339.mp3 @51.9s']
 2. 1.3-3.7s [GANCHO] "e sumia" — tt_interestingengineering_72 @3.5s — o canhão afundando atrás do muro (filme de época tocado ao contrário) — sons: []
 3. 3.7-5.9s [INÍCIO] "Era esconde-esconde" — tt_alexboverehere_7303382541 @54.3s — COR: gente grande escalando o muro verde do canhão (esconde-esconde) — sons: []

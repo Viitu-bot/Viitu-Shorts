@@ -185,7 +185,14 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
     din = L["ding"][:n]
     fx += L["marcas"][:n] * pico_para(L["marcas"][:n], MD["pop"])
     din = din * pico_para(din, 0)
-    fx += L["virada"][:n] * pico_para(L["virada"][:n], MD["boom"])             # boom medido: no nível da voz
+    # cada impacto nivelado SOZINHO (dono 25/11: "momento de impacto sem impacto"): com 2+ viradas, o boom mais alto
+    # puxava o ganho e os outros ficavam baixos
+    vir = L["virada"][:n].copy()
+    cortes = sorted(int(i * spf) for i in plano.get("impactos", []))
+    lim = [0] + [(a + b) // 2 for a, b in zip(cortes, cortes[1:])] + [n]
+    for a, b in zip(lim, lim[1:]):
+        vir[a:b] *= pico_para(vir[a:b], MD["boom"])
+    fx += vir                                                                     # boom medido: no nível da voz
     st = pasta / "saida" / "stems"
     st.mkdir(parents=True, exist_ok=True)
     for nome, x in (("voz", voz), ("leito", leito), ("efeitos", fx)):
