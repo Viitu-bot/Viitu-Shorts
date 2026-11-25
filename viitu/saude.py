@@ -15,6 +15,9 @@ UA = {"User-Agent": "ViituBot/1.0 (educational research)"}
 
 
 def _env(nome: str) -> str:
+    import os
+    if os.environ.get(nome):        # variáveis do ambiente da nuvem valem primeiro (iguais às outras partes do código)
+        return os.environ[nome]
     arq = RAIZ / ".env"
     if arq.exists():
         for l in arq.read_text().splitlines():
