@@ -125,7 +125,8 @@
    "som_original": false,
    "_parte": "INÍCIO",
    "_funcao": "longe: a turma de ratos de boa na gaiola (o ronronar deles)",
-   "foley": "casa"
+   "foley": "casa",
+   "sujeito": "two pet rats in a cage"
   },
   {
    "clipe": "tt_valze_rats_7003036525659294981.mp4",
@@ -288,14 +289,15 @@
    "texto_na_imagem": true,
    "acao_continua": "as cócegas são uma ação só do 'faz cócegas' ao 'dá risada' (fonte única do laboratório)",
    "zoom": [
-    2.2,
-    2.25
+    3.35,
+    3.4
    ],
    "alvo": [
     0.5,
     0.5
    ],
-   "seguir": false
+   "seguir": false,
+   "sujeito": "a hand tickling a white rat"
   },
   {
    "em": "Só que tão aguda",
@@ -305,7 +307,8 @@
    "_parte": "MEIO",
    "_funcao": "espelho: orelha + frequência subindo (17–19 mil Hz) — o teu ouvido para aí; a risada do rato é ~50 mil",
    "foley": "casa",
-   "texto_na_imagem": true
+   "texto_na_imagem": true,
+   "sujeito": "an ear illustration with a number"
   },
   {
    "em": "E ainda volta",
