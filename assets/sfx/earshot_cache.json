@@ -350,5 +350,53 @@
    "an explosion",
    "a big drum hit"
   ]
+ },
+ "4339.mp3|1795641405825985518|a large cannon firing boom": {
+  "verdict": "strong",
+  "z": 5.2,
+  "parece": [
+   "an explosion",
+   "a gunshot"
+  ]
+ },
+ "gen_water_jet_splashing_down_into_a_pool.mp3|1795602587512777004|water splashing": {
+  "verdict": "plausible",
+  "z": 2.8,
+  "parece": [
+   "an object plunging into water",
+   "a squishy wet squelch"
+  ]
+ },
+ "1779.mp3|1795641404781985456|heavy metal gears clanking machinery": {
+  "verdict": "strong",
+  "z": 4.0,
+  "parece": [
+   "a ratchet clicking",
+   "an old typewriter"
+  ]
+ },
+ "gen_heavy_hydraulic_press_closing_deep_metal_clunk.mp3|1795602587508777004|heavy hydraulic press closing deep metal clunk": {
+  "verdict": "strong",
+  "z": 3.9,
+  "parece": [
+   "a door slam",
+   "a latch clicking shut"
+  ]
+ },
+ "6683.mp3|1795641409573985741|a heavy metal clank": {
+  "verdict": "strong",
+  "z": 4.0,
+  "parece": [
+   "a metallic clang",
+   "a metal scrape"
+  ]
+ },
+ "4814.mp3|1795641407417985612|an old propeller airplane flying by": {
+  "verdict": "strong",
+  "z": 4.8,
+  "parece": [
+   "an airplane flying overhead",
+   "a helicopter flying overhead"
+  ]
  }
 }

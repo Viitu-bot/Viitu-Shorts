@@ -225,7 +225,7 @@
      "em": "recarregava",
      "arquivo": "assets/sonniss/cache/6683.mp3",
      "desc": "a heavy metal clank",
-     "db": -8,
+     "db": -13,
      "dur": 1.0,
      "no_clipe": 957.0
     }
@@ -274,7 +274,7 @@
    "velocidade": 0.7
   },
   {
-   "em": "Tenta acertar",
+   "em": "acertar um alvo",
    "clipe": "nara_training_coast_artillery_1918.mp4",
    "inicio": 1000.6,
    "som_original": false,
@@ -357,7 +357,7 @@
    "_funcao": "COR: o fosso do canhão de 12 polegadas — o buraco onde ele se escondia"
   },
   {
-   "em": "Hoje sobraram",
+   "em": "sobraram só",
    "clipe": "nara_training_coast_artillery_1918.mp4",
    "inicio": 1120.0,
    "som_original": false,
