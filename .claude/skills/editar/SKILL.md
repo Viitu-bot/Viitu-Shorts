@@ -11,6 +11,11 @@ description: Edita o Short do Viitu do roteiro aprovado até o mp4 final (voz, c
 Valores fixos (volumes, ritmo, cor): `edicao/especificacao.json` — nunca número solto no código.
 Quando usar cada efeito: `edicao/logica_editor.md`. Técnicas: `edicao/manual_edicao.md`. Sons: `edicao/biblioteca_sons.md`.
 
+## REGRA DO DONO 26/11 — render é o ÚLTIMO passo
+Voz só com o roteiro final aprovado. Antes do `npm run render`: montagem sem ❌ (inclui R12 cor e R13 tarja nos clipes),
+decupagem + ouvido, partes conferidas, mixagem sem voz coberta. A entrega pós-render só CONFIRMA; se ela achar algo que a
+montagem podia ter achado, a trava da montagem está faltando — criar a trava.
+
 ## 0. Antes de montar
 `edicao/reclamacoes.md` + `python3 -m viitu.montagem <p>` (o editor também roda e PARA se houver ❌; `--forcar` só com
 aval do dono). Não renderizar planta reprovada.

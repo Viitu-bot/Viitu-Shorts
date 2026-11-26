@@ -8,6 +8,7 @@ description: Escreve o roteiro do Viitu Shorts (protocolo HISA) a partir do tema
 - **Gancho nos primeiros 2 s** (≤ 6 palavras até a lacuna abrir) e retenção no vídeo todo: cada frase responde um pedaço
   e abre o próximo (micro-gancho), payoff no terço final (`edicao/retencao_storyboard.md`).
 - **Loop narrativo:** a última frase volta para o gancho com sentido (não precisa ser a mesma palavra). Sem ponto final.
+- **NÃO gerar voz aqui** (dono 26/11): a voz só sai depois do "aprovado" do roteiro final, no /editar.
 - **PRIMEIRO 3 GANCHOS (dono 26/11):** antes do roteiro inteiro, mandar 3 variações do gancho (texto + quadro 0 +
   gatilho de `ganchos_gatilhos.md`) e esperar o dono escolher. Só depois escrever o resto.
 - Junto do roteiro, entregar o **storyboard** (tabela do `retencao_storyboard.md` §3) para o dono aprovar antes do /clipes.

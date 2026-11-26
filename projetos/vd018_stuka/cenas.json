@@ -23,7 +23,7 @@
  "musica": "bit_shift_kevin_macleod.mp3",
  "cta": false,
  "bruto_livre": [
-  "arq_stuka_cor.mp4"
+  "arq_stuka_cor_sem_tarja.mp4"
  ],
  "creditos_descricao": "Modelo 3D: \"Junkers Ju 87\" por helijah (Sketchfab, CC BY 4.0). Imagens: filme de época colorizado \"Junkers Ju 87 Stuka HD Color\" (Internet Archive). Animação: Viitu Shorts.",
  "cenas": [
@@ -87,7 +87,7 @@
   },
   {
    "em": "Mergulhava",
-   "clipe": "arq_stuka_cor.mp4",
+   "clipe": "arq_stuka_cor_sem_tarja.mp4",
    "inicio": 54.0,
    "som_original": false,
    "revisao": "manual",
@@ -250,7 +250,7 @@
   },
   {
    "em": "tipo estilingue",
-   "clipe": "arq_stuka_cor.mp4",
+   "clipe": "arq_stuka_cor_sem_tarja.mp4",
    "inicio": 42.5,
    "som_original": false,
    "revisao": "manual",
@@ -305,7 +305,7 @@
   },
   {
    "em": "o piloto",
-   "clipe": "arq_stuka_cor.mp4",
+   "clipe": "arq_stuka_cor_sem_tarja.mp4",
    "inicio": 38.6,
    "som_original": false,
    "revisao": "manual",

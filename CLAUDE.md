@@ -60,6 +60,10 @@ escala a cada 1,5–2 s; imagem indireta que antecipa a frase; tensão no meio; 
 4. `edicao/BIBLIA.md` = regras do dono; só muda com autorização dele no chat. Sem achismo: número novo só com base em
    `edicao/fontes_das_regras.md`. Começar toda etapa por `edicao/reclamacoes.md`.
 
+## Ordem que não gasta crédito (dono 26/11, BÍBLIA §0d)
+Voz só depois do roteiro FINAL aprovado · render completo é o ÚLTIMO passo: cor, tarja, nitidez, decupagem, partes e som
+conferidos ANTES. Defeito achado depois do render = erro de processo.
+
 ## Fluxo (cada etapa é uma skill)
 `/tema` → `/roteiro` → `/clipes` → `/animacao` → `/editar` (decupagem + ouvido → partes conferidas → render →
 `viitu.entrega` LIBERADA) → `/publicar` + **kit obrigatório** `projetos/<p>/kit_publicacao.txt` mostrado no chat + **capa** `projetos/<p>/capa.jpg` (`viitu.capa`)

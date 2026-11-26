@@ -50,6 +50,13 @@ torcedor entregou o invasor (24.870). O que eles têm em comum é a DINÂMICA do
   tensão, surpresa, riso ou indignação).
 - **Assinatura fixa em qualquer assunto:** mesma voz, mesmo ritmo acelerado, mesma abertura e trilha reconhecíveis.
 
+## 0d. ATUALIZAÇÃO DO DONO — 26/11/2026, 3ª (autorizada no chat): ORDEM QUE NÃO GASTA CRÉDITO
+- **Voz (ElevenLabs) só depois que o dono aprovar o roteiro FINAL** (ganchos → roteiro → storyboard → "aprovado"). Nada de
+  gerar voz para mostrar roteiro: no vd018 a troca "caboclo → cara" pagou a voz duas vezes.
+- **Render completo é o ÚLTIMO processo.** Tudo é conferido antes: cor (R12), faixa preta/tarja (R13), nitidez, recorte,
+  decupagem + ouvido, partes em baixa resolução, som medido no plano. Achar defeito DEPOIS do render = erro de processo.
+- Retrabalho caro (voz, render, geração de som) só com a etapa anterior aprovada.
+
 ## 1. Roteiro — em partes, sempre nesta ordem (dono: "eu montava parte por parte")
 | Parte | O que faz | Regra |
 |---|---|---|

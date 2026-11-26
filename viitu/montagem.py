@@ -19,6 +19,7 @@ palavras.json (tempos reais da voz) e os arquivos dos clipes. Com qualquer ❌ o
   R9 RITMO      cena real > 3 s (sem "acao_continua") e vista 3D > 3,5 s barram: corte a cada 2–3 s (vd004).
   R10 PARECIDAS duas cenas seguidas com quadro parecido (forma+cor ≥ 0,85) barram — intercalar perto/longe (dono 24/11).
   R11 VOZ LENTA < 3,0 palavras/s barra (dono 24/11, mediana 3,07 nos vídeos dele).
+  R13 TARJA      clipe com faixa preta embutida (letterbox/pillarbox) no trecho usado barra ANTES do render — dono 26/11.
   R12 PRETO E BRANCO cena real sem cor (saturação média < 18 em 3 quadros) barra — dono 24/11 e 26/11 ("vou ficar puto").
   R7 CENA LONGA  cena real ≥ 4 s sem "manter" vira o mesmo plano parado na tela (o editor divide, mas repete o clipe).
 
@@ -347,6 +348,22 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
         if sats and np.mean(sats) < SAT_MIN:
             erros.append(f"R12 PRETO E BRANCO: cena {k + 1} ({c['clipe']}) sem cor (saturação {np.mean(sats):.0f} < {SAT_MIN}); "
                          "usar versão colorizada ou outra fonte colorida.")
+    # R13 TARJA NO CLIPE (dono 26/11: "tudo deveria ser analisado antes de renderizar") — faixa preta embutida no arquivo
+    for k, c in enumerate(cenas):
+        if eh_3d[k] or eh_foto[k]:
+            continue
+        arq = pasta / "clipes" / c["clipe"]
+        if not arq.exists():
+            continue
+        r = subprocess.run(["ffmpeg", "-nostdin", "-ss", f"{float(c.get('inicio', 0)):.2f}", "-t", "1.2", "-i", str(arq),
+                            "-vf", "cropdetect=24:2:0", "-f", "null", "-"], capture_output=True, text=True).stderr
+        cortes = [tuple(map(int, m.split(":"))) for m in __import__("re").findall(r"crop=(\d+:\d+:\d+:\d+)", r)]
+        if cortes:
+            w0, h0 = _dimensoes(arq)
+            cw, ch = max(x[0] for x in cortes), max(x[1] for x in cortes)
+            if ch < h0 * 0.94 or cw < w0 * 0.94:
+                erros.append(f"R13 TARJA: cena {k + 1} ({c['clipe']}) tem faixa preta embutida ({w0}x{h0} → útil {cw}x{ch}); "
+                             "recortar o arquivo ANTES de montar.")
     # R11 VOZ LENTA (dono 24/11): ritmo mínimo medido nos 12 vídeos editados pelo dono
     try:
         pal = json.loads((pasta / "palavras.json").read_text(encoding="utf-8"))
