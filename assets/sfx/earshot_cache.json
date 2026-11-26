@@ -398,5 +398,109 @@
    "an airplane flying overhead",
    "a helicopter flying overhead"
   ]
+ },
+ "tensao.mp3|1795602587516777004|a low tension hit": {
+  "verdict": "plausible",
+  "z": 2.9,
+  "parece": [
+   "a sub bass drop",
+   "a deep sub bass"
+  ]
+ },
+ "woosh2.mp3|1795602587516777004|a soft whoosh": {
+  "verdict": "no match",
+  "z": -0.9,
+  "parece": [
+   "crisp hi-hats",
+   "a snare roll"
+  ]
+ },
+ "woosh.mp3|1795602587516777004|a soft whoosh": {
+  "verdict": "no match",
+  "z": 0.3,
+  "parece": [
+   "a punchy impact hit",
+   "a snare hit"
+  ]
+ },
+ "stuka_sirene_mergulho.mp3|1795689797251328281|a screaming air raid siren wail rising in pitch": {
+  "verdict": "strong",
+  "z": 5.9,
+  "parece": [
+   "a police siren",
+   "a car horn honking"
+  ]
+ },
+ "woosh3.mp3|1795602587516777004|a soft whoosh": {
+  "verdict": "no match",
+  "z": 0.0,
+  "parece": [
+   "a rubber stretch",
+   "an error buzz"
+  ]
+ },
+ "trava_metal_solta.mp3|1795689801478831856|a heavy metal clunk": {
+  "verdict": "strong",
+  "z": 3.2,
+  "parece": [
+   "a plastic object falling on a table",
+   "an old typewriter"
+  ]
+ },
+ "braco_metal.mp3|1795602587496777003|a heavy metal clank": {
+  "verdict": "strong",
+  "z": 4.0,
+  "parece": [
+   "a metal scrape",
+   "a triangle hit"
+  ]
+ },
+ "hit_enfase.mp3|1795602587512777004|a short emphasis hit": {
+  "verdict": "no match",
+  "z": 0.0,
+  "parece": [
+   "a punchy kick drum pattern",
+   "a kick drum"
+  ]
+ },
+ "impact_fs-222517-dramatic-hit.ogg|1795602587500777003|a dramatic impact hit": {
+  "verdict": "strong",
+  "z": 3.7,
+  "parece": [
+   "a cinematic hit with a long tail",
+   "a deep cinematic boom"
+  ]
+ },
+ "whoosh_fs-127197-fast-simple-chop-5-aif.ogg|1795602587504777003|a fast whoosh": {
+  "verdict": "strong",
+  "z": 4.5,
+  "parece": [
+   "a fast whoosh",
+   "a stick swung fast through the air"
+  ]
+ },
+ "whoosh_fs830856.ogg|1795602587504777003|a soft air whoosh": {
+  "verdict": "strong",
+  "z": 3.6,
+  "parece": [
+   "a soft air whoosh",
+   "a fast whoosh"
+  ]
+ },
+ "transition_fs-683096-woosh.ogg|1795602587504777003|a fast whoosh": {
+  "verdict": "strong",
+  "z": 3.4,
+  "parece": [
+   "a fast whoosh",
+   "a deep cinematic whoosh"
+  ]
+ },
+ "impact_fs-222517-dramatic-hit.ogg|1795602587500777003|a cinematic hit with a long tail": {
+  "verdict": "strong",
+  "z": 4.2,
+  "parece": [
+   "a cinematic hit with a long tail",
+   "a deep cinematic boom"
+  ]
  }
 }

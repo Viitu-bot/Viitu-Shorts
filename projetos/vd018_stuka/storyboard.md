@@ -16,7 +16,7 @@ helijah, CC BY — crédito na descrição; sem suástica na cauda), reais color
 | 11:70–13:04 | "Mas no puxão pra subir," | o Stuka puxando o bico pra cima com tudo, câmera tremendo | quebra de padrão / virada | aberto | 3D (tremida) | no tranco | vácuo → boom ("puxão") |
 | 13:04–14:25 | "o piloto podia apagar." | piloto real em força G: olhos virando, cabeça caindo | tensão/reação humana | fechado | real colorido (só o piloto, sem tela dividida) | no olho fechando | grave abafado |
 | 14:25–16:03 | "Então o avião subia sozinho," | de dentro da cabine: o manche se mexendo sozinho, piloto desmaiado, céu aparecendo | anomalia (ninguém pilotando) | aberto | 3D | no céu enchendo a tela | whoosh |
-| 16:03–17:78 | "e o caboclo nem sabia que" | o piloto abre o olho → corta pro mesmo close da hélice + bomba do quadro 0 | loop visual | fechado | 3D → quadro 0 | emenda no gancho | sem whoosh na emenda |
+| 16:03–17:78 | "e o cara nem sabia que" | o piloto abre o olho → corta pro mesmo close da hélice + bomba do quadro 0 | loop visual | fechado | 3D → quadro 0 | emenda no gancho | sem whoosh na emenda |
 
 ## Ligações (cada imagem antecipa a próxima frase)
 hélice + bomba perto (pergunta) → avião despencando (o porquê do perigo) → mergulho real (prova do ângulo) → sirene (o

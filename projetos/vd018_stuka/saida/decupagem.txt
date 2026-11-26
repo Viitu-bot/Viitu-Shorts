@@ -1,0 +1,37 @@
+# Decupagem vd018_stuka — formato invencao — música bit_shift_kevin_macleod.mp3
+1. 0.0-1.3s [GANCHO] "Esse avião" — 3D stuka3d — GANCHO 3D (dono 26/11): colado na hélice girando, a bomba balançando a centímetros das pás, o chão chegando — sons: ['assets/sfx/tensao.mp3', 'assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg']
+2. 1.3-2.8s [GANCHO] "matava" — 3D stuka3d — o Stuka inteiro despencando de bico, câmera girando — sons: ['assets/sfx/cc0/whoosh_fs830856.ogg', 'assets/sfx/stuka_sirene_mergulho.mp3']
+3. 2.8-4.0s [INÍCIO] "Mergulhava" — arq_stuka_cor.mp4 @36.6s — Stuka real (colorizado) mergulhando contra o céu — sons: ['stuka_sirene_mergulho.mp3 @36.7s']
+4. 4.0-5.0s [INÍCIO] "sirene" — 3D stuka3d — close da sirene na perna da roda girando cada vez mais rápido — sons: ['assets/sfx/cc0/transition_fs-683096-woosh.ogg', 'assets/sfx/stuka_sirene_mergulho.mp3']
+5. 5.0-7.4s [MEIO] "Soltou" — 3D stuka3d — o ERRO: bomba solta reto em câmera lenta rumo à hélice; congela a 1 cm da pá — sons: ['assets/sfx/cc0/whoosh_fs830856.ogg', 'assets/sfx/trava_metal_solta.mp3', 'assets/sfx/braco_metal.mp3']
+6. 7.4-9.3s [MEIO] "O segredo" — 3D stuka3d — close do garfo em U embaixo da barriga + seta — sons: ['assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg', 'assets/sfx/cc0/impact_fs-222517-dramatic-hit.ogg']
+7. 9.3-11.0s [MEIO] "ele arremessa" — 3D stuka3d — PAYOFF: o garfo balança e a bomba passa por fora da hélice — sons: ['assets/sfx/cc0/transition_fs-683096-woosh.ogg', 'assets/sfx/trava_metal_solta.mp3']
+8. 11.0-11.8s [MEIO] "tipo estilingue" — arq_stuka_cor.mp4 @42.5s — prova real: a bomba saindo de um Stuka de verdade — sons: ['whoosh_fs830856.ogg @42.7s']
+9. 11.8-13.2s [FINAL] "Mas no puxão" — 3D stuka3d — VIRADA: o Stuka puxando o bico pra cima com tudo, tela tremendo — sons: ['assets/sfx/cc0/whoosh_fs830856.ogg', 'assets/sfx/cc0/impact_fs-222517-dramatic-hit.ogg']
+10. 13.2-14.4s [FINAL] "o piloto" — tt_realshawnwalsh_7543388667 @3.9s — piloto real em força G: olho virando, cabeça caindo (só o piloto) — sons: ['tensao.mp3 @4.3s']
+11. 14.4-16.2s [FINAL] "Então" — 3D stuka3d — o avião subindo sozinho, céu enchendo a tela — sons: ['assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg', 'assets/sfx/cc0/transition_fs-683096-woosh.ogg']
+12. 16.2-17.8s [LOOP] "e o cara" — 3D stuka3d — o mesmo quadro do gancho (loop) — sons: ['assets/sfx/tensao.mp3', 'assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg']
+
+## OUVIDO (earshot)
+⚠️ cena 1: tensao.mp3 — pedido "a low tension hit" → plausible (z 2.9); soa como: a sub bass drop, a deep sub bass
+✅ cena 1: whoosh_fs-127197-fast-simple-chop-5-aif.ogg — pedido "a fast whoosh" → strong (z 4.5)
+✅ cena 2: whoosh_fs830856.ogg — pedido "a soft air whoosh" → strong (z 3.6)
+✅ cena 2: stuka_sirene_mergulho.mp3 — pedido "a screaming air raid siren wail rising in pitch" → strong (z 5.9)
+✅ cena 3: stuka_sirene_mergulho.mp3 — pedido "a screaming air raid siren wail rising in pitch" → strong (z 5.9)
+✅ cena 4: transition_fs-683096-woosh.ogg — pedido "a fast whoosh" → strong (z 3.4)
+✅ cena 4: stuka_sirene_mergulho.mp3 — pedido "a screaming air raid siren wail rising in pitch" → strong (z 5.9)
+✅ cena 5: whoosh_fs830856.ogg — pedido "a soft air whoosh" → strong (z 3.6)
+✅ cena 5: trava_metal_solta.mp3 — pedido "a heavy metal clunk" → strong (z 3.2)
+✅ cena 5: braco_metal.mp3 — pedido "a heavy metal clank" → strong (z 4.0)
+✅ cena 6: whoosh_fs-127197-fast-simple-chop-5-aif.ogg — pedido "a fast whoosh" → strong (z 4.5)
+✅ cena 6: impact_fs-222517-dramatic-hit.ogg — pedido "a cinematic hit with a long tail" → strong (z 4.2)
+✅ cena 7: transition_fs-683096-woosh.ogg — pedido "a fast whoosh" → strong (z 3.4)
+✅ cena 7: trava_metal_solta.mp3 — pedido "a heavy metal clunk" → strong (z 3.2)
+✅ cena 8: whoosh_fs830856.ogg — pedido "a soft air whoosh" → strong (z 3.6)
+✅ cena 9: whoosh_fs830856.ogg — pedido "a soft air whoosh" → strong (z 3.6)
+✅ cena 9: impact_fs-222517-dramatic-hit.ogg — pedido "a dramatic impact hit" → strong (z 3.7)
+⚠️ cena 10: tensao.mp3 — pedido "a low tension hit" → plausible (z 2.9); soa como: a sub bass drop, a deep sub bass
+✅ cena 11: whoosh_fs-127197-fast-simple-chop-5-aif.ogg — pedido "a fast whoosh" → strong (z 4.5)
+✅ cena 11: transition_fs-683096-woosh.ogg — pedido "a fast whoosh" → strong (z 3.4)
+⚠️ cena 12: tensao.mp3 — pedido "a low tension hit" → plausible (z 2.9); soa como: a sub bass drop, a deep sub bass
+✅ cena 12: whoosh_fs-127197-fast-simple-chop-5-aif.ogg — pedido "a fast whoosh" → strong (z 4.5)

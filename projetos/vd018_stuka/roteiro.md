@@ -11,14 +11,14 @@ além: sirene + o piloto apagando e o avião subindo sozinho. PT-BR: maior 2.228
 [GANCHO] Esse avião quase se matava com a própria bomba.
 [INÍCIO] Mergulhava na vertical com a sirene gritando. Soltou ali, a bomba pegava na hélice.
 [MEIO] O segredo é esse garfo: ele arremessa a bomba pra longe, tipo estilingue. Mas no puxão pra subir, o piloto podia apagar.
-[FINAL] Então o avião subia sozinho, e o caboclo nem sabia que
+[FINAL] Então o avião subia sozinho, e o cara nem sabia que
 (55 palavras ≈ 17 s — versão aprovada pelo dono em 26/11 depois da regra de 12–18 s. LOOP NARRATIVO: "…nem sabia que / esse
 avião quase se matava com a própria bomba.")
 
 ## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs)
 Esse avião quase se matava com a própria bomba.
 Mergulhava na vertical com a sirene gritando. Soltou ali, a bomba pegava na hélice.
-O segredo é esse garfo: ele arremessa a bomba pra longe, tipo estilingue. Mas no puxão pra subir, o piloto podia apagar. Então o avião subia sozinho, e o caboclo nem sabia que
+O segredo é esse garfo: ele arremessa a bomba pra longe, tipo estilingue. Mas no puxão pra subir, o piloto podia apagar. Então o avião subia sozinho, e o cara nem sabia que
 
 ## Marcações para a edição
 - impacto_em: "arremessa" (a bomba voando pra fora da hélice) e "puxão" (a virada).

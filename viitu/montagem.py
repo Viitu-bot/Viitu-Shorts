@@ -206,7 +206,8 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
         blocos = [[idx3d[0]]]
         for k in idx3d[1:]:
             (blocos[-1].append(k) if k == blocos[-1][-1] + 1 else blocos.append([k]))
-        if len(blocos) > 1:
+        exc = cfg.get("excecao_dono") or {}      # autorização do dono por vídeo, com o motivo escrito (ex.: vd018 Stuka, 26/11)
+        if len(blocos) > 1 and not exc.get("3d_intercalado"):
             erros.append(f"R2 3D PICOTADO: {len(blocos)} blocos de 3D separados por clipe real "
                          f"(cenas {[[b[0] + 1, b[-1] + 1] for b in blocos]}). A explicação 3D é UM bloco contínuo.")
         dur3d = sum(tempos[k][1] - tempos[k][0] for k in idx3d)
@@ -219,8 +220,10 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
         if not 0.25 <= ini3d <= 0.6 and 0 not in idx3d:
             avisos.append(f"R2 3D FORA DO MEIO (hipótese, não bloqueia): o bloco 3D começa em {ini3d:.0%} do vídeo; a explicação fica entre 25% e 60% "
                          "(edicao/formato.md).")
-        if 0 in idx3d:
+        if 0 in idx3d and not exc.get("gancho_3d"):
             erros.append("R3 GANCHO EM 3D: o gancho é sempre clipe real.")
+        if exc:
+            avisos.append(f"EXCEÇÃO DO DONO neste vídeo: {exc}")
 
     # R3 gancho / R5 fotos
     if eh_foto[0]:

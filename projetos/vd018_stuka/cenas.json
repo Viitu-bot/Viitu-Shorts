@@ -1,0 +1,398 @@
+{
+ "_versao": "v1: regras 26/11 (17 s, gancho ≤ 2 s, loop narrativo, Diretor de Retenção, sons da biblioteca)",
+ "formato": "invencao",
+ "excecao_dono": {
+  "gancho_3d": "dono 26/11: caminho A — não existe filmagem HD colorida do Stuka",
+  "3d_intercalado": "dono 26/11: storyboard aprovado com 3D e provas reais intercaladas"
+ },
+ "bloco_3d_longo": true,
+ "impacto_em": [
+  "arremessa",
+  "puxão"
+ ],
+ "destaques": [
+  "bomba",
+  "vertical",
+  "sirene",
+  "hélice",
+  "garfo",
+  "estilingue",
+  "apagar",
+  "sozinho"
+ ],
+ "musica": "bit_shift_kevin_macleod.mp3",
+ "cta": false,
+ "bruto_livre": [
+  "arq_stuka_cor.mp4"
+ ],
+ "creditos_descricao": "Modelo 3D: \"Junkers Ju 87\" por helijah (Sketchfab, CC BY 4.0). Imagens: filme de época colorizado \"Junkers Ju 87 Stuka HD Color\" (Internet Archive); piloto em força G: @realshawnwalsh_ (TikTok). Animação: Viitu Shorts.",
+ "cenas": [
+  {
+   "em": "Esse avião",
+   "clipe": "tt_thercsaylors_7244523104125472042.mp4",
+   "inicio": 12.0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "animacao": {
+    "nome": "stuka3d",
+    "fase": "helice",
+    "eventos": {},
+    "sfx": [
+     {
+      "arquivo": "assets/sfx/tensao.mp3",
+      "desc": "a low tension hit",
+      "db": -10,
+      "dur": 1.2
+     },
+     {
+      "arquivo": "assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg",
+      "desc": "a fast whoosh",
+      "db": -14,
+      "dur": 0.6
+     }
+    ]
+   },
+   "_funcao": "GANCHO 3D (dono 26/11): colado na hélice girando, a bomba balançando a centímetros das pás, o chão chegando",
+   "foley": "voo"
+  },
+  {
+   "em": "matava",
+   "clipe": "tt_thercsaylors_7244523104125472042.mp4",
+   "inicio": 12.0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "animacao": {
+    "nome": "stuka3d",
+    "fase": "despenca",
+    "eventos": {},
+    "sfx": [
+     {
+      "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+      "desc": "a soft air whoosh",
+      "db": -14,
+      "dur": 0.6
+     },
+     {
+      "arquivo": "assets/sfx/stuka_sirene_mergulho.mp3",
+      "desc": "a screaming air raid siren wail rising in pitch",
+      "db": -14,
+      "dur": 1.4
+     }
+    ]
+   },
+   "_funcao": "o Stuka inteiro despencando de bico, câmera girando",
+   "foley": "voo"
+  },
+  {
+   "em": "Mergulhava",
+   "clipe": "arq_stuka_cor.mp4",
+   "inicio": 36.6,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "baixa_res_ok": "filme alemão de época colorizado (1940), não existe em HD",
+   "_funcao": "Stuka real (colorizado) mergulhando contra o céu",
+   "foley": "voo",
+   "sfx_cena": [
+    {
+     "em": "Mergulhava",
+     "arquivo": "assets/sfx/stuka_sirene_mergulho.mp3",
+     "desc": "a screaming air raid siren wail rising in pitch",
+     "db": -8,
+     "dur": 2.2,
+     "no_clipe": 36.7
+    }
+   ]
+  },
+  {
+   "em": "sirene",
+   "clipe": "tt_thercsaylors_7244523104125472042.mp4",
+   "inicio": 12.0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "animacao": {
+    "nome": "stuka3d",
+    "fase": "sirene",
+    "eventos": {
+     "gira": "sirene"
+    },
+    "sfx": [
+     {
+      "arquivo": "assets/sfx/cc0/transition_fs-683096-woosh.ogg",
+      "desc": "a fast whoosh",
+      "db": -14,
+      "dur": 0.6
+     },
+     {
+      "evento": "gira",
+      "arquivo": "assets/sfx/stuka_sirene_mergulho.mp3",
+      "desc": "a screaming air raid siren wail rising in pitch",
+      "db": -6,
+      "dur": 1.1
+     }
+    ]
+   },
+   "_funcao": "close da sirene na perna da roda girando cada vez mais rápido",
+   "foley": "voo"
+  },
+  {
+   "em": "Soltou",
+   "clipe": "tt_thercsaylors_7244523104125472042.mp4",
+   "inicio": 12.0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "animacao": {
+    "nome": "stuka3d",
+    "fase": "erro",
+    "eventos": {
+     "solta": "Soltou",
+     "bate": "hélice"
+    },
+    "sfx": [
+     {
+      "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+      "desc": "a soft air whoosh",
+      "db": -14,
+      "dur": 0.6
+     },
+     {
+      "evento": "solta",
+      "arquivo": "assets/sfx/trava_metal_solta.mp3",
+      "desc": "a heavy metal clunk",
+      "db": -8,
+      "dur": 0.8
+     },
+     {
+      "evento": "bate",
+      "arquivo": "assets/sfx/braco_metal.mp3",
+      "desc": "a heavy metal clank",
+      "db": -8,
+      "dur": 0.8
+     }
+    ]
+   },
+   "_funcao": "o ERRO: bomba solta reto em câmera lenta rumo à hélice; congela a 1 cm da pá",
+   "foley": "voo",
+   "marca_erro": "x",
+   "marca_em": "hélice"
+  },
+  {
+   "em": "O segredo",
+   "clipe": "tt_thercsaylors_7244523104125472042.mp4",
+   "inicio": 12.0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "animacao": {
+    "nome": "stuka3d",
+    "fase": "garfo",
+    "eventos": {
+     "brilha": "garfo"
+    },
+    "sfx": [
+     {
+      "arquivo": "assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg",
+      "desc": "a fast whoosh",
+      "db": -14,
+      "dur": 0.6
+     },
+     {
+      "evento": "brilha",
+      "arquivo": "assets/sfx/cc0/impact_fs-222517-dramatic-hit.ogg",
+      "desc": "a cinematic hit with a long tail",
+      "db": -12,
+      "dur": 0.6
+     }
+    ]
+   },
+   "_funcao": "close do garfo em U embaixo da barriga + seta",
+   "foley": "voo"
+  },
+  {
+   "em": "ele arremessa",
+   "clipe": "tt_thercsaylors_7244523104125472042.mp4",
+   "inicio": 12.0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "animacao": {
+    "nome": "stuka3d",
+    "fase": "arremessa",
+    "eventos": {
+     "arremessa": "arremessa"
+    },
+    "sfx": [
+     {
+      "arquivo": "assets/sfx/cc0/transition_fs-683096-woosh.ogg",
+      "desc": "a fast whoosh",
+      "db": -14,
+      "dur": 0.6
+     },
+     {
+      "evento": "arremessa",
+      "arquivo": "assets/sfx/trava_metal_solta.mp3",
+      "desc": "a heavy metal clunk",
+      "db": -6,
+      "dur": 0.8
+     }
+    ]
+   },
+   "_funcao": "PAYOFF: o garfo balança e a bomba passa por fora da hélice",
+   "foley": "voo",
+   "marca_erro": "certo",
+   "marca_em": "longe"
+  },
+  {
+   "em": "tipo estilingue",
+   "clipe": "arq_stuka_cor.mp4",
+   "inicio": 42.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "baixa_res_ok": "filme alemão de época colorizado (1940), não existe em HD",
+   "_funcao": "prova real: a bomba saindo de um Stuka de verdade",
+   "foley": "voo",
+   "sfx_cena": [
+    {
+     "em": "estilingue",
+     "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+     "desc": "a soft air whoosh",
+     "db": -10,
+     "dur": 0.6,
+     "no_clipe": 42.7
+    }
+   ]
+  },
+  {
+   "em": "Mas no puxão",
+   "clipe": "tt_thercsaylors_7244523104125472042.mp4",
+   "inicio": 12.0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "animacao": {
+    "nome": "stuka3d",
+    "fase": "puxao",
+    "eventos": {
+     "puxa": "puxão"
+    },
+    "sfx": [
+     {
+      "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+      "desc": "a soft air whoosh",
+      "db": -14,
+      "dur": 0.6
+     },
+     {
+      "evento": "puxa",
+      "arquivo": "assets/sfx/cc0/impact_fs-222517-dramatic-hit.ogg",
+      "desc": "a dramatic impact hit",
+      "db": -6,
+      "dur": 1.0
+     }
+    ]
+   },
+   "_funcao": "VIRADA: o Stuka puxando o bico pra cima com tudo, tela tremendo",
+   "foley": "voo"
+  },
+  {
+   "em": "o piloto",
+   "clipe": "tt_realshawnwalsh_7543388667230899462.mp4",
+   "inicio": 3.9,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "foco": [
+    0.3,
+    0.16
+   ],
+   "zoom": [
+    2.2,
+    2.4
+   ],
+   "seguir": false,
+   "_funcao": "piloto real em força G: olho virando, cabeça caindo (só o piloto)",
+   "foley": "cabine",
+   "sfx_cena": [
+    {
+     "em": "apagar",
+     "arquivo": "assets/sfx/tensao.mp3",
+     "desc": "a low tension hit",
+     "db": -10,
+     "dur": 1.0,
+     "no_clipe": 4.3
+    }
+   ],
+   "trecho_conferido": "olhado quadro a quadro: 3,9–5,2 s = rosto do piloto com olho virando, sem a tela do comentarista"
+  },
+  {
+   "em": "Então",
+   "clipe": "tt_thercsaylors_7244523104125472042.mp4",
+   "inicio": 12.0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "animacao": {
+    "nome": "stuka3d",
+    "fase": "sozinho",
+    "eventos": {
+     "sobe": "subia"
+    },
+    "sfx": [
+     {
+      "arquivo": "assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg",
+      "desc": "a fast whoosh",
+      "db": -14,
+      "dur": 0.6
+     },
+     {
+      "evento": "sobe",
+      "arquivo": "assets/sfx/cc0/transition_fs-683096-woosh.ogg",
+      "desc": "a fast whoosh",
+      "db": -12,
+      "dur": 0.7
+     }
+    ]
+   },
+   "_funcao": "o avião subindo sozinho, céu enchendo a tela",
+   "foley": "voo"
+  },
+  {
+   "em": "e o cara",
+   "clipe": "tt_thercsaylors_7244523104125472042.mp4",
+   "inicio": 12.0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "LOOP",
+   "animacao": {
+    "nome": "stuka3d",
+    "fase": "helice",
+    "eventos": {},
+    "sfx": [
+     {
+      "arquivo": "assets/sfx/tensao.mp3",
+      "desc": "a low tension hit",
+      "db": -10,
+      "dur": 1.2
+     },
+     {
+      "arquivo": "assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg",
+      "desc": "a fast whoosh",
+      "db": -14,
+      "dur": 0.6
+     }
+    ]
+   },
+   "_funcao": "o mesmo quadro do gancho (loop)",
+   "foley": "voo",
+   "zoom": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}
