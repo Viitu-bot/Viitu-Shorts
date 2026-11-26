@@ -5,7 +5,7 @@ Sem preto e branco, sem tarja, legenda de terceiro recortada do arquivo antes de
 | Tempo | Trecho da narração | Tipo de imagem / ação na tela (no ápice) | Gatilho | Escala | Fonte | Corte | Som |
 |---|---|---|---|---|---|---|---|
 | 00:00–02:20 | "Ele caiu do céu, sem paraquedas," | ele em queda livre, braços abertos, sem nada nas costas | dissonância (impossível) | médio | real | no giro do corpo | abertura 2 toques + vento de queda |
-| 02:20–04:00 | "a mais de 7.000 metros do chão." | vista do alto: o chão minúsculo + "7.000 m" subindo | escala/medo | aberto | real | no número completo | vento |
+| 02:20–04:00 | "a quase 8.000 metros do chão." | vista do alto: o chão minúsculo + "7.600 m" subindo | escala/medo | aberto | real | no número completo | vento |
 | 04:00–05:30 | "Dois minutos despencando," | de cabeça pra baixo, mergulhando | tensão | fechado | real | no mergulho | whoosh suave |
 | 05:30–07:00 | "mirando uma rede de 30 metros" | a rede vista de cima, pequena no meio do terreno | antecipação | aberto | real | aproximação | — |
 | 07:00–08:30 | "que lá de cima parece um selo." | zoom/vista ainda mais alta: a rede vira um pontinho | comparação pop | muito aberto | real | no "selo" | whoosh suave |

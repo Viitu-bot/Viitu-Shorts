@@ -1,24 +1,24 @@
 # vd020: O homem que caiu do céu sem paraquedas — terça 1/12
 Categoria de estilo: HISTÓRIA CURTA DE PESSOA (primeira do canal) · Faixa 20% · alvo 12–18 s.
-Gancho escrito pelo dono (26/11): "Ele caiu do céu, sem paraquedas, a mais de 7.000 metros do chão."
+Gancho escrito pelo dono (26/11): "Ele caiu do céu, sem paraquedas, a quase 8.000 metros do chão."
 Prova: tema com 10.058.609 views no A vida é uma maravilha ("O homem que pulou de avião sem paraquedas", dados salvos do canal).
 Ângulo novo: 17 s, o "selo" visto lá de cima e o porém do giro de costas. VOZ SÓ DEPOIS DO "APROVADO".
 
 ## Partes
-[GANCHO] Ele caiu do céu, sem paraquedas, a mais de 7.000 metros do chão.
+[GANCHO] Ele caiu do céu, sem paraquedas, a quase 8.000 metros do chão.
 [INÍCIO] Dois minutos despencando, mirando uma rede de 30 metros que lá de cima parece um selo.
 [MEIO] Mas tem um porém: de barriga, podia quebrar a coluna. No último segundo, virou de costas,
 [FINAL] saiu inteiro, e tem gente que não acredita até hoje que
-(54 palavras ≈ 17 s. LOOP NARRATIVO: "…tem gente que não acredita até hoje que / ele caiu do céu, sem paraquedas, a mais de 7.000 metros do chão.")
+(54 palavras ≈ 17 s. LOOP NARRATIVO: "…tem gente que não acredita até hoje que / ele caiu do céu, sem paraquedas, a quase 8.000 metros do chão.")
 
 ## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs) — SÓ GERAR DEPOIS DO "APROVADO" DO DONO
-Ele caiu do céu, sem paraquedas, a mais de 7.000 metros do chão.
+Ele caiu do céu, sem paraquedas, a quase 8.000 metros do chão.
 Dois minutos despencando, mirando uma rede de 30 metros que lá de cima parece um selo.
 Mas tem um porém: de barriga, podia quebrar a coluna. No último segundo, virou de costas, saiu inteiro, e tem gente que não acredita até hoje que
 
 ## Marcações
 - impacto_em: "costas" (o giro e a batida na rede) · virada "porém".
-- número na tela: "7.000 m" em "7.000 metros" (contador até 7000, sufixo " m").
+- número na tela: "7.600 m" no "8.000 metros" (contador até 7600, sufixo " m": o número real, que é "quase 8.000").
 - destaques: céu, paraquedas, metros, despencando, rede, selo, coluna, costas, inteiro
 - sons a garantir na biblioteca antes de montar: vento forte de queda livre; batida na rede.
 
