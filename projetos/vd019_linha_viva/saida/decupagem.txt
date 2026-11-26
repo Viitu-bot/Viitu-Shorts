@@ -5,7 +5,7 @@
 4. 5.4-8.2s [INÍCIO] "o estalo" — tt_amkb112_arco.mp4 @13.8s — o arco elétrico estourando na linha (o estalo) — sons: ['arco_eletrico_estalo.mp3 @13.9s']
 5. 8.2-9.6s [MEIO] "O segredo" — tt_rykerwire_750987588966929 @29.0s — o eletricista inteiro na roupa de metal (sem a legenda) — sons: ['whoosh_fs830856.ogg @29.2s']
 6. 9.6-11.3s [MEIO] "costurada" — tt_rykerwire_750987588966929 @33.0s — close do tecido de metal: a jaqueta presa na calça — sons: ['whoosh_fs830856.ogg @33.4s']
-7. 11.3-12.8s [MEIO] "a energia" — x_Turbinetraveler_1972381652 @40.3s — o cabo gigante de alta tensão de perto, a luva em cima e nada acontece — sons: ['linha_alta_tensao_zumbido.mp3 @40.4s']
+7. 11.3-12.8s [MEIO] "a energia" — x_Turbinetraveler_1972381652 @40.8s — o cabo gigante de alta tensão de perto, a luva em cima e nada acontece — sons: ['linha_alta_tensao_zumbido.mp3 @40.9s']
 8. 12.8-14.2s [MEIO] "igual passarinho" — ia_passaros_fio.mp4 @0.1s — milhares de passarinhos pousados no fio de alta tensão — sons: ['whoosh_fs830856.ogg @0.2s']
 9. 14.2-15.5s [FINAL] "Mas se encostar" — tt_bluecollar.edu_7291377105 @6.4s — o eletricista escalando a torre de metal (a torre é o perigo) — sons: ['whoosh_fs-127197-fast-simple-chop-5-aif.ogg @6.6s']
 10. 15.5-16.6s [FINAL] "vira churrasco" — ia_passaros_clarao.mp4 @0.0s — o clarão: o fio explode (o que aconteceria) — sons: ['arco_eletrico_estalo.mp3 @0.5s']

@@ -209,7 +209,7 @@
   {
    "em": "igual passarinho",
    "clipe": "ia_passaros_fio.mp4",
-   "inicio": 0.1,
+   "inicio": 0.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
@@ -233,7 +233,8 @@
      "dur": 0.6,
      "no_clipe": 0.2
     }
-   ]
+   ],
+   "trecho_conferido": "olhado quadro a quadro: 0–1,5 s, fios carregados de passarinhos, sem corte (clipe ampliado por IA)"
   },
   {
    "em": "Mas se encostar",
@@ -278,7 +279,8 @@
      "dur": 1.2,
      "no_clipe": 0.5
     }
-   ]
+   ],
+   "trecho_conferido": "olhado quadro a quadro: passarinhos levantam e o fio explode em 0,5 s"
   },
   {
    "em": "então fica longe",
