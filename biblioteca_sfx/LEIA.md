@@ -11,6 +11,9 @@ na pasta certa daqui com nome em inglês descritivo (ex.: `sub_drop_short.mp3`) 
 | 04_trilhas_fundo | instrumental leve de curiosidade/investigação/tensão moderada, sem batida pesada | o vídeo todo, −22 a −26 dB | 6 |
 | _proibidos | pop agudo, scratch de DJ, ukulele alegre, phonk/techno/lo-fi com batida, música infantil | nunca | 8 |
 
+**Tempo do som (dono 26/11, vd018):** o som de algo que a narração NOMEIA (sirene, motor, tiro) entra NA palavra (ou
+quando o objeto aparece), nunca antes — e nunca cobre a palavra anterior. Na dúvida, começar no ápice da imagem.
+
 Regras: sem desenho animado, meme, boing, buzina, risada ou pop agudo · máx. 1 efeito a cada 3 s · efeitos −12 a −18 dB e
 trilha −22 a −26 dB sob a voz (automático em `viitu/som_final.py`).
 

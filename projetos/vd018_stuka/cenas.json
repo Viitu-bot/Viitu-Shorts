@@ -25,7 +25,7 @@
  "bruto_livre": [
   "arq_stuka_cor_sem_tarja.mp4"
  ],
- "creditos_descricao": "Modelo 3D: \"Junkers Ju 87\" por helijah (Sketchfab, CC BY 4.0). Imagens: filme de época colorizado \"Junkers Ju 87 Stuka HD Color\" (Internet Archive). Animação: Viitu Shorts.",
+ "creditos_descricao": "Modelo 3D: \"Junkers Ju 87\" por helijah (Sketchfab, CC BY 4.0). Imagens: filme de época colorizado \"Junkers Ju 87 Stuka HD Color\" (Internet Archive). Piloto a 9,5 G: @lifeontheedgeofficial (TikTok). Animação: Viitu Shorts.",
  "cenas": [
   {
    "em": "Esse avião",
@@ -75,10 +75,10 @@
       "dur": 0.6
      },
      {
-      "arquivo": "assets/sfx/stuka_sirene_mergulho.mp3",
-      "desc": "a screaming air raid siren wail rising in pitch",
+      "arquivo": "assets/sfx/cc0/transition_fs-683096-woosh.ogg",
+      "desc": "a fast whoosh",
       "db": -14,
-      "dur": 1.4
+      "dur": 0.6
      }
     ]
    },
@@ -98,10 +98,10 @@
    "sfx_cena": [
     {
      "em": "Mergulhava",
-     "arquivo": "assets/sfx/stuka_sirene_mergulho.mp3",
-     "desc": "a screaming air raid siren wail rising in pitch",
-     "db": -8,
-     "dur": 2.2,
+     "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+     "desc": "a soft air whoosh",
+     "db": -14,
+     "dur": 0.8,
      "no_clipe": 54.1
     }
    ],
@@ -136,8 +136,8 @@
       "evento": "gira",
       "arquivo": "assets/sfx/stuka_sirene_mergulho.mp3",
       "desc": "a screaming air raid siren wail rising in pitch",
-      "db": -6,
-      "dur": 1.1
+      "db": -10,
+      "dur": 1.4
      }
     ]
    },
@@ -313,12 +313,12 @@
   },
   {
    "em": "o piloto",
-   "clipe": "arq_stuka_cor_sem_tarja.mp4",
-   "inicio": 38.6,
+   "clipe": "tt_lifeontheedgeofficial_7206044411149503749.mp4",
+   "inicio": 3.5,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "tensão humana: o rosto do piloto do Stuka na cabine, no mergulho (antes do apagão)",
+   "_funcao": "tensão humana em HD: o rosto da piloto 'derretendo' a 9,5 G, o chão girando atrás (o puxão no corpo)",
    "foley": "cabine",
    "sfx_cena": [
     {
@@ -327,11 +327,14 @@
      "desc": "a low tension hit",
      "db": -10,
      "dur": 1.0,
-     "no_clipe": 39.0
+     "no_clipe": 3.9
     }
    ],
-   "baixa_res_ok": "filme alemão de época colorizado (1940), não existe em HD",
-   "sem_vinheta": true
+   "foco": [
+    0.45,
+    0.5
+   ],
+   "seguir": false
   },
   {
    "em": "Então",
