@@ -25,7 +25,7 @@
  "bruto_livre": [
   "arq_stuka_cor.mp4"
  ],
- "creditos_descricao": "Modelo 3D: \"Junkers Ju 87\" por helijah (Sketchfab, CC BY 4.0). Imagens: filme de época colorizado \"Junkers Ju 87 Stuka HD Color\" (Internet Archive); piloto em força G: @realshawnwalsh_ (TikTok). Animação: Viitu Shorts.",
+ "creditos_descricao": "Modelo 3D: \"Junkers Ju 87\" por helijah (Sketchfab, CC BY 4.0). Imagens: filme de época colorizado \"Junkers Ju 87 Stuka HD Color\" (Internet Archive). Animação: Viitu Shorts.",
  "cenas": [
   {
    "em": "Esse avião",
@@ -88,12 +88,12 @@
   {
    "em": "Mergulhava",
    "clipe": "arq_stuka_cor.mp4",
-   "inicio": 36.6,
+   "inicio": 54.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "INÍCIO",
    "baixa_res_ok": "filme alemão de época colorizado (1940), não existe em HD",
-   "_funcao": "Stuka real (colorizado) mergulhando contra o céu",
+   "_funcao": "Stuka real (colorizado) de perto, virando para o mergulho",
    "foley": "voo",
    "sfx_cena": [
     {
@@ -102,7 +102,7 @@
      "desc": "a screaming air raid siren wail rising in pitch",
      "db": -8,
      "dur": 2.2,
-     "no_clipe": 36.7
+     "no_clipe": 54.1
     }
    ]
   },
@@ -178,7 +178,7 @@
    "_funcao": "o ERRO: bomba solta reto em câmera lenta rumo à hélice; congela a 1 cm da pá",
    "foley": "voo",
    "marca_erro": "x",
-   "marca_em": "hélice"
+   "marca_em": "pegava"
   },
   {
    "em": "O segredo",
@@ -244,7 +244,7 @@
    "_funcao": "PAYOFF: o garfo balança e a bomba passa por fora da hélice",
    "foley": "voo",
    "marca_erro": "certo",
-   "marca_em": "longe"
+   "marca_em": "arremessa"
   },
   {
    "em": "tipo estilingue",
@@ -301,21 +301,12 @@
   },
   {
    "em": "o piloto",
-   "clipe": "tt_realshawnwalsh_7543388667230899462.mp4",
-   "inicio": 3.9,
+   "clipe": "arq_stuka_cor.mp4",
+   "inicio": 38.6,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "foco": [
-    0.3,
-    0.16
-   ],
-   "zoom": [
-    2.2,
-    2.4
-   ],
-   "seguir": false,
-   "_funcao": "piloto real em força G: olho virando, cabeça caindo (só o piloto)",
+   "_funcao": "tensão humana: o rosto do piloto do Stuka na cabine, no mergulho (antes do apagão)",
    "foley": "cabine",
    "sfx_cena": [
     {
@@ -324,10 +315,10 @@
      "desc": "a low tension hit",
      "db": -10,
      "dur": 1.0,
-     "no_clipe": 4.3
+     "no_clipe": 39.0
     }
    ],
-   "trecho_conferido": "olhado quadro a quadro: 3,9–5,2 s = rosto do piloto com olho virando, sem a tela do comentarista"
+   "baixa_res_ok": "filme alemão de época colorizado (1940), não existe em HD"
   },
   {
    "em": "Então",

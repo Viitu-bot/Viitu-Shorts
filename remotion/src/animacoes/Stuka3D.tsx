@@ -1,6 +1,7 @@
-import React, {useMemo} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import * as THREE from 'three';
-import {interpolate, random, useCurrentFrame, useVideoConfig, Easing} from 'remotion';
+import {continueRender, delayRender, interpolate, random, useCurrentFrame, useVideoConfig, Easing} from 'remotion';
+import {useThree} from '@react-three/fiber';
 import {ThreeCanvas} from '@remotion/three';
 import {Ambiente, Camera, Liberar, rep, useModelo, useTexturas} from './comum3d';
 
@@ -87,6 +88,19 @@ const limpar = (cena: THREE.Group | null): Info | null => {
     return p.length ? m.multiplyScalar(1 / p.length) : new THREE.Vector3(-1.8, -1.8, s * 1.6);
   };
   return {limpo: c, rodas: [lado(1), lado(-1)], eixoY: nY ? somaY / nY : 0.1};
+};
+
+// segura o quadro até o avião (já recortado) estar desenhado — sem isso a 1ª imagem de cada cena saía só com céu
+const LiberarAviao: React.FC<{ok: boolean; h: number}> = ({ok, h}) => {
+  const {advance, invalidate} = useThree();
+  useEffect(() => {
+    if (!ok) return;
+    invalidate();
+    advance(performance.now());
+    const t = setTimeout(() => { advance(performance.now()); continueRender(h); }, 400);
+    return () => clearTimeout(t);
+  }, [ok]);
+  return null;
 };
 
 const Helice: React.FC<{y: number; ang: number; borrao: number}> = ({y, ang, borrao}) => (
@@ -177,6 +191,7 @@ export const Stuka3D: React.FC<{fase: string; dur: number; eventos: Record<strin
   const modelo = useModelo('stuka.glb');
   DEBUG_COR = fase === 'vercor';
   const info = useMemo(() => limpar(modelo), [modelo]);
+  const [hAviao] = useState(() => delayRender('stuka pronto'));
   const k = interpolate(f, [0, dur], [0, 1], cl);
 
   // atitude do avião: ângulo de mergulho (rad, + = nariz para baixo)
@@ -218,7 +233,7 @@ export const Stuka3D: React.FC<{fase: string; dur: number; eventos: Record<strin
     helice: [[3.4 - k * 0.4, 1.6 - k * 0.5, 3.2], [0.0, -6.8, 0], 55],
     despenca: [[Math.sin(k * 1.6 + 0.4) * 19, 3 - k * 2, Math.cos(k * 1.6 + 0.4) * 19], [0, -1, 0], 40],
     sirene: [[2.6 - k * 0.3, -3.5, 3.6], [0.67, -4.3, 1.6], 40],
-    erro: [[3.5, -3.0, 9.0 - k * 1.2], [0.5, -3.0, 0], 45],
+    erro: [[3.4, -8.8, 6.8 - k * 0.8], [0.7, -4.0, 0], 45],
     garfo: [[1.9, -0.6, 3.2 - k * 0.5], [0.85, -0.2, 0], 42],
     arremessa: [[0.8, -3.0, 10.5], [0.8, -3.0, 0], 45],
     puxao: [[9 + tremor, 2 + tremor, 11], [0, 0, 0], 45],
@@ -233,7 +248,7 @@ export const Stuka3D: React.FC<{fase: string; dur: number; eventos: Record<strin
   if (info && fase === 'sirene') {
     const r = info.rodas.reduce((m, q) => (q.z > m.z ? q : m), info.rodas[0]);
     const s = mundo(r.x - 0.45, r.y + 0.75, r.z);
-    cams.sirene = [[s[0] + 1.3 - k * 0.3, s[1] + 0.5, s[2] + 1.5 - k * 0.3], s, 40];
+    cams.sirene = [[s[0] + 0.75 - k * 0.15, s[1] - 0.25, s[2] + 0.85 - k * 0.15], s, 40];
   }
   if (fase === 'helice') {
     const bw = mundo(bombaPos[0], bombaPos[1], 0), hw = mundo(HELICE_X, info ? info.eixoY : 0.1, 0);
@@ -248,6 +263,7 @@ export const Stuka3D: React.FC<{fase: string; dur: number; eventos: Record<strin
     <ThreeCanvas width={width} height={height} camera={{fov, position: cam, near: 0.05, far: 2000}}>
       <Camera pos={cam} alvo={alvo} />
       <Liberar pronto={pronto} h={h} />
+      <LiberarAviao ok={!!info && pronto} h={hAviao} />
       <Ambiente tex={tex.ceu_nuvens_hdri} fundo forca={0.9} />
       <hemisphereLight args={['#ffffff', '#55604a', 0.8]} />
       <directionalLight position={[30, 60, 40]} intensity={2.0} />
