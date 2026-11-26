@@ -17,6 +17,10 @@ buscar e baixar. Cada clipe baixado é conferido contra a linha do storyboard (a
 reportagem aberta); Pixabay/Pexels só para ambientação/abstrato; NUNCA preto e branco (trava R12). Cortes de 1–2,5 s;
 a imagem completa a frase e antecipa a próxima; 1º quadro magnético (`edicao/retencao_storyboard.md` §2b).
 
+**Legenda/texto embutido no vídeo de terceiro (vd019, 26/11):** o `foco`/`zoom` da cena NÃO tira a legenda. Recortar o
+PRÓPRIO arquivo acima dela (`ffmpeg -vf crop=…`) e, se o recorte ficar pequeno/mole, ampliar por IA (`viitu.ampliar … <larg>`)
+ANTES de montar. Conferir 1 quadro de cada cena recortada.
+
 **ANTES DE TUDO: `edicao/reclamacoes.md`** (padrões de reclamação do dono e a estrutura de montagem padrão).
 A trava `python3 -m viitu.montagem <p>` barra: clipe em > 2 cenas, < 60% de fontes diferentes, 3D picotado,
 gancho com foto/3D/< 720p, clipe desfocado ou parado. **Meta: ≥ 7 fontes reais diferentes por vídeo.**

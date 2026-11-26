@@ -20,7 +20,7 @@
  "cta": false,
  "bruto_livre": [
   "x_Turbinetraveler_1972381652400664576.mp4",
-  "tt_rykerwire_7509875889669295390.mp4"
+  "tt_rykerwire_rosto.mp4"
  ],
  "creditos_descricao": "Imagens: @Turbinetraveler (X); @rykerwire, @amkb112, @izakflo, @bluecollar.edu (CNBC) e @jharlenco (TikTok).",
  "cenas": [
@@ -52,20 +52,12 @@
   },
   {
    "em": "e sai rindo",
-   "clipe": "tt_rykerwire_7509875889669295390.mp4",
+   "clipe": "tt_rykerwire_rosto.mp4",
    "inicio": 13.4,
    "som_original": false,
    "revisao": "manual",
    "_parte": "GANCHO",
    "_funcao": "o eletricista na roupa de metal, rindo (só o rosto, sem a legenda do vídeo)",
-   "foco": [
-    0.5,
-    0.22
-   ],
-   "zoom": [
-    2.0,
-    2.1
-   ],
    "seguir": false,
    "foley": "helicoptero",
    "sfx_cena": [
@@ -81,7 +73,7 @@
   },
   {
    "em": "Ele cutuca",
-   "clipe": "tt_rykerwire_7509875889669295390.mp4",
+   "clipe": "tt_rykerwire_helicoptero.mp4",
    "inicio": 15.55,
    "som_original": false,
    "revisao": "manual",
@@ -97,14 +89,6 @@
      "dur": 0.6,
      "no_clipe": 16.35
     }
-   ],
-   "foco": [
-    0.3,
-    0.33
-   ],
-   "zoom": [
-    1.5,
-    1.6
    ],
    "seguir": false
   },
@@ -139,20 +123,12 @@
   },
   {
    "em": "O segredo",
-   "clipe": "tt_rykerwire_7509875889669295390.mp4",
-   "inicio": 29.0,
+   "clipe": "tt_rykerwire_rosto.mp4",
+   "inicio": 28.7,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
    "_funcao": "o eletricista inteiro na roupa de metal (sem a legenda)",
-   "foco": [
-    0.5,
-    0.3
-   ],
-   "zoom": [
-    1.6,
-    1.7
-   ],
    "seguir": false,
    "foley": "vento",
    "sfx_cena": [
@@ -162,25 +138,17 @@
      "desc": "a soft air whoosh",
      "db": -14,
      "dur": 0.6,
-     "no_clipe": 29.2
+     "no_clipe": 28.9
     }
    ]
   },
   {
    "em": "costurada",
-   "clipe": "tt_rykerwire_7509875889669295390.mp4",
+   "clipe": "tt_rykerwire_rosto.mp4",
    "inicio": 33.8,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
-   "foco": [
-    0.5,
-    0.3
-   ],
-   "zoom": [
-    2.0,
-    2.1
-   ],
    "seguir": false,
    "_funcao": "close do tecido de metal: a jaqueta presa na calça",
    "foley": "vento",
@@ -247,16 +215,12 @@
   },
   {
    "em": "Mas se encostar",
-   "clipe": "tt_bluecollar.edu_7291377105978412330.mp4",
+   "clipe": "tt_bluecollar_topo.mp4",
    "inicio": 7.8,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
    "_funcao": "a torre: a coluna de isoladores e o metal que dá choque",
-   "foco": [
-    0.3,
-    0.3
-   ],
    "seguir": false,
    "foley": "vento",
    "sfx_cena": [
@@ -268,10 +232,6 @@
      "dur": 0.6,
      "no_clipe": 8.0
     }
-   ],
-   "zoom": [
-    1.5,
-    1.6
    ]
   },
   {
