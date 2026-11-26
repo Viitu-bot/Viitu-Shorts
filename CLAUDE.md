@@ -23,13 +23,17 @@ em `edicao/identidade.md`.
 
 ## Padrão-ouro: vd004 bombeiros (90,8% de retenção média, linha reta até 40 s — print do dono)
 45,7 s · 130 palavras (2,85/s) · 26 cenas (1,76 s cada) · gancho "de propósito" → "a maioria acha" → mecanismo →
-"mas tem um porém" → risco. **Duração alvo 35–45 s.** Público adulto 25+.
+"mas tem um porém" → risco. **Duração: 25–30 s no máximo (dono 26/11; o tema decide, explicou rápido = vídeo curto).** Público adulto 25+.
 - **Gancho (meta 78%+ continuaram assistindo):** sem introdução nem contexto; a 1ª frase abre o loop de curiosidade em
   1,5–2 s, em cima do quadro mais estranho/forte do vídeo. Modelos: "Piscou o olho, perdeu…", "Como sumir do mapa…",
   "Por que esses…".
-- **Final (o vd004 caiu nos últimos 5 s):** termina na última palavra da revelação ou emenda no gancho. PROIBIDO resumo,
+- **Final (o vd004 caiu nos últimos 5 s):** loop NARRATIVO (dono 26/11): a última frase faz sentido ao emendar no gancho, sem precisar repetir a palavra. PROIBIDO resumo,
   moral, "da próxima vez…", CTA de inscrição/like no fim (trava `viitu.montagem` R0, do vd016 em diante). O vídeo corta
   no último som da voz, 0,3 s antes da margem antiga (`viitu/editar.py`).
+
+## Retenção (dono 26/11 — caiu de 76–80% para 58%)
+Gancho nos primeiros 2 s + psicologia da retenção em todo o vídeo. **B-roll nunca sem o storyboard** de
+`edicao/retencao_storyboard.md` (docs "agente de retenção" e HISA do dono), mostrado ao dono antes de baixar.
 
 ## Som (regras fixas — `biblioteca_sfx/LEIA.md`)
 - Só sons de `biblioteca_sfx/` (4 pastas). PROIBIDO desenho animado, meme, "boing", buzina, risada, "pop" agudo.

@@ -15,6 +15,19 @@
   música −16 na mixagem, audível sob a voz (dono 24/11: B de ouvido; vd017 "não deu nem pra ouvir"); trilha sempre
   dentro do arquivo. Voz na frente, tratamento leve e ≥ 3,0 palavras/s. Cada imagem UMA vez, corte ≤ 3 s.
 
+## 0b. ATUALIZAÇÃO DO DONO — 26/11/2026 (autorizada por ele no chat; vale sobre o 24/11 e o resto)
+Motivo: a retenção caiu de 76–80% para 58%.
+- **Duração: 25–30 s NO MÁXIMO.** Quem decide é o tema: se dá para explicar rápido, explica rápido (pode ficar abaixo de 25).
+  ~75–90 palavras a ~3,0 palavras/s. Substitui os 35–45 s do §0.
+- **Gancho nos primeiros 2 s** e psicologia da retenção no vídeo INTEIRO (micro-gancho a cada corte, ouro parcelado,
+  payoff no terço final) — método em `edicao/retencao_storyboard.md`.
+- **Loop narrativo:** a última frase não precisa ser a mesma palavra da primeira, mas tem que fazer SENTIDO ao emendar
+  no começo (o fim leva a história de volta ao gancho). Nunca ponto final na última palavra.
+- **B-roll só com o método do dono:** storyboard por frase (função psicológica, ação no ápice, corte na ação, Kuleshov,
+  1,5–3 s) ANTES de buscar; o storyboard é mostrado ao dono antes de baixar/montar.
+- **Sons só das bibliotecas que o dono montou** (`biblioteca_sfx/`, abertura de 2 toques com eco) e sempre pelas
+  atualizações mais recentes dele.
+
 ## 1. Roteiro — em partes, sempre nesta ordem (dono: "eu montava parte por parte")
 | Parte | O que faz | Regra |
 |---|---|---|

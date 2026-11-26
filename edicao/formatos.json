@@ -4,12 +4,12 @@
   "nome": "Como é feito (processo de um bruto cronológico)",
   "ref": "A vida é uma maravilha — 'Como fazem o buraco da agulha?' (1,4 mi)",
   "duracao_s": [
-   35,
-   45
+   20,
+   30
   ],
   "palavras": [
-   100,
-   130
+   60,
+   90
   ],
   "exige": [
    "bruto_cronologico"
@@ -32,12 +32,12 @@
   "nome": "Por que é assim? (motivo oculto de objeto/engenharia)",
   "ref": "A vida — 'Chineses enterram tronco por motivo genial'; KSO — 'Essas portas não são pequenas à toa'",
   "duracao_s": [
-   35,
-   45
+   20,
+   30
   ],
   "palavras": [
-   100,
-   130
+   60,
+   90
   ],
   "exige": [],
   "max_3d_pct": 0.45,
@@ -60,12 +60,12 @@
   "nome": "Como funciona por dentro (3D dominante, estilo Zack D. Films)",
   "ref": "Zack D. Films — 'How Electrical Outlets Work', 'How Cookiecutter Sharks Bite Whales'",
   "duracao_s": [
-   35,
-   45
+   20,
+   30
   ],
   "palavras": [
-   100,
-   130
+   60,
+   90
   ],
   "exige": [],
   "max_3d_pct": 0.7,
@@ -86,12 +86,12 @@
   "nome": "O erro que todo mundo comete / Nunca faça isso",
   "ref": "GeneralTV — 'O erro GRAVE ao salvar um passarinho', 'O erro que todo mundo comete ao comer favo de mel'",
   "duracao_s": [
-   35,
-   45
+   20,
+   30
   ],
   "palavras": [
-   100,
-   130
+   60,
+   90
   ],
   "exige": [
    "marca_erro"
@@ -114,12 +114,12 @@
   "nome": "A invenção genial (produto/engenharia que resolve um problema)",
   "ref": "Polaco sem Polônia — 'O motor portátil que transforma qualquer bike em elétrica', 'A película que transforma vidro em TV'",
   "duracao_s": [
-   35,
-   45
+   20,
+   30
   ],
   "palavras": [
-   100,
-   130
+   60,
+   90
   ],
   "exige": [],
   "max_3d_pct": 0.3,
@@ -141,12 +141,12 @@
   "nome": "Recorde / escala / história real (o maior, o mais caro, o homem que…)",
   "ref": "A vida — 'O homem que pulou de avião sem paraquedas'; KSO — teste militar da Índia",
   "duracao_s": [
-   35,
-   45
+   20,
+   30
   ],
   "palavras": [
-   100,
-   130
+   60,
+   90
   ],
   "exige": [
    "numero_na_tela"

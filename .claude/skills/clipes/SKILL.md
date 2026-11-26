@@ -8,6 +8,11 @@ description: Escolhe e baixa os VÍDEOS que representam cada frase do roteiro do
 > **Regras do dono:** `edicao/BIBLIA.md` (manda em tudo; não alterar sem autorização) · planta técnica: `edicao/formato.md`.
 > **Formato:** `processo` = 1 bruto cronológico (`"bruto_cronologico"`); demais = mínimo de fontes do formato (`formatos.json`).
 
+**REGRA DO DONO 26/11 — B-roll NUNCA sem o método de retenção:** primeiro o storyboard de
+`edicao/retencao_storyboard.md` (função psicológica por frase, ação no ápice, corte na ação, ligação Kuleshov, 1,5–3 s,
+termos de busca `[sujeito]+[verbo]+[ângulo]`) em `projetos/<p>/storyboard.md`, MOSTRADO AO DONO; só com o ok dele
+buscar e baixar. Cada clipe baixado é conferido contra a linha do storyboard (a ação pedida aparece no ápice?).
+
 **ANTES DE TUDO: `edicao/reclamacoes.md`** (padrões de reclamação do dono e a estrutura de montagem padrão).
 A trava `python3 -m viitu.montagem <p>` barra: clipe em > 2 cenas, < 60% de fontes diferentes, 3D picotado,
 gancho com foto/3D/< 720p, clipe desfocado ou parado. **Meta: ≥ 7 fontes reais diferentes por vídeo.**
