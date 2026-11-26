@@ -5,6 +5,12 @@ description: Pesquisa e recomenda 3 temas de vídeo para o Viitu Shorts com núm
 
 # /tema <dia>
 
+> **MÉTODO DO DONO 26/11 (vale sobre o resto):** lacuna PT-BR NÃO é obrigatória — tema que já existe em PT entra com
+> ângulo/ritmo diferente. Prova = Short gringo de 30–90 dias com views desproporcionais aos inscritos. Todo tema passa nos
+> 3 pilares (curiosidade imediata na 1ª frase · impacto visual sem áudio no 1º quadro · assunto universal) e é marcado
+> com o estilo: urbano/cotidiano (perigo oculto) · invenção visual chocante · história intensa de bastidores. Fontes
+> extras: comunidades de curiosidades/notícias incomuns (histórias estouram lá antes de virar vídeo).
+
 > **Regras do dono:** `edicao/BIBLIA.md` (manda em tudo; não alterar sem autorização) · planta técnica: `edicao/formato.md`.
 > **Formato do dia:** cada tema recomendado vem com o FORMATO (`edicao/formatos.md`: processo, motivo_oculto, por_dentro, erro_perigo, invencao, recorde_historia, tiro_curto). Siga o rodízio de `formatos.json` (nunca o mesmo formato 2 dias seguidos; processo de bruto cronológico tem prioridade).
 

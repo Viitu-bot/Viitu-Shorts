@@ -25,6 +25,12 @@ Motivo: a retenção caiu de 76–80% para 58%.
   no começo (o fim leva a história de volta ao gancho). Nunca ponto final na última palavra.
 - **B-roll só com o método do dono:** storyboard por frase (função psicológica, ação no ápice, corte na ação, Kuleshov,
   1,5–3 s) ANTES de buscar; o storyboard é mostrado ao dono antes de baixar/montar.
+- **Tema (método do dono):** validado lá fora (Short dos últimos 30–90 dias com views desproporcionais aos inscritos do
+  canal) e ainda sem força no Brasil — **não precisa ser 100% inédito**: tema que já existe em PT entra se tiver ângulo ou
+  ritmo diferente. Filtro dos 3 pilares: (1) curiosidade imediata/loop aberto na 1ª frase, (2) impacto visual forte que
+  funciona sem áudio no 1º quadro, (3) assunto universal (segurança, esporte, dinheiro, invenção engenhosa).
+  Estilos que já seguraram o público: curiosidade urbana/cotidiana (perigo oculto), invenção visual chocante, história
+  intensa de bastidores.
 - **Sons só das bibliotecas que o dono montou** (`biblioteca_sfx/`, abertura de 2 toques com eco) e sempre pelas
   atualizações mais recentes dele.
 
