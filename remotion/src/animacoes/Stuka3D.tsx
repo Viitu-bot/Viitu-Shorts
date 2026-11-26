@@ -66,13 +66,16 @@ const limpar = (cena: THREE.Group | null): Info | null => {
       v.copy(a).add(b).add(d).multiplyScalar(1 / 3);
       // hélice original: qualquer vértice à frente do nariz e longe do eixo (as pás são triângulos longos)
       const raio = (q: THREE.Vector3) => Math.hypot(q.y - 0.1, q.z);
-      const helice = v.x < NARIZ_X || [a, b, d].some((q) => q.x < NARIZ_X && raio(q) > 0.62);
-      const bomba = v.x > -2.4 && v.x < 1.7 && Math.abs(v.z) < 0.5 && v.y < -0.8;
+      const helice = v.x < NARIZ_X || [a, b, d].some((q) => q.x < NARIZ_X + 0.15 && raio(q) > 0.34);
+      const bomba = v.x > -3.6 && v.x < 1.9 && Math.abs(v.z) < 0.55 && v.y < -0.62;
       const tanque = v.y < -0.45 && Math.abs(v.z) > 1.0 && Math.abs(v.z) < 3.2 && bege(idx[i], idx[i + 1], idx[i + 2]);
       // suportes dos tanques (varas finas e compridas embaixo das asas, |envergadura| ~1,6–2,1)
       const ext = (k: 'x' | 'y' | 'z') => Math.max(a[k], b[k], d[k]) - Math.min(a[k], b[k], d[k]);
       const vara = Math.abs(v.z) > 1.45 && Math.abs(v.z) < 2.2 && ((ext('x') > 1.0 && ext('y') < 0.25 && ext('z') < 0.25 && v.y < -0.05) || (ext('x') > 0.3 && ext('y') < 0.2 && ext('z') < 0.2 && v.y < -0.55));
-      if (helice || bomba || tanque || vara) continue;
+      // fiapos pretos no nariz/barriga (restos de peças finas do modelo): triângulo minúsculo nessa região sai
+      const area = new THREE.Vector3().subVectors(b, a).cross(new THREE.Vector3().subVectors(d, a)).length() / 2;
+      const fiapo = area < 0.004 && v.x < -1.5 && Math.abs(v.z) < 0.7 && v.y < 0.0 && !(m.material as THREE.Material).name.includes('interior');
+      if (helice || bomba || tanque || vara || fiapo) continue;
       fica.push(idx[i], idx[i + 1], idx[i + 2]);
       if (v.y < -1.55) baixos.push(v.clone());
       if (v.x < NARIZ_X + 0.4 && v.x > NARIZ_X - 0.1) { somaY += v.y; nY += 1; }
@@ -156,7 +159,7 @@ const Garfo: React.FC<{theta: number; brilho: number}> = ({theta, brilho}) => {
 };
 
 const Sirene: React.FC<{p: THREE.Vector3; ang: number; grande?: boolean}> = ({p, ang, grande}) => (
-  <group position={[p.x - 0.55, p.y + 0.55, p.z + (grande ? 0.25 : 0)]} scale={grande ? 1.8 : 1}>
+  <group position={[p.x - 0.4, p.y + 0.95, p.z + (grande ? 0.25 : 0)]} scale={grande ? 1.8 : 1}>
     <mesh rotation={[0, 0, Math.PI / 2]}><cylinderGeometry args={[0.09, 0.11, 0.28, 16]} /><meshStandardMaterial color="#2d3a2a" metalness={0.5} roughness={0.4} /></mesh>
     <group position={[-0.17, 0, 0]} rotation={[ang, 0, 0]}>
       {[0, 1, 2, 3].map((i) => (
@@ -171,13 +174,13 @@ const Sirene: React.FC<{p: THREE.Vector3; ang: number; grande?: boolean}> = ({p,
 // linhas de vento passando rente ao avião (sensação de velocidade), finas e transparentes
 const Vento: React.FC<{f: number; vel: number}> = ({f, vel}) => (
   <group>
-    {Array.from({length: 40}, (_, c) => {
+    {Array.from({length: 18}, (_, c) => {
       const x = (random(`vx${c}`) - 0.5) * 22, z = (random(`vz${c}`) - 0.5) * 14;
       const y = (((random(`vy${c}`) * 60 + f * vel) % 60) + 60) % 60 - 30;
       return (
         <mesh key={c} position={[x, y, z]}>
           <boxGeometry args={[0.025, 2.5 + random(`vl${c}`) * 3, 0.025]} />
-          <meshBasicMaterial color="#ffffff" transparent opacity={0.35} depthWrite={false} />
+          <meshBasicMaterial color="#ffffff" transparent opacity={0.12} depthWrite={false} />
         </mesh>
       );
     })}
@@ -247,7 +250,7 @@ export const Stuka3D: React.FC<{fase: string; dur: number; eventos: Record<strin
     [x * Math.cos(mergulho) - y * Math.sin(mergulho), x * Math.sin(mergulho) + y * Math.cos(mergulho), z];
   if (info && fase === 'sirene') {
     const r = info.rodas.reduce((m, q) => (q.z > m.z ? q : m), info.rodas[0]);
-    const s = mundo(r.x - 0.55, r.y + 0.55, r.z + 0.25);
+    const s = mundo(r.x - 0.4, r.y + 0.95, r.z + 0.25);
     cams.sirene = [[s[0] + 1.6, s[1] - 2.2 + k * 0.4, s[2] + 2.6 - k * 0.4], s, 38];
   }
   if (fase === 'helice') {
@@ -260,13 +263,15 @@ export const Stuka3D: React.FC<{fase: string; dur: number; eventos: Record<strin
   const velNuvem = ['puxao', 'sozinho'].includes(fase) ? -1.2 : fase === 'erro' ? 0.4 : 2.2;
 
   return (
-    <ThreeCanvas width={width} height={height} camera={{fov, position: cam, near: 0.05, far: 2000}}>
+    <ThreeCanvas width={width} height={height} camera={{fov, position: cam, near: 0.05, far: 2000}}
+      gl={{toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.15, antialias: true}}>
       <Camera pos={cam} alvo={alvo} />
       <Liberar pronto={pronto} h={h} />
       <LiberarAviao ok={!!info && pronto} h={hAviao} />
       <Ambiente tex={tex.ceu_nuvens_hdri} fundo forca={0.9} />
-      <hemisphereLight args={['#ffffff', '#55604a', 0.8]} />
-      <directionalLight position={[30, 60, 40]} intensity={2.0} />
+      <hemisphereLight args={['#dfe8ff', '#4a5240', 0.55]} />
+      <directionalLight position={[40, 70, 25]} intensity={3.2} color="#fff1d6" />
+      <directionalLight position={[-30, -10, -40]} intensity={0.6} color="#9fb8ff" />
       <fog attach="fog" args={['#b9c9d8', 120, 900]} />
       {!fase.startsWith('ver') && <Vento f={f} vel={velNuvem} />}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, altura, 0]}>
