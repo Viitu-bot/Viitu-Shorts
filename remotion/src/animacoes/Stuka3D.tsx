@@ -234,6 +234,7 @@ export const Stuka3D: React.FC<{fase: string; dur: number; eventos: Record<strin
   const tremor = fase === 'puxao' ? (random(`t${f}`) - 0.5) * 0.25 * (1 - k) : 0;
   const cams: Record<string, [[number, number, number], [number, number, number], number]> = {
     helice: [[3.4 - k * 0.4, 1.6 - k * 0.5, 3.2], [0.0, -6.8, 0], 55],
+    mergulho: [[4 + k * 2, -48 + k * 18, 9 - k * 3], [0, -2, 0], 38],
     despenca: [[Math.sin(k * 1.6 + 0.4) * 19, 3 - k * 2, Math.cos(k * 1.6 + 0.4) * 19], [0, -1, 0], 40],
     sirene: [[2.6 - k * 0.3, -3.5, 3.6], [0.67, -4.3, 1.6], 40],
     erro: [[3.4, -8.8, 6.8 - k * 0.8], [0.7, -4.0, 0], 45],
@@ -259,7 +260,7 @@ export const Stuka3D: React.FC<{fase: string; dur: number; eventos: Record<strin
   }
   const [cam, alvo, fov] = cams[fase] ?? cams.despenca;
   const chao = rep(tex.grass_path_2_diff, 60, 60);
-  const altura = fase === 'helice' ? interpolate(k, [0, 1], [-260, -150]) : -260;   // chão crescendo no gancho
+  const altura = fase === 'mergulho' ? -2000 : fase === 'helice' ? interpolate(k, [0, 1], [-260, -150]) : -260;   // chão crescendo no gancho
   const velNuvem = ['puxao', 'sozinho'].includes(fase) ? -1.2 : fase === 'erro' ? 0.4 : 2.2;
 
   return (

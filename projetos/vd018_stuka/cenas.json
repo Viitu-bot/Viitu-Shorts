@@ -87,30 +87,32 @@
   },
   {
    "em": "Mergulhava",
-   "clipe": "arq_stuka_cor_sem_tarja.mp4",
-   "inicio": 54.0,
-   "som_original": false,
+   "clipe": "tt_thercsaylors_7244523104125472042.mp4",
+   "inicio": 12.0,
+   "manter": true,
    "revisao": "manual",
    "_parte": "INÍCIO",
-   "baixa_res_ok": "filme alemão de época colorizado (1940), não existe em HD",
-   "_funcao": "Stuka real (colorizado) de perto, virando para o mergulho",
-   "foley": "voo",
-   "sfx_cena": [
-    {
-     "em": "Mergulhava",
-     "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
-     "desc": "a soft air whoosh",
-     "db": -14,
-     "dur": 0.8,
-     "no_clipe": 54.1
-    }
-   ],
-   "seguir": false,
-   "sem_vinheta": true,
-   "foco": [
-    0.55,
-    0.5
-   ]
+   "animacao": {
+    "nome": "stuka3d",
+    "fase": "mergulho",
+    "eventos": {},
+    "sfx": [
+     {
+      "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+      "desc": "a soft air whoosh",
+      "db": -14,
+      "dur": 0.8
+     },
+     {
+      "arquivo": "assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg",
+      "desc": "a fast whoosh",
+      "db": -16,
+      "dur": 0.6
+     }
+    ]
+   },
+   "_funcao": "3D HD visto de baixo: o Stuka vindo de bico na direção de quem assiste (ameaça se aproximando)",
+   "foley": "voo"
   },
   {
    "em": "sirene",

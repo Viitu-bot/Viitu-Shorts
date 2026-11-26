@@ -250,7 +250,8 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
     reais_idx = [k for k in range(len(cenas)) if not eh_3d[k] and not (k == ultima and loop_ok)]
     com_acao = [k for k in reais_idx if cenas[k].get("sfx_cena")]
     tempos_r8 = _tempos(RAIZ / "projetos" / projeto, cenas)
-    if reais_idx and not any(k in com_acao and tempos_r8[k][0] < 3.0 for k in reais_idx):
+    gancho3d_com_som = bool((cfg.get("excecao_dono") or {}).get("gancho_3d")) and eh_3d[0] and len(cenas[0]["animacao"].get("sfx", [])) >= 2
+    if reais_idx and not gancho3d_com_som and not any(k in com_acao and tempos_r8[k][0] < 3.0 for k in reais_idx):
         erros.append("R8 GANCHO SEM SOM DE AÇÃO: alguma cena dos 3 primeiros segundos precisa de sfx_cena (o som do que aparece).")
     # SOM NA AÇÃO (dono, vd011: "os efeitos não encaixam"): som de clipe real cai no instante da ação NA IMAGEM
     for k in com_acao:
