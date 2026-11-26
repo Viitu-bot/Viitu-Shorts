@@ -53,7 +53,7 @@
   {
    "em": "e sai rindo",
    "clipe": "tt_rykerwire_7509875889669295390.mp4",
-   "inicio": 14.0,
+   "inicio": 13.4,
    "som_original": false,
    "revisao": "manual",
    "_parte": "GANCHO",
@@ -75,14 +75,14 @@
      "desc": "a soft air whoosh",
      "db": -14,
      "dur": 0.6,
-     "no_clipe": 14.1
+     "no_clipe": 13.5
     }
    ]
   },
   {
    "em": "Ele cutuca",
    "clipe": "tt_rykerwire_7509875889669295390.mp4",
-   "inicio": 6.0,
+   "inicio": 15.55,
    "som_original": false,
    "revisao": "manual",
    "_parte": "INÍCIO",
@@ -95,9 +95,18 @@
      "desc": "a fast whoosh",
      "db": -14,
      "dur": 0.6,
-     "no_clipe": 6.8
+     "no_clipe": 16.35
     }
-   ]
+   ],
+   "foco": [
+    0.3,
+    0.33
+   ],
+   "zoom": [
+    1.5,
+    1.6
+   ],
+   "seguir": false
   },
   {
    "em": "o estalo",
@@ -160,7 +169,7 @@
   {
    "em": "costurada",
    "clipe": "tt_rykerwire_7509875889669295390.mp4",
-   "inicio": 33.0,
+   "inicio": 33.8,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
@@ -182,7 +191,7 @@
      "desc": "a soft air whoosh",
      "db": -14,
      "dur": 0.6,
-     "no_clipe": 33.4
+     "no_clipe": 34.2
     }
    ]
   },
@@ -239,13 +248,13 @@
   {
    "em": "Mas se encostar",
    "clipe": "tt_bluecollar.edu_7291377105978412330.mp4",
-   "inicio": 6.4,
+   "inicio": 7.8,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "o eletricista escalando a torre de metal (a torre é o perigo)",
+   "_funcao": "a torre: a coluna de isoladores e o metal que dá choque",
    "foco": [
-    0.5,
+    0.3,
     0.3
    ],
    "seguir": false,
@@ -257,8 +266,12 @@
      "desc": "a fast whoosh",
      "db": -14,
      "dur": 0.6,
-     "no_clipe": 6.6
+     "no_clipe": 8.0
     }
+   ],
+   "zoom": [
+    1.5,
+    1.6
    ]
   },
   {

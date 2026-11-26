@@ -19,6 +19,7 @@ palavras.json (tempos reais da voz) e os arquivos dos clipes. Com qualquer ❌ o
   R9 RITMO      cena real > 3 s (sem "acao_continua") e vista 3D > 3,5 s barram: corte a cada 2–3 s (vd004).
   R10 PARECIDAS duas cenas seguidas com quadro parecido (forma+cor ≥ 0,85) barram — intercalar perto/longe (dono 24/11).
   R11 VOZ LENTA < 3,0 palavras/s barra (dono 24/11, mediana 3,07 nos vídeos dele).
+  R14 TRECHO     cena real cujo pedaço usado atravessa um corte interno do clipe (triagem) barra — todas de uma vez (dono 26/11).
   R13 TARJA      clipe com faixa preta embutida (letterbox/pillarbox) no trecho usado barra ANTES do render — dono 26/11.
   R12 PRETO E BRANCO cena real sem cor (saturação média < 18 em 3 quadros) barra — dono 24/11 e 26/11 ("vou ficar puto").
   R7 CENA LONGA  cena real ≥ 4 s sem "manter" vira o mesmo plano parado na tela (o editor divide, mas repete o clipe).
@@ -365,6 +366,20 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
             if ch < h0 * 0.94 or cw < w0 * 0.94:
                 erros.append(f"R13 TARJA: cena {k + 1} ({c['clipe']}) tem faixa preta embutida ({w0}x{h0} → útil {cw}x{ch}); "
                              "recortar o arquivo ANTES de montar.")
+    # R14 TRECHO (dono 26/11: conferir tudo antes, não uma cena por vez no editor)
+    try:
+        tri = json.loads((pasta / "clipes" / "triagem.json").read_text(encoding="utf-8"))
+        tps = _tempos(pasta, cenas)
+        for k, c in enumerate(cenas):
+            if eh_3d[k] or eh_foto[k] or c.get("trecho_conferido") or c["clipe"] not in tri:
+                continue
+            ini = float(c.get("inicio", 0)); dur = (tps[k][1] - tps[k][0]) * float(c.get("velocidade") or 1)
+            tr = tri[c["clipe"]].get("trechos_utilizaveis", [])
+            if tr and not any(a <= ini and ini + dur <= b for a, b in tr):
+                cabem = [t for t in tr if t[1] - t[0] >= dur][:5]
+                erros.append(f"R14 TRECHO: cena {k + 1} ({c['clipe']}@{ini}s, {dur:.2f}s) atravessa corte interno; trechos que cabem: {cabem}.")
+    except (OSError, ValueError):
+        pass
     # R11 VOZ LENTA (dono 24/11): ritmo mínimo medido nos 12 vídeos editados pelo dono
     try:
         pal = json.loads((pasta / "palavras.json").read_text(encoding="utf-8"))
