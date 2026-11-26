@@ -5,6 +5,10 @@ description: Pesquisa e recomenda 3 temas de vídeo para o Viitu Shorts com núm
 
 # /tema <dia>
 
+> **NICHO DE ESTILO (dono 26/11, BÍBLIA §0c):** os 3 temas vêm das categorias fixas (flagrante do cotidiano · habilidade/
+> trabalho extremo · história curta de pessoa/personalidade · invenção visual chocante), não da "família do dia" do
+> calendário (que vira só sugestão). Cada tema diz se cabe em **12–18 s** e passa na **regra dos 75%+** (1ª cena + 1ª fala
+> seguram sozinhas). Precisa de explicação prévia longa → guardar.
 > **MÉTODO DO DONO 26/11 (vale sobre o resto):** lacuna PT-BR NÃO é obrigatória — tema que já existe em PT entra com
 > ângulo/ritmo diferente. Prova = Short gringo de 30–90 dias com views desproporcionais aos inscritos. Todo tema passa nos
 > 3 pilares (curiosidade imediata na 1ª frase · impacto visual sem áudio no 1º quadro · assunto universal) e é marcado

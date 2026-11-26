@@ -23,13 +23,18 @@ em `edicao/identidade.md`.
 
 ## Padrão-ouro: vd004 bombeiros (90,8% de retenção média, linha reta até 40 s — print do dono)
 45,7 s · 130 palavras (2,85/s) · 26 cenas (1,76 s cada) · gancho "de propósito" → "a maioria acha" → mecanismo →
-"mas tem um porém" → risco. **Duração: 25–30 s no máximo (dono 26/11; o tema decide, explicou rápido = vídeo curto).** Público adulto 25+.
+"mas tem um porém" → risco. **Duração: alvo 12–18 s, teto 30 s só se o tema exigir (dono 26/11: os 4 vídeos > 20 mil tinham < 16 s e > 105% de visualização).** Público adulto 25+.
 - **Gancho (meta 78%+ continuaram assistindo):** sem introdução nem contexto; a 1ª frase abre o loop de curiosidade em
   1,5–2 s, em cima do quadro mais estranho/forte do vídeo. Modelos: "Piscou o olho, perdeu…", "Como sumir do mapa…",
   "Por que esses…".
 - **Final (o vd004 caiu nos últimos 5 s):** loop NARRATIVO (dono 26/11): a última frase faz sentido ao emendar no gancho, sem precisar repetir a palavra. PROIBIDO resumo,
   moral, "da próxima vez…", CTA de inscrição/like no fim (trava `viitu.montagem` R0, do vd016 em diante). O vídeo corta
   no último som da voz, 0,3 s antes da margem antiga (`viitu/editar.py`).
+
+## Nicho de ESTILO (dono 26/11)
+3–4 categorias fixas, não assunto fixo: flagrante/inusitado do cotidiano · habilidade/trabalho extremo · história curta de
+pessoa/personalidade · invenção visual chocante. **Regra dos 75%+:** 1ª cena + 1ª fala seguram 75% sozinhas, senão o tema
+fica guardado. Assinatura (voz, ritmo, abertura, trilha) igual em qualquer assunto. Detalhe: BÍBLIA §0c.
 
 ## Retenção (dono 26/11 — caiu de 76–80% para 58%)
 Gancho nos primeiros 2 s + psicologia da retenção em todo o vídeo. **B-roll nunca sem o storyboard** de

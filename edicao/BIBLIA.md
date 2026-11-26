@@ -34,6 +34,22 @@ Motivo: a retenção caiu de 76–80% para 58%.
 - **Sons só das bibliotecas que o dono montou** (`biblioteca_sfx/`, abertura de 2 toques com eco) e sempre pelas
   atualizações mais recentes dele.
 
+## 0c. ATUALIZAÇÃO DO DONO — 26/11/2026, 2ª (autorizada no chat; vale sobre o 0b no que conflitar)
+Base: Studio do dono — os 4 vídeos acima de 20 mil views tinham MENOS de 16 s e mais de 105% de visualização média:
+piso molhado (28.193) · Cristiano Ronaldo nos bastidores (26.425) · "Piscou o olho, perdeu o dedo" (25.851) ·
+torcedor entregou o invasor (24.870). O que eles têm em comum é a DINÂMICA do formato, não o assunto.
+- **Nicho de ESTILO, não de assunto:** nada de micronicho ("só invenções", "só frutas"). 3–4 categorias fixas dentro de
+  curiosidades e acontecimentos visuais impressionantes:
+  1. flagrantes e situações inusitadas do cotidiano (piso molhado, torcedor);
+  2. habilidades e trabalhos extremos (profissional rápido, máquina perigosa, corte preciso);
+  3. histórias curtas de pessoas e personalidades (superação, atitude, tensão nos bastidores);
+  4. invenções/engenharia visual chocante (o que já fazíamos), quando passar na regra dos 75%.
+- **Duração ágil: alvo 12–18 s.** O teto de 30 s (0b) só quando o tema realmente exige; se precisa de muita explicação
+  prévia, o tema fica guardado.
+- **Regra dos 75%+:** o tema só entra se a 1ª cena e a 1ª fala, sozinhas, seguram 75% sem deslizar (reação imediata:
+  tensão, surpresa, riso ou indignação).
+- **Assinatura fixa em qualquer assunto:** mesma voz, mesmo ritmo acelerado, mesma abertura e trilha reconhecíveis.
+
 ## 1. Roteiro — em partes, sempre nesta ordem (dono: "eu montava parte por parte")
 | Parte | O que faz | Regra |
 |---|---|---|

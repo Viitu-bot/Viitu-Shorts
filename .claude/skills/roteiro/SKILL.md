@@ -4,7 +4,7 @@ description: Escreve o roteiro do Viitu Shorts (protocolo HISA) a partir do tema
 ---
 
 ## REGRAS DO DONO 26/11 (valem sobre TUDO abaixo, inclusive o bloco de 24/11)
-- **25–30 s no máximo, ~75–90 palavras** (o tema decide: explicou rápido, termina rápido). Cortar informação, não acelerar.
+- **Alvo 12–18 s (~40–55 palavras); teto 30 s (~90) só se o tema exigir** (BÍBLIA §0c). Cortar informação, não acelerar.
 - **Gancho nos primeiros 2 s** (≤ 6 palavras até a lacuna abrir) e retenção no vídeo todo: cada frase responde um pedaço
   e abre o próximo (micro-gancho), payoff no terço final (`edicao/retencao_storyboard.md`).
 - **Loop narrativo:** a última frase volta para o gancho com sentido (não precisa ser a mesma palavra). Sem ponto final.
