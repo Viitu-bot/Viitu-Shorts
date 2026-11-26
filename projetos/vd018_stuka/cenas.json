@@ -105,8 +105,12 @@
      "no_clipe": 54.1
     }
    ],
-   "layout": "inteiro",
-   "seguir": false
+   "seguir": false,
+   "sem_vinheta": true,
+   "foco": [
+    0.55,
+    0.5
+   ]
   },
   {
    "em": "sirene",
@@ -268,8 +272,12 @@
      "no_clipe": 42.7
     }
    ],
-   "layout": "inteiro",
-   "seguir": false
+   "seguir": false,
+   "sem_vinheta": true,
+   "foco": [
+    0.6,
+    0.5
+   ]
   },
   {
    "em": "Mas no puxão",
@@ -322,7 +330,8 @@
      "no_clipe": 39.0
     }
    ],
-   "baixa_res_ok": "filme alemão de época colorizado (1940), não existe em HD"
+   "baixa_res_ok": "filme alemão de época colorizado (1940), não existe em HD",
+   "sem_vinheta": true
   },
   {
    "em": "Então",

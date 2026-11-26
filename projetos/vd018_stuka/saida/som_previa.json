@@ -1,0 +1,32 @@
+{
+ "previa": "projetos/vd018_stuka/saida/previa.mp4",
+ "medidas": {
+  "musica_sob_voz_db": {
+   "valor": -13.8,
+   "ok": true
+  },
+  "musica_respira_db": {
+   "valor": 5.2,
+   "ok": true
+  },
+  "efeitos_acao_audiveis": {
+   "valor": "25/25",
+   "ok": true
+  },
+  "impacto_virada_db": {
+   "valor": [
+    -2.6,
+    -3.2
+   ],
+   "ok": true
+  },
+  "efeito_sobre_voz_db": {
+   "valor": -2.8,
+   "ok": true
+  },
+  "ding_frame0_db": {
+   "valor": 4.3,
+   "ok": true
+  }
+ }
+}
