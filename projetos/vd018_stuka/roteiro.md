@@ -1,5 +1,5 @@
 # vd018: O avião que quase se matava com a própria bomba (Stuka) — domingo 29/11
-Formato: recorde_historia · Faixa 20% (variação: história de bastidores + invenção visual; os 2 anteriores foram B1)
+Formato: recorde_historia (Tiro de ~17 s, categoria de estilo: invenção visual chocante) · Faixa 20% (variação: história de bastidores + invenção visual; os 2 anteriores foram B1)
 Gancho escolhido pelo dono (26/11): opção 1 — afirmação impossível (o avião é a vítima da própria arma).
 Regras 26/11: 25–30 s, gancho ≤ 2 s, loop narrativo, storyboard aprovado antes do B-roll, sons só da biblioteca_sfx.
 
@@ -9,23 +9,21 @@ além: sirene + o piloto apagando e o avião subindo sozinho. PT-BR: maior 2.228
 
 ## Partes
 [GANCHO] Esse avião quase se matava com a própria bomba.
-[INÍCIO] O Stuka descia gritando, com sirene nas rodas, quase na vertical. Soltou a bomba ali, ela pegava direto na hélice.
-[MEIO] O segredo é esse garfo na barriga: ele balança pra frente e arremessa a bomba pra longe da hélice, tipo estilingue.
-Mas tem um porém: no puxão pra subir, o tranco podia apagar o piloto. Então o avião se puxava sozinho,
-[FINAL] e o caboclo só acordava lá em cima, sem nem saber que
-(82 palavras ≈ 26 s com a voz do dono a ~3,15 pal/s. LOOP NARRATIVO: "…sem nem saber que / esse avião quase se matava com
-a própria bomba." — o fim devolve a história ao gancho com sentido.)
+[INÍCIO] Mergulhava na vertical com a sirene gritando. Soltou ali, a bomba pegava na hélice.
+[MEIO] O segredo é esse garfo: ele arremessa a bomba pra longe, tipo estilingue. Mas no puxão pra subir, o piloto podia apagar.
+[FINAL] Então o avião subia sozinho, e o caboclo nem sabia que
+(55 palavras ≈ 17 s — versão aprovada pelo dono em 26/11 depois da regra de 12–18 s. LOOP NARRATIVO: "…nem sabia que / esse
+avião quase se matava com a própria bomba.")
 
 ## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs)
 Esse avião quase se matava com a própria bomba.
-O Stuka descia gritando, com sirene nas rodas, quase na vertical. Soltou a bomba ali, ela pegava direto na hélice.
-O segredo é esse garfo na barriga: ele balança pra frente e arremessa a bomba pra longe da hélice, tipo estilingue.
-Mas tem um porém: no puxão pra subir, o tranco podia apagar o piloto. Então o avião se puxava sozinho, e o caboclo só acordava lá em cima, sem nem saber que
+Mergulhava na vertical com a sirene gritando. Soltou ali, a bomba pegava na hélice.
+O segredo é esse garfo: ele arremessa a bomba pra longe, tipo estilingue. Mas no puxão pra subir, o piloto podia apagar. Então o avião subia sozinho, e o caboclo nem sabia que
 
 ## Marcações para a edição
-- impacto_em: "arremessa" (a bomba voando pra fora da hélice) e "porém" (a virada).
-- destaques: bomba, sirene, vertical, hélice, garfo, estilingue, porém, apagar, sozinho, acordava
-- animacao (3D, um bloco ~5 s, vistas ≤ 3,5 s): vista lateral do Stuka de bico pra baixo. "pegava direto na hélice" =
+- impacto_em: "arremessa" (a bomba voando pra fora da hélice) e "puxão" (a virada).
+- destaques: bomba, vertical, sirene, hélice, garfo, estilingue, apagar, sozinho
+- animacao (3D, um bloco ~4 s, vistas ≤ 3,5 s): vista lateral do Stuka de bico pra baixo. "pegava direto na hélice" =
   a bomba caindo reto e batendo no disco da hélice (o erro, com X vermelho) → "garfo"/"arremessa" = o garfo em U balança
   pra frente e a bomba passa POR FORA do disco (✓).
 - musica: bit_shift_kevin_macleod (biblioteca do dono, 8-bit rápido; crédito CC BY no kit).

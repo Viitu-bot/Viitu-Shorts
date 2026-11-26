@@ -19,6 +19,7 @@ palavras.json (tempos reais da voz) e os arquivos dos clipes. Com qualquer ❌ o
   R9 RITMO      cena real > 3 s (sem "acao_continua") e vista 3D > 3,5 s barram: corte a cada 2–3 s (vd004).
   R10 PARECIDAS duas cenas seguidas com quadro parecido (forma+cor ≥ 0,85) barram — intercalar perto/longe (dono 24/11).
   R11 VOZ LENTA < 3,0 palavras/s barra (dono 24/11, mediana 3,07 nos vídeos dele).
+  R12 PRETO E BRANCO cena real sem cor (saturação média < 18 em 3 quadros) barra — dono 24/11 e 26/11 ("vou ficar puto").
   R7 CENA LONGA  cena real ≥ 4 s sem "manter" vira o mesmo plano parado na tela (o editor divide, mas repete o clipe).
 
 Exceção registrada: "bloco_3d_longo": "<pedido do dono>" no cenas.json (vd008: o dono pediu o tanque aberto em 3D).
@@ -46,6 +47,9 @@ CORTE_MAX_3D = 3.5
 PARECIDO_MAX = 0.85
 RITMO_MIN = 3.0
 MIN_RES = 600          # px úteis no lado menor da tela vertical (horizontal 1080p recortado = 607)
+
+
+SAT_MIN = 18          # saturação média (0–255) abaixo disso = preto e branco (R12)
 
 
 def _dimensoes(arq: Path) -> tuple[int, int]:
@@ -326,6 +330,20 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
             sim = _parecido(qa, qb)
             if sim >= PARECIDO_MAX:
                 erros.append(f"R10 IMAGENS PARECIDAS: cenas {k + 1} e {k + 2} ({sim:.2f}); intercalar plano (perto/longe), cor ou movimento.")
+    # R12 PRETO E BRANCO (reclamação 27, dono 24/11 e 26/11): toda cena real tem que ter COR (filme antigo = colorizado)
+    for k, c in enumerate(cenas):
+        if eh_3d[k] or c.get("pb_autorizado_pelo_dono"):
+            continue
+        arq = pasta / "clipes" / c["clipe"]
+        sats = []
+        for dt in (0.3, 0.9, 1.5):
+            q = _quadro(arq, float(c.get("inicio", 0)) + dt)
+            if q is not None:
+                hsv = cv2.cvtColor(q.astype(np.uint8)[None] if q.ndim == 2 else q.astype(np.uint8), cv2.COLOR_RGB2HSV)
+                sats.append(float(hsv[..., 1].mean()))
+        if sats and np.mean(sats) < SAT_MIN:
+            erros.append(f"R12 PRETO E BRANCO: cena {k + 1} ({c['clipe']}) sem cor (saturação {np.mean(sats):.0f} < {SAT_MIN}); "
+                         "usar versão colorizada ou outra fonte colorida.")
     # R11 VOZ LENTA (dono 24/11): ritmo mínimo medido nos 12 vídeos editados pelo dono
     try:
         pal = json.loads((pasta / "palavras.json").read_text(encoding="utf-8"))
