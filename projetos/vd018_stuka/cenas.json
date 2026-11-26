@@ -22,9 +22,7 @@
  ],
  "musica": "bit_shift_kevin_macleod.mp3",
  "cta": false,
- "bruto_livre": [
-  "arq_stuka_cor_sem_tarja.mp4"
- ],
+ "bruto_livre": [],
  "creditos_descricao": "Modelo 3D: \"Junkers Ju 87\" por helijah (Sketchfab, CC BY 4.0). Imagens: filme de época colorizado \"Junkers Ju 87 Stuka HD Color\" (Internet Archive). Piloto a 9,5 G: @lifeontheedgeofficial (TikTok). Animação: Viitu Shorts.",
  "cenas": [
   {
@@ -256,13 +254,12 @@
   },
   {
    "em": "tipo estilingue",
-   "clipe": "arq_stuka_cor_sem_tarja.mp4",
-   "inicio": 42.5,
+   "clipe": "ia_stuka_bomba.mp4",
+   "inicio": 0.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
-   "baixa_res_ok": "filme alemão de época colorizado (1940), não existe em HD",
-   "_funcao": "prova real: a bomba saindo de um Stuka de verdade",
+   "_funcao": "prova real: bombas saindo de um Stuka de verdade (filme de 1940 colorizado, ampliado por IA)",
    "foley": "voo",
    "sfx_cena": [
     {
@@ -271,15 +268,10 @@
      "desc": "a soft air whoosh",
      "db": -10,
      "dur": 0.6,
-     "no_clipe": 42.7
+     "no_clipe": 0.3
     }
    ],
-   "seguir": false,
-   "sem_vinheta": true,
-   "foco": [
-    0.6,
-    0.5
-   ]
+   "sem_vinheta": true
   },
   {
    "em": "Mas no puxão",
