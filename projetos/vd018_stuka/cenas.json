@@ -328,7 +328,8 @@
     0.45,
     0.5
    ],
-   "seguir": false
+   "seguir": false,
+   "sem_vinheta": true
   },
   {
    "em": "Então",
