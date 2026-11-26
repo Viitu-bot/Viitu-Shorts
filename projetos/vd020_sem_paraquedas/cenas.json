@@ -18,6 +18,7 @@
  "musica": "bit_shift_kevin_macleod.mp3",
  "cta": false,
  "bruto_livre": [
+  "heaven_sent_aberto.mp4",
   "heaven_sent_limpo.mp4"
  ],
  "creditos_descricao": "Imagens: transmissão \"Heaven Sent\" (Stride Gum / FOX, 2016) — salto de Luke Aikins.",
@@ -48,7 +49,7 @@
   },
   {
    "em": "a quase",
-   "clipe": "heaven_sent_limpo.mp4",
+   "clipe": "heaven_sent_aberto.mp4",
    "inicio": 17.8,
    "som_original": false,
    "revisao": "manual",
@@ -70,11 +71,15 @@
     "sufixo": " m",
     "em": "8.000",
     "ate_palavra": "metros"
-   }
+   },
+   "layout": "inteiro",
+   "sem_vinheta": true,
+   "seguir": false,
+   "baixa_res_ok": "transmissão original de 2016 só existe em 720p; imagem inteira (sem esticar) sobre fundo desfocado"
   },
   {
    "em": "Dois minutos",
-   "clipe": "heaven_sent_limpo.mp4",
+   "clipe": "heaven_sent_aberto.mp4",
    "inicio": 86.2,
    "som_original": false,
    "revisao": "manual",
@@ -90,11 +95,15 @@
      "dur": 0.6,
      "no_clipe": 86.6
     }
-   ]
+   ],
+   "layout": "inteiro",
+   "sem_vinheta": true,
+   "seguir": false,
+   "baixa_res_ok": "transmissão original de 2016 só existe em 720p; imagem inteira (sem esticar) sobre fundo desfocado"
   },
   {
    "em": "mirando uma rede",
-   "clipe": "heaven_sent_limpo.mp4",
+   "clipe": "heaven_sent_aberto.mp4",
    "inicio": 122.6,
    "som_original": false,
    "revisao": "manual",
@@ -110,11 +119,15 @@
      "dur": 0.6,
      "no_clipe": 122.8
     }
-   ]
+   ],
+   "layout": "inteiro",
+   "sem_vinheta": true,
+   "seguir": false,
+   "baixa_res_ok": "transmissão original de 2016 só existe em 720p; imagem inteira (sem esticar) sobre fundo desfocado"
   },
   {
    "em": "que lá de cima",
-   "clipe": "heaven_sent_limpo.mp4",
+   "clipe": "heaven_sent_aberto.mp4",
    "inicio": 112.0,
    "som_original": false,
    "revisao": "manual",
@@ -130,16 +143,20 @@
      "dur": 0.6,
      "no_clipe": 112.9
     }
-   ]
+   ],
+   "layout": "inteiro",
+   "sem_vinheta": true,
+   "seguir": false,
+   "baixa_res_ok": "transmissão original de 2016 só existe em 720p; imagem inteira (sem esticar) sobre fundo desfocado"
   },
   {
    "em": "Mas tem",
-   "clipe": "heaven_sent_limpo.mp4",
-   "inicio": 126.2,
+   "clipe": "heaven_sent_aberto.mp4",
+   "inicio": 50.5,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
-   "_funcao": "o Luke já perto do chão, a rede chegando",
+   "_funcao": "o Luke e o parceiro em queda livre, a curvatura da Terra atrás (o perigo é real)",
    "foley": "vento",
    "sfx_cena": [
     {
@@ -148,14 +165,18 @@
      "desc": "a fast whoosh",
      "db": -14,
      "dur": 0.6,
-     "no_clipe": 126.5
+     "no_clipe": 50.8
     }
-   ]
+   ],
+   "layout": "inteiro",
+   "sem_vinheta": true,
+   "seguir": false,
+   "baixa_res_ok": "transmissão original de 2016 só existe em 720p; imagem inteira (sem esticar) sobre fundo desfocado"
   },
   {
    "em": "de barriga",
    "clipe": "heaven_sent_limpo.mp4",
-   "inicio": 72.6,
+   "inicio": 74.6,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
@@ -168,7 +189,7 @@
      "desc": "a gust of wind rushing past",
      "db": -12,
      "dur": 1.4,
-     "no_clipe": 73.1
+     "no_clipe": 75.1
     }
    ]
   },
