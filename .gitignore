@@ -29,3 +29,4 @@ projetos/*/saida/stems/
 projetos/*/saida/A_*.mp4
 projetos/*/saida/B_*.mp4
 projetos/*/saida/partes/*.mp4
+assets/ia/*.pth

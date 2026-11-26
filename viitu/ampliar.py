@@ -67,6 +67,10 @@ class RRDBNet(nn.Module):
 
 
 def _modelo() -> RRDBNet:
+    if not PESOS.exists():                       # pesos fora do git (67 MB): baixa da versão oficial
+        PESOS.parent.mkdir(parents=True, exist_ok=True)
+        subprocess.run(["curl", "-sL", "-o", str(PESOS),
+                        "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth"], check=True)
     m = RRDBNet()
     sd = torch.load(PESOS, map_location="cpu")
     m.load_state_dict(sd.get("params_ema", sd.get("params", sd)), strict=True)
