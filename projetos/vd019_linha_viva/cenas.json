@@ -20,8 +20,7 @@
  "cta": false,
  "bruto_livre": [
   "x_Turbinetraveler_1972381652400664576.mp4",
-  "tt_rykerwire_7509875889669295390.mp4",
-  "tt_izakflo_7159956533651033390.mp4"
+  "tt_rykerwire_7509875889669295390.mp4"
  ],
  "creditos_descricao": "Imagens: @Turbinetraveler (X); @rykerwire, @amkb112, @izakflo, @bluecollar.edu (CNBC) e @jharlenco (TikTok).",
  "cenas": [
@@ -209,8 +208,8 @@
   },
   {
    "em": "igual passarinho",
-   "clipe": "tt_izakflo_7159956533651033390.mp4",
-   "inicio": 11.5,
+   "clipe": "ia_passaros_fio.mp4",
+   "inicio": 0.1,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
@@ -232,7 +231,7 @@
      "desc": "a soft air whoosh",
      "db": -14,
      "dur": 0.6,
-     "no_clipe": 11.6
+     "no_clipe": 0.2
     }
    ]
   },
@@ -263,8 +262,8 @@
   },
   {
    "em": "vira churrasco",
-   "clipe": "tt_izakflo_7159956533651033390.mp4",
-   "inicio": 30.6,
+   "clipe": "ia_passaros_clarao.mp4",
+   "inicio": 0.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
@@ -277,7 +276,7 @@
      "desc": "an electric arc zap",
      "db": -5,
      "dur": 1.2,
-     "no_clipe": 31.0
+     "no_clipe": 0.5
     }
    ]
   },
