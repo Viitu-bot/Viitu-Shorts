@@ -4,6 +4,25 @@ Retenção Visual) e **"edicao-shorts-faceless"** (Protocolo HISA). Trazidos par
 caiu de 76–80% para 58% e os clipes estavam sendo escolhidos sem essa lógica.
 Regra do dono: **o B-roll NÃO é escolhido sem passar por este método**, e o storyboard é mostrado ao dono antes de baixar.
 
+## 0. DIRETOR DE RETENÇÃO VISUAL — comando do dono (26/11, regra fixa; é como o Claude escolhe e ordena o B-roll)
+**Papel:** diretor de edição especializado em psicologia de retenção para vídeos curtos. Analisar o roteiro e descrever
+exatamente quais imagens usar, segundo por segundo, com estes critérios:
+1. **Dissonância cognitiva e curiosidade inicial (00:00–00:02):** o 1º clipe NUNCA é conceitual ou calmo. Mostra o
+   clímax visual, um perigo iminente, uma anomalia ou uma ação cortada no meio do movimento. Tem que fazer o cérebro
+   perguntar na hora: "o que está acontecendo aqui?".
+2. **Quebra de padrão a cada 1,5–2 s:** alternar a escala (detalhe/fechado → aberto; movimento rápido → zoom dinâmico).
+   NUNCA duas cenas estáticas ou do mesmo ângulo em sequência.
+3. **Associação indireta (complementar, não legendar):** nada de imagem literal óbvia (dinheiro ≠ alguém segurando
+   cédulas; = fila caótica no banco, cofre sendo trancado). A imagem sugere o que vem a seguir antes da frase terminar.
+4. **Retenção do meio e antecipação (loop aberto):** onde o roteiro explica a causa, usar imagem que AUMENTA a tensão ou
+   mostra a reação de surpresa de alguém, em vez de entregar a resposta completa de imediato.
+5. **Desfecho e repetição:** o último clipe conecta visualmente com o 1º elemento do vídeo (transição suave → loop).
+**Saída obrigatória (storyboard.md):** tabela com **Tempo aproximado (00:00–00:02) · Trecho da narração · Tipo de imagem /
+ação específica na tela · Gatilho psicológico** (curiosidade, quebra de padrão, tensão, clímax…) — mais as colunas de
+fonte, corte e som do §3.
+Por quê (dono): troca de escala + imagem não óbvia mantêm o cérebro decodificando; anomalia no 1º quadro segura os 2
+primeiros segundos, o gargalo dos vídeos que pararam antes de 20 mil views.
+
 ## 1. Como pensar cada cena (agente de retenção)
 1. **Hibridismo:** clipe real/UGC (TikTok, X, Reddit, Instagram) = ação, reação visceral, o momento imprevisível — dá
    credibilidade na hora. 3D/IA = plano de estabelecimento, o mecanismo por dentro, o que é impossível filmar.
@@ -33,7 +52,7 @@ Regra do dono: **o B-roll NÃO é escolhido sem passar por este método**, e o s
 
 ## 3. Storyboard obrigatório (antes de buscar/baixar clipes) — salvar em `projetos/<p>/storyboard.md`
 Tabela, uma linha por cena:
-| Tempo · trecho da voz | Função psicológica (gancho / micro-gancho / prova / virada / payoff / loop) | Fonte (real/UGC ou 3D) | Ação física EXATA no ápice | Corte (em que movimento sai) | Som (só de `biblioteca_sfx/`) |
+| Tempo aproximado | Trecho da narração | Tipo de imagem / ação específica na tela (no ápice) | Gatilho psicológico | Escala (fechado/aberto) | Fonte (real/UGC ou 3D) | Corte (em que movimento sai) | Som (só de `biblioteca_sfx/`) |
 Depois da tabela:
 - **Termos de busca (inglês):** `[sujeito] + [verbo de ação] + [ângulo/modificador]` (ex.: "stuka dive bomb release
   cockpit view").

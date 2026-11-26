@@ -38,7 +38,8 @@ fica guardado. Assinatura (voz, ritmo, abertura, trilha) igual em qualquer assun
 
 ## Retenção (dono 26/11 — caiu de 76–80% para 58%)
 Gancho nos primeiros 2 s + psicologia da retenção em todo o vídeo. **B-roll nunca sem o storyboard** de
-`edicao/retencao_storyboard.md` (docs "agente de retenção" e HISA do dono), mostrado ao dono antes de baixar.
+`edicao/retencao_storyboard.md` (§0 Diretor de Retenção Visual: 1º quadro = anomalia/perigo/ação no meio; quebra de
+escala a cada 1,5–2 s; imagem indireta que antecipa a frase; tensão no meio; último clipe liga no primeiro), mostrado ao dono antes de baixar.
 
 ## Som (regras fixas — `biblioteca_sfx/LEIA.md`)
 - Só sons de `biblioteca_sfx/` (4 pastas). PROIBIDO desenho animado, meme, "boing", buzina, risada, "pop" agudo.

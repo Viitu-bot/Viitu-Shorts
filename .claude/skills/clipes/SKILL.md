@@ -8,7 +8,7 @@ description: Escolhe e baixa os VÍDEOS que representam cada frase do roteiro do
 > **Regras do dono:** `edicao/BIBLIA.md` (manda em tudo; não alterar sem autorização) · planta técnica: `edicao/formato.md`.
 > **Formato:** `processo` = 1 bruto cronológico (`"bruto_cronologico"`); demais = mínimo de fontes do formato (`formatos.json`).
 
-**REGRA DO DONO 26/11 — B-roll NUNCA sem o método de retenção:** primeiro o storyboard de
+**REGRA DO DONO 26/11 — B-roll NUNCA sem o método de retenção** (começar pelo §0 "Diretor de Retenção Visual"): primeiro o storyboard de
 `edicao/retencao_storyboard.md` (função psicológica por frase, ação no ápice, corte na ação, ligação Kuleshov, 1,5–3 s,
 termos de busca `[sujeito]+[verbo]+[ângulo]`) em `projetos/<p>/storyboard.md`, MOSTRADO AO DONO; só com o ok dele
 buscar e baixar. Cada clipe baixado é conferido contra a linha do storyboard (a ação pedida aparece no ápice?).
