@@ -13,7 +13,9 @@ Quando usar cada efeito: `edicao/logica_editor.md`. Técnicas: `edicao/manual_ed
 
 ## REGRA DO DONO 26/11 — render é o ÚLTIMO passo
 Voz só com o roteiro final aprovado. Antes do `npm run render`: montagem sem ❌ (inclui R12 cor e R13 tarja nos clipes),
-decupagem + ouvido, partes conferidas, mixagem sem voz coberta. A entrega pós-render só CONFIRMA; se ela achar algo que a
+decupagem + ouvido, partes conferidas, mixagem sem voz coberta, e a PRÉVIA COMPLETA com o som final
+(`python3 -m viitu.som_final <p> --previa` → `saida/previa.mp4`: o Claude confere roteiro falado, efeitos, transições e
+música nela, com o SOM MEDIDO aprovado) — só então `npm run render`. A entrega pós-render só CONFIRMA; se ela achar algo que a
 montagem podia ter achado, a trava da montagem está faltando — criar a trava.
 
 ## 0. Antes de montar

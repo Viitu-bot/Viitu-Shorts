@@ -55,6 +55,8 @@ torcedor entregou o invasor (24.870). O que eles têm em comum é a DINÂMICA do
   gerar voz para mostrar roteiro: no vd018 a troca "caboclo → cara" pagou a voz duas vezes.
 - **Render completo é o ÚLTIMO processo.** Tudo é conferido antes: cor (R12), faixa preta/tarja (R13), nitidez, recorte,
   decupagem + ouvido, partes em baixa resolução, som medido no plano. Achar defeito DEPOIS do render = erro de processo.
+- **Som também é revisado antes do render** (dono 26/11): roteiro falado, efeitos, transições e música mixados e medidos
+  na PRÉVIA (`python3 -m viitu.som_final <p> --previa` = partes em baixa + som final) — o vídeo inteiro é conferido nela.
 - Retrabalho caro (voz, render, geração de som) só com a etapa anterior aprovada.
 
 ## 1. Roteiro — em partes, sempre nesta ordem (dono: "eu montava parte por parte")

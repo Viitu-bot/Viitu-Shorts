@@ -117,7 +117,7 @@ def medir(projeto: str, plano: dict) -> dict:
     return {k: {"valor": val, "ok": bool(ok)} for k, (val, ok) in r.items()}
 
 
-def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict:
+def montar(projeto: str, limpo: bool = False, saida: Path | None = None, previa: bool = False) -> dict:
     """limpo=True: a RECEITA DOS CANAIS ANALISADOS (logica_editor.md) — trilha constante + whoosh nos cortes + riser/boom
     na virada + ding; sem efeito de ação por cena e sem ambiência (os efeitos escolhidos por CLAP "não encaixavam")."""
     pasta = RAIZ / "projetos" / projeto
@@ -231,6 +231,21 @@ def montar(projeto: str, limpo: bool = False, saida: Path | None = None) -> dict
                     str(mix), "-map", "[v2]", str(st / "voz_m.wav"), "-map", "[l2]", str(st / "leito_m.wav"),
                     "-map", "[f2]", str(st / "efeitos_m.wav")], check=True)
     medidas = medir(projeto, plano)
+    if previa:
+        # PRÉVIA ANTES DO RENDER (dono 26/11: "todo o vídeo deve ser revisado antes de renderizado"): o som final inteiro
+        # (voz, música, efeitos, transições) sobre as partes em baixa resolução já renderizadas pelo viitu.partes
+        partes = sorted((pasta / "saida" / "partes").glob("[0-9]_*.mp4"))
+        lista = pasta / "saida" / "_partes.txt"
+        lista.write_text("".join(f"file '{q.resolve()}'\n" for q in partes), encoding="utf-8")
+        out = pasta / "saida" / "previa.mp4"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lista), "-i", str(mix),
+                        "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-crf", "28", "-preset", "veryfast", "-c:a", "aac",
+                        "-b:a", "160k", "-shortest", "-movflags", "+faststart", str(out)], check=True)
+        lista.unlink()
+        info = {"previa": str(out.relative_to(RAIZ)), "medidas": medidas}
+        (pasta / "saida" / "som_previa.json").write_text(json.dumps(info, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"PRÉVIA (antes do render): {info['previa']} — conferir o vídeo inteiro com o som final antes do npm run render")
+        return info
     tmp = mp4.with_name(f"_{mp4.name}")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(mp4), "-i", str(mix), "-map", "0:v", "-map", "1:a",
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(tmp)],
@@ -252,5 +267,6 @@ if __name__ == "__main__":
     import argparse
     a = argparse.ArgumentParser()
     a.add_argument("projeto"); a.add_argument("--limpo", action="store_true"); a.add_argument("--saida")
+    a.add_argument("--previa", action="store_true", help="som final + partes em baixa resolução, ANTES do render")
     x = a.parse_args()
-    montar(x.projeto, x.limpo, Path(x.saida) if x.saida else None)
+    montar(x.projeto, x.limpo, Path(x.saida) if x.saida else None, x.previa)
