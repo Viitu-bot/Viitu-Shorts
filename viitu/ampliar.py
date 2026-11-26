@@ -78,7 +78,7 @@ def _modelo() -> RRDBNet:
     return m.eval()
 
 
-def ampliar(projeto: str, clipe: str, inicio: float, dur: float, foco_x: float, saida: str) -> Path:
+def ampliar(projeto: str, clipe: str, inicio: float, dur: float, foco_x: float, saida: str, larg_entrada: int = 0) -> Path:
     pasta = RAIZ / "projetos" / projeto / "clipes"
     src = pasta / clipe
     w, h = map(int, subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "stream=width,height",
@@ -87,8 +87,13 @@ def ampliar(projeto: str, clipe: str, inicio: float, dur: float, foco_x: float, 
                           "-of", "csv=p=0", str(src)], capture_output=True, text=True).stdout.strip()
     cw = (h * 9 // 16) // 2 * 2
     cx = int((w - cw) * foco_x) // 2 * 2
+    vf = f"crop={cw}:{h}:{cx}:0"
+    if larg_entrada and larg_entrada < cw:       # vídeo vertical grande: reduz antes (a IA reconstrói o detalhe), senão leva horas
+        h = int(h * larg_entrada / cw) // 2 * 2
+        cw = larg_entrada
+        vf += f",scale={cw}:{h}:flags=area"
     raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{inicio:.2f}", "-t", f"{dur:.2f}", "-i", str(src),
-                          "-vf", f"crop={cw}:{h}:{cx}:0", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
+                          "-vf", vf, "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
                          capture_output=True, check=True).stdout
     n = len(raw) // (cw * h * 3)
     quadros = np.frombuffer(raw[: n * cw * h * 3], np.uint8).reshape(n, h, cw, 3)
@@ -110,4 +115,4 @@ def ampliar(projeto: str, clipe: str, inicio: float, dur: float, foco_x: float, 
 
 if __name__ == "__main__":
     p, c, i, d, fx, s = sys.argv[1:7]
-    ampliar(p, c, float(i), float(d), float(fx), s)
+    ampliar(p, c, float(i), float(d), float(fx), s, int(sys.argv[7]) if len(sys.argv) > 7 else 0)

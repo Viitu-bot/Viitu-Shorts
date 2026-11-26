@@ -1,0 +1,319 @@
+{
+ "_versao": "v1: regras 26/11 (18 s, Diretor de Retenção, sons da biblioteca, voz após aprovação)",
+ "formato": "invencao",
+ "impacto_em": [
+  "estalo",
+  "churrasco"
+ ],
+ "destaques": [
+  "volts",
+  "rindo",
+  "vara",
+  "estalo",
+  "roupa",
+  "aço",
+  "passarinho",
+  "torre",
+  "churrasco"
+ ],
+ "musica": "itty_bitty_8bit_kevin_macleod.mp3",
+ "cta": false,
+ "bruto_livre": [
+  "x_Turbinetraveler_1972381652400664576.mp4",
+  "tt_rykerwire_7509875889669295390.mp4",
+  "tt_izakflo_7159956533651033390.mp4"
+ ],
+ "creditos_descricao": "Imagens: @Turbinetraveler (X); @rykerwire, @amkb112, @izakflo, @bluecollar.edu (CNBC) e @jharlenco (TikTok).",
+ "cenas": [
+  {
+   "em": "Esse cara",
+   "clipe": "x_Turbinetraveler_1972381652400664576.mp4",
+   "inicio": 19.6,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "GANCHO: as luvas agarrando o cabo de 750 mil volts, visto de quem está pendurado no helicóptero",
+   "foley": "helicoptero",
+   "sfx_cena": [
+    {
+     "em": "encosta",
+     "arquivo": "assets/sfx/linha_alta_tensao_zumbido.mp3",
+     "desc": "an electrical hum",
+     "db": -12,
+     "dur": 2.0,
+     "no_clipe": 20.1
+    }
+   ],
+   "contador": {
+    "ate": 500,
+    "sufixo": " mil V",
+    "em": "meio",
+    "ate_palavra": "volts"
+   }
+  },
+  {
+   "em": "e sai rindo",
+   "clipe": "tt_rykerwire_7509875889669295390.mp4",
+   "inicio": 14.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "o eletricista na roupa de metal, rindo (só o rosto, sem a legenda do vídeo)",
+   "foco": [
+    0.5,
+    0.22
+   ],
+   "zoom": [
+    2.0,
+    2.1
+   ],
+   "seguir": false,
+   "foley": "helicoptero",
+   "sfx_cena": [
+    {
+     "em": "rindo",
+     "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+     "desc": "a soft air whoosh",
+     "db": -14,
+     "dur": 0.6,
+     "no_clipe": 14.1
+    }
+   ]
+  },
+  {
+   "em": "Ele cutuca",
+   "clipe": "tt_rykerwire_7509875889669295390.mp4",
+   "inicio": 6.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "o helicóptero com o eletricista no esqui chegando perto da linha",
+   "foley": "helicoptero",
+   "sfx_cena": [
+    {
+     "em": "vara",
+     "arquivo": "assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg",
+     "desc": "a fast whoosh",
+     "db": -14,
+     "dur": 0.6,
+     "no_clipe": 6.8
+    }
+   ]
+  },
+  {
+   "em": "o estalo",
+   "clipe": "tt_amkb112_arco.mp4",
+   "inicio": 13.8,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "o arco elétrico estourando na linha (o estalo)",
+   "foco": [
+    0.5,
+    0.4
+   ],
+   "zoom": [
+    1.4,
+    1.5
+   ],
+   "seguir": false,
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "estalo",
+     "arquivo": "assets/sfx/arco_eletrico_estalo.mp3",
+     "desc": "an electric arc zap",
+     "db": -6,
+     "dur": 1.2,
+     "no_clipe": 13.9
+    }
+   ]
+  },
+  {
+   "em": "O segredo",
+   "clipe": "tt_rykerwire_7509875889669295390.mp4",
+   "inicio": 29.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "o eletricista inteiro na roupa de metal (sem a legenda)",
+   "foco": [
+    0.5,
+    0.3
+   ],
+   "zoom": [
+    1.6,
+    1.7
+   ],
+   "seguir": false,
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "roupa",
+     "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+     "desc": "a soft air whoosh",
+     "db": -14,
+     "dur": 0.6,
+     "no_clipe": 29.2
+    }
+   ]
+  },
+  {
+   "em": "costurada",
+   "clipe": "tt_rykerwire_7509875889669295390.mp4",
+   "inicio": 33.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "foco": [
+    0.5,
+    0.3
+   ],
+   "zoom": [
+    2.0,
+    2.1
+   ],
+   "seguir": false,
+   "_funcao": "close do tecido de metal: a jaqueta presa na calça",
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "aço",
+     "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+     "desc": "a soft air whoosh",
+     "db": -14,
+     "dur": 0.6,
+     "no_clipe": 33.4
+    }
+   ]
+  },
+  {
+   "em": "a energia",
+   "clipe": "x_Turbinetraveler_1972381652400664576.mp4",
+   "inicio": 40.3,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "o cabo gigante de alta tensão de perto, a luva em cima e nada acontece",
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "energia",
+     "arquivo": "assets/sfx/linha_alta_tensao_zumbido.mp3",
+     "desc": "an electrical hum",
+     "db": -12,
+     "dur": 1.4,
+     "no_clipe": 40.4
+    }
+   ]
+  },
+  {
+   "em": "igual passarinho",
+   "clipe": "tt_izakflo_7159956533651033390.mp4",
+   "inicio": 11.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "milhares de passarinhos pousados no fio de alta tensão",
+   "foco": [
+    0.35,
+    0.35
+   ],
+   "zoom": [
+    1.5,
+    1.6
+   ],
+   "seguir": false,
+   "foley": "passaros",
+   "sfx_cena": [
+    {
+     "em": "passarinho",
+     "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+     "desc": "a soft air whoosh",
+     "db": -14,
+     "dur": 0.6,
+     "no_clipe": 11.6
+    }
+   ]
+  },
+  {
+   "em": "Mas se encostar",
+   "clipe": "tt_bluecollar.edu_7291377105978412330.mp4",
+   "inicio": 6.4,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "o eletricista escalando a torre de metal (a torre é o perigo)",
+   "foco": [
+    0.5,
+    0.3
+   ],
+   "seguir": false,
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "torre",
+     "arquivo": "assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg",
+     "desc": "a fast whoosh",
+     "db": -14,
+     "dur": 0.6,
+     "no_clipe": 6.6
+    }
+   ]
+  },
+  {
+   "em": "vira churrasco",
+   "clipe": "tt_izakflo_7159956533651033390.mp4",
+   "inicio": 30.6,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "o clarão: o fio explode (o que aconteceria)",
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "churrasco",
+     "arquivo": "assets/sfx/arco_eletrico_estalo.mp3",
+     "desc": "an electric arc zap",
+     "db": -5,
+     "dur": 1.2,
+     "no_clipe": 31.0
+    }
+   ]
+  },
+  {
+   "em": "então fica longe",
+   "clipe": "x_Turbinetraveler_1972381652400664576.mp4",
+   "inicio": 44.5,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "vista lá de cima, da linha que segue longe da torre (o lugar seguro)",
+   "foley": "helicoptero",
+   "sfx_cena": [
+    {
+     "em": "longe",
+     "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+     "desc": "a soft air whoosh",
+     "db": -14,
+     "dur": 0.6,
+     "no_clipe": 44.6
+    }
+   ]
+  },
+  {
+   "em": "dela e",
+   "clipe": "x_Turbinetraveler_1972381652400664576.mp4",
+   "inicio": 19.6,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "LOOP",
+   "_funcao": "o mesmo quadro do gancho (loop)",
+   "foley": "helicoptero",
+   "zoom": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}

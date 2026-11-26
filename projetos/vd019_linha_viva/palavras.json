@@ -1,0 +1,292 @@
+[
+ {
+  "palavra": "Esse",
+  "inicio": 0.0,
+  "fim": 0.197
+ },
+ {
+  "palavra": "cara",
+  "inicio": 0.237,
+  "fim": 0.501
+ },
+ {
+  "palavra": "encosta",
+  "inicio": 0.553,
+  "fim": 0.968
+ },
+ {
+  "palavra": "em",
+  "inicio": 1.027,
+  "fim": 1.185
+ },
+ {
+  "palavra": "meio",
+  "inicio": 1.264,
+  "fim": 1.501
+ },
+ {
+  "palavra": "milhão",
+  "inicio": 1.58,
+  "fim": 1.817
+ },
+ {
+  "palavra": "de",
+  "inicio": 1.896,
+  "fim": 1.975
+ },
+ {
+  "palavra": "volts",
+  "inicio": 2.054,
+  "fim": 2.369
+ },
+ {
+  "palavra": "e",
+  "inicio": 2.409,
+  "fim": 2.448
+ },
+ {
+  "palavra": "sai",
+  "inicio": 2.527,
+  "fim": 2.685
+ },
+ {
+  "palavra": "rindo.",
+  "inicio": 2.764,
+  "fim": 3.238
+ },
+ {
+  "palavra": "Ele",
+  "inicio": 3.327,
+  "fim": 3.406
+ },
+ {
+  "palavra": "cutuca",
+  "inicio": 3.485,
+  "fim": 3.88
+ },
+ {
+  "palavra": "o",
+  "inicio": 3.959,
+  "fim": 4.038
+ },
+ {
+  "palavra": "fio",
+  "inicio": 4.077,
+  "fim": 4.275
+ },
+ {
+  "palavra": "com",
+  "inicio": 4.314,
+  "fim": 4.354
+ },
+ {
+  "palavra": "essa",
+  "inicio": 4.443,
+  "fim": 4.561
+ },
+ {
+  "palavra": "vara:",
+  "inicio": 4.64,
+  "fim": 5.351
+ },
+ {
+  "palavra": "o",
+  "inicio": 5.43,
+  "fim": 5.47
+ },
+ {
+  "palavra": "estalo",
+  "inicio": 5.509,
+  "fim": 6.062
+ },
+ {
+  "palavra": "é",
+  "inicio": 6.141,
+  "fim": 6.18
+ },
+ {
+  "palavra": "o",
+  "inicio": 6.22,
+  "fim": 6.246
+ },
+ {
+  "palavra": "helicóptero",
+  "inicio": 6.272,
+  "fim": 6.852
+ },
+ {
+  "palavra": "virando",
+  "inicio": 6.931,
+  "fim": 7.247
+ },
+ {
+  "palavra": "parte",
+  "inicio": 7.326,
+  "fim": 7.602
+ },
+ {
+  "palavra": "do",
+  "inicio": 7.642,
+  "fim": 7.72
+ },
+ {
+  "palavra": "fio.",
+  "inicio": 7.799,
+  "fim": 8.115
+ },
+ {
+  "palavra": "O",
+  "inicio": 8.204,
+  "fim": 8.244
+ },
+ {
+  "palavra": "segredo",
+  "inicio": 8.283,
+  "fim": 8.757
+ },
+ {
+  "palavra": "é",
+  "inicio": 8.797,
+  "fim": 8.836
+ },
+ {
+  "palavra": "a",
+  "inicio": 8.876,
+  "fim": 8.915
+ },
+ {
+  "palavra": "roupa,",
+  "inicio": 8.994,
+  "fim": 9.468
+ },
+ {
+  "palavra": "costurada",
+  "inicio": 9.586,
+  "fim": 9.942
+ },
+ {
+  "palavra": "com",
+  "inicio": 10.021,
+  "fim": 10.1
+ },
+ {
+  "palavra": "fio",
+  "inicio": 10.189,
+  "fim": 10.347
+ },
+ {
+  "palavra": "de",
+  "inicio": 10.426,
+  "fim": 10.505
+ },
+ {
+  "palavra": "aço:",
+  "inicio": 10.584,
+  "fim": 11.215
+ },
+ {
+  "palavra": "a",
+  "inicio": 11.255,
+  "fim": 11.294
+ },
+ {
+  "palavra": "energia",
+  "inicio": 11.413,
+  "fim": 11.768
+ },
+ {
+  "palavra": "passa",
+  "inicio": 11.847,
+  "fim": 12.084
+ },
+ {
+  "palavra": "por",
+  "inicio": 12.163,
+  "fim": 12.242
+ },
+ {
+  "palavra": "fora,",
+  "inicio": 12.331,
+  "fim": 12.726
+ },
+ {
+  "palavra": "igual",
+  "inicio": 12.805,
+  "fim": 13.042
+ },
+ {
+  "palavra": "passarinho",
+  "inicio": 13.16,
+  "fim": 13.516
+ },
+ {
+  "palavra": "no",
+  "inicio": 13.595,
+  "fim": 13.674
+ },
+ {
+  "palavra": "fio.",
+  "inicio": 13.753,
+  "fim": 14.069
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 14.158,
+  "fim": 14.237
+ },
+ {
+  "palavra": "se",
+  "inicio": 14.316,
+  "fim": 14.394
+ },
+ {
+  "palavra": "encostar",
+  "inicio": 14.473,
+  "fim": 14.789
+ },
+ {
+  "palavra": "na",
+  "inicio": 14.868,
+  "fim": 14.947
+ },
+ {
+  "palavra": "torre,",
+  "inicio": 15.036,
+  "fim": 15.431
+ },
+ {
+  "palavra": "vira",
+  "inicio": 15.483,
+  "fim": 15.589
+ },
+ {
+  "palavra": "churrasco,",
+  "inicio": 15.668,
+  "fim": 16.537
+ },
+ {
+  "palavra": "então",
+  "inicio": 16.626,
+  "fim": 16.823
+ },
+ {
+  "palavra": "fica",
+  "inicio": 16.912,
+  "fim": 17.149
+ },
+ {
+  "palavra": "longe",
+  "inicio": 17.228,
+  "fim": 17.465
+ },
+ {
+  "palavra": "dela",
+  "inicio": 17.544,
+  "fim": 17.86
+ },
+ {
+  "palavra": "e",
+  "inicio": 17.939,
+  "fim": 18.413
+ }
+]
