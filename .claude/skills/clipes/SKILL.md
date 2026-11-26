@@ -13,6 +13,10 @@ description: Escolhe e baixa os VÍDEOS que representam cada frase do roteiro do
 termos de busca `[sujeito]+[verbo]+[ângulo]`) em `projetos/<p>/storyboard.md`, MOSTRADO AO DONO; só com o ok dele
 buscar e baixar. Cada clipe baixado é conferido contra a linha do storyboard (a ação pedida aparece no ápice?).
 
+**ONDE BUSCAR (dono 26/11):** real/documental colorido primeiro (rede social, conta oficial, arquivo colorizado,
+reportagem aberta); Pixabay/Pexels só para ambientação/abstrato; NUNCA preto e branco (trava R12). Cortes de 1–2,5 s;
+a imagem completa a frase e antecipa a próxima; 1º quadro magnético (`edicao/retencao_storyboard.md` §2b).
+
 **ANTES DE TUDO: `edicao/reclamacoes.md`** (padrões de reclamação do dono e a estrutura de montagem padrão).
 A trava `python3 -m viitu.montagem <p>` barra: clipe em > 2 cenas, < 60% de fontes diferentes, 3D picotado,
 gancho com foto/3D/< 720p, clipe desfocado ou parado. **Meta: ≥ 7 fontes reais diferentes por vídeo.**

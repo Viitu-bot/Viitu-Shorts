@@ -20,6 +20,17 @@ Regra do dono: **o B-roll NÃO é escolhido sem passar por este método**, e o s
 | 75–90% (payoff) | recompensa ("eureka") | a resposta/o clímax inteiro, SEM corte no meio |
 | fim | loop | a última frase fecha a história de um jeito que faz sentido ao voltar para a 1ª (ver BÍBLIA §0b) |
 
+## 2b. Onde buscar e como sincronizar (dono, 26/11 — 2ª orientação)
+- **Fonte real/documental PRIMEIRO** (gravação original, filmagem de arquivo COLORIDA/colorizada, reportagem com licença
+  aberta, demonstração pública real, conta oficial). **Pixabay/Pexels só para ambientação ou ideia abstrata** (cidade de
+  cima, dinheiro, multidão, trânsito) — para curiosidade/flagrante/engenharia eles parecem artificiais ou lentos.
+- Direitos: autorização ou uso transformativo (narração própria + cortes rápidos + edição original) e crédito do @.
+- **Cortes de 1–2,5 s** em vídeo de ~15 s; mudar ângulo/plano ANTES da frase terminar.
+- **O B-roll COMPLETA a narração, não repete:** a imagem cria a expectativa da frase seguinte (fraco: "esse piso é liso" +
+  foto do chão; forte: "parece seguro, mas esconde uma armadilha" + alguém escorregando em câmera lenta / a água invisível).
+- **Plano inicial magnético:** gera dúvida antes da 1ª palavra completa — enquadramento fechado, ação no meio do
+  movimento, algo que parece fisicamente impossível ou perigoso.
+
 ## 3. Storyboard obrigatório (antes de buscar/baixar clipes) — salvar em `projetos/<p>/storyboard.md`
 Tabela, uma linha por cena:
 | Tempo · trecho da voz | Função psicológica (gancho / micro-gancho / prova / virada / payoff / loop) | Fonte (real/UGC ou 3D) | Ação física EXATA no ápice | Corte (em que movimento sai) | Som (só de `biblioteca_sfx/`) |
