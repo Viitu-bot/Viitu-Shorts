@@ -8,14 +8,14 @@ Prova: radar 24/11 (API do YouTube) | Curiosidades Incríveis (canal BR) | 4.484
 
 ## Partes
 [GANCHO] Esse cara encosta em meio milhão de volts e sai rindo.
-[INÍCIO] Primeiro ele cutuca o fio com essa vara: o estalo é o helicóptero entrando na voltagem do fio.
+[INÍCIO] Ele cutuca o fio com essa vara: o estalo é o helicóptero virando parte do fio.
 [MEIO] O segredo é a roupa, costurada com fio de aço: a energia passa por fora, igual passarinho no fio.
 [FINAL] Mas se encostar na torre, vira churrasco, então fica longe dela e
 (57 palavras ≈ 18 s a ~3,15 pal/s. LOOP NARRATIVO: "…então fica longe dela e / encosta em meio milhão de volts e sai rindo.")
 
 ## ✅ TEXTO FINAL PARA A VOZ (ElevenLabs) — SÓ GERAR DEPOIS DO "APROVADO" DO DONO
 Esse cara encosta em meio milhão de volts e sai rindo.
-Primeiro ele cutuca o fio com essa vara: o estalo é o helicóptero entrando na voltagem do fio.
+Ele cutuca o fio com essa vara: o estalo é o helicóptero virando parte do fio.
 O segredo é a roupa, costurada com fio de aço: a energia passa por fora, igual passarinho no fio. Mas se encostar na torre, vira churrasco, então fica longe dela e
 
 ## Marcações

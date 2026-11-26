@@ -6,8 +6,8 @@ houver). Pixabay só para o "passarinho no fio" (ambientação). Sem preto e bra
 |---|---|---|---|---|---|---|---|
 | 00:00–02:00 | "Esse cara encosta em meio milhão de volts…" | eletricista no esqui do helicóptero, a faísca estourando entre a vara e o fio | dissonância/perigo: "como não morreu?" | fechado | real | no estouro do arco | abertura 2 toques + estalo de arco |
 | 02:00–03:00 | "…e sai rindo." | o mesmo cara já agarrado no fio, tranquilo (sorriso/gesto) | anomalia (calma no perigo) | médio | real | no gesto | whoosh suave |
-| 03:00–05:00 | "Primeiro ele cutuca o fio com essa vara:" | helicóptero chegando de lado na linha, vara esticada | antecipação | aberto | real | vara quase tocando | zumbido da linha + helicóptero (foley) |
-| 05:00–06:30 | "o estalo é o helicóptero entrando na voltagem do fio." | close do arco elétrico pulando na ponta da vara | clímax curto (impacto "estalo") | fechado | real | no estalo | estalo de arco (impacto) |
+| 03:00–05:00 | "Ele cutuca o fio com essa vara:" | helicóptero chegando de lado na linha, vara esticada | antecipação | aberto | real | vara quase tocando | zumbido da linha + helicóptero (foley) |
+| 05:00–06:30 | "o estalo é o helicóptero virando parte do fio." | close do arco elétrico pulando na ponta da vara | clímax curto (impacto "estalo") | fechado | real | no estalo | estalo de arco (impacto) |
 | 06:30–08:30 | "O segredo é a roupa, costurada com fio de aço:" | close do tecido/luva brilhando + seta vermelha no tecido | curiosidade (o detalhe) | fechado | real | seta completa | whoosh suave |
 | 08:30–10:00 | "a energia passa por fora," | a mão agarrando o cabo sem nada acontecer | tensão → alívio | médio | real | mão fechando | zumbido |
 | 10:00–11:30 | "igual passarinho no fio." | passarinhos pousados num fio de alta tensão | associação (o cérebro entende na hora) | aberto | Pixabay | pássaro levantando voo | whoosh suave |
