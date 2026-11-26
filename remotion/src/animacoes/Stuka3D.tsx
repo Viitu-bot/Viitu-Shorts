@@ -155,8 +155,8 @@ const Garfo: React.FC<{theta: number; brilho: number}> = ({theta, brilho}) => {
   );
 };
 
-const Sirene: React.FC<{p: THREE.Vector3; ang: number}> = ({p, ang}) => (
-  <group position={[p.x - 0.55, p.y + 0.55, p.z]}>
+const Sirene: React.FC<{p: THREE.Vector3; ang: number; grande?: boolean}> = ({p, ang, grande}) => (
+  <group position={[p.x - 0.55, p.y + 0.55, p.z + (grande ? 0.25 : 0)]} scale={grande ? 1.8 : 1}>
     <mesh rotation={[0, 0, Math.PI / 2]}><cylinderGeometry args={[0.09, 0.11, 0.28, 16]} /><meshStandardMaterial color="#2d3a2a" metalness={0.5} roughness={0.4} /></mesh>
     <group position={[-0.17, 0, 0]} rotation={[ang, 0, 0]}>
       {[0, 1, 2, 3].map((i) => (
@@ -247,8 +247,8 @@ export const Stuka3D: React.FC<{fase: string; dur: number; eventos: Record<strin
     [x * Math.cos(mergulho) - y * Math.sin(mergulho), x * Math.sin(mergulho) + y * Math.cos(mergulho), z];
   if (info && fase === 'sirene') {
     const r = info.rodas.reduce((m, q) => (q.z > m.z ? q : m), info.rodas[0]);
-    const s = mundo(r.x - 0.45, r.y + 0.75, r.z);
-    cams.sirene = [[s[0] + 0.75 - k * 0.15, s[1] - 0.25, s[2] + 0.85 - k * 0.15], s, 40];
+    const s = mundo(r.x - 0.55, r.y + 0.55, r.z + 0.25);
+    cams.sirene = [[s[0] + 1.6, s[1] - 2.2 + k * 0.4, s[2] + 2.6 - k * 0.4], s, 38];
   }
   if (fase === 'helice') {
     const bw = mundo(bombaPos[0], bombaPos[1], 0), hw = mundo(HELICE_X, info ? info.eixoY : 0.1, 0);
@@ -277,7 +277,7 @@ export const Stuka3D: React.FC<{fase: string; dur: number; eventos: Record<strin
         <group rotation={[rolagem, 0, mergulho]}>
           <primitive object={info.limpo} />
           {!fase.startsWith('ver') && <Helice y={info.eixoY} ang={giro} borrao={borrao} />}
-          {!fase.startsWith('ver') && info.rodas.map((r, i) => <Sirene key={i} p={r} ang={sireneAng} />)}
+          {!fase.startsWith('ver') && info.rodas.map((r, i) => <Sirene key={i} p={r} ang={sireneAng} grande={fase === 'sirene'} />)}
           {mostraBomba && fase !== 'erro' && <Garfo theta={theta} brilho={brilhoGarfo} />}
           {mostraBomba && <group position={bombaPos}><Bomba /></group>}
         </group>

@@ -104,7 +104,9 @@
      "dur": 2.2,
      "no_clipe": 54.1
     }
-   ]
+   ],
+   "layout": "inteiro",
+   "seguir": false
   },
   {
    "em": "sirene",
@@ -265,7 +267,9 @@
      "dur": 0.6,
      "no_clipe": 42.7
     }
-   ]
+   ],
+   "layout": "inteiro",
+   "seguir": false
   },
   {
    "em": "Mas no puxão",
