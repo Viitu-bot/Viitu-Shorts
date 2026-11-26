@@ -9,7 +9,7 @@ palavras.json (tempos reais da voz) e os arquivos dos clipes. Com qualquer ❌ o
   R2 3D EM BLOCO o 3D é a EXPLICAÇÃO: um bloco contínuo só (nenhum clipe real no meio), de 4 s a 45% do vídeo.
                  Clipe real vem ANTES (gancho/contexto) e DEPOIS (prova/virada), nunca cortando o 3D.
   R3 GANCHO      1ª cena = vídeo real (nunca foto, nunca 3D), sujeito grande, clipe ≥ 720p.
-  R4 QUALIDADE   todo clipe real ≥ 720 px no lado menor, nítido e com movimento no trecho usado; < 720p só com
+  R4 QUALIDADE   todo clipe real ≥ 720 px no lado menor, nítido (cena lisa de verdade, ≥ 12: "suave_ok") e com movimento; < 720p só com
                  "baixa_res_ok": "<motivo>" e nunca no gancho.
   R5 FOTO        no máximo 2 fotos, nunca no gancho, nunca seguidas.
   R6 LOOP        a última cena é o mesmo clipe e o mesmo segundo da primeira.
@@ -299,7 +299,10 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
                 erros.append(msg + " — trocar ou justificar com \"baixa_res_ok\".")
         usado = max(dur * float(c.get("velocidade", 1.0)), 0.5)          # trecho do CLIPE realmente usado (câmera lenta usa menos)
         nit, mov = _nitidez_movimento(arq, float(c.get("inicio", 0)), usado)
-        if nit < 40:
+        if nit < 40 and c.get("suave_ok") and k > 0 and nit >= 12:
+            # cena LISA de verdade (rede branca, céu): pouca textura ≠ borrado; olhada quadro a quadro, nunca no gancho
+            avisos.append(f"R4 LISA: cena {k + 1} ({c['clipe']}) nitidez {nit:.0f} aceita: {c['suave_ok']}")
+        elif nit < 40:
             erros.append(f"R4 DESFOCADO: cena {k + 1} ({c['clipe']}@{c.get('inicio', 0)}s) nitidez {nit:.0f}.")
         if mov < 1.0 and not c.get("parado_ok"):
             avisos.append(f"R4 PARADO: cena {k + 1} ({c['clipe']}) quase sem movimento ({mov:.1f}); parece foto.")

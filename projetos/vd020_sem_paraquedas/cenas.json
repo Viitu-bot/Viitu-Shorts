@@ -19,14 +19,19 @@
  "cta": false,
  "bruto_livre": [
   "heaven_sent_aberto.mp4",
-  "heaven_sent_limpo.mp4"
+  "heaven_sent_limpo.mp4",
+  "ia_gancho.mp4",
+  "ia_barriga.mp4",
+  "ia_rede.mp4",
+  "ia_abraco.mp4",
+  "ia_publico.mp4"
  ],
  "creditos_descricao": "Imagens: transmissão \"Heaven Sent\" (Stride Gum / FOX, 2016) — salto de Luke Aikins.",
  "cenas": [
   {
    "em": "Ele caiu",
-   "clipe": "heaven_sent_limpo.mp4",
-   "inicio": 70.3,
+   "clipe": "ia_gancho.mp4",
+   "inicio": 0.1,
    "som_original": false,
    "revisao": "manual",
    "_parte": "GANCHO",
@@ -37,24 +42,21 @@
      "em": "caiu",
      "arquivo": "assets/sfx/vento_queda_livre.mp3",
      "desc": "a gust of wind rushing past",
-     "db": -10,
-     "dur": 2.0,
-     "no_clipe": 70.5
+     "db": -13,
+     "dur": 1.0,
+     "no_clipe": 0.3
     }
    ],
-   "foco": [
-    0.5,
-    0.5
-   ]
+   "trecho_conferido": true
   },
   {
    "em": "a quase",
    "clipe": "heaven_sent_aberto.mp4",
-   "inicio": 17.8,
+   "inicio": 89.8,
    "som_original": false,
    "revisao": "manual",
    "_parte": "GANCHO",
-   "_funcao": "o Luke e um parceiro despencando sobre as montanhas, o chão lá embaixo",
+   "_funcao": "lá do alto: as montanhas e a base minúsculas, o contador subindo",
    "foley": "vento",
    "sfx_cena": [
     {
@@ -63,7 +65,7 @@
      "desc": "a soft air whoosh",
      "db": -14,
      "dur": 0.6,
-     "no_clipe": 17.9
+     "no_clipe": 89.9
     }
    ],
    "contador": {
@@ -75,25 +77,26 @@
    "layout": "inteiro",
    "sem_vinheta": true,
    "seguir": false,
-   "baixa_res_ok": "transmissão original de 2016 só existe em 720p; imagem inteira (sem esticar) sobre fundo desfocado"
+   "baixa_res_ok": "transmissão original de 2016 só existe em 720p; imagem inteira (sem esticar) sobre fundo desfocado",
+   "trecho_conferido": "corte interno em 89,5 s que a triagem não pegou; de 89,8 em diante é uma tomada só (olhada quadro a quadro)"
   },
   {
    "em": "Dois minutos",
    "clipe": "heaven_sent_aberto.mp4",
-   "inicio": 86.2,
+   "inicio": 76.2,
    "som_original": false,
    "revisao": "manual",
    "_parte": "INÍCIO",
-   "_funcao": "paraquedistas mergulhando com rastro de fumaça",
+   "_funcao": "o Luke de verde e o parceiro despencando sobre as montanhas",
    "foley": "vento",
    "sfx_cena": [
     {
      "em": "despencando",
-     "arquivo": "assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg",
-     "desc": "a fast whoosh",
-     "db": -14,
+     "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+     "desc": "a soft air whoosh",
+     "db": -16,
      "dur": 0.6,
-     "no_clipe": 86.6
+     "no_clipe": 76.6
     }
    ],
    "layout": "inteiro",
@@ -175,8 +178,8 @@
   },
   {
    "em": "de barriga",
-   "clipe": "heaven_sent_limpo.mp4",
-   "inicio": 74.6,
+   "clipe": "ia_barriga.mp4",
+   "inicio": 0.1,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
@@ -189,14 +192,15 @@
      "desc": "a gust of wind rushing past",
      "db": -12,
      "dur": 1.4,
-     "no_clipe": 75.1
+     "no_clipe": 0.6
     }
-   ]
+   ],
+   "trecho_conferido": true
   },
   {
    "em": "No último",
    "clipe": "heaven_sent_limpo.mp4",
-   "inicio": 127.8,
+   "inicio": 127.2,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
@@ -207,16 +211,18 @@
      "em": "costas",
      "arquivo": "assets/sfx/batida_na_rede.mp3",
      "desc": "a punchy impact hit",
-     "db": -5,
+     "db": -7,
      "dur": 1.2,
      "no_clipe": 129.0
     }
-   ]
+   ],
+   "suave_ok": "a rede branca contra o chão: cena lisa, olhada quadro a quadro; é o momento real do salto (só existe em 720p)",
+   "baixa_res_ok": "transmissão original de 2016 só existe em 720p"
   },
   {
    "em": "saiu inteiro",
-   "clipe": "heaven_sent_limpo.mp4",
-   "inicio": 184.8,
+   "clipe": "ia_abraco.mp4",
+   "inicio": 0.1,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
@@ -229,14 +235,15 @@
      "desc": "a soft air whoosh",
      "db": -14,
      "dur": 0.6,
-     "no_clipe": 185.0
+     "no_clipe": 0.3
     }
-   ]
+   ],
+   "trecho_conferido": true
   },
   {
    "em": "e tem gente",
-   "clipe": "heaven_sent_limpo.mp4",
-   "inicio": 139.0,
+   "clipe": "ia_publico.mp4",
+   "inicio": 0.1,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
@@ -249,27 +256,21 @@
      "desc": "a soft air whoosh",
      "db": -14,
      "dur": 0.6,
-     "no_clipe": 139.3
+     "no_clipe": 0.4
     }
-   ]
+   ],
+   "trecho_conferido": true
   },
   {
    "em": "hoje que",
-   "clipe": "heaven_sent_limpo.mp4",
-   "inicio": 70.3,
+   "clipe": "ia_gancho.mp4",
+   "inicio": 0.1,
    "som_original": false,
    "revisao": "manual",
    "_parte": "LOOP",
    "_funcao": "o mesmo quadro do gancho (loop)",
    "foley": "vento",
-   "foco": [
-    0.5,
-    0.5
-   ],
-   "zoom": [
-    1.0,
-    1.0
-   ]
+   "trecho_conferido": true
   }
  ]
 }
