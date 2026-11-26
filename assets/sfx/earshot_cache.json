@@ -502,5 +502,21 @@
    "a cinematic hit with a long tail",
    "a deep cinematic boom"
   ]
+ },
+ "linha_alta_tensao_zumbido.mp3|1795701922676464802|an electrical hum": {
+  "verdict": "plausible",
+  "z": 2.8,
+  "parece": [
+   "a phone vibration buzz",
+   "a power drill"
+  ]
+ },
+ "arco_eletrico_estalo.mp3|1795701918745017374|an electric arc zap": {
+  "verdict": "strong",
+  "z": 5.0,
+  "parece": [
+   "an error buzz",
+   "a phone vibration buzz"
+  ]
  }
 }
