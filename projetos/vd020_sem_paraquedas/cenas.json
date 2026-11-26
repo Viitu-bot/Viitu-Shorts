@@ -1,0 +1,254 @@
+{
+ "_versao": "v1: regras 26/11 (17,5 s, Diretor de Retenção, sons da biblioteca, voz após aprovação)",
+ "formato": "invencao",
+ "impacto_em": [
+  "costas"
+ ],
+ "destaques": [
+  "céu",
+  "paraquedas",
+  "metros",
+  "despencando",
+  "rede",
+  "selo",
+  "coluna",
+  "costas",
+  "inteiro"
+ ],
+ "musica": "bit_shift_kevin_macleod.mp3",
+ "cta": false,
+ "bruto_livre": [
+  "heaven_sent_limpo.mp4"
+ ],
+ "creditos_descricao": "Imagens: transmissão \"Heaven Sent\" (Stride Gum / FOX, 2016) — salto de Luke Aikins.",
+ "cenas": [
+  {
+   "em": "Ele caiu",
+   "clipe": "heaven_sent_limpo.mp4",
+   "inicio": 70.3,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "GANCHO: o Luke de roupa verde em queda livre, de perto, sem nada nas costas",
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "caiu",
+     "arquivo": "assets/sfx/vento_queda_livre.mp3",
+     "desc": "a gust of wind rushing past",
+     "db": -10,
+     "dur": 2.0,
+     "no_clipe": 70.5
+    }
+   ],
+   "foco": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "em": "a quase",
+   "clipe": "heaven_sent_limpo.mp4",
+   "inicio": 17.8,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "o Luke e um parceiro despencando sobre as montanhas, o chão lá embaixo",
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "quase",
+     "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+     "desc": "a soft air whoosh",
+     "db": -14,
+     "dur": 0.6,
+     "no_clipe": 17.9
+    }
+   ],
+   "contador": {
+    "ate": 7600,
+    "sufixo": " m",
+    "em": "8.000",
+    "ate_palavra": "metros"
+   }
+  },
+  {
+   "em": "Dois minutos",
+   "clipe": "heaven_sent_limpo.mp4",
+   "inicio": 86.2,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "paraquedistas mergulhando com rastro de fumaça",
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "despencando",
+     "arquivo": "assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg",
+     "desc": "a fast whoosh",
+     "db": -14,
+     "dur": 0.6,
+     "no_clipe": 86.6
+    }
+   ]
+  },
+  {
+   "em": "mirando uma rede",
+   "clipe": "heaven_sent_limpo.mp4",
+   "inicio": 122.6,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "a rede vista de cima, já perto",
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "rede",
+     "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+     "desc": "a soft air whoosh",
+     "db": -14,
+     "dur": 0.6,
+     "no_clipe": 122.8
+    }
+   ]
+  },
+  {
+   "em": "que lá de cima",
+   "clipe": "heaven_sent_limpo.mp4",
+   "inicio": 112.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "lá do alto: o alvo vira um pontinho (o selo)",
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "selo",
+     "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+     "desc": "a soft air whoosh",
+     "db": -14,
+     "dur": 0.6,
+     "no_clipe": 112.9
+    }
+   ]
+  },
+  {
+   "em": "Mas tem",
+   "clipe": "heaven_sent_limpo.mp4",
+   "inicio": 126.2,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "o Luke já perto do chão, a rede chegando",
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "porém",
+     "arquivo": "assets/sfx/cc0/whoosh_fs-127197-fast-simple-chop-5-aif.ogg",
+     "desc": "a fast whoosh",
+     "db": -14,
+     "dur": 0.6,
+     "no_clipe": 126.5
+    }
+   ]
+  },
+  {
+   "em": "de barriga",
+   "clipe": "heaven_sent_limpo.mp4",
+   "inicio": 72.6,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "de perto: ele caindo de barriga pra baixo",
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "coluna",
+     "arquivo": "assets/sfx/vento_queda_livre.mp3",
+     "desc": "a gust of wind rushing past",
+     "db": -12,
+     "dur": 1.4,
+     "no_clipe": 73.1
+    }
+   ]
+  },
+  {
+   "em": "No último",
+   "clipe": "heaven_sent_limpo.mp4",
+   "inicio": 127.8,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "de lado: o giro e a batida na rede",
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "costas",
+     "arquivo": "assets/sfx/batida_na_rede.mp3",
+     "desc": "a punchy impact hit",
+     "db": -5,
+     "dur": 1.2,
+     "no_clipe": 129.0
+    }
+   ]
+  },
+  {
+   "em": "saiu inteiro",
+   "clipe": "heaven_sent_limpo.mp4",
+   "inicio": 184.8,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "ele abraçando a esposa",
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "inteiro",
+     "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+     "desc": "a soft air whoosh",
+     "db": -14,
+     "dur": 0.6,
+     "no_clipe": 185.0
+    }
+   ]
+  },
+  {
+   "em": "e tem gente",
+   "clipe": "heaven_sent_limpo.mp4",
+   "inicio": 139.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "um homem do público em choque, sem acreditar",
+   "foley": "vento",
+   "sfx_cena": [
+    {
+     "em": "acredita",
+     "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+     "desc": "a soft air whoosh",
+     "db": -14,
+     "dur": 0.6,
+     "no_clipe": 139.3
+    }
+   ]
+  },
+  {
+   "em": "hoje que",
+   "clipe": "heaven_sent_limpo.mp4",
+   "inicio": 70.3,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "LOOP",
+   "_funcao": "o mesmo quadro do gancho (loop)",
+   "foley": "vento",
+   "foco": [
+    0.5,
+    0.5
+   ],
+   "zoom": [
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}
