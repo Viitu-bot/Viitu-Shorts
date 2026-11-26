@@ -1,0 +1,24 @@
+# Decupagem vd020_sem_paraquedas — formato invencao — música bit_shift_kevin_macleod.mp3
+1. 0.0-2.2s [GANCHO] "Ele caiu" — ia_gancho.mp4 @0.1s — GANCHO: o Luke de roupa verde em queda livre, de perto, sem nada nas costas — sons: ['vento_queda_livre.mp3 @0.3s']
+2. 2.2-4.4s [GANCHO] "a quase" — heaven_sent_aberto.mp4 @89.8s — lá do alto: as montanhas e a base minúsculas, o contador subindo — sons: ['whoosh_fs830856.ogg @89.9s']
+3. 4.4-5.8s [INÍCIO] "Dois minutos" — heaven_sent_aberto.mp4 @76.2s — o Luke de verde e o parceiro despencando sobre as montanhas — sons: ['whoosh_fs830856.ogg @76.6s']
+4. 5.8-7.4s [INÍCIO] "mirando uma rede" — heaven_sent_aberto.mp4 @122.6s — a rede vista de cima, já perto — sons: ['whoosh_fs830856.ogg @122.8s']
+5. 7.4-9.1s [INÍCIO] "que lá de cima" — heaven_sent_aberto.mp4 @112.0s — lá do alto: o alvo vira um pontinho (o selo) — sons: ['whoosh_fs830856.ogg @112.9s']
+6. 9.1-10.1s [MEIO] "Mas tem" — heaven_sent_aberto.mp4 @50.5s — o Luke e o parceiro em queda livre, a curvatura da Terra atrás (o perigo é real) — sons: ['whoosh_fs-127197-fast-simple-chop-5-aif.ogg @50.8s']
+7. 10.1-12.1s [MEIO] "de barriga" — ia_barriga.mp4 @0.1s — de perto: ele caindo de barriga pra baixo — sons: ['vento_queda_livre.mp3 @0.6s']
+8. 12.1-14.2s [MEIO] "No último" — heaven_sent_limpo.mp4 @127.2s — de lado: o giro e a batida na rede — sons: ['batida_na_rede.mp3 @129.0s']
+9. 14.2-15.1s [FINAL] "saiu inteiro" — ia_abraco.mp4 @0.1s — ele abraçando a esposa — sons: ['whoosh_fs830856.ogg @0.3s']
+10. 15.1-16.6s [FINAL] "e tem gente" — ia_publico.mp4 @0.1s — um homem do público em choque, sem acreditar — sons: ['whoosh_fs830856.ogg @0.4s']
+11. 16.6-17.5s [LOOP] "hoje que" — ia_gancho.mp4 @0.1s — o mesmo quadro do gancho (loop) — sons: []
+
+## OUVIDO (earshot)
+✅ cena 1: vento_queda_livre.mp3 — pedido "a gust of wind rushing past" → strong (z 4.0)
+✅ cena 2: whoosh_fs830856.ogg — pedido "a soft air whoosh" → strong (z 3.6)
+✅ cena 3: whoosh_fs830856.ogg — pedido "a soft air whoosh" → strong (z 3.6)
+✅ cena 4: whoosh_fs830856.ogg — pedido "a soft air whoosh" → strong (z 3.6)
+✅ cena 5: whoosh_fs830856.ogg — pedido "a soft air whoosh" → strong (z 3.6)
+✅ cena 6: whoosh_fs-127197-fast-simple-chop-5-aif.ogg — pedido "a fast whoosh" → strong (z 4.5)
+✅ cena 7: vento_queda_livre.mp3 — pedido "a gust of wind rushing past" → strong (z 4.0)
+✅ cena 8: batida_na_rede.mp3 — pedido "a punchy impact hit" → strong (z 3.4)
+✅ cena 9: whoosh_fs830856.ogg — pedido "a soft air whoosh" → strong (z 3.6)
+✅ cena 10: whoosh_fs830856.ogg — pedido "a soft air whoosh" → strong (z 3.6)

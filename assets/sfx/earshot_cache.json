@@ -518,5 +518,21 @@
    "an error buzz",
    "a phone vibration buzz"
   ]
+ },
+ "vento_queda_livre.mp3|1795717061123815217|a gust of wind rushing past": {
+  "verdict": "strong",
+  "z": 4.0,
+  "parece": [
+   "a gust of wind rushing past",
+   "a fast whoosh"
+  ]
+ },
+ "batida_na_rede.mp3|1795717066302162513|a punchy impact hit": {
+  "verdict": "strong",
+  "z": 3.4,
+  "parece": [
+   "a punchy impact hit",
+   "a heavy thud"
+  ]
  }
 }
