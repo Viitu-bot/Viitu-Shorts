@@ -2,7 +2,7 @@
   "name": "viitu-remotion",
   "private": true,
   "scripts": {
-    "render": "remotion render src/index.ts Short out/short_remotion.mp4 --concurrency=4"
+    "render": "remotion render src/index.ts Short out/short_remotion.mp4 --concurrency=3 --timeout=240000"
   },
   "dependencies": {
     "@react-three/fiber": "8.17.10",
