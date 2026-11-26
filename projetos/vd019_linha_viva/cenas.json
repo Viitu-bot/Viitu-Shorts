@@ -73,8 +73,8 @@
   },
   {
    "em": "Ele cutuca",
-   "clipe": "tt_rykerwire_helicoptero.mp4",
-   "inicio": 15.55,
+   "clipe": "ia_helicoptero.mp4",
+   "inicio": 0.05,
    "som_original": false,
    "revisao": "manual",
    "_parte": "INÍCIO",
@@ -87,10 +87,11 @@
      "desc": "a fast whoosh",
      "db": -14,
      "dur": 0.6,
-     "no_clipe": 16.35
+     "no_clipe": 1.25
     }
    ],
-   "seguir": false
+   "seguir": false,
+   "trecho_conferido": "recorte sem legenda ampliado por IA, olhado quadro a quadro"
   },
   {
    "em": "o estalo",
@@ -215,8 +216,8 @@
   },
   {
    "em": "Mas se encostar",
-   "clipe": "tt_bluecollar_topo.mp4",
-   "inicio": 7.8,
+   "clipe": "ia_torre.mp4",
+   "inicio": 0.05,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
@@ -230,9 +231,10 @@
      "desc": "a fast whoosh",
      "db": -14,
      "dur": 0.6,
-     "no_clipe": 8.0
+     "no_clipe": 0.6
     }
-   ]
+   ],
+   "trecho_conferido": "recorte sem legenda ampliado por IA, olhado quadro a quadro"
   },
   {
    "em": "vira churrasco",
