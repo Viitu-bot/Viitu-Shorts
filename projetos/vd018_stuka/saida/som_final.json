@@ -1,19 +1,19 @@
 {
  "voz_db": -15.8,
  "leito_db": -22.8,
- "efeitos_db": -26.0,
+ "efeitos_db": -26.4,
  "mp4": "remotion/out/vd018_stuka.mp4",
  "medidas": {
   "musica_sob_voz_db": {
-   "valor": -13.8,
+   "valor": -13.7,
    "ok": true
   },
   "musica_respira_db": {
-   "valor": 5.2,
+   "valor": 5.1,
    "ok": true
   },
   "efeitos_acao_audiveis": {
-   "valor": "25/25",
+   "valor": "26/26",
    "ok": true
   },
   "impacto_virada_db": {

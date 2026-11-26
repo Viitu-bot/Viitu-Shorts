@@ -18,3 +18,4 @@ Formato: `AAAA-MM-DD (postagem) | família | tema | link do vídeo publicado (qu
 2026-11-26 (qui) | Por dentro/recorde | A estrada chinesa que voa sobre as montanhas (viadutos/pontes altíssimas) — vd015 | (prova 7,1 mi; PT vazio)
 2026-11-24 (ter, postado) | Motivo oculto (faixa 70%, molde B1) | Pra onde vai o que você deixa no trem (banheiro do trem) — vd016 | (prova 63,2 mi; PT vazio) — POSTADO 24/11 (terça)
 2026-11-28 (sáb) | Motivo oculto (faixa 70%) | O canhão que se escondia depois do tiro (canhão de desaparecimento) — vd017 | (prova 1,31 mi em 2 dias, 32,6x; PT fraco 43k)
+2026-11-29 (dom) | Invenção visual chocante (faixa 20%, 3D realista autorizado) | O avião que quase se matava com a própria bomba (Stuka, garfo da bomba) — vd018, 17,6 s | (prova 4,1 mi em 3 dias, 15,6x; PT vazio)
