@@ -1,0 +1,277 @@
+[
+ {
+  "palavra": "Ele",
+  "inicio": 0.0,
+  "fim": 0.139
+ },
+ {
+  "palavra": "caiu",
+  "inicio": 0.208,
+  "fim": 0.416
+ },
+ {
+  "palavra": "do",
+  "inicio": 0.485,
+  "fim": 0.555
+ },
+ {
+  "palavra": "céu,",
+  "inicio": 0.624,
+  "fim": 1.11
+ },
+ {
+  "palavra": "sem",
+  "inicio": 1.179,
+  "fim": 1.318
+ },
+ {
+  "palavra": "paraquedas,",
+  "inicio": 1.387,
+  "fim": 2.15
+ },
+ {
+  "palavra": "a",
+  "inicio": 2.185,
+  "fim": 2.219
+ },
+ {
+  "palavra": "quase",
+  "inicio": 2.289,
+  "fim": 2.566
+ },
+ {
+  "palavra": "8.000",
+  "inicio": 2.644,
+  "fim": 3.199
+ },
+ {
+  "palavra": "metros",
+  "inicio": 3.268,
+  "fim": 3.615
+ },
+ {
+  "palavra": "do",
+  "inicio": 3.65,
+  "fim": 3.685
+ },
+ {
+  "palavra": "chão.",
+  "inicio": 3.754,
+  "fim": 4.274
+ },
+ {
+  "palavra": "Dois",
+  "inicio": 4.352,
+  "fim": 4.491
+ },
+ {
+  "palavra": "minutos",
+  "inicio": 4.56,
+  "fim": 4.907
+ },
+ {
+  "palavra": "despencando,",
+  "inicio": 4.985,
+  "fim": 5.713
+ },
+ {
+  "palavra": "mirando",
+  "inicio": 5.783,
+  "fim": 5.991
+ },
+ {
+  "palavra": "uma",
+  "inicio": 6.06,
+  "fim": 6.129
+ },
+ {
+  "palavra": "rede",
+  "inicio": 6.199,
+  "fim": 6.407
+ },
+ {
+  "palavra": "de",
+  "inicio": 6.476,
+  "fim": 6.615
+ },
+ {
+  "palavra": "30",
+  "inicio": 6.649,
+  "fim": 6.892
+ },
+ {
+  "palavra": "metros",
+  "inicio": 6.962,
+  "fim": 7.308
+ },
+ {
+  "palavra": "que",
+  "inicio": 7.378,
+  "fim": 7.447
+ },
+ {
+  "palavra": "lá",
+  "inicio": 7.516,
+  "fim": 7.655
+ },
+ {
+  "palavra": "de",
+  "inicio": 7.724,
+  "fim": 7.794
+ },
+ {
+  "palavra": "cima",
+  "inicio": 7.863,
+  "fim": 8.141
+ },
+ {
+  "palavra": "parece",
+  "inicio": 8.21,
+  "fim": 8.487
+ },
+ {
+  "palavra": "um",
+  "inicio": 8.522,
+  "fim": 8.557
+ },
+ {
+  "palavra": "selo.",
+  "inicio": 8.635,
+  "fim": 8.982
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 9.06,
+  "fim": 9.198
+ },
+ {
+  "palavra": "tem",
+  "inicio": 9.268,
+  "fim": 9.337
+ },
+ {
+  "palavra": "um",
+  "inicio": 9.372,
+  "fim": 9.406
+ },
+ {
+  "palavra": "porém:",
+  "inicio": 9.484,
+  "fim": 10.074
+ },
+ {
+  "palavra": "de",
+  "inicio": 10.143,
+  "fim": 10.213
+ },
+ {
+  "palavra": "barriga,",
+  "inicio": 10.247,
+  "fim": 10.837
+ },
+ {
+  "palavra": "podia",
+  "inicio": 10.906,
+  "fim": 11.114
+ },
+ {
+  "palavra": "quebrar",
+  "inicio": 11.184,
+  "fim": 11.461
+ },
+ {
+  "palavra": "a",
+  "inicio": 11.507,
+  "fim": 11.554
+ },
+ {
+  "palavra": "coluna.",
+  "inicio": 11.6,
+  "fim": 12.016
+ },
+ {
+  "palavra": "No",
+  "inicio": 12.094,
+  "fim": 12.233
+ },
+ {
+  "palavra": "último",
+  "inicio": 12.302,
+  "fim": 12.579
+ },
+ {
+  "palavra": "segundo,",
+  "inicio": 12.649,
+  "fim": 13.204
+ },
+ {
+  "palavra": "virou",
+  "inicio": 13.273,
+  "fim": 13.481
+ },
+ {
+  "palavra": "de",
+  "inicio": 13.55,
+  "fim": 13.62
+ },
+ {
+  "palavra": "costas,",
+  "inicio": 13.698,
+  "fim": 14.149
+ },
+ {
+  "palavra": "saiu",
+  "inicio": 14.183,
+  "fim": 14.426
+ },
+ {
+  "palavra": "inteiro,",
+  "inicio": 14.504,
+  "fim": 15.094
+ },
+ {
+  "palavra": "e",
+  "inicio": 15.128,
+  "fim": 15.163
+ },
+ {
+  "palavra": "tem",
+  "inicio": 15.232,
+  "fim": 15.371
+ },
+ {
+  "palavra": "gente",
+  "inicio": 15.406,
+  "fim": 15.579
+ },
+ {
+  "palavra": "que",
+  "inicio": 15.648,
+  "fim": 15.683
+ },
+ {
+  "palavra": "não",
+  "inicio": 15.718,
+  "fim": 15.787
+ },
+ {
+  "palavra": "acredita",
+  "inicio": 15.856,
+  "fim": 16.203
+ },
+ {
+  "palavra": "até",
+  "inicio": 16.281,
+  "fim": 16.489
+ },
+ {
+  "palavra": "hoje",
+  "inicio": 16.559,
+  "fim": 16.836
+ },
+ {
+  "palavra": "que",
+  "inicio": 16.905,
+  "fim": 17.46
+ }
+]
