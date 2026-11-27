@@ -1,16 +1,22 @@
-# Decupagem vd021_sawstop — formato invencao — música tensao_documentario.mp3
-1. 0.0-2.0s [GANCHO] "Ele enfiou" — mww_slowmo.mp4 @2.4s — GANCHO: a mão empurrando a madeira direto na lâmina girando; a lâmina some — sons: ['serra_motor_lamina.mp3 @3.5s']
-2. 2.0-3.0s [GANCHO] "de propósito" — atlasmachinery_7311825554569 @31.0s — aberto: o vendedor encostando a mão na mesa de propósito, na frente de todo mundo — sons: []
-3. 3.0-5.7s [INÍCIO] "O segredo" — iwf_slowmo.mp4 @6.5s — câmera lenta: a lâmina girando e a salsicha indo na direção dos dentes (tensão) — sons: ['serra_motor_lamina.mp3 @7.6s']
-4. 5.7-6.8s [INÍCIO] "e pele" — atlasmachinery_7057181700752 @0.0s — de perto: os dedos (pele) empurrando a peça rente à lâmina — sons: []
-5. 6.8-8.2s [MEIO] "Encostou" — toolstoday_c.mp4 @9.3s — de perto: a salsicha encosta na lâmina — sons: []
+# Decupagem vd021_sawstop — formato invencao — música jogo_antigo/tensao_perigo/chefe_nes_sketchylogic.mp3
+1. 0.0-1.4s [GANCHO] "Ele enfiou" — ia_dedo.mp4 @0.85s — GANCHO: dedos de verdade escorregam na lâmina girando e ela some (acidente real) — sons: ['serra_ligada.mp3 @0.85s', 'lamina_afunda_mesa.mp3 @1.75s']
+2. 1.4-3.0s [GANCHO] "ligada" — atlasmachinery_7311825554569 @31.0s — aberto: o vendedor encostando a mão na mesa de propósito, na frente de todo mundo — sons: []
+3. 3.0-5.7s [INÍCIO] "O segredo" — iwf_slowmo.mp4 @6.5s — câmera lenta: a lâmina girando e a salsicha indo na direção dos dentes (tensão) — sons: ['serra_ligada.mp3 @7.6s']
+4. 5.7-6.8s [INÍCIO] "e pele" — woodworkingpro_c.mp4 @0.0s — a mão espalmada na madeira, rente à lâmina (pele) — sons: ['serra_ligada.mp3 @0.1s']
+5. 6.8-8.2s [MEIO] "Encostou" — toolstoday_c.mp4 @9.3s — de perto: a salsicha encosta na lâmina — sons: ['batida_seca_madeira.mp3 @9.5s']
 6. 8.2-9.9s [MEIO] "metal" — sebastian_c.mp4 @47.5s — detalhe: o freio de alumínio cravado nos dentes da lâmina — sons: ['freio_serra_clack.mp3 @47.6s']
 7. 9.9-12.6s [MEIO] "Em cinco" — tysonmoorebuilds_68015342704 @8.39s — aberto: a mulher empurra a salsicha, a lâmina some num tranco e ela ri — sons: []
-8. 12.6-13.8s [FINAL] "A lâmina vai" — dmtools_c.mp4 @103.75s — a lâmina com o freio cravado na mão: vai pro lixo — sons: []
+8. 12.6-13.8s [FINAL] "A lâmina vai" — dmtools_c.mp4 @103.75s — a lâmina com o freio cravado na mão: vai pro lixo — sons: ['swish_pano.mp3 @103.9s']
 9. 13.8-14.7s [FINAL] "o dedo não" — gadget_c.mp4 @2.6s — as mãos mostrando a salsicha inteira, só um arranhãozinho — sons: []
-10. 14.7-16.5s [LOOP] "e pra provar" — mww_slowmo.mp4 @2.4s — o mesmo quadro do gancho (loop): a mão indo na serra — sons: []
+10. 14.7-15.4s [FINAL] "e pra provar" — thebuildwithethan_6988123148 @6.6s — um cara na feira ajeitando a salsicha na frente da serra, pronto pra testar — sons: []
+11. 15.4-16.5s [LOOP] "maluco" — ia_dedo.mp4 @0.85s — o mesmo quadro do gancho (loop): o dedo na serra — sons: ['serra_ligada.mp3 @0.85s']
 
 ## OUVIDO (earshot)
-✅ cena 1: serra_motor_lamina.mp3 — pedido "a power saw motor cutting" → strong (z 4.0)
-✅ cena 3: serra_motor_lamina.mp3 — pedido "a power saw motor cutting" → strong (z 4.0)
+✅ cena 1: serra_ligada.mp3 — pedido "a table saw running" → strong (z 4.1)
+✅ cena 1: lamina_afunda_mesa.mp3 — pedido "a heavy metal clunk" → strong (z 3.8)
+✅ cena 3: serra_ligada.mp3 — pedido "a table saw running" → strong (z 4.1)
+✅ cena 4: serra_ligada.mp3 — pedido "a table saw running" → strong (z 4.1)
+⚠️ cena 5: batida_seca_madeira.mp3 — pedido "a soft thud" → plausible (z 2.8); soa como: a heavy thud, a soft thump
 ⚠️ cena 6: freio_serra_clack.mp3 — pedido "a sharp metallic clack" → plausible (z 2.8); soa como: a metal scrape, a triangle hit
+✅ cena 8: swish_pano.mp3 — pedido "a cloth swish" → strong (z 3.2)
+✅ cena 11: serra_ligada.mp3 — pedido "a table saw running" → strong (z 4.1)

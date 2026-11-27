@@ -566,5 +566,37 @@
    "a metal scrape",
    "a triangle hit"
   ]
+ },
+ "serra_ligada.mp3|1795774680967270878|a table saw running": {
+  "verdict": "strong",
+  "z": 4.1,
+  "parece": [
+   "a power drill",
+   "a vacuum cleaner"
+  ]
+ },
+ "lamina_afunda_mesa.mp3|1795774680971993041|a heavy metal clunk": {
+  "verdict": "strong",
+  "z": 3.8,
+  "parece": [
+   "a triangle hit",
+   "a metal scrape"
+  ]
+ },
+ "batida_seca_madeira.mp3|1795774680979400343|a soft thud": {
+  "verdict": "plausible",
+  "z": 2.8,
+  "parece": [
+   "a heavy thud",
+   "a soft thump"
+  ]
+ },
+ "swish_pano.mp3|1795774680961833480|a cloth swish": {
+  "verdict": "strong",
+  "z": 3.2,
+  "parece": [
+   "cloth whipping through the air",
+   "an apple falling on grass"
+  ]
  }
 }
