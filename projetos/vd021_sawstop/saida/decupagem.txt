@@ -1,0 +1,16 @@
+# Decupagem vd021_sawstop — formato invencao — música tensao_documentario.mp3
+1. 0.0-2.0s [GANCHO] "Ele enfiou" — mww_slowmo.mp4 @2.4s — GANCHO: a mão empurrando a madeira direto na lâmina girando; a lâmina some — sons: ['serra_motor_lamina.mp3 @3.5s']
+2. 2.0-3.0s [GANCHO] "de propósito" — atlasmachinery_7311825554569 @31.0s — aberto: o vendedor encostando a mão na mesa de propósito, na frente de todo mundo — sons: []
+3. 3.0-5.7s [INÍCIO] "O segredo" — iwf_slowmo.mp4 @6.5s — câmera lenta: a lâmina girando e a salsicha indo na direção dos dentes (tensão) — sons: ['serra_motor_lamina.mp3 @7.6s']
+4. 5.7-6.8s [INÍCIO] "e pele" — atlasmachinery_7057181700752 @0.0s — de perto: os dedos (pele) empurrando a peça rente à lâmina — sons: []
+5. 6.8-8.2s [MEIO] "Encostou" — toolstoday_c.mp4 @9.3s — de perto: a salsicha encosta na lâmina — sons: []
+6. 8.2-9.9s [MEIO] "metal" — sebastian_c.mp4 @47.5s — detalhe: o freio de alumínio cravado nos dentes da lâmina — sons: ['freio_serra_clack.mp3 @47.6s']
+7. 9.9-12.6s [MEIO] "Em cinco" — tysonmoorebuilds_68015342704 @8.39s — aberto: a mulher empurra a salsicha, a lâmina some num tranco e ela ri — sons: []
+8. 12.6-13.8s [FINAL] "A lâmina vai" — dmtools_c.mp4 @103.75s — a lâmina com o freio cravado na mão: vai pro lixo — sons: []
+9. 13.8-14.7s [FINAL] "o dedo não" — gadget_c.mp4 @2.6s — as mãos mostrando a salsicha inteira, só um arranhãozinho — sons: []
+10. 14.7-16.5s [LOOP] "e pra provar" — mww_slowmo.mp4 @2.4s — o mesmo quadro do gancho (loop): a mão indo na serra — sons: []
+
+## OUVIDO (earshot)
+✅ cena 1: serra_motor_lamina.mp3 — pedido "a power saw motor cutting" → strong (z 4.0)
+✅ cena 3: serra_motor_lamina.mp3 — pedido "a power saw motor cutting" → strong (z 4.0)
+⚠️ cena 6: freio_serra_clack.mp3 — pedido "a sharp metallic clack" → plausible (z 2.8); soa como: a metal scrape, a triangle hit

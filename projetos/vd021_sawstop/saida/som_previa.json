@@ -1,0 +1,31 @@
+{
+ "previa": "projetos/vd021_sawstop/saida/previa.mp4",
+ "medidas": {
+  "musica_sob_voz_db": {
+   "valor": -13.4,
+   "ok": true
+  },
+  "musica_respira_db": {
+   "valor": 7.4,
+   "ok": true
+  },
+  "efeitos_acao_audiveis": {
+   "valor": "4/5",
+   "ok": true
+  },
+  "impacto_virada_db": {
+   "valor": [
+    -1.2
+   ],
+   "ok": true
+  },
+  "efeito_sobre_voz_db": {
+   "valor": -4.9,
+   "ok": true
+  },
+  "ding_frame0_db": {
+   "valor": 4.3,
+   "ok": true
+  }
+ }
+}

@@ -534,5 +534,37 @@
    "a punchy impact hit",
    "a heavy thud"
   ]
+ },
+ "motor_corte.mp3|1795602587512777004|a power saw motor cutting": {
+  "verdict": "no match",
+  "z": 0.7,
+  "parece": [
+   "a rubber stretch",
+   "a squishy wet squelch"
+  ]
+ },
+ "trava_metal_solta.mp3|1795689801478831856|a sharp metallic clack": {
+  "verdict": "weak",
+  "z": 2.0,
+  "parece": [
+   "a plastic object falling on a table",
+   "an old typewriter"
+  ]
+ },
+ "serra_motor_lamina.mp3|1795747137366920244|a power saw motor cutting": {
+  "verdict": "strong",
+  "z": 4.0,
+  "parece": [
+   "a power drill",
+   "a saw cutting wood"
+  ]
+ },
+ "freio_serra_clack.mp3|1795747137368793849|a sharp metallic clack": {
+  "verdict": "plausible",
+  "z": 2.8,
+  "parece": [
+   "a metal scrape",
+   "a triangle hit"
+  ]
  }
 }

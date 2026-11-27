@@ -31,13 +31,14 @@
    "sfx_cena": [
     {
      "em": "serra",
-     "arquivo": "biblioteca_sfx/03_foley_textura/motor_corte.mp3",
+     "arquivo": "assets/sfx/serra_motor_lamina.mp3",
      "desc": "a power saw motor cutting",
      "db": -12,
      "dur": 1.0,
      "no_clipe": 3.5
     }
-   ]
+   ],
+   "foley": "oficina"
   },
   {
    "em": "de propósito",
@@ -46,16 +47,28 @@
    "som_original": false,
    "revisao": "manual",
    "_parte": "GANCHO",
-   "_funcao": "aberto: o vendedor encostando a mão na mesa de propósito, na frente de todo mundo"
+   "_funcao": "aberto: o vendedor encostando a mão na mesa de propósito, na frente de todo mundo",
+   "foley": "oficina"
   },
   {
    "em": "O segredo",
    "clipe": "iwf_slowmo.mp4",
-   "inicio": 6.3,
+   "inicio": 6.5,
    "som_original": false,
    "revisao": "manual",
    "_parte": "INÍCIO",
-   "_funcao": "câmera lenta: a lâmina girando e a salsicha indo na direção dos dentes (tensão)"
+   "_funcao": "câmera lenta: a lâmina girando e a salsicha indo na direção dos dentes (tensão)",
+   "foley": "oficina",
+   "sfx_cena": [
+    {
+     "em": "lâmina",
+     "arquivo": "assets/sfx/serra_motor_lamina.mp3",
+     "desc": "a power saw motor cutting",
+     "db": -14,
+     "dur": 1.0,
+     "no_clipe": 7.6
+    }
+   ]
   },
   {
    "em": "e pele",
@@ -65,7 +78,8 @@
    "revisao": "manual",
    "_parte": "INÍCIO",
    "_funcao": "de perto: os dedos (pele) empurrando a peça rente à lâmina",
-   "baixa_res_ok": "post original em 720x720; cena curta de detalhe"
+   "baixa_res_ok": "post original em 720x720; cena curta de detalhe",
+   "foley": "oficina"
   },
   {
    "em": "Encostou",
@@ -74,12 +88,13 @@
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
-   "_funcao": "de perto: a salsicha encosta na lâmina"
+   "_funcao": "de perto: a salsicha encosta na lâmina",
+   "foley": "oficina"
   },
   {
    "em": "metal",
    "clipe": "sebastian_c.mp4",
-   "inicio": 46.9,
+   "inicio": 47.5,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
@@ -87,13 +102,14 @@
    "sfx_cena": [
     {
      "em": "disparado",
-     "arquivo": "assets/sfx/trava_metal_solta.mp3",
+     "arquivo": "assets/sfx/freio_serra_clack.mp3",
      "desc": "a sharp metallic clack",
      "db": -8,
      "dur": 0.8,
-     "no_clipe": 47.3
+     "no_clipe": 47.6
     }
-   ]
+   ],
+   "foley": "oficina"
   },
   {
    "em": "Em cinco",
@@ -108,25 +124,29 @@
     "sufixo": " ms",
     "em": "cinco",
     "ate_palavra": "milésimos"
-   }
+   },
+   "foley": "oficina"
   },
   {
    "em": "A lâmina vai",
    "clipe": "dmtools_c.mp4",
-   "inicio": 103.0,
+   "inicio": 103.75,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "a lâmina com o freio cravado na mão: vai pro lixo"
+   "_funcao": "a lâmina com o freio cravado na mão: vai pro lixo",
+   "foley": "oficina",
+   "trecho_conferido": "tomada de 103,75 a 104,95 (1,20 s) olhada quadro a quadro; a cena pede 1,21 s"
   },
   {
    "em": "o dedo não",
    "clipe": "gadget_c.mp4",
-   "inicio": 1.9,
+   "inicio": 2.6,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "as mãos mostrando a salsicha inteira, só um arranhãozinho"
+   "_funcao": "as mãos mostrando a salsicha inteira, só um arranhãozinho",
+   "foley": "oficina"
   },
   {
    "em": "e pra provar",
@@ -135,7 +155,8 @@
    "som_original": false,
    "revisao": "manual",
    "_parte": "LOOP",
-   "_funcao": "o mesmo quadro do gancho (loop): a mão indo na serra"
+   "_funcao": "o mesmo quadro do gancho (loop): a mão indo na serra",
+   "foley": "oficina"
   }
  ]
 }
