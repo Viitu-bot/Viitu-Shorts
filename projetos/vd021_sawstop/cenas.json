@@ -23,7 +23,7 @@
   {
    "em": "Ele enfiou",
    "clipe": "ia_dedo.mp4",
-   "inicio": 0.1,
+   "inicio": 0.85,
    "som_original": false,
    "revisao": "manual",
    "_parte": "GANCHO",
@@ -35,21 +35,22 @@
      "arquivo": "assets/sfx/serra_ligada.mp3",
      "desc": "a table saw running",
      "db": -14,
-     "dur": 1.6,
-     "no_clipe": 0.1
+     "dur": 1.4,
+     "no_clipe": 0.85
     },
     {
-     "em": "ligada",
+     "em": "serra",
      "arquivo": "assets/sfx/lamina_afunda_mesa.mp3",
      "desc": "a heavy metal clunk",
      "db": -8,
      "dur": 0.8,
-     "no_clipe": 1.8
+     "no_clipe": 1.75
     }
-   ]
+   ],
+   "trecho_conferido": "ia_dedo de 0,85 a 2,3 s olhado quadro a quadro: mão entra, dedos na lâmina, lâmina some"
   },
   {
-   "em": "de propósito",
+   "em": "ligada",
    "clipe": "atlasmachinery_7311825554569776390.mp4",
    "inicio": 31.0,
    "som_original": false,
@@ -80,7 +81,7 @@
   },
   {
    "em": "e pele",
-   "clipe": "woodworkingpro_arranhao.mp4",
+   "clipe": "woodworkingpro_c.mp4",
    "inicio": 0.0,
    "som_original": false,
    "revisao": "manual",
@@ -187,8 +188,18 @@
   },
   {
    "em": "e pra provar",
+   "clipe": "thebuildwithethan_6988123148638047493.mp4",
+   "inicio": 6.6,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "um cara na feira ajeitando a salsicha na frente da serra, pronto pra testar",
+   "foley": "feira"
+  },
+  {
+   "em": "maluco",
    "clipe": "ia_dedo.mp4",
-   "inicio": 0.1,
+   "inicio": 0.85,
    "som_original": false,
    "revisao": "manual",
    "_parte": "LOOP",
@@ -196,14 +207,15 @@
    "foley": "oficina",
    "sfx_cena": [
     {
-     "em": "provar",
+     "em": "maluco",
      "arquivo": "assets/sfx/serra_ligada.mp3",
      "desc": "a table saw running",
      "db": -14,
-     "dur": 1.6,
-     "no_clipe": 0.1
+     "dur": 1.1,
+     "no_clipe": 0.85
     }
-   ]
+   ],
+   "trecho_conferido": "ia_dedo de 0,85 a 2,3 s olhado quadro a quadro: mão entra, dedos na lâmina, lâmina some"
   }
  ]
 }
