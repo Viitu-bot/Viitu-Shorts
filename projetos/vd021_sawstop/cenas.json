@@ -1,0 +1,141 @@
+{
+ "_versao": "v1: regras 26/11 (17 s, Diretor de Retenção, sons da biblioteca, voz após aprovação)",
+ "formato": "invencao",
+ "impacto_em": [
+  "trava"
+ ],
+ "destaques": [
+  "dedo",
+  "serra",
+  "propósito",
+  "corrente",
+  "pele",
+  "metal",
+  "trava",
+  "lixo",
+  "inventor"
+ ],
+ "musica": "tensao_documentario.mp3",
+ "cta": false,
+ "bruto_livre": [],
+ "creditos_descricao": "Imagens: @mickswoodworkwonders, @atlasmachinery, @toolstoday, @allwoodmachines, @sebastianswoodstuff, @tysonmoorebuilds, @dm_tools, @gadgetglimpse (TikTok).",
+ "cenas": [
+  {
+   "em": "Ele enfiou",
+   "clipe": "mww_slowmo.mp4",
+   "inicio": 2.4,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "GANCHO: a mão empurrando a madeira direto na lâmina girando; a lâmina some",
+   "sfx_cena": [
+    {
+     "em": "serra",
+     "arquivo": "biblioteca_sfx/03_foley_textura/motor_corte.mp3",
+     "desc": "a power saw motor cutting",
+     "db": -12,
+     "dur": 1.0,
+     "no_clipe": 3.5
+    }
+   ]
+  },
+  {
+   "em": "de propósito",
+   "clipe": "atlasmachinery_7311825554569776390.mp4",
+   "inicio": 31.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "_funcao": "aberto: o vendedor encostando a mão na mesa de propósito, na frente de todo mundo"
+  },
+  {
+   "em": "O segredo",
+   "clipe": "iwf_slowmo.mp4",
+   "inicio": 6.3,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "câmera lenta: a lâmina girando e a salsicha indo na direção dos dentes (tensão)"
+  },
+  {
+   "em": "e pele",
+   "clipe": "atlasmachinery_7057181700752805126.mp4",
+   "inicio": 0.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "_funcao": "de perto: os dedos (pele) empurrando a peça rente à lâmina",
+   "baixa_res_ok": "post original em 720x720; cena curta de detalhe"
+  },
+  {
+   "em": "Encostou",
+   "clipe": "toolstoday_c.mp4",
+   "inicio": 9.3,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "de perto: a salsicha encosta na lâmina"
+  },
+  {
+   "em": "metal",
+   "clipe": "sebastian_c.mp4",
+   "inicio": 46.9,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "detalhe: o freio de alumínio cravado nos dentes da lâmina",
+   "sfx_cena": [
+    {
+     "em": "disparado",
+     "arquivo": "assets/sfx/trava_metal_solta.mp3",
+     "desc": "a sharp metallic clack",
+     "db": -8,
+     "dur": 0.8,
+     "no_clipe": 47.3
+    }
+   ]
+  },
+  {
+   "em": "Em cinco",
+   "clipe": "tysonmoorebuilds_6801534270402727173.mp4",
+   "inicio": 8.39,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "_funcao": "aberto: a mulher empurra a salsicha, a lâmina some num tranco e ela ri",
+   "contador": {
+    "ate": 5,
+    "sufixo": " ms",
+    "em": "cinco",
+    "ate_palavra": "milésimos"
+   }
+  },
+  {
+   "em": "A lâmina vai",
+   "clipe": "dmtools_c.mp4",
+   "inicio": 103.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "a lâmina com o freio cravado na mão: vai pro lixo"
+  },
+  {
+   "em": "o dedo não",
+   "clipe": "gadget_c.mp4",
+   "inicio": 1.9,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "_funcao": "as mãos mostrando a salsicha inteira, só um arranhãozinho"
+  },
+  {
+   "em": "e pra provar",
+   "clipe": "mww_slowmo.mp4",
+   "inicio": 2.4,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "LOOP",
+   "_funcao": "o mesmo quadro do gancho (loop): a mão indo na serra"
+  }
+ ]
+}
