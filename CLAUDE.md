@@ -15,7 +15,7 @@ em `edicao/identidade.md`.
   ritmo rápido; pergunta direta ao espectador ("Você pegou o truque de primeira ou também bugou?").
 - **Estrutura:** gancho que joga você na cena → explicação técnica em linguagem de rua ("o segredo é…", "isso aqui é
   atrito extremo") → virada → fecho que emenda no começo (loop: "…vendo que", "…porque").
-- **Som:** música "sans." (Toby Fox) em 7/12 (só pelo app; no arquivo, trilha própria) · abertura = DING (hoje em 2 toques
+- **Som:** música "sans." (Toby Fox) em 7/12 (só pelo app). **No arquivo: biblioteca de música de JOGO ANTIGO livre** (`assets/musica/jogo_antigo/`, clima escolhido pelo gatilho — dono 27/11) · abertura = DING (hoje em 2 toques
   com eco estéreo) · whoosh nas trocas · riser antes da revelação.
 - **Visual:** legenda de 1 palavra, amarela (às vezes branca), contorno preto forte, grande (30% assiste na TV);
   círculo/seta vermelha no detalhe; corte a cada 2–3 s; clipe real em movimento; cada fonte UMA vez,
@@ -46,6 +46,7 @@ escala a cada 1,5–2 s; imagem indireta que antecipa a frase; tensão no meio; 
 - Máx. 1 efeito de AÇÃO a cada 3 s; whoosh suave (−14) em TODA troca, a ≥ 1 s de outro efeito; tremida leve nos impactos (tiro/explosão). O som apoia, não aparece mais que a história.
 - Mixagem automática (`viitu/som_final.py`, `edicao/especificacao.json`): voz NA FRENTE com tratamento leve · música −16 na mixagem (audível sob a voz contínua) · efeitos −10 a −5 dB
   (dono 24/11: voz B escolhida de ouvido; música subiu no vd017; teste A/B só se ele pedir) · voz ≥ 3,0 palavras/s · abertura no nível da voz (identidade). Música SEMPRE dentro do arquivo (trilha própria licenciada).
+- **Imersão (dono 27/11):** ambiência do lugar (`biblioteca_sfx/05_ambiencia`) + foley do que aparece + whoosh em toda troca — as 3 camadas em todo vídeo.
 - Todo efeito passa pelo OUVIDO (`viitu.ouvir`, earshot) na decupagem: som que não soa como o pedido barra o render.
 
 ## Aleatoriedade programada 70/20/10 (`edicao/matriz_702010.md`)
@@ -64,7 +65,7 @@ escala a cada 1,5–2 s; imagem indireta que antecipa a frase; tensão no meio; 
 Voz só depois do roteiro FINAL aprovado · render completo é o ÚLTIMO passo: cor, tarja, nitidez, decupagem, partes e o SOM
 inteiro (voz, efeitos, transições, música) conferidos ANTES, na prévia `viitu.som_final --previa`. Defeito achado depois do render = erro de processo.
 
-## Fluxo (cada etapa é uma skill)
+## Fluxo (cada etapa é uma skill — dono 27/11: os vídeos andam POR COMANDO; toda resposta termina dizendo o próximo comando, ex.: `/roteiro`, `/clipes`, `/editar`)
 `/tema` → `/roteiro` → `/clipes` → `/animacao` → `/editar` (decupagem + ouvido → partes conferidas → render →
 `viitu.entrega` LIBERADA) → `/publicar` + **kit obrigatório** `projetos/<p>/kit_publicacao.txt` mostrado no chat + **capa** `projetos/<p>/capa.jpg` (`viitu.capa`)
 (título/descrição do gancho · comentário fixado provocativo · trivia da Comunidade com 4 opções e a correta).

@@ -3,6 +3,11 @@ name: roteiro
 description: Escreve o roteiro do Viitu Shorts (protocolo HISA) a partir do tema validado, com fatos verificados, gancho, virada e loop, já marcando onde entram animação, sons de função e impacto. Use quando o usuário digitar /roteiro ou pedir o texto/roteiro de um tema.
 ---
 
+## REGRAS DO DONO 27/11
+- **Música = biblioteca de JOGO ANTIGO** (`assets/musica/jogo_antigo/LEIA.md`): marcar `musica: jogo_antigo/<clima>/<faixa>.mp3` pelo gatilho do gancho, sem repetir a faixa do vídeo anterior.
+- Gancho que promete pessoa/dedo/ação humana tem que ter esse quadro REAL no storyboard (vd021: prometeu dedo, mostrou salsicha).
+- Terminar a resposta com o próximo comando (`/clipes`).
+
 ## REGRAS DO DONO 26/11 (valem sobre TUDO abaixo, inclusive o bloco de 24/11)
 - **Alvo 12–18 s (~40–55 palavras); teto 30 s (~90) só se o tema exigir** (BÍBLIA §0c). Cortar informação, não acelerar.
 - **Gancho nos primeiros 2 s** (≤ 6 palavras até a lacuna abrir) e retenção no vídeo todo: cada frase responde um pedaço

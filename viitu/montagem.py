@@ -19,6 +19,7 @@ palavras.json (tempos reais da voz) e os arquivos dos clipes. Com qualquer ❌ o
   R9 RITMO      cena real > 3 s (sem "acao_continua") e vista 3D > 3,5 s barram: corte a cada 2–3 s (vd004).
   R10 PARECIDAS duas cenas seguidas com quadro parecido (forma+cor ≥ 0,85) barram — intercalar perto/longe (dono 24/11).
   R11 VOZ LENTA < 3,0 palavras/s barra (dono 24/11, mediana 3,07 nos vídeos dele).
+  R15 TRAVADO    cena real com < 15 quadros novos/s (câmera lenta falsa que repete quadros) barra — dono 27/11.
   R14 TRECHO     cena real cujo pedaço usado atravessa um corte interno do clipe (triagem) barra — todas de uma vez (dono 26/11).
   R13 TARJA      clipe com faixa preta embutida (letterbox/pillarbox) no trecho usado barra ANTES do render — dono 26/11.
   R12 PRETO E BRANCO cena real sem cor (saturação média < 18 em 3 quadros) barra — dono 24/11 e 26/11 ("vou ficar puto").
@@ -369,6 +370,22 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
             if ch < h0 * 0.94 or cw < w0 * 0.94:
                 erros.append(f"R13 TARJA: cena {k + 1} ({c['clipe']}) tem faixa preta embutida ({w0}x{h0} → útil {cw}x{ch}); "
                              "recortar o arquivo ANTES de montar.")
+    # R15 TRAVADO (dono 27/11, vd021: "o início dá uma pequena travada") — clipe "câmera lenta" de rede social que só
+    # repete quadros (6 quadros novos/s, cada um 5x): na tela parece engasgo. Conta quadros DIFERENTES no trecho usado.
+    tps15 = _tempos(pasta, cenas)
+    for k, c in enumerate(cenas):
+        if eh_3d[k] or eh_foto[k] or c.get("travado_ok"):
+            continue
+        arq = pasta / "clipes" / c["clipe"]
+        if not arq.exists():
+            continue
+        dur = max((tps15[k][1] - tps15[k][0]) * float(c.get("velocidade") or 1), 0.5)
+        r = subprocess.run(["ffmpeg", "-nostdin", "-v", "info", "-ss", f"{float(c.get('inicio', 0)):.2f}", "-t", f"{dur:.2f}",
+                            "-i", str(arq), "-vf", "mpdecimate,showinfo", "-f", "null", "-"], capture_output=True, text=True).stderr
+        novos = r.count("pts_time:") / dur
+        if novos < 15:
+            erros.append(f"R15 TRAVADO: cena {k + 1} ({c['clipe']}@{c.get('inicio', 0)}s) só tem {novos:.0f} quadros novos/s "
+                         f"(repete quadros, parece engasgo); trocar a tomada ou o clipe.")
     # R14 TRECHO (dono 26/11: conferir tudo antes, não uma cena por vez no editor)
     try:
         tri = json.loads((pasta / "clipes" / "triagem.json").read_text(encoding="utf-8"))

@@ -245,6 +245,11 @@ def camadas(faixas: list[dict]) -> list[dict]:
     """Troca cada faixa por 2 camadas Sonniss (fundo + detalhe ASMR) — ou mantém o foley próprio se faltar."""
     out = []
     for f in faixas:
+        proprio = RAIZ / "biblioteca_sfx" / "05_ambiencia" / f"{f['_som']}.mp3"     # dono 27/11: biblioteca própria PRIMEIRO
+        if proprio.exists():
+            from viitu.mix import ganho
+            out.append({**f, "arquivo": str(proprio.resolve()), "vol": ganho("ambiencia"), "camada": "fundo"})
+            continue
         par = CAMADAS.get(f["_som"])
         rx = EXIGIR.get(f["_som"])
         arqs = [_som_sonniss(par[0], 20, rx), _som_sonniss(par[1], 4, rx)] if par else [None, None]

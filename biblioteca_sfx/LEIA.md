@@ -9,6 +9,7 @@ na pasta certa daqui com nome em inglês descritivo (ex.: `sub_drop_short.mp3`) 
 | 02_transicoes_sutis | whoosh suave, corte de ar seco | troca de cena (no máx. 1 efeito a cada 3 s) | 4 |
 | 03_foley_textura | sons reais e táteis (clique, câmera, relógio, máquina, água, motor) | o que aparece na tela | 52 |
 | 04_trilhas_fundo | instrumental leve de curiosidade/investigação/tensão moderada, sem batida pesada | o vídeo todo, −22 a −26 dB | 6 |
+| 05_ambiencia | SOM DO LUGAR em loop (oficina, fábrica, feira, rua, cozinha, escritório, obra, chuva, floresta, vento) — dono 27/11 | fundo de TODA cena (`"foley": "<nome do arquivo>"`), entra antes da biblioteca Sonniss | 10 |
 | _proibidos | pop agudo, scratch de DJ, ukulele alegre, phonk/techno/lo-fi com batida, música infantil | nunca | 8 |
 
 **Tempo do som (dono 26/11, vd018):** o som de algo que a narração NOMEIA (sirene, motor, tiro) entra NA palavra (ou
@@ -35,3 +36,13 @@ Filtro ao baixar: duração curta (efeito ≤ 2 s), sem voz, sem logo de marca d
 só os 16 aprovados no ouvido (earshot "strong") entraram aqui com prefixo `cc0_`. Autor/fonte de cada um em
 `assets/sfx/cc0/catalogo.json`. Licenças aceitas no canal: CC0 e Mixkit Free (nunca CC-BY-NC).
 Timing (mesmo pacote): whoosh começa 2 quadros ANTES do corte; o riser TERMINA no impacto da revelação.
+
+## Imersão (dono 27/11, vd021: "faltou atenção nos efeitos… o foley, a ambientação… toda aquela imersão")
+Todo vídeo tem as 3 camadas, conferidas na decupagem:
+1. **Ambiência** (05_ambiencia) em ≥ 70% das cenas — o lugar soa (oficina na serra, feira na demonstração…).
+2. **Foley do que aparece** (03_foley_textura) — a coisa na tela faz barulho NA palavra/no ápice: motor da serra ligada
+   (`serra_ligada`), a lâmina afundando (`lamina_afunda_mesa`), batida seca (`batida_seca_madeira`), freio (`freio_serra_clack`).
+3. **Transição** (02_transicoes_sutis) em TODA troca: `whoosh_rapido` (cena de ação), `whoosh_grave` (antes da revelação),
+   `swish_pano` (movimento de braço), `cc0_whoosh_fs830856` (suave padrão).
+Sons novos de 27/11 gerados na ElevenLabs e aprovados no earshot (strong; `batida_seca_madeira` plausible). Recusados no
+ouvido e NÃO usar: "whoosh suave" gerado (soou como pancada), "plateia espantada" (soou como aplauso/risada).

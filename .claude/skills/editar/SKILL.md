@@ -5,6 +5,8 @@ description: Edita o Short do Viitu do roteiro aprovado até o mp4 final (voz, c
 
 # /editar: do roteiro aprovado ao mp4 conferido
 
+**Dono 27/11 (vd021):** som com IMERSÃO em 3 camadas em todo vídeo — ambiência `"foley": "<arquivo de biblioteca_sfx/05_ambiencia>"` em ≥ 70% das cenas · foley do que aparece (motor, batida, freio…) em TODA cena real com ação · whoosh de `02_transicoes_sutis` em toda troca (ver biblioteca_sfx/LEIA.md "Imersão"). Música da biblioteca de jogo antigo. Clipe com quadro repetido (R15 TRAVADO) não entra. Terminar a resposta com o próximo comando (`/publicar`).
+
 > **Regras do dono:** `edicao/BIBLIA.md` (manda em tudo; não alterar sem autorização) · planta técnica: `edicao/formato.md`.
 > **Formato:** `"formato": "<chave>"` no cenas.json (trava RF). Elementos por acontecimento (formatos.md §2): `"marca_erro": "x"|"certo"` (+ `"marca_em"`), `"contador": {"ate": N, "sufixo": " mil", "em": "palavra"}`, `"cta": {"em": "se inscreve"}`, `impacto_em`, `destaques`, seta/círculo.
 
