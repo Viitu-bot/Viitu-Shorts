@@ -15,30 +15,38 @@
   "lixo",
   "inventor"
  ],
- "musica": "tensao_documentario.mp3",
+ "musica": "jogo_antigo/tensao_perigo/chefe_nes_sketchylogic.mp3",
  "cta": false,
  "bruto_livre": [],
- "creditos_descricao": "Imagens: @mickswoodworkwonders, @atlasmachinery, @toolstoday, @allwoodmachines, @sebastianswoodstuff, @tysonmoorebuilds, @dm_tools, @gadgetglimpse (TikTok).",
+ "creditos_descricao": "Imagens: @atlasmachinery, @mickswoodworkwonders, @toolstoday, @woodworking_pro, @sebastianswoodstuff, @tysonmoorebuilds, @dm_tools, @gadgetglimpse (TikTok). Música: \"Boss\" — SketchyLogic (OpenGameArt, CC0).",
  "cenas": [
   {
    "em": "Ele enfiou",
-   "clipe": "mww_slowmo.mp4",
-   "inicio": 2.4,
+   "clipe": "ia_dedo.mp4",
+   "inicio": 0.1,
    "som_original": false,
    "revisao": "manual",
    "_parte": "GANCHO",
-   "_funcao": "GANCHO: a mão empurrando a madeira direto na lâmina girando; a lâmina some",
+   "_funcao": "GANCHO: dedos de verdade escorregam na lâmina girando e ela some (acidente real)",
+   "foley": "oficina",
    "sfx_cena": [
     {
-     "em": "serra",
-     "arquivo": "assets/sfx/serra_motor_lamina.mp3",
-     "desc": "a power saw motor cutting",
-     "db": -12,
-     "dur": 1.0,
-     "no_clipe": 3.5
+     "em": "Ele",
+     "arquivo": "assets/sfx/serra_ligada.mp3",
+     "desc": "a table saw running",
+     "db": -14,
+     "dur": 1.6,
+     "no_clipe": 0.1
+    },
+    {
+     "em": "ligada",
+     "arquivo": "assets/sfx/lamina_afunda_mesa.mp3",
+     "desc": "a heavy metal clunk",
+     "db": -8,
+     "dur": 0.8,
+     "no_clipe": 1.8
     }
-   ],
-   "foley": "oficina"
+   ]
   },
   {
    "em": "de propósito",
@@ -48,7 +56,7 @@
    "revisao": "manual",
    "_parte": "GANCHO",
    "_funcao": "aberto: o vendedor encostando a mão na mesa de propósito, na frente de todo mundo",
-   "foley": "oficina"
+   "foley": "feira"
   },
   {
    "em": "O segredo",
@@ -58,28 +66,37 @@
    "revisao": "manual",
    "_parte": "INÍCIO",
    "_funcao": "câmera lenta: a lâmina girando e a salsicha indo na direção dos dentes (tensão)",
-   "foley": "oficina",
+   "foley": "feira",
    "sfx_cena": [
     {
      "em": "lâmina",
-     "arquivo": "assets/sfx/serra_motor_lamina.mp3",
-     "desc": "a power saw motor cutting",
+     "arquivo": "assets/sfx/serra_ligada.mp3",
+     "desc": "a table saw running",
      "db": -14,
-     "dur": 1.0,
+     "dur": 2.0,
      "no_clipe": 7.6
     }
    ]
   },
   {
    "em": "e pele",
-   "clipe": "atlasmachinery_7057181700752805126.mp4",
+   "clipe": "woodworkingpro_arranhao.mp4",
    "inicio": 0.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "INÍCIO",
-   "_funcao": "de perto: os dedos (pele) empurrando a peça rente à lâmina",
-   "baixa_res_ok": "post original em 720x720; cena curta de detalhe",
-   "foley": "oficina"
+   "_funcao": "a mão espalmada na madeira, rente à lâmina (pele)",
+   "foley": "oficina",
+   "sfx_cena": [
+    {
+     "em": "pele",
+     "arquivo": "assets/sfx/serra_ligada.mp3",
+     "desc": "a table saw running",
+     "db": -16,
+     "dur": 1.0,
+     "no_clipe": 0.1
+    }
+   ]
   },
   {
    "em": "Encostou",
@@ -89,7 +106,17 @@
    "revisao": "manual",
    "_parte": "MEIO",
    "_funcao": "de perto: a salsicha encosta na lâmina",
-   "foley": "oficina"
+   "foley": "oficina",
+   "sfx_cena": [
+    {
+     "em": "Encostou",
+     "arquivo": "assets/sfx/batida_seca_madeira.mp3",
+     "desc": "a soft thud",
+     "db": -8,
+     "dur": 0.5,
+     "no_clipe": 9.5
+    }
+   ]
   },
   {
    "em": "metal",
@@ -125,7 +152,7 @@
     "em": "cinco",
     "ate_palavra": "milésimos"
    },
-   "foley": "oficina"
+   "foley": "feira"
   },
   {
    "em": "A lâmina vai",
@@ -135,8 +162,18 @@
    "revisao": "manual",
    "_parte": "FINAL",
    "_funcao": "a lâmina com o freio cravado na mão: vai pro lixo",
-   "foley": "oficina",
-   "trecho_conferido": "tomada de 103,75 a 104,95 (1,20 s) olhada quadro a quadro; a cena pede 1,21 s"
+   "foley": "feira",
+   "trecho_conferido": "tomada de 103,75 a 104,95 (1,20 s) olhada quadro a quadro; a cena pede 1,21 s",
+   "sfx_cena": [
+    {
+     "em": "lâmina",
+     "arquivo": "assets/sfx/swish_pano.mp3",
+     "desc": "a cloth swish",
+     "db": -12,
+     "dur": 0.6,
+     "no_clipe": 103.9
+    }
+   ]
   },
   {
    "em": "o dedo não",
@@ -146,17 +183,27 @@
    "revisao": "manual",
    "_parte": "FINAL",
    "_funcao": "as mãos mostrando a salsicha inteira, só um arranhãozinho",
-   "foley": "oficina"
+   "foley": "feira"
   },
   {
    "em": "e pra provar",
-   "clipe": "mww_slowmo.mp4",
-   "inicio": 2.4,
+   "clipe": "ia_dedo.mp4",
+   "inicio": 0.1,
    "som_original": false,
    "revisao": "manual",
    "_parte": "LOOP",
-   "_funcao": "o mesmo quadro do gancho (loop): a mão indo na serra",
-   "foley": "oficina"
+   "_funcao": "o mesmo quadro do gancho (loop): o dedo na serra",
+   "foley": "oficina",
+   "sfx_cena": [
+    {
+     "em": "provar",
+     "arquivo": "assets/sfx/serra_ligada.mp3",
+     "desc": "a table saw running",
+     "db": -14,
+     "dur": 1.6,
+     "no_clipe": 0.1
+    }
+   ]
   }
  ]
 }

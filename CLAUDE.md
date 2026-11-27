@@ -43,7 +43,7 @@ escala a cada 1,5–2 s; imagem indireta que antecipa a frase; tensão no meio; 
 
 ## Som (regras fixas — `biblioteca_sfx/LEIA.md`)
 - Só sons de `biblioteca_sfx/` (4 pastas). PROIBIDO desenho animado, meme, "boing", buzina, risada, "pop" agudo.
-- Máx. 1 efeito de AÇÃO a cada 3 s; whoosh suave (−14) em TODA troca, a ≥ 1 s de outro efeito; tremida leve nos impactos (tiro/explosão). O som apoia, não aparece mais que a história.
+- Máx. 1 efeito de AÇÃO a cada 3 s; whoosh (−14) em TODA troca, alternando suave/rápido/grave, só pula se um efeito cair a < 0,3 s do corte (dono 27/11); tremida leve nos impactos (tiro/explosão). O som apoia, não aparece mais que a história.
 - Mixagem automática (`viitu/som_final.py`, `edicao/especificacao.json`): voz NA FRENTE com tratamento leve · música −16 na mixagem (audível sob a voz contínua) · efeitos −10 a −5 dB
   (dono 24/11: voz B escolhida de ouvido; música subiu no vd017; teste A/B só se ele pedir) · voz ≥ 3,0 palavras/s · abertura no nível da voz (identidade). Música SEMPRE dentro do arquivo (trilha própria licenciada).
 - **Imersão (dono 27/11):** ambiência do lugar (`biblioteca_sfx/05_ambiencia`) + foley do que aparece + whoosh em toda troca — as 3 camadas em todo vídeo.

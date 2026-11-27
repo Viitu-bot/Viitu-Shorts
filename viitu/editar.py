@@ -665,6 +665,14 @@ def _kit_e_sfx(cfg: dict, palavras: list[dict], pub: Path) -> tuple[dict, list[d
             from viitu.mix import normalizar
             normalizar(baixar(sm), pub / dst, "pontual")
             nomes[func].append(dst)
+    # dono 27/11: whoosh em TODA troca, da biblioteca dele, alternando suave / rápido / grave (não cansa o ouvido)
+    nomes["whoosh_corte"] = []
+    for i, w in enumerate(["cc0_whoosh_fs830856.ogg", "whoosh_rapido.mp3", "whoosh_grave.mp3"]):
+        src = RAIZ / "biblioteca_sfx" / "02_transicoes_sutis" / w
+        if src.exists():
+            from viitu.mix import normalizar
+            normalizar(src.resolve(), pub / f"kit_whoosh_corte_{i}.mp3", "pontual")
+            nomes["whoosh_corte"].append(f"kit_whoosh_corte_{i}.mp3")
     eventos, ultimo = [], -99.0
     if cfg.get("sfx_auto", False):      # só ligar quando houver gráfico de número/dinheiro na tela
         for p in palavras:
