@@ -1,0 +1,234 @@
+{
+ "_versao": "v1: regras 28/11 (Otto, 3 camadas de som, jogo antigo, 3D, alvo + câmera, tempo da ação)",
+ "formato": "invencao",
+ "impacto_em": [
+  "Trava"
+ ],
+ "destaques": [
+  "porca",
+  "torta",
+  "propósito",
+  "pião",
+  "cunha",
+  "trava",
+  "trilho",
+  "templo"
+ ],
+ "musica": "jogo_antigo/acao/fase2_subspaceaudio.mp3",
+ "cta": false,
+ "creditos_descricao": "Imagens: Hard Lock Industry (teste oficial de vibração, YouTube); @physicsfun; Kanenori/魔理沙のズボラ飯 e Close-UpStock (Pixabay). Animação 3D: Viitu Shorts. Música: \"5 Action Chiptunes\" — Juhani Junkala/SubspaceAudio (OpenGameArt, CC0).",
+ "cenas": [
+  {
+   "em": "Essa porca",
+   "clipe": "hardlock_c.mp4",
+   "inicio": 9.1,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "foley": "fabrica",
+   "_funcao": "GANCHO: no teste de vibração a porca comum (esquerda) treme, gira e CAI; a Hard Lock (direita) fica firme",
+   "alvo": [
+    0.45,
+    0.42
+   ],
+   "zoom": [
+    1.0,
+    1.18
+   ],
+   "trecho_conferido": "teste oficial: a porca comum cai em ~11,6 s do recorte (olhado quadro a quadro)",
+   "sfx_cena": [
+    {
+     "em": "Essa",
+     "arquivo": "assets/sfx/motor_vibracao.mp3",
+     "desc": "a motor buzzing",
+     "db": -14,
+     "dur": 1.6,
+     "no_clipe": 9.1
+    },
+    {
+     "em": "propósito…",
+     "arquivo": "assets/sfx/porca_caindo.mp3",
+     "desc": "a metal clink",
+     "db": -8,
+     "dur": 0.8,
+     "no_clipe": 11.6
+    }
+   ]
+  },
+  {
+   "em": "Porca comum",
+   "clipe": "physicsfun_c.mp4",
+   "inicio": 6.4,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "INÍCIO",
+   "foley": "oficina",
+   "_funcao": "de perto: a porca comum sobe girando sozinha pela rosca com a vibração",
+   "acao_continua": "a porca girando e subindo pela rosca",
+   "alvo": [
+    0.47,
+    0.42
+   ],
+   "zoom": [
+    1.1,
+    1.35
+   ],
+   "sfx_cena": [
+    {
+     "em": "tremedeira,",
+     "arquivo": "assets/sfx/motor_vibracao.mp3",
+     "desc": "a motor buzzing",
+     "db": -12,
+     "dur": 2.5,
+     "no_clipe": 7.0
+    }
+   ],
+   "suave_ok": "fundo liso de estúdio + o tremor REAL da vibração (é o assunto da cena); porca e rosca nítidas (olhado quadro a quadro)"
+  },
+  {
+   "em": "A de baixo",
+   "clipe": "hardlock_c.mp4",
+   "inicio": 0,
+   "manter": true,
+   "revisao": "manual",
+   "_parte": "MEIO",
+   "foley": "fabrica",
+   "_funcao": "3D: a porca de baixo é torta (ressalto excêntrico); a de cima aperta e empurra a de baixo de lado = cunha martelada",
+   "animacao": {
+    "nome": "porca3d",
+    "fase": "completo",
+    "eventos": {
+     "torta": "torta:",
+     "aperta": "aperta",
+     "empurrada": "empurrada",
+     "martelada": "martelada."
+    },
+    "cortes": [
+     {
+      "em": "empurrada",
+      "zoom": 1.08,
+      "foco": [
+       0.6,
+       0.6
+      ]
+     }
+    ],
+    "sfx": [
+     {
+      "evento": "torta",
+      "arquivo": "assets/sfx/cc0/whoosh_fs830856.ogg",
+      "db": -12,
+      "dur": 0.6,
+      "desc": "a soft air whoosh"
+     },
+     {
+      "evento": "aperta",
+      "arquivo": "assets/sfx/cadeira_metal_porta.mp3",
+      "db": -10,
+      "dur": 0.8,
+      "desc": "a metal clank"
+     },
+     {
+      "evento": "empurrada",
+      "arquivo": "assets/sfx/swish_pano.mp3",
+      "db": -12,
+      "dur": 0.6,
+      "desc": "a cloth swish"
+     },
+     {
+      "evento": "martelada",
+      "arquivo": "assets/sfx/martelada_metal.mp3",
+      "db": -6,
+      "dur": 0.6,
+      "desc": "a hammer hitting metal"
+     }
+    ]
+   }
+  },
+  {
+   "em": "Trava",
+   "clipe": "pixabay_66410.mp4",
+   "inicio": 4.3,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "foley": "rua_cidade",
+   "_funcao": "o trem-bala chegando na estação, passando pelos trilhos",
+   "alvo": [
+    0.55,
+    0.45
+   ],
+   "zoom": [
+    1.0,
+    1.22
+   ],
+   "sfx_cena": [
+    {
+     "em": "trilho",
+     "arquivo": "assets/sfx/whoosh_grave.mp3",
+     "desc": "a deep whoosh",
+     "db": -8,
+     "dur": 1.2,
+     "no_clipe": 5.6
+    }
+   ]
+  },
+  {
+   "em": "e o japonês",
+   "clipe": "pixabay_53789.mp4",
+   "inicio": 2.0,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "FINAL",
+   "foley": "floresta_dia",
+   "_funcao": "o túnel de portais vermelhos do santuário (Fushimi Inari, Kyoto): de onde veio a ideia",
+   "alvo": [
+    0.5,
+    0.45
+   ],
+   "zoom": [
+    1.0,
+    1.22
+   ],
+   "sfx_cena": [
+    {
+     "em": "templo,",
+     "arquivo": "assets/sfx/whoosh_grave.mp3",
+     "desc": "a deep whoosh",
+     "db": -14,
+     "dur": 1.0,
+     "no_clipe": 3.5
+    }
+   ]
+  },
+  {
+   "em": "por isso…",
+   "clipe": "hardlock_c.mp4",
+   "inicio": 9.1,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "LOOP",
+   "foley": "fabrica",
+   "_funcao": "o mesmo quadro do gancho (loop)",
+   "alvo": [
+    0.45,
+    0.42
+   ],
+   "zoom": [
+    1.0,
+    1.18
+   ],
+   "trecho_conferido": "teste oficial: a porca comum cai em ~11,6 s do recorte (olhado quadro a quadro)",
+   "sfx_cena": [
+    {
+     "em": "isso…",
+     "arquivo": "assets/sfx/motor_vibracao.mp3",
+     "desc": "a motor buzzing",
+     "db": -14,
+     "dur": 0.8,
+     "no_clipe": 9.1
+    }
+   ]
+  }
+ ]
+}

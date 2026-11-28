@@ -1,0 +1,19 @@
+# Decupagem vd023_porca_hardlock — formato invencao — música jogo_antigo/acao/fase2_subspaceaudio.mp3
+1. 0.0-2.7s [GANCHO] "Essa porca" — hardlock_c.mp4 @9.1s — GANCHO: no teste de vibração a porca comum (esquerda) treme, gira e CAI; a Hard Lock (direita) fica firme — sons: ['motor_vibracao.mp3 @9.1s', 'porca_caindo.mp3 @11.6s']
+2. 2.7-6.0s [INÍCIO] "Porca comum" — physicsfun_c.mp4 @6.4s — de perto: a porca comum sobe girando sozinha pela rosca com a vibração — sons: ['motor_vibracao.mp3 @7.0s']
+3. 6.0-11.3s [MEIO] "A de baixo" — 3D porca3d — 3D: a porca de baixo é torta (ressalto excêntrico); a de cima aperta e empurra a de baixo de lado = cunha martelada — sons: ['assets/sfx/cc0/whoosh_fs830856.ogg', 'assets/sfx/cadeira_metal_porta.mp3', 'assets/sfx/swish_pano.mp3', 'assets/sfx/martelada_metal.mp3']
+4. 11.3-14.0s [FINAL] "Trava" — pixabay_66410.mp4 @4.3s — o trem-bala chegando na estação, passando pelos trilhos — sons: ['whoosh_grave.mp3 @5.6s']
+5. 14.0-16.1s [FINAL] "e o japonês" — pixabay_53789.mp4 @2.0s — o túnel de portais vermelhos do santuário (Fushimi Inari, Kyoto): de onde veio a ideia — sons: ['whoosh_grave.mp3 @3.5s']
+6. 16.1-16.8s [LOOP] "por isso…" — hardlock_c.mp4 @9.1s — o mesmo quadro do gancho (loop) — sons: ['motor_vibracao.mp3 @9.1s']
+
+## OUVIDO (earshot)
+✅ cena 1: motor_vibracao.mp3 — pedido "a motor buzzing" → strong (z 3.6)
+✅ cena 1: porca_caindo.mp3 — pedido "a metal clink" → strong (z 3.3)
+✅ cena 2: motor_vibracao.mp3 — pedido "a motor buzzing" → strong (z 3.6)
+✅ cena 3: whoosh_fs830856.ogg — pedido "a soft air whoosh" → strong (z 3.6)
+✅ cena 3: cadeira_metal_porta.mp3 — pedido "a metal clank" → strong (z 3.0)
+✅ cena 3: swish_pano.mp3 — pedido "a cloth swish" → strong (z 3.2)
+⚠️ cena 3: martelada_metal.mp3 — pedido "a hammer hitting metal" → plausible (z 2.6); soa como: a triangle hit, a glass ting
+✅ cena 4: whoosh_grave.mp3 — pedido "a deep whoosh" → strong (z 3.6)
+✅ cena 5: whoosh_grave.mp3 — pedido "a deep whoosh" → strong (z 3.6)
+✅ cena 6: motor_vibracao.mp3 — pedido "a motor buzzing" → strong (z 3.6)

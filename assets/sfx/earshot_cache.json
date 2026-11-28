@@ -622,5 +622,37 @@
    "a metallic clang",
    "a metal scrape"
   ]
+ },
+ "motor_vibracao.mp3|1795893907817631568|a motor buzzing": {
+  "verdict": "strong",
+  "z": 3.6,
+  "parece": [
+   "a phone vibration buzz",
+   "a power drill"
+  ]
+ },
+ "porca_caindo.mp3|1795893907816011654|a metal clink": {
+  "verdict": "strong",
+  "z": 3.3,
+  "parece": [
+   "ice cubes in a glass",
+   "glass clinking"
+  ]
+ },
+ "martelada_metal.mp3|1795893907819397732|a hammer hitting metal": {
+  "verdict": "plausible",
+  "z": 2.6,
+  "parece": [
+   "a triangle hit",
+   "a glass ting"
+  ]
+ },
+ "whoosh_grave.mp3|1795774680952822709|a deep whoosh": {
+  "verdict": "strong",
+  "z": 3.6,
+  "parece": [
+   "a deep cinematic whoosh",
+   "a sub bass drop"
+  ]
  }
 }

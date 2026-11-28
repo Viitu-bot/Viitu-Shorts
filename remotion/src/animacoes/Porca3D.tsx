@@ -30,7 +30,7 @@ export const Porca3D: React.FC<{fase: string; dur: number; eventos: Record<strin
 
   const k = interpolate(f, [0, dur], [0, 1], suave);
   const cam: [number, number, number] = [interpolate(k, [0, 1], [1.7, 1.2]), interpolate(k, [0, 1], [2.0, 1.5]), interpolate(k, [0, 1], [5.6, 4.6])];
-  const alvo: [number, number, number] = [0.0, 0.6, 0];
+  const alvo: [number, number, number] = [0.22, 0.55, 0];
 
   const gNut = useMemo(() => hex(0.62, 0.42), []);
   const metal = (cor: string, op = 0.55) => <meshStandardMaterial color={cor} metalness={0.35} roughness={0.35} transparent opacity={op} depthWrite={false} />;
