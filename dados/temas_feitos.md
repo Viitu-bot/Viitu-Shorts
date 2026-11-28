@@ -23,3 +23,4 @@ Formato: `AAAA-MM-DD (postagem) | família | tema | link do vídeo publicado (qu
 2026-12-01 (ter) | História curta de pessoa (nicho de estilo) | O homem que caiu do céu sem paraquedas (Luke Aikins, rede) — vd020 | (tema BR 10,1 mi no A vida é uma maravilha — dados salvos)
 2026-12-02 (qua) [planejado] | Invenção visual chocante | A serra que freia sozinha quando encosta no dedo (SawStop) — vd021 | (tema BR 5,4 mi no GeneralTV, outro ângulo)
 2026-12-03 (qui) [planejado] | Flagrante/cotidiano | O truque de segurança que professores aprendem — vd022 | (tema BR 11,3 mi no A vida é uma maravilha; confirmar o truque)
+2026-12-04 (sex) [planejado] | Invenção visual chocante (faixa 70%) | A porca que nunca se solta (Hard Lock japonesa, efeito cunha, ideia de um santuário) — vd023 | (prova 25,8 mi Infinite Desk — lá é Nord-Lock; outro ângulo)
