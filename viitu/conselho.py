@@ -39,27 +39,27 @@ MUNDO = ["edicao/conhecimento_youtube.md", "edicao/biblioteca_nicho.md", "edicao
          "hall_da_fama/videos/*.md", "analises_concorrencia/*/*.md", "pesquisa/referencias.md", "pesquisa/canais/*.md"]
 
 CONSELHEIROS = [
-    ("gemini-3.1-pro-preview", "ANALISTA DE RETENÇÃO",
+    ("gemini-3.6-flash", "ANALISTA DE RETENÇÃO",
      "Você só aceita o que tem dado: retenção, views, % assistido, prints do dono, medições em fontes_das_regras.md. "
      "Diz o efeito provável na retenção e no alcance do Short, com número quando existir."),
-    ("gemini-3.6-flash", "GUARDIÃO DO DNA",
+    ("gemini-3.5-flash", "GUARDIÃO DO DNA",
      "Você protege a identidade do canal (voz, humor malandro adulto, abertura, trilha, legenda, ritmo). Aponta quando a "
      "proposta apaga ou contradiz o DNA e o que se perde."),
-    ("gemini-2.5-pro", "CAÇADOR DE CONTRADIÇÕES",
+    ("gemini-3-flash-preview", "CAÇADOR DE CONTRADIÇÕES",
      "Você procura, linha por linha, regras do projeto que a proposta contradiz ou duplica (cite arquivo e o trecho exato) "
      "e diz qual versão deve ficar e qual apagar."),
-    ("gemini-3.5-flash", "ESTRATEGISTA DO YOUTUBE",
+    ("gemini-3.6-flash", "ESTRATEGISTA DO YOUTUBE",
      "Você conhece como o YouTube Shorts funciona (edicao/conhecimento_youtube.md: feed, 'quantos escolheram assistir', "
      "views engajadas, Content ID, conteúdo inautêntico/reutilizado, monetização). Diz o efeito da proposta no alcance e no "
      "risco de política, citando se a base é OFICIAL ou TERCEIROS."),
-    ("gemma-4-31b-it", "OLHEIRO DO NICHO",
+    ("gemini-3.5-flash", "OLHEIRO DO NICHO",
      "Você conhece os concorrentes e o nicho de curiosidades em PT-BR (hall_da_fama/, analises_concorrencia/, pesquisa/: "
      "A vida é uma maravilha, KSO Descobre, General TV e a engenharia reversa de 35 Shorts). Diz o que os canais que "
      "estouram fazem nesse ponto e se a proposta aproxima ou afasta o Viitu deles — e onde copiar seria perder identidade."),
 ]
 LIMITE_CTX = {"gemma-4-31b-it": 300000}     # modelo de contexto menor recebe o contexto cortado
-PRESIDENTE = "gemini-3.1-pro-preview"
-RESERVA = ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-2.5-flash", "gemini-flash-latest"]
+PRESIDENTE = "gemini-3.6-flash"   # os modelos "pro" e o gemma estão sem cota/indisponíveis na chave grátis (28/11)
+RESERVA = ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-3-flash-preview"]
 
 
 def _chave() -> str:
@@ -90,21 +90,27 @@ def _contexto(limite: int = 60000, mundo: bool = True, total: int = 0) -> str:
 
 
 def _perguntar(modelo: str, prompt: str, temperatura: float = 0.4) -> str:
-    for m in [modelo] + RESERVA:
+    """Tenta o modelo pedido e depois as reservas; 404/403 pula na hora, 429 (cota por minuto) espera 1x."""
+    ordem = [modelo] + [m for m in RESERVA if m != modelo]
+    for m in ordem:
         for tentativa in range(2):
             try:
                 r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent",
-                                  params={"key": _chave()}, timeout=300,
+                                  params={"key": _chave()}, timeout=180,
                                   json={"contents": [{"parts": [{"text": prompt}]}],
                                         "generationConfig": {"temperature": temperatura}})
-                if r.status_code == 200:
-                    c = r.json().get("candidates", [{}])[0].get("content", {}).get("parts", [{}])
-                    txt = "".join(x.get("text", "") for x in c).strip()
-                    if txt:
-                        return txt if m == modelo else f"[respondido por {m}, reserva]\n{txt}"
-                time.sleep(3 + 4 * tentativa)
             except requests.RequestException:
-                time.sleep(3)
+                break
+            if r.status_code == 200:
+                c = r.json().get("candidates", [{}])[0].get("content", {}).get("parts", [{}])
+                txt = "".join(x.get("text", "") for x in c if not x.get("thought")).strip()
+                if txt:
+                    return txt if m == modelo else f"[respondido por {m}, reserva]\n{txt}"
+                break
+            if r.status_code == 429 and tentativa == 0:
+                time.sleep(25)
+                continue
+            break
     return "(sem resposta: todos os modelos falharam)"
 
 
@@ -157,7 +163,7 @@ def _salvar(nome: str, texto: str) -> Path:
 def conselho(proposta: str) -> Path:
     ctx = _contexto()
     print(f"Conselho reunido: {len(CONSELHEIROS)} conselheiros, contexto de {len(ctx) // 1000} mil caracteres.")
-    with ThreadPoolExecutor(len(CONSELHEIROS)) as ex:
+    with ThreadPoolExecutor(2) as ex:                      # 2 por vez: cota de tokens por minuto da chave grátis
         ops_lista = list(ex.map(lambda p: opiniao(proposta, ctx[:LIMITE_CTX.get(p[0], len(ctx))], p), CONSELHEIROS))
     letras = [chr(65 + i) for i in range(len(CONSELHEIROS))]
     ordem = list(range(len(CONSELHEIROS)))
@@ -165,12 +171,12 @@ def conselho(proposta: str) -> Path:
     ops = {letras[j]: ops_lista[i] for j, i in enumerate(ordem)}
     legenda = {letras[j]: CONSELHEIROS[i][1] for j, i in enumerate(ordem)}
     print("Etapa 1 (opiniões) ok. Etapa 2: revisão anônima…")
-    with ThreadPoolExecutor(len(CONSELHEIROS)) as ex:
+    with ThreadPoolExecutor(3) as ex:
         revs_lista = list(ex.map(lambda i: revisao(proposta, {k: v for k, v in ops.items() if legenda[k] != CONSELHEIROS[i][1]},
                                                    CONSELHEIROS[i]), range(len(CONSELHEIROS))))
     revs = {CONSELHEIROS[i][1]: revs_lista[i] for i in range(len(CONSELHEIROS))}
     print("Etapa 2 ok. Etapa 3: presidente…")
-    final = presidente(proposta, ctx, ops, revs, legenda)
+    final = presidente(proposta, _contexto(mundo=False), ops, revs, legenda)
     rel = (f"# Conselho do canal — {datetime.now():%d/%m/%Y %H:%M}\n\n**Proposta do dono:** {proposta}\n\n"
            f"# DECISÃO DO PRESIDENTE\n\n{final}\n\n---\n# Opiniões (anônimas na revisão)\n\n"
            + "\n\n".join(f"## {k} — {legenda[k]}\n{v}" for k, v in ops.items())
@@ -187,7 +193,7 @@ def faxina() -> Path:
               "legenda, ritmo, CTA…). Para cada uma: ASSUNTO · arquivo A → trecho · arquivo B → trecho · qual parece mais "
               "recente/vigente (datas do dono) · o que fazer. Ordene da que mais afeta o vídeo para a que menos afeta.\n\n" + ctx)
     with ThreadPoolExecutor(2) as ex:
-        a, b = ex.map(lambda m: _perguntar(m, prompt, 0.1), [PRESIDENTE, "gemini-2.5-pro"])
+        a, b = ex.map(lambda m: _perguntar(m, prompt, 0.1), [PRESIDENTE, "gemini-3-flash-preview"])
     junta = _perguntar(PRESIDENTE, BASE + "Duas auditorias independentes listaram contradições nas regras do canal. Junte as duas "
                        "numa lista única, sem repetir, mantendo só o que aparece com trecho citado. Para cada item diga a "
                        "recomendação e se precisa de decisão do dono (SIM/NÃO).\n\n=== AUDITORIA 1 ===\n" + a +
