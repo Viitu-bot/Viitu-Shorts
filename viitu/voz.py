@@ -20,8 +20,8 @@ from pathlib import Path
 import requests
 
 RAIZ = Path(__file__).resolve().parent.parent
-VOZ_OTTO = "ycxdm1PRMs962FxyyuJ0"           # voz antiga (até o vd015)
-VOZ_DONO = "64HXlziZyVQ3YQ4uucAS"           # "Minha voz" — clone do dono, padrão desde 24/11
+VOZ_OTTO = "ycxdm1PRMs962FxyyuJ0"           # Otto — PADRÃO de novo desde 28/11 (dono: entonação e ritmo melhores)
+VOZ_DONO = "64HXlziZyVQ3YQ4uucAS"           # "Minha voz" — clone do dono (24–27/11); saiu: eco da gravação original e pouca entonação
 MODELO = "eleven_v4"  # o mais emotivo; o v3 aceita tags de emoção ([curious]...) se precisar
 
 
@@ -149,7 +149,7 @@ def gerar(projeto: str, voz: str, estabilidade: float, velocidade: float, modelo
 def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("projeto")
-    p.add_argument("--voz", default=VOZ_DONO)
+    p.add_argument("--voz", default=VOZ_OTTO)
     p.add_argument("--estabilidade", type=float, default=0.5,
                    help="v3 aceita só 0.0 (criativo), 0.5 (natural) ou 1.0 (estável)")
     p.add_argument("--velocidade", type=float, default=1.0)

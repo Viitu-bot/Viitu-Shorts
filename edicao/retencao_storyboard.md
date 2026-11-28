@@ -23,6 +23,12 @@ fonte, corte e som do §3.
 Por quê (dono): troca de escala + imagem não óbvia mantêm o cérebro decodificando; anomalia no 1º quadro segura os 2
 primeiros segundos, o gargalo dos vídeos que pararam antes de 20 mil views.
 
+## 0b. CLÍMAX NO INSTANTE (dono 28/11, vd021)
+A frase que descreve a ação principal ("é disparado", "quebra", "explode", "trava") mostra o INSTANTE em que ela acontece —
+câmera lenta do disparo, o objeto quebrando — e não o resultado depois (vd021: mostrou o freio já cravado; o dono queria
+ver a máquina "quebrando"). Se não existir a tomada do instante em vídeo real, a cena vira 3D (`/animacao`) mostrando o
+momento, ou o roteiro muda. No storyboard, marcar a linha do clímax com **ÁPICE VISÍVEL: sim/não**.
+
 ## 1. Como pensar cada cena (agente de retenção)
 1. **Hibridismo:** clipe real/UGC (TikTok, X, Reddit, Instagram) = ação, reação visceral, o momento imprevisível — dá
    credibilidade na hora. 3D/IA = plano de estabelecimento, o mecanismo por dentro, o que é impossível filmar.
