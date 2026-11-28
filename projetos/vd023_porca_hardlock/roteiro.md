@@ -12,7 +12,7 @@ Formato: invencao · gatilho 2 Quebra de padrão (gancho A, escolhido pelo dono 
 Molde: afirmação estranha → contraste (porca comum) → mecanismo em 3D (cunha) → prova de uso (trilho) → origem que
 emenda no gancho (loop). Diferente do vd022 (flagrante/truque).
 
-## ✅ TEXTO FINAL PARA A VOZ (aguardando "aprovado" do dono — voz Otto só depois)
+## ✅ TEXTO FINAL PARA A VOZ (APROVADO pelo dono 28/11 via /clipes)
 Essa porca é torta de propósito…
 Porca comum, na tremedeira, sai rodando que nem pião.
 A de baixo é torta: aperta a de cima, e ela é empurrada pro lado, igual cunha martelada.
