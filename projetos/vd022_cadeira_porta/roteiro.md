@@ -5,7 +5,7 @@ fechadura → trava no chão) → loop ("…na falta dela…" → "Essa cadeira 
 Referência BR: "Professores aprendem truque de segurança 🔒" (A vida é uma maravilha, 11,9 mi). Ângulo nosso: truque do dia
 a dia, sem focar em ataques a escolas.
 
-## ✅ TEXTO FINAL PARA A VOZ (aguardando "aprovado" do dono — voz Otto só depois)
+## ✅ TEXTO FINAL PARA A VOZ (APROVADO pelo dono 28/11 via /clipes)
 Essa cadeira tranca a porta melhor que a chave…
 O segredo tá na maçaneta: pra abrir, ela precisa descer. Vira a cadeira, encaixa o ferro nela, e pronto… não desce mais.
 Lá fora, o cara puxa, chacoalha, e nada.
