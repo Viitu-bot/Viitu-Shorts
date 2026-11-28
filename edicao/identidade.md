@@ -57,3 +57,5 @@ voz logo depois. Adaptado ao ding do canal e ajustado pelo dono: toques mais col
 - **Textos/pop-ups:** "chat message pop", "bubble pop", cliques de tecla.
 - **Batidas:** "wooden block hit", "punchy impact hit" (poucos, nos momentos fortes).
 - Duração: 10–22 s nos que mais performaram (o único de 39 s ficou entre os menores).
+
+> **Voz atual (dono 28/11):** a narração usa o **Otto** (ElevenLabs). O clone "Minha voz" saiu por eco da gravação e pouca entonação; o jeito de FALAR medido aqui (gírias, ritmo, perguntas) continua valendo no texto. Otto (28/11)

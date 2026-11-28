@@ -22,7 +22,7 @@ em `edicao/identidade.md`.
   perto/longe intercalado (travas R1, R9, R10 da `viitu.montagem`).
 
 ## Padrão-ouro: vd004 bombeiros (90,8% de retenção média, linha reta até 40 s — print do dono)
-45,7 s · 130 palavras (2,85/s) · 26 cenas (1,76 s cada) · gancho "de propósito" → "a maioria acha" → mecanismo →
+45,7 s · 130 palavras (2,85/s, medida histórica do vd004 — a regra vigente é ≥ 3,0 palavras/s) · 26 cenas (1,76 s cada) · gancho "de propósito" → "a maioria acha" → mecanismo →
 "mas tem um porém" → risco. **Duração: alvo 12–18 s, teto 30 s só se o tema exigir (dono 26/11: os 4 vídeos > 20 mil tinham < 16 s e > 105% de visualização).** Público adulto 25+.
 - **Gancho (meta 78%+ continuaram assistindo):** sem introdução nem contexto; a 1ª frase abre o loop de curiosidade em
   1,5–2 s, em cima do quadro mais estranho/forte do vídeo. Modelos: "Piscou o olho, perdeu…", "Como sumir do mapa…",

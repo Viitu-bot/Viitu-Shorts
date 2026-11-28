@@ -47,9 +47,9 @@ Pré-requisito: tema validado por `/tema` (prova ≥ 1M, lacuna PT-BR, categoria
   (vd009: o avião "atual" já tinha sido trocado em julho; o texto teve de virar "o antigo avião conseguia").
 - **Cada frase pede uma imagem que existe:** quem é citado (presidente, piloto, operário) aparece de verdade;
   marque `[PESSOA: ...]` para o /clipes buscar.
-- **CTA INTERATIVO OBRIGATÓRIO (BÍBLIA §1):** ligado a um acontecimento do vídeo (o elogio/comparação nasce do que
+- **[SUPERADO 24/11 — sem CTA no fim; loop no lugar]** CTA INTERATIVO (BÍBLIA §1, antigo): ligado a um acontecimento do vídeo (o elogio/comparação nasce do que
   acabou de acontecer) e nunca igual ao de outro vídeo. "Engessado" = frase de carimbo, NÃO "sem CTA".
-- **Roteiro marcado por partes:** `[GANCHO]`, `[INÍCIO]`, `[MEIO]`, `[FINAL]`, `[CTA]` no roteiro.md (a trava R0 confere).
+- **Roteiro marcado por partes:** `[GANCHO]`, `[INÍCIO]`, `[MEIO]`, `[FINAL]` no roteiro.md (sem [CTA]) (a trava R0 confere).
 
 ## 1. Formato (HISA 2.0 do dono — escolha pelo bruto/tema)
 - **Tiro Curto 12–15 s = 30–38 palavras.** Curiosidade rápida, física bizarra, susto, gambiarra instantânea.
@@ -67,7 +67,7 @@ Pré-requisito: tema validado por `/tema` (prova ≥ 1M, lacuna PT-BR, categoria
    (cada frase = um passo que dá para desenhar).
 4. **Virada:** "Mas tem um porém…" ou o re-hook → `impacto_em`.
 5. **Conexão/consequência** (Brasil, vida de quem assiste) — opcional, só se for forte.
-6. **CTA interativo (sempre) + loop** (BÍBLIA §1). Adaptar ao acontecimento do vídeo e variar a frase de vídeo para vídeo (referência do martim-pescador, ~200 inscritos em 10 mil views):
+6. **Loop narrativo (sem CTA desde 24/11 — o texto abaixo é histórico).** Adaptar ao acontecimento do vídeo e variar a frase de vídeo para vídeo (referência do martim-pescador, ~200 inscritos em 10 mil views):
    "[sujeito] é [qualidade rara/admirável]… **igual você, inscrito do canal. Se não é, já se inscreve** pra [ver/saber]…"
    — o elogio liga o espectador ao tema e a frase suspensa emenda no gancho (loop). Ex.: "…uma engenharia genial,
    igual você, inscrito do canal. Se não é, já se inscreve pra ver se…". Na tela: "SE INSCREVE" + rosto/gesto positivo.

@@ -6,17 +6,17 @@ na pasta certa daqui com nome em inglês descritivo (ex.: `sub_drop_short.mp3`) 
 | pasta | para quê | quando | hoje |
 |---|---|---|---|
 | 01_gancho_impacto | riser curto, sub-drop, impacto cinematográfico sutil | SÓ nos 2 primeiros segundos ou na revelação | 5 |
-| 02_transicoes_sutis | whoosh suave, corte de ar seco | troca de cena (no máx. 1 efeito a cada 3 s) | 4 |
+| 02_transicoes_sutis | whoosh suave, corte de ar seco | TODA troca de cena, alternando suave/rápido/grave (dono 27/11) | 4 |
 | 03_foley_textura | sons reais e táteis (clique, câmera, relógio, máquina, água, motor) | o que aparece na tela | 52 |
-| 04_trilhas_fundo | instrumental leve de curiosidade/investigação/tensão moderada, sem batida pesada | o vídeo todo, −22 a −26 dB | 6 |
+| 04_trilhas_fundo | instrumental leve de curiosidade/investigação/tensão moderada, sem batida pesada | (antiga; trilha atual = biblioteca de jogo antigo) o vídeo todo, −16 na mixagem | 6 |
 | 05_ambiencia | SOM DO LUGAR em loop (oficina, fábrica, feira, rua, cozinha, escritório, obra, chuva, floresta, vento) — dono 27/11 | fundo de TODA cena (`"foley": "<nome do arquivo>"`), entra antes da biblioteca Sonniss | 10 |
 | _proibidos | pop agudo, scratch de DJ, ukulele alegre, phonk/techno/lo-fi com batida, música infantil | nunca | 8 |
 
 **Tempo do som (dono 26/11, vd018):** o som de algo que a narração NOMEIA (sirene, motor, tiro) entra NA palavra (ou
 quando o objeto aparece), nunca antes — e nunca cobre a palavra anterior. Na dúvida, começar no ápice da imagem.
 
-Regras: sem desenho animado, meme, boing, buzina, risada ou pop agudo · máx. 1 efeito a cada 3 s · efeitos −12 a −18 dB e
-trilha −22 a −26 dB sob a voz (automático em `viitu/som_final.py`).
+Regras: sem desenho animado, meme, boing, buzina, risada ou pop agudo · máx. 1 efeito de AÇÃO a cada 3 s (whoosh, ambiência e foley não contam) · efeitos −10 a −5 dB e trilha −16 na
+mixagem (valores vigentes em `edicao/especificacao.json`; automático em `viitu/som_final.py`).
 
 ## LISTA DE GARIMPO (termos exatos em inglês — Freesound.org e Pixabay.com/sound-effects, licença CC0/Pixabay)
 Faltam principalmente sons de gancho limpos e trilhas sem batida.
