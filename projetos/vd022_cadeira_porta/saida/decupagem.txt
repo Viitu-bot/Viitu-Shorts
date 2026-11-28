@@ -1,22 +1,19 @@
 # Decupagem vd022_cadeira_porta — formato invencao — música jogo_antigo/misterio/pesadelo_spiderdave.mp3
 1. 0.0-1.3s [GANCHO] "Essa cadeira" — ia_puxa.mp4 @0.1s — GANCHO: a mão puxando a maçaneta e a porta NÃO abre — sons: ['porta_forcada.mp3 @0.1s']
 2. 1.3-2.6s [GANCHO] "melhor" — hinojosaara_c.mp4 @6.5s — aberto: a cadeira encaixada na maçaneta da porta da sala — sons: []
-3. 2.6-4.2s [INÍCIO] "O segredo" — jake_c.mp4 @0.2s — a maçaneta da porta, a mão chegando — sons: []
-4. 4.2-5.9s [INÍCIO] "pra abrir" — pixabay_11285.mp4 @1.0s — a mão abaixando a maçaneta e a porta abrindo (o jeito normal) — sons: ['macaneta_abre.mp3 @1.9s']
-5. 5.9-7.1s [INÍCIO] "Vira" — creedon_c.mp4 @9.0s — a professora virando a cadeira de ponta-cabeça — sons: ['swish_pano.mp3 @9.1s']
-6. 7.1-8.6s [MEIO] "o ferro" — up2emmylou_c.mp4 @1.4s — detalhe: o pé de ferro da cadeira entrando por baixo da maçaneta — sons: ['cadeira_metal_porta.mp3 @2.0s']
-7. 8.6-9.7s [MEIO] "não desce" — up2emmylou_c.mp4 @5.0s — ÁPICE: a maçaneta presa embaixo da cadeira, não desce — sons: []
-8. 9.7-11.2s [MEIO] "Lá fora" — creedon_fora_c.mp4 @0.0s — do lado de fora: a mão puxando a maçaneta — sons: []
-9. 11.2-12.9s [MEIO] "chacoalha" — creedon_fora_c.mp4 @2.0s — de novo a mão puxando, a porta não sai do lugar — sons: ['porta_forcada.mp3 @2.1s']
-10. 12.9-14.7s [FINAL] "Mas toda" — hinojosaara_c.mp4 @11.4s — a cadeira segurando a maçaneta: a força toda vai pra fechadura — sons: []
-11. 14.7-17.0s [FINAL] "por isso" — nightlock_aberto.mp4 @3.0s — o funcionário descendo a trava na placa presa no chão — sons: ['lamina_afunda_mesa.mp3 @4.6s']
-12. 17.0-18.4s [LOOP] "mas, na" — ia_puxa.mp4 @0.1s — o mesmo quadro do gancho (loop) — sons: ['porta_forcada.mp3 @0.1s']
+3. 2.6-9.7s [INÍCIO] "O segredo" — 3D porta3d — 3D: a alavanca desce e a lingueta recua → a cadeira entra de ponta-cabeça → o ferro trava a alavanca — sons: ['assets/sfx/macaneta_abre.mp3', 'assets/sfx/swish_pano.mp3', 'assets/sfx/cadeira_metal_porta.mp3', 'assets/sfx/porta_forcada.mp3']
+4. 9.7-11.2s [MEIO] "Lá fora" — creedon_fora_c.mp4 @0.0s — do lado de fora: a mão puxando a maçaneta — sons: []
+5. 11.2-12.9s [MEIO] "chacoalha" — creedon_fora_c.mp4 @2.0s — de novo a mão puxando, a porta não sai do lugar — sons: ['porta_forcada.mp3 @2.1s']
+6. 12.9-14.7s [FINAL] "Mas toda" — hinojosaara_c.mp4 @11.4s — a cadeira segurando a maçaneta: a força toda vai pra fechadura — sons: []
+7. 14.7-17.0s [FINAL] "por isso" — nightlock_aberto.mp4 @3.0s — o funcionário descendo a trava na placa presa no chão — sons: ['lamina_afunda_mesa.mp3 @4.6s']
+8. 17.0-18.4s [LOOP] "mas, na" — ia_puxa.mp4 @0.1s — o mesmo quadro do gancho (loop) — sons: ['porta_forcada.mp3 @0.1s']
 
 ## OUVIDO (earshot)
 ✅ cena 1: porta_forcada.mp3 — pedido "a door rattling" → strong (z 3.6)
-✅ cena 4: macaneta_abre.mp3 — pedido "a door handle click" → strong (z 3.5)
-✅ cena 5: swish_pano.mp3 — pedido "a cloth swish" → strong (z 3.2)
-✅ cena 6: cadeira_metal_porta.mp3 — pedido "a metal clank" → strong (z 3.0)
-✅ cena 9: porta_forcada.mp3 — pedido "a door rattling" → strong (z 3.6)
-✅ cena 11: lamina_afunda_mesa.mp3 — pedido "a heavy metal clunk" → strong (z 3.8)
-✅ cena 12: porta_forcada.mp3 — pedido "a door rattling" → strong (z 3.6)
+✅ cena 3: macaneta_abre.mp3 — pedido "a door handle click" → strong (z 3.5)
+✅ cena 3: swish_pano.mp3 — pedido "a cloth swish" → strong (z 3.2)
+✅ cena 3: cadeira_metal_porta.mp3 — pedido "a metal clank" → strong (z 3.0)
+✅ cena 3: porta_forcada.mp3 — pedido "a door rattling" → strong (z 3.6)
+✅ cena 5: porta_forcada.mp3 — pedido "a door rattling" → strong (z 3.6)
+✅ cena 7: lamina_afunda_mesa.mp3 — pedido "a heavy metal clunk" → strong (z 3.8)
+✅ cena 8: porta_forcada.mp3 — pedido "a door rattling" → strong (z 3.6)
