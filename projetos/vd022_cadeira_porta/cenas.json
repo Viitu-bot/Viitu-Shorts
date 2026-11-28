@@ -1,6 +1,6 @@
 {
  "_versao": "v1: regras 28/11 (Otto, 3 camadas de som, música de jogo antigo, clímax no instante)",
- "formato": "tiro_curto",
+ "formato": "invencao",
  "impacto_em": [
   "nada"
  ],
@@ -19,9 +19,9 @@
  "cta": false,
  "bruto_livre": [
   "up2emmylou_c.mp4",
-  "creedon_fora_c.mp4"
+  "hinojosaara_c.mp4"
  ],
- "creditos_descricao": "Imagens: @jake_land1994, @hinojosaara, @eemilykatee, @creedonclan, @up2emmylou (TikTok); GreenCardShow (Pixabay); Nightlock via @interestingengineering. Música: \"A Wonderful Nightmare\" (chiptune) — SpiderDave (OpenGameArt, CC0).",
+ "creditos_descricao": "Imagens: @jake_land1994, @hinojosaara, @creedonclan, @up2emmylou (TikTok); GreenCardShow (Pixabay); Nightlock via @interestingengineering. Música: \"A Wonderful Nightmare\" (chiptune) — SpiderDave (OpenGameArt, CC0).",
  "cenas": [
   {
    "em": "Essa cadeira",
@@ -41,12 +41,13 @@
      "dur": 1.3,
      "no_clipe": 0.1
     }
-   ]
+   ],
+   "trecho_conferido": "ia_puxa (1,5 s ampliado por IA) olhado quadro a quadro: a mão puxa a maçaneta e a porta não abre, sem corte"
   },
   {
    "em": "melhor",
    "clipe": "hinojosaara_c.mp4",
-   "inicio": 10.4,
+   "inicio": 6.5,
    "som_original": false,
    "revisao": "manual",
    "_parte": "GANCHO",
@@ -56,19 +57,19 @@
   },
   {
    "em": "O segredo",
-   "clipe": "eemilykatee_c.mp4",
-   "inicio": 2.9,
+   "clipe": "jake_c.mp4",
+   "inicio": 0.2,
    "som_original": false,
    "revisao": "manual",
    "_parte": "INÍCIO",
-   "_funcao": "detalhe: a maçaneta de alavanca",
+   "_funcao": "a maçaneta da porta, a mão chegando",
    "foley": "escritorio",
    "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)"
   },
   {
    "em": "pra abrir",
    "clipe": "pixabay_11285.mp4",
-   "inicio": 0.5,
+   "inicio": 1.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "INÍCIO",
@@ -81,14 +82,19 @@
      "desc": "a door handle click",
      "db": -10,
      "dur": 1.0,
-     "no_clipe": 1.5
+     "no_clipe": 1.9
     }
-   ]
+   ],
+   "foco": [
+    0.55,
+    0.5
+   ],
+   "seguir": false
   },
   {
    "em": "Vira",
    "clipe": "creedon_c.mp4",
-   "inicio": 4.0,
+   "inicio": 9.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "INÍCIO",
@@ -102,7 +108,7 @@
      "desc": "a cloth swish",
      "db": -12,
      "dur": 0.6,
-     "no_clipe": 4.1
+     "no_clipe": 9.1
     }
    ]
   },
@@ -141,7 +147,7 @@
   {
    "em": "Lá fora",
    "clipe": "creedon_fora_c.mp4",
-   "inicio": 0.9,
+   "inicio": 0.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
@@ -151,8 +157,8 @@
   },
   {
    "em": "chacoalha",
-   "clipe": "jake_c.mp4",
-   "inicio": 6.4,
+   "clipe": "creedon_fora_c.mp4",
+   "inicio": 2.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "MEIO",
@@ -166,29 +172,29 @@
      "desc": "a door rattling",
      "db": -10,
      "dur": 1.2,
-     "no_clipe": 6.5
+     "no_clipe": 2.1
     }
    ]
   },
   {
    "em": "Mas toda",
-   "clipe": "creedon_fora_c.mp4",
-   "inicio": 3.0,
+   "clipe": "hinojosaara_c.mp4",
+   "inicio": 11.4,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "a maçaneta sendo forçada: a força toda na fechadura",
+   "_funcao": "a cadeira segurando a maçaneta: a força toda vai pra fechadura",
    "foley": "escritorio",
    "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)"
   },
   {
    "em": "por isso",
-   "clipe": "nightlock_c.mp4",
-   "inicio": 9.1,
+   "clipe": "nightlock_aberto.mp4",
+   "inicio": 3.0,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "o pino vermelho da trava descendo na placa do chão",
+   "_funcao": "o funcionário descendo a trava na placa presa no chão",
    "foley": "escritorio",
    "sfx_cena": [
     {
@@ -197,7 +203,7 @@
      "desc": "a heavy metal clunk",
      "db": -10,
      "dur": 0.7,
-     "no_clipe": 10.6
+     "no_clipe": 4.6
     }
    ]
   },
@@ -219,7 +225,11 @@
      "dur": 1.2,
      "no_clipe": 0.1
     }
-   ]
+   ],
+   "trecho_conferido": "ia_puxa (1,5 s ampliado por IA) olhado quadro a quadro: a mão puxa a maçaneta e a porta não abre, sem corte"
   }
+ ],
+ "bruto_cronologico": [
+  "creedon_fora_c.mp4"
  ]
 }

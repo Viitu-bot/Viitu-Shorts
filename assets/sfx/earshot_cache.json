@@ -598,5 +598,29 @@
    "cloth whipping through the air",
    "an apple falling on grass"
   ]
+ },
+ "porta_forcada.mp3|1795872678357677301|a door rattling": {
+  "verdict": "strong",
+  "z": 3.6,
+  "parece": [
+   "a knock on a door",
+   "a door slam"
+  ]
+ },
+ "macaneta_abre.mp3|1795872678365337419|a door handle click": {
+  "verdict": "strong",
+  "z": 3.5,
+  "parece": [
+   "a latch clicking shut",
+   "an enter key press"
+  ]
+ },
+ "cadeira_metal_porta.mp3|1795872678362211917|a metal clank": {
+  "verdict": "strong",
+  "z": 3.0,
+  "parece": [
+   "a metallic clang",
+   "a metal scrape"
+  ]
  }
 }
