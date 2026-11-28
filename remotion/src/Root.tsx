@@ -8,6 +8,7 @@ import {Prensa3D} from './animacoes/Prensa3D';
 import {Gude3D} from './animacoes/Gude3D';
 import {Bulbo3D} from './animacoes/Bulbo3D';
 import {Porta3D} from './animacoes/Porta3D';
+import {Porca3D} from './animacoes/Porca3D';
 import {Vertedouro3D} from './animacoes/Vertedouro3D';
 import {Estrada3D} from './animacoes/Estrada3D';
 import {BanheiroTrem3D} from './animacoes/BanheiroTrem3D';
@@ -17,7 +18,7 @@ import {Stuka3D} from './animacoes/Stuka3D';
 // Teste3D: confere quadros soltos de uma animação sem montar o Short inteiro
 // npx remotion still src/index.ts Teste3D x.png --frame=N --props='{"fase":"completo","dur":180,"eventos":{"tanque":60,"lanca":110}}'
 const Teste3D: React.FC<{nome?: string; fase: string; dur: number; eventos: Record<string, number>; debug?: boolean}> = (p) =>
-  p.nome === 'abrams3d' ? <Abrams3D {...p} /> : p.nome === 'bola3d' ? <Bola3D {...p} /> : p.nome === 'prensa3d' ? <Prensa3D {...p} /> : p.nome === 'gude3d' ? <Gude3D {...p} /> : p.nome === 'bulbo3d' ? <Bulbo3D {...p} /> : p.nome === 'porta3d' ? <Porta3D {...p} /> : p.nome === 'vertedouro3d' ? <Vertedouro3D {...p} /> : p.nome === 'estrada3d' ? <Estrada3D {...p} /> : p.nome === 'banheiro3d' ? <BanheiroTrem3D {...p} /> : p.nome === 'canhao3d' ? <Canhao3D {...p} /> : p.nome === 'stuka3d' ? <Stuka3D {...p} /> : <Reabastece3D {...p} />;
+  p.nome === 'abrams3d' ? <Abrams3D {...p} /> : p.nome === 'bola3d' ? <Bola3D {...p} /> : p.nome === 'prensa3d' ? <Prensa3D {...p} /> : p.nome === 'gude3d' ? <Gude3D {...p} /> : p.nome === 'bulbo3d' ? <Bulbo3D {...p} /> : p.nome === 'porta3d' ? <Porta3D {...p} /> : p.nome === 'porca3d' ? <Porca3D {...p} /> : p.nome === 'vertedouro3d' ? <Vertedouro3D {...p} /> : p.nome === 'estrada3d' ? <Estrada3D {...p} /> : p.nome === 'banheiro3d' ? <BanheiroTrem3D {...p} /> : p.nome === 'canhao3d' ? <Canhao3D {...p} /> : p.nome === 'stuka3d' ? <Stuka3D {...p} /> : <Reabastece3D {...p} />;
 
 export const RemotionRoot: React.FC = () => (
   <>

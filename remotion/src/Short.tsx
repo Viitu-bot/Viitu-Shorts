@@ -21,6 +21,7 @@ import {Prensa3D} from './animacoes/Prensa3D';
 import {Gude3D} from './animacoes/Gude3D';
 import {Bulbo3D} from './animacoes/Bulbo3D';
 import {Porta3D} from './animacoes/Porta3D';
+import {Porca3D} from './animacoes/Porca3D';
 import {Vertedouro3D} from './animacoes/Vertedouro3D';
 import {Estrada3D} from './animacoes/Estrada3D';
 import {BanheiroTrem3D} from './animacoes/BanheiroTrem3D';
@@ -333,6 +334,7 @@ export const Short: React.FC<{plano: Plano}> = ({plano}) => {
           {a.nome === 'gude3d' && <Gude3D fase={a.fase} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'bulbo3d' && <Bulbo3D fase={a.fase} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'porta3d' && <Porta3D fase={a.fase} dur={a.f1 - a.f0} eventos={a.eventos} />}
+          {a.nome === 'porca3d' && <Porca3D fase={a.fase} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'vertedouro3d' && <Vertedouro3D fase={a.fase} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'estrada3d' && <Estrada3D fase={a.fase} dur={a.f1 - a.f0} eventos={a.eventos} />}
           {a.nome === 'banheiro3d' && <BanheiroTrem3D fase={a.fase} dur={a.f1 - a.f0} eventos={a.eventos} />}
