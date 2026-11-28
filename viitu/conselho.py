@@ -1,7 +1,7 @@
 """CONSELHO DO CANAL (dono 28/11: "algo que funcionasse igual ao LLM Council, adaptado ao projeto… embasado, tudo em prol
 do canal"). Mesmo método do llm-council do Karpathy, mas cada conselheiro LÊ as regras e os dados do projeto:
 
-  1. OPINIÕES  — 4 conselheiros (modelos diferentes, papéis diferentes) respondem sozinhos à proposta do dono.
+  1. OPINIÕES  — 5 conselheiros (modelos diferentes, papéis diferentes) respondem sozinhos à proposta do dono.
   2. REVISÃO   — cada um recebe as respostas dos outros SEM saber de quem são (A, B, C…) e ranqueia por embasamento.
   3. PRESIDENTE — junta tudo, pesa o ranking e entrega: veredito, contradições com o que já existe, base de cada ponto e
                   exatamente o que mudar/apagar para não sobrar regra contraditória.
@@ -33,6 +33,10 @@ CONTEXTO = ["CLAUDE.md", "edicao/BIBLIA.md", "edicao/reclamacoes.md", "edicao/fo
             "edicao/especificacao.json", "edicao/identidade.md", "edicao/retencao_storyboard.md",
             "edicao/ganchos_gatilhos.md", "edicao/matriz_702010.md", "biblioteca_sfx/LEIA.md",
             "assets/musica/jogo_antigo/LEIA.md", "dados/temas_feitos.md"]
+# o que o conselho sabe de YOUTUBE e do NICHO (dono 28/11: "não entender só do meu canal, mas também do YouTube, do nicho")
+MUNDO = ["edicao/conhecimento_youtube.md", "edicao/biblioteca_nicho.md", "edicao/logica_editor.md", "edicao/manual_edicao.md",
+         "hall_da_fama/README.md", "hall_da_fama/biblioteca.md", "hall_da_fama/logica_temas.md", "hall_da_fama/canais/*.md",
+         "hall_da_fama/videos/*.md", "analises_concorrencia/*/*.md", "pesquisa/referencias.md", "pesquisa/canais/*.md"]
 
 CONSELHEIROS = [
     ("gemini-3.1-pro-preview", "ANALISTA DE RETENÇÃO",
@@ -44,10 +48,16 @@ CONSELHEIROS = [
     ("gemini-2.5-pro", "CAÇADOR DE CONTRADIÇÕES",
      "Você procura, linha por linha, regras do projeto que a proposta contradiz ou duplica (cite arquivo e o trecho exato) "
      "e diz qual versão deve ficar e qual apagar."),
-    ("gemma-4-31b-it", "ESTRATEGISTA DE CRESCIMENTO",
-     "Você pensa em crescer o canal de Shorts (algoritmo, gancho, loop, frequência, custo de produção e crédito gasto). "
-     "Quando usar conhecimento geral de YouTube, marque 'conhecimento geral, sem dado do canal'."),
+    ("gemini-3.5-flash", "ESTRATEGISTA DO YOUTUBE",
+     "Você conhece como o YouTube Shorts funciona (edicao/conhecimento_youtube.md: feed, 'quantos escolheram assistir', "
+     "views engajadas, Content ID, conteúdo inautêntico/reutilizado, monetização). Diz o efeito da proposta no alcance e no "
+     "risco de política, citando se a base é OFICIAL ou TERCEIROS."),
+    ("gemma-4-31b-it", "OLHEIRO DO NICHO",
+     "Você conhece os concorrentes e o nicho de curiosidades em PT-BR (hall_da_fama/, analises_concorrencia/, pesquisa/: "
+     "A vida é uma maravilha, KSO Descobre, General TV e a engenharia reversa de 35 Shorts). Diz o que os canais que "
+     "estouram fazem nesse ponto e se a proposta aproxima ou afasta o Viitu deles — e onde copiar seria perder identidade."),
 ]
+LIMITE_CTX = {"gemma-4-31b-it": 300000}     # modelo de contexto menor recebe o contexto cortado
 PRESIDENTE = "gemini-3.1-pro-preview"
 RESERVA = ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-2.5-flash", "gemini-flash-latest"]
 
@@ -62,15 +72,21 @@ def _chave() -> str:
     raise SystemExit("Falta GEMINI_API_KEY")
 
 
-def _contexto(limite: int = 60000) -> str:
-    """As regras do projeto, cada arquivo com o nome (para o conselheiro citar a fonte)."""
+def _contexto(limite: int = 60000, mundo: bool = True, total: int = 0) -> str:
+    """Regras do canal + (opcional) conhecimento de YouTube e do nicho, cada arquivo com o nome (para citar a fonte)."""
     partes = []
-    for rel in CONTEXTO:
-        p = RAIZ / rel
-        if p.exists():
+    arquivos = [RAIZ / r for r in CONTEXTO]
+    if mundo:
+        for padrao in MUNDO:
+            arquivos += sorted(RAIZ.glob(padrao))
+    vistos = set()
+    for p in arquivos:
+        if p.exists() and p not in vistos:
+            vistos.add(p)
             txt = p.read_text(encoding="utf-8", errors="ignore")
-            partes.append(f"=== ARQUIVO: {rel} ===\n{txt[:limite]}")
-    return "\n\n".join(partes)
+            partes.append(f"=== ARQUIVO: {p.relative_to(RAIZ)} ===\n{txt[:limite]}")
+    ctx = "\n\n".join(partes)
+    return ctx[:total] if total else ctx
 
 
 def _perguntar(modelo: str, prompt: str, temperatura: float = 0.4) -> str:
@@ -142,7 +158,7 @@ def conselho(proposta: str) -> Path:
     ctx = _contexto()
     print(f"Conselho reunido: {len(CONSELHEIROS)} conselheiros, contexto de {len(ctx) // 1000} mil caracteres.")
     with ThreadPoolExecutor(len(CONSELHEIROS)) as ex:
-        ops_lista = list(ex.map(lambda p: opiniao(proposta, ctx, p), CONSELHEIROS))
+        ops_lista = list(ex.map(lambda p: opiniao(proposta, ctx[:LIMITE_CTX.get(p[0], len(ctx))], p), CONSELHEIROS))
     letras = [chr(65 + i) for i in range(len(CONSELHEIROS))]
     ordem = list(range(len(CONSELHEIROS)))
     random.shuffle(ordem)                                   # anônimo: a letra não revela o papel
@@ -165,7 +181,7 @@ def conselho(proposta: str) -> Path:
 
 
 def faxina() -> Path:
-    ctx = _contexto()
+    ctx = _contexto(mundo=False)            # faxina = só as regras do canal
     prompt = (BASE + "TAREFA: FAXINA DAS REGRAS. Leia todos os arquivos e liste TODAS as contradições ou duplicações entre eles "
               "(mesmo assunto com valores/instruções diferentes: volumes em dB, duração, número de efeitos, voz, música, "
               "legenda, ritmo, CTA…). Para cada uma: ASSUNTO · arquivo A → trecho · arquivo B → trecho · qual parece mais "

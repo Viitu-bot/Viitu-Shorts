@@ -16,8 +16,8 @@ parte do conselho fosse embasada para crescer o canal". E as regras acumulavam c
 
 ## Como rodar
 `python3 -m viitu.conselho "<proposta do dono>"` (≈ 1–3 min) → relatório em `dados/conselho/`.
-Etapas: 1) 4 opiniões independentes (Analista de Retenção, Guardião do DNA, Caçador de Contradições, Estrategista de
-Crescimento — modelos diferentes) · 2) revisão ANÔNIMA com ranking · 3) Presidente: veredito, contradições, base, como gravar.
+Etapas: 1) 5 opiniões independentes (Analista de Retenção, Guardião do DNA, Caçador de Contradições, Estrategista do
+YouTube, Olheiro do Nicho — modelos diferentes) · 2) revisão ANÔNIMA com ranking · 3) Presidente: veredito, contradições, base, como gravar.
 
 ## Depois do conselho (o Claude é quem fala com o dono)
 0. **Conferir cada item no CÓDIGO e nos arquivos antes de aplicar** — o conselho erra (faxina de 28/11: mandou tirar a
@@ -28,6 +28,10 @@ Crescimento — modelos diferentes) · 2) revisão ANÔNIMA com ranking · 3) Pr
 3. Gravar a decisão num lugar só e APAGAR a versão antiga em todos os arquivos citados (não deixar duas regras).
 4. A BÍBLIA só muda com o "sim" do dono no chat (regra 4 do CLAUDE.md).
 5. Terminar com o próximo comando.
+
+Conhecimento (dono 28/11: "não só do meu canal, mas do YouTube, do nicho"): regras do canal + `edicao/conhecimento_youtube.md`
+(fatos OFICIAIS × TERCEIROS sobre o Shorts) + hall_da_fama/, analises_concorrencia/, pesquisa/ (concorrentes e engenharia
+reversa). Cada `/analisar` e `/espiar` novo alimenta o conselho; mudança do YouTube → atualizar conhecimento_youtube.md com data e fonte.
 
 Limites: o conselho usa o Gemini (chave já configurada, sem custo extra). Ele não vê vídeos do canal nem o YouTube Studio;
 número novo só entra com base em `edicao/fontes_das_regras.md` ou print do dono.
