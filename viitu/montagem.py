@@ -19,6 +19,8 @@ palavras.json (tempos reais da voz) e os arquivos dos clipes. Com qualquer ❌ o
   R9 RITMO      cena real > 3 s (sem "acao_continua") e vista 3D > 3,5 s barram: corte a cada 2–3 s (vd004).
   R10 PARECIDAS duas cenas seguidas com quadro parecido (forma+cor ≥ 0,85) barram — intercalar perto/longe (dono 24/11).
   R11 VOZ LENTA < 3,0 palavras/s barra (dono 24/11, mediana 3,07 nos vídeos dele).
+  R16 OLHAR      cena real sem "alvo" medido ou com câmera parada (zoom < 0,12) barra — dono 28/11.
+  R17 3D         vídeo sem bloco 3D do mecanismo barra (exceção: "sem_3d" com o motivo do dono) — dono 28/11.
   R15 TRAVADO    cena real com < 15 quadros novos/s (câmera lenta falsa que repete quadros) barra — dono 27/11.
   R14 TRECHO     cena real cujo pedaço usado atravessa um corte interno do clipe (triagem) barra — todas de uma vez (dono 26/11).
   R13 TARJA      clipe com faixa preta embutida (letterbox/pillarbox) no trecho usado barra ANTES do render — dono 26/11.
@@ -370,6 +372,22 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
             if ch < h0 * 0.94 or cw < w0 * 0.94:
                 erros.append(f"R13 TARJA: cena {k + 1} ({c['clipe']}) tem faixa preta embutida ({w0}x{h0} → útil {cw}x{ch}); "
                              "recortar o arquivo ANTES de montar.")
+    # R16 OLHAR (dono 28/11, vd022: "mal enquadrado… eu usava os keyframes para deixar em destaque aonde eu queria que o
+    # olho estivesse… centralizado na fresta da porta") — toda cena real diz ONDE o olho vai ("alvo", medido no quadro) e a
+    # câmera ANDA até lá (zoom que cresce ≥ 0,12). Sem isso o editor mira o centro e a cena fica parada.
+    for k, c in enumerate(cenas):
+        if eh_3d[k] or eh_foto[k] or (k == ultima and loop_ok):
+            continue
+        z = c.get("zoom", [1.0, 1.12])
+        if "alvo" not in c:
+            erros.append(f"R16 OLHAR: cena {k + 1} ({c['clipe']}) sem \"alvo\" — marcar o ponto [x, y] (0–1 no recorte) onde o "
+                         "olho deve estar (mão, maçaneta, rosto), medido no quadro.")
+        elif abs(z[1] - z[0]) < 0.12:
+            erros.append(f"R16 OLHAR: cena {k + 1} ({c['clipe']}) câmera parada (zoom {z}); a câmera tem que andar até o alvo (≥ 0,12).")
+    # R17 3D (dono 28/11, vd022: "faltou animação 3D, não sei porque errou isso") — todo vídeo explica o mecanismo em 3D
+    # (/animacao), salvo exceção do dono escrita no cenas.json ("sem_3d": "<motivo dito pelo dono>").
+    if not any(eh_3d) and not cfg.get("sem_3d"):
+        erros.append("R17 3D: o vídeo não tem bloco de animação 3D do mecanismo — fazer o /animacao (ou \"sem_3d\" com o motivo do dono).")
     # R15 TRAVADO (dono 27/11, vd021: "o início dá uma pequena travada") — clipe "câmera lenta" de rede social que só
     # repete quadros (6 quadros novos/s, cada um 5x): na tela parece engasgo. Conta quadros DIFERENTES no trecho usado.
     tps15 = _tempos(pasta, cenas)

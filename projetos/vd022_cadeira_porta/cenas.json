@@ -18,10 +18,9 @@
  "musica": "jogo_antigo/misterio/pesadelo_spiderdave.mp3",
  "cta": false,
  "bruto_livre": [
-  "up2emmylou_c.mp4",
   "hinojosaara_c.mp4"
  ],
- "creditos_descricao": "Imagens: @jake_land1994, @hinojosaara, @creedonclan, @up2emmylou (TikTok); GreenCardShow (Pixabay); Nightlock via @interestingengineering. Música: \"A Wonderful Nightmare\" (chiptune) — SpiderDave (OpenGameArt, CC0).",
+ "creditos_descricao": "Imagens: @jake_land1994, @hinojosaara, @creedonclan (TikTok); Nightlock via @interestingengineering. Animação 3D: Viitu Shorts. Música: \"A Wonderful Nightmare\" (chiptune) — SpiderDave (OpenGameArt, CC0).",
  "cenas": [
   {
    "em": "Essa cadeira",
@@ -42,7 +41,15 @@
      "no_clipe": 0.1
     }
    ],
-   "trecho_conferido": "ia_puxa (1,5 s ampliado por IA) olhado quadro a quadro: a mão puxa a maçaneta e a porta não abre, sem corte"
+   "trecho_conferido": "ia_puxa (1,5 s ampliado por IA) olhado quadro a quadro: a mão puxa a maçaneta e a porta não abre, sem corte",
+   "alvo": [
+    0.25,
+    0.78
+   ],
+   "zoom": [
+    1.15,
+    1.4
+   ]
   },
   {
    "em": "melhor",
@@ -53,96 +60,83 @@
    "_parte": "GANCHO",
    "_funcao": "aberto: a cadeira encaixada na maçaneta da porta da sala",
    "foley": "escritorio",
-   "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)"
+   "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)",
+   "alvo": [
+    0.6,
+    0.35
+   ],
+   "zoom": [
+    1.0,
+    1.22
+   ]
   },
   {
    "em": "O segredo",
-   "clipe": "jake_c.mp4",
-   "inicio": 0.2,
-   "som_original": false,
-   "revisao": "manual",
-   "_parte": "INÍCIO",
-   "_funcao": "a maçaneta da porta, a mão chegando",
-   "foley": "escritorio",
-   "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)"
-  },
-  {
-   "em": "pra abrir",
    "clipe": "pixabay_11285.mp4",
-   "inicio": 1.0,
-   "som_original": false,
+   "inicio": 0,
+   "manter": true,
    "revisao": "manual",
    "_parte": "INÍCIO",
-   "_funcao": "a mão abaixando a maçaneta e a porta abrindo (o jeito normal)",
    "foley": "escritorio",
-   "sfx_cena": [
-    {
-     "em": "descer",
-     "arquivo": "assets/sfx/macaneta_abre.mp3",
-     "desc": "a door handle click",
-     "db": -10,
-     "dur": 1.0,
-     "no_clipe": 1.9
-    }
-   ],
-   "foco": [
-    0.55,
-    0.5
-   ],
-   "seguir": false
-  },
-  {
-   "em": "Vira",
-   "clipe": "creedon_c.mp4",
-   "inicio": 9.0,
-   "som_original": false,
-   "revisao": "manual",
-   "_parte": "INÍCIO",
-   "_funcao": "a professora virando a cadeira de ponta-cabeça",
-   "foley": "escritorio",
-   "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)",
-   "sfx_cena": [
-    {
-     "em": "Vira",
-     "arquivo": "assets/sfx/swish_pano.mp3",
-     "desc": "a cloth swish",
-     "db": -12,
-     "dur": 0.6,
-     "no_clipe": 9.1
-    }
-   ]
-  },
-  {
-   "em": "o ferro",
-   "clipe": "up2emmylou_c.mp4",
-   "inicio": 1.4,
-   "som_original": false,
-   "revisao": "manual",
-   "_parte": "MEIO",
-   "_funcao": "detalhe: o pé de ferro da cadeira entrando por baixo da maçaneta",
-   "foley": "escritorio",
-   "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)",
-   "sfx_cena": [
-    {
-     "em": "ferro",
-     "arquivo": "assets/sfx/cadeira_metal_porta.mp3",
-     "desc": "a metal clank",
-     "db": -8,
-     "dur": 0.8,
-     "no_clipe": 2.0
-    }
-   ]
-  },
-  {
-   "em": "não desce",
-   "clipe": "up2emmylou_c.mp4",
-   "inicio": 5.0,
-   "som_original": false,
-   "revisao": "manual",
-   "_parte": "MEIO",
-   "_funcao": "ÁPICE: a maçaneta presa embaixo da cadeira, não desce",
-   "foley": "escritorio",
-   "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)"
+   "_funcao": "3D: a alavanca desce e a lingueta recua → a cadeira entra de ponta-cabeça → o ferro trava a alavanca",
+   "animacao": {
+    "nome": "porta3d",
+    "fase": "completo",
+    "eventos": {
+     "desce": "descer",
+     "vira": "Vira",
+     "ferro": "ferro",
+     "tenta": "não"
+    },
+    "sfx": [
+     {
+      "evento": "desce",
+      "arquivo": "assets/sfx/macaneta_abre.mp3",
+      "db": -8,
+      "dur": 1.0,
+      "desc": "a door handle click"
+     },
+     {
+      "evento": "vira",
+      "arquivo": "assets/sfx/swish_pano.mp3",
+      "db": -10,
+      "dur": 0.6,
+      "desc": "a cloth swish"
+     },
+     {
+      "evento": "ferro",
+      "arquivo": "assets/sfx/cadeira_metal_porta.mp3",
+      "db": -8,
+      "dur": 0.8,
+      "desc": "a metal clank"
+     },
+     {
+      "evento": "tenta",
+      "arquivo": "assets/sfx/porta_forcada.mp3",
+      "db": -8,
+      "dur": 1.0,
+      "desc": "a door rattling"
+     }
+    ],
+    "cortes": [
+     {
+      "em": "Vira",
+      "zoom": 1.0,
+      "foco": [
+       0.5,
+       0.5
+      ]
+     },
+     {
+      "em": "não",
+      "zoom": 1.12,
+      "foco": [
+       0.25,
+       0.5
+      ]
+     }
+    ]
+   }
   },
   {
    "em": "Lá fora",
@@ -153,7 +147,15 @@
    "_parte": "MEIO",
    "_funcao": "do lado de fora: a mão puxando a maçaneta",
    "foley": "escritorio",
-   "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)"
+   "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)",
+   "alvo": [
+    0.45,
+    0.15
+   ],
+   "zoom": [
+    1.2,
+    1.45
+   ]
   },
   {
    "em": "chacoalha",
@@ -174,6 +176,14 @@
      "dur": 1.2,
      "no_clipe": 2.1
     }
+   ],
+   "alvo": [
+    0.75,
+    0.2
+   ],
+   "zoom": [
+    1.15,
+    1.35
    ]
   },
   {
@@ -185,7 +195,15 @@
    "_parte": "FINAL",
    "_funcao": "a cadeira segurando a maçaneta: a força toda vai pra fechadura",
    "foley": "escritorio",
-   "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)"
+   "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)",
+   "alvo": [
+    0.6,
+    0.45
+   ],
+   "zoom": [
+    1.05,
+    1.28
+   ]
   },
   {
    "em": "por isso",
@@ -205,6 +223,14 @@
      "dur": 0.7,
      "no_clipe": 4.6
     }
+   ],
+   "alvo": [
+    0.55,
+    0.9
+   ],
+   "zoom": [
+    1.1,
+    1.45
    ]
   },
   {
@@ -226,7 +252,15 @@
      "no_clipe": 0.1
     }
    ],
-   "trecho_conferido": "ia_puxa (1,5 s ampliado por IA) olhado quadro a quadro: a mão puxa a maçaneta e a porta não abre, sem corte"
+   "trecho_conferido": "ia_puxa (1,5 s ampliado por IA) olhado quadro a quadro: a mão puxa a maçaneta e a porta não abre, sem corte",
+   "alvo": [
+    0.25,
+    0.78
+   ],
+   "zoom": [
+    1.15,
+    1.4
+   ]
   }
  ],
  "bruto_cronologico": [

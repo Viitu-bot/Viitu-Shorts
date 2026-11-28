@@ -5,6 +5,8 @@ description: Edita o Short do Viitu do roteiro aprovado até o mp4 final (voz, c
 
 # /editar: do roteiro aprovado ao mp4 conferido
 
+**Dono 28/11 (vd022):** toda cena real com `"alvo": [x, y]` MEDIDO no quadro (onde o olho deve estar: mão, maçaneta, rosto) e `"zoom": [a, b]` com b−a ≥ 0,12 (câmera que anda até o alvo, como os keyframes do dono) — trava R16. Todo vídeo tem bloco 3D do mecanismo (`/animacao`) — trava R17.
+
 **Dono 27/11 (vd021):** som com IMERSÃO em 3 camadas em todo vídeo — ambiência `"foley": "<arquivo de biblioteca_sfx/05_ambiencia>"` em ≥ 70% das cenas · foley do que aparece (motor, batida, freio…) em TODA cena real com ação · whoosh de `02_transicoes_sutis` em toda troca (ver biblioteca_sfx/LEIA.md "Imersão"). Música da biblioteca de jogo antigo. Clipe com quadro repetido (R15 TRAVADO) não entra. Terminar a resposta com o próximo comando (`/publicar`).
 
 > **Regras do dono:** `edicao/BIBLIA.md` (manda em tudo; não alterar sem autorização) · planta técnica: `edicao/formato.md`.
