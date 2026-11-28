@@ -6,7 +6,7 @@
 
 
 ## 0. ATUALIZAÇÃO DO DONO — 24/11/2026 (autorizada por ele no chat; vale sobre o que conflitar abaixo)
-- **Padrão-ouro = vd004 bombeiros** (90,8% de retenção média): duração 35–45 s, ritmo de ~1,8 s por cena, narração
+- **Padrão-ouro = vd004 bombeiros** (90,8% de retenção média): duração ~~35–45 s~~ [superado 26/11 → alvo 12–18 s, teto 30 s, §0c], ritmo de ~1,8 s por cena, narração
   adulta (25+), legenda grande (30% assiste na TV).
 - **Gancho:** sem introdução; a 1ª frase abre o loop de curiosidade em 1,5–2 s, no quadro mais chamativo.
 - **Final:** termina na última palavra da revelação ou emenda no gancho. **O CTA de inscrição/like no fim sai** (substitui
@@ -17,7 +17,7 @@
 
 ## 0b. ATUALIZAÇÃO DO DONO — 26/11/2026 (autorizada por ele no chat; vale sobre o 24/11 e o resto)
 Motivo: a retenção caiu de 76–80% para 58%.
-- **Duração: 25–30 s NO MÁXIMO.** Quem decide é o tema: se dá para explicar rápido, explica rápido (pode ficar abaixo de 25).
+- **[superado 26/11 → alvo 12–18 s, teto 30 s, §0c]** ~~Duração: 25–30 s NO MÁXIMO.~~ Quem decide é o tema: se dá para explicar rápido, explica rápido (pode ficar abaixo de 25).
   ~75–90 palavras a ~3,0 palavras/s. Substitui os 35–45 s do §0.
 - **Gancho nos primeiros 2 s** e psicologia da retenção no vídeo INTEIRO (micro-gancho a cada corte, ouro parcelado,
   payoff no terço final) — método em `edicao/retencao_storyboard.md`.
@@ -66,7 +66,7 @@ torcedor entregou o invasor (24.870). O que eles têm em comum é a DINÂMICA do
 | **2. INÍCIO DO DESENVOLVIMENTO** | desmistificação: "a maioria acha X, mas o motivo real é Y" | fato com fonte; nada [INCERTO] |
 | **3. MEIO DO DESENVOLVIMENTO** | OURO PARCELADO: a explicação aos poucos enquanto a ação acontece; aqui entra "mas tem um porém…" (2º problema/virada) | 1 ideia por frase; é o trecho do 3D |
 | **4. FINAL DO DESENVOLVIMENTO** | eureka / clímax: a recompensa cognitiva | o som original do clipe SOBE aqui |
-| **5. CTA INTERATIVO** | ligado a um ACONTECIMENTO do vídeo: o elogio/comparação nasce do que acabou de acontecer (martim-pescador: "uma maravilha da natureza, igual você, inscrito do canal; se não é, já se inscreve") ou pergunta provocativa para comentar | OBRIGATÓRIO; nunca a mesma frase de outro vídeo; curto |
+| **5. CTA INTERATIVO** | ligado a um ACONTECIMENTO do vídeo: o elogio/comparação nasce do que acabou de acontecer (martim-pescador: "uma maravilha da natureza, igual você, inscrito do canal; se não é, já se inscreve") ou pergunta provocativa para comentar | ~~OBRIGATÓRIO~~ [superado 24/11 → PROIBIDO CTA no fim; loop no lugar, §0]; nunca a mesma frase de outro vídeo; curto |
 | **LOOP** | termina em conjunção suspensa ("…porque quando", "…vendo que") que emenda na 1ª palavra | nunca ponto final |
 Formatos: **Tiro Curto** 12–15 s (30–38 palavras, re-hook aos 6 s) · **Bastidor** 20–28 s (50–65 palavras; com CTA até ~30 s/72 palavras).
 O roteiro.md marca cada parte com o rótulo `[GANCHO]`, `[INÍCIO]`, `[MEIO]`, `[FINAL]`, `[CTA]` (a trava confere).
@@ -90,9 +90,9 @@ O roteiro.md marca cada parte com o rótulo `[GANCHO]`, `[INÍCIO]`, `[MEIO]`, `
 - Clipes reais de qualidade, sem repetir, sem logo/texto de terceiro (reclamacoes.md).
 
 ## 4. Som (imersão — dono: "o vídeo não é imersivo")
-- **Música = a que os canais do nicho usam** (dono, 19/11): faixa conhecida da pesquisa (`formatos.json` → `musica_app`), adicionada pelo
+- **[superado 20/11 e 27/11 → trilha SEMPRE dentro do arquivo, da biblioteca de JOGO ANTIGO livre (`assets/musica/jogo_antigo/`), −16 na mixagem; música de terceiro ("sans.") só pelo app]** ~~Música = a que os canais do nicho usam~~ (dono, 19/11): faixa conhecida da pesquisa (`formatos.json` → `musica_app`), adicionada pelo
   dono no app do YouTube ao postar (é licenciada para Shorts; embutir dá Content ID). O arquivo sai sem trilha e com a faixa indicada.
-- Quando for trilha própria (exceção): **SEMPRE audível**, constante desde o frame 0: −10 a −12 dB sob a voz (no celular, −17 some), sobe nas pausas,
+- Quando for trilha própria (exceção): **SEMPRE audível**, constante desde o frame 0: ~~−10 a −12 dB sob a voz~~ [superado 24/11 → −16 na mixagem, `especificacao.json`] (no celular, −17 some), sobe nas pausas,
   cresce na virada e no fim (loop). Categoria pela pesquisa (biblioteca_sons.md). Música conhecida do nicho
   (com direitos) = adicionada pelo dono no app do YouTube; nesse caso o arquivo vai sem trilha e o dono sabe.
 - Som original do clipe (quando livre) sobe no clímax; de terceiro, foley próprio no lugar.

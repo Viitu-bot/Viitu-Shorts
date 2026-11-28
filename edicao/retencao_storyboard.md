@@ -28,6 +28,18 @@ O 1º quadro mostra QUEM AGE no meio da ação urgente (a professora enfiando a 
 consequência parada. E o que importa em cada cena fica no MEIO da tela: embaixo (últimos ~28%) o YouTube põe o nome do
 canal e a descrição, à direita os botões — a trava R16 barra alvo nessa zona.
 
+## 0c. TEMPO DA CENA = TEMPO DA AÇÃO (dono 28/11)
+"Não dá para engessar e cortar em 2 segundos todos os clipes… a pessoa coloca a cadeira na maçaneta, ela não faz isso em
+dois segundos… é uma média, não é cravado."
+| Função da cena | Duração | Por quê |
+|---|---|---|
+| Gancho / anomalia / prova rápida | 1–2 s | segurar o olho sem dar tempo de passar |
+| Contexto, detalhe, reação | 1,5–2,5 s | troca de escala a cada 1,5–2 s |
+| AÇÃO que precisa terminar na tela (encaixar a cadeira, a peça entrando, o salto) | o tempo da ação, até 4,5 s (`"acao_continua": "<a ação>"`) | cortar no meio = a ação não é entendida (vd011, reclamação 15) |
+| Payoff / momento satisfatório | inteiro, até 4,5 s | é a recompensa |
+A MÉDIA do vídeo fica em 1,5–2,5 s (vd004: 1,76 s): uma cena de ação longa é compensada por cortes rápidos em volta.
+Trava R9 (até 3 s; até 4,5 s com acao_continua) + aviso "R9 MÉDIA".
+
 ## 0b. CLÍMAX NO INSTANTE (dono 28/11, vd021)
 A frase que descreve a ação principal ("é disparado", "quebra", "explode", "trava") mostra o INSTANTE em que ela acontece —
 câmera lenta do disparo, o objeto quebrando — e não o resultado depois (vd021: mostrou o freio já cravado; o dono queria

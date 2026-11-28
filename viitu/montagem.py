@@ -48,6 +48,8 @@ FOTO = (".jpg", ".jpeg", ".png", ".webp")
 MAX_USOS = 1          # dono 24/11 (vd016): "imagens muito próximas" — cada fonte entra UMA vez (loop/bruto à parte)
 MIN_VARIEDADE = 0.6
 CORTE_MAX = 3.0       # BÍBLIA/CLAUDE.md: corte a cada 2–3 s
+ACAO_MAX = 4.5        # cena de ação que precisa terminar na tela (dono 28/11)
+MEDIA_MAX = 2.5       # média das cenas reais do vídeo (alvo 1,5–2,5 s; vd004 = 1,76 s)
 CORTE_MAX_3D = 3.5
 PARECIDO_MAX = 0.85
 RITMO_MIN = 3.0
@@ -312,8 +314,17 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
         lim_cena = 6.0 if cfg.get("formato") == "processo" else 4.0           # processo: deixar a ação satisfatória rodar
         if dur >= lim_cena:
             avisos.append(f"R7 cena longa: cena {k + 1} dura {dur:.1f} s com um clipe só — ok SE a ação prende (BÍBLIA §3); senão, trocar.")
-        if dur > CORTE_MAX and not c.get("acao_continua") and not (k == ultima and loop_ok):
-            erros.append(f"R9 RITMO: cena {k + 1} dura {dur:.1f} s; corte a cada ≤ {CORTE_MAX} s (vd004: 1,76 s). Dividir com OUTRA fonte.")
+        # TEMPO DA CENA = TEMPO DA AÇÃO (dono 28/11: "não dá para engessar… a pessoa coloca a cadeira na maçaneta, ela não faz
+        # isso em dois segundos… é uma média, não é cravado"): cena comum até 3 s; cena que mostra uma AÇÃO que precisa
+        # terminar na tela ("acao_continua": "<a ação>") vai até 4,5 s; a MÉDIA do vídeo é que fica perto de 1,5–2,5 s.
+        lim = ACAO_MAX if c.get("acao_continua") else CORTE_MAX
+        if dur > lim and not (k == ultima and loop_ok):
+            dica = "" if c.get("acao_continua") else " Se a ação precisa terminar na tela, marcar \"acao_continua\": \"<a ação>\" (até 4,5 s)."
+            erros.append(f"R9 RITMO: cena {k + 1} dura {dur:.1f} s (limite {lim} s). Dividir com OUTRA fonte.{dica}")
+    _reais = [tempos[k][1] - tempos[k][0] for k in range(len(cenas)) if not eh_3d[k]]
+    if _reais and sum(_reais) / len(_reais) > MEDIA_MAX:
+        avisos.append(f"R9 MÉDIA: as cenas reais duram em média {sum(_reais) / len(_reais):.1f} s (alvo 1,5–{MEDIA_MAX} s); "
+                      "ação longa pode, mas o resto do vídeo tem que compensar com cortes rápidos.")
     # R9 ritmo no 3D: o bloco é um só (R2), mas troca de câmera (fase) a cada ≤ 3,5 s
     _pal = json.loads((pasta / "palavras.json").read_text(encoding="utf-8"))
     _pal = _pal if isinstance(_pal, list) else _pal["palavras"]
