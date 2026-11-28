@@ -183,7 +183,11 @@ def revisar(projeto: str) -> bool:
         linhas.append(np.hstack([faixa] + tiles + [np.zeros((320, 180, 3), np.uint8)] * (3 - len(tiles))))
     # varredura QUADRO A QUADRO do vídeo final: nenhuma tela final de TikTok/Reels pode aparecer
     from viitu.editar import eh_tela_final
+    # animação 3D tem fundo liso e cara de "tela final" para o detector (vd022: falso alarme) — não varre esses trechos
+    trechos_3d = [(a["f0"], a["f1"]) for a in plano.get("animacoes", [])]
     for f in range(0, total, 2):
+        if any(a <= f < b for a, b in trechos_3d):
+            continue
         img = _quadro(cap, f)
         if img is not None and eh_tela_final(img):
             problemas.append(f"TELA FINAL de TikTok/Reels aparece em {f / FPS:.2f}s")
