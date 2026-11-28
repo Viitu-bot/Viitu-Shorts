@@ -1,7 +1,7 @@
 {
  "voz_db": -15.4,
  "leito_db": -23.9,
- "efeitos_db": -29.5,
+ "efeitos_db": -29.6,
  "mp4": "remotion/out/vd022_cadeira_porta.mp4",
  "medidas": {
   "musica_sob_voz_db": {
@@ -13,7 +13,7 @@
    "ok": true
   },
   "efeitos_acao_audiveis": {
-   "valor": "9/9",
+   "valor": "9/10",
    "ok": true
   },
   "impacto_virada_db": {

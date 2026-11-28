@@ -8,10 +8,10 @@
 | ✅ | Sons profissionais (camadas de foley) | Sonniss GDC Game Audio Bundle: royalty-free, YouTube monetizado, sem crédito |
 | ✅ | Fonte da legenda | Anton, licença SIL Open Font License |
 | ✅ | Animações explicativas | desenhadas em código no Remotion (próprias) |
-| ⚠️ | ia_puxa.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ⚠️ | hinojosaara_c.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
+| ⚠️ | ia_puxa.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 | ⚠️ | creedon_fora_c.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
-| ⚠️ | nightlock_aberto.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
+| ⚠️ | nightlock_pino.mp4 | terceiro SEM permissão registrada: crédito obrigatório na descrição; pedir permissão |
 
 **RESULTADO:** ✅ liberado (⚠️ = crédito na descrição + pedir permissão)
 
