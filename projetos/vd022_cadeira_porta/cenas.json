@@ -24,16 +24,45 @@
  "cenas": [
   {
    "em": "Essa cadeira",
+   "clipe": "hinojosaara_c.mp4",
+   "inicio": 4.9,
+   "som_original": false,
+   "revisao": "manual",
+   "_parte": "GANCHO",
+   "foley": "escritorio",
+   "_funcao": "GANCHO: a professora erguendo a cadeira às pressas e enfiando na maçaneta (urgência)",
+   "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)",
+   "alvo": [
+    0.55,
+    0.3
+   ],
+   "zoom": [
+    1.1,
+    1.35
+   ],
+   "sfx_cena": [
+    {
+     "em": "cadeira",
+     "arquivo": "assets/sfx/cadeira_metal_porta.mp3",
+     "desc": "a metal clank",
+     "db": -9,
+     "dur": 0.8,
+     "no_clipe": 5.5
+    }
+   ]
+  },
+  {
+   "em": "melhor",
    "clipe": "ia_puxa.mp4",
    "inicio": 0.1,
    "som_original": false,
    "revisao": "manual",
    "_parte": "GANCHO",
-   "_funcao": "GANCHO: a mão puxando a maçaneta e a porta NÃO abre",
+   "_funcao": "por fora: a mão puxa a maçaneta e a porta não abre",
    "foley": "escritorio",
    "sfx_cena": [
     {
-     "em": "Essa",
+     "em": "melhor",
      "arquivo": "assets/sfx/porta_forcada.mp3",
      "desc": "a door rattling",
      "db": -10,
@@ -49,25 +78,6 @@
    "zoom": [
     1.15,
     1.4
-   ]
-  },
-  {
-   "em": "melhor",
-   "clipe": "hinojosaara_c.mp4",
-   "inicio": 6.5,
-   "som_original": false,
-   "revisao": "manual",
-   "_parte": "GANCHO",
-   "_funcao": "aberto: a cadeira encaixada na maçaneta da porta da sala",
-   "foley": "escritorio",
-   "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)",
-   "alvo": [
-    0.6,
-    0.35
-   ],
-   "zoom": [
-    1.0,
-    1.22
    ]
   },
   {
@@ -207,12 +217,12 @@
   },
   {
    "em": "por isso",
-   "clipe": "nightlock_aberto.mp4",
-   "inicio": 3.0,
+   "clipe": "nightlock_pino.mp4",
+   "inicio": 9.27,
    "som_original": false,
    "revisao": "manual",
    "_parte": "FINAL",
-   "_funcao": "o funcionário descendo a trava na placa presa no chão",
+   "_funcao": "o pino vermelho entrando na placa presa no chão, no meio da tela",
    "foley": "escritorio",
    "sfx_cena": [
     {
@@ -221,45 +231,47 @@
      "desc": "a heavy metal clunk",
      "db": -10,
      "dur": 0.7,
-     "no_clipe": 4.6
+     "no_clipe": 10.4
     }
    ],
    "alvo": [
     0.55,
-    0.9
+    0.55
    ],
    "zoom": [
     1.1,
-    1.45
-   ]
+    1.4
+   ],
+   "suave_ok": "porta lisa e piso liso: pouca textura, não borrado; o pino vermelho e a placa estão nítidos (olhado quadro a quadro)",
+   "velocidade": 0.93
   },
   {
    "em": "mas, na",
-   "clipe": "ia_puxa.mp4",
-   "inicio": 0.1,
+   "clipe": "hinojosaara_c.mp4",
+   "inicio": 4.9,
    "som_original": false,
    "revisao": "manual",
    "_parte": "LOOP",
-   "_funcao": "o mesmo quadro do gancho (loop)",
    "foley": "escritorio",
+   "_funcao": "o mesmo quadro do gancho (loop)",
+   "baixa_res_ok": "post de TikTok recortado acima da legenda queimada (720p de origem)",
+   "alvo": [
+    0.55,
+    0.3
+   ],
+   "zoom": [
+    1.1,
+    1.35
+   ],
    "sfx_cena": [
     {
      "em": "falta",
-     "arquivo": "assets/sfx/porta_forcada.mp3",
-     "desc": "a door rattling",
-     "db": -12,
-     "dur": 1.2,
-     "no_clipe": 0.1
+     "arquivo": "assets/sfx/cadeira_metal_porta.mp3",
+     "desc": "a metal clank",
+     "db": -9,
+     "dur": 0.8,
+     "no_clipe": 5.5
     }
-   ],
-   "trecho_conferido": "ia_puxa (1,5 s ampliado por IA) olhado quadro a quadro: a mão puxa a maçaneta e a porta não abre, sem corte",
-   "alvo": [
-    0.25,
-    0.78
-   ],
-   "zoom": [
-    1.15,
-    1.4
    ]
   }
  ],

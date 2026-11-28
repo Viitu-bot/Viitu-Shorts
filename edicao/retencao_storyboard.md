@@ -23,6 +23,11 @@ fonte, corte e som do §3.
 Por quê (dono): troca de escala + imagem não óbvia mantêm o cérebro decodificando; anomalia no 1º quadro segura os 2
 primeiros segundos, o gargalo dos vídeos que pararam antes de 20 mil views.
 
+## 0a. GANCHO = AÇÃO URGENTE + ZONA SEGURA (dono 28/11, vd022)
+O 1º quadro mostra QUEM AGE no meio da ação urgente (a professora enfiando a cadeira na maçaneta às pressas), não a
+consequência parada. E o que importa em cada cena fica no MEIO da tela: embaixo (últimos ~28%) o YouTube põe o nome do
+canal e a descrição, à direita os botões — a trava R16 barra alvo nessa zona.
+
 ## 0b. CLÍMAX NO INSTANTE (dono 28/11, vd021)
 A frase que descreve a ação principal ("é disparado", "quebra", "explode", "trava") mostra o INSTANTE em que ela acontece —
 câmera lenta do disparo, o objeto quebrando — e não o resultado depois (vd021: mostrou o freio já cravado; o dono queria

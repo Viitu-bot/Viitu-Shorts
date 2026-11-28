@@ -384,6 +384,15 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
                          "olho deve estar (mão, maçaneta, rosto), medido no quadro.")
         elif abs(z[1] - z[0]) < 0.12:
             erros.append(f"R16 OLHAR: cena {k + 1} ({c['clipe']}) câmera parada (zoom {z}); a câmera tem que andar até o alvo (≥ 0,12).")
+        else:
+            # dono 28/11 (vd022, trava no chão): o zoom não passa da borda do vídeo; onde o alvo FICA na tela no fim da cena?
+            # embaixo (> 72%) e à direita (> 85%) o YouTube cobre com nome do canal, descrição e botões
+            sx, sy = c["alvo"]; j = 1 / max(z[1], 1.0)
+            tx = (sx - min(max(sx - j / 2, 0), 1 - j)) / j
+            ty = (sy - min(max(sy - j / 2, 0), 1 - j)) / j
+            if ty > 0.72 or tx > 0.85:
+                erros.append(f"R16 OLHAR: cena {k + 1} ({c['clipe']}) o alvo termina em ({tx:.2f}, {ty:.2f}) da tela, na área que o "
+                             "YouTube cobre (nome/descrição embaixo, botões à direita); usar outra tomada/recorte com o alvo mais ao centro.")
     # R17 3D (dono 28/11, vd022: "faltou animação 3D, não sei porque errou isso") — todo vídeo explica o mecanismo em 3D
     # (/animacao), salvo exceção do dono escrita no cenas.json ("sem_3d": "<motivo dito pelo dono>").
     if not any(eh_3d) and not cfg.get("sem_3d"):
