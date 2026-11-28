@@ -57,6 +57,8 @@ Próximo: gerar mais trilhas (2 por clima) para não repetir a mesma em vídeos 
 - vd007: a Sonniss não tem foguete. Gerados no ElevenLabs (`assets/sfx/`): foguete_motor, reentrada_plasma, braco_metal,
   motor_corte, hidraulico_grande, peca_solta. Endpoint `sound-generation`, header `xi-api-key: proxy-injected`.
 
+> **[superado 27/11 → a trilha do arquivo vem da biblioteca de JOGO ANTIGO livre (`assets/musica/jogo_antigo/LEIA.md`); esta tabela fica só como referência do que os concorrentes usam]**
+
 ## Trilhas por categoria (pesquisa 18/11/2026: 43 Shorts de referência — A vida é uma maravilha, GeneralTV, KSO, Polaco, Andre, Zack D.)
 Regras medidas: **100% dos vídeos têm trilha**; fica 12–18 dB abaixo da voz (nossa spec: −14 sob a fala, −6 nas pausas);
 entra no frame 0 e quase sempre é **constante**; quando muda, é para **subir na revelação/virada** ou **subir no final

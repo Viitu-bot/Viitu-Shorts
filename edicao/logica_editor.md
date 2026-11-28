@@ -4,6 +4,7 @@ Pesquisa de nov/2026 (fontes no fim). Complementa `manual_edicao.md` (técnicas)
 
 
 ## 00. ESPECIFICAÇÃO FIXA (regra, não medição) — `edicao/especificacao.json`
+> **[a tabela abaixo é a medição de 18/11; os valores VIGENTES estão em `edicao/especificacao.json` e no CLAUDE.md: música −16 na mixagem, efeitos −10 a −5, whoosh −14 em toda troca, até 3 s por cena (4,5 s com ação contínua). Em conflito, vale a especificação.]**
 Tirada da engenharia reversa completa de 35 Shorts do nicho (6 canais + vídeos enviados pelo dono;
 `pesquisa/reverso/resumo_edicao.json`). Valores = mediana dos vídeos de maior sucesso. O editor obedece direto.
 

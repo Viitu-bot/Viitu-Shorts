@@ -71,6 +71,12 @@ inteiro (voz, efeitos, transições, música) conferidos ANTES, na prévia `viit
 (título/descrição do gancho · comentário fixado provocativo · trivia da Comunidade com 4 opções e a correta).
 `/analisar <link>` e `/espiar` (concorrência → `analises_concorrencia/`) viram conhecimento.
 
+## Automático (auditoria 28/11)
+`python3 -m viitu.pipeline previa <p>` (todas as etapas técnicas até a prévia, para no 1º ❌) → Claude olha as pranchas →
+`python3 -m viitu.pipeline final <p> "TÍTULO"` (render → entrega → capa). Decisão nova do dono → `/conselho` antes de gravar.
+Travas: R0–R18 em `viitu/montagem.py` (cada reclamação de `edicao/reclamacoes.md` aponta a sua). Ambiente: o script de
+instalação do ambiente reinstala ffmpeg, torch, librosa, Remotion e o ouvido (earshot) a cada sessão nova.
+
 ## Mapa
 BÍBLIA `edicao/BIBLIA.md` · identidade `edicao/identidade.md` · ganchos `edicao/ganchos_gatilhos.md` · nicho `edicao/biblioteca_nicho.md` · formatos
 `edicao/formatos.json` · reclamações `edicao/reclamacoes.md` · base das regras `edicao/fontes_das_regras.md` · sons

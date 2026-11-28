@@ -19,6 +19,7 @@ palavras.json (tempos reais da voz) e os arquivos dos clipes. Com qualquer ❌ o
   R9 RITMO      cena real > 3 s (sem "acao_continua") e vista 3D > 3,5 s barram: corte a cada 2–3 s (vd004).
   R10 PARECIDAS duas cenas seguidas com quadro parecido (forma+cor ≥ 0,85) barram — intercalar perto/longe (dono 24/11).
   R11 VOZ LENTA < 3,0 palavras/s barra (dono 24/11, mediana 3,07 nos vídeos dele).
+  R18 MÚSICA     trilha ausente, fora da biblioteca de jogo antigo ou igual à do vídeo anterior barra — dono 27/11.
   R16 OLHAR      cena real sem "alvo" medido ou com câmera parada (zoom < 0,12) barra — dono 28/11.
   R17 3D         vídeo sem bloco 3D do mecanismo barra (exceção: "sem_3d" com o motivo do dono) — dono 28/11.
   R15 TRAVADO    cena real com < 15 quadros novos/s (câmera lenta falsa que repete quadros) barra — dono 27/11.
@@ -47,6 +48,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 FOTO = (".jpg", ".jpeg", ".png", ".webp")
 MAX_USOS = 1          # dono 24/11 (vd016): "imagens muito próximas" — cada fonte entra UMA vez (loop/bruto à parte)
 MIN_VARIEDADE = 0.6
+RAIZ_PROJ = Path(__file__).resolve().parent.parent
 CORTE_MAX = 3.0       # BÍBLIA/CLAUDE.md: corte a cada 2–3 s
 ACAO_MAX = 4.5        # cena de ação que precisa terminar na tela (dono 28/11)
 MEDIA_MAX = 2.5       # média das cenas reais do vídeo (alvo 1,5–2,5 s; vd004 = 1,76 s)
@@ -265,11 +267,29 @@ def checar(projeto: str) -> tuple[list[str], list[str]]:
         if sem:
             erros.append(f"R8 SOM FORA DA AÇÃO: cena {k + 1} tem som sem \"no_clipe\" {sem} — ver na prancha o segundo do clipe "
                          "em que a ação acontece (encaixe, estalo, golpe) e marcar no_clipe.")
-    if reais_idx and len(com_acao) < math.ceil(0.4 * len(reais_idx)):
+    if reais_idx and len(com_acao) < math.ceil(0.5 * len(reais_idx)):     # dono 27/11: foley do que aparece (imersão) — barra
+        erros.append(f"R8 POUCO FOLEY: {len(com_acao)}/{len(reais_idx)} cenas reais com som do que aparece (mínimo metade). "
+                     f"Sem som: cenas {[k + 1 for k in reais_idx if k not in com_acao]}.")
+    elif reais_idx and len(com_acao) < len(reais_idx):
         avisos.append(f"R8 pouco som de ação: {len(com_acao)}/{len(reais_idx)} cenas reais com sfx_cena (conferir se falta som que EXISTE na cena). "
                      f"Sem som: cenas {[k + 1 for k in reais_idx if k not in com_acao]}.")
     if not cfg.get("impacto_em"):
         erros.append("R8 SEM VIRADA SONORA: defina impacto_em (riser → vácuo → boom).")
+    # R18 MÚSICA (dono 20/11 "ficou sem música de fundo" ×2; 27/11 "esqueceu da música de novo… jogos antigos"): a trilha
+    # existe no disco, é da biblioteca de JOGO ANTIGO e não repete a do vídeo anterior (salvo "musica_excecao" do dono).
+    mus = str(cfg.get("musica", ""))
+    if not mus.startswith("app:") and not cfg.get("musica_excecao"):
+        arq_m = RAIZ_PROJ / "assets" / "musica" / mus if mus else None
+        if not mus or not arq_m.exists():
+            erros.append(f"R18 MÚSICA: \"musica\" ausente ou arquivo inexistente ({mus or 'vazio'}).")
+        elif not mus.startswith("jogo_antigo/"):
+            erros.append(f"R18 MÚSICA: {mus} não é da biblioteca de jogo antigo (assets/musica/jogo_antigo/LEIA.md).")
+        else:
+            outros = sorted((x for x in (RAIZ_PROJ / "projetos").glob("vd*/cenas.json") if x.parent != pasta),
+                            key=lambda x: x.parent.name)
+            antes = [x for x in outros if x.parent.name < pasta.name]
+            if antes and json.loads(antes[-1].read_text(encoding="utf-8")).get("musica") == mus:
+                erros.append(f"R18 MÚSICA: mesma faixa do vídeo anterior ({antes[-1].parent.name}); escolher outra do mesmo clima.")
     if str(cfg.get("musica", "")).startswith("app:"):
         erros.append("R8 MÚSICA FORA DO ARQUIVO: o dono reprovou 2x vídeo sem trilha (reclamação #18). Use trilha própria "
                      "licenciada em \"musica\" (assets/musica/); a música conhecida vai só como sugestão no /publicar.")

@@ -5,6 +5,8 @@ description: Edita o Short do Viitu do roteiro aprovado até o mp4 final (voz, c
 
 # /editar: do roteiro aprovado ao mp4 conferido
 
+**AUTOMÁTICO (28/11):** depois do cenas.json pronto, `python3 -m viitu.pipeline previa <p>` roda triagem → montagem → decupagem+ouvido → editor → partes → som final → faixa preta e PARA no 1º ❌. O Claude olha as pranchas que ele lista; aprovado → `python3 -m viitu.pipeline final <p> "TÍTULO DA CAPA" [--cena N --t T]` (render → entrega → capa → cópia). Os passos abaixo explicam cada etapa.
+
 **Dono 28/11 (vd022):** toda cena real com `"alvo": [x, y]` MEDIDO no quadro (onde o olho deve estar: mão, maçaneta, rosto) e `"zoom": [a, b]` com b−a ≥ 0,12 (câmera que anda até o alvo, como os keyframes do dono) — trava R16. Todo vídeo tem bloco 3D do mecanismo (`/animacao`) — trava R17.
 
 **Dono 27/11 (vd021):** som com IMERSÃO em 3 camadas em todo vídeo — ambiência `"foley": "<arquivo de biblioteca_sfx/05_ambiencia>"` em ≥ 70% das cenas · foley do que aparece (motor, batida, freio…) em TODA cena real com ação · whoosh de `02_transicoes_sutis` em toda troca (ver biblioteca_sfx/LEIA.md "Imersão"). Música da biblioteca de jogo antigo. Clipe com quadro repetido (R15 TRAVADO) não entra. Terminar a resposta com o próximo comando (`/publicar`).
@@ -67,7 +69,7 @@ aval do dono). Não renderizar planta reprovada.
 | Palavra-chave (`destaques`) | punch 4,5% + legenda amarela maior | — |
 | Detalhe | círculo vermelho que se desenha e segue o objeto | pop |
 - **Legenda:** 1 palavra, Anton, branca/amarela com contorno; longe do sujeito (y 1180 ou 420), nunca abaixo de 1400.
-- **Som:** foley em 2 camadas (Sonniss: ambiência + ASMR de perto; conferir nomes novos em
+- **Som:** ambiência da biblioteca própria (`biblioteca_sfx/05_ambiencia`, entra primeiro) e, se faltar, foley em 2 camadas (Sonniss: ambiência + ASMR de perto; conferir nomes novos em
   `assets/sonniss/escolhas.json`); áudio original de terceiro desligado; corte J/L e pan automáticos.
 - **Som de função** (buzzer, acerto, ding, moeda) só com gráfico correspondente na tela e na pausa. Na dúvida, não.
 - Sem CTA explícito por padrão (os canais usam o loop); sem sons de meme.
